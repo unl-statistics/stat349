@@ -38,7 +38,7 @@ At the end of this course, students should know how to:
 -   Presentations
 
 | Component             | Statistical Report | Scientific Article | CV/Cover Letter |
-|----------------------|-----------------|-----------------|-----------------|
+|-----------------------|--------------------|--------------------|-----------------|
 | Making an argument    | xx                 | xx                 | xx              |
 | Introduction          | xx                 | xx                 | x               |
 | Problem Statement     | xx                 | x                  | x               |
@@ -56,7 +56,7 @@ At the end of this course, students should know how to:
 # Timeline
 
 | Wk | Topic | Formative | Research Paper | Business Report |
-|-------|------------------|------------------|--------------|------------------|
+|----|----|----|----|----|
 | 1 | Class Structure, Git review | GitHub pages setup, Find an internship/job to apply for |  |  |
 | 2 | CV/Cover Letter | Create Resume/CV and cover letter for job |  |  |
 | 3 | Citation manager, How to read technical papers, Summarizing papers | Annotated bibliography (2 refs) |  |  |
@@ -74,3 +74,13 @@ At the end of this course, students should know how to:
 | 15 | Research Paper | Portfolio Due | Research Paper workshop |  |
 | Finals |  |  | Research Paper Due |  |
 |  |  |  |  |  |
+
+# Credits/Attribution
+
+Course logo/background/image sources:
+
+Pete O'Shea. [https://www.flickr.com/photos/59668110\@N04/5600161625](https://www.flickr.com/photos/59668110@N04/5600161625){.uri}
+
+Colourbox. <https://www.colourbox.com/vector/charts-graphs-arrows-monochrome-hand-drawn-infographic-elements-business-economic-and-financial-templates-vector-illustration-vector-38684313> (inspiration)
+
+<https://www.youtube.com/watch?v=FP6qS5d3Ly4>
