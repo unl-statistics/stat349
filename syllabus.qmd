@@ -1,0 +1,259 @@
+---
+pdf-engine: lualatex
+from: markdown+emoji
+fontsize: 11pt
+geometry: margin=1in
+format:
+  pdf:
+    keep-tex: false
+    template-partials:
+    - partials/title.tex
+    - partials/before-body.tex
+    - partials/graphics.tex
+    dev: cairo_pdf
+title: Syllabus
+instructor: Susan Vanderplas
+semester: Spring 2025
+email: susan.vanderplas@unl.edu
+web: srvanderplas.netlify.app
+officehours: \href{https://calendly.com/drvanderplas/officehours}{Schedule here}
+office: Hardin 343D
+classroom: Hardin ANSC A228-East
+classhours: MW 10:00 - 11:15
+categories:
+- reading
+- Week01
+date: '2024-01-21'
+image: figs/reading.svg
+type: reading
+---
+
+```{r setup, include=FALSE}
+# knitr::opts_chunk$set(cache=FALSE, dev='pdf')
+knitr::opts_chunk$set(cache=F,
+                      fig.path = 'figs/',
+                      cache.path='cache/',
+                      warning=F,
+                      message=F)
+
+knitr::opts_chunk$set(
+                  fig.process = function(x) {
+                      x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                      if (file.rename(x, x2)) x2 else x
+                      }
+                  )
+source("schedule.R")
+```
+
+# Course Description
+
+Creation of research reports, business reports, and executive summaries. Presentation strategies, consequences of statistical modeling for real-world decision making, and countering common misconceptions and errors in statistical reasoning. Focus on real-world applications in research, business, and public service.
+
+# Course Objectives
+
+At the end of this course, students should know how to:
+
+-   Write a statistical business report and give a presentation on a topic using appropriate information flow, graphics, and provided templates.
+-   Write a scientific article, using appropriate structure, graphics, citations.
+-   Document a data set and an analysis so that operations performed are reproducible and justified.
+-   Explain the consequences of statistical modeling decisions in an understandable and technically correct manner.
+-   Counter and preempt common misconceptions and errors in statistical reasoning in practical situations.
+-   Write a CV/cover letter.
+
+# Textbook
+
+This course will primarily use an OER (open educational resource) for technical writing, [Open Technical Communication](https://alg.manifoldapp.org/projects/open-technical-communication), by Tijerina, Powell, Arnett, Logan, & Race.
+
+Other useful resources have been added to the course canvas page. All books and resources used in this course are available through the UNL library free of charge.
+
+# Class Schedule & Topic Outline
+
+This schedule is **tentative** and **subject to change**. Students are expected to read the corresponding textbook chapter (linked in Canvas) **before coming to class**. For the most part, for each week's topic, there will be one or two corresponding textbook chapters.
+
+\FloatBarrier
+
+```{r calendar}
+#| echo: false
+#| eval: true
+#| warning: false
+#| fig-width: 8
+#| fig-height: 4
+#| fig-align: center
+#| fig-cap: "Course Calendar"
+#| fig-pos: ht
+
+class_cal
+```
+
+\small
+
+```{r schedule, eval = T, echo = F, fig.pos = 'h'}
+class_days %>% select(date, topic, time) %>%
+  mutate(time = ifelse(is.na(time), "", time)) %>%
+  mutate(date2 = format(date, "%b %e")) %>%
+  magrittr::set_names(c("date", "Topic", "Time", "Date")) %>%
+  select(Date, Time, Topic) %>%
+kableExtra::kable(caption = "Tentative schedule of class topics", format = "simple")
+```
+
+\normalsize
+
+\FloatBarrier
+\clearpage
+
+# Course Structure
+
+## Assessment/Grading
+
+| Assignments                    | Weight |
+|--------------------------------|--------|
+| Reading Quizzes                | 10%    |
+| Homework                       | 50%    |
+| Business Report & Presentation | 20%    |
+| Research Paper & Poster        | 20%    |
+
+Lower bounds for grade cutoffs are shown in the following table. I will not "round up" grades at the end of the semester.
+
+| Letter grade | X +    | X    | X -  |
+|--------------|--------|------|------|
+| A            | 97.0   | 94.0 | 90.0 |
+| B            | 87.0   | 84.0 | 80.0 |
+| C            | 77.0   | 74.0 | 70.0 |
+| D            | 67.0   | 64.0 | 61.0 |
+| F            | \<61.0 |      |      |
+
+Interpretation of this table: A grade of 84.3 will receive a B. A grade of 77.6 will receive a C+. A grade of 73.9 will receive a C-. Anything below a 61 will receive an F.
+
+## Course Components
+
+### Reading Quizzes
+
+You will have weekly reading assignments which introduce the weekly focus area. In order to motivate the importance of this reading, you will be given a weekly reading quiz on Canvas which covers the requisite material. These quizzes will be due before the first class of the week.
+
+### Homework
+
+Weekly formative assignments (assignments meant to help you practice skills) will be given throughout the semester. The only way to learn the skills taught in this course is to practice - writing, citing, doing research, summarizing, and so on.
+
+-   You will typically have one week to work on each of the assignments.
+
+-   Assignments must be submitted in the file format specified, and should run or compile as submitted for credit to be given.
+
+-   I will attempt to grade formative assignments within a week of the specified due date.
+
+-   Formative assessments may be resubmitted for partial credit subject to the terms of the resubmission policy below.
+
+### Participation
+
+All students are expected to attend and fully participate in class activities. Participation grades will be determined based on a combination of class attendance and activities. Participation will be equivalent to a homework grade, and two absences are allowed without any reduction in participation score.
+
+### Projects
+
+You will complete two major projects in this course: a business-style report and presentation, and a research-style paper and poster. These projects will be due during the second half of the semester, and will involve both in-person presentations and peer evaluations of other students' work.
+
+
+# Course Policies
+
+## Late Work Policy
+
+Late assignments will be accepted only under extenuating circumstances, and only if you have contacted me **prior** to the assignment due date and received permission to hand the assignment in late. I reserve the right not to grade (or to assign a 0 to) any assignments received after the assignment due date.
+
+You may submit an assignment that was not submitted in time as a resubmission, assuming it meets the conditions outlined in the next section.
+
+## Resubmission Policy
+
+Learning how to write is a process that requires an attempt and then subsequent improvement. Do not be afraid to make mistakes! I allow you to re-submit each formative/homework assignment once. 
+
+**Note: The resubmission policy does NOT apply to projects.**
+
+This policy is subject to the following constraints:
+
+-   You should resubmit assignments as soon as possible.
+
+-   You may not resubmit an assignment for which solutions have been posted. 
+
+-   Each assignment should be resubmitted only once.
+
+-   Resubmissions are due no later than 2 weeks after the initial due date. In addition, 
+    - Resubmissions from weeks 1-7 must be submitted by Friday at 5pm of week 8 of classes
+    - Resubmissions from weeks 8-14 must be submitted by Monday at 5pm of week 15 of classes
+
+-   Resubmitted assignments will be graded at my convenience.
+
+<!-- - You should resubmit assignments as soon as possible.     -->
+
+<!-- I reserve the right to cut off assignment resubmissions on a rolling basis (e.g. you have 3 weeks after the original due date) or based on the point in the semester (e.g. all homeworks due before Spring Break must be resubmitted by the week after we return from Spring Break). -->
+
+I spend the extra time grading resubmissions because it reinforces your learning; this policy is not designed to improve your grade in this class. \
+I reserve the right to adjust the resubmission policy over the course of the semester to ensure that it is meeting the objective of reinforcing your learning. \
+I reserve the right to limit or penalize resubmissions if it becomes clear that the current policy does not promote learning of the material and/or support the course objectives.
+
+## Attendance
+
+You are expected to attend class. Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
+
+If you are feeling ill, please **do not come to class**. Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually. In the appointment reason field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
+
+## Inclement Weather
+
+If in-person classes are canceled, you will be notified of the instructional continuity plan for this class by Canvas Announcement. In most circumstances where there is power in the Lincoln area, we will hold class via Zoom if the university cancels class.
+
+## Expectations
+
+You can expect me to:
+
+-   reply to emails within 48 hours during the week (72 hours on weekends)
+-   be available in class to assist with assignments
+-   be available by appointment for additional help or discussion
+
+I expect you to:
+
+-   Complete the "prepare" module material before coming to class
+-   Engage with the material and your classmates during class
+-   Seek help when you do not understand the material
+-   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
+-   Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
+-   Be respectful and considerate of everyone in the class
+
+## Assignment Evaluation Criteria
+
+In every assignment, discussion, and written component of this class, you are expected to **demonstrate that you are intellectually engaging with the material**. I will evaluate you based on this engagement, which means that technically correct but low effort answers which do not demonstrate engagement or understanding will receive no credit.
+
+When you answer questions in this class, your goal is to show that you either understand the material or are actively engaging with it. If you did not achieve this goal, then your answer is incomplete, regardless of whether or not it is technically correct. This is not to encourage you to add unnecessary complexity to your answer - simple, elegant solutions are always preferable to unwieldy, complex solutions that accomplish the same task.
+
+Grammar and spelling are important, as is your ability to communicate technical information in writing; both of these criteria will be used in addition to assignment-specific rubrics to evaluate your work.
+
+
+## Academic Integrity and Class Conduct
+
+You will be engaging with your classmates and me through in-person discussions and collaborative activities. It is expected that everyone will engage in these interactions civilly and in good faith. Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail. Individuals who detract from an atmosphere of civility and respect will be removed from the conversation or the classroom.
+
+Students are expected to adhere to guidelines concerning academic dishonesty outlined in [Article III B.1 of the University's Student Code of Conduct](http://stuafs.unl.edu/dos/code). The Statistics Department [academic integrity and grade appeal policy is available here](https://statistics.unl.edu/grade-appeals-and-academic-integrity-policy).
+
+
+### Code
+You must be able to explain how the logic works for any code you turn in. This means that code you obtained from e.g. StackOverflow is fine to use if you can explain it and modify it for the purposes of this class, but if you cannot explain your code you will not get credit for the assignment. This is in line with what is generally considered acceptable behavior in programming - reuse is fine (subject to the code's license) but you must be able to fully explain and modify any code you did not write yourself.
+
+### Writing
+
+With the proliferation of AI tools such as Chat-GPT, I reserve the right to replace project and homework grades with grades based on an oral discussion of your submissions. 
+If you cannot explain the logic behind your submission, how you came to the approach you used, and identify the tradeoffs behind decisions you made, then you will not receive credit. 
+Chat GPT can be a useful tool, but this course's objectives are meant to assess your ability to communicate statistical information to a target audience effectively, not your ability to use AI systems. 
+Fundamentally, you need to understand concepts and develop written fluency in technical language and statistical concepts to communicate effectively; generative AI solutions may hamper both of these goals if you rely on them too much.
+
+
+### Generative AI
+Technical writing is more clear and concise than other types of writing, and nuances are extremely important. 
+To date, generative AI is not particularly good at these goals - it is wordy and uses nonstandard language, and as a predictive model, it cannot structure its output for human understanding.
+It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI for content.
+
+Any use of generative AI must be disclosed in an appendix to your submission - this includes brainstorming, editing, using AI as spell-check/grammar-check, and so on.
+You must document the following:
+
+- the version of the generative AI used
+- the full sequence of prompts and responses
+- any additional inputs you provided to the AI system
+- a "diff" between the AI responses and your submission, showing exactly what was generated by the AI system and what you changed.
+
+# Required University Information
+
+See \url{https://executivevc.unl.edu/academic-excellence/teaching-resources/course-policies}.
