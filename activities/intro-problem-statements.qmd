@@ -1,0 +1,20 @@
+---
+title: "Introductions & Problem Statements"
+---
+
+
+Articles:
+
+- [2030 Census Research Recommendations](https://www.census.gov/newsroom/blogs/random-samplings/2024/12/2030-census-research-recommendations-operational-plan.html)
+
+- [Nearly All U.S. Counties Had More Homeowners Than Renters Between 2019 and 2023](https://www.census.gov/newsroom/press-releases/2024/acs-5-year-homeowners-renters.html)
+
+- [Who Could Afford to Buy a Home in 2009? Affordability of Buying a Home in the United States](https://www.census.gov/library/publications/2013/demo/h121_13-02.html)
+
+- [Enabling Global Image Data Sharing in the Life Sciences](https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=957178)
+
+- [Willful Winds: Hurricane Andrew and Louisiana's Coast](https://library.oarcloud.noaa.gov/docs.lib/htdocs/rescue/hurricanes/QC9452A5G81996.pdf)
+
+- [Hurricane Katrina](https://library.oarcloud.noaa.gov/docs.lib/htdocs/rescue/hurricanes/Qc9452k387h82006.pdf)
+
+- [Water-Level and Recoverable Water in Storage Changes, High Plains Aquifer, Predevelopment to 2019 and 2017 to 2019](https://pubs.usgs.gov/sir/2023/5143/sir20235143.pdf)
