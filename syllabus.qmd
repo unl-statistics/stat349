@@ -15,20 +15,15 @@ title: Syllabus
 instructor: Susan Vanderplas
 semester: Spring 2025
 email: susan.vanderplas@unl.edu
-web: srvanderplas.netlify.app
+web: srvanderplas.github.io
 officehours: \href{https://calendly.com/drvanderplas/officehours}{Schedule here}
 office: Hardin 343D
-classroom: Hardin ANSC A228-East
+classroom: ANSC A228-East
 classhours: MW 10:00 - 11:15
-categories:
-- reading
-- Week01
-date: '2024-01-21'
-image: figs/reading.svg
-type: reading
 ---
 
 ```{r setup, include=FALSE}
+#| eval: true
 # knitr::opts_chunk$set(cache=FALSE, dev='pdf')
 knitr::opts_chunk$set(cache=F,
                       fig.path = 'figs/',
@@ -42,6 +37,13 @@ knitr::opts_chunk$set(
                       if (file.rename(x, x2)) x2 else x
                       }
                   )
+```
+
+```{r run-schedule}
+#| eval: true
+#| echo: false
+#| include: false
+# Create schedule variables
 source("schedule.R")
 ```
 
@@ -62,18 +64,21 @@ At the end of this course, students should know how to:
 
 # Textbook
 
-This course will primarily use an OER (open educational resource) for technical writing, [Open Technical Communication](https://alg.manifoldapp.org/projects/open-technical-communication), by Tijerina, Powell, Arnett, Logan, & Race. 
-We will also read sections from [Entering the Conversation](https://wisc.pb.unizin.org/opencomp/front-matter/intro/), an open composition textbook by Naomi Salmon (Ed), as this course contains elements of both technical writing and more general composition. 
+This course will use three different OER (open educational resource) textbooks:
 
-Other useful resources have been added to the course canvas page. All books and resources used in this course are available online or through the UNL library free of charge.
+- [Open Technical Communication](https://alg.manifoldapp.org/projects/open-technical-communication), by Tijerina, Powell, Arnett, Logan, & Race. (abbreviated OTC)
+- [Entering the Conversation](https://wisc.pb.unizin.org/opencomp/front-matter/intro/) (abbreviated ETC), an open composition textbook by Naomi Salmon (Ed)
+- [Scientific Writing for Health Research](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/) (abbreviated SWHR), which is generally useful for scientific writing and statistical/data related topics not covered by the other two resources. 
+
+Other resources have been added to the course canvas page. All books and resources used in this course are available online or through the UNL library free of charge.
 
 # Class Schedule & Topic Outline
 
-This schedule is **tentative** and **subject to change**. Students are expected to read the corresponding textbook chapter (linked in Canvas) **before coming to class**. For the most part, for each week's topic, there will be one or two corresponding textbook chapters.
+This schedule is **tentative** and **subject to change**. Students are expected to read the corresponding textbook chapter(s) **before coming to class**. 
 
 \FloatBarrier
 
-```{r calendar}
+```{r calendar, error = T}
 #| echo: false
 #| eval: true
 #| warning: false
@@ -88,13 +93,13 @@ class_cal
 
 \small
 
-```{r schedule, eval = T, echo = F, fig.pos = 'h'}
-class_days %>% select(date, topic, time) %>%
-  mutate(time = ifelse(is.na(time), "", time)) %>%
-  mutate(date2 = format(date, "%b %e")) %>%
-  magrittr::set_names(c("date", "Topic", "Time", "Date")) %>%
-  select(Date, Time, Topic) %>%
-kableExtra::kable(caption = "Tentative schedule of class topics", format = "simple")
+```{r schedule}
+#| echo: false
+#| eval: true
+#| warning: false
+schedule %>%
+  tidyr::replace_na(list("Important Dates" = "")) %>%
+kableExtra::kable(caption = "Tentative schedule of class topics", format = "simple") 
 ```
 
 \normalsize
@@ -110,8 +115,9 @@ kableExtra::kable(caption = "Tentative schedule of class topics", format = "simp
 |--------------------------------|--------|
 | Reading Quizzes                | 10%    |
 | Homework                       | 50%    |
+| Technical Documentation Guide  | 10%    |
+| Portfolio                      | 10%    |
 | Business Report & Presentation | 20%    |
-| Research Paper & Poster        | 20%    |
 
 Lower bounds for grade cutoffs are shown in the following table. I will not "round up" grades at the end of the semester.
 
@@ -123,13 +129,17 @@ Lower bounds for grade cutoffs are shown in the following table. I will not "rou
 | D            | 67.0   | 64.0 | 61.0 |
 | F            | \<61.0 |      |      |
 
-Interpretation of this table: A grade of 84.3 will receive a B. A grade of 77.6 will receive a C+. A grade of 73.9 will receive a C-. Anything below a 61 will receive an F.
+Interpretation of this table: A grade of 84.3 will receive a B. A grade of 78.8 will receive a C+. A grade of 73.9 will receive a C-. Anything below a 61 will receive an F.
 
 ## Course Components
 
 ### Reading Quizzes
 
-You will have weekly reading assignments which introduce the weekly focus area. In order to motivate the importance of this reading, you will be given a weekly reading quiz on Canvas which covers the requisite material. These quizzes will be due before the first class of the week.
+You will have weekly reading assignments which introduce the weekly focus area. 
+In order to motivate the importance of this reading, you will be given a weekly reading quiz on Canvas which covers the requisite material. 
+These quizzes are open-note, but not open-classmate - please do them independently. 
+Quizzes will be due before the first class of the week (e.g. by 10 am Monday).
+No credit will be given for quizzes received after the due date/time.
 
 ### Homework
 
@@ -149,7 +159,11 @@ All students are expected to attend and fully participate in class activities. P
 
 ### Projects
 
-You will complete two major projects in this course: a business-style report and presentation, and a research-style paper and poster. These projects will be due during the second half of the semester, and will involve both in-person presentations and peer evaluations of other students' work.
+There are 3 primary projects in this course: a technical documentation guide based on a statistical journal article, a business report and presentation, and a portfolio showcasing your writing over the course of the semester. 
+As part of these projects, you will be expected to participate in peer evaluations of written and oral work, and provide thoughtful, constructive comments. 
+
+These projects have been designed to support your learning objectives and connect different topics throughout the course.
+Weekly homework assignments will often be related to your project topics and will help you to work through the writing revision cycle over the course of the semester. 
 
 # Course Policies
 
@@ -173,26 +187,24 @@ This policy is subject to the following constraints:
 
 -   Each assignment should be resubmitted only once.
 
--   Resubmissions are due no later than 2 weeks after the initial due date. In addition,
-
+-   Resubmissions are due no later than 2 weeks after the initial due date. In addition, to ensure adequate time to grade assignments, 
     -   Resubmissions from weeks 1-7 must be submitted by Friday at 5pm of week 8 of classes
     -   Resubmissions from weeks 8-14 must be submitted by Monday at 5pm of week 15 of classes
 
 -   Resubmitted assignments will be graded at my convenience.
 
-<!-- - You should resubmit assignments as soon as possible.     -->
-
-<!-- I reserve the right to cut off assignment resubmissions on a rolling basis (e.g. you have 3 weeks after the original due date) or based on the point in the semester (e.g. all homeworks due before Spring Break must be resubmitted by the week after we return from Spring Break). -->
-
-I spend the extra time grading resubmissions because it reinforces your learning; this policy is not designed to improve your grade in this class.\
-I reserve the right to adjust the resubmission policy over the course of the semester to ensure that it is meeting the objective of reinforcing your learning.\
-I reserve the right to limit or penalize resubmissions if it becomes clear that the current policy does not promote learning of the material and/or support the course objectives.
+I spend the extra time grading resubmissions because it reinforces your learning; while it may improve your grade, this is a side effect and not the primary goal.\
+I reserve the right to adjust the resubmission policy, limit resubmissions, or introduce a penalty for resubmissions during the semester to ensure that it is meeting the objective of reinforcing your learning.
 
 ## Attendance
 
-You are expected to attend class. Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
+You are expected to attend class, and I will take attendence periodically (not necessarily at every class session). 
+Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
 
-If you are feeling ill, please **do not come to class**. Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually. In the appointment reason field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
+If you are feeling ill, please **do not come to class**. 
+Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually within a week of the missed class date. 
+In the appointment description field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
+This will ensure that you still get participation points for up to 2 reasonable absences. 
 
 ## Inclement Weather
 

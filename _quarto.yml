@@ -1,16 +1,18 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs
   pre-render:
-    - scripts/update-assignment-dates.R
-    - scripts/hide-future-assignments.R
+    - code/gen-week-files-from-course-schedule.R
   render:
     - index.qmd
     - syllabus.qmd
+    - weeks/*.qmd
+    - activities/*.qmd
+    - business-report/*.qmd
+    - instructions/*.qmd
     - homework/*.qmd
-    - project/*.qmd
     - slides/*.qmd
-    - exams/*.qmd
+
 
 website:
   page-navigation: true

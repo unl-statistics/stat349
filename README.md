@@ -38,7 +38,7 @@ At the end of this course, students should know how to:
 -   Presentations
 
 | Component             | Statistical Report | Scientific Article | CV/Cover Letter |
-|--------------------|------------------|------------------|------------------|
+|-----------------------|--------------------|--------------------|-----------------|
 | Making an argument    | xx                 | xx                 | xx              |
 | Introduction          | xx                 | xx                 | x               |
 | Problem Statement     | xx                 | x                  | x               |
@@ -56,7 +56,7 @@ At the end of this course, students should know how to:
 # Timeline
 
 | Wk | Topic | Formative | Research Paper | Business Report |
-|---------------|---------------|---------------|---------------|---------------|
+|----|----|----|----|----|
 | 1 | Class Structure, Git review | GitHub pages setup, Find an internship/job to apply for |  |  |
 | 2 | CV/Cover Letter | Create Resume/CV and cover letter for job |  |  |
 | 3 | Citation manager, How to read technical papers, Summarizing papers | Annotated bibliography (2 refs) |  |  |

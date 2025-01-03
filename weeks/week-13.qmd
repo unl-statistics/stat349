@@ -1,0 +1,26 @@
+
+# Week 13: Business Reports and Presentations
+
+## 📖 Reading
+
+- [ ] Read [OTC 2.12 - Oral Presentations](https://alg.manifoldapp.org/read/open-technical-communication/section/e4660e24-17b6-4dcc-ac00-717c13bd30ff)
+- [ ] Read [OTC 4.1 – Report Design](https://alg.manifoldapp.org/read/open-technical-communication/section/967e506e-8d1e-4baf-bee2-8ace4ebf80f1) and skim 4.3-4.5
+
+### 🎯 Check your understanding
+
+- [ ] OTC 2.12
+
+## ☕ Monday
+
+- Business and Technical Reports -- general formatting and concerns
+
+## 🐪 Wednesday
+
+- In class activity: Analyzing government reports
+
+##️ 🏋️ Practice your skills
+
+- (not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report
+- (not turned in) Prepare business presentation slides/talk
+
+

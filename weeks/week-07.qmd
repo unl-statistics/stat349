@@ -1,0 +1,33 @@
+
+# Week 7: Methods & Procedures
+
+## 📖 Reading
+
+- [ ] Read [OTC 2.6 - Instructions](https://alg.manifoldapp.org/read/open-technical-communication/section/29783307-99ef-466b-af28-384980bfb23c)
+- [ ] Read [OTC 2.7 – User  Guides](https://alg.manifoldapp.org/read/open-technical-communication/section/15d19d46-ad79-4cec-bb8d-be6166bb3d8e)
+- [ ] Read [OTC 2.8 – SOP and Procedures](https://alg.manifoldapp.org/read/open-technical-communication/section/041bfbe4-dbc8-4eb8-ac86-13e1a33646cb)
+- [ ] Read [SWHR 3 – Methods](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/methods-section.html)
+
+### 🎯 Check your understanding
+
+- [ ] OTC 2.6-2.8
+- [ ] SWHR 3
+
+## 🥣 Prepare for class
+
+- [ ] For Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what's covered in that article)
+
+## ☕ Monday
+
+- Describing statistical methods
+- Writing good “how to” guides for others
+
+## 🐪 Wednesday
+
+- Documenting code
+
+##️ 🏋️ Practice your skills
+
+- [ ] Write a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)
+
+

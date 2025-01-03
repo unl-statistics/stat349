@@ -1,0 +1,28 @@
+
+# Week 8: Graphics
+
+## 📖 Reading
+
+- [ ] Read [SWHR 4 - Tables and Figures](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/tables-and-figures.html)
+- [ ] Read [OTC 4.7 – Tables, Charts, and Graphs](https://alg.manifoldapp.org/read/open-technical-communication/section/b1ca4069-52c9-49bb-9e47-510858d4e6f3)
+- [ ] Read [OTC 4.8 - Graphics](https://alg.manifoldapp.org/read/open-technical-communication/section/d03f3bce-d354-4976-b0cd-63a1476416c2)
+
+### 🎯 Check your understanding
+
+- [ ] SWHR 4
+- [ ] OTC 4.7-4.8
+
+## ☕ Monday
+
+- Tables and charts
+
+## 🐪 Wednesday
+
+- Diagrams
+- IKEA-style assembly diagram assessment
+
+##️ 🏋️ Practice your skills
+
+- (not turned in) Work on analysis and relevant graphics for your business report
+
+

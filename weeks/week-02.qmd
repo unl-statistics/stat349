@@ -1,0 +1,31 @@
+
+# Week 2: Communicating You!
+
+## 📖 Reading
+
+- [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
+
+### 🎯 Check your understanding
+
+- [ ] OTC Ch 2
+
+## 🥣 Prepare for class
+
+- [ ] For Wednesday: Draft CV and cover letter (bring 2 printed copies)
+
+## ☕ Monday
+
+- CV/cover letter important components
+- Find a quarto/LaTeX template for a CV and cover letter
+
+## 🐪 Wednesday
+
+- Peer Review CV/cover letter
+- Discuss how to give good feedback (based on [ETC](https://wisc.pb.unizin.org/opencomp/chapter/providing-good-feedback/))
+
+##️ 🏋️ Practice your skills
+
+- [ ] Add CV/cover letter to portfolio
+- [ ] Choose an Annual Review article from those offered – no duplicates
+
+
