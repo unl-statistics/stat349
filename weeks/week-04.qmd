@@ -22,7 +22,7 @@
 
 - Thing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?
 
-##️ 🏋️ Practice your skills
+##  🏋️ Practice your skills
 
 - [ ] Highlight transitions in your review article and comment on their effectiveness, obviousness, etc.
 - [ ] Create a reverse outline of your review article. Are there any obvious holes?

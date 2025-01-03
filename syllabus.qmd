@@ -11,7 +11,7 @@ format:
     - partials/before-body.tex
     - partials/graphics.tex
     dev: cairo_pdf
-title: Syllabus
+title: Syllabus- Technical Skills for Statisticians
 instructor: Susan Vanderplas
 semester: Spring 2025
 email: susan.vanderplas@unl.edu

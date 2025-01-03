@@ -19,9 +19,9 @@ MLK day
 
 - Introduction
 - Syllabus
-- [Set up Quarto portfolio site](instructions/setup-github-portfolio.qmd)
+- [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
 
-##️ 🏋️ Practice your skills
+##  🏋️ Practice your skills
 
 - [ ] Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)
 - [ ] Submit a link to your github pages portfolio site

@@ -30,7 +30,7 @@ week_template <- "
 
 {Wednesday_Class}
 
-##️ 🏋️ Practice your skills
+##  🏋️ Practice your skills
 
 {Assignments}
 
@@ -57,7 +57,7 @@ week_template_no_prep <- "
 
 {Wednesday_Class}
 
-##️ 🏋️ Practice your skills
+##  🏋️ Practice your skills
 
 {Assignments}
 

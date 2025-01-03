@@ -109,7 +109,7 @@ duedates <- filter(Cal, category == "Due date") |>
   select(sem_week, important)
 
 schedule <- topics |>
-  left_join(duedates) |>
+  full_join(duedates) |>
   arrange(sem_week) |>
   rename("Week" = sem_week, "Topic" = topic, "Important Dates" = important)
 

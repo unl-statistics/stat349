@@ -7,13 +7,14 @@ project:
     - index.qmd
     - syllabus.qmd
     - weeks/*.qmd
-    - activities/*.qmd
     - business-report/*.qmd
     - instructions/*.qmd
     - homework/*.qmd
     - slides/*.qmd
+  
 
 
+engine: knitr
 website:
   page-navigation: true
   title: "STAT 349 - Spring 2025"
@@ -32,10 +33,10 @@ website:
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2025, Susan Vanderplas"
-    background: "#807c71"
+    background: "#D3D3D3"
 
   sidebar:
-    background: "#807c71"
+    background: "#D3D3D3"
     logo: "images/logo.png"
     pinned: true
     align: center
@@ -46,13 +47,13 @@ website:
 
     style: "docked"
     search: true
-    collapse-level: 1
+    collapse-level: 2
     contents:
       - section: "Course information"
         contents:
           - href: course-overview.qmd
             text: Overview
-          - href: course-syllabus.qmd
+          - href: syllabus.qmd
             text: Syllabus
           - href: course-support.qmd
             text: Support
@@ -60,52 +61,38 @@ website:
             text: Schedule
           - href: course-links.qmd
             text: Useful links
-          - href: course-faq.qmd
-            text: FAQ
-      - section: "Computing"
-        contents:
-          - href: computing-access.qmd
-            text: Access
-          - href: computing-troubleshooting.qmd
-            text: Troubleshooting
-      - section: "Project"
-        contents:
-          - href: project-description.qmd
-            text: Description
-          - href: project-tips-resources.qmd
-            text: Tips + resources
       - section: "Weekly materials"
         contents:
-          - href: weeks/week-1.qmd
-            text: "Week 1"
-          - href: weeks/week-2.qmd
-            text: "Week 2"
-          - href: weeks/week-3.qmd
-            text: "Week 3"
-          - href: weeks/week-4.qmd
-            text: "Week 4"
-          - href: weeks/week-5.qmd
-            text: "Week 5"
-          - href: weeks/week-6.qmd
-            text: "Week 6"
-          - href: weeks/week-7.qmd
-            text: "Week 7"
-          - href: weeks/week-8.qmd
-            text: "Week 8"
-          - href: weeks/week-9.qmd
-            text: "Week 9"
+          - href: weeks/week-01.qmd
+            text: "Week 1 - Getting Started"
+          - href: weeks/week-02.qmd
+            text: "Week 2 - Resumes"
+          - href: weeks/week-03.qmd
+            text: "Week 3 - References"
+          - href: weeks/week-04.qmd
+            text: "Week 4 - Organization"
+          - href: weeks/week-05.qmd
+            text: "Week 5 - Arguments"
+          - href: weeks/week-06.qmd
+            text: "Week 6 - Problems & Data"
+          - href: weeks/week-07.qmd
+            text: "Week 7 - Methods"
+          - href: weeks/week-08.qmd
+            text: "Week 8 - Graphics"
+          - href: weeks/week-09.qmd
+            text: "Week 9 - Results"
           - href: weeks/week-10.qmd
-            text: "Week 10"
+            text: "Week 10 - Intro & Conclusions"
           - href: weeks/week-11.qmd
-            text: "Week 11"
+            text: "Week 11 - Summaries"
           - href: weeks/week-12.qmd
-            text: "Week 12"
+            text: "Week 12 - Fallacies"
           - href: weeks/week-13.qmd
-            text: "Week 13"
+            text: "Week 13 - Reports"
           - href: weeks/week-14.qmd
-            text: "Week 14"
+            text: "Week 14 - Editing"
           - href: weeks/week-15.qmd
-            text: "Week 15"
+            text: "Week 15 - Presentations"
 
 format:
   html:
@@ -113,8 +100,6 @@ format:
       light: [cosmo, theme.scss]
       dark: [cosmo, theme-dark.scss]
     mainfont: "Atkinson Hyperlegible"
-    code-copy: true
-    code-overflow: wrap
     toc: true
 
 freeze: auto

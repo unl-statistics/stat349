@@ -23,7 +23,7 @@
 - Discussion of essential components of data documentation
 - Data documentation that matters for statistical analysis
 
-##️ 🏋️ Practice your skills
+##  🏋️ Practice your skills
 
 - [ ] Document data that you plan to use for your business report
 

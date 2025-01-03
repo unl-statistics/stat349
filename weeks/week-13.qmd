@@ -18,9 +18,9 @@
 
 - In class activity: Analyzing government reports
 
-##️ 🏋️ Practice your skills
+##  🏋️ Practice your skills
 
-- (not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report
+- [ ] Rough draft of business report submitted along with to-do list
 - (not turned in) Prepare business presentation slides/talk
 
 

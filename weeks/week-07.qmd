@@ -26,7 +26,7 @@
 
 - Documenting code
 
-##️ 🏋️ Practice your skills
+##  🏋️ Practice your skills
 
 - [ ] Write a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)
 

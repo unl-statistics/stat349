@@ -41,7 +41,7 @@
 
 ## Assignments (Canvas)
 
-- Job to apply for -- submit a PDF of the job posting
++ Job to apply for -- submit a PDF of the job posting
 
 - CV/cover letter added to portfolio
 
