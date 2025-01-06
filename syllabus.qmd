@@ -114,10 +114,10 @@ kableExtra::kable(caption = "Tentative schedule of class topics", format = "simp
 | Assignments                    | Weight |
 |--------------------------------|--------|
 | Reading Quizzes                | 10%    |
-| Homework                       | 50%    |
-| Technical Documentation Guide  | 10%    |
-| Portfolio                      | 10%    |
+| Homework                       | 40%    |
+| Technical Documentation Guide  | 20%    |
 | Business Report & Presentation | 20%    |
+| Portfolio                      | 10%    |
 
 Lower bounds for grade cutoffs are shown in the following table. I will not "round up" grades at the end of the semester.
 
@@ -145,7 +145,9 @@ No credit will be given for quizzes received after the due date/time.
 
 Weekly formative assignments (assignments meant to help you practice skills) will be given throughout the semester. The only way to learn the skills taught in this course is to practice - writing, citing, doing research, summarizing, and so on.
 
--   You will typically have one week to work on each of the assignments.
+-   You will typically have about one week to work on each  assignment.
+
+-   Assignment due dates are specified on Canvas. 
 
 -   Assignments must be submitted in the file format specified, and should run or compile as submitted for credit to be given.
 
@@ -155,7 +157,9 @@ Weekly formative assignments (assignments meant to help you practice skills) wil
 
 ### Participation
 
-All students are expected to attend and fully participate in class activities. Participation grades will be determined based on a combination of class attendance and activities. Participation will be equivalent to a homework grade, and two absences are allowed without any reduction in participation score.
+All students are expected to attend and fully participate in class activities. 
+Participation grades will be determined based on a combination of class attendance and activities. 
+Participation will be equivalent to a homework grade, and two absences are allowed without any reduction in participation score.
 
 ### Projects
 
@@ -169,9 +173,23 @@ Weekly homework assignments will often be related to your project topics and wil
 
 ## Late Work Policy
 
-Late assignments will be accepted only under extenuating circumstances, and only if you have contacted me **prior** to the assignment due date and received permission to hand the assignment in late. I reserve the right not to grade (or to assign a 0 to) any assignments received after the assignment due date.
+I reserve the right not to grade (or to assign a 0 to) any assignments received after the assignment due date.
 
-You may submit an assignment that was not submitted in time as a resubmission, assuming it meets the conditions outlined in the next section.
+### Reading Quizzes
+No late reading quizzes will be accepted. 
+These quizzes are designed to ensure that you are prepared for class; accepting late quizzes does not meet this design goal. 
+
+
+### Projects
+Late projects/papers will not be excepted unless the following conditions are ALL met:
+
+- Extenuating circumstances that are not a result of poor planning (e.g. sudden death in the family, car accident, serious illness)
+- You contact me as soon as practical given the circumstances (prior to the due date), asking for permission to hand the assignment in late
+- I grant permission to hand the assignment in late
+- We agree on a new due date
+
+### Homework
+You may submit a homework assignment that was not submitted in time as a resubmission, assuming it meets the conditions outlined in the next section.
 
 ## Resubmission Policy
 
@@ -202,9 +220,10 @@ You are expected to attend class, and I will take attendence periodically (not n
 Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
 
 If you are feeling ill, please **do not come to class**. 
-Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually within a week of the missed class date. 
+Instead, review the material, work on the homework assignment, and get notes from a classmate.
+To make up your participation points, schedule an appointment with me to meet virtually within a week of the missed class date. 
 In the appointment description field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
-This will ensure that you still get participation points for up to 2 reasonable absences. 
+Calendly meetings will provide you with participation points for up to 2 absences. 
 
 ## Inclement Weather
 
@@ -214,16 +233,16 @@ If in-person classes are canceled, you will be notified of the instructional con
 
 You can expect me to:
 
--   reply to emails within 48 hours during the week (72 hours on weekends)
+-   reply to emails within 2 business days
 -   be available in class to assist with assignments
 -   be available by appointment for additional help or discussion
 
 I expect you to:
 
--   Complete the "prepare" module material before coming to class
+-   Complete the reading and class preparation material before coming to class
 -   Engage with the material and your classmates during class
 -   Seek help when you do not understand the material
--   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
+-   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course
 -   Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
 -   Be respectful and considerate of everyone in the class
 
@@ -251,7 +270,7 @@ With the proliferation of AI tools such as Chat-GPT, I reserve the right to repl
 
 ### Generative AI
 
-Technical writing is more clear and concise than other types of writing, and nuances are extremely important. To date, generative AI is not particularly good at these goals - it is wordy and uses nonstandard language, and as a predictive model, it cannot structure its output for human understanding. It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI for content.
+Technical writing is more clear and concise than other types of writing, and nuances are extremely important. To date, generative AI is not particularly good at these goals - it is wordy and uses nonstandard language, and as a predictive model, it cannot structure its output for human understanding. It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI to create any content for class assignments.
 
 Any use of generative AI must be disclosed in an appendix to your submission - this includes brainstorming, editing, using AI as spell-check/grammar-check, and so on. You must document the following:
 

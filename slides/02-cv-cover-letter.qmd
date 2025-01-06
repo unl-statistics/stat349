@@ -1,0 +1,68 @@
+---
+title: "Résumés, CVs, and Cover Letters"
+format: revealjs
+---
+
+## Setting the Scene
+
+- Communicate how awesome you are to a potential employer
+
+- Education
+- Experience
+- Skills
+
+## What is a CV?
+
+**Curriculum vitae** - literally, "course of life"
+
+- Usage is different in different countries
+
+![](https://upload.wikimedia.org/wikipedia/commons/e/ec/World_map_blank_without_borders.svg){fig-alt="World map"}
+
+## Resume vs. CV 🇺🇸
+
+- Résumé: short career summary
+    - standard for non academic jobs
+    - 1 page (2 for longer career)
+- CV: exhaustive list of everything you've done
+    - academic/research oriented jobs, grad school
+    - as many pages as necessary
+:::
+
+## Resume vs. CV (🇬🇧,🇦🇺)
+
+CV is used more than résumé
+
+- Complete professional/educational history
+- 2-3 pages
+
+(slightly longer US-style Résumé)
+
+
+## Essential information
+
+- Name
+- Contact information (address, phone, email)    
+[(be careful with what you post online)]{.small}
+
+- Objective - 1 sentence summary of your job search goal. 
+[Highlight skills if possible]{.small}
+
+- Education (school, location, graduation date)
+
+- Relevant experience (title, company, location, dates, brief list of duties)    
+[Include non-relevant experience only if space isn't limited.]{.small}
+
+- Skills
+
+## Additional useful information
+
+- Awards/Honors (name, awarding group, date)
+
+- Activities/Hobbies (role, if relevant, and dates)
+
+- References (2-3 people)
+    - Teacher/Professor
+    - Work supervisor (current/past)
+    - Coworker or character reference
+    

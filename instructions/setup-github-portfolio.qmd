@@ -8,15 +8,26 @@ title: "Setting Up a Github.io portfolio"
 
 2.  Create a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following [these directions](https://quarto.org/docs/websites/website-blog.html).
 
-3.  Set your site up to render to the docs directory ([detailed instructions](https://quarto.org/docs/publishing/github-pages.html)).
+3. Push your site (along with the `/docs` folder containing the rendered site) to GitHub. You can customize it later.
+
+4.  On GitHub, set your site to render to the docs directory ([detailed instructions](https://quarto.org/docs/publishing/github-pages.html)).
 
     -   [ ] Change your `_quarto.yml` file to have `output-dir: docs`
     -   [ ] Create an empty `.nojekyll` file in the main directory of your project repository
     -   [ ] Configure your GitHub repository (Settings -\> Pages -\> Build and Deployment) to publish the `/docs` directory of the `main` branch of your repository.
+    
+5. Check the rendered site (it should have an address of https://<username>.github.io/portfolio) -- it may take ~5 minutes to appear after you've completed step 4.
+
+6. Make any tweaks to your site that you'd like to make -- add pictures, a biography, posts about your interests, etc.
+    - The goal of this is to have a place where you can showcase your coursework for future employers. Keep it professional (but it's ok to have some information about your hobbies, if you want to show that dimension of yourself). 
+    - The department may eventually want to showcase some of these sites so that incoming students can see what current students accomplish as part of our courses. We will ask permission first!
+
+
+# Updating your site
 
 Rendering your site will be done manually -- thus, each time you want to update the actual site, you'll have to run the following commands in the **terminal** (not the R console):
 
-```
+```         
 quarto render
 git add docs
 git commit -m "Publish site to docs/"
@@ -25,12 +36,22 @@ git push
 
 (You can also accomplish this by hitting the Render button in RStudio and then adding and committing the docs folder in the git pane in RStudio.)
 
-If you're feeling fancy, you can automate this process using a GitHub action, but this is fiddly and probably not worth it unless you're actually planning to use this as a blog and update it frequently. If you decide to set everything up with Github Actions, that is fine, but I can only offer a minimal amount of help with debugging.
+If you're feeling fancy, you can [automate this process using a GitHub action](https://thedatasavvycorner.com/blogs/03-quarto-github-actions), but this is fiddly and probably not worth it unless you're actually planning to use this as a blog and update it frequently. 
+If you decide to set everything up with Github Actions, I can offer a minimal amount of help with debugging, but even I find them confusing.
+
+
 
 ::: callout-caution
 ### Rendering your site
 
-Updating the markdown files is not enough -- you have to render and push the docs folder for changes to show up on the site.
+Updating the markdown files is not enough -- you have to **render** (in e.g. RStudio) and **push the docs folder** for changes to show up on Github pages.
 
-If things aren't working, double check that running Render doesn't change anything in the Git pane, and then check that the `docs/` folder has been committed AND pushed to GitHub.
+If things aren't working, 
+
+- Run render via RStudio or by using `quarto render .` on the command line (in the project folder). 
+- Look for any un-pushed changes, either in the Git pane of RStudio (hit refresh) or by running `git status` on the command line. 
+- Check that the `docs/` folder has been committed AND pushed to GitHub.
+- Ask for help, either in class during some downtime, or by making an office hours appointment.
+
 :::
+

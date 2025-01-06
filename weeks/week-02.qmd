@@ -5,6 +5,7 @@
 
 - [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
 
+
 ### 🎯 Check your understanding
 
 - [ ] OTC Ch 2

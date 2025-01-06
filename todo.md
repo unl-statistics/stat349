@@ -3,7 +3,7 @@
 
 ## Quizzes
 
-- OTC Ch 1
+- ~~OTC Ch 1~~
 - OTC Ch 2
 - Week 3
   - OTC Ch 3

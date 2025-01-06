@@ -1,496 +1,472 @@
 [
   {
-    "objectID": "instructions/setup-github-portfolio.html",
-    "href": "instructions/setup-github-portfolio.html",
-    "title": "Setting Up a Github.io portfolio",
-    "section": "",
-    "text": "Steps\n\nCreate a github repository that is named “portfolio” and located at https://github.com/%3Cusername%3E/portfolio\nCreate a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following these directions.\nSet your site up to render to the docs directory (detailed instructions).\n\nChange your _quarto.yml file to have output-dir: docs\nCreate an empty .nojekyll file in the main directory of your project repository\nConfigure your GitHub repository (Settings -&gt; Pages -&gt; Build and Deployment) to publish the /docs directory of the main branch of your repository.\n\n\nRendering your site will be done manually – thus, each time you want to update the actual site, you’ll have to run the following commands in the terminal (not the R console):\nquarto render\ngit add docs\ngit commit -m \"Publish site to docs/\"\ngit push\n(You can also accomplish this by hitting the Render button in RStudio and then adding and committing the docs folder in the git pane in RStudio.)\nIf you’re feeling fancy, you can automate this process using a GitHub action, but this is fiddly and probably not worth it unless you’re actually planning to use this as a blog and update it frequently. If you decide to set everything up with Github Actions, that is fine, but I can only offer a minimal amount of help with debugging.\n\n\n\n\n\n\nRendering your site\n\n\n\nUpdating the markdown files is not enough – you have to render and push the docs folder for changes to show up on the site.\nIf things aren’t working, double check that running Render doesn’t change anything in the Git pane, and then check that the docs/ folder has been committed AND pushed to GitHub."
+    "objectID": "slides/02-cv-cover-letter.html#setting-the-scene",
+    "href": "slides/02-cv-cover-letter.html#setting-the-scene",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Setting the Scene",
+    "text": "Setting the Scene\n\nCommunicate how awesome you are to a potential employer\nEducation\nExperience\nSkills"
   },
   {
-    "objectID": "business-report/scenario-shark.html",
-    "href": "business-report/scenario-shark.html",
-    "title": "Sharknado!",
-    "section": "",
-    "text": "You are an analyst for an insurance agency concerned with increasing payouts for property damage with a warming climate. Your boss recently saw Sharknado (2013) while trying to battle insomnia, and has become concerned about the increased likelihood of shark-infested weather as severe weather events become more probable due to climate change.\nYour boss’s concerns about the possiblity of shark-infested storms cannot be countered with logic, but you might be able to convince them that very few storms even have shark-infestation potential.\nAssemble data from one or more reputable sources (NOAA, USGS, etc.).\nAssess the probability that tornadoes form in coastal areas (Atlantic, Pacific, and Gulf of Mexico) and move inward, compared to the probability that tornadoes form inland and move toward the coast. You should consider both the probability of a coastal -&gt; inland tornadic event and the consequences – a F0 tornado is unlikely to have the power to lift sharks from the water, while an F5 tornado might have the ability to transport many sharks inland. How serious is the sharknado threat to your bottom line?"
+    "objectID": "slides/02-cv-cover-letter.html#what-is-a-cv",
+    "href": "slides/02-cv-cover-letter.html#what-is-a-cv",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "What is a CV?",
+    "text": "What is a CV?\nCurriculum vitae - literally, “course of life”\n\nUsage is different in different countries"
   },
   {
-    "objectID": "business-report/scenario-nsfw.html",
-    "href": "business-report/scenario-nsfw.html",
-    "title": "Not Safe For Work",
-    "section": "",
-    "text": "Scenario Description:\nYou are a statistical analyst for a company with both industrial/manufacturing and office spaces. Your safety officer recently read this article about office injury statistics and wants you to evaluate whether the company needs to implement stronger safety policies for office workers, as they are more likely to be injured through falls than non-office workers.\nAssemble data from one or more reputable sources (Bureau of Labor Statistics, Centers for Disease Control, Occupational Safety and Health Administration) to assess the risk of on-the-job injury for office and non-office workers. Consider both the severity of the injury and the probability of occurrence."
+    "objectID": "slides/02-cv-cover-letter.html#resume-vs.-cv",
+    "href": "slides/02-cv-cover-letter.html#resume-vs.-cv",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Resume vs. CV 🇺🇸",
+    "text": "Resume vs. CV 🇺🇸\n\nRésumé: short career summary\n\nstandard for non academic jobs\n1 page (2 for longer career)\n\nCV: exhaustive list of everything you’ve done\n\nacademic/research oriented jobs, grad school\nas many pages as necessary :::"
   },
   {
-    "objectID": "weeks/week-15.html",
-    "href": "weeks/week-15.html",
-    "title": "Week 15: In Class Presentations",
+    "objectID": "slides/02-cv-cover-letter.html#resume-vs.-cv-1",
+    "href": "slides/02-cv-cover-letter.html#resume-vs.-cv-1",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Resume vs. CV (🇬🇧,🇦🇺)",
+    "text": "Resume vs. CV (🇬🇧,🇦🇺)\nCV is used more than résumé\n\nComplete professional/educational history\n2-3 pages\n\n(slightly longer US-style Résumé)"
+  },
+  {
+    "objectID": "slides/02-cv-cover-letter.html#essential-information",
+    "href": "slides/02-cv-cover-letter.html#essential-information",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Essential information",
+    "text": "Essential information\n\nName\nContact information (address, phone, email)\n(be careful with what you post online)\nObjective - 1 sentence summary of your job search goal. Highlight skills if possible\nEducation (school, location, graduation date)\nRelevant experience (title, company, location, dates, brief list of duties)\nInclude non-relevant experience only if space isn’t limited.\nSkills"
+  },
+  {
+    "objectID": "slides/02-cv-cover-letter.html#additional-useful-information",
+    "href": "slides/02-cv-cover-letter.html#additional-useful-information",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Additional useful information",
+    "text": "Additional useful information\n\nAwards/Honors (name, awarding group, date)\nActivities/Hobbies (role, if relevant, and dates)\nReferences (2-3 people)\n\nTeacher/Professor\nWork supervisor (current/past)\nCoworker or character reference"
+  },
+  {
+    "objectID": "instructions/intro-problem-statements.html",
+    "href": "instructions/intro-problem-statements.html",
+    "title": "Introductions & Problem Statements",
     "section": "",
-    "text": "None!\n\n\nNone!\n\n\n\n\n\nBusiness presentations\n\n\n\n\n\nBusiness presentations\n\n\n\n\n\nSlides for business presentation\nBusiness report due!\nProcedure/method guide, business report, and business presentation slides added to your portfolio. Portfolio link submitted to Canvas.",
+    "text": "Articles:\n\n2030 Census Research Recommendations\nNearly All U.S. Counties Had More Homeowners Than Renters Between 2019 and 2023\nWho Could Afford to Buy a Home in 2009? Affordability of Buying a Home in the United States\nEnabling Global Image Data Sharing in the Life Sciences\nWillful Winds: Hurricane Andrew and Louisiana’s Coast\nHurricane Katrina\nWater-Level and Recoverable Water in Storage Changes, High Plains Aquifer, Predevelopment to 2019 and 2017 to 2019"
+  },
+  {
+    "objectID": "business-report/scenario-power.html",
+    "href": "business-report/scenario-power.html",
+    "title": "The Power of Climate Change",
+    "section": "",
+    "text": "Scenario Description:\nYou are an analyst working for an electrical utility. A manager at one of the power plants has recently approached you about climate resilience strategies. The power plant is situated along the Gulf of Mexico in Dauphin Island, AL, and uses the Gulf as an heatsink.\nCurrently, the plant is designed around the assumption that the temperature of the gulf will be below 85\\(^\\circ\\)F (this assumption was relatively reasonable when the plant was built in 1970). When the water temperature is above this point, the plant must operate at reduced capacity, as it cannot transfer additional thermal energy into the water.\nAssemble data from one or more reputable sources (USGS, NOAA, US Energy Information Administration). Make an operational assessment of the risk that the plant will have to operate at reduced capacity during the next 5 years. Consider both the probability of reduced operating capacity as well as the timing of that capacity (e.g. you should also look at electrical usage during those periods)."
+  },
+  {
+    "objectID": "business-report/scenario-bridge.html",
+    "href": "business-report/scenario-bridge.html",
+    "title": "London Bridge is Falling Down",
+    "section": "",
+    "text": "Scenario Description:\nYou are an analyst for the Omaha, NE city government. The mayor, concerned about the degrading transportation infrastructure in the city, has asked you to assess the risk of bridge failure to the city, after well-publicized bridge collapses in cities on the East Coast in 2024.\nAssemble data from one or more reputable sources (State and national DOT, Army Corps of Engineers, etc.). Assess the risk of a bridge collapse event occurring over the next 5 years, using publicly available data. You should consider both the probability of such a collapse and the consequences – a small county road bridge collapse is less problematic than e.g. the I-80 bridge over the Missouri collapsing. What interventions do you recommend to minimize the risk?"
+  },
+  {
+    "objectID": "weeks/week-14.html",
+    "href": "weeks/week-14.html",
+    "title": "Week 14: Editing and Revising Your Work",
+    "section": "",
+    "text": "Read OTC 5.8 - Grammar, Usage, and Punctuation\nRead OTC 5.9 - Spelling\nRead OTC 5.10 – Peer Review\n\n\n\n\nOTC 5.8-5.10\n\n\n\n\n\n\nBring two copies of your business report - one for Monday, one for Wednesday (you may edit in between if you want to)\n\n\n\n\n\nPeer review day - business reports\n\n\n\n\n\nPeer review day - business reports\n\n\n\n\n\nMake edits from peer review comments",
     "crumbs": [
       "Weekly materials",
-      "Week 15"
+      "Week 14 - Editing"
     ]
   },
   {
-    "objectID": "weeks/week-15.html#reading",
-    "href": "weeks/week-15.html#reading",
-    "title": "Week 15: In Class Presentations",
+    "objectID": "weeks/week-14.html#reading",
+    "href": "weeks/week-14.html#reading",
+    "title": "Week 14: Editing and Revising Your Work",
     "section": "",
-    "text": "None!\n\n\nNone!",
+    "text": "Read OTC 5.8 - Grammar, Usage, and Punctuation\nRead OTC 5.9 - Spelling\nRead OTC 5.10 – Peer Review\n\n\n\n\nOTC 5.8-5.10",
     "crumbs": [
       "Weekly materials",
-      "Week 15"
+      "Week 14 - Editing"
     ]
   },
   {
-    "objectID": "weeks/week-15.html#monday",
-    "href": "weeks/week-15.html#monday",
-    "title": "Week 15: In Class Presentations",
+    "objectID": "weeks/week-14.html#prepare-for-class",
+    "href": "weeks/week-14.html#prepare-for-class",
+    "title": "Week 14: Editing and Revising Your Work",
     "section": "",
-    "text": "Business presentations",
+    "text": "Bring two copies of your business report - one for Monday, one for Wednesday (you may edit in between if you want to)",
     "crumbs": [
       "Weekly materials",
-      "Week 15"
+      "Week 14 - Editing"
     ]
   },
   {
-    "objectID": "weeks/week-15.html#wednesday",
-    "href": "weeks/week-15.html#wednesday",
-    "title": "Week 15: In Class Presentations",
+    "objectID": "weeks/week-14.html#monday",
+    "href": "weeks/week-14.html#monday",
+    "title": "Week 14: Editing and Revising Your Work",
     "section": "",
-    "text": "Business presentations",
+    "text": "Peer review day - business reports",
     "crumbs": [
       "Weekly materials",
-      "Week 15"
+      "Week 14 - Editing"
     ]
   },
   {
-    "objectID": "weeks/week-15.html#practice-your-skills",
-    "href": "weeks/week-15.html#practice-your-skills",
-    "title": "Week 15: In Class Presentations",
+    "objectID": "weeks/week-14.html#wednesday",
+    "href": "weeks/week-14.html#wednesday",
+    "title": "Week 14: Editing and Revising Your Work",
     "section": "",
-    "text": "Slides for business presentation\nBusiness report due!\nProcedure/method guide, business report, and business presentation slides added to your portfolio. Portfolio link submitted to Canvas.",
+    "text": "Peer review day - business reports",
     "crumbs": [
       "Weekly materials",
-      "Week 15"
+      "Week 14 - Editing"
     ]
   },
   {
-    "objectID": "weeks/week-13.html",
-    "href": "weeks/week-13.html",
-    "title": "Week 13: Business Reports and Presentations",
+    "objectID": "weeks/week-14.html#practice-your-skills",
+    "href": "weeks/week-14.html#practice-your-skills",
+    "title": "Week 14: Editing and Revising Your Work",
     "section": "",
-    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12\n\n\n\n\n\n\nBusiness and Technical Reports – general formatting and concerns\n\n\n\n\n\nIn class activity: Analyzing government reports\n\n\n\n\n\nRough draft of business report submitted along with to-do list\n(not turned in) Prepare business presentation slides/talk",
+    "text": "Make edits from peer review comments",
     "crumbs": [
       "Weekly materials",
-      "Week 13"
+      "Week 14 - Editing"
     ]
   },
   {
-    "objectID": "weeks/week-13.html#reading",
-    "href": "weeks/week-13.html#reading",
-    "title": "Week 13: Business Reports and Presentations",
+    "objectID": "weeks/week-12.html",
+    "href": "weeks/week-12.html",
+    "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12",
+    "text": "Read OTC 5.13-5.15 - Logic\nRead Wikipedia’s article on Misuse of Statistics\nRead The Misuse of Statistics\n\n\n\n\nOTC 5.13-5.15\nWikipedia Misuse of Statistics\n\n\n\n\n\n\nLogical fallacies in the workplace in-class activity\n\n\n\n\n\nStatistical misunderstandings and how to counter them – class discussion\n\n\n\n\n\n(not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report",
     "crumbs": [
       "Weekly materials",
-      "Week 13"
+      "Week 12 - Fallacies"
     ]
   },
   {
-    "objectID": "weeks/week-13.html#monday",
-    "href": "weeks/week-13.html#monday",
-    "title": "Week 13: Business Reports and Presentations",
+    "objectID": "weeks/week-12.html#reading",
+    "href": "weeks/week-12.html#reading",
+    "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "Business and Technical Reports – general formatting and concerns",
+    "text": "Read OTC 5.13-5.15 - Logic\nRead Wikipedia’s article on Misuse of Statistics\nRead The Misuse of Statistics\n\n\n\n\nOTC 5.13-5.15\nWikipedia Misuse of Statistics",
     "crumbs": [
       "Weekly materials",
-      "Week 13"
+      "Week 12 - Fallacies"
     ]
   },
   {
-    "objectID": "weeks/week-13.html#wednesday",
-    "href": "weeks/week-13.html#wednesday",
-    "title": "Week 13: Business Reports and Presentations",
+    "objectID": "weeks/week-12.html#monday",
+    "href": "weeks/week-12.html#monday",
+    "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "In class activity: Analyzing government reports",
+    "text": "Logical fallacies in the workplace in-class activity",
     "crumbs": [
       "Weekly materials",
-      "Week 13"
+      "Week 12 - Fallacies"
     ]
   },
   {
-    "objectID": "weeks/week-13.html#practice-your-skills",
-    "href": "weeks/week-13.html#practice-your-skills",
-    "title": "Week 13: Business Reports and Presentations",
+    "objectID": "weeks/week-12.html#wednesday",
+    "href": "weeks/week-12.html#wednesday",
+    "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "Rough draft of business report submitted along with to-do list\n(not turned in) Prepare business presentation slides/talk",
+    "text": "Statistical misunderstandings and how to counter them – class discussion",
     "crumbs": [
       "Weekly materials",
-      "Week 13"
+      "Week 12 - Fallacies"
     ]
   },
   {
-    "objectID": "weeks/week-11.html",
-    "href": "weeks/week-11.html",
-    "title": "Week 11: Abstracts & Summaries",
+    "objectID": "weeks/week-12.html#practice-your-skills",
+    "href": "weeks/week-12.html#practice-your-skills",
+    "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "Read SWHR 7 - Title & Abstract\nRead OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions\n\n\n\n\nSWHR 7\nOTC 2.11\n\n\n\n\n\n\nFor Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?\n\n\n\n\n\nAbstracts\n\n\n\n\n\nExecutive Summaries - Class discussion\n\n\n\n\n\nDraft of executive summary of business report",
+    "text": "(not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report",
     "crumbs": [
       "Weekly materials",
-      "Week 11"
+      "Week 12 - Fallacies"
     ]
   },
   {
-    "objectID": "weeks/week-11.html#reading",
-    "href": "weeks/week-11.html#reading",
-    "title": "Week 11: Abstracts & Summaries",
+    "objectID": "weeks/week-10.html",
+    "href": "weeks/week-10.html",
+    "title": "Week 10: Introductions and Conclusions",
     "section": "",
-    "text": "Read SWHR 7 - Title & Abstract\nRead OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions\n\n\n\n\nSWHR 7\nOTC 2.11",
+    "text": "Read SWHR 2 - Introduction\nRead SWHR 6 - Discussion\n\n\n\n\nSWHR 2, 6\n\n\n\n\n\n\nIntroductions\n\n\n\n\n\nConclusions\n\n\n\n\n\nDraft of introduction and conclusion sections of business report",
     "crumbs": [
       "Weekly materials",
-      "Week 11"
+      "Week 10 - Intro & Conclusions"
     ]
   },
   {
-    "objectID": "weeks/week-11.html#prepare-for-class",
-    "href": "weeks/week-11.html#prepare-for-class",
-    "title": "Week 11: Abstracts & Summaries",
+    "objectID": "weeks/week-10.html#reading",
+    "href": "weeks/week-10.html#reading",
+    "title": "Week 10: Introductions and Conclusions",
     "section": "",
-    "text": "For Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?",
+    "text": "Read SWHR 2 - Introduction\nRead SWHR 6 - Discussion\n\n\n\n\nSWHR 2, 6",
     "crumbs": [
       "Weekly materials",
-      "Week 11"
+      "Week 10 - Intro & Conclusions"
     ]
   },
   {
-    "objectID": "weeks/week-11.html#monday",
-    "href": "weeks/week-11.html#monday",
-    "title": "Week 11: Abstracts & Summaries",
+    "objectID": "weeks/week-10.html#monday",
+    "href": "weeks/week-10.html#monday",
+    "title": "Week 10: Introductions and Conclusions",
     "section": "",
-    "text": "Abstracts",
+    "text": "Introductions",
     "crumbs": [
       "Weekly materials",
-      "Week 11"
+      "Week 10 - Intro & Conclusions"
     ]
   },
   {
-    "objectID": "weeks/week-11.html#wednesday",
-    "href": "weeks/week-11.html#wednesday",
-    "title": "Week 11: Abstracts & Summaries",
+    "objectID": "weeks/week-10.html#wednesday",
+    "href": "weeks/week-10.html#wednesday",
+    "title": "Week 10: Introductions and Conclusions",
     "section": "",
-    "text": "Executive Summaries - Class discussion",
+    "text": "Conclusions",
     "crumbs": [
       "Weekly materials",
-      "Week 11"
+      "Week 10 - Intro & Conclusions"
     ]
   },
   {
-    "objectID": "weeks/week-11.html#practice-your-skills",
-    "href": "weeks/week-11.html#practice-your-skills",
-    "title": "Week 11: Abstracts & Summaries",
+    "objectID": "weeks/week-10.html#practice-your-skills",
+    "href": "weeks/week-10.html#practice-your-skills",
+    "title": "Week 10: Introductions and Conclusions",
     "section": "",
-    "text": "Draft of executive summary of business report",
+    "text": "Draft of introduction and conclusion sections of business report",
     "crumbs": [
       "Weekly materials",
-      "Week 11"
+      "Week 10 - Intro & Conclusions"
     ]
   },
   {
-    "objectID": "weeks/week-09.html",
-    "href": "weeks/week-09.html",
-    "title": "Week 9: Results",
+    "objectID": "weeks/week-08.html",
+    "href": "weeks/week-08.html",
+    "title": "Week 8: Charts, Tables, and Diagrams",
     "section": "",
-    "text": "Read SWHR 5 - Results\n\n\n\n\nSWHR 5\n\n\n\n\n\n\nDescribing results – level of detail and role of supplementary documentation\n\n\n\n\n\nIntegrating results and visual aids\nCountering misunderstandings\n\n\n\n\n\nDraft of results section of business report with relevant graphics/visual aids",
+    "text": "Read SWHR 4 - Tables and Figures\nRead OTC 4.7 – Tables, Charts, and Graphs\nRead OTC 4.8 - Graphics\n\n\n\n\nSWHR 4\nOTC 4.7-4.8\n\n\n\n\n\n\nTables and charts\n\n\n\n\n\nDiagrams\nIKEA-style assembly diagram assessment\n\n\n\n\n\n(not turned in) Work on analysis and relevant graphics for your business report",
     "crumbs": [
       "Weekly materials",
-      "Week 9"
+      "Week 8 - Graphics"
     ]
   },
   {
-    "objectID": "weeks/week-09.html#reading",
-    "href": "weeks/week-09.html#reading",
-    "title": "Week 9: Results",
+    "objectID": "weeks/week-08.html#reading",
+    "href": "weeks/week-08.html#reading",
+    "title": "Week 8: Charts, Tables, and Diagrams",
     "section": "",
-    "text": "Read SWHR 5 - Results\n\n\n\n\nSWHR 5",
+    "text": "Read SWHR 4 - Tables and Figures\nRead OTC 4.7 – Tables, Charts, and Graphs\nRead OTC 4.8 - Graphics\n\n\n\n\nSWHR 4\nOTC 4.7-4.8",
     "crumbs": [
       "Weekly materials",
-      "Week 9"
+      "Week 8 - Graphics"
     ]
   },
   {
-    "objectID": "weeks/week-09.html#monday",
-    "href": "weeks/week-09.html#monday",
-    "title": "Week 9: Results",
+    "objectID": "weeks/week-08.html#monday",
+    "href": "weeks/week-08.html#monday",
+    "title": "Week 8: Charts, Tables, and Diagrams",
     "section": "",
-    "text": "Describing results – level of detail and role of supplementary documentation",
+    "text": "Tables and charts",
     "crumbs": [
       "Weekly materials",
-      "Week 9"
+      "Week 8 - Graphics"
     ]
   },
   {
-    "objectID": "weeks/week-09.html#wednesday",
-    "href": "weeks/week-09.html#wednesday",
-    "title": "Week 9: Results",
+    "objectID": "weeks/week-08.html#wednesday",
+    "href": "weeks/week-08.html#wednesday",
+    "title": "Week 8: Charts, Tables, and Diagrams",
     "section": "",
-    "text": "Integrating results and visual aids\nCountering misunderstandings",
+    "text": "Diagrams\nIKEA-style assembly diagram assessment",
     "crumbs": [
       "Weekly materials",
-      "Week 9"
+      "Week 8 - Graphics"
     ]
   },
   {
-    "objectID": "weeks/week-09.html#practice-your-skills",
-    "href": "weeks/week-09.html#practice-your-skills",
-    "title": "Week 9: Results",
+    "objectID": "weeks/week-08.html#practice-your-skills",
+    "href": "weeks/week-08.html#practice-your-skills",
+    "title": "Week 8: Charts, Tables, and Diagrams",
     "section": "",
-    "text": "Draft of results section of business report with relevant graphics/visual aids",
+    "text": "(not turned in) Work on analysis and relevant graphics for your business report",
     "crumbs": [
       "Weekly materials",
-      "Week 9"
+      "Week 8 - Graphics"
     ]
   },
   {
-    "objectID": "weeks/week-07.html",
-    "href": "weeks/week-07.html",
-    "title": "Week 7: Methods & Procedures",
+    "objectID": "weeks/week-06.html",
+    "href": "weeks/week-06.html",
+    "title": "Week 6: Problem Statements & Data",
     "section": "",
-    "text": "Read OTC 2.6 - Instructions\nRead OTC 2.7 – User Guides\nRead OTC 2.8 – SOP and Procedures\nRead SWHR 3 – Methods\n\n\n\n\nOTC 2.6-2.8\nSWHR 3\n\n\n\n\n\n\nFor Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what’s covered in that article)\n\n\n\n\n\nDescribing statistical methods\nWriting good “how to” guides for others\n\n\n\n\n\nDocumenting code\n\n\n\n\n\nWrite a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)",
+    "text": "Read UW’s guide to data documentation\nRead OTC Chapter 2.9 – Recommendation and Feasibility Reports\nRead SWHR 1.1 – 1.3 – Research Question\n\n\n\n\nUW Data documentation guide\nOTC 2.9\n\n\n\n\n\n\nProblem Statements\nIn class activity: write good problem statements for examples\n\n\n\n\n\nDocumenting Data\nDiscussion of essential components of data documentation\nData documentation that matters for statistical analysis\n\n\n\n\n\nDocument data that you plan to use for your business report",
     "crumbs": [
       "Weekly materials",
-      "Week 7"
+      "Week 6 - Problems & Data"
     ]
   },
   {
-    "objectID": "weeks/week-07.html#reading",
-    "href": "weeks/week-07.html#reading",
-    "title": "Week 7: Methods & Procedures",
+    "objectID": "weeks/week-06.html#reading",
+    "href": "weeks/week-06.html#reading",
+    "title": "Week 6: Problem Statements & Data",
     "section": "",
-    "text": "Read OTC 2.6 - Instructions\nRead OTC 2.7 – User Guides\nRead OTC 2.8 – SOP and Procedures\nRead SWHR 3 – Methods\n\n\n\n\nOTC 2.6-2.8\nSWHR 3",
+    "text": "Read UW’s guide to data documentation\nRead OTC Chapter 2.9 – Recommendation and Feasibility Reports\nRead SWHR 1.1 – 1.3 – Research Question\n\n\n\n\nUW Data documentation guide\nOTC 2.9",
     "crumbs": [
       "Weekly materials",
-      "Week 7"
+      "Week 6 - Problems & Data"
     ]
   },
   {
-    "objectID": "weeks/week-07.html#prepare-for-class",
-    "href": "weeks/week-07.html#prepare-for-class",
-    "title": "Week 7: Methods & Procedures",
+    "objectID": "weeks/week-06.html#monday",
+    "href": "weeks/week-06.html#monday",
+    "title": "Week 6: Problem Statements & Data",
     "section": "",
-    "text": "For Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what’s covered in that article)",
+    "text": "Problem Statements\nIn class activity: write good problem statements for examples",
     "crumbs": [
       "Weekly materials",
-      "Week 7"
+      "Week 6 - Problems & Data"
     ]
   },
   {
-    "objectID": "weeks/week-07.html#monday",
-    "href": "weeks/week-07.html#monday",
-    "title": "Week 7: Methods & Procedures",
+    "objectID": "weeks/week-06.html#wednesday",
+    "href": "weeks/week-06.html#wednesday",
+    "title": "Week 6: Problem Statements & Data",
     "section": "",
-    "text": "Describing statistical methods\nWriting good “how to” guides for others",
+    "text": "Documenting Data\nDiscussion of essential components of data documentation\nData documentation that matters for statistical analysis",
     "crumbs": [
       "Weekly materials",
-      "Week 7"
+      "Week 6 - Problems & Data"
     ]
   },
   {
-    "objectID": "weeks/week-07.html#wednesday",
-    "href": "weeks/week-07.html#wednesday",
-    "title": "Week 7: Methods & Procedures",
+    "objectID": "weeks/week-06.html#practice-your-skills",
+    "href": "weeks/week-06.html#practice-your-skills",
+    "title": "Week 6: Problem Statements & Data",
     "section": "",
-    "text": "Documenting code",
+    "text": "Document data that you plan to use for your business report",
     "crumbs": [
       "Weekly materials",
-      "Week 7"
+      "Week 6 - Problems & Data"
     ]
   },
   {
-    "objectID": "weeks/week-07.html#practice-your-skills",
-    "href": "weeks/week-07.html#practice-your-skills",
-    "title": "Week 7: Methods & Procedures",
+    "objectID": "weeks/week-04.html",
+    "href": "weeks/week-04.html",
+    "title": "Week 4: Organizing Information",
     "section": "",
-    "text": "Write a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)",
+    "text": "Read ETC Patterns of Organization and Methods of Development\nRead ETC Transitions and Organization\nRead ETC Reverse Outlining\nRead ETC Reading Games\n\n\n\n\nETC Patterns of Organization\nETC Transitions and Organization\nETC Reading Games\n\n\n\n\n\n\nOrganization and Transitions in writing\n\n\n\n\n\nThing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?\n\n\n\n\n\nHighlight transitions in your review article and comment on their effectiveness, obviousness, etc.\nCreate a reverse outline of your review article. Are there any obvious holes?",
     "crumbs": [
       "Weekly materials",
-      "Week 7"
+      "Week 4 - Organization"
     ]
   },
   {
-    "objectID": "weeks/week-05.html",
-    "href": "weeks/week-05.html",
-    "title": "Week 5: Making an Argument",
+    "objectID": "weeks/week-04.html#reading",
+    "href": "weeks/week-04.html#reading",
+    "title": "Week 4: Organizing Information",
     "section": "",
-    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis\n\n\n\n\n\n\nBasic components of argument and rhetoric in scientific writing\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)",
+    "text": "Read ETC Patterns of Organization and Methods of Development\nRead ETC Transitions and Organization\nRead ETC Reverse Outlining\nRead ETC Reading Games\n\n\n\n\nETC Patterns of Organization\nETC Transitions and Organization\nETC Reading Games",
     "crumbs": [
       "Weekly materials",
-      "Week 5"
+      "Week 4 - Organization"
     ]
   },
   {
-    "objectID": "weeks/week-05.html#reading",
-    "href": "weeks/week-05.html#reading",
-    "title": "Week 5: Making an Argument",
+    "objectID": "weeks/week-04.html#monday",
+    "href": "weeks/week-04.html#monday",
+    "title": "Week 4: Organizing Information",
     "section": "",
-    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis",
+    "text": "Organization and Transitions in writing",
     "crumbs": [
       "Weekly materials",
-      "Week 5"
+      "Week 4 - Organization"
     ]
   },
   {
-    "objectID": "weeks/week-05.html#monday",
-    "href": "weeks/week-05.html#monday",
-    "title": "Week 5: Making an Argument",
+    "objectID": "weeks/week-04.html#wednesday",
+    "href": "weeks/week-04.html#wednesday",
+    "title": "Week 4: Organizing Information",
     "section": "",
-    "text": "Basic components of argument and rhetoric in scientific writing",
+    "text": "Thing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?",
     "crumbs": [
       "Weekly materials",
-      "Week 5"
+      "Week 4 - Organization"
     ]
   },
   {
-    "objectID": "weeks/week-05.html#wednesday",
-    "href": "weeks/week-05.html#wednesday",
-    "title": "Week 5: Making an Argument",
+    "objectID": "weeks/week-04.html#practice-your-skills",
+    "href": "weeks/week-04.html#practice-your-skills",
+    "title": "Week 4: Organizing Information",
     "section": "",
-    "text": "In class activity: Arguments in scientific and technical writing",
+    "text": "Highlight transitions in your review article and comment on their effectiveness, obviousness, etc.\nCreate a reverse outline of your review article. Are there any obvious holes?",
     "crumbs": [
       "Weekly materials",
-      "Week 5"
+      "Week 4 - Organization"
     ]
   },
   {
-    "objectID": "weeks/week-05.html#practice-your-skills",
-    "href": "weeks/week-05.html#practice-your-skills",
-    "title": "Week 5: Making an Argument",
+    "objectID": "weeks/week-02.html",
+    "href": "weeks/week-02.html",
+    "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "Analyze the rhetorical decisions and arguments in your research article (1 pg summary)",
+    "text": "Read OTC Chapter 2\n\n\n\n\nOTC Ch 2\n\n\n\n\n\n\nFor Wednesday: Draft CV and cover letter (bring 2 printed copies)\n\n\n\n\n\nCV/cover letter important components\nFind a quarto/LaTeX template for a CV and cover letter\n\n\n\n\n\nPeer Review CV/cover letter\nDiscuss how to give good feedback (based on ETC)\n\n\n\n\n\nAdd CV/cover letter to portfolio\nChoose an Annual Review article from those offered – no duplicates",
     "crumbs": [
       "Weekly materials",
-      "Week 5"
+      "Week 2 - Resumes"
     ]
   },
   {
-    "objectID": "weeks/week-03.html",
-    "href": "weeks/week-03.html",
-    "title": "Week 3: References",
+    "objectID": "weeks/week-02.html#reading",
+    "href": "weeks/week-02.html#reading",
+    "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "Read OTC Chapter 5.6 – References\nRead OTC Chapter 3 - Ethics\nRead ETC Annoying Ways People Use Sources\n\n\n\n\nOTC Ch 3\nOTC Ch 5.6\n\n\n\n\n\n\nFor Monday: Download and Install Zotero citation manager and Zotero Connector for your preferred browser\n\n\n\n\n\nCitation Managers – Demonstrate Zotero features\n\n\n\n\n\nHow to read technical reports and academic articles\nHow to summarize (without ChatGPT)\n\n\n\n\n\nCreate an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article.",
+    "text": "Read OTC Chapter 2\n\n\n\n\nOTC Ch 2",
     "crumbs": [
       "Weekly materials",
-      "Week 3"
+      "Week 2 - Resumes"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#reading",
-    "href": "weeks/week-03.html#reading",
-    "title": "Week 3: References",
+    "objectID": "weeks/week-02.html#prepare-for-class",
+    "href": "weeks/week-02.html#prepare-for-class",
+    "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "Read OTC Chapter 5.6 – References\nRead OTC Chapter 3 - Ethics\nRead ETC Annoying Ways People Use Sources\n\n\n\n\nOTC Ch 3\nOTC Ch 5.6",
+    "text": "For Wednesday: Draft CV and cover letter (bring 2 printed copies)",
     "crumbs": [
       "Weekly materials",
-      "Week 3"
+      "Week 2 - Resumes"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#prepare-for-class",
-    "href": "weeks/week-03.html#prepare-for-class",
-    "title": "Week 3: References",
+    "objectID": "weeks/week-02.html#monday",
+    "href": "weeks/week-02.html#monday",
+    "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "For Monday: Download and Install Zotero citation manager and Zotero Connector for your preferred browser",
+    "text": "CV/cover letter important components\nFind a quarto/LaTeX template for a CV and cover letter",
     "crumbs": [
       "Weekly materials",
-      "Week 3"
+      "Week 2 - Resumes"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#monday",
-    "href": "weeks/week-03.html#monday",
-    "title": "Week 3: References",
+    "objectID": "weeks/week-02.html#wednesday",
+    "href": "weeks/week-02.html#wednesday",
+    "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "Citation Managers – Demonstrate Zotero features",
+    "text": "Peer Review CV/cover letter\nDiscuss how to give good feedback (based on ETC)",
     "crumbs": [
       "Weekly materials",
-      "Week 3"
+      "Week 2 - Resumes"
     ]
   },
   {
-    "objectID": "weeks/week-03.html#wednesday",
-    "href": "weeks/week-03.html#wednesday",
-    "title": "Week 3: References",
+    "objectID": "weeks/week-02.html#practice-your-skills",
+    "href": "weeks/week-02.html#practice-your-skills",
+    "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "How to read technical reports and academic articles\nHow to summarize (without ChatGPT)",
+    "text": "Add CV/cover letter to portfolio\nChoose an Annual Review article from those offered – no duplicates",
     "crumbs": [
       "Weekly materials",
-      "Week 3"
-    ]
-  },
-  {
-    "objectID": "weeks/week-03.html#practice-your-skills",
-    "href": "weeks/week-03.html#practice-your-skills",
-    "title": "Week 3: References",
-    "section": "",
-    "text": "Create an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article.",
-    "crumbs": [
-      "Weekly materials",
-      "Week 3"
-    ]
-  },
-  {
-    "objectID": "weeks/week-01.html",
-    "href": "weeks/week-01.html",
-    "title": "Week 1: Getting Started",
-    "section": "",
-    "text": "Read the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\nOTC Ch 1\n\n\n\n\n\nMLK day\n\n\n\n\nIntroduction\nSyllabus\nSet up Quarto portfolio site\n\n\n\n\n\nFind a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)\nSubmit a link to your github pages portfolio site",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-01.html#reading",
-    "href": "weeks/week-01.html#reading",
-    "title": "Week 1: Getting Started",
-    "section": "",
-    "text": "Read the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\nOTC Ch 1",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-01.html#monday",
-    "href": "weeks/week-01.html#monday",
-    "title": "Week 1: Getting Started",
-    "section": "",
-    "text": "MLK day",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-01.html#wednesday",
-    "href": "weeks/week-01.html#wednesday",
-    "title": "Week 1: Getting Started",
-    "section": "",
-    "text": "Introduction\nSyllabus\nSet up Quarto portfolio site",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
-    ]
-  },
-  {
-    "objectID": "weeks/week-01.html#practice-your-skills",
-    "href": "weeks/week-01.html#practice-your-skills",
-    "title": "Week 1: Getting Started",
-    "section": "",
-    "text": "Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)\nSubmit a link to your github pages portfolio site",
-    "crumbs": [
-      "Weekly materials",
-      "Week 1"
+      "Week 2 - Resumes"
     ]
   },
   {
@@ -505,431 +481,497 @@
     ]
   },
   {
-    "objectID": "weeks/week-02.html",
-    "href": "weeks/week-02.html",
-    "title": "Week 2: Communicating You!",
+    "objectID": "weeks/week-01.html",
+    "href": "weeks/week-01.html",
+    "title": "Week 1: Getting Started",
     "section": "",
-    "text": "Read OTC Chapter 2\n\n\n\n\nOTC Ch 2\n\n\n\n\n\n\nFor Wednesday: Draft CV and cover letter (bring 2 printed copies)\n\n\n\n\n\nCV/cover letter important components\nFind a quarto/LaTeX template for a CV and cover letter\n\n\n\n\n\nPeer Review CV/cover letter\nDiscuss how to give good feedback (based on ETC)\n\n\n\n\n\nAdd CV/cover letter to portfolio\nChoose an Annual Review article from those offered – no duplicates",
+    "text": "Read the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\nOTC Ch 1\n\n\n\n\n\nMLK day\n\n\n\n\nIntroduction\nSyllabus\nSet up Quarto portfolio site\n\n\n\n\n\nFind a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)\nSubmit a link to your github pages portfolio site",
     "crumbs": [
       "Weekly materials",
-      "Week 2"
+      "Week 1 - Getting Started"
     ]
   },
   {
-    "objectID": "weeks/week-02.html#reading",
-    "href": "weeks/week-02.html#reading",
-    "title": "Week 2: Communicating You!",
+    "objectID": "weeks/week-01.html#reading",
+    "href": "weeks/week-01.html#reading",
+    "title": "Week 1: Getting Started",
     "section": "",
-    "text": "Read OTC Chapter 2\n\n\n\n\nOTC Ch 2",
+    "text": "Read the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\nOTC Ch 1",
     "crumbs": [
       "Weekly materials",
-      "Week 2"
+      "Week 1 - Getting Started"
     ]
   },
   {
-    "objectID": "weeks/week-02.html#prepare-for-class",
-    "href": "weeks/week-02.html#prepare-for-class",
-    "title": "Week 2: Communicating You!",
+    "objectID": "weeks/week-01.html#monday",
+    "href": "weeks/week-01.html#monday",
+    "title": "Week 1: Getting Started",
     "section": "",
-    "text": "For Wednesday: Draft CV and cover letter (bring 2 printed copies)",
+    "text": "MLK day",
     "crumbs": [
       "Weekly materials",
-      "Week 2"
+      "Week 1 - Getting Started"
     ]
   },
   {
-    "objectID": "weeks/week-02.html#monday",
-    "href": "weeks/week-02.html#monday",
-    "title": "Week 2: Communicating You!",
+    "objectID": "weeks/week-01.html#wednesday",
+    "href": "weeks/week-01.html#wednesday",
+    "title": "Week 1: Getting Started",
     "section": "",
-    "text": "CV/cover letter important components\nFind a quarto/LaTeX template for a CV and cover letter",
+    "text": "Introduction\nSyllabus\nSet up Quarto portfolio site",
     "crumbs": [
       "Weekly materials",
-      "Week 2"
+      "Week 1 - Getting Started"
     ]
   },
   {
-    "objectID": "weeks/week-02.html#wednesday",
-    "href": "weeks/week-02.html#wednesday",
-    "title": "Week 2: Communicating You!",
+    "objectID": "weeks/week-01.html#practice-your-skills",
+    "href": "weeks/week-01.html#practice-your-skills",
+    "title": "Week 1: Getting Started",
     "section": "",
-    "text": "Peer Review CV/cover letter\nDiscuss how to give good feedback (based on ETC)",
+    "text": "Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)\nSubmit a link to your github pages portfolio site",
     "crumbs": [
       "Weekly materials",
-      "Week 2"
+      "Week 1 - Getting Started"
     ]
   },
   {
-    "objectID": "weeks/week-02.html#practice-your-skills",
-    "href": "weeks/week-02.html#practice-your-skills",
-    "title": "Week 2: Communicating You!",
+    "objectID": "weeks/week-03.html",
+    "href": "weeks/week-03.html",
+    "title": "Week 3: References",
     "section": "",
-    "text": "Add CV/cover letter to portfolio\nChoose an Annual Review article from those offered – no duplicates",
+    "text": "Read OTC Chapter 5.6 – References\nRead OTC Chapter 3 - Ethics\nRead ETC Annoying Ways People Use Sources\n\n\n\n\nOTC Ch 3\nOTC Ch 5.6\n\n\n\n\n\n\nFor Monday: Download and Install Zotero citation manager and Zotero Connector for your preferred browser\n\n\n\n\n\nCitation Managers – Demonstrate Zotero features\n\n\n\n\n\nHow to read technical reports and academic articles\nHow to summarize (without ChatGPT)\n\n\n\n\n\nCreate an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article.",
     "crumbs": [
       "Weekly materials",
-      "Week 2"
+      "Week 3 - References"
     ]
   },
   {
-    "objectID": "weeks/week-04.html",
-    "href": "weeks/week-04.html",
-    "title": "Week 4: Organizing Information",
+    "objectID": "weeks/week-03.html#reading",
+    "href": "weeks/week-03.html#reading",
+    "title": "Week 3: References",
     "section": "",
-    "text": "Read ETC Patterns of Organization and Methods of Development\nRead ETC Transitions and Organization\nRead ETC Reverse Outlining\nRead ETC Reading Games\n\n\n\n\nETC Patterns of Organization\nETC Transitions and Organization\nETC Reading Games\n\n\n\n\n\n\nOrganization and Transitions in writing\n\n\n\n\n\nThing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?\n\n\n\n\n\nHighlight transitions in your review article and comment on their effectiveness, obviousness, etc.\nCreate a reverse outline of your review article. Are there any obvious holes?",
+    "text": "Read OTC Chapter 5.6 – References\nRead OTC Chapter 3 - Ethics\nRead ETC Annoying Ways People Use Sources\n\n\n\n\nOTC Ch 3\nOTC Ch 5.6",
     "crumbs": [
       "Weekly materials",
-      "Week 4"
+      "Week 3 - References"
     ]
   },
   {
-    "objectID": "weeks/week-04.html#reading",
-    "href": "weeks/week-04.html#reading",
-    "title": "Week 4: Organizing Information",
+    "objectID": "weeks/week-03.html#prepare-for-class",
+    "href": "weeks/week-03.html#prepare-for-class",
+    "title": "Week 3: References",
     "section": "",
-    "text": "Read ETC Patterns of Organization and Methods of Development\nRead ETC Transitions and Organization\nRead ETC Reverse Outlining\nRead ETC Reading Games\n\n\n\n\nETC Patterns of Organization\nETC Transitions and Organization\nETC Reading Games",
+    "text": "For Monday: Download and Install Zotero citation manager and Zotero Connector for your preferred browser",
     "crumbs": [
       "Weekly materials",
-      "Week 4"
+      "Week 3 - References"
     ]
   },
   {
-    "objectID": "weeks/week-04.html#monday",
-    "href": "weeks/week-04.html#monday",
-    "title": "Week 4: Organizing Information",
+    "objectID": "weeks/week-03.html#monday",
+    "href": "weeks/week-03.html#monday",
+    "title": "Week 3: References",
     "section": "",
-    "text": "Organization and Transitions in writing",
+    "text": "Citation Managers – Demonstrate Zotero features",
     "crumbs": [
       "Weekly materials",
-      "Week 4"
+      "Week 3 - References"
     ]
   },
   {
-    "objectID": "weeks/week-04.html#wednesday",
-    "href": "weeks/week-04.html#wednesday",
-    "title": "Week 4: Organizing Information",
+    "objectID": "weeks/week-03.html#wednesday",
+    "href": "weeks/week-03.html#wednesday",
+    "title": "Week 3: References",
     "section": "",
-    "text": "Thing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?",
+    "text": "How to read technical reports and academic articles\nHow to summarize (without ChatGPT)",
     "crumbs": [
       "Weekly materials",
-      "Week 4"
+      "Week 3 - References"
     ]
   },
   {
-    "objectID": "weeks/week-04.html#practice-your-skills",
-    "href": "weeks/week-04.html#practice-your-skills",
-    "title": "Week 4: Organizing Information",
+    "objectID": "weeks/week-03.html#practice-your-skills",
+    "href": "weeks/week-03.html#practice-your-skills",
+    "title": "Week 3: References",
     "section": "",
-    "text": "Highlight transitions in your review article and comment on their effectiveness, obviousness, etc.\nCreate a reverse outline of your review article. Are there any obvious holes?",
+    "text": "Create an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article.",
     "crumbs": [
       "Weekly materials",
-      "Week 4"
+      "Week 3 - References"
     ]
   },
   {
-    "objectID": "weeks/week-06.html",
-    "href": "weeks/week-06.html",
-    "title": "Week 6: Problem Statements & Data",
+    "objectID": "weeks/week-05.html",
+    "href": "weeks/week-05.html",
+    "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Read UW’s guide to data documentation\nRead OTC Chapter 2.9 – Recommendation and Feasibility Reports\nRead SWHR 1.1 – 1.3 – Research Question\n\n\n\n\nUW Data documentation guide\nOTC 2.9\n\n\n\n\n\n\nProblem Statements\nIn class activity: write good problem statements for examples\n\n\n\n\n\nDocumenting Data\nDiscussion of essential components of data documentation\nData documentation that matters for statistical analysis\n\n\n\n\n\nDocument data that you plan to use for your business report",
+    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis\n\n\n\n\n\n\nBasic components of argument and rhetoric in scientific writing\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)",
     "crumbs": [
       "Weekly materials",
-      "Week 6"
+      "Week 5 - Arguments"
     ]
   },
   {
-    "objectID": "weeks/week-06.html#reading",
-    "href": "weeks/week-06.html#reading",
-    "title": "Week 6: Problem Statements & Data",
+    "objectID": "weeks/week-05.html#reading",
+    "href": "weeks/week-05.html#reading",
+    "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Read UW’s guide to data documentation\nRead OTC Chapter 2.9 – Recommendation and Feasibility Reports\nRead SWHR 1.1 – 1.3 – Research Question\n\n\n\n\nUW Data documentation guide\nOTC 2.9",
+    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis",
     "crumbs": [
       "Weekly materials",
-      "Week 6"
+      "Week 5 - Arguments"
     ]
   },
   {
-    "objectID": "weeks/week-06.html#monday",
-    "href": "weeks/week-06.html#monday",
-    "title": "Week 6: Problem Statements & Data",
+    "objectID": "weeks/week-05.html#monday",
+    "href": "weeks/week-05.html#monday",
+    "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Problem Statements\nIn class activity: write good problem statements for examples",
+    "text": "Basic components of argument and rhetoric in scientific writing",
     "crumbs": [
       "Weekly materials",
-      "Week 6"
+      "Week 5 - Arguments"
     ]
   },
   {
-    "objectID": "weeks/week-06.html#wednesday",
-    "href": "weeks/week-06.html#wednesday",
-    "title": "Week 6: Problem Statements & Data",
+    "objectID": "weeks/week-05.html#wednesday",
+    "href": "weeks/week-05.html#wednesday",
+    "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Documenting Data\nDiscussion of essential components of data documentation\nData documentation that matters for statistical analysis",
+    "text": "In class activity: Arguments in scientific and technical writing",
     "crumbs": [
       "Weekly materials",
-      "Week 6"
+      "Week 5 - Arguments"
     ]
   },
   {
-    "objectID": "weeks/week-06.html#practice-your-skills",
-    "href": "weeks/week-06.html#practice-your-skills",
-    "title": "Week 6: Problem Statements & Data",
+    "objectID": "weeks/week-05.html#practice-your-skills",
+    "href": "weeks/week-05.html#practice-your-skills",
+    "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Document data that you plan to use for your business report",
+    "text": "Analyze the rhetorical decisions and arguments in your research article (1 pg summary)",
     "crumbs": [
       "Weekly materials",
-      "Week 6"
+      "Week 5 - Arguments"
     ]
   },
   {
-    "objectID": "weeks/week-08.html",
-    "href": "weeks/week-08.html",
-    "title": "Week 8: Graphics",
+    "objectID": "weeks/week-07.html",
+    "href": "weeks/week-07.html",
+    "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "Read SWHR 4 - Tables and Figures\nRead OTC 4.7 – Tables, Charts, and Graphs\nRead OTC 4.8 - Graphics\n\n\n\n\nSWHR 4\nOTC 4.7-4.8\n\n\n\n\n\n\nTables and charts\n\n\n\n\n\nDiagrams\nIKEA-style assembly diagram assessment\n\n\n\n\n\n(not turned in) Work on analysis and relevant graphics for your business report",
+    "text": "Read OTC 2.6 - Instructions\nRead OTC 2.7 – User Guides\nRead OTC 2.8 – SOP and Procedures\nRead SWHR 3 – Methods\n\n\n\n\nOTC 2.6-2.8\nSWHR 3\n\n\n\n\n\n\nFor Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what’s covered in that article)\n\n\n\n\n\nDescribing statistical methods\nWriting good “how to” guides for others\n\n\n\n\n\nDocumenting code\n\n\n\n\n\nWrite a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)",
     "crumbs": [
       "Weekly materials",
-      "Week 8"
+      "Week 7 - Methods"
     ]
   },
   {
-    "objectID": "weeks/week-08.html#reading",
-    "href": "weeks/week-08.html#reading",
-    "title": "Week 8: Graphics",
+    "objectID": "weeks/week-07.html#reading",
+    "href": "weeks/week-07.html#reading",
+    "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "Read SWHR 4 - Tables and Figures\nRead OTC 4.7 – Tables, Charts, and Graphs\nRead OTC 4.8 - Graphics\n\n\n\n\nSWHR 4\nOTC 4.7-4.8",
+    "text": "Read OTC 2.6 - Instructions\nRead OTC 2.7 – User Guides\nRead OTC 2.8 – SOP and Procedures\nRead SWHR 3 – Methods\n\n\n\n\nOTC 2.6-2.8\nSWHR 3",
     "crumbs": [
       "Weekly materials",
-      "Week 8"
+      "Week 7 - Methods"
     ]
   },
   {
-    "objectID": "weeks/week-08.html#monday",
-    "href": "weeks/week-08.html#monday",
-    "title": "Week 8: Graphics",
+    "objectID": "weeks/week-07.html#prepare-for-class",
+    "href": "weeks/week-07.html#prepare-for-class",
+    "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "Tables and charts",
+    "text": "For Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what’s covered in that article)",
     "crumbs": [
       "Weekly materials",
-      "Week 8"
+      "Week 7 - Methods"
     ]
   },
   {
-    "objectID": "weeks/week-08.html#wednesday",
-    "href": "weeks/week-08.html#wednesday",
-    "title": "Week 8: Graphics",
+    "objectID": "weeks/week-07.html#monday",
+    "href": "weeks/week-07.html#monday",
+    "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "Diagrams\nIKEA-style assembly diagram assessment",
+    "text": "Describing statistical methods\nWriting good “how to” guides for others",
     "crumbs": [
       "Weekly materials",
-      "Week 8"
+      "Week 7 - Methods"
     ]
   },
   {
-    "objectID": "weeks/week-08.html#practice-your-skills",
-    "href": "weeks/week-08.html#practice-your-skills",
-    "title": "Week 8: Graphics",
+    "objectID": "weeks/week-07.html#wednesday",
+    "href": "weeks/week-07.html#wednesday",
+    "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "(not turned in) Work on analysis and relevant graphics for your business report",
+    "text": "Documenting code",
     "crumbs": [
       "Weekly materials",
-      "Week 8"
+      "Week 7 - Methods"
     ]
   },
   {
-    "objectID": "weeks/week-10.html",
-    "href": "weeks/week-10.html",
-    "title": "Week 10: Introductions and Conclusions",
+    "objectID": "weeks/week-07.html#practice-your-skills",
+    "href": "weeks/week-07.html#practice-your-skills",
+    "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "Read SWHR 2 - Introduction\nRead SWHR 6 - Discussion\n\n\n\n\nSWHR 2, 6\n\n\n\n\n\n\nIntroductions\n\n\n\n\n\nConclusions\n\n\n\n\n\nDraft of introduction and conclusion sections of business report",
+    "text": "Write a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)",
     "crumbs": [
       "Weekly materials",
-      "Week 10"
+      "Week 7 - Methods"
     ]
   },
   {
-    "objectID": "weeks/week-10.html#reading",
-    "href": "weeks/week-10.html#reading",
-    "title": "Week 10: Introductions and Conclusions",
+    "objectID": "weeks/week-09.html",
+    "href": "weeks/week-09.html",
+    "title": "Week 9: Results",
     "section": "",
-    "text": "Read SWHR 2 - Introduction\nRead SWHR 6 - Discussion\n\n\n\n\nSWHR 2, 6",
+    "text": "Read SWHR 5 - Results\n\n\n\n\nSWHR 5\n\n\n\n\n\n\nDescribing results – level of detail and role of supplementary documentation\n\n\n\n\n\nIntegrating results and visual aids\nCountering misunderstandings\n\n\n\n\n\nDraft of results section of business report with relevant graphics/visual aids",
     "crumbs": [
       "Weekly materials",
-      "Week 10"
+      "Week 9 - Results"
     ]
   },
   {
-    "objectID": "weeks/week-10.html#monday",
-    "href": "weeks/week-10.html#monday",
-    "title": "Week 10: Introductions and Conclusions",
+    "objectID": "weeks/week-09.html#reading",
+    "href": "weeks/week-09.html#reading",
+    "title": "Week 9: Results",
     "section": "",
-    "text": "Introductions",
+    "text": "Read SWHR 5 - Results\n\n\n\n\nSWHR 5",
     "crumbs": [
       "Weekly materials",
-      "Week 10"
+      "Week 9 - Results"
     ]
   },
   {
-    "objectID": "weeks/week-10.html#wednesday",
-    "href": "weeks/week-10.html#wednesday",
-    "title": "Week 10: Introductions and Conclusions",
+    "objectID": "weeks/week-09.html#monday",
+    "href": "weeks/week-09.html#monday",
+    "title": "Week 9: Results",
     "section": "",
-    "text": "Conclusions",
+    "text": "Describing results – level of detail and role of supplementary documentation",
     "crumbs": [
       "Weekly materials",
-      "Week 10"
+      "Week 9 - Results"
     ]
   },
   {
-    "objectID": "weeks/week-10.html#practice-your-skills",
-    "href": "weeks/week-10.html#practice-your-skills",
-    "title": "Week 10: Introductions and Conclusions",
+    "objectID": "weeks/week-09.html#wednesday",
+    "href": "weeks/week-09.html#wednesday",
+    "title": "Week 9: Results",
     "section": "",
-    "text": "Draft of introduction and conclusion sections of business report",
+    "text": "Integrating results and visual aids\nCountering misunderstandings",
     "crumbs": [
       "Weekly materials",
-      "Week 10"
+      "Week 9 - Results"
     ]
   },
   {
-    "objectID": "weeks/week-12.html",
-    "href": "weeks/week-12.html",
-    "title": "Week 12: Countering Logical Fallacies",
+    "objectID": "weeks/week-09.html#practice-your-skills",
+    "href": "weeks/week-09.html#practice-your-skills",
+    "title": "Week 9: Results",
     "section": "",
-    "text": "Read OTC 5.13-5.15 - Logic\nRead Wikipedia’s article on Misuse of Statistics\nRead The Misuse of Statistics\n\n\n\n\nOTC 5.13-5.15\nWikipedia Misuse of Statistics\n\n\n\n\n\n\nLogical fallacies in the workplace in-class activity\n\n\n\n\n\nStatistical misunderstandings and how to counter them – class discussion\n\n\n\n\n\n(not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report",
+    "text": "Draft of results section of business report with relevant graphics/visual aids",
     "crumbs": [
       "Weekly materials",
-      "Week 12"
+      "Week 9 - Results"
     ]
   },
   {
-    "objectID": "weeks/week-12.html#reading",
-    "href": "weeks/week-12.html#reading",
-    "title": "Week 12: Countering Logical Fallacies",
+    "objectID": "weeks/week-11.html",
+    "href": "weeks/week-11.html",
+    "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "Read OTC 5.13-5.15 - Logic\nRead Wikipedia’s article on Misuse of Statistics\nRead The Misuse of Statistics\n\n\n\n\nOTC 5.13-5.15\nWikipedia Misuse of Statistics",
+    "text": "Read SWHR 7 - Title & Abstract\nRead OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions\n\n\n\n\nSWHR 7\nOTC 2.11\n\n\n\n\n\n\nFor Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?\n\n\n\n\n\nAbstracts\n\n\n\n\n\nExecutive Summaries - Class discussion\n\n\n\n\n\nDraft of executive summary of business report",
     "crumbs": [
       "Weekly materials",
-      "Week 12"
+      "Week 11 - Summaries"
     ]
   },
   {
-    "objectID": "weeks/week-12.html#monday",
-    "href": "weeks/week-12.html#monday",
-    "title": "Week 12: Countering Logical Fallacies",
+    "objectID": "weeks/week-11.html#reading",
+    "href": "weeks/week-11.html#reading",
+    "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "Logical fallacies in the workplace in-class activity",
+    "text": "Read SWHR 7 - Title & Abstract\nRead OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions\n\n\n\n\nSWHR 7\nOTC 2.11",
     "crumbs": [
       "Weekly materials",
-      "Week 12"
+      "Week 11 - Summaries"
     ]
   },
   {
-    "objectID": "weeks/week-12.html#wednesday",
-    "href": "weeks/week-12.html#wednesday",
-    "title": "Week 12: Countering Logical Fallacies",
+    "objectID": "weeks/week-11.html#prepare-for-class",
+    "href": "weeks/week-11.html#prepare-for-class",
+    "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "Statistical misunderstandings and how to counter them – class discussion",
+    "text": "For Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?",
     "crumbs": [
       "Weekly materials",
-      "Week 12"
+      "Week 11 - Summaries"
     ]
   },
   {
-    "objectID": "weeks/week-12.html#practice-your-skills",
-    "href": "weeks/week-12.html#practice-your-skills",
-    "title": "Week 12: Countering Logical Fallacies",
+    "objectID": "weeks/week-11.html#monday",
+    "href": "weeks/week-11.html#monday",
+    "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "(not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report",
+    "text": "Abstracts",
     "crumbs": [
       "Weekly materials",
-      "Week 12"
+      "Week 11 - Summaries"
     ]
   },
   {
-    "objectID": "weeks/week-14.html",
-    "href": "weeks/week-14.html",
-    "title": "Week 14: Editing and Revising Your Work",
+    "objectID": "weeks/week-11.html#wednesday",
+    "href": "weeks/week-11.html#wednesday",
+    "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "Read OTC 5.8 - Grammar, Usage, and Punctuation\nRead OTC 5.9 - Spelling\nRead OTC 5.10 – Peer Review\n\n\n\n\nOTC 5.8-5.10\n\n\n\n\n\n\nBring two copies of your business report - one for Monday, one for Wednesday (you may edit in between if you want to)\n\n\n\n\n\nPeer review day - business reports\n\n\n\n\n\nPeer review day - business reports\n\n\n\n\n\nMake edits from peer review comments",
+    "text": "Executive Summaries - Class discussion",
     "crumbs": [
       "Weekly materials",
-      "Week 14"
+      "Week 11 - Summaries"
     ]
   },
   {
-    "objectID": "weeks/week-14.html#reading",
-    "href": "weeks/week-14.html#reading",
-    "title": "Week 14: Editing and Revising Your Work",
+    "objectID": "weeks/week-11.html#practice-your-skills",
+    "href": "weeks/week-11.html#practice-your-skills",
+    "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "Read OTC 5.8 - Grammar, Usage, and Punctuation\nRead OTC 5.9 - Spelling\nRead OTC 5.10 – Peer Review\n\n\n\n\nOTC 5.8-5.10",
+    "text": "Draft of executive summary of business report",
     "crumbs": [
       "Weekly materials",
-      "Week 14"
+      "Week 11 - Summaries"
     ]
   },
   {
-    "objectID": "weeks/week-14.html#prepare-for-class",
-    "href": "weeks/week-14.html#prepare-for-class",
-    "title": "Week 14: Editing and Revising Your Work",
+    "objectID": "weeks/week-13.html",
+    "href": "weeks/week-13.html",
+    "title": "Week 13: Reports and Presentations",
     "section": "",
-    "text": "Bring two copies of your business report - one for Monday, one for Wednesday (you may edit in between if you want to)",
+    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12\n\n\n\n\n\n\nBusiness and Technical Reports – general formatting and concerns\n\n\n\n\n\nIn class activity: Analyzing government reports\n\n\n\n\n\nRough draft of business report submitted along with to-do list\n(not turned in) Prepare business presentation slides/talk",
     "crumbs": [
       "Weekly materials",
-      "Week 14"
+      "Week 13 - Reports"
     ]
   },
   {
-    "objectID": "weeks/week-14.html#monday",
-    "href": "weeks/week-14.html#monday",
-    "title": "Week 14: Editing and Revising Your Work",
+    "objectID": "weeks/week-13.html#reading",
+    "href": "weeks/week-13.html#reading",
+    "title": "Week 13: Reports and Presentations",
     "section": "",
-    "text": "Peer review day - business reports",
+    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12",
     "crumbs": [
       "Weekly materials",
-      "Week 14"
+      "Week 13 - Reports"
     ]
   },
   {
-    "objectID": "weeks/week-14.html#wednesday",
-    "href": "weeks/week-14.html#wednesday",
-    "title": "Week 14: Editing and Revising Your Work",
+    "objectID": "weeks/week-13.html#monday",
+    "href": "weeks/week-13.html#monday",
+    "title": "Week 13: Reports and Presentations",
     "section": "",
-    "text": "Peer review day - business reports",
+    "text": "Business and Technical Reports – general formatting and concerns",
     "crumbs": [
       "Weekly materials",
-      "Week 14"
+      "Week 13 - Reports"
     ]
   },
   {
-    "objectID": "weeks/week-14.html#practice-your-skills",
-    "href": "weeks/week-14.html#practice-your-skills",
-    "title": "Week 14: Editing and Revising Your Work",
+    "objectID": "weeks/week-13.html#wednesday",
+    "href": "weeks/week-13.html#wednesday",
+    "title": "Week 13: Reports and Presentations",
     "section": "",
-    "text": "Make edits from peer review comments",
+    "text": "In class activity: Analyzing government reports",
     "crumbs": [
       "Weekly materials",
-      "Week 14"
+      "Week 13 - Reports"
     ]
   },
   {
-    "objectID": "business-report/scenario-bridge.html",
-    "href": "business-report/scenario-bridge.html",
-    "title": "London Bridge is Falling Down",
+    "objectID": "weeks/week-13.html#practice-your-skills",
+    "href": "weeks/week-13.html#practice-your-skills",
+    "title": "Week 13: Reports and Presentations",
     "section": "",
-    "text": "Scenario Description:\nYou are an analyst for the Omaha, NE city government. The mayor, concerned about the degrading transportation infrastructure in the city, has asked you to assess the risk of bridge failure to the city, after well-publicized bridge collapses in cities on the East Coast in 2024.\nAssemble data from one or more reputable sources (State and national DOT, Army Corps of Engineers, etc.). Assess the risk of a bridge collapse event occurring over the next 5 years, using publicly available data. You should consider both the probability of such a collapse and the consequences – a small county road bridge collapse is less problematic than e.g. the I-80 bridge over the Missouri collapsing. What interventions do you recommend to minimize the risk?"
+    "text": "Rough draft of business report submitted along with to-do list\n(not turned in) Prepare business presentation slides/talk",
+    "crumbs": [
+      "Weekly materials",
+      "Week 13 - Reports"
+    ]
   },
   {
-    "objectID": "business-report/scenario-power.html",
-    "href": "business-report/scenario-power.html",
-    "title": "The Power of Climate Change",
+    "objectID": "weeks/week-15.html",
+    "href": "weeks/week-15.html",
+    "title": "Week 15: In Class Presentations",
     "section": "",
-    "text": "Scenario Description:\nYou are an analyst working for an electrical utility. A manager at one of the power plants has recently approached you about climate resilience strategies. The power plant is situated along the Gulf of Mexico in Dauphin Island, AL, and uses the Gulf as an heatsink.\nCurrently, the plant is designed around the assumption that the temperature of the gulf will be below 85\\(^\\circ\\)F (this assumption was relatively reasonable when the plant was built in 1970). When the water temperature is above this point, the plant must operate at reduced capacity, as it cannot transfer additional thermal energy into the water.\nAssemble data from one or more reputable sources (USGS, NOAA, US Energy Information Administration). Make an operational assessment of the risk that the plant will have to operate at reduced capacity during the next 5 years. Consider both the probability of reduced operating capacity as well as the timing of that capacity (e.g. you should also look at electrical usage during those periods)."
+    "text": "None!\n\n\nNone!\n\n\n\n\n\nBusiness presentations\n\n\n\n\n\nBusiness presentations\n\n\n\n\n\nSlides for business presentation\nBusiness report due!\nProcedure/method guide, business report, and business presentation slides added to your portfolio. Portfolio link submitted to Canvas.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 15 - Presentations"
+    ]
   },
   {
-    "objectID": "instructions/intro-problem-statements.html",
-    "href": "instructions/intro-problem-statements.html",
-    "title": "Introductions & Problem Statements",
+    "objectID": "weeks/week-15.html#reading",
+    "href": "weeks/week-15.html#reading",
+    "title": "Week 15: In Class Presentations",
     "section": "",
-    "text": "Articles:\n\n2030 Census Research Recommendations\nNearly All U.S. Counties Had More Homeowners Than Renters Between 2019 and 2023\nWho Could Afford to Buy a Home in 2009? Affordability of Buying a Home in the United States\nEnabling Global Image Data Sharing in the Life Sciences\nWillful Winds: Hurricane Andrew and Louisiana’s Coast\nHurricane Katrina\nWater-Level and Recoverable Water in Storage Changes, High Plains Aquifer, Predevelopment to 2019 and 2017 to 2019"
+    "text": "None!\n\n\nNone!",
+    "crumbs": [
+      "Weekly materials",
+      "Week 15 - Presentations"
+    ]
+  },
+  {
+    "objectID": "weeks/week-15.html#monday",
+    "href": "weeks/week-15.html#monday",
+    "title": "Week 15: In Class Presentations",
+    "section": "",
+    "text": "Business presentations",
+    "crumbs": [
+      "Weekly materials",
+      "Week 15 - Presentations"
+    ]
+  },
+  {
+    "objectID": "weeks/week-15.html#wednesday",
+    "href": "weeks/week-15.html#wednesday",
+    "title": "Week 15: In Class Presentations",
+    "section": "",
+    "text": "Business presentations",
+    "crumbs": [
+      "Weekly materials",
+      "Week 15 - Presentations"
+    ]
+  },
+  {
+    "objectID": "weeks/week-15.html#practice-your-skills",
+    "href": "weeks/week-15.html#practice-your-skills",
+    "title": "Week 15: In Class Presentations",
+    "section": "",
+    "text": "Slides for business presentation\nBusiness report due!\nProcedure/method guide, business report, and business presentation slides added to your portfolio. Portfolio link submitted to Canvas.",
+    "crumbs": [
+      "Weekly materials",
+      "Week 15 - Presentations"
+    ]
+  },
+  {
+    "objectID": "business-report/scenario-nsfw.html",
+    "href": "business-report/scenario-nsfw.html",
+    "title": "Not Safe For Work",
+    "section": "",
+    "text": "Scenario Description:\nYou are a statistical analyst for a company with both industrial/manufacturing and office spaces. Your safety officer recently read this article about office injury statistics and wants you to evaluate whether the company needs to implement stronger safety policies for office workers, as they are more likely to be injured through falls than non-office workers.\nAssemble data from one or more reputable sources (Bureau of Labor Statistics, Centers for Disease Control, Occupational Safety and Health Administration) to assess the risk of on-the-job injury for office and non-office workers. Consider both the severity of the injury and the probability of occurrence."
+  },
+  {
+    "objectID": "business-report/scenario-shark.html",
+    "href": "business-report/scenario-shark.html",
+    "title": "Sharknado!",
+    "section": "",
+    "text": "You are an analyst for an insurance agency concerned with increasing payouts for property damage with a warming climate. Your boss recently saw Sharknado (2013) while trying to battle insomnia, and has become concerned about the increased likelihood of shark-infested weather as severe weather events become more probable due to climate change.\nYour boss’s concerns about the possiblity of shark-infested storms cannot be countered with logic, but you might be able to convince them that very few storms even have shark-infestation potential.\nAssemble data from one or more reputable sources (NOAA, USGS, etc.).\nAssess the probability that tornadoes form in coastal areas (Atlantic, Pacific, and Gulf of Mexico) and move inward, compared to the probability that tornadoes form inland and move toward the coast. You should consider both the probability of a coastal -&gt; inland tornadic event and the consequences – a F0 tornado is unlikely to have the power to lift sharks from the water, while an F5 tornado might have the ability to transport many sharks inland. How serious is the sharknado threat to your bottom line?"
+  },
+  {
+    "objectID": "instructions/setup-github-portfolio.html",
+    "href": "instructions/setup-github-portfolio.html",
+    "title": "Setting Up a Github.io portfolio",
+    "section": "",
+    "text": "Steps\n\nCreate a github repository that is named “portfolio” and located at https://github.com/%3Cusername%3E/portfolio\nCreate a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following these directions.\nPush your site (along with the /docs folder containing the rendered site) to GitHub. You can customize it later.\nOn GitHub, set your site to render to the docs directory (detailed instructions).\n\nChange your _quarto.yml file to have output-dir: docs\nCreate an empty .nojekyll file in the main directory of your project repository\nConfigure your GitHub repository (Settings -&gt; Pages -&gt; Build and Deployment) to publish the /docs directory of the main branch of your repository.\n\nCheck the rendered site (it should have an address of https://.github.io/portfolio) – it may take ~5 minutes to appear after you’ve completed step 4.\nMake any tweaks to your site that you’d like to make – add pictures, a biography, posts about your interests, etc.\n\nThe goal of this is to have a place where you can showcase your coursework for future employers. Keep it professional (but it’s ok to have some information about your hobbies, if you want to show that dimension of yourself).\nThe department may eventually want to showcase some of these sites so that incoming students can see what current students accomplish as part of our courses. We will ask permission first!\n\n\n\n\nUpdating your site\nRendering your site will be done manually – thus, each time you want to update the actual site, you’ll have to run the following commands in the terminal (not the R console):\nquarto render\ngit add docs\ngit commit -m \"Publish site to docs/\"\ngit push\n(You can also accomplish this by hitting the Render button in RStudio and then adding and committing the docs folder in the git pane in RStudio.)\nIf you’re feeling fancy, you can automate this process using a GitHub action, but this is fiddly and probably not worth it unless you’re actually planning to use this as a blog and update it frequently. If you decide to set everything up with Github Actions, I can offer a minimal amount of help with debugging, but even I find them confusing.\n\n\n\n\n\n\nRendering your site\n\n\n\nUpdating the markdown files is not enough – you have to render (in e.g. RStudio) and push the docs folder for changes to show up on Github pages.\nIf things aren’t working,\n\nRun render via RStudio or by using quarto render . on the command line (in the project folder).\nLook for any un-pushed changes, either in the Git pane of RStudio (hit refresh) or by running git status on the command line.\nCheck that the docs/ folder has been committed AND pushed to GitHub.\nAsk for help, either in class during some downtime, or by making an office hours appointment."
   }
 ]

@@ -1,5 +1,5 @@
 
-# Week 8: Graphics
+# Week 8: Charts, Tables, and Diagrams
 
 ## 📖 Reading
 
