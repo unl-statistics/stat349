@@ -66,3 +66,58 @@ CV is used more than résumé
     - Work supervisor (current/past)
     - Coworker or character reference
     
+
+## Cover Letter
+
+- Specialized type of business letter    
+[OTC Ch 2 business letter advice applies]{.small}
+
+- Try to fit on a single page
+
+## Cover Letter Structure
+
+- Introduction: 
+    - State interest in the specific position
+    - Preview your argument: I am a good fit for this position
+
+## Cover Letter Structure
+
+- Body: Build argument 
+  - why do you think you're a good fit? 
+    - skills
+    - company values/mission
+    - growth opportunities
+  - cite examples from your experience
+    - provide context that isn't in your resume
+    - what skills have you developed from the experience
+
+## Cover Letter Structure
+
+- Closing:
+  - restate interest in the role
+  - summarize why you're a good candidate
+  - thank reader for time/consideration
+  - offer to provide more information
+
+
+## Activity: Data Science Resumes
+
+```{r, results='asis'}
+#| echo: false
+#| eval: true
+files <- list.files("../files/resume-examples/", "*.pdf", full.names = T)
+filenames <- list.files("../files/resume-examples/", "*.pdf", full.names = F)
+
+library(stringr)
+
+filenames <- filenames |>
+  str_remove("-resume-example.pdf") |>
+  str_replace_all("-", " ") |>
+  str_to_title()
+
+library(glue)
+
+purrr::map2_chr(filenames, files, ~glue("[{filename}]({file})", filename = .x, file = .y)) |> knitr::kable(col.names = NULL)
+```
+
+What works? What doesn't?

@@ -4,7 +4,7 @@
 ## Quizzes
 
 - ~~OTC Ch 1~~
-- OTC Ch 2
+- ~~OTC Ch 2~~
 - Week 3
   - OTC Ch 3
   - OTC Ch 5.6
@@ -22,14 +22,14 @@
 
 ## Slides
 
-- Important CV/cover letter components
+- ~~Important CV/cover letter components~~
 
 
 ## Pages
 
-- Links to quarto/LaTeX CV/cover letter templates
+- ~~Links to quarto/LaTeX CV/cover letter templates~~
 
-- Annual Review pages -- as discussion board, with each one claimed via comment?
+- ~~Annual Review pages -- as discussion board, with each one claimed via comment?~~
 
 
 
@@ -41,10 +41,10 @@
 
 ## Assignments (Canvas)
 
-+ Job to apply for -- submit a PDF of the job posting
++ ~~Job to apply for -- submit a PDF of the job posting~~
 
-- CV/cover letter added to portfolio
+- ~~CV/cover letter added to portfolio~~
 
-- Choose an Annual Review article to work with during the initial module
+- ~~Choose an Annual Review article to work with during the initial module~~
 
 

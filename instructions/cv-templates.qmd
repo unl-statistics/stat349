@@ -1,0 +1,63 @@
+---
+title: "Quarto CV/Resume Templates"
+format: html
+---
+
+# Just the Document
+
+-   Alex Bass's [simple quarto resume](https://github.com/acbass49/CV_Quarto) template\
+    ![](images/clipboard-209944952.png)
+
+<!-- -->
+
+-   [Schochastics quarto templates](https://github.com/schochastics/quarto-cv)\
+    To use: at the command line,
+
+    ```         
+    quarto use template schochastics/<cv style name>
+    ```
+
+    -   classic-cv\
+        ![](images/clipboard-2695263960.png)\
+
+    -   modern-cv\
+        ![](images/clipboard-1923977843.png)
+
+    -   modern2-cv\
+        ![](images/clipboard-1486395703.png)
+
+    -   sidebar-cv\
+        ![](images/clipboard-2519603145.png)
+
+-   [Multiformat (PDF/HTML) Resumes with weasyprint](https://www.cynthiahqy.com/posts/cv-html-pdf/) - Cynthia Huang
+
+# R packages – build a CV with data!
+
+Building your CV using data frames for education, experience, publications, etc., can make it easier to switch formats and/or keep all of your information in a file and then show only the 3 most recent entries (for example).
+
+-   `datadrivencv` [R package](https://github.com/nstrayer/datadrivencv). [Slides](https://cct-datascience.quarto.pub/customizable-resumes-with-r-tools/#/title-slide) show you how to use the package and why you might want to use data to build a CV/resume. (no LaTeX, uses CSS, but not actively maintained)
+
+<!-- -->
+
+-   [`vitae` R package](https://pkg.mitchelloharawild.com/vitae/) – provides functions to make Rmarkdown resumes/CVs easy (quarto -\> LaTeX)
+
+    -   awesomecv\
+        ![](images/clipboard-2834522272.png)
+
+    -   hyndman\
+        ![](images/clipboard-1263469789.png)
+
+    -   latexcv\
+        ![](images/clipboard-2877456262.png)
+
+    -   markdowncv\
+        ![](images/clipboard-2459982281.png)
+
+    -   moderncv\
+        ![](images/clipboard-3082012343.png)
+
+    -   twentyseconds\
+        ![](images/clipboard-2089344261.png)
+
+-   [\`typstcv\` package](https://kazuyanagimoto.r-universe.dev/typstcv) (non-LaTeX, HTML-based with CSS)\
+    Typst is a non-LaTeX way to make paged documents (pdfs, docx) using markdown. Quarto is adopting it, but it is still less developed than LaTeX (which has been around for more than 40 years).

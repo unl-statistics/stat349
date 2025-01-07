@@ -204,6 +204,90 @@
 <li>Coworker or character reference</li>
 </ul></li>
 </ul>
+</section>
+<section id="cover-letter" class="slide level2">
+<h2>Cover Letter</h2>
+<ul>
+<li><p>Specialized type of business letter<br>
+<span class="small">OTC Ch 2 business letter advice applies</span></p></li>
+<li><p>Try to fit on a single page</p></li>
+</ul>
+</section>
+<section id="cover-letter-structure" class="slide level2">
+<h2>Cover Letter Structure</h2>
+<ul>
+<li>Introduction:
+<ul>
+<li>State interest in the specific position</li>
+<li>Preview your argument: I am a good fit for this position</li>
+</ul></li>
+</ul>
+</section>
+<section id="cover-letter-structure-1" class="slide level2">
+<h2>Cover Letter Structure</h2>
+<ul>
+<li>Body: Build argument
+<ul>
+<li>why do you think you’re a good fit?
+<ul>
+<li>skills</li>
+<li>company values/mission</li>
+<li>growth opportunities</li>
+</ul></li>
+<li>cite examples from your experience
+<ul>
+<li>provide context that isn’t in your resume</li>
+<li>what skills have you developed from the experience</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="cover-letter-structure-2" class="slide level2">
+<h2>Cover Letter Structure</h2>
+<ul>
+<li>Closing:
+<ul>
+<li>restate interest in the role</li>
+<li>summarize why you’re a good candidate</li>
+<li>thank reader for time/consideration</li>
+<li>offer to provide more information</li>
+</ul></li>
+</ul>
+</section>
+<section id="activity-data-science-resumes" class="slide level2">
+<h2>Activity: Data Science Resumes</h2>
+<table class="caption-top">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><a href="../files/resume-examples//associate-data-scientist-resume-example.pdf">Associate Data Scientist</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="../files/resume-examples//data-science-student-resume-example.pdf">Data Science Student</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="../files/resume-examples//data-scientist-intern-resume-example.pdf">Data Scientist Intern</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="../files/resume-examples//data-scientist-resume-example.pdf">Data Scientist</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="../files/resume-examples//data-visualization-resume-example.pdf">Data Visualization</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="../files/resume-examples//educational-data-scientist-resume-example.pdf">Educational Data Scientist</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="../files/resume-examples//entry-level-data-scientist-resume-example.pdf">Entry Level Data Scientist</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><a href="../files/resume-examples//healthcare-data-scientist-resume-example.pdf">Healthcare Data Scientist</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><a href="../files/resume-examples//python-data-scientist-resume-example.pdf">Python Data Scientist</a></td>
+</tr>
+</tbody>
+</table>
+<p>What works? What doesn’t?</p>
 
 
 </section>
@@ -422,6 +506,44 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

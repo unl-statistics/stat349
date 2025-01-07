@@ -16,8 +16,9 @@
 
 ## ☕ Monday
 
-- CV/cover letter important components
-- Find a quarto/LaTeX template for a CV and cover letter
+- [CV/cover letter important components](../slides/02-cv-cover-letter.qmd)
+- Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
+
 
 ## 🐪 Wednesday
 
