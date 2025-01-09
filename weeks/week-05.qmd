@@ -3,7 +3,7 @@
 
 ## 📖 Reading
 
-- [ ] Read [OTC Chapter 5.1 – Process](https://alg.manifoldapp.org/read/open-technical-communication/section/134f046e-ff01-4eec-a525-2d1128957c1e) 
+- [ ] Read [OTC Chapter 5.1 – Process](https://alg.manifoldapp.org/read/open-technical-communication/section/134f046e-ff01-4eec-a525-2d1128957c1e)
 - [ ] Read [OTC Chapter 5.2 – Audience Analysis](https://alg.manifoldapp.org/read/open-technical-communication/section/415d5b4f-758e-49ac-8149-18d4c3c4c10c)
 - [ ] Read [OTC Chapter 5.4 – Articulating Technical Information](https://alg.manifoldapp.org/read/open-technical-communication/section/39c29f74-f502-4050-80b3-1162a9cdd8b0) 
 - [ ] Read [ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis](https://wisc.pb.unizin.org/opencomp/chapter/backpacks-v-briefcases-steps-toward-rhetorical-analysis/), focusing primarily  on the basic components of rhetorical analysis

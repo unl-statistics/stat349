@@ -9,8 +9,7 @@
 
 ### 🎯 Check your understanding
 
-- [ ] OTC Ch 3
-- [ ] OTC Ch 5.6
+- [ ] OTC Ch 3, 5.6, ETC Sources
 
 ## 🥣 Prepare for class
 

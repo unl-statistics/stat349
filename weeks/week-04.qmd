@@ -10,13 +10,13 @@
 
 ### 🎯 Check your understanding
 
-- [ ] ETC Patterns of Organization
-- [ ] ETC Transitions and Organization
-- [ ] ETC Reading Games
+- [ ] ETC Organization, Transitions, and Reading Games
 
 ## ☕ Monday
 
-- Organization and Transitions in writing
+- How to read technical reports and academic articles
+- How to summarize (without ChatGPT)
+- [Slides](../slides/04-organizing-information.qmd)
 
 ## 🐪 Wednesday
 
