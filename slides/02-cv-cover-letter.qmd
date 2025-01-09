@@ -1,6 +1,10 @@
 ---
 title: "Résumés, CVs, and Cover Letters"
 format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
 ---
 
 ## Setting the Scene
@@ -27,7 +31,6 @@ format: revealjs
 - CV: exhaustive list of everything you've done
     - academic/research oriented jobs, grad school
     - as many pages as necessary
-:::
 
 ## Resume vs. CV (🇬🇧,🇦🇺)
 
