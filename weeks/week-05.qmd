@@ -13,9 +13,14 @@
 - [ ] OTC 5.1, 5.2, 5.4
 - [ ] ETC Steps Toward Rhetorical Analysis
 
+## 🥣 Prepare for class
+
+- [ ] For Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).
+
 ## ☕ Monday
 
 - Basic components of argument and rhetoric in scientific writing
+- Discuss business report & assign report topics
 
 ## 🐪 Wednesday
 
@@ -24,5 +29,6 @@
 ##  🏋️ Practice your skills
 
 - [ ] Analyze the rhetorical decisions and arguments in your research article (1 pg summary)
+- Start planning business report – locate data sets to support your analysis
 
 

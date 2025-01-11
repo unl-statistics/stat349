@@ -561,6 +561,105 @@
     ]
   },
   {
+    "objectID": "course-support.html",
+    "href": "course-support.html",
+    "title": "Course support",
+    "section": "",
+    "text": "If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#lectures-and-labs",
+    "href": "course-support.html#lectures-and-labs",
+    "title": "Course support",
+    "section": "",
+    "text": "If you have a question during lecture or lab, feel free to ask it! There are likely other students with the same question, so by asking you will create a learning opportunity for everyone.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#office-hours",
+    "href": "course-support.html#office-hours",
+    "title": "Course support",
+    "section": "Office hours",
+    "text": "Office hours\nOffice hours are available by appointment at this link. In general, office hours will be via Zoom - this allows me to offer more availability, and doesn’t require you to come to East campus to visit my office.\nIf you’d prefer to meet in person, try to schedule your appointment on Monday or Wednesday, and mention in the request that you want an in-person meeting. I will let you know if that’s feasible given my schedule for the day.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#email",
+    "href": "course-support.html#email",
+    "title": "Course support",
+    "section": "Email",
+    "text": "Email\nPlease only use email for questions about personal matters that may not be appropriate for the public course forum (e.g., illness, grades, accommodations, etc.). In these cases, please add “STAT349” to the subject line, so that I can prioritize your email.\nAssignment and content related questions should be asked in the relevant discussion board on Canvas.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#academic-support",
+    "href": "course-support.html#academic-support",
+    "title": "Course support",
+    "section": "Academic support",
+    "text": "Academic support\nThere are times you may need help with the class that is beyond what can be provided by the teaching team. In those instances, I encourage you to visit the Center for Academic Success and Transition (CAST). CAST offers free services to all students.\nStudents have access to peer tutoring, academic coaching, and academic success workshops.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#mental-health-and-wellness",
+    "href": "course-support.html#mental-health-and-wellness",
+    "title": "Course support",
+    "section": "Mental health and wellness",
+    "text": "Mental health and wellness\nYour mental health and wellness extremely important, and the university offers resources to support students in managing daily stress and self-care. UNL offers several resources for students to manage stress, seek help with well-being, and access crisis and long-term care.\n\nCounseling and Psychological Services (CAPS), 402-472-7450\nCenter for Advocacy, Response, & Education (CARE), 402-472-3553 – resources for victims/survivors of interpersonal violence.\nServices for Students with Disabilities (SSD), ssd@unl.edu or 402-472-3787 – resources for students experiencing short or long-term disabilities that affect the campus or educational experience.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#technology",
+    "href": "course-support.html#technology",
+    "title": "Course support",
+    "section": "Technology",
+    "text": "Technology\nStudents who do not have a working computer can check out a loaner laptop from HuskerTech on city campus (Love South, Adele Hall) and east campus (Dinsdale).\nIf you are unable to get a loaner laptop set up with the software required for parts of this course, please try to let me know ahead of time - it is possible that I will be able to assist you with browser-based solutions.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-support.html#course-materials",
+    "href": "course-support.html#course-materials",
+    "title": "Course support",
+    "section": "Course materials",
+    "text": "Course materials\nThere are no costs associated with this course beyond the requirement that you have access to a laptop computer. All readings will come from freely available, open resources (open-source textbooks, journal articles, etc.) or library course reserves.",
+    "crumbs": [
+      "Course information",
+      "Support"
+    ]
+  },
+  {
+    "objectID": "course-links.html",
+    "href": "course-links.html",
+    "title": "Useful links",
+    "section": "",
+    "text": "🔗Canvas\nAssignment Submissions, Reading Quizzes, Gradebook\n\n\n🔗Github Classroom\nProject Submissions\n\n\nTextbook\n🔗Scientific Writing for Health Research\n\n\nTextbook\n🔗Entering the Conversation\n\n\nTextbook\n🔗Open Technical Communication",
+    "crumbs": [
+      "Course information",
+      "Useful links"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Stat 349 - Technical Skills for Statisticians",
@@ -569,6 +668,17 @@
     "crumbs": [
       "Course information",
       "Schedule"
+    ]
+  },
+  {
+    "objectID": "course-overview.html",
+    "href": "course-overview.html",
+    "title": "Stat 349: Technical Skills for Statisticians",
+    "section": "",
+    "text": "Creation of research reports, business reports, and executive summaries. Presentation strategies, consequences of statistical modeling for real-world decision making, and countering common misconceptions and errors in statistical reasoning. Focus on real-world applications in research, business, and public service.",
+    "crumbs": [
+      "Course information",
+      "Overview"
     ]
   },
   {
@@ -697,7 +807,7 @@
     "href": "weeks/week-05.html",
     "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis\n\n\n\n\n\n\nBasic components of argument and rhetoric in scientific writing\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)",
+    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis\n\n\n\n\n\n\nFor Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).\n\n\n\n\n\nBasic components of argument and rhetoric in scientific writing\nDiscuss business report & assign report topics\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)\nStart planning business report – locate data sets to support your analysis",
     "crumbs": [
       "Weekly materials",
       "Week 5 - Arguments"
@@ -715,11 +825,22 @@
     ]
   },
   {
+    "objectID": "weeks/week-05.html#prepare-for-class",
+    "href": "weeks/week-05.html#prepare-for-class",
+    "title": "Week 5: Making an Argument",
+    "section": "",
+    "text": "For Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).",
+    "crumbs": [
+      "Weekly materials",
+      "Week 5 - Arguments"
+    ]
+  },
+  {
     "objectID": "weeks/week-05.html#monday",
     "href": "weeks/week-05.html#monday",
     "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Basic components of argument and rhetoric in scientific writing",
+    "text": "Basic components of argument and rhetoric in scientific writing\nDiscuss business report & assign report topics",
     "crumbs": [
       "Weekly materials",
       "Week 5 - Arguments"
@@ -741,7 +862,7 @@
     "href": "weeks/week-05.html#practice-your-skills",
     "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Analyze the rhetorical decisions and arguments in your research article (1 pg summary)",
+    "text": "Analyze the rhetorical decisions and arguments in your research article (1 pg summary)\nStart planning business report – locate data sets to support your analysis",
     "crumbs": [
       "Weekly materials",
       "Week 5 - Arguments"
@@ -752,7 +873,7 @@
     "href": "weeks/week-07.html",
     "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "Read OTC 2.6 - Instructions\nRead OTC 2.7 – User Guides\nRead OTC 2.8 – SOP and Procedures\nRead SWHR 3 – Methods\n\n\n\n\nOTC 2.6-2.8\nSWHR 3\n\n\n\n\n\n\nFor Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what’s covered in that article)\n\n\n\n\n\nDescribing statistical methods\nWriting good “how to” guides for others\n\n\n\n\n\nDocumenting code\n\n\n\n\n\nWrite a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)",
+    "text": "Read OTC 2.6 - Instructions\nRead OTC 2.7 – User Guides\nRead OTC 2.8 – SOP and Procedures\nRead SWHR 3 – Methods\n\n\n\n\nOTC 2.6-2.8\nSWHR 3\n\n\n\n\n\n\nFor Wednesday: Submit a needs assessment and task analysis for your user guide.\n\n\n\n\n\nDescribing statistical methods\nWriting good “how to” guides for others\n\n\n\n\n\nDocumenting code\n\n\n\n\n\nWork on your user guide (due next week!)",
     "crumbs": [
       "Weekly materials",
       "Week 7 - Methods"
@@ -774,7 +895,7 @@
     "href": "weeks/week-07.html#prepare-for-class",
     "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "For Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what’s covered in that article)",
+    "text": "For Wednesday: Submit a needs assessment and task analysis for your user guide.",
     "crumbs": [
       "Weekly materials",
       "Week 7 - Methods"
@@ -807,7 +928,7 @@
     "href": "weeks/week-07.html#practice-your-skills",
     "title": "Week 7: Methods & Procedures",
     "section": "",
-    "text": "Write a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)",
+    "text": "Work on your user guide (due next week!)",
     "crumbs": [
       "Weekly materials",
       "Week 7 - Methods"
@@ -939,7 +1060,7 @@
     "href": "weeks/week-13.html",
     "title": "Week 13: Reports and Presentations",
     "section": "",
-    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12\n\n\n\n\n\n\nBusiness and Technical Reports – general formatting and concerns\n\n\n\n\n\nIn class activity: Analyzing government reports\n\n\n\n\n\nRough draft of business report submitted along with to-do list\n(not turned in) Prepare business presentation slides/talk",
+    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12, 4.1\n\n\n\n\n\n\nBusiness and Technical Reports – general formatting and concerns\n\n\n\n\n\nIn class activity: Analyzing government reports\n\n\n\n\n\nRough draft of business report submitted along with to-do list\n(not turned in) Prepare business presentation slides/talk",
     "crumbs": [
       "Weekly materials",
       "Week 13 - Reports"
@@ -950,7 +1071,7 @@
     "href": "weeks/week-13.html#reading",
     "title": "Week 13: Reports and Presentations",
     "section": "",
-    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12",
+    "text": "Read OTC 2.12 - Oral Presentations\nRead OTC 4.1 – Report Design and skim 4.3-4.5\n\n\n\n\nOTC 2.12, 4.1",
     "crumbs": [
       "Weekly materials",
       "Week 13 - Reports"
@@ -1141,12 +1262,5 @@
     "title": "Résumés, CVs, and Cover Letters",
     "section": "Activity: Data Science Resumes",
     "text": "Activity: Data Science Resumes\n\n\n\nAssociate Data Scientist\n\n\nData Science Student\n\n\nData Scientist Intern\n\n\nData Scientist\n\n\nData Visualization\n\n\nEducational Data Scientist\n\n\nEntry Level Data Scientist\n\n\nHealthcare Data Scientist\n\n\nPython Data Scientist\n\n\n\nWhat works? What doesn’t?"
-  },
-  {
-    "objectID": "slides/02-cv-cover-letter.html#cover-letter-structurecomment-briefly-on-the-effectiveness-of-the-transitions-in-the-article-5-10-sentences",
-    "href": "slides/02-cv-cover-letter.html#cover-letter-structurecomment-briefly-on-the-effectiveness-of-the-transitions-in-the-article-5-10-sentences",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Cover Letter StructureComment briefly on the effectiveness of the transitions in the article (5-10 sentences)",
-    "text": "Cover Letter StructureComment briefly on the effectiveness of the transitions in the article (5-10 sentences)\n\nClosing:\n\nrestate interest in the role\nsummarize why you’re a good candidate\nthank reader for time/consideration\noffer to provide more information"
   }
 ]

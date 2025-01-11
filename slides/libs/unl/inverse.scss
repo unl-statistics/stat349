@@ -88,6 +88,7 @@ a {
 
 .inverse {
   color: #fefdfa;
+  
   .underline{border-bottom:1px solid #fefdfa;display:inline-block;}
   
   h1, h2, h3 {
@@ -106,7 +107,7 @@ a {
     background-color: #001226;
   }
 
-    .callout-caption {
+  .callout-caption {
     color: $body-color;
   }
 

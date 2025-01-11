@@ -15,7 +15,7 @@
 
 ## 🥣 Prepare for class
 
-- [ ] For Wednesday: Submit a topic idea that you will cover in your user guide which relates to your annual review article (probably should be a subset of what's covered in that article)
+- [ ] For Wednesday: Submit a needs assessment and task analysis for your user guide.
 
 ## ☕ Monday
 
@@ -28,6 +28,6 @@
 
 ##  🏋️ Practice your skills
 
-- [ ] Write a basic procedure/method guide for a technically competent non-statistician to explain how to perform some task covered by your review article. Include references, links, etc. as necessary, but be sure to explain how to actually perform an analysis, create a type of chart, etc. (Due at end of week 8)
+- [ ] Work on your user guide (due next week!)
 
 

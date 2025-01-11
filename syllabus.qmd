@@ -11,19 +11,20 @@ format:
     - partials/before-body.tex
     - partials/graphics.tex
     dev: cairo_pdf
-title: Syllabus- Technical Skills for Statisticians
+title: Syllabus
 instructor: Susan Vanderplas
 semester: Spring 2025
 email: susan.vanderplas@unl.edu
-web: srvanderplas.github.io
+web: srvanderplas.netlify.app
 officehours: \href{https://calendly.com/drvanderplas/officehours}{Schedule here}
 office: Hardin 343D
-classroom: ANSC A228-East
+classroom: Hardin ANSC A228-East
 classhours: MW 10:00 - 11:15
+image: figs/reading.svg
+type: reading
 ---
 
 ```{r setup, include=FALSE}
-#| eval: true
 # knitr::opts_chunk$set(cache=FALSE, dev='pdf')
 knitr::opts_chunk$set(cache=F,
                       fig.path = 'figs/',
@@ -37,13 +38,6 @@ knitr::opts_chunk$set(
                       if (file.rename(x, x2)) x2 else x
                       }
                   )
-```
-
-```{r run-schedule}
-#| eval: true
-#| echo: false
-#| include: false
-# Create schedule variables
 source("schedule.R")
 ```
 
@@ -64,21 +58,17 @@ At the end of this course, students should know how to:
 
 # Textbook
 
-This course will use three different OER (open educational resource) textbooks:
+This course will primarily use an OER (open educational resource) for technical writing, [Open Technical Communication](https://alg.manifoldapp.org/projects/open-technical-communication), by Tijerina, Powell, Arnett, Logan, & Race.
 
-- [Open Technical Communication](https://alg.manifoldapp.org/projects/open-technical-communication), by Tijerina, Powell, Arnett, Logan, & Race. (abbreviated OTC)
-- [Entering the Conversation](https://wisc.pb.unizin.org/opencomp/front-matter/intro/) (abbreviated ETC), an open composition textbook by Naomi Salmon (Ed)
-- [Scientific Writing for Health Research](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/) (abbreviated SWHR), which is generally useful for scientific writing and statistical/data related topics not covered by the other two resources. 
-
-Other resources have been added to the course canvas page. All books and resources used in this course are available online or through the UNL library free of charge.
+Other useful resources have been added to the course canvas page. All books and resources used in this course are available through the UNL library free of charge.
 
 # Class Schedule & Topic Outline
 
-This schedule is **tentative** and **subject to change**. Students are expected to read the corresponding textbook chapter(s) **before coming to class**. 
+This schedule is **tentative** and **subject to change**. Students are expected to read the corresponding textbook chapter (linked in Canvas) **before coming to class**. For the most part, for each week's topic, there will be one or two corresponding textbook chapters.
 
 \FloatBarrier
 
-```{r calendar, error = T}
+```{r calendar}
 #| echo: false
 #| eval: true
 #| warning: false
@@ -93,13 +83,9 @@ class_cal
 
 \small
 
-```{r schedule}
-#| echo: false
-#| eval: true
-#| warning: false
-schedule %>%
-  tidyr::replace_na(list("Important Dates" = "")) %>%
-kableExtra::kable(caption = "Tentative schedule of class topics", format = "simple") 
+```{r schedule, eval = T, echo = F, fig.pos = 'h'}
+schedule %>% 
+kableExtra::kable(caption = "Tentative schedule of class topics", format = "simple")
 ```
 
 \normalsize
@@ -114,10 +100,10 @@ kableExtra::kable(caption = "Tentative schedule of class topics", format = "simp
 | Assignments                    | Weight |
 |--------------------------------|--------|
 | Reading Quizzes                | 10%    |
+| Participation                  | 10%    |
 | Homework                       | 40%    |
-| Technical Documentation Guide  | 20%    |
+| User Guide/Documentation       | 20%    |
 | Business Report & Presentation | 20%    |
-| Portfolio                      | 10%    |
 
 Lower bounds for grade cutoffs are shown in the following table. I will not "round up" grades at the end of the semester.
 
@@ -129,25 +115,21 @@ Lower bounds for grade cutoffs are shown in the following table. I will not "rou
 | D            | 67.0   | 64.0 | 61.0 |
 | F            | \<61.0 |      |      |
 
-Interpretation of this table: A grade of 84.3 will receive a B. A grade of 78.8 will receive a C+. A grade of 73.9 will receive a C-. Anything below a 61 will receive an F.
+Interpretation of this table: A grade of 84.3 will receive a B. A grade of 77.6 will receive a C+. A grade of 73.9 will receive a C-. Anything below a 61 will receive an F.
 
 ## Course Components
 
 ### Reading Quizzes
 
-You will have weekly reading assignments which introduce the weekly focus area. 
-In order to motivate the importance of this reading, you will be given a weekly reading quiz on Canvas which covers the requisite material. 
-These quizzes are open-note, but not open-classmate - please do them independently. 
-Quizzes will be due before the first class of the week (e.g. by 10 am Monday).
-No credit will be given for quizzes received after the due date/time.
+You will have weekly reading assignments which introduce the weekly focus area and provide different perspectives on the material. Some of these perspectives will be covered in class lectures and activities, but some will not and are provided to expose you to different approaches and opinions.
+
+In order to motivate the importance of doing the weekly reading before class, you will be given a weekly reading quiz on Canvas which covers the requisite material. These quizzes will be due before the first class of the week (so, at 10am on Mondays).
 
 ### Homework
 
 Weekly formative assignments (assignments meant to help you practice skills) will be given throughout the semester. The only way to learn the skills taught in this course is to practice - writing, citing, doing research, summarizing, and so on.
 
--   You will typically have about one week to work on each  assignment.
-
--   Assignment due dates are specified on Canvas. 
+-   You will typically have one week to work on each of the assignments.
 
 -   Assignments must be submitted in the file format specified, and should run or compile as submitted for credit to be given.
 
@@ -157,39 +139,19 @@ Weekly formative assignments (assignments meant to help you practice skills) wil
 
 ### Participation
 
-All students are expected to attend and fully participate in class activities. 
-Participation grades will be determined based on a combination of class attendance and activities. 
-Participation will be equivalent to a homework grade, and two absences are allowed without any reduction in participation score.
+All students are expected to attend and fully participate in class activities. Participation grades will be determined based on a combination of class attendance and activities. Two absences are allowed without any reduction in participation score.
 
 ### Projects
 
-There are 3 primary projects in this course: a technical documentation guide based on a statistical journal article, a business report and presentation, and a portfolio showcasing your writing over the course of the semester. 
-As part of these projects, you will be expected to participate in peer evaluations of written and oral work, and provide thoughtful, constructive comments. 
-
-These projects have been designed to support your learning objectives and connect different topics throughout the course.
-Weekly homework assignments will often be related to your project topics and will help you to work through the writing revision cycle over the course of the semester. 
+You will complete two major projects in this course: a business-style report and presentation, and a research-style paper and poster. These projects will be due during the second half of the semester, and will involve both in-person presentations and peer evaluations of other students' work.
 
 # Course Policies
 
 ## Late Work Policy
 
-I reserve the right not to grade (or to assign a 0 to) any assignments received after the assignment due date.
+Late assignments will be accepted only under extenuating circumstances, and only if you have contacted me **prior** to the assignment due date and received permission to hand the assignment in late. I reserve the right not to grade (or to assign a 0 to) any assignments received after the assignment due date.
 
-### Reading Quizzes
-No late reading quizzes will be accepted. 
-These quizzes are designed to ensure that you are prepared for class; accepting late quizzes does not meet this design goal. 
-
-
-### Projects
-Late projects/papers will not be excepted unless the following conditions are ALL met:
-
-- Extenuating circumstances that are not a result of poor planning (e.g. sudden death in the family, car accident, serious illness)
-- You contact me as soon as practical given the circumstances (prior to the due date), asking for permission to hand the assignment in late
-- I grant permission to hand the assignment in late
-- We agree on a new due date
-
-### Homework
-You may submit a homework assignment that was not submitted in time as a resubmission, assuming it meets the conditions outlined in the next section.
+You may submit an assignment that was not submitted in time as a resubmission, assuming it meets the conditions outlined in the next section.
 
 ## Resubmission Policy
 
@@ -205,25 +167,26 @@ This policy is subject to the following constraints:
 
 -   Each assignment should be resubmitted only once.
 
--   Resubmissions are due no later than 2 weeks after the initial due date. In addition, to ensure adequate time to grade assignments, 
+-   Resubmissions are due no later than 2 weeks after the initial due date. In addition,
+
     -   Resubmissions from weeks 1-7 must be submitted by Friday at 5pm of week 8 of classes
     -   Resubmissions from weeks 8-14 must be submitted by Monday at 5pm of week 15 of classes
 
 -   Resubmitted assignments will be graded at my convenience.
 
-I spend the extra time grading resubmissions because it reinforces your learning; while it may improve your grade, this is a side effect and not the primary goal.\
-I reserve the right to adjust the resubmission policy, limit resubmissions, or introduce a penalty for resubmissions during the semester to ensure that it is meeting the objective of reinforcing your learning.
+<!-- - You should resubmit assignments as soon as possible.     -->
+
+<!-- I reserve the right to cut off assignment resubmissions on a rolling basis (e.g. you have 3 weeks after the original due date) or based on the point in the semester (e.g. all homeworks due before Spring Break must be resubmitted by the week after we return from Spring Break). -->
+
+I spend the extra time grading resubmissions because it reinforces your learning; this policy is not designed to improve your grade in this class.\
+I reserve the right to adjust the resubmission policy over the course of the semester to ensure that it is meeting the objective of reinforcing your learning.\
+I reserve the right to limit or penalize resubmissions if it becomes clear that the current policy does not promote learning of the material and/or support the course objectives.
 
 ## Attendance
 
-You are expected to attend class, and I will take attendence periodically (not necessarily at every class session). 
-Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
+You are expected to attend class. Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
 
-If you are feeling ill, please **do not come to class**. 
-Instead, review the material, work on the homework assignment, and get notes from a classmate.
-To make up your participation points, schedule an appointment with me to meet virtually within a week of the missed class date. 
-In the appointment description field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
-Calendly meetings will provide you with participation points for up to 2 absences. 
+If you are feeling ill, please **do not come to class**. Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually. In the appointment reason field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
 
 ## Inclement Weather
 
@@ -233,16 +196,16 @@ If in-person classes are canceled, you will be notified of the instructional con
 
 You can expect me to:
 
--   reply to emails within 2 business days
+-   reply to emails within 48 hours during the week (72 hours on weekends)
 -   be available in class to assist with assignments
 -   be available by appointment for additional help or discussion
 
 I expect you to:
 
--   Complete the reading and class preparation material before coming to class
+-   Complete the "prepare" module material before coming to class
 -   Engage with the material and your classmates during class
 -   Seek help when you do not understand the material
--   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course
+-   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
 -   Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
 -   Be respectful and considerate of everyone in the class
 
@@ -270,7 +233,7 @@ With the proliferation of AI tools such as Chat-GPT, I reserve the right to repl
 
 ### Generative AI
 
-Technical writing is more clear and concise than other types of writing, and nuances are extremely important. To date, generative AI is not particularly good at these goals - it is wordy and uses nonstandard language, and as a predictive model, it cannot structure its output for human understanding. It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI to create any content for class assignments.
+Technical writing is more clear and concise than other types of writing, and nuances are extremely important. To date, generative AI is not particularly good at these goals - it is wordy and uses nonstandard language, and as a predictive model, it cannot structure its output for human understanding. It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI for content.
 
 Any use of generative AI must be disclosed in an appendix to your submission - this includes brainstorming, editing, using AI as spell-check/grammar-check, and so on. You must document the following:
 

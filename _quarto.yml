@@ -6,6 +6,9 @@ project:
   render:
     - index.qmd
     - syllabus.qmd
+    - course-links.qmd
+    - course-overview.qmd
+    - course-support.qmd
     - weeks/*.qmd
     - business-report/*.qmd
     - instructions/*.qmd

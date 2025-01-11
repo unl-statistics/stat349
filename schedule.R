@@ -100,8 +100,9 @@ class_cal <- ggplot(Cal, aes(wkdy, week)) +
                     breaks=c("Semester", "UNL holiday", "Due date", "Class Day"))
 # class_cal
 
-topics <- read_excel("course-schedule.xls",  sheet = "Week-plan", range = "A1:B16") |>
-  rename(sem_week=Week, topic = Title)
+topics <- read_excel("course-schedule.xls",  sheet = "Week-plan") |>
+  rename(sem_week=Week, topic = Title) |>
+  select(sem_week, topic)
 
 
 duedates <- filter(Cal, category == "Due date") |>

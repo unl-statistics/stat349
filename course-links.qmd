@@ -3,7 +3,7 @@ title: "Useful links"
 ---
 
 |  |  |
-|----------------|--------------------------------------------------------|
+|----|----|
 | 🔗[Canvas](https://canvas.unl.edu/courses/192983) | Assignment Submissions, Reading Quizzes, Gradebook |
 | 🔗[Github Classroom](https://classroom.github.com/classrooms/193619057-unl-stat349-2025a-classroom-a584d5) | Project Submissions |
 | Textbook | 🔗[Scientific Writing for Health Research](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/) |
