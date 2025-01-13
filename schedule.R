@@ -29,13 +29,11 @@ project_dates <- tibble(
   category = "Due date",
   date = c(ymd(20250314), 
             ymd(20250425), 
-            ymd(20250504), 
-            ymd(20250512)),
+            ymd(20250504)),
   topic = c("User Guide Due", 
             "Business Report Draft Due", 
-            "Business Report Due",
-            "Portfolio Due"),
-  time = c("6pm", "6pm", "6pm", "6pm")
+            "Business Report Due"),
+  time = c("6pm", "6pm", "6pm")
 )
 
 exam_week <- seq(ymd(20250512), ymd(20250516), by = 1)
