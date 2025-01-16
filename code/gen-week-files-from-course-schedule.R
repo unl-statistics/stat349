@@ -6,66 +6,116 @@ library(glue)
 
 plan <- read_xls("course-schedule.xls", "Week-plan")
 
-week_template <- "
 
-# Week {Week}: {Title}
+plan_bits <- c(
+  Week = "# Week {Week}:",
+  Date_First_Class = "",
+  Title = " {Title}
+  
+", 
+  Reading = "## 📖 Reading
 
-## 📖 Reading
+  {Reading}
 
-{Reading}
-
-### 🎯 Check your understanding
+", 
+  Reading_Quiz = "### 🎯 Check your understanding
 
 {Reading_Quiz}
 
-## 🥣 Prepare for class
+", 
+  Prepare = "## 🥣 Prepare for class
 
 {Prepare}
 
-## ☕ Monday
+",
+  Monday_Class = "## ☕ Monday
 
 {Monday_Class}
-
-## 🐪 Wednesday
+  
+",
+  Wednesday_Class = "## 🐪 Wednesday
 
 {Wednesday_Class}
 
-##  🏋️ Practice your skills
+",
+  Exam = "## 🧪 Exam
+  
+  {Exam}
+  
+",
+  Assignments = "##  🏋️ Practice your skills
 
 {Assignments}
 
-
 "
+)
 
-week_template_no_prep <- "
-
-# Week {Week}: {Title}
-
-## 📖 Reading
-
-{Reading}
-
-### 🎯 Check your understanding
-
-{Reading_Quiz}
-
-## ☕ Monday
-
-{Monday_Class}
-
-## 🐪 Wednesday
-
-{Wednesday_Class}
-
-##  🏋️ Practice your skills
-
-{Assignments}
+templates <- purrr::map(split(plan, 1:nrow(plan)), ~paste(plan_bits[names(.)[!is.na(.)]], collapse = "") )
 
 
-"
-
-md <- if_else(is.na(plan$Prepare), glue_data(plan, week_template_no_prep), glue_data(plan, week_template))
+md <- map2_chr(split(plan, 1:nrow(plan)), templates, glue_data)
 
 md <- set_names(md, sprintf("weeks/week-%02d.qmd", plan$Week))
 
 walk2(md, names(md), ~writeLines(.x, con = .y))
+
+
+# 
+# week_template <- "
+# 
+# # Week {Week}: {Title}
+# 
+# ## 📖 Reading
+# 
+# {Reading}
+# 
+# ### 🎯 Check your understanding
+# 
+# {Reading_Quiz}
+# 
+# ## 🥣 Prepare for class
+# 
+# {Prepare}
+# 
+# ## ☕ Monday
+# 
+# {Monday_Class}
+# 
+# ## 🐪 Wednesday
+# 
+# {Wednesday_Class}
+# 
+# ##  🏋️ Practice your skills
+# 
+# {Assignments}
+# 
+# 
+# "
+# 
+# week_template_no_prep <- "
+# 
+# # Week {Week}: {Title}
+# 
+# ## 📖 Reading
+# 
+# {Reading}
+# 
+# ### 🎯 Check your understanding
+# 
+# {Reading_Quiz}
+# 
+# ## ☕ Monday
+# 
+# {Monday_Class}
+# 
+# ## 🐪 Wednesday
+# 
+# {Wednesday_Class}
+# 
+# ##  🏋️ Practice your skills
+# 
+# {Assignments}
+# 
+# 
+# "
+

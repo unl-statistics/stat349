@@ -1,9 +1,8 @@
-
 # Week 2: Communicating You!
-
+  
 ## 📖 Reading
 
-- [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
+  - [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
 
 
 ### 🎯 Check your understanding
@@ -19,7 +18,7 @@
 - [CV/cover letter important components](../slides/02-cv-cover-letter.qmd)
 - Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
 
-
+  
 ## 🐪 Wednesday
 
 - Peer Review CV/cover letter
@@ -29,5 +28,4 @@
 
 - [ ] Add CV/cover letter to portfolio
 - [ ] Choose an Annual Review article from those offered – no duplicates
-
 

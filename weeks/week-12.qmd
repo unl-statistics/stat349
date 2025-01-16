@@ -1,9 +1,8 @@
-
 # Week 12: Countering Logical Fallacies
-
+  
 ## 📖 Reading
 
-- [ ] Read [OTC 5.13-5.15 - Logic](https://alg.manifoldapp.org/read/open-technical-communication/section/7899c269-bf9e-4d23-a881-0d43241fb1e5)
+  - [ ] Read [OTC 5.13-5.15 - Logic](https://alg.manifoldapp.org/read/open-technical-communication/section/7899c269-bf9e-4d23-a881-0d43241fb1e5)
 - [ ] Read [Wikipedia’s article on Misuse of Statistics](https://en.wikipedia.org/wiki/Misuse_of_statistics)
 - [ ] Read [The Misuse of Statistics](https://doi.org/10.1080/08989620212968)
 
@@ -15,7 +14,7 @@
 ## ☕ Monday
 
 - Logical fallacies in the workplace in-class activity
-
+  
 ## 🐪 Wednesday
 
 - Statistical misunderstandings and how to counter them -- class discussion
@@ -23,5 +22,4 @@
 ##  🏋️ Practice your skills
 
 - (not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report
-
 

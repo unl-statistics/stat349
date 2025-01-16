@@ -1,9 +1,8 @@
-
 # Week 9: Results
-
+  
 ## 📖 Reading
 
-- [ ] Read [SWHR 5 - Results](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/results-section.html)
+  - [ ] Read [SWHR 5 - Results](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/results-section.html)
 
 ### 🎯 Check your understanding
 
@@ -12,7 +11,7 @@
 ## ☕ Monday
 
 - Describing results -- level of detail and role of supplementary documentation
-
+  
 ## 🐪 Wednesday
 
 - Integrating results and visual aids
@@ -21,5 +20,4 @@
 ##  🏋️ Practice your skills
 
 - [ ] Draft of results section of business report with relevant graphics/visual aids
-
 

@@ -1,9 +1,8 @@
-
 # Week 5: Making an Argument
-
+  
 ## 📖 Reading
 
-- [ ] Read [OTC Chapter 5.1 – Process](https://alg.manifoldapp.org/read/open-technical-communication/section/134f046e-ff01-4eec-a525-2d1128957c1e)
+  - [ ] Read [OTC Chapter 5.1 – Process](https://alg.manifoldapp.org/read/open-technical-communication/section/134f046e-ff01-4eec-a525-2d1128957c1e)
 - [ ] Read [OTC Chapter 5.2 – Audience Analysis](https://alg.manifoldapp.org/read/open-technical-communication/section/415d5b4f-758e-49ac-8149-18d4c3c4c10c)
 - [ ] Read [OTC Chapter 5.4 – Articulating Technical Information](https://alg.manifoldapp.org/read/open-technical-communication/section/39c29f74-f502-4050-80b3-1162a9cdd8b0) 
 - [ ] Read [ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis](https://wisc.pb.unizin.org/opencomp/chapter/backpacks-v-briefcases-steps-toward-rhetorical-analysis/), focusing primarily  on the basic components of rhetorical analysis
@@ -15,13 +14,13 @@
 
 ## 🥣 Prepare for class
 
-- [ ] For Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).
+- [ ] By Wednesday night: Clone the business report template in Github classroom (link is in the assignment on Canvas)
 
 ## ☕ Monday
 
 - Basic components of argument and rhetoric in scientific writing
 - Discuss business report & assign report topics
-
+  
 ## 🐪 Wednesday
 
 - In class activity: Arguments in scientific and technical writing
@@ -30,5 +29,4 @@
 
 - [ ] Analyze the rhetorical decisions and arguments in your research article (1 pg summary)
 - Start planning business report – locate data sets to support your analysis
-
 

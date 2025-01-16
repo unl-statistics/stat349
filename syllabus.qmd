@@ -15,8 +15,8 @@ title: Syllabus
 instructor: Susan Vanderplas
 semester: Spring 2025
 email: susan.vanderplas@unl.edu
-web: srvanderplas.netlify.app
-officehours: \href{https://calendly.com/drvanderplas/officehours}{Schedule here}
+web: srvanderplas.github.io
+officehours: \href{https://calendly.com/vanderplas/office-hours}{Schedule here}
 office: Hardin 343D
 classroom: Hardin ANSC A228-East
 classhours: MW 10:00 - 11:15
@@ -27,7 +27,7 @@ type: reading
 ```{r setup, include=FALSE}
 # knitr::opts_chunk$set(cache=FALSE, dev='pdf')
 knitr::opts_chunk$set(cache=F,
-                      fig.path = 'figs/',
+                      fig.path = 'images/',
                       cache.path='cache/',
                       warning=F,
                       message=F)

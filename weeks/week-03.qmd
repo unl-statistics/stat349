@@ -1,9 +1,8 @@
-
 # Week 3: References
-
+  
 ## 📖 Reading
 
-- [ ] Read [OTC Chapter 5.6 – References](https://alg.manifoldapp.org/read/open-technical-communication/section/d9202f07-41a2-4dc9-8b29-486e164c1775) 
+  - [ ] Read [OTC Chapter 5.6 – References](https://alg.manifoldapp.org/read/open-technical-communication/section/d9202f07-41a2-4dc9-8b29-486e164c1775) 
 - [ ] Read [OTC Chapter 3 - Ethics](https://alg.manifoldapp.org/read/open-technical-communication/section/8b530f4b-5942-4071-845a-0a138601da10) 
 - [ ] Read [ETC Annoying Ways People Use Sources](https://wisc.pb.unizin.org/opencomp/chapter/annoying-ways-people-use-sources/)
 
@@ -19,7 +18,7 @@
 
 - Citation Managers – Demonstrate Zotero features 
 
-
+  
 ## 🐪 Wednesday
 
 - How to read technical reports and academic articles
@@ -28,5 +27,4 @@
 ##  🏋️ Practice your skills
 
 - [ ] Create an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article.
-
 

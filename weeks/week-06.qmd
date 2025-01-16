@@ -1,9 +1,8 @@
-
 # Week 6: Problem Statements & Data
-
+  
 ## 📖 Reading
 
-- [ ] Read [UW's guide to data documentation](https://data.wisc.edu/data-literacy/document/)
+  - [ ] Read [UW's guide to data documentation](https://data.wisc.edu/data-literacy/document/)
 - [ ] Read [OTC Chapter 2.9 – Recommendation and Feasibility Reports](https://alg.manifoldapp.org/read/open-technical-communication/section/9ed77f57-00e0-471c-8049-187cd9d00bc2)
 - [ ] Read [SWHR 1.1 – 1.3 – Research Question](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/research-question.html)
 
@@ -16,7 +15,7 @@
 
 - Problem Statements
 - In class activity: write good problem statements for examples
-
+  
 ## 🐪 Wednesday
 
 - Documenting Data
@@ -26,5 +25,4 @@
 ##  🏋️ Practice your skills
 
 - [ ] Document data that you plan to use for your business report
-
 

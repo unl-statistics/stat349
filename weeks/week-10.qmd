@@ -1,9 +1,8 @@
-
 # Week 10: Introductions and Conclusions
-
+  
 ## 📖 Reading
 
-- [ ] Read [SWHR 2 - Introduction](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/introduction-section.html)
+  - [ ] Read [SWHR 2 - Introduction](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/introduction-section.html)
 - [ ] Read [SWHR 6 - Discussion](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/discussion-section.html)
 
 ### 🎯 Check your understanding
@@ -13,7 +12,7 @@
 ## ☕ Monday
 
 - Introductions
-
+  
 ## 🐪 Wednesday
 
 - Conclusions
@@ -21,5 +20,4 @@
 ##  🏋️ Practice your skills
 
 - [ ] Draft of introduction and conclusion sections of business report
-
 
