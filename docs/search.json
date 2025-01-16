@@ -140,20 +140,6 @@
     "text": "Just the Document\n\nAlex Bass’s simple quarto resume template\n\n\n\n\nSchochastics quarto templates\nTo use: at the command line,\nquarto use template schochastics/&lt;cv style name&gt;\n\nclassic-cv\n\n\nmodern-cv\n\nmodern2-cv\n\nsidebar-cv\n\n\nMultiformat (PDF/HTML) Resumes with weasyprint - Cynthia Huang\n\n\n\nR packages – build a CV with data!\nBuilding your CV using data frames for education, experience, publications, etc., can make it easier to switch formats and/or keep all of your information in a file and then show only the 3 most recent entries (for example).\n\ndatadrivencv R package. Slides show you how to use the package and why you might want to use data to build a CV/resume. (no LaTeX, uses CSS, but not actively maintained)\n\n\n\nvitae R package – provides functions to make Rmarkdown resumes/CVs easy (quarto -&gt; LaTeX)\n\nawesomecv\n\nhyndman\n\nlatexcv\n\nmarkdowncv\n\nmoderncv\n\ntwentyseconds\n\n\n`typstcv` package (non-LaTeX, HTML-based with CSS)\nTypst is a non-LaTeX way to make paged documents (pdfs, docx) using markdown. Quarto is adopting it, but it is still less developed than LaTeX (which has been around for more than 40 years)."
   },
   {
-    "objectID": "business-report/scenario-power.html",
-    "href": "business-report/scenario-power.html",
-    "title": "The Power of Climate Change",
-    "section": "",
-    "text": "Scenario Description:\nYou are an analyst working for an electrical utility. A manager at one of the power plants has recently approached you about climate resilience strategies. The power plant is situated along the Gulf of Mexico in Dauphin Island, AL, and uses the Gulf as an heatsink.\nCurrently, the plant is designed around the assumption that the temperature of the gulf will be below 85\\(^\\circ\\)F (this assumption was relatively reasonable when the plant was built in 1970). When the water temperature is above this point, the plant must operate at reduced capacity, as it cannot transfer additional thermal energy into the water.\nAssemble data from one or more reputable sources (USGS, NOAA, US Energy Information Administration). Make an operational assessment of the risk that the plant will have to operate at reduced capacity during the next 5 years. Consider both the probability of reduced operating capacity as well as the timing of that capacity (e.g. you should also look at electrical usage during those periods)."
-  },
-  {
-    "objectID": "business-report/scenario-bridge.html",
-    "href": "business-report/scenario-bridge.html",
-    "title": "London Bridge is Falling Down",
-    "section": "",
-    "text": "Scenario Description:\nYou are an analyst for the Omaha, NE city government. The mayor, concerned about the degrading transportation infrastructure in the city, has asked you to assess the risk of bridge failure to the city, after well-publicized bridge collapses in cities on the East Coast in 2024.\nAssemble data from one or more reputable sources (State and national DOT, Army Corps of Engineers, etc.). Assess the risk of a bridge collapse event occurring over the next 5 years, using publicly available data. You should consider both the probability of such a collapse and the consequences – a small county road bridge collapse is less problematic than e.g. the I-80 bridge over the Missouri collapsing. What interventions do you recommend to minimize the risk?"
-  },
-  {
     "objectID": "weeks/week-14.html",
     "href": "weeks/week-14.html",
     "title": "Week 14: Editing and Revising Your Work",
@@ -444,7 +430,7 @@
     "href": "weeks/week-04.html",
     "title": "Week 4: Organizing Information",
     "section": "",
-    "text": "Read ETC Patterns of Organization and Methods of Development\nRead ETC Transitions and Organization\nRead ETC Reverse Outlining\nRead ETC Reading Games\n\n\n\n\nETC Organization, Transitions, and Reading Games\n\n\n\n\n\n\nHow to read technical reports and academic articles\nHow to summarize (without ChatGPT)\nSlides\n\n\n\n\n\nThing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?\n\n\n\n\n\nHighlight transitions in your review article and comment on their effectiveness, obviousness, etc.\nCreate a reverse outline of your review article. Are there any obvious holes?",
+    "text": "Read ETC Patterns of Organization and Methods of Development\nRead ETC Transitions and Organization\nRead ETC Reverse Outlining\nRead ETC Reading Games\n\n\n\n\nETC Organization, Transitions, and Reading Games\n\n\n\n\n\n\nFor Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).\n\n\n\n\n\nHow to read technical reports and academic articles\nHow to summarize (without ChatGPT)\nSlides\n\n\n\n\n\nThing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?\n\n\n\n\n\nHighlight transitions in your review article and comment on their effectiveness, obviousness, etc.\nCreate a reverse outline of your review article. Are there any obvious holes?",
     "crumbs": [
       "Weekly materials",
       "Week 4 - Organization"
@@ -456,6 +442,17 @@
     "title": "Week 4: Organizing Information",
     "section": "",
     "text": "Read ETC Patterns of Organization and Methods of Development\nRead ETC Transitions and Organization\nRead ETC Reverse Outlining\nRead ETC Reading Games\n\n\n\n\nETC Organization, Transitions, and Reading Games",
+    "crumbs": [
+      "Weekly materials",
+      "Week 4 - Organization"
+    ]
+  },
+  {
+    "objectID": "weeks/week-04.html#prepare-for-class",
+    "href": "weeks/week-04.html#prepare-for-class",
+    "title": "Week 4: Organizing Information",
+    "section": "",
+    "text": "For Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).",
     "crumbs": [
       "Weekly materials",
       "Week 4 - Organization"
@@ -807,7 +804,7 @@
     "href": "weeks/week-05.html",
     "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis\n\n\n\n\n\n\nFor Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).\n\n\n\n\n\nBasic components of argument and rhetoric in scientific writing\nDiscuss business report & assign report topics\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)\nStart planning business report – locate data sets to support your analysis",
+    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nOTC 5.1, 5.2, 5.4\nETC Steps Toward Rhetorical Analysis\n\n\n\n\n\n\nBy Wednesday night: Clone the business report template in Github classroom (link is in the assignment on Canvas)\n\n\n\n\n\nBasic components of argument and rhetoric in scientific writing\nDiscuss business report & assign report topics\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)\nStart planning business report – locate data sets to support your analysis",
     "crumbs": [
       "Weekly materials",
       "Week 5 - Arguments"
@@ -829,7 +826,7 @@
     "href": "weeks/week-05.html#prepare-for-class",
     "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "For Wednesday: Submit a topic idea that you will write a user guide about. Your idea should be a subset of your annual review article (or a topic covered in that article), but you should focus on the practical implementation (e.g. demonstrating the use of software which can perform the task).",
+    "text": "By Wednesday night: Clone the business report template in Github classroom (link is in the assignment on Canvas)",
     "crumbs": [
       "Weekly materials",
       "Week 5 - Arguments"
@@ -1164,20 +1161,6 @@
       "Weekly materials",
       "Week 15 - Presentations"
     ]
-  },
-  {
-    "objectID": "business-report/scenario-nsfw.html",
-    "href": "business-report/scenario-nsfw.html",
-    "title": "Not Safe For Work",
-    "section": "",
-    "text": "Scenario Description:\nYou are a statistical analyst for a company with both industrial/manufacturing and office spaces. Your safety officer recently read this article about office injury statistics and wants you to evaluate whether the company needs to implement stronger safety policies for office workers, as they are more likely to be injured through falls than non-office workers.\nAssemble data from one or more reputable sources (Bureau of Labor Statistics, Centers for Disease Control, Occupational Safety and Health Administration) to assess the risk of on-the-job injury for office and non-office workers. Consider both the severity of the injury and the probability of occurrence."
-  },
-  {
-    "objectID": "business-report/scenario-shark.html",
-    "href": "business-report/scenario-shark.html",
-    "title": "Sharknado!",
-    "section": "",
-    "text": "You are an analyst for an insurance agency concerned with increasing payouts for property damage with a warming climate. Your boss recently saw Sharknado (2013) while trying to battle insomnia, and has become concerned about the increased likelihood of shark-infested weather as severe weather events become more probable due to climate change.\nYour boss’s concerns about the possiblity of shark-infested storms cannot be countered with logic, but you might be able to convince them that very few storms even have shark-infestation potential.\nAssemble data from one or more reputable sources (NOAA, USGS, etc.).\nAssess the probability that tornadoes form in coastal areas (Atlantic, Pacific, and Gulf of Mexico) and move inward, compared to the probability that tornadoes form inland and move toward the coast. You should consider both the probability of a coastal -&gt; inland tornadic event and the consequences – a F0 tornado is unlikely to have the power to lift sharks from the water, while an F5 tornado might have the ability to transport many sharks inland. How serious is the sharknado threat to your bottom line?"
   },
   {
     "objectID": "instructions/intro-problem-statements.html",

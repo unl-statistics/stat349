@@ -93,7 +93,7 @@ kableExtra::kable(caption = "Tentative schedule of class topics", format = "simp
 \FloatBarrier
 \clearpage
 
-# Course Structure
+# Course Policies
 
 ## Assessment/Grading
 
@@ -137,27 +137,17 @@ Weekly formative assignments (assignments meant to help you practice skills) wil
 
 -   Formative assessments may be resubmitted for partial credit subject to the terms of the resubmission policy below.
 
-### Participation
-
-All students are expected to attend and fully participate in class activities. Participation grades will be determined based on a combination of class attendance and activities. Two absences are allowed without any reduction in participation score.
-
-### Projects
-
-You will complete two major projects in this course: a business-style report and presentation, and a research-style paper and poster. These projects will be due during the second half of the semester, and will involve both in-person presentations and peer evaluations of other students' work.
-
-# Course Policies
-
-## Late Work Policy
+#### Late Work Policy
 
 Late assignments will be accepted only under extenuating circumstances, and only if you have contacted me **prior** to the assignment due date and received permission to hand the assignment in late. I reserve the right not to grade (or to assign a 0 to) any assignments received after the assignment due date.
 
 You may submit an assignment that was not submitted in time as a resubmission, assuming it meets the conditions outlined in the next section.
 
-## Resubmission Policy
+#### Resubmission Policy
 
 Learning how to write is a process that requires an attempt and then subsequent improvement. Do not be afraid to make mistakes! I allow you to re-submit each formative/homework assignment once.
 
-**Note: The resubmission policy does NOT apply to projects.**
+**Note: The resubmission policy does NOT apply to quizzes, projects, or exams.**
 
 This policy is subject to the following constraints:
 
@@ -182,15 +172,35 @@ I spend the extra time grading resubmissions because it reinforces your learning
 I reserve the right to adjust the resubmission policy over the course of the semester to ensure that it is meeting the objective of reinforcing your learning.\
 I reserve the right to limit or penalize resubmissions if it becomes clear that the current policy does not promote learning of the material and/or support the course objectives.
 
-## Attendance
 
-You are expected to attend class. Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
 
-If you are feeling ill, please **do not come to class**. Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually. In the appointment reason field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
+### Attendance & Participation
 
-## Inclement Weather
+All students are expected to attend and fully participate in class. 
+Participation grades will be determined based on a combination of attendance and participation.
+Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.
 
-If in-person classes are canceled, you will be notified of the instructional continuity plan for this class by Canvas Announcement. In most circumstances where there is power in the Lincoln area, we will hold class via Zoom if the university cancels class.
+One absence is allowed without any reduction in participation score - no excuse is necessary!
+
+#### Illness
+
+If you are feeling ill, please **do not come to class**. 
+Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually. 
+In the appointment reason field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
+
+If you need to miss more than 1-2 classes for illness, I reserve the right to require documentation from Disability Services or a medical provider in order to continue using this substitute for attendance grades. 
+
+#### Inclement Weather
+
+If in-person classes are canceled, you will be notified of the instructional continuity plan for this class by Canvas Announcement. 
+In most circumstances where there is power in the Lincoln area, we will hold class via Zoom if the university cancels class. 
+You will be held to the same participation standards on Zoom as you are in person, and participation and attendance will be graded accordingly, with some allowance for disruption at the individual level where circumstances warrant. 
+
+
+### Projects
+
+You will complete two major projects in this course: a business-style report and presentation, and a user guide for a software package or implementation decision relating to a specific topic. 
+The business report will include a presentation and will be compiled over the second half of the semester. The user guide is due just before Spring Break. 
 
 ## Expectations
 
@@ -202,40 +212,55 @@ You can expect me to:
 
 I expect you to:
 
--   Complete the "prepare" module material before coming to class
+-   Complete the assigned reading, reading quiz, and any other stated preparations before class
 -   Engage with the material and your classmates during class
 -   Seek help when you do not understand the material
 -   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
 -   Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
 -   Be respectful and considerate of everyone in the class
 
-## Assignment Evaluation Criteria
+## Evaluation Criteria
 
-In every assignment, discussion, and written component of this class, you are expected to **demonstrate that you are intellectually engaging with the material**. I will evaluate you based on this engagement, which means that technically correct but low effort answers which do not demonstrate engagement or understanding will receive no credit.
+In every assignment, discussion, and written component of this class, you are expected to **demonstrate that you are intellectually engaging with the material**.
+I will evaluate you based on this engagement, which means that technically correct but low effort answers which do not demonstrate engagement or understanding will receive no credit.
 
-When you answer questions in this class, your goal is to show that you either understand the material or are actively engaging with it. If you did not achieve this goal, then your answer is incomplete, regardless of whether or not it is technically correct. This is not to encourage you to add unnecessary complexity to your answer - simple, elegant solutions are always preferable to unwieldy, complex solutions that accomplish the same task.
+When you answer questions in this class, your goal is to show that you either understand the material or are actively engaging with it. 
+If you did not achieve this goal, then your answer is incomplete, regardless of whether or not it is technically correct. 
+This is not to encourage you to add unnecessary complexity to your answer - simple, elegant solutions are always preferable to unwieldy, complex solutions that accomplish the same task.
 
-Grammar and spelling are important, as is your ability to communicate technical information in writing; both of these criteria will be used in addition to assignment-specific rubrics to evaluate your work.
+Grammar and spelling are important, as is your ability to communicate technical information clearly in a written format; both of these criteria will be used in addition to assignment-specific rubrics to evaluate your work.
 
 ## Academic Integrity and Class Conduct
 
-You will be engaging with your classmates and me through in-person discussions and collaborative activities. It is expected that everyone will engage in these interactions civilly and in good faith. Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail. Individuals who detract from an atmosphere of civility and respect will be removed from the conversation or the classroom.
+You will be engaging with your classmates and me through in-person discussions and collaborative activities. 
+It is expected that everyone will engage in these interactions civilly and in good faith. 
+Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail. 
+Individuals who detract from an atmosphere of civility and respect will be removed from the conversation or the classroom.
 
 Students are expected to adhere to guidelines concerning academic dishonesty outlined in [Article III B.1 of the University's Student Code of Conduct](http://stuafs.unl.edu/dos/code). The Statistics Department [academic integrity and grade appeal policy is available here](https://statistics.unl.edu/grade-appeals-and-academic-integrity-policy).
 
 ### Code
 
-You must be able to explain how the logic works for any code you turn in. This means that code you obtained from e.g. StackOverflow is fine to use if you can explain it and modify it for the purposes of this class, but if you cannot explain your code you will not get credit for the assignment. This is in line with what is generally considered acceptable behavior in programming - reuse is fine (subject to the code's license) but you must be able to fully explain and modify any code you did not write yourself.
+You must be able to explain how the logic works for any code you turn in. 
+This means that code you obtained from e.g. StackOverflow is fine to use if you can explain it and modify it for the purposes of this class, but if you cannot explain your code you will not get credit for the assignment. 
+This is in line with what is generally considered acceptable behavior in programming - reuse is fine (subject to the code's license) but you must be able to fully explain and modify any code you did not write yourself.
+You should also provide a link to the source of your code (or even the logic behind your code) - this is useful both for my information and for future you, in addition to being a good way to give attribution to the original author. 
+
 
 ### Writing
 
-With the proliferation of AI tools such as Chat-GPT, I reserve the right to replace project and homework grades with grades based on an oral discussion of your submissions. If you cannot explain the logic behind your submission, how you came to the approach you used, and identify the tradeoffs behind decisions you made, then you will not receive credit. Chat GPT can be a useful tool, but this course's objectives are meant to assess your ability to communicate statistical information to a target audience effectively, not your ability to use AI systems. Fundamentally, you need to understand concepts and develop written fluency in technical language and statistical concepts to communicate effectively; generative AI solutions may hamper both of these goals if you rely on them too much.
+With the proliferation of AI tools such as Chat-GPT, I reserve the right to replace project and homework grades with grades based on an oral discussion of your submissions. 
+If you cannot explain the logic behind your submission, how you came to the approach you used, and identify the tradeoffs behind decisions you made, then you will not receive credit. 
+Chat GPT can be a useful tool, but this course's objectives are meant to assess your ability to communicate statistical information to a target audience effectively, not your ability to use AI systems. 
+Fundamentally, you need to understand concepts and develop written fluency in technical language and statistical concepts to communicate effectively; generative AI solutions may hamper both of these goals if you rely on them too much.
 
 ### Generative AI
 
-Technical writing is more clear and concise than other types of writing, and nuances are extremely important. To date, generative AI is not particularly good at these goals - it is wordy and uses nonstandard language, and as a predictive model, it cannot structure its output for human understanding. It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI for content.
+Technical writing is more clear and concise than other types of writing, and nuances are extremely important.
+To date, generative AI is not particularly good at these goals - it is wordy and uses nonstandard language, and as a predictive model, it cannot structure its output for human understanding.
+It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI for content.
 
-Any use of generative AI must be disclosed in an appendix to your submission - this includes brainstorming, editing, using AI as spell-check/grammar-check, and so on. You must document the following:
+**Any use of generative AI must be disclosed** in an appendix to your submission - this includes brainstorming, editing, using AI as spell-check/grammar-check, and so on. You must document the following:
 
 -   the version of the generative AI used
 -   the full sequence of prompts and responses
