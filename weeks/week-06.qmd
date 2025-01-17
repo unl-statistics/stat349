@@ -8,8 +8,7 @@
 
 ### 🎯 Check your understanding
 
-- [ ] UW Data documentation guide
-- [ ] OTC 2.9
+- [ ] Reading Quiz Week 6
 
 ## ☕ Monday
 

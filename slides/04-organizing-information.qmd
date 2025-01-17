@@ -1,277 +1,111 @@
 ---
-title: "Reading and Summarizing Articles and Reports"
+title: "Organizing Information"
 format: revealjs
 theme: ./libs/unl/inverse.scss
 includes:
   in_header: ./libs/unl/header.html
 lib_dir: ./libs
+title-slide-attributes:
+  data-background-image: images/post-its.jpeg
+  data-background-size: contain
+  data-background-opacity: "0.5"
 ---
 
-## Before you start
 
-- Doing it right will take more time than you think!
+## Annual Review Article User Guide
 
-- AI summaries miss technical context and important points
+- For Wednesday: Submit a topic idea for your user guide
 
-## Basic Structure {.r-fit-text}
+  - Focus on practical implementation
+  - Show how to use some software or technique
 
-Scientific articles mostly follow this structure:
+- Written for a peer at a business who is not necessarily a statistician but is technologically competent (you can assume knowledge of basic R/python)
 
-- Abstract
-- Introduction
-- Methods
-- Results
-- Conclusions/Discussion
-- References
-- Appendices/Supplementary Information
+- Example: Conducting visual inference studies using the `nullabor` package
 
 
-
-## Basic Structure {.r-fit-text}
-
-Scientific articles mostly follow this structure:
-
-+----------------+--------------------------------------------+ 
-| Abstract       | Very technical and concise                 |
-+----------------+--------------------------------------------+  
-| Introduction   | Definitions and context, motivation        | 
-+----------------+--------------------------------------------+ 
-| Methods        | Data collection, some statistics           | 
-+----------------+--------------------------------------------+ 
-| Results        | Interpretation/significance tests          | 
-+----------------+--------------------------------------------+ 
-| Discussion/    | What does it mean?                         |
-| Conclusion     | Why does it matter?                        |
-+----------------+--------------------------------------------+ 
-| References     | What work is this related to?              | 
-|                | How well established are the methods?      |
-+----------------+--------------------------------------------+
-| Supplement     | Code, data, stuff reviewers wanted,        |
-|                | things that didn't fit page limit...       |
-+----------------+--------------------------------------------+
+## Organizing Information
 
 
-## Basic Structure {.r-fit-text}
+::: columns
 
-Technical reports have a more varied structure:
+::: column
 
-- Executive Summary
-- Contents
-
-- Introduction
-- Body - broken into sections
-- Conclusions
-
-- References/Bibliography
-
-- Appendices
-
-
-
-
-## Basic Structure {.r-fit-text}
-
-Technical reports have a more varied structure:
-
-- Executive Summary [(for dummies)]{.emph .cerulean}
-- Contents [preview of what you're in for]{.emph .cerulean}
-
-- Introduction
-- Body - broken into sections
-- Conclusions
-
-- References/Bibliography
-
-- Appendices [technical documentation, related documents, stuff to ~~bury so management doesn't see it~~ CYA]{.emph .cerulean}
-
-
-
-## Strategy 1: Spoilers!
-
-<iframe src="https://giphy.com/embed/Zsxh9Cbq7VCy4" width="800" height="538" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-
-## Strategy 1: 🫣 Spoilers!
-
-### First Pass
-
-- Read the title
-
-- Read the conclusion
-    - Assemble a couple of questions to focus your reading
-
-- Skim the methods
-
-- Skim the results
-
-Can you answer your assembled questions?
-
-
-## Strategy 1: 🫣 Spoilers!
-
-### Think a bit
-
-What do you not understand (yet)?
-
-  - Vocabulary? Google/Dictionary/Reference book
-
-  - How they came to the conclusion?
-  
-      - Read the paper again, in order this time
-      
-  - Why this topic is interesting?
-      - Read the introduction... 
-      [(if this doesn't help, just accept that it's interesting to someone)]{.small}
-
-## Strategy 1: 🫣 Spoilers!
-
-### Read it again
-
-- 🔝 In order, this time
-
-- 🎶️ Margin notes - ask questions (for you or the author)!
-
-- Liberally comment 
-    - ⁉️/🔥/🤡/🤯/🪿
-    - "this is cool/dumb/nonsenscical"
-    - WTF
-
-- ✏️ Highlight/underline key points, definitions that are new to you    
-[highlighting everything doesn't work that well - be selective!]{.small}
-
-
-## Strategy 1: 🫣 Spoilers!
-
-### ✅  Check your understanding
-
-- Abstract - teaser for the full paper
-
-  - Highlights important points (most of the time)
-  - Highlights motivation (some of the time)
-  - Presents key results
-  
-  Make sure you understand at least what the abstract covers
-  
-
-- Conclusion
-
-  - Do you understand how/why the authors came to their conclusions?
-  
-  - How does this paper fit into the wider field?
-  
-## Strategy 2: Outline/Sketch
-
-- Read the introduction (NOT the abstract)
-  
-  - Identify the big question
-  
-  - Summarize the background in <5 sentences
-  
-::: aside
-Strategy 2 from https://blogs.lse.ac.uk/impactofsocialsciences/2016/05/09/how-to-read-and-understand-a-scientific-paper-a-guide-for-non-scientists/
+![](./images/hamburger-writing-template.png)
 :::
 
-## Strategy 2: Outline/Sketch
+::: column
 
-- Read the methods
+- Anyone remember this from elementary school?
 
-  - Identify the specific question(s)
+:::
+
+:::
+
+## Removing the Training Wheels
+
+- Thesis developed in parallel with the body of the essay
+
+- Feedback loop:
+  - initial thesis -> draft of the body
+  - discoveries while drafting the body -> update thesis
+  - updated thesis -> reshape the body
   
-  - Identify the approach
+ 
+## Removing the Training Wheels
+
+- Continual refining of ideas until
+  - you're happy    
+  (OR)
+  - the due date arrives
   
-  - Draw a diagram (for experiments) showing process/methods
+
+## Statistical Writing
+
+Main types of statistical writing (in my experience):
+
+- Experiment write-up
+
+- White paper/Technical report
+    - Use a statistical analysis to make a point
+
+- Tutorial
+
+- Literature review
 
 
-## Strategy 2: Outline/Sketch
-
-- Read the results
-
-  - Summarize results for each experiment
-  
-  - Do results answer the specific question(s)?
-  
-- Read the conclusion/discussion
-
-  - What contribution does this make?
-  
-  - What follow-up experiments are necessary?
 
 
-## Strategy 2: Outline/Sketch
+## Organizing Information
 
-- Read the abstract
+- Make a list of the main points
 
-- What do other researchers say about this paper?
+- Make lists of supporting information for each main point
 
-    - Look for citations to the paper that are relatively close in time
-    - Locate where the paper was cited
-    - See if opinions are offered
+
+- Move them around (Post its!) to see if you can find natural transitions
+    - time
+    - connecting pieces of information
+    - logical flow
     
 
-## Evaluating the paper
-### Other Details
 
-- Authors, institutional affiliations
 
-    - are there likely biases here?
-    
-- Journal
+## Organizing Information
 
-    - Check [journal rankings](https://wos-journal.info/)
 
-## Technical/Business Reports
+- If things don't logically connect
+    - are you missing critical pieces to connect concepts? -> More research
+    - are you trying to do too much? -> Narrow topic/thesis
 
-- Look at charts/pictures
 
-- Read conclusions
 
-- Look at tables
+## Activity
 
-- Read the report
+Build the document using the puzzle pieces I've given you. 
 
-- Read the executive summary
+Can you make them logically connect?
 
-    - 🎭🦙: Compare/contrast with the rest of the report
-    
-# Writing a Summary
+What features are you using to connect each piece?
 
-- State the motivation/research question
-    - Why is this interesting/important?
-
-- What hypotheses were tested? What solutions were considered?
-
-- What methods/experimental designs were used?
-
-- What were the results? Significance?
-
-- Why does it matter? What is the implication?
-    - Don't overstate
-    - Include caveats if applicable
-    
-## Revising a Summary
-
-- Read your summary out loud (or have the computer read it to you)
-  - Is anything not logically clear? 
-    - Listen for "non sequiturs" (it does not follow) and missing sentences
-  - Grammar/clarity check
-
-- Re-read/skim the article again
-
-- Read your summary after you revisit the article
-  - Did you cover all of the important points?
-  
-  - What assumptions did you make about your audience?
-  
-## Summary Style Guide
-
-- Eliminate wordiness    
-[extra adverbs ("clearly", "very", "mostly") and weasel words should go]{.small}
-
-- Use specific language    
-["this experiment illustrates" instead of "this illustrates"]{.small}
-
-- Accurate language    
-["fail to reject" instead of "support for the null"]{.small}
-
-- Don't use direct quotes -- summaries are more concise than the original
-
-[Ask yourself "Do I need this word?"]{.emph .cerulean .huge}
+[Wire Cuts, Paragraph by Paragraph](../activities/PNAS2024-wire-cuts-paragraph-puzzle.pdf)
