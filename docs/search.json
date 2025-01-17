@@ -1290,5 +1290,54 @@
     "title": "Reading and Summarizing Articles and Reports",
     "section": "Summary Style Guide",
     "text": "Summary Style Guide\n\nEliminate wordiness\nextra adverbs (“clearly”, “very”, “mostly”) and weasel words should go\nUse specific language\n“this experiment illustrates” instead of “this illustrates”\nAccurate language\n“fail to reject” instead of “support for the null”\nDon’t use direct quotes – summaries are more concise than the original\n\nAsk yourself “Do I need this word?”"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#project-life-cycle",
+    "href": "slides/06-problem-statements.html#project-life-cycle",
+    "title": "Writing Problem Statements",
+    "section": "Project Life Cycle",
+    "text": "Project Life Cycle\n\nImage source: levelup.gitconnected.com"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#problem-definition",
+    "href": "slides/06-problem-statements.html#problem-definition",
+    "title": "Writing Problem Statements",
+    "section": "Problem Definition",
+    "text": "Problem Definition\nTrouble - what does the project aim to solve?\nOwner - who owns the problem? (business, stakeholders)\nSuccess - what are the success criteria?\nConstraints - logistical, budgetary, time…?\nActors - stakeholders and their interests\nReferences - how have similar problems been solved in the past?"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#example-university-enrollment",
+    "href": "slides/06-problem-statements.html#example-university-enrollment",
+    "title": "Writing Problem Statements",
+    "section": "Example: University Enrollment",
+    "text": "Example: University Enrollment\nCosts of running a university are increasing, but the Board of Regents will not authorize tuition increases; as a result, UNL needs to recruit more students in order to continue to function as a state flagship university.\n\nTrouble?\nOwner?\nSuccess criteria?\nConstraints?\nActors?\nReferences?"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#writing-the-problem-statement",
+    "href": "slides/06-problem-statements.html#writing-the-problem-statement",
+    "title": "Writing Problem Statements",
+    "section": "Writing the Problem Statement",
+    "text": "Writing the Problem Statement\n\nBusiness problem -&gt; general statement\nTemporally focused\nIncorporate constraints\nWritten to engage actors\nHas to work within owner’s constraints"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#example-university-enrollment-1",
+    "href": "slides/06-problem-statements.html#example-university-enrollment-1",
+    "title": "Writing Problem Statements",
+    "section": "Example: University Enrollment",
+    "text": "Example: University Enrollment\nUNL needs to increase enrollment by 1% per year to offset cost increases due to inflation and reduce the need for tuition increases which would further strain Nebraskans’ budgets."
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#break-into-smaller-problems",
+    "href": "slides/06-problem-statements.html#break-into-smaller-problems",
+    "title": "Writing Problem Statements",
+    "section": "Break into Smaller Problems",
+    "text": "Break into Smaller Problems\n\nDecomposition:\nWhat factors contribute to enrollment gains/losses?\nPartition the space: mutually exclusive sub-problems\nRecruitment, Retention, Registration"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#convert-small-problems-into-data-problems",
+    "href": "slides/06-problem-statements.html#convert-small-problems-into-data-problems",
+    "title": "Writing Problem Statements",
+    "section": "Convert Small Problems into Data Problems",
+    "text": "Convert Small Problems into Data Problems\n\nWhat data do we have?\nWhat data do we need?\nIs it feasible to do the analysis with the resources available?\nHow complex is the analysis?"
   }
 ]

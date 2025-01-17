@@ -1,0 +1,78 @@
+---
+title: "Writing Problem Statements"
+format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+## Project Life Cycle
+
+![[Image source](https://levelup.gitconnected.com/crafting-effective-problem-statements-for-data-science-projects-60c979642194): levelup.gitconnected.com](images/data-science-lifecycle.png){fig-alt="Data science project lifecycle: Problem definition, hypothesis generation, data extraction/collection, data exploration/transformation, model building, model deployment"}
+
+## Problem Definition
+
+**Trouble** - what does the project aim to solve?
+
+**Owner** - who owns the problem? (business, stakeholders)
+
+**Success** - what are the success criteria?
+
+**Constraints** - logistical, budgetary, time...?
+
+**Actors** - stakeholders and their interests
+
+**References** - how have similar problems been solved in the past?
+
+
+## Example: University Enrollment
+
+Costs of running a university are increasing, but the Board of Regents will not authorize tuition increases; as a result, UNL needs to recruit more students in order to continue to function as a state flagship university. 
+
+- Trouble?
+
+- Owner?
+
+- Success criteria?
+
+- Constraints?
+
+- Actors?
+
+- References?
+
+
+## Writing the Problem Statement
+
+- Business problem -> general statement
+
+- Temporally focused
+- Incorporate constraints
+- Written to engage actors
+- Has to work within owner's constraints
+
+## Example: University Enrollment
+
+UNL needs to increase enrollment by 1% per year to offset cost increases due to inflation and reduce the need for tuition increases which would further strain Nebraskans' budgets.
+
+
+## Break into Smaller Problems
+
+- Decomposition:     
+What factors contribute to enrollment gains/losses?
+
+- Partition the space: mutually exclusive sub-problems    
+Recruitment, Retention, Registration
+
+
+## Convert Small Problems into Data Problems
+
+- What data do we have?
+
+- What data do we need?
+
+- Is it feasible to do the analysis with the resources available?
+
+- How complex is the analysis?
+

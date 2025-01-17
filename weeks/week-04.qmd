@@ -17,7 +17,7 @@
 
 ## ☕ Monday
 
-- Writing organized reports
+- Transitions and Organizing Information
 - [Slides](../slides/04-organizing-information.qmd)
   
 ## 🐪 Wednesday
