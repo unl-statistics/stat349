@@ -76,3 +76,23 @@ Recruitment, Retention, Registration
 
 - How complex is the analysis?
 
+## Activity
+
+- Pick a problem statement
+
+- Refine the problem statement
+
+- Swap with a classmate who selected a different statement
+
+- Peer review the refined problem statements
+
+- Share with the class
+
+## Problem statement topics
+
+A. The Nuclear Regulatory Commission is concerned that a concrete barrier will be picked up in a tornado and blown into a reactor building. Is this an issue that is sufficiently probable to address via changes to plant design?
+
+B. Firearms and Toolmark (FATM) Examiners claim that subjective examination has an error rate of 2%, but the studies establishing this rate are unreliable. Do FATM examiners use methods which are sufficiently reliable to be presented in court?
+
+C. One brand of vaccine requires one shot and has an 80% efficacy rate, while another brand requires two shots and has a 95% efficacy rate. Public Health officials want to know which shot has a better chance of stopping a global pandemic. 
+

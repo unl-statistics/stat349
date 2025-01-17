@@ -1339,5 +1339,19 @@
     "title": "Writing Problem Statements",
     "section": "Convert Small Problems into Data Problems",
     "text": "Convert Small Problems into Data Problems\n\nWhat data do we have?\nWhat data do we need?\nIs it feasible to do the analysis with the resources available?\nHow complex is the analysis?"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#activity",
+    "href": "slides/06-problem-statements.html#activity",
+    "title": "Writing Problem Statements",
+    "section": "Activity",
+    "text": "Activity\n\nPick a problem statement\nRefine the problem statement\nSwap with a classmate who selected a different statement\nPeer review the refined problem statements\nShare with the class"
+  },
+  {
+    "objectID": "slides/06-problem-statements.html#problem-statement-topics",
+    "href": "slides/06-problem-statements.html#problem-statement-topics",
+    "title": "Writing Problem Statements",
+    "section": "Problem statement topics",
+    "text": "Problem statement topics\nA. The Nuclear Regulatory Commission is concerned that a concrete barrier will be picked up in a tornado and blown into a reactor building. Is this an issue that is sufficiently probable to address via changes to plant design?\nB. Firearms and Toolmark (FATM) Examiners claim that subjective examination has an error rate of 2%, but the studies establishing this rate are unreliable. Do FATM examiners use methods which are sufficiently reliable to be presented in court?\nC. One brand of vaccine requires one shot and has an 80% efficacy rate, while another brand requires two shots and has a 95% efficacy rate. Public Health officials want to know which shot has a better chance of stopping a global pandemic."
   }
 ]
