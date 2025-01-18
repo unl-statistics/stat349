@@ -4,3 +4,6 @@
 [submodule "assignment-repos/annotated-bibliography"]
 	path = assignment-repos/annotated-bibliography
 	url = git@github.com:stat-assignments/annotated-bibliography.git
+[submodule "assignment-repos/business-report"]
+	path = assignment-repos/business-report
+	url = git@github.com:stat-assignments/business-report.git
