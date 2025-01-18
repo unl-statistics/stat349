@@ -1,0 +1,86 @@
+---
+title: "Week 5 - Arguments & Business Reports"
+format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+# Business Reports
+
+## Business Reports
+
+- 4 scenarios
+
+- Your task: 
+    - Develop a problem statement
+    - Find data to support your analysis
+    - Document your data
+    - Conduct and document your analysis (reproducibly)
+    - Write a report that makes a recommendation
+    - Present your findings
+    
+## Business Reports
+
+By Wednesday, clone the repository
+
+This weekend, find a dataset
+
+Next week, document your dataset
+
+As we cover each section of a report/paper, use the business report to practice. 
+
+
+# Argument & Rhetoric in Technical Writing
+
+## Arguments
+
+Fundamentally an argument is a **claim** backed up by **evidence**
+
+Supporting information:
+
+- definitions
+- citations to authority or past work
+- data (& models & charts)
+
+
+## Counter-arguments
+
+Powerful approach: anticipate and address counter-arguments as part of your argument.
+
+Strategies:
+
+- Argue against the counter argument directly
+- Accept the counter argument's premise, but claim ___ matters more
+- Reject the premise of the counter argument and explain why the premise is faulty
+
+It's important (in most circumstances) to treat opposing viewpoints fairly
+
+## Audience
+
+All arguments are made to a specific audience.
+
+Anticipate your audience's concerns and what arguments are likely to be most effective at addressing those concerns.
+
+## Reading Critically
+
+Every source you use is also making an argument
+
+- Understand the author's perspective/background
+- Don't consider anyone the ultimate authority
+- Identify potential sources of bias
+- Consider the audience the author is addressing - is it the same as your audience?
+
+## Practice
+
+Let's listen to an argument about declining attention.
+
+Take notes - how is the author making the argument?
+
+## Practice
+
+{{< video https://www.youtube.com/watch?v=6QltxZ-vPMc  width="100%" height="100%" >}}
+
+## What were the key components of the argument?
+

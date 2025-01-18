@@ -8,12 +8,11 @@
 
 ### 🎯 Check your understanding
 
-- [ ] UW Data documentation guide
-- [ ] OTC 2.9
+- [ ] Reading Quiz Week 6
 
 ## ☕ Monday
 
-- Problem Statements
+- [Problem Statements](../slides/06-problem-statements.qmd)
 - In class activity: write good problem statements for examples
   
 ## 🐪 Wednesday

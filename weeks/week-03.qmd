@@ -2,13 +2,14 @@
   
 ## 📖 Reading
 
-  - [ ] Read [OTC Chapter 5.6 – References](https://alg.manifoldapp.org/read/open-technical-communication/section/d9202f07-41a2-4dc9-8b29-486e164c1775) 
-- [ ] Read [OTC Chapter 3 - Ethics](https://alg.manifoldapp.org/read/open-technical-communication/section/8b530f4b-5942-4071-845a-0a138601da10) 
+  - [ ] Read [OTC Chapter 5.6 – References](https://alg.manifoldapp.org/read/open-technical-communication/section/d9202f07-41a2-4dc9-8b29-486e164c1775)  
+- [ ] Read [OTC Chapter 3 - Ethics](https://alg.manifoldapp.org/read/open-technical-communication/section/8b530f4b-5942-4071-845a-0a138601da10)  
 - [ ] Read [ETC Annoying Ways People Use Sources](https://wisc.pb.unizin.org/opencomp/chapter/annoying-ways-people-use-sources/)
+- [ ] Practical Tutorial: [Connecting Rstudio + Zotero](https://gsverhoeven.github.io/post/zotero-rmarkdown-csl/)
 
 ### 🎯 Check your understanding
 
-- [ ] OTC Ch 3, 5.6, ETC Sources
+- [ ] Reading Quiz Week 3
 
 ## 🥣 Prepare for class
 
@@ -23,6 +24,7 @@
 
 - How to read technical reports and academic articles
 - How to summarize (without ChatGPT)
+- [Slides](../slides/03-reading-summarizing.qmd)
 
 ##  🏋️ Practice your skills
 

@@ -10,7 +10,8 @@ project:
     - course-overview.qmd
     - course-support.qmd
     - weeks/*.qmd
-    - business-report/*.qmd
+    - assignment-repos/*/*.qmd
+    - assignment-repos/*/*/*.qmd
     - instructions/*.qmd
     - homework/*.qmd
     - slides/*.qmd
