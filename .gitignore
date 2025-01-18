@@ -35,5 +35,7 @@ po/*~
 rsconnect/
 /.quarto/
 Open-TC_Quiz-Bank
-assignment-repos
 Thing_Explainer_Excerpts
+syllabus.aux
+syllabus.log
+syllabus.tex

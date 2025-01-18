@@ -1,42 +1,64 @@
-
 library(dplyr)
-library(ggplot2)
+library(tidyr)
+library(purrr)
 library(lubridate)
+library(stringr)
 library(forcats)
+library(ggplot2)
 library(readxl)
 
-# Create a calendar for your syllabus ----
+# Create a calendar for your syllabus 
 # Source: http://svmiller.com/blog/2020/08/a-ggplot-calendar-for-your-semester/
 
-# 1) what is the first Monday of the semester?
-# Any number of ways to identify dates in R, but we'll use {lubridate} and the ymd() function here.
-# Format: YYYYMMDD. In this example, 4 January 2022.
+semester_info <- read_xls("course-schedule.xls", sheet = "SemesterDates")
+
+date_seq <- function(tbl) {
+  stopifnot("Start" %in% names(tbl))
+  stopifnot("End" %in% names(tbl))
+  
+  if(is.na(tbl$End)) {
+    ymd(tbl$Start)
+  } else {
+    seq(ymd(tbl$Start), ymd(tbl$End), by = 1)
+  }       
+}
 
 # Weekday(s) of class
-class_wdays <- c("Mon", "Wed")
+class_wdays <- semester_info |>
+  filter(Description == "Class") |>
+  select(Days) |>
+  mutate(Days = str_split(Days, ",", simplify = F)) |>
+  pluck("Days") |>
+  unlist() |>
+  str_trim()
 
-# What are the full dates of the semester? 
-# In this case: 22 January to 17 May
-semester_dates <- seq(ymd(20250120), ymd(20250516), by=1)
 
-not_here_dates <- c(
-  ymd("20250120"),
-  # Spring Break
-  seq(ymd(20250315),ymd(20250323), by=1))
+# What are the full dates of the semester? Monday of week 1 - end of finals
+semester_dates <- semester_info |>
+  filter(Description == "Semester") |>
+  date_seq()
 
-# You can adjust this as you see fit. Basically: add assignment types (e.g. papers, quizzes).
-project_dates <- tibble(
-  category = "Due date",
-  date = c(ymd(20250314), 
-            ymd(20250425), 
-            ymd(20250504)),
-  topic = c("User Guide Due", 
-            "Business Report Draft Due", 
-            "Business Report Due"),
-  time = c("6pm", "6pm", "6pm")
-)
+# Dates that are school holidays/no class by university fiat
+not_here_dates <- semester_info |>
+  filter(Description == "Holiday") |>
+  select(Start, End) |>
+  mutate(id = 1:n()) |>
+  nest(data = -id) |>
+  mutate(dates = purrr::map(data, date_seq)) |>
+  unnest(dates) |>
+  pluck("dates")
 
-exam_week <- seq(ymd(20250512), ymd(20250516), by = 1)
+project_dates <- read_xls("course-schedule.xls", "due-dates") |>
+  mutate(date=ymd(date))
+
+exam_week <-  semester_info |>
+  filter(Description == "Exams") |>
+  select(Start, End) |>
+  mutate(id = 1:n()) |>
+  nest(data = -id) |>
+  mutate(dates = purrr::map(data, date_seq)) |>
+  unnest(dates) |>
+  pluck("dates")
 
 # Custom function for treating the first day of the month as the first week 
 # of the month up until the first Sunday (unless Sunday was the start of the month)
@@ -65,7 +87,8 @@ Cal <- Cal %>%
   mutate(category = case_when(
     due ~ "Due date",
     not_here ~ "UNL holiday",
-    semester & wkdy %in% class_wdays & !not_here & !exam_wk ~ "Class Day",
+    exam_wk ~ "Finals",
+    semester & wkdy %in% class_wdays ~ "Class",
     semester ~ "Semester",
     TRUE ~ "NA"
   )) |>
@@ -88,14 +111,15 @@ class_cal <- ggplot(Cal, aes(wkdy, week)) +
   scale_y_reverse(breaks=NULL) +
   # manually fill scale colors to something you like...
   scale_color_manual(values = c("FALSE" = "grey70", "TRUE" = "black"), guide = "none") + 
-  scale_fill_manual(values=c("Class Day"="purple", 
+  scale_fill_manual(values=c("Class"="purple", 
                              "Due date"="orange",
                              "Semester"="white",
+                             "Finals" = "grey70",
                              "UNL holiday" = "grey10",
                              "NA" = "white" # I like these whited out...
                              ),
                     #... but also suppress a label for a non-class semester day
-                    breaks=c("Semester", "UNL holiday", "Due date", "Class Day"))
+                    breaks=c("Semester", "UNL holiday", "Due date", "Class", "Finals"))
 # class_cal
 
 topics <- read_excel("course-schedule.xls",  sheet = "Week-plan") |>
