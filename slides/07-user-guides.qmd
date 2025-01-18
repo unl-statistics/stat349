@@ -1,0 +1,195 @@
+---
+title: "Writing User Guides"
+format: revealjs
+---
+
+## Good Instructions can:
+
+- Describe how to perform a task
+- Explain how a product works and how to use it
+- Describe product misuse
+- Warn consumers about hazards (safety, errors, etc.)
+- Meet regulatory requirements/standards
+
+## Good Instructions cannot:
+
+- Compensate for bad design
+- Overcome procedures that are too complex
+- Fix misalignment between product and consumer motivations
+- Overcome hazards that are difficult to perceive
+- Clarify contradicatory messages inferred from marketing/advertising
+
+
+## Exact Instructions Challenge
+
+{{< video https://www.youtube.com/watch?v=FN2RM-CHkuI width="100%" height="100%" >}}
+
+
+## Development process
+
+- Planning the instructions
+
+- Designing the instructions
+    - capture attention
+    - maintain attention
+    - comprehension
+    - motivation to follow instructions
+    
+- Evaluating and testing instructions
+
+## Planning - Goals
+
+::: fragment
+
+  - scope
+  - specific/measurable success criteria
+  - real-world use conditions
+  - ID hazards
+  
+:::
+
+## Planning - Audience
+
+::: fragment
+
+  - Age, gender, literacy, disability, cultural bias
+  - State necessary knowledge and skills
+  - Differences b/w novice and expert users
+  - Language literacy
+  
+:::
+    
+## Planning - Constraints
+
+::: fragment
+
+  - Government regulations
+      - WCAG guidelines for accessibility
+  - Voluntary standards/practices
+  - Software Codes of Conduct/Contribution guidelines
+  
+:::
+
+
+## Design - Attention
+
+- Landing page
+  - High contrast
+  - Bold elements
+  - Title includes product name, version, manufacturer
+
+## Design - Attention
+- Body
+  - Consistent format
+  - Generous white space
+  - Graphics - visual interest + structure cues
+  - Highlighting - key information
+  - Short line lengths
+  
+
+## Design - Attention
+- Body
+  - itemized lists or numbered steps
+  - simple, clear graphics
+    - Screenshots and code snippets are extremely helpful!
+    - Remember to show head(data) structure so that people can generalize your instructions to their data!
+    
+## Design - Comprehension
+
+- Multiple documents or chapters if:
+    - two+ audiences with different needs
+    - different parts for different times/purposes
+    - audience w/ multiple language needs
+    - document is long and intimidating
+
+
+## Design - Comprehension
+- Arrange contents based on temporal use
+- Page numbers if >3 pages
+- TOC if >4 pages
+
+- Short, bold headings throughout instructions
+
+## Design - Comprehension
+
+- Brief overview intended to help comprehension BEFORE instructions start
+
+- Graphic near the beginning that shows the product + parts (or process flow for a procedure)
+
+- Consistent use of descriptions/names for parts of the procedure
+
+- Consider repeating information rather than using cross-references
+    - trade-off between ease of use and ease of update/maintainance
+    
+## Design - Comprehension
+
+- Readability - write to the lowest reading level of likely users
+
+- Specific + concrete is better than abstract/ambiguous
+
+- Consistent terminology
+
+
+- Short sentences covering one main idea/step
+
+## Design - Comprehension
+
+- Active voice!!
+
+- Avoid 3+ nouns in a sequence
+    - participant data table vs. table of participant data
+
+- No more than one subordinate clause per sentence:
+  - Using the screwdriver, loosen all four screws
+after unplugging the product.
+  - Unplug the product. Loosen all four screws using
+the screwdriver.
+
+## Design - Comprehension
+
+
+- Personal pronouns - "you" and "I" or "we"  rather than the more abstract "the user" and "the writer"
+
+- Gender neutral language
+
+- Limit acronyms and abbreviations. 
+  - Use footnotes to define these the first few times they're used in each chapter/section.
+
+
+## Design - Graphics
+
+- Simple graphics are better than full-color graphics that can be hard to interpret
+
+- Label and caption extensively
+
+- Consider using flow charts to show movement/sequence of events
+
+## Evaluation
+
+- Verify accuracy of instructions
+
+- Human factors experts can be valuable if available
+
+- Test on members of target audience
+
+- Test and evaluate the instructions with the product
+
+- Perform tests in real-life settings
+
+- Revise and retest
+
+## Evaluation Tools
+
+- Readability formulas (Flesch-Kincaid, SMOG)
+
+- Test comprehension of short passages individually
+
+- Focus groups can be useful
+
+- Other test types
+    - Diary/logs
+    - Surveys
+    - Observation
+    
+
+    

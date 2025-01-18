@@ -1,0 +1,109 @@
+---
+title: "Describing Statistical Methods"
+format: revealjs
+---
+
+## Key components
+
+- Study design and data collection
+
+- Setting - location, timeframe, recruitment/inclusion criteria
+
+- Sampling method
+
+- Variables collected (and any derived variables)
+
+- Statistical analysis methods
+
+## Example: Signs of the Sine Illusion
+
+[Annotated paper (Canvas link)(https://canvas.unl.edu/courses/192983/files/20459592/download?download_frd=1)
+
+- Goal was to show that the sine illusion is both theoretically and practically impactful in graphics
+
+- First part of the paper shows how the illusion works and provides examples of how it impacts statistical judgment
+
+- Second part of the paper contains a user study
+
+## Observations: Sine Illusion Methods
+
+::: {.fragment}
+
+Disclaimer: This was my first first-author paper. 
+
+Feel free to critique, because... it was 10 years ago and I hope I've improved my writing since then.
+
+:::
+
+![](https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2dmYm5hZmc5OGlwNmltYW8zZTI5Mmtpb2hqeGMyaGExczZlYzB2OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IeLjNFpk9i0w0/giphy.gif){width="100%" fig-alt="A gif of a roast on a grill"}
+
+## Observations: Sine Illusion Methods
+
+- What works?
+
+- What could be improved?
+
+## Observations: Sine Illusion Methods
+
+- Is it clearly written?
+
+- Is it well organized?
+
+
+## Example: Eye Fitting Straight Lines in the Modern Era
+
+[Annotated paper (Canvas link)](https://canvas.unl.edu/files/20459626/download?download_frd=1)
+
+- Goal was to validate a new method for collecting eye-fitted regression data online
+
+- Secondary goal was to examine eye-fit regressions compared to linear regressions and principal component analysis
+
+## Observations: Eye Fitting Straight Lines
+
+- What works?
+
+- What could be improved?
+
+## Observations: Eye Fitting Straight Lines
+
+- Is it clearly written?
+
+- Is it well organized?
+
+
+## Example: Polio Vaccine Trial Report
+
+[Annotated paper (Canvas link)](https://canvas.unl.edu/files/20459805/download?download_frd=1)
+
+- National trial of Polio vaccines
+
+- 2 strategies: 
+    - vaccinate 2nd grade, with 1st and 3rd as controls
+    - double-blind placebo trial in 1st-3rd grades
+    
+- Compare enrolled children who didn't get the vaccine to those who did
+    - Explicitly not comparing unenrolled children (SES differences)
+
+## Observations: Polio Vaccine Trial Report
+
+- What works?
+
+- What could be improved?
+
+## Observations: Polio Vaccine Trial Report
+
+- Is it clearly written?
+
+- Is it well organized?
+
+
+
+## Documenting your code
+
+- State any critical assumptions about data format
+    - e.g. columns named ..., observations in rows, ...
+    - Assumed range of values
+
+- Record package versions from the final analysis -- `renv` is a good way to do this
+
+- Use comments to clearly describe the goal of the code
