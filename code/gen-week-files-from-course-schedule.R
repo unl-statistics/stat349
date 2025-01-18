@@ -4,7 +4,7 @@ library(purrr)
 library(stringr)
 library(glue)
 
-plan <- read_xls("course-schedule.xls", "Week-plan")
+plan <- read_xls("course-schedule.xlsx", "Week-plan")
 
 
 plan_bits <- c(

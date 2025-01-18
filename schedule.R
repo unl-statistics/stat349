@@ -10,7 +10,7 @@ library(readxl)
 # Create a calendar for your syllabus 
 # Source: http://svmiller.com/blog/2020/08/a-ggplot-calendar-for-your-semester/
 
-semester_info <- read_xls("course-schedule.xls", sheet = "SemesterDates")
+semester_info <- read_xlsx("course-schedule.xlsx", sheet = "SemesterDates")
 
 date_seq <- function(tbl) {
   stopifnot("Start" %in% names(tbl))
@@ -48,7 +48,7 @@ not_here_dates <- semester_info |>
   unnest(dates) |>
   pluck("dates")
 
-project_dates <- read_xls("course-schedule.xls", "due-dates") |>
+project_dates <- read_xlsx("course-schedule.xlsx", "due-dates") |>
   mutate(date=ymd(date))
 
 exam_week <-  semester_info |>
@@ -122,7 +122,7 @@ class_cal <- ggplot(Cal, aes(wkdy, week)) +
                     breaks=c("Semester", "UNL holiday", "Due date", "Class", "Finals"))
 # class_cal
 
-topics <- read_excel("course-schedule.xls",  sheet = "Week-plan") |>
+topics <- read_excel("course-schedule.xlsx",  sheet = "Week-plan") |>
   rename(sem_week=Week, topic = Title) |>
   select(sem_week, topic)
 
