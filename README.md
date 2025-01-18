@@ -51,14 +51,14 @@ At the end of this course, students should know how to:
 | Presentation          | xx                 |                    |                 |
 
 # Timeline
-See [schedule.xls](schedule.xls)
+See [schedule.xlsx](schedule.xlsx)
 
 
 # Course site information
 
 - Configured in _quarto.yml
-- Week by week files built automatically (code in [code/gen-week-files-from-course-schedule.R](code/gen-week-files-from-course-schedule.R), data in [course-schedule.xls](course-schedule.xls))
-- Syllabus uses [course-schedule.xls](course-schedule.xls) for topics, with due dates and semester dates specified in sheets in the spreadsheet. 
+- Week by week files built automatically (code in [code/gen-week-files-from-course-schedule.R](code/gen-week-files-from-course-schedule.R), data in [course-schedule.xlsx](course-schedule.xlsx))
+- Syllabus uses [course-schedule.xlsx](course-schedule.xlsx) for topics, with due dates and semester dates specified in sheets in the spreadsheet. 
 
 
 # Credits/Attribution

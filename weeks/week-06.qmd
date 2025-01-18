@@ -17,7 +17,7 @@
   
 ## 🐪 Wednesday
 
-- Documenting Data
+- [Documenting Data](../slides/06-documenting-data.qmd)
 - Discussion of essential components of data documentation
 - Data documentation that matters for statistical analysis
 

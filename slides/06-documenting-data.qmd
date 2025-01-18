@@ -2,3 +2,56 @@
 title: "Documenting Data"
 format: revealjs
 ---
+
+## What are the critical components of data documentation?
+
+- Who collected the data
+- Why the data was collected
+- What the data is about
+- When the data was collected
+- Where the data was collected
+- How the data was generated/collected
+- Structure of the data
+- Formatting decisions in the data
+- Data validation/quality control
+- How the data can be reused/license
+- Suggested data analysis methods
+- Measurement instruments used
+
+
+## Documentation Goals are Project Dependent
+
+### Project 1: Building a Shoe Print Wear Database
+
+  - 150 pairs of shoes
+  - 2 brands of shoes
+  - several sizes for each brand
+  - step counters used on the shoes
+  - questionnaires measuring activities 
+  - wearer weight/height/gait
+
+
+### Shoe Measurements
+
+Initial measurement period + 2-3 additional measurement periods (~6 weeks between)
+
+  - Photos of shoe soles
+  - Digital shoe sole prints
+  - Powder prints
+    - Film
+    - Paper
+    - Vinyl flooring
+  - 3d scans of shoe soles
+  
+Measurements taken in the lab by research assistants.
+
+### Important Documentation?
+
+
+### Important Documentation?
+
+- Probably should have included which research assistant was wearing the shoe, how much they weighed, their gait/height/etc., and so on.
+
+Whoops.
+
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenBwZ3VkMmt3dHZiaG94MDZtb3lwcWU4c2J2MzJjdzBtcndvdjh0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7ZeAiCICH5bj1Esg/giphy.gif){fig-alt="A gif of a child wearing a lampshade walking into an oven and falling backwards" width="100%"}

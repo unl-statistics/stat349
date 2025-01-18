@@ -9,7 +9,7 @@
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-66ab7fd5e73b7f0a764e0d49b3e29ab1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.13">
 
-  <title>STAT 349 - Spring 2025 – Week 5 - Arguments &amp; Business Reports</title>
+  <title>STAT 349 - Spring 2025 – Documenting Data</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-cafb11b5f51d1c6dca451fea611f5bab.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -120,9 +120,9 @@
       margin-right: 0; 
     }
   </style>
-<meta property="og:title" content="Week 5 - Arguments &amp; Business Reports – STAT 349 - Spring 2025">
+<meta property="og:title" content="Documenting Data – STAT 349 - Spring 2025">
 <meta property="og:site_name" content="STAT 349 - Spring 2025">
-<meta name="twitter:title" content="Week 5 - Arguments &amp; Business Reports – STAT 349 - Spring 2025">
+<meta name="twitter:title" content="Documenting Data – STAT 349 - Spring 2025">
 <meta name="twitter:image" content="https://unl-statistics.github.io/stat349/slides/images/twitter-card.png">
 <meta name="twitter:creator" content="@srvanderplas">
 <meta name="twitter:card" content="summary_large_image">
@@ -132,98 +132,64 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 5 - Arguments &amp; Business Reports</h1>
+  <h1 class="title">Documenting Data</h1>
 
 <div class="quarto-title-authors">
 </div>
 
 </section>
-<section>
-<section id="business-reports" class="title-slide slide level1 center">
-<h1>Business Reports</h1>
-
+<section id="what-are-the-critical-components-of-data-documentation" class="slide level2">
+<h2>What are the critical components of data documentation?</h2>
+<ul>
+<li>Who collected the data</li>
+<li>Why the data was collected</li>
+<li>What the data is about</li>
+<li>When the data was collected</li>
+<li>Where the data was collected</li>
+<li>How the data was generated/collected</li>
+<li>Structure of the data</li>
+<li>Formatting decisions in the data</li>
+<li>Data validation/quality control</li>
+<li>How the data can be reused/license</li>
+<li>Suggested data analysis methods</li>
+<li>Measurement instruments used</li>
+</ul>
 </section>
-<section id="business-reports-1" class="slide level2">
-<h2>Business Reports</h2>
+<section id="documentation-goals-are-project-dependent" class="slide level2">
+<h2>Documentation Goals are Project Dependent</h2>
+<h3 id="project-1-building-a-shoe-print-wear-database">Project 1: Building a Shoe Print Wear Database</h3>
 <ul>
-<li><p>4 scenarios</p></li>
-<li><p>Your task:</p>
+<li>150 pairs of shoes</li>
+<li>2 brands of shoes</li>
+<li>several sizes for each brand</li>
+<li>step counters used on the shoes</li>
+<li>questionnaires measuring activities</li>
+<li>wearer weight/height/gait</li>
+</ul>
+<h3 id="shoe-measurements">Shoe Measurements</h3>
+<p>Initial measurement period + 2-3 additional measurement periods (~6 weeks between)</p>
 <ul>
-<li>Develop a problem statement</li>
-<li>Find data to support your analysis</li>
-<li>Document your data</li>
-<li>Conduct and document your analysis (reproducibly)</li>
-<li>Write a report that makes a recommendation</li>
-<li>Present your findings</li>
+<li>Photos of shoe soles</li>
+<li>Digital shoe sole prints</li>
+<li>Powder prints
+<ul>
+<li>Film</li>
+<li>Paper</li>
+<li>Vinyl flooring</li>
 </ul></li>
+<li>3d scans of shoe soles</li>
 </ul>
-</section>
-<section id="business-reports-2" class="slide level2">
-<h2>Business Reports</h2>
-<p>By Wednesday, clone the repository</p>
-<p>This weekend, find a dataset</p>
-<p>Next week, document your dataset</p>
-<p>As we cover each section of a report/paper, use the business report to practice.</p>
-</section></section>
-<section>
-<section id="argument-rhetoric-in-technical-writing" class="title-slide slide level1 center">
-<h1>Argument &amp; Rhetoric in Technical Writing</h1>
-
-</section>
-<section id="arguments" class="slide level2">
-<h2>Arguments</h2>
-<p>Fundamentally an argument is a <strong>claim</strong> backed up by <strong>evidence</strong></p>
-<p>Supporting information:</p>
+<p>Measurements taken in the lab by research assistants.</p>
+<h3 id="important-documentation">Important Documentation?</h3>
+<h3 id="important-documentation-1">Important Documentation?</h3>
 <ul>
-<li>definitions</li>
-<li>citations to authority or past work</li>
-<li>data (&amp; models &amp; charts)</li>
+<li>Probably should have included which research assistant was wearing the shoe, how much they weighed, their gait/height/etc., and so on.</li>
 </ul>
-</section>
-<section id="counter-arguments" class="slide level2">
-<h2>Counter-arguments</h2>
-<p>Powerful approach: anticipate and address counter-arguments as part of your argument.</p>
-<p>Strategies:</p>
-<ul>
-<li>Argue against the counter argument directly</li>
-<li>Accept the counter argument’s premise, but claim ___ matters more</li>
-<li>Reject the premise of the counter argument and explain why the premise is faulty</li>
-</ul>
-<p>It’s important (in most circumstances) to treat opposing viewpoints fairly</p>
-</section>
-<section id="audience" class="slide level2">
-<h2>Audience</h2>
-<p>All arguments are made to a specific audience.</p>
-<p>Anticipate your audience’s concerns and what arguments are likely to be most effective at addressing those concerns.</p>
-</section>
-<section id="reading-critically" class="slide level2">
-<h2>Reading Critically</h2>
-<p>Every source you use is also making an argument</p>
-<ul>
-<li>Understand the author’s perspective/background</li>
-<li>Don’t consider anyone the ultimate authority</li>
-<li>Identify potential sources of bias</li>
-<li>Consider the audience the author is addressing - is it the same as your audience?</li>
-</ul>
-</section>
-<section id="practice" class="slide level2">
-<h2>Practice</h2>
-<p>Let’s listen to an argument about declining attention.</p>
-<p>Take notes - how is the author making the argument?</p>
-</section>
-<section id="practice-1" class="slide level2">
-<h2>Practice</h2>
-<iframe data-external="1" src="https://www.youtube.com/embed/6QltxZ-vPMc" width="100%" height="100%" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-</section>
-<section id="what-were-the-key-components-of-the-argument" class="slide level2">
-<h2>What were the key components of the argument?</h2>
-</section>
-<section id="did-the-argument-change-your-views" class="slide level2">
-<h2>Did the argument change your views?</h2>
-<p>Why or why not?</p>
+<p>Whoops.</p>
 
 
-</section></section>
+
+<img data-src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenBwZ3VkMmt3dHZiaG94MDZtb3lwcWU4c2J2MzJjdzBtcndvdjh0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7ZeAiCICH5bj1Esg/giphy.gif" style="width:100.0%" alt="A gif of a child wearing a lampshade walking into an oven and falling backwards" class="r-stretch"></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

@@ -17,8 +17,9 @@
 
 ## ☕ Monday
 
-- Basic components of argument and rhetoric in scientific writing
-- Discuss business report & assign report topics
+- [Slides](../slides/05-argument-business-report.qmd)
+    - Discuss business report & assign report topics
+    - Basic components of argument and rhetoric in scientific writing
   
 ## 🐪 Wednesday
 
