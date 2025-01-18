@@ -9,11 +9,12 @@
 
 ### 🎯 Check your understanding
 
-- [ ] Reading Quiz Week 5
+- [ ] OTC 5.1, 5.2, 5.4
+- [ ] ETC Steps Toward Rhetorical Analysis
 
 ## 🥣 Prepare for class
 
-- [ ] By Wednesday night: Clone the business report template in Github classroom (link is in the assignment on Canvas)
+- [ ] By Wednesday: Clone the business report template in Github classroom (link is in the assignment on Canvas)
 
 ## ☕ Monday
 

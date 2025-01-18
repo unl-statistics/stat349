@@ -9,7 +9,7 @@
 
 ### 🎯 Check your understanding
 
-- [ ] Reading Quiz Week 4
+- [ ] ETC Organization, Transitions, and Reading Games
 
 ## 🥣 Prepare for class
 
@@ -17,7 +17,8 @@
 
 ## ☕ Monday
 
-- Writing organized reports
+- How to read technical reports and academic articles
+- How to summarize (without ChatGPT)
 - [Slides](../slides/04-organizing-information.qmd)
   
 ## 🐪 Wednesday

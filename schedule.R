@@ -87,7 +87,8 @@ Cal <- Cal %>%
   mutate(category = case_when(
     due ~ "Due date",
     not_here ~ "UNL holiday",
-    semester & wkdy %in% class_wdays & !not_here & !exam_wk ~ "Class Day",
+    exam_wk ~ "Finals",
+    semester & wkdy %in% class_wdays ~ "Class",
     semester ~ "Semester",
     TRUE ~ "NA"
   )) |>
@@ -110,14 +111,15 @@ class_cal <- ggplot(Cal, aes(wkdy, week)) +
   scale_y_reverse(breaks=NULL) +
   # manually fill scale colors to something you like...
   scale_color_manual(values = c("FALSE" = "grey70", "TRUE" = "black"), guide = "none") + 
-  scale_fill_manual(values=c("Class Day"="purple", 
+  scale_fill_manual(values=c("Class"="purple", 
                              "Due date"="orange",
                              "Semester"="white",
+                             "Finals" = "grey70",
                              "UNL holiday" = "grey10",
                              "NA" = "white" # I like these whited out...
                              ),
                     #... but also suppress a label for a non-class semester day
-                    breaks=c("Semester", "UNL holiday", "Due date", "Class Day"))
+                    breaks=c("Semester", "UNL holiday", "Due date", "Class", "Finals"))
 # class_cal
 
 topics <- read_excel("course-schedule.xls",  sheet = "Week-plan") |>
