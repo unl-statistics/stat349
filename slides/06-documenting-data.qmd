@@ -72,6 +72,19 @@ Whoops.
 
 
 
+
+## Codebooks
+Basic documentation that contains:
+
+- Variable name in the code
+- Long-form description of what was measured
+- Units of measurement
+- Acceptable values
+- Values used to indicate missingness, refusal to respond, etc.
+- Additional notes that may be relevant
+
+Very common for government data - CDC codebooks are *intense*. 
+
 ## Data Doc Influences Analysis
 
 - Experimental design

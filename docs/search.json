@@ -1678,5 +1678,12 @@
     "title": "Documenting Data",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nDDI Alliance - probably overkill but in a good way\nData Librarians are amazing to work with"
+  },
+  {
+    "objectID": "slides/06-documenting-data.html#codebooks",
+    "href": "slides/06-documenting-data.html#codebooks",
+    "title": "Documenting Data",
+    "section": "Codebooks",
+    "text": "Codebooks\nBasic documentation that contains:\n\nVariable name in the code\nLong-form description of what was measured\nUnits of measurement\nAcceptable values\nValues used to indicate missingness, refusal to respond, etc.\nAdditional notes that may be relevant\n\nVery common for government data - CDC codebooks are intense."
   }
 ]
