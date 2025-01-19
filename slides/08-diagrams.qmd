@@ -1,0 +1,27 @@
+---
+title: "Diagrams"
+format: revealjs
+---
+
+
+## All Hail IKEA
+
+{{< video https://youtu.be/UgJ-GRb74es width="100%" height="100%" >}}
+
+[Billy Bookcase Assembly Instructions](../activities/billy-bookcase-ikea.pdf)
+
+## Bayesian Modeling Workflow
+
+![Image source: [Building energy statistical modeling](https://buildingenergygeeks.org/index.html) ch. 3](images/bayesian-model-workflow.png){fig-alt="A workflow diagram for bayesian modeling. Step 1: setting up a probability model, with model and prior specifications. Prior predictive checking. This may result in sensitivity/identifiability preliminary analyses before continuing to step 2. Step 2: Learning. Calibration and convergence diagnostics.  Step 3: Model checking and validation, including residual analysis and posterior predictive model checks. This leads to estimation of prediction accuracy and interpretation of parameter values."}
+
+## Scikit Learn estimator workflow
+
+![Image source: [Scikit Learn user guide](https://scikit-learn.org/dev/machine_learning_map.html)](images/ml_map.svg){fig-alt="A map of data characteristics (>50 samples, < 10k samples, <100k samples, categorical, continuous, labeled, text) and goals (predicting a category/quantity, predicting structure) that leads to four basic groups of techniques: classification, clustering, dimension reduction, and regression."}
+
+## Useful Tools
+
+- Excalidraw (online)
+
+- Draw.io (online)
+
+- Inkscape (Free/open source)

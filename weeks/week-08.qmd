@@ -12,12 +12,12 @@
 
 ## ☕ Monday
 
-- Tables and charts
+- [Tables and charts](../slides/08-tables-charts.qmd)
   
 ## 🐪 Wednesday
 
-- Diagrams
-- IKEA-style assembly diagram assessment
+- [Diagrams](.../slides/08-diagrams.qmd)
+- Peer review time – User guide
 
 ##  🏋️ Practice your skills
 

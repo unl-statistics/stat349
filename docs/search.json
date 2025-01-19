@@ -1916,5 +1916,222 @@
     "title": "Writing User Guides",
     "section": "Evaluation Tools",
     "text": "Evaluation Tools\n\nReadability formulas (Flesch-Kincaid, SMOG)\nTest comprehension of short passages individually\nFocus groups can be useful\nOther test types\n\nDiary/logs\nSurveys\nObservation"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fixing-the-reading",
+    "href": "slides/08-tables-charts.html#fixing-the-reading",
+    "title": "Tables and Charts",
+    "section": "Fixing the Reading…",
+    "text": "Fixing the Reading…\n\nTable titles should be informative\n(but don’t have to include all the details req’d in SWHR)\nTables should use significant figures\nTables should have a consistent number of decimal places in each column"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fixing-the-reading-1",
+    "href": "slides/08-tables-charts.html#fixing-the-reading-1",
+    "title": "Tables and Charts",
+    "section": "Fixing the Reading…",
+    "text": "Fixing the Reading…\n\nColorblind friendly is important\nDual encoding (shape/linetype + color) helps a lot\nGrid lines are a good thing (you’re wrong, SWHR!)\n3D graphs only work if you 3d print them\nOk, I don’t have proof of this yet, but I’m working on it…\nFigure titles - above, below - conform to the style guide you’re using\nDon’t make graphs in MS Word. Just… don’t."
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fixing-the-reading-2",
+    "href": "slides/08-tables-charts.html#fixing-the-reading-2",
+    "title": "Tables and Charts",
+    "section": "Fixing the Reading",
+    "text": "Fixing the Reading\n\nIntersperse graphics and text on the same page. Don’t put graphics on pages by themselves; don’t attach them to the end of documents.\n\nThis is great if you can manage it, but LaTeX doesn’t make it easy.\nDon’t override your document format’s general workings to adhere to guidelines.\nSimple formatting is better."
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#case-study-what-makes-a-chart-useful",
+    "href": "slides/08-tables-charts.html#case-study-what-makes-a-chart-useful",
+    "title": "Tables and Charts",
+    "section": "Case Study: What makes a chart useful?",
+    "text": "Case Study: What makes a chart useful?\nFrom Getting (more out of) Graphics Ch. 8 (file on Canvas)\n\nInternational Chess Federation ranking system\n(Data from WorldBank website)\n362502 players: name, country, rating, year of birth\n\nGuiding questions:\n\nWhat is the distribution of ratings?\nHow does rating change with age?\nHow does gender affect rating?\nWhich countries have highest-rated players?"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.1-histogram-of-ratings-of-all-chess-players-rated-by-fide-in-december-2020",
+    "href": "slides/08-tables-charts.html#fig-8.1-histogram-of-ratings-of-all-chess-players-rated-by-fide-in-december-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.1 ‘Histogram of ratings of all chess players rated by FIDE in December 2020’",
+    "text": "Fig 8.1 ‘Histogram of ratings of all chess players rated by FIDE in December 2020’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.2-boxplot-of-ratings-of-all-fide-rated-chess-players-in-december-2020",
+    "href": "slides/08-tables-charts.html#fig-8.2-boxplot-of-ratings-of-all-fide-rated-chess-players-in-december-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.2 ‘Boxplot of ratings of all FIDE rated chess players in December 2020’",
+    "text": "Fig 8.2 ‘Boxplot of ratings of all FIDE rated chess players in December 2020’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.3-histograms-of-ratings-for-active-and-inactive-players",
+    "href": "slides/08-tables-charts.html#fig-8.3-histograms-of-ratings-for-active-and-inactive-players",
+    "title": "Tables and Charts",
+    "section": "Fig 8.3 ‘Histograms of ratings for active and inactive players’",
+    "text": "Fig 8.3 ‘Histograms of ratings for active and inactive players’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.4-density-estimates-of-distributions-of-ratings-for-active-and-inactive-players",
+    "href": "slides/08-tables-charts.html#fig-8.4-density-estimates-of-distributions-of-ratings-for-active-and-inactive-players",
+    "title": "Tables and Charts",
+    "section": "Fig 8.4 ‘Density estimates of distributions of ratings for active and inactive players’",
+    "text": "Fig 8.4 ‘Density estimates of distributions of ratings for active and inactive players’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.5-density-estimates-of-age-distributions-for-active-and-inactive-players",
+    "href": "slides/08-tables-charts.html#fig-8.5-density-estimates-of-age-distributions-for-active-and-inactive-players",
+    "title": "Tables and Charts",
+    "section": "Fig 8.5 ‘Density estimates of age distributions for active and inactive players’",
+    "text": "Fig 8.5 ‘Density estimates of age distributions for active and inactive players’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.6-boxplots-of-ratings-for-active-players-by-sex",
+    "href": "slides/08-tables-charts.html#fig-8.6-boxplots-of-ratings-for-active-players-by-sex",
+    "title": "Tables and Charts",
+    "section": "Fig 8.6 ’Boxplots of ratings for active players by sex",
+    "text": "Fig 8.6 ’Boxplots of ratings for active players by sex\nboxplot widths are proportional to the square roots of the sizes of the groups and outliers are drawn in red"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.7-ratings-of-the-top-1000-male-and-top-1000-female-players-in-december-2020",
+    "href": "slides/08-tables-charts.html#fig-8.7-ratings-of-the-top-1000-male-and-top-1000-female-players-in-december-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.7 ’Ratings of the top 1000 male and top 1000 female players in December 2020",
+    "text": "Fig 8.7 ’Ratings of the top 1000 male and top 1000 female players in December 2020\nwith line widths proportional to group sizes ::: {.cell} ::: {.cell-output-display}  ::: :::"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.8-differences-between-the-ratings-of-the-top-1000-male-and-top-1000-female-players-in-december-2020",
+    "href": "slides/08-tables-charts.html#fig-8.8-differences-between-the-ratings-of-the-top-1000-male-and-top-1000-female-players-in-december-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.8 ‘Differences between the ratings of the top 1000 male and top 1000 female players in December 2020’",
+    "text": "Fig 8.8 ‘Differences between the ratings of the top 1000 male and top 1000 female players in December 2020’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.9-density-estimates-of-age-distributions-of-active-players",
+    "href": "slides/08-tables-charts.html#fig-8.9-density-estimates-of-age-distributions-of-active-players",
+    "title": "Tables and Charts",
+    "section": "Fig 8.9 ‘Density estimates of age distributions of active players’",
+    "text": "Fig 8.9 ‘Density estimates of age distributions of active players’\n(females in purple, line widths proportional to group sizes) ::: {.cell} ::: {.cell-output-display}  ::: :::"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.10-age-distributions-of-active-players",
+    "href": "slides/08-tables-charts.html#fig-8.10-age-distributions-of-active-players",
+    "title": "Tables and Charts",
+    "section": "Fig 8.10 ‘Age distributions of active players’",
+    "text": "Fig 8.10 ‘Age distributions of active players’\n(females in purple) ::: {.cell} ::: {.cell-output-display}  ::: :::"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.11-numbers-of-active-rated-players-by-country",
+    "href": "slides/08-tables-charts.html#fig-8.11-numbers-of-active-rated-players-by-country",
+    "title": "Tables and Charts",
+    "section": "Fig 8.11 ‘Numbers of active rated players by country’",
+    "text": "Fig 8.11 ‘Numbers of active rated players by country’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.12-grandmasters-and-active-rated-players-per-million-population",
+    "href": "slides/08-tables-charts.html#fig-8.12-grandmasters-and-active-rated-players-per-million-population",
+    "title": "Tables and Charts",
+    "section": "Fig 8.12 ’Grandmasters and active rated players per million population,",
+    "text": "Fig 8.12 ’Grandmasters and active rated players per million population,\ncircle areas are proportional to country population sizes"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.13-chess-ratings-of-active-players-for-countries-with-over-3000-active",
+    "href": "slides/08-tables-charts.html#fig-8.13-chess-ratings-of-active-players-for-countries-with-over-3000-active",
+    "title": "Tables and Charts",
+    "section": "Fig 8.13 ‘Chess ratings of active players for countries with over 3000 active’",
+    "text": "Fig 8.13 ‘Chess ratings of active players for countries with over 3000 active’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.14-density-estimates-of-distributions-of-ratings-in-december-2015-and-december-2020",
+    "href": "slides/08-tables-charts.html#fig-8.14-density-estimates-of-distributions-of-ratings-in-december-2015-and-december-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.14 ‘Density estimates of distributions of ratings in December 2015 and December 2020’",
+    "text": "Fig 8.14 ‘Density estimates of distributions of ratings in December 2015 and December 2020’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.15-density-estimates-of-active-players-ages-in-2015-and-2020",
+    "href": "slides/08-tables-charts.html#fig-8.15-density-estimates-of-active-players-ages-in-2015-and-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.15 ‘Density estimates of active players' ages in 2015 and 2020’",
+    "text": "Fig 8.15 ‘Density estimates of active players' ages in 2015 and 2020’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.16-rating-by-age-for-active-players-in-2015",
+    "href": "slides/08-tables-charts.html#fig-8.16-rating-by-age-for-active-players-in-2015",
+    "title": "Tables and Charts",
+    "section": "Fig 8.16 ’Rating by age for active players in 2015",
+    "text": "Fig 8.16 ’Rating by age for active players in 2015"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.17-rating-by-age-for-active-players-in-2015",
+    "href": "slides/08-tables-charts.html#fig-8.17-rating-by-age-for-active-players-in-2015",
+    "title": "Tables and Charts",
+    "section": "Fig 8.17 ‘Rating by age for active players in 2015’",
+    "text": "Fig 8.17 ‘Rating by age for active players in 2015’\n(players with ratings over 2700 are coloured red and an alpha value of 0.01 has been used for the others)"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.18-rating-by-age-for-a-10-sample-of-active-players-in-2015",
+    "href": "slides/08-tables-charts.html#fig-8.18-rating-by-age-for-a-10-sample-of-active-players-in-2015",
+    "title": "Tables and Charts",
+    "section": "Fig 8.18 Rating by age for a 10% sample of active players in 2015",
+    "text": "Fig 8.18 Rating by age for a 10% sample of active players in 2015\nwith a nonlinear smooth and confidence band ::: {.cell} ::: {.cell-output-display}  ::: :::"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.19-boxplots-of-ratings-by-age-for-active-players-in-2015",
+    "href": "slides/08-tables-charts.html#fig-8.19-boxplots-of-ratings-by-age-for-active-players-in-2015",
+    "title": "Tables and Charts",
+    "section": "Fig 8.19 ‘Boxplots of ratings by age for active players in 2015’",
+    "text": "Fig 8.19 ‘Boxplots of ratings by age for active players in 2015’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.20-ridgeplots-of-ratings-for-active-players-in-2015",
+    "href": "slides/08-tables-charts.html#fig-8.20-ridgeplots-of-ratings-for-active-players-in-2015",
+    "title": "Tables and Charts",
+    "section": "Fig 8.20 Ridgeplots of ratings for active players in 2015’",
+    "text": "Fig 8.20 Ridgeplots of ratings for active players in 2015’\nfor ages from 15 to 65 in 5 year jumps ::: {.cell} ::: {.cell-output-display}  ::: :::"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.21-rating-by-age-for-active-players-in-2015-and-2020",
+    "href": "slides/08-tables-charts.html#fig-8.21-rating-by-age-for-active-players-in-2015-and-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.21 ‘Rating by age for active players in 2015 and 2020’",
+    "text": "Fig 8.21 ‘Rating by age for active players in 2015 and 2020’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.22-smooths-for-ratings-by-age-for-active-players-in-2015-and-2020",
+    "href": "slides/08-tables-charts.html#fig-8.22-smooths-for-ratings-by-age-for-active-players-in-2015-and-2020",
+    "title": "Tables and Charts",
+    "section": "Fig 8.22 ‘Smooths for ratings by age for active players in 2015 and 2020’",
+    "text": "Fig 8.22 ‘Smooths for ratings by age for active players in 2015 and 2020’"
+  },
+  {
+    "objectID": "slides/08-tables-charts.html#fig-8.23-numbers-of-active-titled-players-and-their-ratings-by-age",
+    "href": "slides/08-tables-charts.html#fig-8.23-numbers-of-active-titled-players-and-their-ratings-by-age",
+    "title": "Tables and Charts",
+    "section": "Fig 8.23 ‘Numbers of active titled players and their ratings by age’",
+    "text": "Fig 8.23 ‘Numbers of active titled players and their ratings by age’"
+  },
+  {
+    "objectID": "slides/08-diagrams.html#all-hail-ikea",
+    "href": "slides/08-diagrams.html#all-hail-ikea",
+    "title": "Diagrams",
+    "section": "All Hail IKEA",
+    "text": "All Hail IKEA\n\nBilly Bookcase Assembly Instructions"
+  },
+  {
+    "objectID": "slides/08-diagrams.html#bayesian-modeling-workflow",
+    "href": "slides/08-diagrams.html#bayesian-modeling-workflow",
+    "title": "Diagrams",
+    "section": "Bayesian Modeling Workflow",
+    "text": "Bayesian Modeling Workflow\n\nImage source: Building energy statistical modeling ch. 3"
+  },
+  {
+    "objectID": "slides/08-diagrams.html#scikit-learn-estimator-workflow",
+    "href": "slides/08-diagrams.html#scikit-learn-estimator-workflow",
+    "title": "Diagrams",
+    "section": "Scikit Learn estimator workflow",
+    "text": "Scikit Learn estimator workflow\n\nImage source: Scikit Learn user guide"
+  },
+  {
+    "objectID": "slides/08-diagrams.html#useful-tools",
+    "href": "slides/08-diagrams.html#useful-tools",
+    "title": "Diagrams",
+    "section": "Useful Tools",
+    "text": "Useful Tools\n\nExcalidraw (online)\nDraw.io (online)\nInkscape (Free/open source)"
   }
 ]

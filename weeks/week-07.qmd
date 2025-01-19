@@ -24,7 +24,7 @@
   
 ## 🐪 Wednesday
 
-- Writing good “how to” guides for others
+- [Writing good “how to” guides for others](../slides/07-user-guides.qmd)
 
 ##  🏋️ Practice your skills
 
