@@ -16,7 +16,7 @@ MLK day
   
 ## 🐪 Wednesday
 
-- Introduction
+- [Introduction](../slides/01-intro.qmd)
 - Syllabus
 - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
 
