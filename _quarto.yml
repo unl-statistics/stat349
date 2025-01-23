@@ -40,6 +40,7 @@ website:
 
   sidebar:
     background: "$secondary"
+    aria-label: "Sidebar nagivation"
     logo: "images/logo.png"
     pinned: true
     align: center
@@ -62,6 +63,7 @@ website:
           - href: course-links.qmd
             text: Useful links
       - section: "Weekly materials"
+        aria-label: "Weekly materials"
         contents:
           - href: weeks/week-01.qmd
             text: "Week 1 - Getting Started"
