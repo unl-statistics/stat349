@@ -104,7 +104,7 @@ format:
       margin-width: 0px
     theme:
       light: [flatly, theme.scss, _variables-flatly.scss]
-      dark: [darkly, theme.scss]
+      dark: [darkly, theme.scss, _variables-darkly.scss]
     mainfont: "Atkinson Hyperlegible"
     toc: true
 
