@@ -49,6 +49,7 @@ website:
     collapse-level: 2
     contents:
       - section: "Course information"
+        aria-label: "Course information"
         contents:
           - href: course-overview.qmd
             text: Overview
