@@ -101,8 +101,10 @@ lineheight: "1.5ex"
 
 format:
   html:
+    page-layout: full
     grid:
       sidebar-width: 400px
+      body-width: 800px
       margin-width: 0px
     theme:
       light: [flatly, theme.scss, _variables-flatly.scss]
