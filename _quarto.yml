@@ -26,7 +26,7 @@ website:
   site-url: "https://unl-statistics.github.io/stat349"
 
   repo-url: https://github.com/unl-statistics/stat349
-  repo-actions: [edit, issue]
+  repo-actions: [issue]
 
   open-graph: true
 
@@ -35,19 +35,14 @@ website:
     image: "images/twitter-card.png"
 
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "&copy; Copyright 2025, Susan Vanderplas"
-    background: "#D3D3D3"
+    background: "$secondary"
 
   sidebar:
-    background: "#D3D3D3"
+    background: "$secondary"
     logo: "images/logo.png"
     pinned: true
     align: center
-    tools:
-      - icon: github
-        href: https://github.com/unl-statistics/stat349
-        text: "GitHub organization"
 
     style: "docked"
     search: true
@@ -97,14 +92,21 @@ website:
             text: "Week 14 - Editing"
           - href: weeks/week-15.qmd
             text: "Week 15 - Presentations"
+            
+fontsize: "18pt"
+lineheight: "1.5ex"
 
 format:
   html:
     theme:
-      light: [cosmo, theme.scss]
-      dark: [cosmo, theme-dark.scss]
+      light: [flatly, theme.scss]
+      dark: [darkly, theme.scss]
     mainfont: "Atkinson Hyperlegible"
     toc: true
+    grid:
+      sidebar-width: 400px
+      body-width: 600px
+      margin-width: 0px
 
 execute:
   freeze: auto  # re-render only when source changes

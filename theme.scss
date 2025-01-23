@@ -5,3 +5,11 @@
 $font-family: "Atkinson Hyperlegible", sans-serif;
 
 /*-- scss:rules --*/
+
+a {
+  line-height: calc(24px + 0.5vw);
+}
+
+.sidebar-logo{
+  max-width:150px;
+}
