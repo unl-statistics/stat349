@@ -17,6 +17,6 @@ library(DT)
   group_by(Week, Topic) |>
   summarize(`Important Dates` = paste(`Important Dates`, collapse = "<br>")) |>
   ungroup() |>
-  datatable(escape = F, selection = 'none', filter='none', options = list(paging = F, info = F, searching = F), rownames = F, style = "bootstrap")
+  datatable(escape = F, selection = 'none', filter='none', options = list(paging = F, info = F, searching = F, ordering = F), rownames = F, style = "bootstrap")
 
 ```

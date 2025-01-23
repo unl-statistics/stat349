@@ -98,15 +98,15 @@ lineheight: "1.5ex"
 
 format:
   html:
+    grid:
+      sidebar-width: 400px
+      body-width: 600px
+      margin-width: 0px
     theme:
       light: [flatly, theme.scss]
       dark: [darkly, theme.scss]
     mainfont: "Atkinson Hyperlegible"
     toc: true
-    grid:
-      sidebar-width: 400px
-      body-width: 600px
-      margin-width: 0px
 
 execute:
   freeze: auto  # re-render only when source changes
