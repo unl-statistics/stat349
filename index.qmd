@@ -5,8 +5,10 @@ format: html
 
 ```{r}
 #| echo: false
+#| eval: false
 #| message: false
 #| warning: false
+#| results: markup
 source("schedule.R")
 library(gt)
 
@@ -18,8 +20,9 @@ schedule |>
   summarize(`Important Dates` = paste(`Important Dates`, collapse = "<br>")) |>
   ungroup() |>
   gt::gt() |>
-  gt::fmt_markdown(columns = c(Topic)) |>
-  gt::fmt_markdown(columns = `Important Dates`)
-
+  gt::fmt_markdown(columns = c(Topic,`Important Dates`)) |>
+  gt::as_raw_html()|>
+  writeLines(con = "schedule-table.html")
 ```
 
+{{< include schedule-table.html >}}
