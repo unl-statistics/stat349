@@ -3,13 +3,13 @@ pdf-engine: lualatex
 from: markdown+emoji
 fontsize: 11pt
 geometry: margin=1in
+number-sections: true
+number-depth: 3
 format:
   html:
     keep-tex: false
     template-partials:
-    - partials/title.tex
-    - partials/before-body.tex
-    - partials/graphics.tex
+    - partials/title-block.html
   pdf:
     keep-tex: false
     template-partials:
@@ -22,13 +22,13 @@ instructor: Susan Vanderplas
 semester: Spring 2025
 email: susan.vanderplas@unl.edu
 web: srvanderplas.github.io
-officehours: \href{https://calendly.com/vanderplas/office-hours}{Schedule here}
+officehours: "[Schedule here](https://calendly.com/vanderplas/office-hours)"
 office: Hardin 343D
 classroom: Hardin ANSC A228-East
 classhours: MW 10:00 - 11:15
-image: figs/reading.svg
-type: reading
 ---
+::: {.content-visible when-format="html"}
+
 
 ```{r setup, include=FALSE}
 # knitr::opts_chunk$set(cache=FALSE, dev='pdf')
@@ -284,4 +284,4 @@ It may be useful to leverage AI tools to ensure that your work conforms to gramm
 
 # Required University Information
 
-See \url{https://executivevc.unl.edu/academic-excellence/teaching-resources/course-policies}.
+See https://executivevc.unl.edu/academic-excellence/teaching-resources/course-policies.
