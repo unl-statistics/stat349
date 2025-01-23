@@ -4,11 +4,15 @@
 
 $font-family: "Atkinson Hyperlegible", sans-serif;
 
+
 /*-- scss:rules --*/
+
+$link-color: $primary!important;
 
 a {
   line-height: calc(24px + 0.5vw);
   font-weight:600;
+  text-color: $primary !important;
 }
 
 .sidebar-logo{

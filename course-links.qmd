@@ -3,9 +3,9 @@ title: "Useful links"
 ---
 
 |  |  |
-|----|----|
-| 🔗[Canvas](https://canvas.unl.edu/courses/192983) | Assignment Submissions, Reading Quizzes, Gradebook |
-| 🔗[Github Classroom](https://classroom.github.com/classrooms/193619057-unl-stat349-2025a-classroom-a584d5) | Project Submissions |
-| Textbook | 🔗[Scientific Writing for Health Research](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/) |
-| Textbook | 🔗[Entering the Conversation](https://wisc.pb.unizin.org/opencomp/front-matter/intro/) |
-| Textbook | 🔗[Open Technical Communication](https://alg.manifoldapp.org/read/open-technical-communication/section/0debb16b-f623-4033-a47b-973d65ab0961) |
+|------------------------------------|------------------------------------|
+| ![](images/Canvas_logo_single_mark.png){fig-alt="Canvas logo" height="40px"}[Canvas](https://canvas.unl.edu/courses/192983) | Assignment Submissions, Reading Quizzes, Gradebook |
+| [![](images/github-classroom.svg){fig-alt="Github classroom logo" height="30px"}](https://classroom.github.com/classrooms/193619057-unl-stat349-2025a-classroom-a584d5) | Project Submissions |
+| [Scientific Writing for Health Research](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/) | Textbook | 
+| [Entering the Conversation](https://wisc.pb.unizin.org/opencomp/front-matter/intro/) | Textbook | 
+| [Open Technical Communication](https://alg.manifoldapp.org/read/open-technical-communication/section/0debb16b-f623-4033-a47b-973d65ab0961) | Textbook | 
