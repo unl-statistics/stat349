@@ -74,7 +74,7 @@
     "href": "slides/08-tables-charts.html#fig-8.7-ratings-of-the-top-1000-male-and-top-1000-female-players-in-december-2020",
     "title": "Tables and Charts",
     "section": "Fig 8.7 ’Ratings of the top 1000 male and top 1000 female players in December 2020",
-    "text": "Fig 8.7 ’Ratings of the top 1000 male and top 1000 female players in December 2020\nwith line widths proportional to group sizes ::: {.cell} ::: {.cell-output-display}  ::: :::"
+    "text": "Fig 8.7 ’Ratings of the top 1000 male and top 1000 female players in December 2020\nwith line widths proportional to group sizes"
   },
   {
     "objectID": "slides/08-tables-charts.html#fig-8.8-differences-between-the-ratings-of-the-top-1000-male-and-top-1000-female-players-in-december-2020",
@@ -88,14 +88,14 @@
     "href": "slides/08-tables-charts.html#fig-8.9-density-estimates-of-age-distributions-of-active-players",
     "title": "Tables and Charts",
     "section": "Fig 8.9 ‘Density estimates of age distributions of active players’",
-    "text": "Fig 8.9 ‘Density estimates of age distributions of active players’\n(females in purple, line widths proportional to group sizes) ::: {.cell} ::: {.cell-output-display}  ::: :::"
+    "text": "Fig 8.9 ‘Density estimates of age distributions of active players’\n(females in purple, line widths proportional to group sizes)"
   },
   {
     "objectID": "slides/08-tables-charts.html#fig-8.10-age-distributions-of-active-players",
     "href": "slides/08-tables-charts.html#fig-8.10-age-distributions-of-active-players",
     "title": "Tables and Charts",
     "section": "Fig 8.10 ‘Age distributions of active players’",
-    "text": "Fig 8.10 ‘Age distributions of active players’\n(females in purple) ::: {.cell} ::: {.cell-output-display}  ::: :::"
+    "text": "Fig 8.10 ‘Age distributions of active players’\n(females in purple)"
   },
   {
     "objectID": "slides/08-tables-charts.html#fig-8.11-numbers-of-active-rated-players-by-country",
@@ -144,14 +144,14 @@
     "href": "slides/08-tables-charts.html#fig-8.17-rating-by-age-for-active-players-in-2015",
     "title": "Tables and Charts",
     "section": "Fig 8.17 ‘Rating by age for active players in 2015’",
-    "text": "Fig 8.17 ‘Rating by age for active players in 2015’\n(players with ratings over 2700 are coloured red and an alpha value of 0.01 has been used for the others)"
+    "text": "Fig 8.17 ‘Rating by age for active players in 2015’\n(players with ratings over 2700 are colored red and an alpha value of 0.01 has been used for the others)"
   },
   {
     "objectID": "slides/08-tables-charts.html#fig-8.18-rating-by-age-for-a-10-sample-of-active-players-in-2015",
     "href": "slides/08-tables-charts.html#fig-8.18-rating-by-age-for-a-10-sample-of-active-players-in-2015",
     "title": "Tables and Charts",
     "section": "Fig 8.18 Rating by age for a 10% sample of active players in 2015",
-    "text": "Fig 8.18 Rating by age for a 10% sample of active players in 2015\nwith a nonlinear smooth and confidence band ::: {.cell} ::: {.cell-output-display}  ::: :::"
+    "text": "Fig 8.18 Rating by age for a 10% sample of active players in 2015\nwith a nonlinear smooth and confidence band"
   },
   {
     "objectID": "slides/08-tables-charts.html#fig-8.19-boxplots-of-ratings-by-age-for-active-players-in-2015",
@@ -165,7 +165,7 @@
     "href": "slides/08-tables-charts.html#fig-8.20-ridgeplots-of-ratings-for-active-players-in-2015",
     "title": "Tables and Charts",
     "section": "Fig 8.20 Ridgeplots of ratings for active players in 2015’",
-    "text": "Fig 8.20 Ridgeplots of ratings for active players in 2015’\nfor ages from 15 to 65 in 5 year jumps ::: {.cell} ::: {.cell-output-display}  ::: :::"
+    "text": "Fig 8.20 Ridgeplots of ratings for active players in 2015’\nfor ages from 15 to 65 in 5 year jumps"
   },
   {
     "objectID": "slides/08-tables-charts.html#fig-8.21-rating-by-age-for-active-players-in-2015-and-2020",
@@ -1282,7 +1282,7 @@
     "href": "index.html",
     "title": "Stat 349 - Technical Skills for Statisticians",
     "section": "",
-    "text": "Week\nTopic\nImportant Dates\n\n\n\n\n1\nGetting Started\n\n\n\n2\nCommunicating You!\n\n\n\n3\nReferences\n\n\n\n4\nOrganizing Information\n\n\n\n5\nMaking an Argument\n\n\n\n6\nProblem Statements & Data\n\n\n\n7\nMethods & Procedures\n\n\n\n8\nCharts, Tables, and Diagrams\nUser Guide Due: Mar 14\n\n\n9\nResults\n\n\n\n10\nIntroductions and Conclusions\n\n\n\n11\nAbstracts & Summaries\n\n\n\n12\nCountering Logical Fallacies\n\n\n\n13\nReports and Presentations\nBusiness Report Draft Due: Apr 25\n\n\n14\nEditing and Revising Your Work\n\n\n\n15\nIn Class Presentations\nBusiness Report Due: May 04\n\n\n16\nFinals Week\nPortfolio Due: May 12",
+    "text": "Week\nTopic\nImportant Dates\n\n\n\n\n1\n Getting Started \nHwk resub deadline: Mar 10User Guide Due: Mar 14\n\n\n2\n Communicating You! \nBusiness Report Draft Due: Apr 25\n\n\n3\n References \nBusiness Report Due: May 04Hwk resub deadline: May 05\n\n\n4\n Organizing Information \nHwk resub deadline: Mar 10User Guide Due: Mar 14\n\n\n5\n Making an Argument \nBusiness Report Draft Due: Apr 25\n\n\n6\n Problem Statements & Data \nBusiness Report Due: May 04Hwk resub deadline: May 05\n\n\n7\n Methods & Procedures \nHwk resub deadline: Mar 10User Guide Due: Mar 14\n\n\n8\n Charts, Tables, and Diagrams \nBusiness Report Draft Due: Apr 25\n\n\n9\n Results \nBusiness Report Due: May 04Hwk resub deadline: May 05\n\n\n10\n Introductions and Conclusions \nHwk resub deadline: Mar 10User Guide Due: Mar 14\n\n\n11\n Abstracts & Summaries \nBusiness Report Draft Due: Apr 25\n\n\n12\n Countering Logical Fallacies \nBusiness Report Due: May 04Hwk resub deadline: May 05\n\n\n13\n Reports and Presentations \nHwk resub deadline: Mar 10User Guide Due: Mar 14\n\n\n14\n Editing and Revising Your Work \nBusiness Report Draft Due: Apr 25\n\n\n15\n In Class Presentations \nBusiness Report Due: May 04Hwk resub deadline: May 05\n\n\n16\nFinals Week\nHwk resub deadline: Mar 10User Guide Due: Mar 14",
     "crumbs": [
       "Course information",
       "Schedule"

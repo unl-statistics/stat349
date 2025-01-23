@@ -8,12 +8,18 @@ format: html
 #| message: false
 #| warning: false
 source("schedule.R")
+library(gt)
 
-schedule %>%
-  tidyr::replace_na(list("Important Dates" = "", Topic =  "Finals Week")) %>%
-  mutate(Topic = if_else(Week < 16, sprintf("[%s](https://unl-statistics.github.io/stat349/weeks/week-%02d.html)", Topic, Week), Topic)) %>%
+schedule |>
+  bind_rows(tibble(Week = 16, Topic = "Finals Week")) |>
+  tidyr::replace_na(list("Important Dates" = "", Topic =  "Finals Week")) |>
+  mutate(Topic = if_else(Week < 16, sprintf("<a href='https://unl-statistics.github.io/stat349/weeks/week-%02d.html'> %s </a>", Week, Topic), Topic)) |>
+  group_by(Week, Topic) |>
+  summarize(`Important Dates` = paste(`Important Dates`, collapse = "<br>")) |>
+  ungroup() |>
   gt::gt() |>
-  gt::fmt_markdown(2)
+  gt::fmt_markdown(columns = c(Topic)) |>
+  gt::fmt_markdown(columns = `Important Dates`)
 
 ```
 

@@ -134,6 +134,7 @@ actInact
 ```
 
 ## Fig 8.4 'Density estimates of distributions of ratings for active and inactive players'
+
 ```{r}
 eloD <- ggplot(Chess2020, aes(DEC20, group = fct_rev(inactive))) +
   geom_density(aes(colour = inactive), key_glyph = draw_key_smooth, linewidth = 2) +
@@ -147,6 +148,7 @@ eloD
 ```
 
 ## Fig 8.5 'Density estimates of age distributions for active and inactive players'
+
 ```{r}
 ggplot(Chess2020, aes(Age, group = fct_rev(inactive))) +
   geom_density(aes(colour = inactive), key_glyph = draw_key_smooth, linewidth = 2) +
@@ -179,7 +181,9 @@ ggplot(Chess2020A, aes(sex, DEC20)) +
 ```
 
 ## Fig 8.7 'Ratings of the top 1000 male and top 1000 female players in December 2020
+
 with line widths proportional to group sizes
+
 ```{r}
 np <- 1000
 zChess1000 <- Chess2020A %>%
@@ -213,6 +217,7 @@ ggplot(zChess1000w, aes(ordID, (Male - Female))) +
 
 ## Fig 8.9 'Density estimates of age distributions of active players'
 (females in purple, line widths proportional to group sizes)
+
 ```{r}
 ggplot(Chess2020A %>% filter(!is.na(AgeX)), aes(Age, group = sex)) +
   geom_density(aes(colour = sex, linewidth = Sex)) +
@@ -228,6 +233,7 @@ ggplot(Chess2020A %>% filter(!is.na(AgeX)), aes(Age, group = sex)) +
 
 ## Fig 8.10 'Age distributions of active players'
 (females in purple)
+
 ```{r}
 sexAgePP <- ggplot(Chess2020A %>% filter(!is.na(AgeX)), aes(Age)) +
   geom_histogram(aes(fill = sex), breaks = seq(5, 95)) +
@@ -284,6 +290,7 @@ ggplot(ChessCountries %>% filter(Population > 1000000), aes(fT, GM)) +
 ```
 
 ## Fig 8.13 'Chess ratings of active players for countries with over 3000 active'
+
 ```{r}
 chC <- left_join(Chess2020A, ChessCountries, by = c("Fed" = "Fed1"))
 
@@ -302,6 +309,7 @@ ggplot(zChessAF3, aes(Fed2, DEC20)) +
   theme(legend.position = "none") +
   scale_fill_manual(values = cols[c(2, 4, 5, 6)])
 ```
+
 ```{r}
 ## Loading and wrangling ratings from December 2015
 
@@ -358,7 +366,7 @@ ggplot(Chess2015A, aes(AgeX, DEC15)) +
 ```
 
 ## Fig 8.17 'Rating by age for active players in 2015'
- (players with ratings over 2700 are coloured red and an alpha value of 0.01 has been used for the others)
+(players with ratings over 2700 are colored red and an alpha value of 0.01 has been used for the others)
 
 ```{r}
 ratAY <- ggplot(Chess2015A, aes(AgeX, DEC15)) +
@@ -370,6 +378,7 @@ ratAY
 
 ## Fig 8.18 Rating by age for a 10\% sample of active players in 2015
 with a nonlinear smooth and confidence band
+
 ```{r}
 set.seed(122015)
 Chess2015As <- Chess2015A %>% sample_frac(0.1)
@@ -382,6 +391,7 @@ ggplot(Chess2015As, aes(AgeX, DEC15)) +
 ```
 
 ## Fig 8.19 'Boxplots of ratings by age for active players in 2015'
+
 ```{r}
 ratAX <- ggplot(Chess2015A %>% filter(AgeX < 91, !is.na(AgeX)),
                 aes(AgeX, DEC15, group = AgeX)) +
@@ -394,6 +404,7 @@ ratAX
 
 ## Fig 8.20 Ridgeplots of ratings for active players in 2015'
 for ages from 15 to 65 in 5 year jumps
+
 ```{r}
 ggplot(Chess2015A %>% filter(AgeX %in% seq(15, 65, 5)),
        aes(x = DEC15, y = as.factor(AgeX), height = after_stat(density))) +
@@ -403,6 +414,7 @@ ggplot(Chess2015A %>% filter(AgeX %in% seq(15, 65, 5)),
 ```
 
 ## Fig 8.21 'Rating by age for active players in 2015 and 2020'
+
 ```{r}
 ar1 <- ggplot(Chess2015A, aes(AgeX, DEC15)) +
   geom_point(alpha = 0.01) +
@@ -418,6 +430,7 @@ ar1 + ar2
 ```
 
 ## Fig 8.22 'Smooths for ratings by age for active players in 2015 and 2020'
+
 ```{r}
 ags1520 <- ggplot(Chess2015A, aes(AgeX, DEC15)) +
   geom_smooth(colour = "darkorange") +
@@ -437,6 +450,7 @@ zCh1520both <- zCh1520f %>% filter(!is.na(Fed.y) & !is.na(Fed.x))
 ```
 
 ## Fig 8.23 'Numbers of active titled players and their ratings by age'
+
 ```{r}
 Ch0 <- Chess2020A %>% filter(Byear > 0)
 Ch0 <- Ch0 %>% mutate(Title = fct_relevel(factor(Tit), "CM", "FM", "IM", "GM",

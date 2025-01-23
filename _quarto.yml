@@ -106,5 +106,6 @@ format:
     mainfont: "Atkinson Hyperlegible"
     toc: true
 
-freeze: auto
+execute:
+  freeze: auto  # re-render only when source changes
 

@@ -16,7 +16,7 @@
   
 ## 🐪 Wednesday
 
-- [Diagrams](.../slides/08-diagrams.qmd)
+- [Diagrams](../slides/08-diagrams.qmd)
 - Peer review time – User guide
 
 ##  🏋️ Practice your skills

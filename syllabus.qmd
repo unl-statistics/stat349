@@ -27,8 +27,6 @@ office: Hardin 343D
 classroom: Hardin ANSC A228-East
 classhours: MW 10:00 - 11:15
 ---
-::: {.content-visible when-format="html"}
-
 
 ```{r setup, include=FALSE}
 # knitr::opts_chunk$set(cache=FALSE, dev='pdf')
