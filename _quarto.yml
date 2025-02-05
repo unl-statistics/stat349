@@ -96,7 +96,7 @@ website:
           - href: weeks/week-15.qmd
             text: "Week 15 - Presentations"
             
-fontsize: "24pt"
+fontsize: "18pt"
 lineheight: "1.5ex"
 
 format:
