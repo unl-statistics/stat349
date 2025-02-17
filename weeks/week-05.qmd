@@ -23,10 +23,12 @@
   
 ## 🐪 Wednesday
 
-- In class activity: Arguments in scientific and technical writing
+- In class activity: [Arguments in scientific and technical writing](../activities/arguments.qmd)
+  - [Slides](../slides/05-argument-activity.qmd)
 
 ##  🏋️ Practice your skills
 
 - [ ] Analyze the rhetorical decisions and arguments in your research article (1 pg summary)
+
 - Start planning business report – locate data sets to support your analysis
 

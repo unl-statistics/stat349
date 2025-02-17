@@ -455,277 +455,214 @@
     "text": "Did the argument change your views?\nWhy or why not?"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#before-you-start",
-    "href": "slides/03-reading-summarizing.html#before-you-start",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Before you start",
-    "text": "Before you start\n\nDoing it right will take more time than you think!\nAI summaries miss technical context and important points"
+    "objectID": "slides/04-organizing-information.html#annual-review-article-user-guide",
+    "href": "slides/04-organizing-information.html#annual-review-article-user-guide",
+    "title": "Organizing Information",
+    "section": "Annual Review Article User Guide",
+    "text": "Annual Review Article User Guide\n\nFor Wednesday: Submit a topic idea for your user guide\n\nFocus on practical implementation\nShow how to use some software or technique\n\nWritten for a peer at a business who is not necessarily a statistician but is technologically competent (you can assume knowledge of basic R/python)\nExample: Conducting visual inference studies using the nullabor package"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#basic-structure",
-    "href": "slides/03-reading-summarizing.html#basic-structure",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Basic Structure",
-    "text": "Basic Structure\nScientific articles mostly follow this structure:\n\nAbstract\nIntroduction\nMethods\nResults\nConclusions/Discussion\nReferences\nAppendices/Supplementary Information"
+    "objectID": "slides/04-organizing-information.html#organizing-information",
+    "href": "slides/04-organizing-information.html#organizing-information",
+    "title": "Organizing Information",
+    "section": "Organizing Information",
+    "text": "Organizing Information\n\n\n\n\n\nAnyone remember this from elementary school?"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#basic-structure-1",
-    "href": "slides/03-reading-summarizing.html#basic-structure-1",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Basic Structure",
-    "text": "Basic Structure\nScientific articles mostly follow this structure:\n\n\n\n\n\n\n\nAbstract\nVery technical and concise\n\n\nIntroduction\nDefinitions and context, motivation\n\n\nMethods\nData collection, some statistics\n\n\nResults\nInterpretation/significance tests\n\n\nDiscussion/ Conclusion\nWhat does it mean? Why does it matter?\n\n\nReferences\nWhat work is this related to? How well established are the methods?\n\n\nSupplement\nCode, data, stuff reviewers wanted, things that didn’t fit page limit…"
+    "objectID": "slides/04-organizing-information.html#removing-the-training-wheels",
+    "href": "slides/04-organizing-information.html#removing-the-training-wheels",
+    "title": "Organizing Information",
+    "section": "Removing the Training Wheels",
+    "text": "Removing the Training Wheels\n\nThesis developed in parallel with the body of the essay\nFeedback loop:\n\ninitial thesis -&gt; draft of the body\ndiscoveries while drafting the body -&gt; update thesis\nupdated thesis -&gt; reshape the body"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#basic-structure-2",
-    "href": "slides/03-reading-summarizing.html#basic-structure-2",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Basic Structure",
-    "text": "Basic Structure\nTechnical reports have a more varied structure:\n\nExecutive Summary\nContents\nIntroduction\nBody - broken into sections\nConclusions\nReferences/Bibliography\nAppendices"
+    "objectID": "slides/04-organizing-information.html#removing-the-training-wheels-1",
+    "href": "slides/04-organizing-information.html#removing-the-training-wheels-1",
+    "title": "Organizing Information",
+    "section": "Removing the Training Wheels",
+    "text": "Removing the Training Wheels\n\nContinual refining of ideas until\n\nyou’re happy\n(OR)\nthe due date arrives"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#basic-structure-3",
-    "href": "slides/03-reading-summarizing.html#basic-structure-3",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Basic Structure",
-    "text": "Basic Structure\nTechnical reports have a more varied structure:\n\nExecutive Summary (for dummies)\nContents preview of what you’re in for\nIntroduction\nBody - broken into sections\nConclusions\nReferences/Bibliography\nAppendices technical documentation, related documents, stuff to bury so management doesn’t see it CYA"
+    "objectID": "slides/04-organizing-information.html#statistical-writing",
+    "href": "slides/04-organizing-information.html#statistical-writing",
+    "title": "Organizing Information",
+    "section": "Statistical Writing",
+    "text": "Statistical Writing\nMain types of statistical writing (in my experience):\n\nExperiment write-up\nWhite paper/Technical report\n\nUse a statistical analysis to make a point\n\nTutorial\nLiterature review"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers",
-    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 1: Spoilers!",
-    "text": "Strategy 1: Spoilers!"
+    "objectID": "slides/04-organizing-information.html#organizing-information-1",
+    "href": "slides/04-organizing-information.html#organizing-information-1",
+    "title": "Organizing Information",
+    "section": "Organizing Information",
+    "text": "Organizing Information\n\nMake a list of the main points\nMake lists of supporting information for each main point\nMove them around (Post its!) to see if you can find natural transitions\n\ntime\nconnecting pieces of information\nlogical flow"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-1",
-    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-1",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 1: 🫣 Spoilers!",
-    "text": "Strategy 1: 🫣 Spoilers!\nFirst Pass\n\nRead the title\nRead the conclusion\n\nAssemble a couple of questions to focus your reading\n\nSkim the methods\nSkim the results\n\nCan you answer your assembled questions?"
+    "objectID": "slides/04-organizing-information.html#organizing-information-2",
+    "href": "slides/04-organizing-information.html#organizing-information-2",
+    "title": "Organizing Information",
+    "section": "Organizing Information",
+    "text": "Organizing Information\n\nIf things don’t logically connect\n\nare you missing critical pieces to connect concepts? -&gt; More research\nare you trying to do too much? -&gt; Narrow topic/thesis"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-2",
-    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-2",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 1: 🫣 Spoilers!",
-    "text": "Strategy 1: 🫣 Spoilers!\nThink a bit\nWhat do you not understand (yet)?\n\nVocabulary? Google/Dictionary/Reference book\nHow they came to the conclusion?\n\nRead the paper again, in order this time\n\nWhy this topic is interesting?\n\nRead the introduction… (if this doesn’t help, just accept that it’s interesting to someone)"
+    "objectID": "slides/04-organizing-information.html#activity",
+    "href": "slides/04-organizing-information.html#activity",
+    "title": "Organizing Information",
+    "section": "Activity",
+    "text": "Activity\nBuild the document using the puzzle pieces I’ve given you.\nCan you make them logically connect?\nWhat features are you using to connect each piece?\nWire Cuts, Paragraph by Paragraph"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-3",
-    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-3",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 1: 🫣 Spoilers!",
-    "text": "Strategy 1: 🫣 Spoilers!\nRead it again\n\n🔝 In order, this time\n🎶️ Margin notes - ask questions (for you or the author)!\nLiberally comment\n\n⁉️/🔥/🤡/🤯/🪿\n“this is cool/dumb/nonsenscical”\nWTF\n\n✏️ Highlight/underline key points, definitions that are new to you\nhighlighting everything doesn’t work that well - be selective!"
+    "objectID": "slides/02-cv-cover-letter.html#setting-the-scene",
+    "href": "slides/02-cv-cover-letter.html#setting-the-scene",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Setting the Scene",
+    "text": "Setting the Scene\n\nCommunicate how awesome you are to a potential employer\nEducation\nExperience\nSkills"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-4",
-    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-4",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 1: 🫣 Spoilers!",
-    "text": "Strategy 1: 🫣 Spoilers!\n✅ Check your understanding\n\nAbstract - teaser for the full paper\n\nHighlights important points (most of the time)\nHighlights motivation (some of the time)\nPresents key results\n\nMake sure you understand at least what the abstract covers\nConclusion\n\nDo you understand how/why the authors came to their conclusions?\nHow does this paper fit into the wider field?"
+    "objectID": "slides/02-cv-cover-letter.html#what-is-a-cv",
+    "href": "slides/02-cv-cover-letter.html#what-is-a-cv",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "What is a CV?",
+    "text": "What is a CV?\nCurriculum vitae - literally, “course of life”\n\nUsage is different in different countries"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch",
-    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 2: Outline/Sketch",
-    "text": "Strategy 2: Outline/Sketch\n\nRead the introduction (NOT the abstract)\n\nIdentify the big question\nSummarize the background in &lt;5 sentences\n\n\n\n\nStrategy 2 from https://blogs.lse.ac.uk/impactofsocialsciences/2016/05/09/how-to-read-and-understand-a-scientific-paper-a-guide-for-non-scientists/"
+    "objectID": "slides/02-cv-cover-letter.html#resume-vs.-cv",
+    "href": "slides/02-cv-cover-letter.html#resume-vs.-cv",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Resume vs. CV 🇺🇸",
+    "text": "Resume vs. CV 🇺🇸\n\nRésumé: short career summary\n\nstandard for non academic jobs\n1 page (2 for longer career)\n\nCV: exhaustive list of everything you’ve done\n\nacademic/research oriented jobs, grad school\nas many pages as necessary"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-1",
-    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-1",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 2: Outline/Sketch",
-    "text": "Strategy 2: Outline/Sketch\n\nRead the methods\n\nIdentify the specific question(s)\nIdentify the approach\nDraw a diagram (for experiments) showing process/methods"
+    "objectID": "slides/02-cv-cover-letter.html#resume-vs.-cv-1",
+    "href": "slides/02-cv-cover-letter.html#resume-vs.-cv-1",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Resume vs. CV (🇬🇧,🇦🇺)",
+    "text": "Resume vs. CV (🇬🇧,🇦🇺)\nCV is used more than résumé\n\nComplete professional/educational history\n2-3 pages\n\n(slightly longer US-style Résumé)"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-2",
-    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-2",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 2: Outline/Sketch",
-    "text": "Strategy 2: Outline/Sketch\n\nRead the results\n\nSummarize results for each experiment\nDo results answer the specific question(s)?\n\nRead the conclusion/discussion\n\nWhat contribution does this make?\nWhat follow-up experiments are necessary?"
+    "objectID": "slides/02-cv-cover-letter.html#essential-information",
+    "href": "slides/02-cv-cover-letter.html#essential-information",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Essential information",
+    "text": "Essential information\n\nName\nContact information (address, phone, email)\n(be careful with what you post online)\nObjective - 1 sentence summary of your job search goal. Highlight skills if possible\nEducation (school, location, graduation date)\nRelevant experience (title, company, location, dates, brief list of duties)\nInclude non-relevant experience only if space isn’t limited.\nSkills"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-3",
-    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-3",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Strategy 2: Outline/Sketch",
-    "text": "Strategy 2: Outline/Sketch\n\nRead the abstract\nWhat do other researchers say about this paper?\n\nLook for citations to the paper that are relatively close in time\nLocate where the paper was cited\nSee if opinions are offered"
+    "objectID": "slides/02-cv-cover-letter.html#additional-useful-information",
+    "href": "slides/02-cv-cover-letter.html#additional-useful-information",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Additional useful information",
+    "text": "Additional useful information\n\nAwards/Honors (name, awarding group, date)\nActivities/Hobbies (role, if relevant, and dates)\nReferences (2-3 people)\n\nTeacher/Professor\nWork supervisor (current/past)\nCoworker or character reference"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#evaluating-the-paper",
-    "href": "slides/03-reading-summarizing.html#evaluating-the-paper",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Evaluating the paper",
-    "text": "Evaluating the paper\nOther Details\n\nAuthors, institutional affiliations\n\nare there likely biases here?\n\nJournal\n\nCheck journal rankings"
+    "objectID": "slides/02-cv-cover-letter.html#cover-letter",
+    "href": "slides/02-cv-cover-letter.html#cover-letter",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Cover Letter",
+    "text": "Cover Letter\n\nSpecialized type of business letter\nOTC Ch 2 business letter advice applies\nTry to fit on a single page"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#technicalbusiness-reports",
-    "href": "slides/03-reading-summarizing.html#technicalbusiness-reports",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Technical/Business Reports",
-    "text": "Technical/Business Reports\n\nLook at charts/pictures\nRead conclusions\nLook at tables\nRead the report\nRead the executive summary\n\n🎭🦙: Compare/contrast with the rest of the report"
+    "objectID": "slides/02-cv-cover-letter.html#cover-letter-structure",
+    "href": "slides/02-cv-cover-letter.html#cover-letter-structure",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Cover Letter Structure",
+    "text": "Cover Letter Structure\n\nIntroduction:\n\nState interest in the specific position\nPreview your argument: I am a good fit for this position"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#revising-a-summary",
-    "href": "slides/03-reading-summarizing.html#revising-a-summary",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Revising a Summary",
-    "text": "Revising a Summary\n\nRead your summary out loud (or have the computer read it to you)\n\nIs anything not logically clear?\n\nListen for “non sequiturs” (it does not follow) and missing sentences\n\nGrammar/clarity check\n\nRe-read/skim the article again\nRead your summary after you revisit the article\n\nDid you cover all of the important points?\nWhat assumptions did you make about your audience?"
+    "objectID": "slides/02-cv-cover-letter.html#cover-letter-structure-1",
+    "href": "slides/02-cv-cover-letter.html#cover-letter-structure-1",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Cover Letter Structure",
+    "text": "Cover Letter Structure\n\nBody: Build argument\n\nwhy do you think you’re a good fit?\n\nskills\ncompany values/mission\ngrowth opportunities\n\ncite examples from your experience\n\nprovide context that isn’t in your resume\nwhat skills have you developed from the experience"
   },
   {
-    "objectID": "slides/03-reading-summarizing.html#summary-style-guide",
-    "href": "slides/03-reading-summarizing.html#summary-style-guide",
-    "title": "Reading and Summarizing Articles and Reports",
-    "section": "Summary Style Guide",
-    "text": "Summary Style Guide\n\nEliminate wordiness\nextra adverbs (“clearly”, “very”, “mostly”) and weasel words should go\nUse specific language\n“this experiment illustrates” instead of “this illustrates”\nAccurate language\n“fail to reject” instead of “support for the null”\nDon’t use direct quotes – summaries are more concise than the original\n\nAsk yourself “Do I need this word?”"
+    "objectID": "slides/02-cv-cover-letter.html#cover-letter-structure-2",
+    "href": "slides/02-cv-cover-letter.html#cover-letter-structure-2",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Cover Letter Structure",
+    "text": "Cover Letter Structure\n\nClosing:\n\nrestate interest in the role\nsummarize why you’re a good candidate\nthank reader for time/consideration\noffer to provide more information"
   },
   {
-    "objectID": "slides/01-intro.html#stat-349",
-    "href": "slides/01-intro.html#stat-349",
-    "title": "Welcome to Stat 349!",
-    "section": "Stat 349",
-    "text": "Stat 349\n\nHow to write statistical articles and reports\nWeeks 1-5: Preliminaries\n\nCVs\nHow to read scientific articles\nOrganization\nTransitions\nData documentation\n\nWeeks 6-12: Components of reports/articles\nWeeks 13-15: Reports, Editing, Presentations"
+    "objectID": "slides/02-cv-cover-letter.html#activity-data-science-resumes",
+    "href": "slides/02-cv-cover-letter.html#activity-data-science-resumes",
+    "title": "Résumés, CVs, and Cover Letters",
+    "section": "Activity: Data Science Resumes",
+    "text": "Activity: Data Science Resumes\n\n\n\nAssociate Data Scientist\n\n\nData Science Student\n\n\nData Scientist Intern\n\n\nData Scientist\n\n\nData Visualization\n\n\nEducational Data Scientist\n\n\nEntry Level Data Scientist\n\n\nHealthcare Data Scientist\n\n\nPython Data Scientist\n\n\n\nWhat works? What doesn’t?"
   },
   {
-    "objectID": "slides/01-intro.html#about-me",
-    "href": "slides/01-intro.html#about-me",
-    "title": "Welcome to Stat 349!",
-    "section": "About Me",
-    "text": "About Me\n\n\n\nAssociate Professor in Statistics\nResearch:\n\nData Visualization\nStatistical Algorithms for Forensics\nReproducibility\nData Science pipelines\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\nAlex (left), Ryan (right), and Zoey (top)\n\n\n\n\n \n\n\n\n\n\n\nVideo\nEdison (Eddie)\n\n\n\n\n\n\nVideo\nIvy"
-  },
-  {
-    "objectID": "slides/01-intro.html#about-me-1",
-    "href": "slides/01-intro.html#about-me-1",
-    "title": "Welcome to Stat 349!",
-    "section": "About Me",
-    "text": "About Me\n\nI have prosopagnosia\n\n\nImage source: https://susilolab.org/Prosopagnosia.html"
-  },
-  {
-    "objectID": "slides/01-intro.html#introductions",
-    "href": "slides/01-intro.html#introductions",
-    "title": "Welcome to Stat 349!",
-    "section": "Introductions",
-    "text": "Introductions\n\nYour name\nYour major\nWhat is the best prank you’ve ever experienced or planned?"
-  },
-  {
-    "objectID": "slides/01-intro.html#class-picture",
-    "href": "slides/01-intro.html#class-picture",
-    "title": "Welcome to Stat 349!",
-    "section": "Class Picture",
-    "text": "Class Picture\nLet’s all time travel back to elementary school…\n(but seriously, help a face-blind prof out)"
-  },
-  {
-    "objectID": "slides/01-intro.html#class-structure",
-    "href": "slides/01-intro.html#class-structure",
-    "title": "Welcome to Stat 349!",
-    "section": "Class Structure",
-    "text": "Class Structure\n\nMore lecture based than previous classes with me… but lots of activities\nLots of reading/writing practice\nScaffolding for projects - practice on a section, then add to your final project"
-  },
-  {
-    "objectID": "slides/01-intro.html#grades",
-    "href": "slides/01-intro.html#grades",
-    "title": "Welcome to Stat 349!",
-    "section": "Grades",
-    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nParticipation\n10%\n\n\nHomework\n40%\n\n\nUser Guide/Documentation\n20%\n\n\nBusiness Report & Presentation\n20%"
-  },
-  {
-    "objectID": "slides/01-intro.html#reading-quizzes",
-    "href": "slides/01-intro.html#reading-quizzes",
-    "title": "Welcome to Stat 349!",
-    "section": "Reading Quizzes",
-    "text": "Reading Quizzes\n\nDue before class starts\nWill become inaccessible at 10am on Wednesdays\nOpen-book, open-note\nA deadline to encourage you to do the reading before class"
-  },
-  {
-    "objectID": "slides/01-intro.html#participationattendance",
-    "href": "slides/01-intro.html#participationattendance",
-    "title": "Welcome to Stat 349!",
-    "section": "Participation/Attendance",
-    "text": "Participation/Attendance\n\nI will take attendance\nYou get one free, no excuses necessary absence\nIf you’re sick, don’t come to class!\n\nDo the reading/homework,\nMake an appointment as you feel better\nIn the appointment field, indicate that this is to substitute for class attendance\nDon’t abuse this"
-  },
-  {
-    "objectID": "slides/01-intro.html#homework",
-    "href": "slides/01-intro.html#homework",
-    "title": "Welcome to Stat 349!",
-    "section": "Homework",
-    "text": "Homework\n\nAlmost every week\nHomework can be resubmitted once for a re-grade\nResubmissions are due on\n\nMarch 10\nMay 5"
-  },
-  {
-    "objectID": "slides/01-intro.html#user-guide",
-    "href": "slides/01-intro.html#user-guide",
-    "title": "Welcome to Stat 349!",
-    "section": "User Guide",
-    "text": "User Guide\n\nTranslate a statistics topic into a practical guide for how to do something\n\nsoftware related is natural, but I’m open to other options\n\nPractice thinking about audience needs and planning scope\nDue before Spring Break"
-  },
-  {
-    "objectID": "slides/01-intro.html#business-report",
-    "href": "slides/01-intro.html#business-report",
-    "title": "Welcome to Stat 349!",
-    "section": "Business Report",
-    "text": "Business Report\n\nAddress a statistical question of interest to a business\nFind and document relevant data\nExplain and document your analysis\nDraw a conclusion and explain that to a non-statistician\nMake a presentation\nDue in Week 15"
-  },
-  {
-    "objectID": "instructions/intro-problem-statements.html",
-    "href": "instructions/intro-problem-statements.html",
-    "title": "Introductions & Problem Statements",
+    "objectID": "instructions/setup-github-portfolio.html",
+    "href": "instructions/setup-github-portfolio.html",
+    "title": "Setting Up a Github.io portfolio",
     "section": "",
-    "text": "Articles:\n\n2030 Census Research Recommendations\nNearly All U.S. Counties Had More Homeowners Than Renters Between 2019 and 2023\nWho Could Afford to Buy a Home in 2009? Affordability of Buying a Home in the United States\nEnabling Global Image Data Sharing in the Life Sciences\nWillful Winds: Hurricane Andrew and Louisiana’s Coast\nHurricane Katrina\nWater-Level and Recoverable Water in Storage Changes, High Plains Aquifer, Predevelopment to 2019 and 2017 to 2019"
+    "text": "Steps\n\nCreate a github repository that is named “portfolio” and located at https://github.com/%3Cusername%3E/portfolio\nCreate a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following these directions.\nPush your site (along with the /docs folder containing the rendered site) to GitHub. You can customize it later.\nOn GitHub, set your site to render to the docs directory (detailed instructions).\n\nChange your _quarto.yml file to have output-dir: docs\nCreate an empty .nojekyll file in the main directory of your project repository\nConfigure your GitHub repository (Settings -&gt; Pages -&gt; Build and Deployment) to publish the /docs directory of the main branch of your repository.\n\nCheck the rendered site (it should have an address of https://.github.io/portfolio) – it may take ~5 minutes to appear after you’ve completed step 4.\nMake any tweaks to your site that you’d like to make – add pictures, a biography, posts about your interests, etc.\n\nThe goal of this is to have a place where you can showcase your coursework for future employers. Keep it professional (but it’s ok to have some information about your hobbies, if you want to show that dimension of yourself).\nThe department may eventually want to showcase some of these sites so that incoming students can see what current students accomplish as part of our courses. We will ask permission first!\n\n\n\n\nUpdating your site\nRendering your site will be done manually – thus, each time you want to update the actual site, you’ll have to run the following commands in the terminal (not the R console):\nquarto render\ngit add docs\ngit commit -m \"Publish site to docs/\"\ngit push\n(You can also accomplish this by hitting the Render button in RStudio and then adding and committing the docs folder in the git pane in RStudio.)\nIf you’re feeling fancy, you can automate this process using a GitHub action, but this is fiddly and probably not worth it unless you’re actually planning to use this as a blog and update it frequently. If you decide to set everything up with Github Actions, I can offer a minimal amount of help with debugging, but even I find them confusing.\n\n\n\n\n\n\nRendering your site\n\n\n\nUpdating the markdown files is not enough – you have to render (in e.g. RStudio) and push the docs folder for changes to show up on Github pages.\nIf things aren’t working,\n\nRun render via RStudio or by using quarto render . on the command line (in the project folder).\nLook for any un-pushed changes, either in the Git pane of RStudio (hit refresh) or by running git status on the command line.\nCheck that the docs/ folder has been committed AND pushed to GitHub.\nAsk for help, either in class during some downtime, or by making an office hours appointment."
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-shark.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-shark.html",
-    "title": "Sharknado!",
+    "objectID": "instructions/cv-templates.html",
+    "href": "instructions/cv-templates.html",
+    "title": "Quarto CV/Resume Templates",
     "section": "",
-    "text": "You are an analyst for an insurance agency concerned with increasing payouts for property damage with a warming climate. Your boss recently saw Sharknado (2013) while trying to battle insomnia, and has become concerned about the increased likelihood of shark-infested weather as severe weather events become more probable due to climate change.\nYour boss’s concerns about the possiblity of shark-infested storms cannot be countered with logic, but you might be able to convince them that very few storms even have shark-infestation potential.\nAssemble data from one or more reputable sources (NOAA, USGS, etc.).\nAssess the probability that tornadoes form in coastal areas (Atlantic, Pacific, and Gulf of Mexico) and move inward, compared to the probability that tornadoes form inland and move toward the coast. You should consider both the probability of a coastal -&gt; inland tornadic event and the consequences – a F0 tornado is unlikely to have the power to lift sharks from the water, while an F5 tornado might have the ability to transport many sharks inland. How serious is the sharknado threat to your bottom line?\n(Note that you should probably not mock your boss too much, because they don’t like to be the butt of jokes.)"
+    "text": "Just the Document\n\nAlex Bass’s simple quarto resume template\n\nSchochastics quarto templates\nTo use: at the command line,\nquarto use template schochastics/&lt;cv style name&gt;\n\nclassic-cv\n\n\nmodern-cv\n\nmodern2-cv\n\nsidebar-cv\n\n\nMultiformat (PDF/HTML) Resumes with weasyprint - Cynthia Huang\n\n\n\nR packages – build a CV with data!\nBuilding your CV using data frames for education, experience, publications, etc., can make it easier to switch formats and/or keep all of your information in a file and then show only the 3 most recent entries (for example).\n\ndatadrivencv R package. Slides show you how to use the package and why you might want to use data to build a CV/resume. (no LaTeX, uses CSS, but not actively maintained)\nvitae R package – provides functions to make Rmarkdown resumes/CVs easy (quarto -&gt; LaTeX)\n\nawesomecv\n\nhyndman\n\nlatexcv\n\nmarkdowncv\n\nmoderncv\n\ntwentyseconds\n\n\n`typstcv` package (non-LaTeX, HTML-based with CSS)\nTypst is a non-LaTeX way to make paged documents (pdfs, docx) using markdown. Quarto is adopting it, but it is still less developed than LaTeX (which has been around for more than 40 years)."
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
-    "title": "Not Safe For Work",
+    "objectID": "assignment-repos/business-report/scenarios/scenario-power.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-power.html",
+    "title": "The Power of Climate Change",
     "section": "",
-    "text": "Scenario Description:\nYou are a statistical analyst for a company with both industrial/manufacturing and office spaces. Your safety officer recently read this article about office injury statistics and wants you to evaluate whether the company needs to implement stronger safety policies for office workers, as they are more likely to be injured through falls than non-office workers.\nAssemble data from one or more reputable sources (Bureau of Labor Statistics, Centers for Disease Control, Occupational Safety and Health Administration) to assess the risk of on-the-job injury for office and non-office workers. Consider both the severity of the injury and the probability of occurrence."
+    "text": "Scenario Description:\nYou are an analyst working for an electrical utility. A manager at one of the power plants has recently approached you about climate resilience strategies. The power plant is situated along the Gulf of Mexico in Dauphin Island, AL, and uses the Gulf as an heatsink.\nCurrently, the plant is designed around the assumption that the temperature of the gulf will be below 85\\(^\\circ\\)F (this assumption was relatively reasonable when the plant was built in 1970). When the water temperature is above this point, the plant must operate at reduced capacity, as it cannot transfer additional thermal energy into the water.\nAssemble data from one or more reputable sources (USGS, NOAA, US Energy Information Administration). Make an operational assessment of the risk that the plant will have to operate at reduced capacity during the next 5 years. Consider both the probability of reduced operating capacity as well as the timing of that capacity (e.g. you should also look at electrical usage during those periods)."
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/topic.html",
-    "href": "assignment-repos/user-guide-annual-review/topic.html",
-    "title": "Topic",
+    "objectID": "assignment-repos/business-report/scenarios/scenario-bridge.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-bridge.html",
+    "title": "London Bridge is Falling Down",
     "section": "",
-    "text": "Topic\nPick some subset of the information covered in your annual review article that you are interested in exploring in more detail.\nIdentify the scope of your user guide - what will you cover? Specific software packages? When to use or not to use a specific technique?"
+    "text": "Scenario Description:\nYou are an analyst for the Omaha, NE city government. The mayor, concerned about the degrading transportation infrastructure in the city, has asked you to assess the risk of bridge failure to the city, after well-publicized bridge collapses in cities on the East Coast in 2024.\nAssemble data from one or more reputable sources (State and national DOT, Army Corps of Engineers, etc.). Assess the risk of a bridge collapse event occurring over the next 5 years, using publicly available data. You should consider both the probability of such a collapse and the consequences – a small county road bridge collapse is less problematic than e.g. the I-80 bridge over the Missouri collapsing. What interventions do you recommend to minimize the risk?"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/references.html",
-    "href": "assignment-repos/user-guide-annual-review/references.html",
+    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html",
+    "href": "assignment-repos/user-guide-annual-review/task-analysis.html",
+    "title": "STAT 349 - Spring 2025",
+    "section": "",
+    "text": "Here are some questions to guide you through the process of doing a task analysis. You don’t have to specifically answer each one of these (and some may not apply), but they should get you started thinking in the right direction.\nWhat are the prerequisites, for both knowledge and e.g. software setup?\nWhat are the basic requirements for any data that the method is used on? - Are missing values allowed? - Should the data be confined within a certain range? - Does the data have to be approximately normally distributed?\nWhat are the basic components of the task? - Outline these in a bit more detail\nWhat decisions does the user need to be prepared to make on the fly?\nWhat questions should the user ask of the “first draft” of the product? What adjustments may need to be made?\n\n\nYour check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
+    "href": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
+    "title": "STAT 349 - Spring 2025",
+    "section": "",
+    "text": "Your check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/needs.html",
+    "href": "assignment-repos/user-guide-annual-review/needs.html",
+    "title": "STAT 349 - Spring 2025",
+    "section": "",
+    "text": "Needs Assessment\n\nWhat does someone trying to accomplish your chosen task need help with?\nWhat parts are likely to be tricky?\nWhat resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/guide.html",
+    "href": "assignment-repos/user-guide-annual-review/guide.html",
+    "title": "User Guide",
+    "section": "",
+    "text": "User Guide\nFirst off, you should change this section title to something more appropriate.\nNext, well, that’s up to you. Good luck!"
+  },
+  {
+    "objectID": "assignment-repos/business-report/references.html",
+    "href": "assignment-repos/business-report/references.html",
     "title": "References",
     "section": "",
     "text": "References"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/index.html",
-    "href": "assignment-repos/user-guide-annual-review/index.html",
-    "title": "Assignment Flow",
+    "objectID": "assignment-repos/business-report/index.html",
+    "href": "assignment-repos/business-report/index.html",
+    "title": "Preface",
     "section": "",
-    "text": "Assignment Flow\nThis project is set up to scaffold this user guide and set you up for success.\nStart at topic.qmd and identify a topic for your user guide.\nOnce you’ve proposed a topic and received my approval/feedback, you can convert the contents of topic.qmd into an introductory paragraph in your report. Please leave the topic.qmd file as an appendix, to document the different stages of this project.\nOnce we’ve agreed on a topic for your user guide, you will proceed to needs.qmd and task-analysis.qmd. Both will be submitted at the same check-in, and both will be included in your final report as appendices. You should be able to re-purpose most of the information in task-analysis.qmd to orient the user to different components of the task you’ve chosen.\nYour next step is to actually write the content that satisfies the work you outlined in task-analysis.qmd.\nOnce you’re finished with that, ideally, you’ll have plenty of time to edit and streamline your report. Feel free to trade reports with a friend and try to complete your friend’s task - this will help you both identify areas where the guide isn’t as clear. Try to complete the task with a different data set - that often helps find trouble spots.\nWhen you submit your final report, you may remove index.qmd from the _quarto.yml file, which will remove this chapter (which is quite unnecessary for your user) from the report. You should also take the time to make sure your name is listed as both author and copyright holder in the _quarto.yml file. Feel free to make a custom cover for your manual if you would like to do so. You can also tweak the CSS/theme for the book, so long as you’re conscious of accessibility concerns.\n\n\n\n\n\n\nBuilding the report\n\n\n\nIf you are using RStudio to complete this report, you can hit (Ctrl/Cmd)-Shift-B to build the whole report. You can also type quarto render . on the command line in the project folder to accomplish the same thing.\nIf you have questions about how to customize or debug your book, it may be helpful to start at the quarto book documentation [@positpbcCreatingBook2024]."
+    "text": "Preface\nYou are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.\nYou may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.\n\nI’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.\nThe basic steps for this task are as follows:\n\nIdentify the research question from the business question\nIdentify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task\n\n(HW Week 6) Document your data sets in draft-data-doc.qmd\n\nConduct a statistical analysis to support your answer to your research and business questions\n\nWrite a methods section for your business report corresponding to your statistical analysis\n(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in draft-results.qmd\n\nWrite your report\n\n(HW Week 10) Draft of Intro/Conclusion sections in draft-intro-conclusions.qmd\n(HW Week 11) Draft of Executive summary section in draft-exec-summary.qmd\n\nRevise your report\n\n(HW Week 12 – not turned in) Revise your report\n(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in _quarto.yml. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.\nDevelop a presentation to go along with your report (Week 13). Create slides for your report using quarto.\n\nPeer revise reports\n\nPeer revise reports\n(HW Week 14) - Make edits to your report from comments received from peer review\n\nFinal report & presentation due"
   },
   {
-    "objectID": "assignment-repos/business-report/summary.html",
-    "href": "assignment-repos/business-report/summary.html",
-    "title": "Summary",
+    "objectID": "assignment-repos/annotated-bibliography/index.html",
+    "href": "assignment-repos/annotated-bibliography/index.html",
+    "title": "Annotated Bibliography",
     "section": "",
-    "text": "Summary\nIn summary, this book has no content whatsoever."
-  },
-  {
-    "objectID": "assignment-repos/business-report/intro.html",
-    "href": "assignment-repos/business-report/intro.html",
-    "title": "Introduction",
-    "section": "",
-    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming."
-  },
-  {
-    "objectID": "assignment-repos/annotated-bibliography/template.html",
-    "href": "assignment-repos/annotated-bibliography/template.html",
-    "title": "Template",
-    "section": "",
-    "text": "Kieran Healy “Fuck Nuance,” Sociological Theory 35, no. 2 (June 2017): 118–27, https://doi.org/10.1177/0735275117709046.\n\nSummary: Healy argues that nuance, a common (and praised) feature of sociological theory, inhibits abstraction and prevents the development of good theories. Nuance, in Healy’s argument, is the tendency to make theories more complicated by adding unnecessary complexity, rather than reducing complexity and making strong statements. Healy presents three ‘nuance traps’ which plague sociology and argues against it from multiple different perspectives.\nReliability assessment: The author is a professor of sociology at Duke University and has many different publications in the field. As a result, he is likely qualified to critique the field from an insider’s perspective. As this is just a template of an annotated bibliography and this article is unrelated to a review article, I cannot easily assess how this article relates to the review article or overall topic (but you should).\nMissing information:\n\nI do not understand sociology enough to have seen this tendency in the field (but it seems to apply well enough to statistics)\nThe aesthetic argument against nuance is a bit tricky to understand and may require reading up on Davis (1971) - what makes theory interesting. Healy argues that interesting is more important than truth (based on Davis) and that nuance can thus occasionally be interesting but is perhaps more often dull. Without being familiar with Davis, it is hard to know if I’m understanding this component of the argument."
+    "text": "Annual Review Article\nannualrevarticle?\n\n\nReferences\nref1?\n\nSummary\nReliability and relationship to the topic\nMissing pieces\n\nthing 1\nthing 2"
   },
   {
     "objectID": "weeks/week-15.html",
@@ -1018,7 +955,7 @@
     "href": "weeks/week-05.html",
     "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nReading Quiz Week 5\n\n\n\n\n\n\nBy Wednesday night: Clone the business report template in Github classroom (link is in the assignment on Canvas)\n\n\n\n\n\nSlides\n\nDiscuss business report & assign report topics\nBasic components of argument and rhetoric in scientific writing\n\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)\nStart planning business report – locate data sets to support your analysis",
+    "text": "Read OTC Chapter 5.1 – Process\nRead OTC Chapter 5.2 – Audience Analysis\nRead OTC Chapter 5.4 – Articulating Technical Information\nRead ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis, focusing primarily on the basic components of rhetorical analysis\n\n\n\n\nReading Quiz Week 5\n\n\n\n\n\n\nBy Wednesday night: Clone the business report template in Github classroom (link is in the assignment on Canvas)\n\n\n\n\n\nSlides\n\nDiscuss business report & assign report topics\nBasic components of argument and rhetoric in scientific writing\n\n\n\n\n\n\nIn class activity: Arguments in scientific and technical writing\n\nSlides\n\n\n\n\n\n\nAnalyze the rhetorical decisions and arguments in your research article (1 pg summary)\nStart planning business report – locate data sets to support your analysis",
     "crumbs": [
       "Weekly materials",
       "Week 5 - Arguments"
@@ -1062,7 +999,7 @@
     "href": "weeks/week-05.html#wednesday",
     "title": "Week 5: Making an Argument",
     "section": "",
-    "text": "In class activity: Arguments in scientific and technical writing",
+    "text": "In class activity: Arguments in scientific and technical writing\n\nSlides",
     "crumbs": [
       "Weekly materials",
       "Week 5 - Arguments"
@@ -1795,214 +1732,347 @@
     ]
   },
   {
-    "objectID": "assignment-repos/annotated-bibliography/index.html",
-    "href": "assignment-repos/annotated-bibliography/index.html",
-    "title": "Annotated Bibliography",
+    "objectID": "activities/arguments.html",
+    "href": "activities/arguments.html",
+    "title": "Rhetoric in Technical Writing",
     "section": "",
-    "text": "Annual Review Article\nannualrevarticle?\n\n\nReferences\nref1?\n\nSummary\nReliability and relationship to the topic\nMissing pieces\n\nthing 1\nthing 2"
+    "text": "Meeting the Need for Water in the Lower Colorado River by Diverting Water from the Mississippi River - A Practical Assessment of a Popular Proposal [PDF]\nDeep Water The Gulf Oil Disaster and the Future of Offshore Drilling [PDF]\nNoncitizen Coverage and Its Effects on U.S. Population Statistics [PDF]\nAssessing the 2020 Census: Final Report [PDF]"
   },
   {
-    "objectID": "assignment-repos/business-report/index.html",
-    "href": "assignment-repos/business-report/index.html",
-    "title": "Preface",
+    "objectID": "activities/arguments.html#report-examples",
+    "href": "activities/arguments.html#report-examples",
+    "title": "Rhetoric in Technical Writing",
     "section": "",
-    "text": "Preface\nYou are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.\nYou may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.\n\nI’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.\nThe basic steps for this task are as follows:\n\nIdentify the research question from the business question\nIdentify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task\n\n(HW Week 6) Document your data sets in draft-data-doc.qmd\n\nConduct a statistical analysis to support your answer to your research and business questions\n\nWrite a methods section for your business report corresponding to your statistical analysis\n(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in draft-results.qmd\n\nWrite your report\n\n(HW Week 10) Draft of Intro/Conclusion sections in draft-intro-conclusions.qmd\n(HW Week 11) Draft of Executive summary section in draft-exec-summary.qmd\n\nRevise your report\n\n(HW Week 12 – not turned in) Revise your report\n(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in _quarto.yml. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.\nDevelop a presentation to go along with your report (Week 13). Create slides for your report using quarto.\n\nPeer revise reports\n\nPeer revise reports\n(HW Week 14) - Make edits to your report from comments received from peer review\n\nFinal report & presentation due"
+    "text": "Meeting the Need for Water in the Lower Colorado River by Diverting Water from the Mississippi River - A Practical Assessment of a Popular Proposal [PDF]\nDeep Water The Gulf Oil Disaster and the Future of Offshore Drilling [PDF]\nNoncitizen Coverage and Its Effects on U.S. Population Statistics [PDF]\nAssessing the 2020 Census: Final Report [PDF]"
   },
   {
-    "objectID": "assignment-repos/business-report/references.html",
-    "href": "assignment-repos/business-report/references.html",
+    "objectID": "activities/arguments.html#class-activity",
+    "href": "activities/arguments.html#class-activity",
+    "title": "Rhetoric in Technical Writing",
+    "section": "Class Activity",
+    "text": "Class Activity\nAlmost every report has a message – a claim, backed up by reasons and supported by evidence, that conveys the importance of believing or acting upon an idea.\nIn a group of 2-3 people, pick a report and skim it to identify the claims, reasons, evidence, and warrants.\nSome of these reports are hundreds of pages. I don’t expect you to read the whole report in less than an hour (or ever) - just skim through the report to get a sense of its structure and design, and read a few bits here and there to determine their relevance.\nThen, evaluate your report using the following questions:\nWhat is the basic argument that the report is making?\nWhat rhetorical choices did the author(s) make when supporting their argument?\nIs the argument convincing?\nDiscuss your answers in your group and be prepared to share with the rest of the class in the last 15 minutes of class.\nA guided version of this activity is provided for Week 5’s 2nd lecture."
+  },
+  {
+    "objectID": "assignment-repos/annotated-bibliography/template.html",
+    "href": "assignment-repos/annotated-bibliography/template.html",
+    "title": "Template",
+    "section": "",
+    "text": "Kieran Healy “Fuck Nuance,” Sociological Theory 35, no. 2 (June 2017): 118–27, https://doi.org/10.1177/0735275117709046.\n\nSummary: Healy argues that nuance, a common (and praised) feature of sociological theory, inhibits abstraction and prevents the development of good theories. Nuance, in Healy’s argument, is the tendency to make theories more complicated by adding unnecessary complexity, rather than reducing complexity and making strong statements. Healy presents three ‘nuance traps’ which plague sociology and argues against it from multiple different perspectives.\nReliability assessment: The author is a professor of sociology at Duke University and has many different publications in the field. As a result, he is likely qualified to critique the field from an insider’s perspective. As this is just a template of an annotated bibliography and this article is unrelated to a review article, I cannot easily assess how this article relates to the review article or overall topic (but you should).\nMissing information:\n\nI do not understand sociology enough to have seen this tendency in the field (but it seems to apply well enough to statistics)\nThe aesthetic argument against nuance is a bit tricky to understand and may require reading up on Davis (1971) - what makes theory interesting. Healy argues that interesting is more important than truth (based on Davis) and that nuance can thus occasionally be interesting but is perhaps more often dull. Without being familiar with Davis, it is hard to know if I’m understanding this component of the argument."
+  },
+  {
+    "objectID": "assignment-repos/business-report/intro.html",
+    "href": "assignment-repos/business-report/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming."
+  },
+  {
+    "objectID": "assignment-repos/business-report/summary.html",
+    "href": "assignment-repos/business-report/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/index.html",
+    "href": "assignment-repos/user-guide-annual-review/index.html",
+    "title": "Assignment Flow",
+    "section": "",
+    "text": "Assignment Flow\nThis project is set up to scaffold this user guide and set you up for success.\nStart at topic.qmd and identify a topic for your user guide.\nOnce you’ve proposed a topic and received my approval/feedback, you can convert the contents of topic.qmd into an introductory paragraph in your report. Please leave the topic.qmd file as an appendix, to document the different stages of this project.\nOnce we’ve agreed on a topic for your user guide, you will proceed to needs.qmd and task-analysis.qmd. Both will be submitted at the same check-in, and both will be included in your final report as appendices. You should be able to re-purpose most of the information in task-analysis.qmd to orient the user to different components of the task you’ve chosen.\nYour next step is to actually write the content that satisfies the work you outlined in task-analysis.qmd.\nOnce you’re finished with that, ideally, you’ll have plenty of time to edit and streamline your report. Feel free to trade reports with a friend and try to complete your friend’s task - this will help you both identify areas where the guide isn’t as clear. Try to complete the task with a different data set - that often helps find trouble spots.\nWhen you submit your final report, you may remove index.qmd from the _quarto.yml file, which will remove this chapter (which is quite unnecessary for your user) from the report. You should also take the time to make sure your name is listed as both author and copyright holder in the _quarto.yml file. Feel free to make a custom cover for your manual if you would like to do so. You can also tweak the CSS/theme for the book, so long as you’re conscious of accessibility concerns.\n\n\n\n\n\n\nBuilding the report\n\n\n\nIf you are using RStudio to complete this report, you can hit (Ctrl/Cmd)-Shift-B to build the whole report. You can also type quarto render . on the command line in the project folder to accomplish the same thing.\nIf you have questions about how to customize or debug your book, it may be helpful to start at the quarto book documentation [@positpbcCreatingBook2024]."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/references.html",
+    "href": "assignment-repos/user-guide-annual-review/references.html",
     "title": "References",
     "section": "",
     "text": "References"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/guide.html",
-    "href": "assignment-repos/user-guide-annual-review/guide.html",
-    "title": "User Guide",
+    "objectID": "assignment-repos/user-guide-annual-review/topic.html",
+    "href": "assignment-repos/user-guide-annual-review/topic.html",
+    "title": "Topic",
     "section": "",
-    "text": "User Guide\nFirst off, you should change this section title to something more appropriate.\nNext, well, that’s up to you. Good luck!"
+    "text": "Topic\nPick some subset of the information covered in your annual review article that you are interested in exploring in more detail.\nIdentify the scope of your user guide - what will you cover? Specific software packages? When to use or not to use a specific technique?"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/needs.html",
-    "href": "assignment-repos/user-guide-annual-review/needs.html",
-    "title": "STAT 349 - Spring 2025",
+    "objectID": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
+    "title": "Not Safe For Work",
     "section": "",
-    "text": "Needs Assessment\n\nWhat does someone trying to accomplish your chosen task need help with?\nWhat parts are likely to be tricky?\nWhat resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on."
+    "text": "Scenario Description:\nYou are a statistical analyst for a company with both industrial/manufacturing and office spaces. Your safety officer recently read this article about office injury statistics and wants you to evaluate whether the company needs to implement stronger safety policies for office workers, as they are more likely to be injured through falls than non-office workers.\nAssemble data from one or more reputable sources (Bureau of Labor Statistics, Centers for Disease Control, Occupational Safety and Health Administration) to assess the risk of on-the-job injury for office and non-office workers. Consider both the severity of the injury and the probability of occurrence."
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html",
-    "href": "assignment-repos/user-guide-annual-review/task-analysis.html",
-    "title": "STAT 349 - Spring 2025",
+    "objectID": "assignment-repos/business-report/scenarios/scenario-shark.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-shark.html",
+    "title": "Sharknado!",
     "section": "",
-    "text": "Here are some questions to guide you through the process of doing a task analysis. You don’t have to specifically answer each one of these (and some may not apply), but they should get you started thinking in the right direction.\nWhat are the prerequisites, for both knowledge and e.g. software setup?\nWhat are the basic requirements for any data that the method is used on? - Are missing values allowed? - Should the data be confined within a certain range? - Does the data have to be approximately normally distributed?\nWhat are the basic components of the task? - Outline these in a bit more detail\nWhat decisions does the user need to be prepared to make on the fly?\nWhat questions should the user ask of the “first draft” of the product? What adjustments may need to be made?\n\n\nYour check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+    "text": "You are an analyst for an insurance agency concerned with increasing payouts for property damage with a warming climate. Your boss recently saw Sharknado (2013) while trying to battle insomnia, and has become concerned about the increased likelihood of shark-infested weather as severe weather events become more probable due to climate change.\nYour boss’s concerns about the possiblity of shark-infested storms cannot be countered with logic, but you might be able to convince them that very few storms even have shark-infestation potential.\nAssemble data from one or more reputable sources (NOAA, USGS, etc.).\nAssess the probability that tornadoes form in coastal areas (Atlantic, Pacific, and Gulf of Mexico) and move inward, compared to the probability that tornadoes form inland and move toward the coast. You should consider both the probability of a coastal -&gt; inland tornadic event and the consequences – a F0 tornado is unlikely to have the power to lift sharks from the water, while an F5 tornado might have the ability to transport many sharks inland. How serious is the sharknado threat to your bottom line?\n(Note that you should probably not mock your boss too much, because they don’t like to be the butt of jokes.)"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
-    "href": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
-    "title": "STAT 349 - Spring 2025",
+    "objectID": "instructions/intro-problem-statements.html",
+    "href": "instructions/intro-problem-statements.html",
+    "title": "Introductions & Problem Statements",
     "section": "",
-    "text": "Your check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+    "text": "Articles:\n\n2030 Census Research Recommendations\nNearly All U.S. Counties Had More Homeowners Than Renters Between 2019 and 2023\nWho Could Afford to Buy a Home in 2009? Affordability of Buying a Home in the United States\nEnabling Global Image Data Sharing in the Life Sciences\nWillful Winds: Hurricane Andrew and Louisiana’s Coast\nHurricane Katrina\nWater-Level and Recoverable Water in Storage Changes, High Plains Aquifer, Predevelopment to 2019 and 2017 to 2019"
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-bridge.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-bridge.html",
-    "title": "London Bridge is Falling Down",
-    "section": "",
-    "text": "Scenario Description:\nYou are an analyst for the Omaha, NE city government. The mayor, concerned about the degrading transportation infrastructure in the city, has asked you to assess the risk of bridge failure to the city, after well-publicized bridge collapses in cities on the East Coast in 2024.\nAssemble data from one or more reputable sources (State and national DOT, Army Corps of Engineers, etc.). Assess the risk of a bridge collapse event occurring over the next 5 years, using publicly available data. You should consider both the probability of such a collapse and the consequences – a small county road bridge collapse is less problematic than e.g. the I-80 bridge over the Missouri collapsing. What interventions do you recommend to minimize the risk?"
+    "objectID": "slides/01-intro.html#stat-349",
+    "href": "slides/01-intro.html#stat-349",
+    "title": "Welcome to Stat 349!",
+    "section": "Stat 349",
+    "text": "Stat 349\n\nHow to write statistical articles and reports\nWeeks 1-5: Preliminaries\n\nCVs\nHow to read scientific articles\nOrganization\nTransitions\nData documentation\n\nWeeks 6-12: Components of reports/articles\nWeeks 13-15: Reports, Editing, Presentations"
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-power.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-power.html",
-    "title": "The Power of Climate Change",
-    "section": "",
-    "text": "Scenario Description:\nYou are an analyst working for an electrical utility. A manager at one of the power plants has recently approached you about climate resilience strategies. The power plant is situated along the Gulf of Mexico in Dauphin Island, AL, and uses the Gulf as an heatsink.\nCurrently, the plant is designed around the assumption that the temperature of the gulf will be below 85\\(^\\circ\\)F (this assumption was relatively reasonable when the plant was built in 1970). When the water temperature is above this point, the plant must operate at reduced capacity, as it cannot transfer additional thermal energy into the water.\nAssemble data from one or more reputable sources (USGS, NOAA, US Energy Information Administration). Make an operational assessment of the risk that the plant will have to operate at reduced capacity during the next 5 years. Consider both the probability of reduced operating capacity as well as the timing of that capacity (e.g. you should also look at electrical usage during those periods)."
+    "objectID": "slides/01-intro.html#about-me",
+    "href": "slides/01-intro.html#about-me",
+    "title": "Welcome to Stat 349!",
+    "section": "About Me",
+    "text": "About Me\n\n\n\nAssociate Professor in Statistics\nResearch:\n\nData Visualization\nStatistical Algorithms for Forensics\nReproducibility\nData Science pipelines\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\nAlex (left), Ryan (right), and Zoey (top)\n\n\n\n\n \n\n\n\n\n\n\nVideo\nEdison (Eddie)\n\n\n\n\n\n\nVideo\nIvy"
   },
   {
-    "objectID": "instructions/cv-templates.html",
-    "href": "instructions/cv-templates.html",
-    "title": "Quarto CV/Resume Templates",
-    "section": "",
-    "text": "Just the Document\n\nAlex Bass’s simple quarto resume template\n\n\n\n\nSchochastics quarto templates\nTo use: at the command line,\nquarto use template schochastics/&lt;cv style name&gt;\n\nclassic-cv\n\n\nmodern-cv\n\nmodern2-cv\n\nsidebar-cv\n\n\nMultiformat (PDF/HTML) Resumes with weasyprint - Cynthia Huang\n\n\n\nR packages – build a CV with data!\nBuilding your CV using data frames for education, experience, publications, etc., can make it easier to switch formats and/or keep all of your information in a file and then show only the 3 most recent entries (for example).\n\ndatadrivencv R package. Slides show you how to use the package and why you might want to use data to build a CV/resume. (no LaTeX, uses CSS, but not actively maintained)\n\n\n\nvitae R package – provides functions to make Rmarkdown resumes/CVs easy (quarto -&gt; LaTeX)\n\nawesomecv\n\nhyndman\n\nlatexcv\n\nmarkdowncv\n\nmoderncv\n\ntwentyseconds\n\n\n`typstcv` package (non-LaTeX, HTML-based with CSS)\nTypst is a non-LaTeX way to make paged documents (pdfs, docx) using markdown. Quarto is adopting it, but it is still less developed than LaTeX (which has been around for more than 40 years)."
+    "objectID": "slides/01-intro.html#about-me-1",
+    "href": "slides/01-intro.html#about-me-1",
+    "title": "Welcome to Stat 349!",
+    "section": "About Me",
+    "text": "About Me\n\nI have prosopagnosia\n\n\nImage source: https://susilolab.org/Prosopagnosia.html"
   },
   {
-    "objectID": "instructions/setup-github-portfolio.html",
-    "href": "instructions/setup-github-portfolio.html",
-    "title": "Setting Up a Github.io portfolio",
-    "section": "",
-    "text": "Steps\n\nCreate a github repository that is named “portfolio” and located at https://github.com/%3Cusername%3E/portfolio\nCreate a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following these directions.\nPush your site (along with the /docs folder containing the rendered site) to GitHub. You can customize it later.\nOn GitHub, set your site to render to the docs directory (detailed instructions).\n\nChange your _quarto.yml file to have output-dir: docs\nCreate an empty .nojekyll file in the main directory of your project repository\nConfigure your GitHub repository (Settings -&gt; Pages -&gt; Build and Deployment) to publish the /docs directory of the main branch of your repository.\n\nCheck the rendered site (it should have an address of https://.github.io/portfolio) – it may take ~5 minutes to appear after you’ve completed step 4.\nMake any tweaks to your site that you’d like to make – add pictures, a biography, posts about your interests, etc.\n\nThe goal of this is to have a place where you can showcase your coursework for future employers. Keep it professional (but it’s ok to have some information about your hobbies, if you want to show that dimension of yourself).\nThe department may eventually want to showcase some of these sites so that incoming students can see what current students accomplish as part of our courses. We will ask permission first!\n\n\n\n\nUpdating your site\nRendering your site will be done manually – thus, each time you want to update the actual site, you’ll have to run the following commands in the terminal (not the R console):\nquarto render\ngit add docs\ngit commit -m \"Publish site to docs/\"\ngit push\n(You can also accomplish this by hitting the Render button in RStudio and then adding and committing the docs folder in the git pane in RStudio.)\nIf you’re feeling fancy, you can automate this process using a GitHub action, but this is fiddly and probably not worth it unless you’re actually planning to use this as a blog and update it frequently. If you decide to set everything up with Github Actions, I can offer a minimal amount of help with debugging, but even I find them confusing.\n\n\n\n\n\n\nRendering your site\n\n\n\nUpdating the markdown files is not enough – you have to render (in e.g. RStudio) and push the docs folder for changes to show up on Github pages.\nIf things aren’t working,\n\nRun render via RStudio or by using quarto render . on the command line (in the project folder).\nLook for any un-pushed changes, either in the Git pane of RStudio (hit refresh) or by running git status on the command line.\nCheck that the docs/ folder has been committed AND pushed to GitHub.\nAsk for help, either in class during some downtime, or by making an office hours appointment."
+    "objectID": "slides/01-intro.html#introductions",
+    "href": "slides/01-intro.html#introductions",
+    "title": "Welcome to Stat 349!",
+    "section": "Introductions",
+    "text": "Introductions\n\nYour name\nYour major\nWhat is the best prank you’ve ever experienced or planned?"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#setting-the-scene",
-    "href": "slides/02-cv-cover-letter.html#setting-the-scene",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Setting the Scene",
-    "text": "Setting the Scene\n\nCommunicate how awesome you are to a potential employer\nEducation\nExperience\nSkills"
+    "objectID": "slides/01-intro.html#class-picture",
+    "href": "slides/01-intro.html#class-picture",
+    "title": "Welcome to Stat 349!",
+    "section": "Class Picture",
+    "text": "Class Picture\nLet’s all time travel back to elementary school…\n(but seriously, help a face-blind prof out)"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#what-is-a-cv",
-    "href": "slides/02-cv-cover-letter.html#what-is-a-cv",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "What is a CV?",
-    "text": "What is a CV?\nCurriculum vitae - literally, “course of life”\n\nUsage is different in different countries"
+    "objectID": "slides/01-intro.html#class-structure",
+    "href": "slides/01-intro.html#class-structure",
+    "title": "Welcome to Stat 349!",
+    "section": "Class Structure",
+    "text": "Class Structure\n\nMore lecture based than previous classes with me… but lots of activities\nLots of reading/writing practice\nScaffolding for projects - practice on a section, then add to your final project"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#resume-vs.-cv",
-    "href": "slides/02-cv-cover-letter.html#resume-vs.-cv",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Resume vs. CV 🇺🇸",
-    "text": "Resume vs. CV 🇺🇸\n\nRésumé: short career summary\n\nstandard for non academic jobs\n1 page (2 for longer career)\n\nCV: exhaustive list of everything you’ve done\n\nacademic/research oriented jobs, grad school\nas many pages as necessary"
+    "objectID": "slides/01-intro.html#grades",
+    "href": "slides/01-intro.html#grades",
+    "title": "Welcome to Stat 349!",
+    "section": "Grades",
+    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nParticipation\n10%\n\n\nHomework\n40%\n\n\nUser Guide/Documentation\n20%\n\n\nBusiness Report & Presentation\n20%"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#resume-vs.-cv-1",
-    "href": "slides/02-cv-cover-letter.html#resume-vs.-cv-1",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Resume vs. CV (🇬🇧,🇦🇺)",
-    "text": "Resume vs. CV (🇬🇧,🇦🇺)\nCV is used more than résumé\n\nComplete professional/educational history\n2-3 pages\n\n(slightly longer US-style Résumé)"
+    "objectID": "slides/01-intro.html#reading-quizzes",
+    "href": "slides/01-intro.html#reading-quizzes",
+    "title": "Welcome to Stat 349!",
+    "section": "Reading Quizzes",
+    "text": "Reading Quizzes\n\nDue before class starts\nWill become inaccessible at 10am on Wednesdays\nOpen-book, open-note\nA deadline to encourage you to do the reading before class"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#essential-information",
-    "href": "slides/02-cv-cover-letter.html#essential-information",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Essential information",
-    "text": "Essential information\n\nName\nContact information (address, phone, email)\n(be careful with what you post online)\nObjective - 1 sentence summary of your job search goal. Highlight skills if possible\nEducation (school, location, graduation date)\nRelevant experience (title, company, location, dates, brief list of duties)\nInclude non-relevant experience only if space isn’t limited.\nSkills"
+    "objectID": "slides/01-intro.html#participationattendance",
+    "href": "slides/01-intro.html#participationattendance",
+    "title": "Welcome to Stat 349!",
+    "section": "Participation/Attendance",
+    "text": "Participation/Attendance\n\nI will take attendance\nYou get one free, no excuses necessary absence\nIf you’re sick, don’t come to class!\n\nDo the reading/homework,\nMake an appointment as you feel better\nIn the appointment field, indicate that this is to substitute for class attendance\nDon’t abuse this"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#additional-useful-information",
-    "href": "slides/02-cv-cover-letter.html#additional-useful-information",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Additional useful information",
-    "text": "Additional useful information\n\nAwards/Honors (name, awarding group, date)\nActivities/Hobbies (role, if relevant, and dates)\nReferences (2-3 people)\n\nTeacher/Professor\nWork supervisor (current/past)\nCoworker or character reference"
+    "objectID": "slides/01-intro.html#homework",
+    "href": "slides/01-intro.html#homework",
+    "title": "Welcome to Stat 349!",
+    "section": "Homework",
+    "text": "Homework\n\nAlmost every week\nHomework can be resubmitted once for a re-grade\nResubmissions are due on\n\nMarch 10\nMay 5"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#cover-letter",
-    "href": "slides/02-cv-cover-letter.html#cover-letter",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Cover Letter",
-    "text": "Cover Letter\n\nSpecialized type of business letter\nOTC Ch 2 business letter advice applies\nTry to fit on a single page"
+    "objectID": "slides/01-intro.html#user-guide",
+    "href": "slides/01-intro.html#user-guide",
+    "title": "Welcome to Stat 349!",
+    "section": "User Guide",
+    "text": "User Guide\n\nTranslate a statistics topic into a practical guide for how to do something\n\nsoftware related is natural, but I’m open to other options\n\nPractice thinking about audience needs and planning scope\nDue before Spring Break"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#cover-letter-structure",
-    "href": "slides/02-cv-cover-letter.html#cover-letter-structure",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Cover Letter Structure",
-    "text": "Cover Letter Structure\n\nIntroduction:\n\nState interest in the specific position\nPreview your argument: I am a good fit for this position"
+    "objectID": "slides/01-intro.html#business-report",
+    "href": "slides/01-intro.html#business-report",
+    "title": "Welcome to Stat 349!",
+    "section": "Business Report",
+    "text": "Business Report\n\nAddress a statistical question of interest to a business\nFind and document relevant data\nExplain and document your analysis\nDraw a conclusion and explain that to a non-statistician\nMake a presentation\nDue in Week 15"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#cover-letter-structure-1",
-    "href": "slides/02-cv-cover-letter.html#cover-letter-structure-1",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Cover Letter Structure",
-    "text": "Cover Letter Structure\n\nBody: Build argument\n\nwhy do you think you’re a good fit?\n\nskills\ncompany values/mission\ngrowth opportunities\n\ncite examples from your experience\n\nprovide context that isn’t in your resume\nwhat skills have you developed from the experience"
+    "objectID": "slides/03-reading-summarizing.html#before-you-start",
+    "href": "slides/03-reading-summarizing.html#before-you-start",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Before you start",
+    "text": "Before you start\n\nDoing it right will take more time than you think!\nAI summaries miss technical context and important points"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#cover-letter-structure-2",
-    "href": "slides/02-cv-cover-letter.html#cover-letter-structure-2",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Cover Letter Structure",
-    "text": "Cover Letter Structure\n\nClosing:\n\nrestate interest in the role\nsummarize why you’re a good candidate\nthank reader for time/consideration\noffer to provide more information"
+    "objectID": "slides/03-reading-summarizing.html#basic-structure",
+    "href": "slides/03-reading-summarizing.html#basic-structure",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Basic Structure",
+    "text": "Basic Structure\nScientific articles mostly follow this structure:\n\nAbstract\nIntroduction\nMethods\nResults\nConclusions/Discussion\nReferences\nAppendices/Supplementary Information"
   },
   {
-    "objectID": "slides/02-cv-cover-letter.html#activity-data-science-resumes",
-    "href": "slides/02-cv-cover-letter.html#activity-data-science-resumes",
-    "title": "Résumés, CVs, and Cover Letters",
-    "section": "Activity: Data Science Resumes",
-    "text": "Activity: Data Science Resumes\n\n\n\nAssociate Data Scientist\n\n\nData Science Student\n\n\nData Scientist Intern\n\n\nData Scientist\n\n\nData Visualization\n\n\nEducational Data Scientist\n\n\nEntry Level Data Scientist\n\n\nHealthcare Data Scientist\n\n\nPython Data Scientist\n\n\n\nWhat works? What doesn’t?"
+    "objectID": "slides/03-reading-summarizing.html#basic-structure-1",
+    "href": "slides/03-reading-summarizing.html#basic-structure-1",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Basic Structure",
+    "text": "Basic Structure\nScientific articles mostly follow this structure:\n\n\n\n\n\n\n\nAbstract\nVery technical and concise\n\n\nIntroduction\nDefinitions and context, motivation\n\n\nMethods\nData collection, some statistics\n\n\nResults\nInterpretation/significance tests\n\n\nDiscussion/ Conclusion\nWhat does it mean? Why does it matter?\n\n\nReferences\nWhat work is this related to? How well established are the methods?\n\n\nSupplement\nCode, data, stuff reviewers wanted, things that didn’t fit page limit…"
   },
   {
-    "objectID": "slides/04-organizing-information.html#annual-review-article-user-guide",
-    "href": "slides/04-organizing-information.html#annual-review-article-user-guide",
-    "title": "Organizing Information",
-    "section": "Annual Review Article User Guide",
-    "text": "Annual Review Article User Guide\n\nFor Wednesday: Submit a topic idea for your user guide\n\nFocus on practical implementation\nShow how to use some software or technique\n\nWritten for a peer at a business who is not necessarily a statistician but is technologically competent (you can assume knowledge of basic R/python)\nExample: Conducting visual inference studies using the nullabor package"
+    "objectID": "slides/03-reading-summarizing.html#basic-structure-2",
+    "href": "slides/03-reading-summarizing.html#basic-structure-2",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Basic Structure",
+    "text": "Basic Structure\nTechnical reports have a more varied structure:\n\nExecutive Summary\nContents\nIntroduction\nBody - broken into sections\nConclusions\nReferences/Bibliography\nAppendices"
   },
   {
-    "objectID": "slides/04-organizing-information.html#organizing-information",
-    "href": "slides/04-organizing-information.html#organizing-information",
-    "title": "Organizing Information",
-    "section": "Organizing Information",
-    "text": "Organizing Information\n\n\n\n\n\nAnyone remember this from elementary school?"
+    "objectID": "slides/03-reading-summarizing.html#basic-structure-3",
+    "href": "slides/03-reading-summarizing.html#basic-structure-3",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Basic Structure",
+    "text": "Basic Structure\nTechnical reports have a more varied structure:\n\nExecutive Summary (for dummies)\nContents preview of what you’re in for\nIntroduction\nBody - broken into sections\nConclusions\nReferences/Bibliography\nAppendices technical documentation, related documents, stuff to bury so management doesn’t see it CYA"
   },
   {
-    "objectID": "slides/04-organizing-information.html#removing-the-training-wheels",
-    "href": "slides/04-organizing-information.html#removing-the-training-wheels",
-    "title": "Organizing Information",
-    "section": "Removing the Training Wheels",
-    "text": "Removing the Training Wheels\n\nThesis developed in parallel with the body of the essay\nFeedback loop:\n\ninitial thesis -&gt; draft of the body\ndiscoveries while drafting the body -&gt; update thesis\nupdated thesis -&gt; reshape the body"
+    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers",
+    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 1: Spoilers!",
+    "text": "Strategy 1: Spoilers!"
   },
   {
-    "objectID": "slides/04-organizing-information.html#removing-the-training-wheels-1",
-    "href": "slides/04-organizing-information.html#removing-the-training-wheels-1",
-    "title": "Organizing Information",
-    "section": "Removing the Training Wheels",
-    "text": "Removing the Training Wheels\n\nContinual refining of ideas until\n\nyou’re happy\n(OR)\nthe due date arrives"
+    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-1",
+    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-1",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 1: 🫣 Spoilers!",
+    "text": "Strategy 1: 🫣 Spoilers!\nFirst Pass\n\nRead the title\nRead the conclusion\n\nAssemble a couple of questions to focus your reading\n\nSkim the methods\nSkim the results\n\nCan you answer your assembled questions?"
   },
   {
-    "objectID": "slides/04-organizing-information.html#statistical-writing",
-    "href": "slides/04-organizing-information.html#statistical-writing",
-    "title": "Organizing Information",
-    "section": "Statistical Writing",
-    "text": "Statistical Writing\nMain types of statistical writing (in my experience):\n\nExperiment write-up\nWhite paper/Technical report\n\nUse a statistical analysis to make a point\n\nTutorial\nLiterature review"
+    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-2",
+    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-2",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 1: 🫣 Spoilers!",
+    "text": "Strategy 1: 🫣 Spoilers!\nThink a bit\nWhat do you not understand (yet)?\n\nVocabulary? Google/Dictionary/Reference book\nHow they came to the conclusion?\n\nRead the paper again, in order this time\n\nWhy this topic is interesting?\n\nRead the introduction… (if this doesn’t help, just accept that it’s interesting to someone)"
   },
   {
-    "objectID": "slides/04-organizing-information.html#organizing-information-1",
-    "href": "slides/04-organizing-information.html#organizing-information-1",
-    "title": "Organizing Information",
-    "section": "Organizing Information",
-    "text": "Organizing Information\n\nMake a list of the main points\nMake lists of supporting information for each main point\nMove them around (Post its!) to see if you can find natural transitions\n\ntime\nconnecting pieces of information\nlogical flow"
+    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-3",
+    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-3",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 1: 🫣 Spoilers!",
+    "text": "Strategy 1: 🫣 Spoilers!\nRead it again\n\n🔝 In order, this time\n🎶️ Margin notes - ask questions (for you or the author)!\nLiberally comment\n\n⁉️/🔥/🤡/🤯/🪿\n“this is cool/dumb/nonsenscical”\nWTF\n\n✏️ Highlight/underline key points, definitions that are new to you\nhighlighting everything doesn’t work that well - be selective!"
   },
   {
-    "objectID": "slides/04-organizing-information.html#organizing-information-2",
-    "href": "slides/04-organizing-information.html#organizing-information-2",
-    "title": "Organizing Information",
-    "section": "Organizing Information",
-    "text": "Organizing Information\n\nIf things don’t logically connect\n\nare you missing critical pieces to connect concepts? -&gt; More research\nare you trying to do too much? -&gt; Narrow topic/thesis"
+    "objectID": "slides/03-reading-summarizing.html#strategy-1-spoilers-4",
+    "href": "slides/03-reading-summarizing.html#strategy-1-spoilers-4",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 1: 🫣 Spoilers!",
+    "text": "Strategy 1: 🫣 Spoilers!\n✅ Check your understanding\n\nAbstract - teaser for the full paper\n\nHighlights important points (most of the time)\nHighlights motivation (some of the time)\nPresents key results\n\nMake sure you understand at least what the abstract covers\nConclusion\n\nDo you understand how/why the authors came to their conclusions?\nHow does this paper fit into the wider field?"
   },
   {
-    "objectID": "slides/04-organizing-information.html#activity",
-    "href": "slides/04-organizing-information.html#activity",
-    "title": "Organizing Information",
-    "section": "Activity",
-    "text": "Activity\nBuild the document using the puzzle pieces I’ve given you.\nCan you make them logically connect?\nWhat features are you using to connect each piece?\nWire Cuts, Paragraph by Paragraph"
+    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch",
+    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 2: Outline/Sketch",
+    "text": "Strategy 2: Outline/Sketch\n\nRead the introduction (NOT the abstract)\n\nIdentify the big question\nSummarize the background in &lt;5 sentences\n\n\n\n\nStrategy 2 from https://blogs.lse.ac.uk/impactofsocialsciences/2016/05/09/how-to-read-and-understand-a-scientific-paper-a-guide-for-non-scientists/"
+  },
+  {
+    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-1",
+    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-1",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 2: Outline/Sketch",
+    "text": "Strategy 2: Outline/Sketch\n\nRead the methods\n\nIdentify the specific question(s)\nIdentify the approach\nDraw a diagram (for experiments) showing process/methods"
+  },
+  {
+    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-2",
+    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-2",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 2: Outline/Sketch",
+    "text": "Strategy 2: Outline/Sketch\n\nRead the results\n\nSummarize results for each experiment\nDo results answer the specific question(s)?\n\nRead the conclusion/discussion\n\nWhat contribution does this make?\nWhat follow-up experiments are necessary?"
+  },
+  {
+    "objectID": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-3",
+    "href": "slides/03-reading-summarizing.html#strategy-2-outlinesketch-3",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Strategy 2: Outline/Sketch",
+    "text": "Strategy 2: Outline/Sketch\n\nRead the abstract\nWhat do other researchers say about this paper?\n\nLook for citations to the paper that are relatively close in time\nLocate where the paper was cited\nSee if opinions are offered"
+  },
+  {
+    "objectID": "slides/03-reading-summarizing.html#evaluating-the-paper",
+    "href": "slides/03-reading-summarizing.html#evaluating-the-paper",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Evaluating the paper",
+    "text": "Evaluating the paper\nOther Details\n\nAuthors, institutional affiliations\n\nare there likely biases here?\n\nJournal\n\nCheck journal rankings"
+  },
+  {
+    "objectID": "slides/03-reading-summarizing.html#technicalbusiness-reports",
+    "href": "slides/03-reading-summarizing.html#technicalbusiness-reports",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Technical/Business Reports",
+    "text": "Technical/Business Reports\n\nLook at charts/pictures\nRead conclusions\nLook at tables\nRead the report\nRead the executive summary\n\n🎭🦙: Compare/contrast with the rest of the report"
+  },
+  {
+    "objectID": "slides/03-reading-summarizing.html#revising-a-summary",
+    "href": "slides/03-reading-summarizing.html#revising-a-summary",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Revising a Summary",
+    "text": "Revising a Summary\n\nRead your summary out loud (or have the computer read it to you)\n\nIs anything not logically clear?\n\nListen for “non sequiturs” (it does not follow) and missing sentences\n\nGrammar/clarity check\n\nRe-read/skim the article again\nRead your summary after you revisit the article\n\nDid you cover all of the important points?\nWhat assumptions did you make about your audience?"
+  },
+  {
+    "objectID": "slides/03-reading-summarizing.html#summary-style-guide",
+    "href": "slides/03-reading-summarizing.html#summary-style-guide",
+    "title": "Reading and Summarizing Articles and Reports",
+    "section": "Summary Style Guide",
+    "text": "Summary Style Guide\n\nEliminate wordiness\nextra adverbs (“clearly”, “very”, “mostly”) and weasel words should go\nUse specific language\n“this experiment illustrates” instead of “this illustrates”\nAccurate language\n“fail to reject” instead of “support for the null”\nDon’t use direct quotes – summaries are more concise than the original\n\nAsk yourself “Do I need this word?”"
+  },
+  {
+    "objectID": "slides/05-argument-activity.html#analyzing-arguments",
+    "href": "slides/05-argument-activity.html#analyzing-arguments",
+    "title": "Rhetoric in Scientific Writing",
+    "section": "Analyzing Arguments",
+    "text": "Analyzing Arguments\nClaim - Statement about what is true/good or what should be done/believed - must be arguable (not just an unsubstantiated opinion)\nClaims are supported by Reasons\nReasons are supported by Evidence\nWarrants are inferences that connect support (Reasons/Evidence) to the claim"
+  },
+  {
+    "objectID": "slides/05-argument-activity.html#attention-video-last-class",
+    "href": "slides/05-argument-activity.html#attention-video-last-class",
+    "title": "Rhetoric in Scientific Writing",
+    "section": "Attention Video (last class)",
+    "text": "Attention Video (last class)"
+  },
+  {
+    "objectID": "slides/05-argument-activity.html#skim-the-report",
+    "href": "slides/05-argument-activity.html#skim-the-report",
+    "title": "Rhetoric in Scientific Writing",
+    "section": "Skim the report",
+    "text": "Skim the report\n(5 minutes)\nSkim the Technical Report, looking for the main claim."
+  },
+  {
+    "objectID": "slides/05-argument-activity.html#what-is-the-claim",
+    "href": "slides/05-argument-activity.html#what-is-the-claim",
+    "title": "Rhetoric in Scientific Writing",
+    "section": "What is the claim?",
+    "text": "What is the claim?"
+  },
+  {
+    "objectID": "slides/05-argument-activity.html#using-the-toc-to-assist",
+    "href": "slides/05-argument-activity.html#using-the-toc-to-assist",
+    "title": "Rhetoric in Scientific Writing",
+    "section": "Using the TOC to assist",
+    "text": "Using the TOC to assist\n(5 minutes)\nAssemble a list of 3-5 reasons that you think are going to appear in the report based on the TOC"
+  },
+  {
+    "objectID": "slides/05-argument-activity.html#evidence",
+    "href": "slides/05-argument-activity.html#evidence",
+    "title": "Rhetoric in Scientific Writing",
+    "section": "Evidence",
+    "text": "Evidence\n(15 minutes)\nEveryone should take one reason and assemble the most useful/impactful facts that support your reason"
+  },
+  {
+    "objectID": "slides/05-argument-activity.html#warrants",
+    "href": "slides/05-argument-activity.html#warrants",
+    "title": "Rhetoric in Scientific Writing",
+    "section": "Warrants",
+    "text": "Warrants\n(15 minutes)\nGroups: Summarize the warrants that connect your facts/evidence/reasons to the claim"
   },
   {
     "objectID": "slides/06-documenting-data.html#what-are-the-critical-components-of-data-documentation",

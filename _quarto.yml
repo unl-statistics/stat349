@@ -10,13 +10,12 @@ project:
     - course-overview.qmd
     - course-support.qmd
     - weeks/*.qmd
+    - activities/*.qmd
     - assignment-repos/*/*.qmd
     - assignment-repos/*/*/*.qmd
     - instructions/*.qmd
     - homework/*.qmd
     - slides/*.qmd
-  
-
 
 engine: knitr
 website:

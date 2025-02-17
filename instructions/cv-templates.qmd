@@ -8,7 +8,6 @@ format: html
 -   Alex Bass's [simple quarto resume](https://github.com/acbass49/CV_Quarto) template\
     ![](images/clipboard-209944952.png)
 
-<!-- -->
 
 -   [Schochastics quarto templates](https://github.com/schochastics/quarto-cv)\
     To use: at the command line,
@@ -36,8 +35,6 @@ format: html
 Building your CV using data frames for education, experience, publications, etc., can make it easier to switch formats and/or keep all of your information in a file and then show only the 3 most recent entries (for example).
 
 -   `datadrivencv` [R package](https://github.com/nstrayer/datadrivencv). [Slides](https://cct-datascience.quarto.pub/customizable-resumes-with-r-tools/#/title-slide) show you how to use the package and why you might want to use data to build a CV/resume. (no LaTeX, uses CSS, but not actively maintained)
-
-<!-- -->
 
 -   [`vitae` R package](https://pkg.mitchelloharawild.com/vitae/) – provides functions to make Rmarkdown resumes/CVs easy (quarto -\> LaTeX)
 

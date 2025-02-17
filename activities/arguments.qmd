@@ -1,0 +1,29 @@
+---
+title: "Rhetoric in Technical Writing"
+---
+
+<!-- https://twowritingteachers.org/2020/01/23/the-argument-scavenger-hunt/ -->
+## Report Examples
+
+- [Meeting the Need for Water in the Lower Colorado River by Diverting Water from the Mississippi River - A Practical Assessment of a Popular Proposal](report-examples/ViaderoetalWestwarddiversionofMSRwatertoLowerCRB.pdf) [PDF]
+- [Deep Water The Gulf Oil Disaster and the Future of Offshore Drilling](report-examples/Deepwater-Horizon-Report.pdf) [PDF]
+- [Noncitizen Coverage and Its Effects on U.S. Population Statistics](report-examples/CES-WP-23-42-CensusNoncitizenCoverage.pdf) [PDF]
+- [Assessing the 2020 Census: Final Report](report-examples/2023-AssessingThe2020Census.pdf) [PDF]
+
+## Class Activity
+
+Almost every report has a *message* -- a claim, backed up by reasons and supported by evidence, that conveys the importance of believing or acting upon an idea.
+
+In a group of 2-3 people, pick a report and skim it to identify the claims, reasons, evidence, and warrants.
+
+Some of these reports are hundreds of pages. I don't expect you to read the whole report in less than an hour (or ever) - just skim through the report to get a sense of its structure and design, and read a few bits here and there to determine their relevance.
+
+Then, evaluate your report using the following questions:
+
+    What is the basic argument that the report is making?
+    What rhetorical choices did the author(s) make when supporting their argument?
+    Is the argument convincing?
+
+Discuss your answers in your group and be prepared to share with the rest of the class in the last 15 minutes of class.
+
+A guided version of this activity is provided for [Week 5's 2nd lecture](../slides/05-argument-activity.qmd).
