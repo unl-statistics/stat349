@@ -17,7 +17,7 @@ format: revealjs
 
 ## Example: Signs of the Sine Illusion
 
-[Annotated paper (Canvas link)(https://canvas.unl.edu/courses/192983/files/20459592/download?download_frd=1)
+[Annotated paper (Canvas link)](https://canvas.unl.edu/courses/192983/files/20459592/download?download_frd=1)
 
 - Goal was to show that the sine illusion is both theoretically and practically impactful in graphics
 
