@@ -2255,5 +2255,159 @@
     "title": "Diagrams",
     "section": "Useful Tools",
     "text": "Useful Tools\n\nExcalidraw (online)\nDraw.io (online)\nInkscape (Free/open source)"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#types-of-misconceptions",
+    "href": "slides/09-misconceptions.html#types-of-misconceptions",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Types of Misconceptions",
+    "text": "Types of Misconceptions\n\n🗺️ General misconceptions about statistics\n🧑‍🔬 🧑‍💼 Subject-matter expert (SME) misconceptions about statistics\n🤵🕴️ Manager misconceptions"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#sme-misconception-examples",
+    "href": "slides/09-misconceptions.html#sme-misconception-examples",
+    "title": "Countering Statistical Misconceptions",
+    "section": "SME Misconception examples",
+    "text": "SME Misconception examples\nKenneth J. Rothman, “Six Persistent Research Misconceptions,” Journal of General Internal Medicine 29, no. 7 (January 23, 2014): 1060–64, https://doi.org/10.1007/s11606-013-2755-z.\n\nRandomized trials are more valid than cohort or case-control studies\nStudy subjects must be a representative sample of the target population for generalizations to be made\nLack of statistical interaction = lack of biological interaction\nCategorizing a continuous variable by percentiles is a good idea\nSignificance testing is the best way to report results"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#randomized-trials",
+    "href": "slides/09-misconceptions.html#randomized-trials",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Randomized Trials",
+    "text": "Randomized Trials\n\nRandomized trials still have divergent results\n\nrandom error\nsystematic errors (bias) - undercounting, missing data, non-adherence (e.g. medical studies)\n\nWell-controlled cohort studies have some advantages:\n\nage control\ntime since diagnosis of a condition may be better controlled\n\n\nSimpson’s paradox can explain a lot of these issues!"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#simpsons-paradox",
+    "href": "slides/09-misconceptions.html#simpsons-paradox",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Simpson’s Paradox",
+    "text": "Simpson’s Paradox\nKidney stone treatment experiment: Treatments A and B. Recorded stone size (large, small) and outcome of the treatment (success, failure).\n\nFailure to account for moderating variables can lead to the opposite (wrong) conclusion!\nMake sure your model uses the available data"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#references",
+    "href": "slides/09-misconceptions.html#references",
+    "title": "Countering Statistical Misconceptions",
+    "section": "References",
+    "text": "References\n\n\n\n\nDoll, R., and A. B. Hill. “The Mortality of Doctors in Relation to Their Smoking Habits; a Preliminary Report.” British Medical Journal 1, no. 4877 (June 26, 1954): 1451–55. https://doi.org/10.1136/bmj.1.4877.1451.\n\n\nDoll, Richard, and Austin Bradford Hill. “Mortality in Relation to Smoking: Ten Years’ Observations of British Doctors.” Br Med J 1, no. 5395 (May 30, 1964): 1399–1410. https://doi.org/10.1136/bmj.1.5395.1399.\n\n\nRothman, Kenneth J. “Six Persistent Research Misconceptions.” Journal of General Internal Medicine 29, no. 7 (January 23, 2014): 1060–64. https://doi.org/10.1007/s11606-013-2755-z."
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#representative-samples",
+    "href": "slides/09-misconceptions.html#representative-samples",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Representative Samples",
+    "text": "Representative Samples\n\nThe British Doctors Study, which began in 1951, was the world’s first large prospective study of the effects of smoking to establish a convincing linkage between tobacco smoking and cause-specific mortality, and demonstrated prospectively the risk of death from lung cancer (1954) and myocardial infarction and chronic obstructive pulmonary disease (1956).\nIn October 1951, Sir Richard Doll and Sir Austin Bradford Hill sent a questionnaire on smoking habits to all registered British doctors. Of the 59600 questionnaires mailed, 41024 replies were received and 40701 (34494 males and 6207 females) were sufficiently complete to be included in the follow-up. Because of the limited sample size and limited tobacco consumption females were excluded from most reports, and the study has focused on the males. Source\n\n\n\nIs this a representative sample of the population of\n\nBritish doctors?\nBritish men who are well educated?\nBritish men?\nMen of all nations?\nAll people?"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#representative-samples-1",
+    "href": "slides/09-misconceptions.html#representative-samples-1",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Representative Samples",
+    "text": "Representative Samples\n\n\n1954\n\n\n\n\n\n\n\nChart showing variation in mortality with amount smoked. R. Doll and A. B. Hill, “The Mortality of Doctors in Relation to Their Smoking Habits; a Preliminary Report,” British Medical Journal 1, no. 4877 (June 26, 1954): 1451–55, https://doi.org/10.1136/bmj.1.4877.1451.\n\n\n\n1964\n\n\n\nChart showing variation in mortality with amount smoked daily. Richard Doll and Austin Bradford Hill, “Mortality in Relation to Smoking: Ten Years’ Observations of British Doctors,” Br Med J 1, no. 5395 (May 30, 1964): 1399–1410, https://doi.org/10.1136/bmj.1.5395.1399."
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#representative-samples-2",
+    "href": "slides/09-misconceptions.html#representative-samples-2",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Representative Samples",
+    "text": "Representative Samples\nScientific generalization vs. Statistical generalization\n\nScience goal: Make correct statements about the way nature works\nStatistics goal: Extrapolate from a sample to the source population\n\nThese goals may align, but they may not!\nWhether a sample is representative enough to generalize beyond the sample population is determined by your argument."
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#interaction-interpretation",
+    "href": "slides/09-misconceptions.html#interaction-interpretation",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Interaction Interpretation",
+    "text": "Interaction Interpretation\nMisconception: Lack of statistical interaction =&gt; lack of real-world interaction\n\nStatistical interaction effects are conditional on the specific model and data\nModel lack of fit =&gt; interaction may not be significant even if real-world effect exists\nData collected over wrong range?\n\nAll models are wrong, but some are useful – George Box"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#significance-testing",
+    "href": "slides/09-misconceptions.html#significance-testing",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Significance Testing",
+    "text": "Significance Testing\n\n‘Detector! What would the Bayesian statistician say if I asked him whether the–’ [roll] ‘I AM A NEUTRINO DETECTOR, NOT A LABYRINTH GUARD. SERIOUSLY, DID YOUR BRAIN FALL OUT?’ [roll] ‘… yes.’The null is MUCH MORE LIKELY than the alternative!"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#significance-testing-1",
+    "href": "slides/09-misconceptions.html#significance-testing-1",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Significance Testing",
+    "text": "Significance Testing\n\nNull Hypothesis Significance Testing (NHST) is a combination of two distinct testing philosophies (More Reading)\nIt is often more important is to understand the size of the effect\nConfidence intervals provide both effect size and precision!\n\n(and don’t have to be reduced to is the null value in here?)\n\n\nAssess both statistical significance and practical significance when assessing and interpreting results"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#sme-misconceptions",
+    "href": "slides/09-misconceptions.html#sme-misconceptions",
+    "title": "Countering Statistical Misconceptions",
+    "section": "SME Misconceptions",
+    "text": "SME Misconceptions\nKenneth J. Rothman, “Six Persistent Research Misconceptions,” Journal of General Internal Medicine 29, no. 7 (January 23, 2014): 1060–64, https://doi.org/10.1007/s11606-013-2755-z.\n\nRandomized trials are more valid than cohort or case-control studies\nStudy subjects must be a representative sample of the target population for generalizations to be made\nLack of statistical interaction = lack of biological interaction\nCategorizing a continuous variable by percentiles is a good idea\nSignificance testing is the best way to report results"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#representative-samples-3",
+    "href": "slides/09-misconceptions.html#representative-samples-3",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Representative Samples",
+    "text": "Representative Samples\n\\[\\left(\\begin{array}{c}\\text{limiting confounding variables}\\\\ \\text{non-representative population}\\end{array}\\right) \\overset{?}{\\geq}\\left(\\begin{array}{c} \\text{no control over confounds}\\\\\\text{representative population}\\end{array}\\right)\\]\nThe best case for generalizing results is if there are\n\nconsensus findings\nfrom studies using different designs\nacross different populations\nby different research groups."
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#examples",
+    "href": "slides/09-misconceptions.html#examples",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Examples",
+    "text": "Examples\nmotulskyCommonMisconceptionsData2014?\n\nCorrelation =&gt; Causation\nLinear regression is the only regression\nJust rerun the experiment with a bigger sample size!\nSmall p-value = big effect size"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#correlation-and-causation",
+    "href": "slides/09-misconceptions.html#correlation-and-causation",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Correlation and Causation",
+    "text": "Correlation and Causation\ngershmanCausalImplicaturesCorrelational2023?\n\nPeople infer causation from correlational statements, using the variable order as a directional indicator\n\nEven with “X is associated with an increased risk of Y” language\nEven when given the choice of non-causal interpretations, 47% of people still use causal interpretations\n\n\n\nIn summary, certain correlational statements are associated with an increased probability of causal implicature. To be clear, we are not implying that these correlational statements cause causal implicature, but rather that they are correlated with causal implicature. In other words, correlation does not imply causation, but it does sometimes “imply” causation."
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#general-statistical-misconception-examples",
+    "href": "slides/09-misconceptions.html#general-statistical-misconception-examples",
+    "title": "Countering Statistical Misconceptions",
+    "section": "General Statistical Misconception Examples",
+    "text": "General Statistical Misconception Examples\nmotulskyCommonMisconceptionsData2014?\n\nCorrelation =&gt; Causation\nLinear regression is the only regression\nSmall p-value = big effect size\n\\(R^2\\) must be \\(&gt;0.95\\) to take action"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#regression",
+    "href": "slides/09-misconceptions.html#regression",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Regression",
+    "text": "Regression\n\n\n📐 Engineers\n\n\n\n\n\n\n\n\n\n\n“Oh no, there’s been a huge increase in injuries! We need to do something now, before the problem gets worse!”\n\n\n🤣 Statisticians\n\n\n\n\n\n\n\n\n\n\nlinear regression isn’t the right tool for this\nhave you considered other explanations?\nlet’s add more data…"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#manager-misconception-examples",
+    "href": "slides/09-misconceptions.html#manager-misconception-examples",
+    "title": "Countering Statistical Misconceptions",
+    "section": "Manager Misconception Examples",
+    "text": "Manager Misconception Examples\n\nJust rerun the experiment with a bigger sample size!\nStatisticians can predict exactly what will happen next 🔮🪄🧙\n\n\nAddress these issues in person if at all possible. Try not to laugh or cry."
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#p-values",
+    "href": "slides/09-misconceptions.html#p-values",
+    "title": "Countering Statistical Misconceptions",
+    "section": "P-values",
+    "text": "P-values\nMisconception: Small p-value =&gt; Bigger effect size\nT-test between \\(x_1 \\sim N(0, 1)\\) and \\(x_2 \\sim N(1, 1)\\)\nTrue \\(\\mu_2-\\mu_1 = 1\\), \\(\\eta = 1\\)\n\nUnder \\(H_0\\), p-values are uniform(0, 1) distributed!\nWithin each panel, the effect size is the same."
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#p-values-1",
+    "href": "slides/09-misconceptions.html#p-values-1",
+    "title": "Countering Statistical Misconceptions",
+    "section": "P-values",
+    "text": "P-values\nMisconception: Small p-value =&gt; Bigger effect size\nT-test between \\(x_1 \\sim N(0, 0.5)\\) and \\(x_2 \\sim N(0.5, 0.5)\\)\nTrue \\(\\mu_2-\\mu_1 = 0.5\\), \\(\\eta = 1\\)"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#r2",
+    "href": "slides/09-misconceptions.html#r2",
+    "title": "Countering Statistical Misconceptions",
+    "section": "R^2",
+    "text": "R^2\n\nAs number of predictors increases in multiple regression, \\(R^2\\) only increases. Adjusted \\(R^2\\) accounts for this issue.\nGood \\(R^2\\) are different for different fields…"
+  },
+  {
+    "objectID": "slides/09-misconceptions.html#r2-1",
+    "href": "slides/09-misconceptions.html#r2-1",
+    "title": "Countering Statistical Misconceptions",
+    "section": "R^2",
+    "text": "R^2\n\n\\(R^2\\) only measures linear relationships\nNot all interesting relationships are linear"
   }
 ]

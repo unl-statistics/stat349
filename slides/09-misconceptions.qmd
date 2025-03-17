@@ -1,0 +1,439 @@
+---
+title: "Countering Statistical Misconceptions"
+format: revealjs
+bibliography: 09-refs.bib
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+csl: chicago-syllabus.csl
+---
+
+## Types of Misconceptions
+
+-   🗺️ General misconceptions about statistics
+
+-   🧑‍🔬 🧑‍💼 Subject-matter expert (SME) misconceptions about statistics
+
+-   🤵🕴️ Manager misconceptions
+
+
+# General Statistical Misconceptions
+
+## General Statistical Misconception Examples
+
+@motulskyCommonMisconceptionsData2014
+
+- Correlation => Causation
+
+- Linear regression is the only regression
+
+- Small p-value = big effect size
+
+- $R^2$ must be $>0.95$ to matter
+
+
+## Correlation and Causation
+
+@gershmanCausalImplicaturesCorrelational2023
+
+- People infer causation from correlational statements, using the variable order as a directional indicator
+
+  - Even with "X is associated with an increased risk of Y" language
+  - Even when given the choice of non-causal interpretations, 47% of people still use causal interpretations
+  
+> In summary, certain correlational statements are associated with an increased probability of causal implicature. To be clear, we are not implying that these correlational statements cause causal implicature, but rather that they are correlated with causal implicature. In other words, correlation does not imply causation, but it does sometimes “imply” causation.
+
+
+## Regression
+
+::: columns
+
+::: column
+### 📐 Engineers 
+
+```{r}
+#| fig-alt: "A chart showing on site injuries for the 24 month period starting in January 2023. The last 3 observations are elevated compared to the previous 21. A linear regression line is overlaid showing an increase in injuries during the period."
+#| fig-height: 3
+#| fig-width: 6
+library(tibble)
+library(ggplot2)
+set.seed(102934082)
+data <- tibble(
+  Injuries_On_Site = c(rnorm(21, 50, 5), rnorm(3, 80, 15), rnorm(3, 50, 5)),
+  date = seq.Date(as.Date("2023-01-01"), as.Date("2025-03-01"), by = "1 month"))
+
+ggplot(data[1:24,], aes(x = date, y = Injuries_On_Site)) + geom_point() +  geom_line() + 
+  geom_smooth(method = "lm") + 
+  xlab("") + ylab("Onsite Injuries")
+```
+
+- "Oh no, there's been a huge increase in injuries! We need to do something now, before the problem gets worse!"
+
+
+:::
+
+::: column
+### 🤣 Statisticians
+
+```{r}
+#| fig-alt: "A set of three charts showing on site injuries per capita, on site injuries, and people on site for the 27 month period starting in January 2023. There are 3 observations of on site injuries starting in Oct 2025 which are elevated compared to the previous 21; the last 3 observations show a return to baseline. A similar increase in number of people onsite is shown, and per capita injuries is largely unchanged."
+#| fig-height: 6
+#| fig-width: 6
+library(tibble)
+library(dplyr)
+library(patchwork)
+library(ggplot2)
+
+data <- mutate(data, people = rep(c(500, 800, 500), c(21, 3, 3)) + sample((-10:10), size = 27, replace = T)*c(rep(1, 21), rep(3, 3), rep(1, 3)))
+
+p1 <- ggplot(data, aes(x = date, y = Injuries_On_Site/people)) + geom_point() +  geom_line() + 
+  geom_smooth(method = "lm") + 
+  xlab("") + ggtitle("Onsite Injuries per capita") + theme(axis.title = element_blank())
+
+p2 <- ggplot(data, aes(x = date, y = Injuries_On_Site)) + geom_point() +  geom_line() + 
+    xlab("") + ggtitle("Onsite Injuries") + theme(axis.title = element_blank())
+
+p3 <- ggplot(data, aes(x = date, y = people)) + geom_point() + geom_line() + xlab("") + ggtitle("People Onsite") + theme(axis.title = element_blank())
+
+p1 / p2 / p3
+
+```
+
+- linear regression isn't the right tool for this
+
+- have you considered other explanations?
+
+- let's add more data...
+
+:::
+
+:::
+
+
+## P-values
+
+Misconception: Small p-value => Bigger effect size
+
+T-test between $x_1 \sim N(0, 1)$ and $x_2 \sim N(1, 1)$
+
+True $\mu_2-\mu_1 = 1$, $\eta = 1$
+
+```{r}
+#| echo: false
+#| fig-alt: Two histograms showing p-values for 500 simulations of 50 samples per group, with a mean difference between groups of 0 (left) and 1 (right). On the left, the p-values are approximately uniformly distributed, with 0-10 observations for each of 100 bars. On the right, almost all observations are in the left-most bucket corresponding to [0, 0.01]. 
+library(infer)
+library(broom)
+
+gen_data <- function(delta=1, sd1=1, sd2=1, n1=50, n2=50) {
+  df <- tibble(
+    group = rep(1:2, c(n1, n2)),
+    obs = c(rnorm(n1, sd = sd1), rnorm(n2, delta, sd2)))
+  ttest <- t.test(data = df, obs ~ group)
+  effect_size <- delta/sqrt((sd1^2+sd2^2)/2)
+  return(tibble(true_d = delta, effect_size = effect_size, data = list(df),  tidy(ttest)))
+}
+
+set.seed(20394802)
+sim_data <- bind_rows(
+  replicate(500, gen_data(delta = 0), simplify = F) ,
+  replicate(500, gen_data(), simplify = F), 
+  replicate(500, gen_data(delta = .5, sd1 = .5, sd2 = .5), simplify = F)
+)
+
+
+ggplot(filter(sim_data, true_d %in% c(0, 1)), aes(x = p.value)) + 
+  facet_wrap(~true_d, labeller = label_both) + 
+  geom_histogram(bins = 100) + 
+  ylab("# Simulations") + xlab("P value, 2 sample t-test")
+```
+
+[Under $H_0$, p-values are uniform(0, 1) distributed!]{.emph .blue .large .fragment}
+
+[Within each panel, the effect size is the same.]{.fragment}
+
+
+## P-values
+
+Misconception: Small p-value => Bigger effect size
+
+
+T-test between $x_1 \sim N(0, 0.5)$ and $x_2 \sim N(0.5, 0.5)$
+
+True $\mu_2-\mu_1 = 0.5$, $\eta = 1$
+
+```{r}
+#| echo: false
+#| fig-alt: Two histograms showing p-values for 500 simulations of 50 samples per group, with a mean difference between groups of 0 (left) and 2 (right). On the left, the p-values are approximately uniformly distributed, with 0-10 observations for each of 100 bars. On the right, all observations are in the left-most bucket corresponding to [0, 0.01]. 
+
+ggplot(filter(sim_data, true_d > 0), aes(x = p.value)) + 
+  facet_wrap(~true_d, labeller = label_both) + 
+  geom_histogram() + 
+  ylab("# Simulations") + 
+  xlab("P value, 2 sample t-test")
+```
+
+
+## R^2
+
+- As number of predictors increases in multiple regression, $R^2$ only increases. Adjusted $R^2$ accounts for this issue.
+
+- Good $R^2$ are different for different fields...
+
+
+```{r}
+library(mvtnorm)
+library(dplyr)
+library(tidyr)
+data <- bind_rows(
+    tibble(discipline = "Genetics", alpha = .25, data = as.data.frame(rmvnorm(60, sigma = matrix(c(1, .000001, .000001, 1), nrow = 2)))) |> unnest("data"),
+    tibble(discipline = "Finance", alpha = .25, data = as.data.frame(rmvnorm(60, sigma = matrix(c(1, .0001, .0001, 1), nrow = 2)))) |> unnest("data"),
+  tibble(discipline = "Medicine", alpha = 0.05, data = as.data.frame(rmvnorm(500, sigma = matrix(c(1, .38, .38, 1), nrow = 2)))) |> unnest("data"),
+  tibble(discipline = "Psychology", alpha = 0.25, data = as.data.frame(rmvnorm(100, sigma = matrix(c(1, .7, .7, 1), nrow = 2)))) |> unnest("data"),
+  tibble(discipline = "Engineering", alpha = 0.25, data = as.data.frame(rmvnorm(50, sigma = matrix(c(1, .995, .995, 1), nrow = 2)))) |> unnest("data")
+)
+
+r2 <- data |> group_by(discipline) |>
+  summarize(r2 = cor(V1, V2)^2) |>
+  mutate(V1 = 3.5, V2 = -3.5, alpha = 1, label = sprintf("R^2 == %.3f", r2)) |>
+  ungroup() |>
+  arrange(r2, decreasing = T)
+
+data <- data |>
+  mutate(discipline = factor(discipline, levels = r2$discipline, ordered = T))
+
+
+
+ggplot(data = data, aes(x = V1, y = V2, alpha = alpha)) + geom_point() + facet_wrap(~discipline, ncol = 5) + geom_smooth(method = "lm") + 
+  geom_text(data = r2, aes(label = label), hjust = 1.1, vjust = -0.1, parse = T) + 
+  scale_alpha_identity() +
+  coord_fixed() + 
+  theme_minimal() + 
+  theme(axis.text = element_blank(), axis.title = element_blank()) + 
+  ggtitle(str2expression(paste("Good~", "R^2", "values~by~Discipline", sep = "~")))
+
+```
+
+## R^2
+
+
+- $R^2$ only measures linear relationships
+
+- Not all interesting relationships are linear
+
+```{r}
+library(datasauRus)
+data("datasaurus_dozen")
+data <- datasaurus_dozen |> filter(dataset == "dino")
+
+ggplot(data, aes(x = x, y = y)) + 
+  geom_point() + 
+  geom_smooth(method = "lm") + 
+  coord_fixed() + theme_minimal() + 
+  theme(axis.title = element_blank(), axis.text = element_blank())
+```
+
+# SME Misconceptions
+
+[@rothman2014]
+
+-   Randomized trials are more valid than cohort or case-control studies
+
+-   Study subjects must be a representative sample of the target population for generalizations to be made
+
+-   Lack of statistical interaction = lack of biological interaction
+
+-   Categorizing a continuous variable by percentiles is a good idea
+
+-   Significance testing is the best way to report results
+
+
+
+
+## Randomized Trials
+
+-   Randomized trials still have divergent results
+
+    -   random error
+
+    -   systematic errors (bias) - undercounting, missing data, non-adherence (e.g. medical studies)
+
+-   Well-controlled cohort studies have some advantages:
+
+    -   age control
+
+    -   time since diagnosis of a condition may be better controlled
+
+Simpson's paradox can explain a lot of these issues!
+
+## Simpson's Paradox
+
+[Kidney stone treatment experiment](https://en.wikipedia.org/wiki/Simpson%27s_paradox#Kidney_stone_treatment): Treatments A and B. Recorded stone size (large, small) and outcome of the treatment (success, failure).
+
+```{r kidney-stone-data}
+#| fig-width: 9
+#| fig-height: 3
+#| echo: false
+#| fig-alt: Two mosaic plots, one which shows Outcome and Treatment 
+library(tibble)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(ggmosaic)
+
+# Kidney stone data
+# https://en.wikipedia.org/wiki/Simpson%27s_paradox
+df <- tribble(~Treatment, ~Stone_Size, ~success, ~failure,
+              "A", "small", 81, 87,
+              "B", "small", 234, 270,
+              "A", "large", 192, 263,
+              "B", "large", 55, 80) |>
+  pivot_longer(success:failure, names_to = "outcome", values_to = "count") |>
+  uncount(weights = count) |>
+  group_by(Treatment, Stone_Size) |>
+  mutate(trt_count=n())
+
+# ggplot(df, aes(x = Treatment, fill = outcome, width=trt_count/100)) + facet_grid(~Stone_Size, scales = "free", space = "free", labeller = label_both) + 
+#   geom_bar(position = "fill")
+
+p1 <- ggplot(df) + geom_mosaic(aes(x = product(Treatment), conds = product(Stone_Size), fill = outcome)) + 
+  scale_x_productlist("Stone Size (Outcome)", labels = c("Large (F)", "Large (S)", "Small (F)", "Small (S)")) + 
+  guides(fill = "none") + 
+  ggtitle("Conditioned on Stone Size") + 
+  annotate(x = .29, y = .7675, "point", shape = 1, size = 6) + 
+  annotate(x = .29, y = .7675, label = "Fewer A failures", "text", hjust = .5, vjust = 2) + 
+  annotate(x = .765, y = .255, "point", shape = 1, size = 6) + 
+  annotate(x = .765, y = .255, label = "Fewer A failures", "text", hjust = .5, vjust = 2)
+
+p2 <- ggplot(df) + geom_mosaic(aes(x = product(Treatment), fill = outcome)) + 
+  coord_flip() + 
+    scale_y_productlist("Outcome", labels = c("F", "S")) + 
+  guides(fill = "none") + 
+  ggtitle("Overall Association") + 
+  annotate(x = .495, y = .555, "point", shape = 1, size = 6) + 
+  annotate(x = .495, y = .555, label = "Fewer B failures?", "text", hjust = .5, vjust = -1.5)
+
+
+library(patchwork)
+
+combined <- p2 + p1 + plot_layout(ncol = 2, nrow = 1, widths = c(1, 2), heights = c(NA, NA))
+combined
+```
+
+Failure to account for moderating variables can lead to the opposite (wrong) conclusion!
+
+[Make sure your model uses the available data]{.emph .cerulean .large}
+
+## Representative Samples
+
+> The British Doctors Study, which began in 1951, was the world’s first large prospective study of the effects of smoking to establish a convincing linkage between tobacco smoking and cause-specific mortality, and demonstrated prospectively the risk of death from lung cancer (1954) and myocardial infarction and chronic obstructive pulmonary disease (1956).
+>
+> In October 1951, Sir Richard Doll and Sir Austin Bradford Hill sent a questionnaire on smoking habits to all registered British doctors. Of the 59600 questionnaires mailed, 41024 replies were received and 40701 (34494 males and 6207 females) were sufficiently complete to be included in the follow-up. Because of the limited sample size and limited tobacco consumption females were excluded from most reports, and the study has focused on the males. [Source](https://www.ctsu.ox.ac.uk/research/british-doctors-study)
+
+::: fragment
+
+-   Is this a representative sample of the population of
+
+    -   British doctors?
+    -   British men who are well educated?
+    -   British men?
+    -   Men of all nations?
+    -   All people?
+:::
+
+## Representative Samples
+
+::: columns
+::: column
+### 1954
+
+[![Chart showing variation in mortality with amount smoked. [@dollMortalityDoctorsRelation1954]](images/british-doctors-smoking.png){fig-align="left"}](https://pmc.ncbi.nlm.nih.gov/articles/PMC437141/pdf/bmj32801529.pdf)
+:::
+
+::: column
+### 1964
+![Chart showing variation in mortality with amount smoked daily. [@dollMortalityRelationSmoking1964]](images/clipboard-3225348642.png)
+:::
+
+:::
+
+
+## Representative Samples
+
+[**Scientific**]{.emph .cerulean} generalization vs. [**Statistical**]{.emph .cerulean} generalization
+
+- Science goal: Make correct statements about the way nature works
+
+- Statistics goal: Extrapolate from a sample to the source population
+
+[These goals may align, but they may not!]{.fragment}
+
+
+[Whether a sample is representative [**enough**]{.emph .blue} to generalize beyond the sample population is [determined by your argument.]{.emph .red}]{.fragment}
+
+
+## Representative Samples
+
+
+$$\left(\begin{array}{c}\text{limiting confounding variables}\\ \text{non-representative population}\end{array}\right) \overset{?}{\geq}\left(\begin{array}{c} \text{no control over confounds}\\\text{representative population}\end{array}\right)$$
+
+
+
+The best case for generalizing results is if there are 
+
+- [consensus findings]{.large .purple .emph}
+
+- from studies using [different designs]{.large .green .emph}
+
+- across [different populations]{.large .blue .emph}
+
+- by different research groups.
+
+## Interaction Interpretation
+
+Misconception: Lack of statistical interaction => lack of real-world interaction
+
+- Statistical interaction effects are conditional on the specific model and data
+
+- Model lack of fit => interaction may not be significant even if real-world effect exists
+
+- Data collected over wrong range? 
+
+
+[All models are wrong, but some are useful -- George Box]{.emph .large}
+
+## Significance Testing
+
+!['Detector! What would the Bayesian statistician say if I asked him whether the--' [roll] 'I AM A NEUTRINO DETECTOR, NOT A LABYRINTH GUARD. SERIOUSLY, DID YOUR BRAIN FALL OUT?' [roll] '... yes.'](https://imgs.xkcd.com/comics/frequentists_vs_bayesians.png)
+
+[The null is MUCH MORE LIKELY  than the alternative!]{.emph .huge .green .fragment}
+
+## Significance Testing
+
+- Null Hypothesis Significance Testing (NHST) is a combination of two distinct testing philosophies [(More Reading)](https://bookdown.org/csu_statistics/inferential_reasoning_in_data_analysis/Estimation-vs-testing.html)
+
+- It is often more important is to understand the [size of the effect]{.cerulean .emph .large}
+
+- Confidence intervals provide both effect size and precision!
+    - (and don't have to be reduced to is the null value in here?)
+    
+
+[Assess both statistical significance and practical significance when assessing and interpreting results]{.fragment .emph .large .green}
+
+# Manager Misconceptions
+
+## Manager Misconception Examples
+
+
+- Just rerun the experiment with a bigger sample size!
+
+- Statisticians can predict exactly what will happen next 🔮🪄🧙
+
+
+![](https://media1.tenor.com/m/Tk7pS5UGFf0AAAAC/periodicazo-fifidonia.gif){fig-alt="A gif of a man being swatted on the nose with a newspaper by a dog, with the text 'No, Bad!' at the bottom."}
+
+Address these issues in person if at all possible. Try not to laugh or cry. 
+
+
+
+## References
