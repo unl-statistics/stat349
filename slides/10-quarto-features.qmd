@@ -1,0 +1,144 @@
+---
+title: "Quarto Features"
+format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+## Embed code in chunks
+
+```{{r}}
+# code that does something fun
+```
+
+## Don't run the code if it's installing a package!
+
+````
+```{{r, eval = F}}
+# The most evil R package ever
+remotes::install_github("romainfrancois/evil.R") 
+```
+````
+
+## Include results in nice tables
+
+```{r, messages = F, echo = T}
+library(knitr)
+data(mtcars)
+kable(head(mtcars))
+```
+
+## References {.r-fit-text}
+
+::: columns
+
+::: column
+
+### In your main quarto file... 
+
+::: {.large}
+```
+@refname1 said that you should "stay on the sunny side, always on the sunny side", which has been validated in other studies [@refname2; @refname3]
+```
+:::
+
+:::
+
+::: column
+### In your refs.bib file...
+
+```
+
+@misc{refname1,
+	title = {Keep on the sunny Side},
+  year = {1899},
+  author = {Blenkhorn, Ada}
+}
+
+@book{refname2,
+  title = {O Brother Where Art Thou},
+  author = {The Whites},
+  year = 2000
+}
+
+@book{refname3,
+  title = {Keep on the Sunny Side},
+  author = {The Carter Family},
+  year = 1964
+}
+```
+
+You may have to check Zotero's work -- webpages often don't have dates zotero detects.
+
+Look for the 'last updated' date if all else fails. 
+
+:::
+
+:::
+
+## Basic Formatting
+
+- `#` = primary section subdivision (chapter for books, etc.)
+- `##` = subsections
+- `###` = subsubsections
+
+Never use more than one additional # in a sub-section!!
+
+
+In book projects, `#` headings are reserved for chapters, which are usually in separate files. Sections (`##`) and Subsections (`###`) only occur within chapters.  
+
+## Quarto projects
+
+`_quarto.yml` file contains project-wide metadata
+
+- Title
+- Author(s)
+- Abstract
+- Bibliography
+
+You really need to fill this in!
+
+
+## Callouts
+
+::: {.callout-tip}
+### Title of callout 
+
+Callouts are really cool ways to call attention to important information. There are multiple styles that each have their own colors and icons. 
+
+:::
+
+You can get a callout by:
+
+````
+::: {.callout-tip}
+
+### Title of callout
+
+Inside text
+
+:::
+````
+
+::: {.callout-warning}
+You can even get callouts without titles by just omitting the title and title header. This is a `.callout-warning`
+:::
+
+::: {.callout-caution}
+This is a `.callout-caution`
+:::
+
+::: {.callout-note}
+This is a `.callout-note`
+:::
+
+
+## Formatting is Important!
+
+If your report doesn't have a proper title, or you haven't bothered to fill in your name as author, it's hard to take the rest of the report seriously!
+
+[Quarto Book documentation](https://quarto.org/docs/books/book-structure.html) may help you with your business report.
+
+[Authoring documentation](https://quarto.org/docs/authoring/markdown-basics.html) covers a lot of useful information -- embedding pictures, videos, code annotation, tables, and more. 
