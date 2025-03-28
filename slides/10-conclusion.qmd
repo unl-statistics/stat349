@@ -1,0 +1,118 @@
+---
+title: "Discussion and Conclusions"
+format: revealjs
+bibliography: 10-intro.bib
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+csl: chicago-syllabus.csl
+---
+
+
+## Function
+
+- Turn data into knowledge
+
+- How do your results inform the research question you identified?
+
+- How does that research question fit into the discipline?
+
+- What comes next?
+
+
+## Informing the Research Question
+
+- Goal: Claim the strongest and broadest interpretation you can argue
+
+- Within scientific constraints!
+
+- You can speculate about possible interpretations -- what results might mean
+
+  - be cautious
+  - this is a way to identify future research
+  
+- "Hedges" are common to avoid overstating
+    - "likely", "suggest", "an alternative interpretation", etc.
+
+## Writing Order
+
+Most people find that it's easier to write in this order: 
+
+- Methods
+- Results
+- Discussion
+- Introduction
+
+This allows you to make the Introduction a mirror/inversion of the Discussion
+
+
+## Organization
+
+### Discussion
+
+![](images/Discussion-overview.png)
+
+::: {.fragment}
+
+vs. 
+
+### Introduction
+![](images/Introduction-overview.png)
+
+:::
+
+
+## Interpret Results
+
+- 1st paragraph of the Discussion
+
+- Restate the most important results briefly
+
+- Comment on whether results were expected or not
+  - Use this to tie in literature
+  
+## Consider Limitations
+
+- Statistical power
+- Sampling and generalizing to a target population
+- Limitations of data (collection, source, measurement method, ...)
+- Alternative explanations
+
+Use the opportunity to argue why this limitation isn't a big deal, if possible.
+
+In a business report, you may want to use this section to identify situations where your results may no longer hold -- market shifts, pending legislation, etc.
+
+## Relate to Bigger Picture
+
+- Fit your answer into broader contexts
+
+- Identify areas of consensus and/or disagreement
+
+- What new questions arise?
+
+- How does the problem relate to other problems in the research area or facing the company?
+
+## Future Work
+
+- Specific case -> more general case?
+
+- New hypotheses?
+
+- Different methods which may yield more interesting results?
+
+
+## Activity
+
+- Look at your IgNobel article Discussion
+
+  - Highlight "hedge" words/phrases
+
+  - What limitations are discussed? Separate out:
+    - limitation statements
+    - statements to minimize the limitation
+    - statements that mitigate the limitation
+  
+  - How is the last "thought" in the Discussion supported by the rest of the section?
+  
+  
