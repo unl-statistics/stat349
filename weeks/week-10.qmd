@@ -11,11 +11,12 @@
 
 ## ☕ Monday
 
-- Introductions
+- [Conclusion](../slides/10-conclusion.qmd)
+- [Quarto Formatting](../slides/10-quarto-features.qmd)
   
 ## 🐪 Wednesday
 
-- Conclusions
+- [Introductions](../slides/10-intro.qmd)
 
 ##  🏋️ Practice your skills
 
