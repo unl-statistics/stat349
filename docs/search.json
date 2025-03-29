@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "slides/11-exec-summary.html#executive-summaries",
+    "href": "slides/11-exec-summary.html#executive-summaries",
+    "title": "Executive Summaries",
+    "section": "Executive Summaries",
+    "text": "Executive Summaries\n\nWritten for managers\n\nLimited technical jargon\nFocus on the actionable information\n\nSummarize the report\n\nIn order (sections, subsections, etc.)\nHighlight major points of each section\nEmphasize (visually and with words) the conclusions and recommendations"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#writing-tips",
+    "href": "slides/11-exec-summary.html#writing-tips",
+    "title": "Executive Summaries",
+    "section": "Writing Tips",
+    "text": "Writing Tips\n\nHave the full report in front of you (already written)\nStart with an introduction: purpose of the report and major points\nMake an outline using the report’s outline\n\nBrief paragraph for each main points\nUse vocabulary your audience will understand\n\nProofread x3!\n\nMake language concise - ask “do I need this word?”\nCheck spelling/grammar\n\nHave a coworker proofread and check for political no-no’s\nAdditional guidance - Government Accountability Office guide to writing Executive Summaries for Government Reports"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#executive-summaries-should-include",
+    "href": "slides/11-exec-summary.html#executive-summaries-should-include",
+    "title": "Executive Summaries",
+    "section": "Executive Summaries Should Include",
+    "text": "Executive Summaries Should Include\n\nA summary of the report’s main conclusion\nJustification for recommendations\nAn explanation of the problem\nA summary of the process used to solve the problem\nAn outline of recommendations/decisions\n\nSource: Navy and Marine Corps Public Health Center"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#discussion-executive-summary-guidelines",
+    "href": "slides/11-exec-summary.html#discussion-executive-summary-guidelines",
+    "title": "Executive Summaries",
+    "section": "Discussion – Executive Summary guidelines",
+    "text": "Discussion – Executive Summary guidelines"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#activity",
+    "href": "slides/11-exec-summary.html#activity",
+    "title": "Executive Summaries",
+    "section": "Activity",
+    "text": "Activity\nIn a group of 3-4 people, go through one of the following 3 reports:\n\nUS State Department Enterprise Data Strategy\nNational Science Founcation Making Visible the Invisible: STEM Talent of Rural America\n2024 Annual Report of the Supplemental Security Income Program\n\nHow does the executive summary adhere to the guidelines?\nWhat formatting and other conventions were used to draw attention to important components of the report or summary? Were these effective?"
+  },
+  {
     "objectID": "slides/10-quarto-features.html#embed-code-in-chunks",
     "href": "slides/10-quarto-features.html#embed-code-in-chunks",
     "title": "Quarto Features",
@@ -887,7 +922,7 @@
     "href": "weeks/week-11.html",
     "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "Read SWHR 7 - Title & Abstract\nRead OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions\n\n\n\n\nReading Quiz Week 11\n\n\n\n\n\n\nFor Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?\n\n\n\n\n\nAbstracts\n\n\n\n\n\nExecutive Summaries - Class discussion\n\n\n\n\n\nDraft of executive summary of business report",
+    "text": "Read SWHR 7 - Title & Abstract\nRead OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions\n\n\n\n\nReading Quiz Week 11\n\n\n\n\n\n\nFor Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?\n\n\n\n\n\nAbstracts\n\n\n\n\n\nExecutive Summaries\nClass Discussion\n\n\n\n\n\nDraft of executive summary of business report",
     "crumbs": [
       "Weekly materials",
       "Week 11 - Summaries"
@@ -931,7 +966,7 @@
     "href": "weeks/week-11.html#wednesday",
     "title": "Week 11: Abstracts & Summaries",
     "section": "",
-    "text": "Executive Summaries - Class discussion",
+    "text": "Executive Summaries\nClass Discussion",
     "crumbs": [
       "Weekly materials",
       "Week 11 - Summaries"
@@ -2595,5 +2630,61 @@
     "title": "Introductions",
     "section": "References",
     "text": "References\n\n\n\n\nBeal, D., F. Hover, Michael Triantafyllou, J. Liao, and George Lauder. “Passive Propulsion in Vortex Wakes.” Journal of Fluid Mechanics 549 (February 25, 2006): 385–402. https://doi.org/10.1017/S0022112005007925.\n\n\nTam, Katy Y. Y., Cyanea Y. S. Poon, Victoria K. Y. Hui, Christy Y. F. Wong, Vivian W. Y. Kwong, Gigi W. C. Yuen, and Christian S. Chan. “Boredom Begets Boredom: An Experience Sampling Study on the Impact of Teacher Boredom on Student Boredom and Motivation.” British Journal of Educational Psychology 90 (2020): 124–37. https://doi.org/10.1111/bjep.12309."
+  },
+  {
+    "objectID": "slides/11-abstract.html#types-of-abstracts",
+    "href": "slides/11-abstract.html#types-of-abstracts",
+    "title": "Abstracts",
+    "section": "Types of Abstracts",
+    "text": "Types of Abstracts\nAccording to OTC,\n\nDescriptive Abstracts\n\nvery short (1-2 sentences)\n“teaser” of contents without any details or conclusions\n\nInformative Abstracts\n\nContains key facts and conclusions\nContains components of each major section of the report\n10% of the length of the report or 2-3 pages, whichever is shorter"
+  },
+  {
+    "objectID": "slides/11-abstract.html#types-of-abstracts-1",
+    "href": "slides/11-abstract.html#types-of-abstracts-1",
+    "title": "Abstracts",
+    "section": "Types of Abstracts",
+    "text": "Types of Abstracts\n\nI have never seen either type of abstract used in scientific articles.\nSome government reports might use Informative Abstracts (but Exec Summary is more common)"
+  },
+  {
+    "objectID": "slides/11-abstract.html#abstracts",
+    "href": "slides/11-abstract.html#abstracts",
+    "title": "Abstracts",
+    "section": "Abstracts",
+    "text": "Abstracts\nFrom “The Scientific Guide to Writing” (Heard 2022)\n\nAbstracts were rare before 1920s, not routine until 1950s\nNone of the papers I have for this class from even the 1960s has an abstract\nWidely available (even when paper is not) and searchable\n\nhelps others find your research\n\nMini IMRaD (Intro, Methods, Results, and Discussion) structure\n\nin Medicine, abstracts even have sections that make these pieces easier to find\nlonger abstracts = better discovery by e.g. Google."
+  },
+  {
+    "objectID": "slides/11-abstract.html#abstracts-1",
+    "href": "slides/11-abstract.html#abstracts-1",
+    "title": "Abstracts",
+    "section": "Abstracts",
+    "text": "Abstracts\n\nFollow journal style\n\nStructure\nWord limits\n\nMust be self-contained\n\nusually no citations\nno references to figure/table\ntry not to use acronyms\n\nSome are afraid of “spoilers” – don’t worry about this in the abstract.\nCan optimize abstracts to include keywords to help with search engine discovery."
+  },
+  {
+    "objectID": "slides/11-abstract.html#other-considerations",
+    "href": "slides/11-abstract.html#other-considerations",
+    "title": "Abstracts",
+    "section": "Other considerations",
+    "text": "Other considerations\n\nUse active voice\nAvoid non-alphanumeric characters (greek letters, unicode, etc.) because these can cause issues in databases\nDon’t try to include secondary results unless you have no word limit"
+  },
+  {
+    "objectID": "slides/11-abstract.html#practical-advice",
+    "href": "slides/11-abstract.html#practical-advice",
+    "title": "Abstracts",
+    "section": "Practical Advice",
+    "text": "Practical Advice\n\nDraft abstract\n\nfirst and last sentence of each section in the paper\nmain idea of each section in the paper\n\nThen, refine and make it make sense from there"
+  },
+  {
+    "objectID": "slides/11-abstract.html#activity",
+    "href": "slides/11-abstract.html#activity",
+    "title": "Abstracts",
+    "section": "Activity",
+    "text": "Activity\nWithout looking at the abstract of your IgNobel paper (if there is one), write a short 5-6 sentence abstract for the paper.\nTrade with a friend and compare their abstract to their paper (and/or the paper’s abstract if it exists)"
+  },
+  {
+    "objectID": "slides/11-abstract.html#references",
+    "href": "slides/11-abstract.html#references",
+    "title": "Abstracts",
+    "section": "References",
+    "text": "References\n\n\n\n\nHeard, Stephen B. 2022. The Scientist’s Guide to Writing, 2nd Edition: How to Write More Easily and Effectively Throughout Your Scientific Career. 2nd edition. Princeton: Princeton University Press."
   }
 ]

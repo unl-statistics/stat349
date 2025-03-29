@@ -1,0 +1,69 @@
+---
+title: "Executive Summaries"
+format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+## Executive Summaries
+
+- Written for managers
+  - Limited technical jargon
+  - Focus on the actionable information
+
+- Summarize the report
+  - In order (sections, subsections, etc.)
+  - Highlight major points of each section
+  - Emphasize (visually and with words) the conclusions and recommendations
+  
+## Writing Tips
+
+- Have the full report in front of you (already written)
+
+- Start with an introduction: purpose of the report and major points
+
+- Make an outline using the report's outline
+  - Brief paragraph for each main points
+  - Use vocabulary your audience will understand
+
+- Proofread x3!
+  - Make language concise - ask "do I need this word?"
+  - Check spelling/grammar
+
+- Have a coworker proofread and check for political no-no's
+
+
+- Additional guidance - [Government Accountability Office guide to writing Executive Summaries for Government Reports](https://www.gao.gov/assets/130024.pdf)
+
+
+## Executive Summaries Should Include
+
+- A summary of the report's main conclusion
+
+- Justification for recommendations
+
+- An explanation of the problem
+
+- A summary of the process used to solve the problem
+
+- An outline of recommendations/decisions
+
+[Source: Navy and Marine Corps Public Health Center](https://www.med.navy.mil/Portals/62/Documents/NMFA/NMCPHC/root/Environmental%20Programs/Pages/riskcommunication/Appendix-E-Guide-to-Writing-Effective-Executive-Summary.pdf)
+
+## Discussion -- Executive Summary guidelines
+
+## Activity
+
+In a group of 3-4 people, go through one of the following 3 reports:
+
+- [US State Department Enterprise Data Strategy](https://www.state.gov/wp-content/uploads/2021/09/Reference-EDS-Accessible.pdf)
+
+- [National Science Founcation Making Visible the Invisible: STEM Talent of Rural America](https://www.govinfo.gov/content/pkg/CMR-NS1-00188078/pdf/CMR-NS1-00188078.pdf)
+
+- [2024 Annual Report of the Supplemental Security Income Program](https://www.govinfo.gov/content/pkg/CMR-SSA1-00188075/pdf/CMR-SSA1-00188075.pdf)
+
+How does the executive summary adhere to the guidelines?
+
+What formatting and other conventions were used to draw attention to important components of the report or summary? Were these effective?

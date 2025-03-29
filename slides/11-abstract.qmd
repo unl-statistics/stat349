@@ -1,0 +1,84 @@
+---
+title: "Abstracts"
+format: revealjs
+bibliography: 11-abstract.bib
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+## Types of Abstracts
+
+According to [OTC](https://alg.manifoldapp.org/read/open-technical-communication/section/a31e38b4-7f1f-4e9c-b8e9-9485d74d04b8), 
+
+- Descriptive Abstracts
+    - very short (1-2 sentences)
+    - "teaser" of contents without any details or conclusions
+
+- Informative Abstracts
+    - Contains key facts and conclusions
+    - Contains components of each major section of the report
+    - 10% of the length of the report or 2-3 pages, whichever is shorter
+    
+
+## Types of Abstracts
+
+![](images/what_.gif){fig-alt="Animation of a dog looking quizzically at you and saying 'What?'"}
+
+I have never seen either type of abstract used in scientific articles.
+
+Some government reports might use Informative Abstracts (but Exec Summary is more common)
+
+## Abstracts
+
+From "The Scientific Guide to Writing" [@heardScientistsGuideWriting2022]
+
+- Abstracts were rare before 1920s, not routine until 1950s    
+[None of the papers I have for this class from even the 1960s has an abstract]{.purple .emph}
+- Widely available (even when paper is not) and searchable
+  - helps others find your research
+- Mini IMRaD (Intro, Methods, Results, and Discussion) structure
+  - in Medicine, abstracts even have sections that make these pieces easier to find
+  - longer abstracts = better discovery by e.g. Google. 
+
+## Abstracts
+
+- Follow journal style
+  - Structure
+  - Word limits
+- Must be self-contained 
+  - usually no citations
+  - no references to figure/table
+  - try not to use acronyms
+
+- Some are afraid of "spoilers" -- don't worry about this in the abstract.
+
+- Can optimize abstracts to include keywords to help with search engine discovery.
+
+## Other considerations
+
+- Use active voice
+
+- Avoid non-alphanumeric characters (greek letters, unicode, etc.) because these can cause issues in databases
+
+- Don't try to include secondary results unless you have no word limit
+
+
+
+## Practical Advice
+
+- Draft abstract
+  - first and last sentence of each section in the paper 
+  - main idea of each section in the paper
+
+
+- Then, refine and make it make sense from there
+
+## Activity
+
+Without looking at the abstract of your IgNobel paper (if there is one), write a short 5-6 sentence abstract for the paper. 
+
+Trade with a friend and compare their abstract to their paper (and/or the paper's abstract if it exists)
+
+## References

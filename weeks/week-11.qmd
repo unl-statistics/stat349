@@ -15,11 +15,12 @@
 
 ## ☕ Monday
 
-- Abstracts
+- [Abstracts](../slides/11-abstract.qmd)
   
 ## 🐪 Wednesday
 
-- Executive Summaries - Class discussion
+- [Executive Summaries](../slides/11-exec-summary.qmd)
+- Class Discussion
 
 ##  🏋️ Practice your skills
 
