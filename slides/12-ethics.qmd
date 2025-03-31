@@ -1,0 +1,13 @@
+---
+title: "Ethics and Statistical Misconduct"
+format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+# 
+
+![[Source](https://web.archive.org/web/20250331224638/https://www.nbcnews.com/news/world/excel-error-heard-round-world-flna1c9373424)](images/clipboard-414260364.png)
+
