@@ -12,11 +12,11 @@
 
 ## ☕ Monday
 
-- Logical fallacies in the workplace in-class activity
+- [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
   
 ## 🐪 Wednesday
 
-- Statistical misunderstandings and how to counter them -- class discussion
+- [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
 
 ##  🏋️ Practice your skills
 

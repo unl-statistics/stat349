@@ -6,8 +6,8 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-66ab7fd5e73b7f0a764e0d49b3e29ab1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.13">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.39">
 
   <title>STAT 349 - Spring 2025 – Quarto Features</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -206,14 +206,14 @@
 <section id="embed-code-in-chunks" class="slide level2">
 <h2>Embed code in chunks</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="in">```{r}</span></span>
-<span id="cb1-2"><a></a><span class="co"># code that does something fun</span></span>
+<span id="cb1-2"><a></a><span class="in"># code that does something fun</span></span>
 <span id="cb1-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="dont-run-the-code-if-its-installing-a-package" class="slide level2">
 <h2>Don’t run the code if it’s installing a package!</h2>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="in">```{r, eval = F}</span></span>
-<span id="cb2-2"><a></a><span class="co"># The most evil R package ever</span></span>
-<span id="cb2-3"><a></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"romainfrancois/evil.R"</span>) </span>
+<span id="cb2-2"><a></a><span class="in"># The most evil R package ever</span></span>
+<span id="cb2-3"><a></a><span class="in">remotes::install_github("romainfrancois/evil.R") </span></span>
 <span id="cb2-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="include-results-in-nice-tables" class="slide level2">

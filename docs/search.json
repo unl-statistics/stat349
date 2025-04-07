@@ -1,94 +1,185 @@
 [
   {
-    "objectID": "slides/11-exec-summary.html#executive-summaries",
-    "href": "slides/11-exec-summary.html#executive-summaries",
-    "title": "Executive Summaries",
-    "section": "Executive Summaries",
-    "text": "Executive Summaries\n\nWritten for managers\n\nLimited technical jargon\nFocus on the actionable information\n\nSummarize the report\n\nIn order (sections, subsections, etc.)\nHighlight major points of each section\nEmphasize (visually and with words) the conclusions and recommendations"
+    "objectID": "slides/12-ethics.html#preview",
+    "href": "slides/12-ethics.html#preview",
+    "title": "Ethics and Statistical Misconduct",
+    "section": "Preview",
+    "text": "Preview"
   },
   {
-    "objectID": "slides/11-exec-summary.html#writing-tips",
-    "href": "slides/11-exec-summary.html#writing-tips",
-    "title": "Executive Summaries",
-    "section": "Writing Tips",
-    "text": "Writing Tips\n\nHave the full report in front of you (already written)\nStart with an introduction: purpose of the report and major points\nMake an outline using the report’s outline\n\nBrief paragraph for each main points\nUse vocabulary your audience will understand\n\nProofread x3!\n\nMake language concise - ask “do I need this word?”\nCheck spelling/grammar\n\nHave a coworker proofread and check for political no-no’s\nAdditional guidance - Government Accountability Office guide to writing Executive Summaries for Government Reports"
+    "objectID": "slides/12-ethics.html#digging-in",
+    "href": "slides/12-ethics.html#digging-in",
+    "title": "Ethics and Statistical Misconduct",
+    "section": "Digging In",
+    "text": "Digging In\n\n\n\nOriginal Paper\n\n\n\nCritique/Replication Failure Paper\nFinancial Times editorial\nData\nReadme"
   },
   {
-    "objectID": "slides/11-exec-summary.html#executive-summaries-should-include",
-    "href": "slides/11-exec-summary.html#executive-summaries-should-include",
-    "title": "Executive Summaries",
-    "section": "Executive Summaries Should Include",
-    "text": "Executive Summaries Should Include\n\nA summary of the report’s main conclusion\nJustification for recommendations\nAn explanation of the problem\nA summary of the process used to solve the problem\nAn outline of recommendations/decisions\n\nSource: Navy and Marine Corps Public Health Center"
+    "objectID": "slides/12-ethics.html#explore-30-minutes",
+    "href": "slides/12-ethics.html#explore-30-minutes",
+    "title": "Ethics and Statistical Misconduct",
+    "section": "Explore (30 minutes)",
+    "text": "Explore (30 minutes)\nIn groups of 3-4\n\nRead the original paper\nRead the critique and the editorial\nDownload the data + code and take a look – is the code readable?\n\nYou may have to unzip the zip file of country-level CSVs and set the working directory\nIn 2013, plyr was the equivalent of dplyr (ddply \\(\\approx\\) group_by + summarize)\nWhen you’re done with this exercise, clear your session!! Loading dplyr and then plyr will give you lots of weird errors."
   },
   {
-    "objectID": "slides/11-exec-summary.html#discussion-executive-summary-guidelines",
-    "href": "slides/11-exec-summary.html#discussion-executive-summary-guidelines",
-    "title": "Executive Summaries",
-    "section": "Discussion – Executive Summary guidelines",
-    "text": "Discussion – Executive Summary guidelines"
+    "objectID": "slides/12-ethics.html#discuss-30-minutes",
+    "href": "slides/12-ethics.html#discuss-30-minutes",
+    "title": "Ethics and Statistical Misconduct",
+    "section": "Discuss (30 minutes)",
+    "text": "Discuss (30 minutes)\n\nWhat choices did Reinhardt & Rogoff make in their analysis that were later critiqued?\nWhich choices were simple mistakes?\nWhich choices were statistically justifiable?\nWhich choices were statistical misconduct?\nWhat could have been done differently?"
   },
   {
-    "objectID": "slides/11-exec-summary.html#activity",
-    "href": "slides/11-exec-summary.html#activity",
-    "title": "Executive Summaries",
+    "objectID": "slides/12-ethics.html#digging-in-1",
+    "href": "slides/12-ethics.html#digging-in-1",
+    "title": "Ethics and Statistical Misconduct",
+    "section": "Digging In",
+    "text": "Digging In\n\nAnalysis of Ethics of Facebook Data Handling\nGuardian - Cambridge Analytica and Facebook Influenced US Elections\nGuardian - Whistleblower profile of Christopher Wylie\nDownstream Effects of the Cambridge Analytica Scandal (Bipartisan Policy Center)\nThe Guardian’s full investigation"
+  },
+  {
+    "objectID": "slides/12-ethics.html#explore-30-minutes-1",
+    "href": "slides/12-ethics.html#explore-30-minutes-1",
+    "title": "Ethics and Statistical Misconduct",
+    "section": "Explore (30 minutes)",
+    "text": "Explore (30 minutes)\nIn groups of 3-4\n\nRead the Guardian articles and associated content\nGauge the magnitude of the problem and list out the ethical lapses you notice when reading"
+  },
+  {
+    "objectID": "slides/12-ethics.html#discuss-30-minutes-1",
+    "href": "slides/12-ethics.html#discuss-30-minutes-1",
+    "title": "Ethics and Statistical Misconduct",
+    "section": "Discuss (30 minutes)",
+    "text": "Discuss (30 minutes)\n\nWhat choices did Facebook make that were\n\nreasonable mistakes?\nethically problematic?\ndefensible?\n\nWhat choices did Cambridge Analytica make that were\n\nreasonable mistakes?\nethically problematic?\ndefensible?\n\nWhat impact do you think the ethical breaches had on the world?"
+  },
+  {
+    "objectID": "slides/11-abstract.html#types-of-abstracts",
+    "href": "slides/11-abstract.html#types-of-abstracts",
+    "title": "Abstracts",
+    "section": "Types of Abstracts",
+    "text": "Types of Abstracts\nAccording to OTC,\n\nDescriptive Abstracts\n\nvery short (1-2 sentences)\n“teaser” of contents without any details or conclusions\n\nInformative Abstracts\n\nContains key facts and conclusions\nContains components of each major section of the report\n10% of the length of the report or 2-3 pages, whichever is shorter"
+  },
+  {
+    "objectID": "slides/11-abstract.html#types-of-abstracts-1",
+    "href": "slides/11-abstract.html#types-of-abstracts-1",
+    "title": "Abstracts",
+    "section": "Types of Abstracts",
+    "text": "Types of Abstracts\n\nI have never seen either type of abstract used in scientific articles.\nSome government reports might use Informative Abstracts (but Exec Summary is more common)"
+  },
+  {
+    "objectID": "slides/11-abstract.html#abstracts",
+    "href": "slides/11-abstract.html#abstracts",
+    "title": "Abstracts",
+    "section": "Abstracts",
+    "text": "Abstracts\nFrom “The Scientific Guide to Writing” (Heard 2022)\n\nAbstracts were rare before 1920s, not routine until 1950s\nNone of the papers I have for this class from even the 1960s has an abstract\nWidely available (even when paper is not) and searchable\n\nhelps others find your research\n\nMini IMRaD (Intro, Methods, Results, and Discussion) structure\n\nin Medicine, abstracts even have sections that make these pieces easier to find\nlonger abstracts = better discovery by e.g. Google."
+  },
+  {
+    "objectID": "slides/11-abstract.html#abstracts-1",
+    "href": "slides/11-abstract.html#abstracts-1",
+    "title": "Abstracts",
+    "section": "Abstracts",
+    "text": "Abstracts\n\nFollow journal style\n\nStructure\nWord limits\n\nMust be self-contained\n\nusually no citations\nno references to figure/table\ntry not to use acronyms\n\nSome are afraid of “spoilers” – don’t worry about this in the abstract.\nCan optimize abstracts to include keywords to help with search engine discovery."
+  },
+  {
+    "objectID": "slides/11-abstract.html#other-considerations",
+    "href": "slides/11-abstract.html#other-considerations",
+    "title": "Abstracts",
+    "section": "Other considerations",
+    "text": "Other considerations\n\nUse active voice\nAvoid non-alphanumeric characters (greek letters, unicode, etc.) because these can cause issues in databases\nDon’t try to include secondary results unless you have no word limit"
+  },
+  {
+    "objectID": "slides/11-abstract.html#practical-advice",
+    "href": "slides/11-abstract.html#practical-advice",
+    "title": "Abstracts",
+    "section": "Practical Advice",
+    "text": "Practical Advice\n\nDraft abstract\n\nfirst and last sentence of each section in the paper\nmain idea of each section in the paper\n\nThen, refine and make it make sense from there"
+  },
+  {
+    "objectID": "slides/11-abstract.html#activity",
+    "href": "slides/11-abstract.html#activity",
+    "title": "Abstracts",
     "section": "Activity",
-    "text": "Activity\nIn a group of 3-4 people, go through one of the following 3 reports:\n\nUS State Department Enterprise Data Strategy\nNational Science Founcation Making Visible the Invisible: STEM Talent of Rural America\n2024 Annual Report of the Supplemental Security Income Program\n\nHow does the executive summary adhere to the guidelines?\nWhat formatting and other conventions were used to draw attention to important components of the report or summary? Were these effective?"
+    "text": "Activity\nWithout looking at the abstract of your IgNobel paper (if there is one), write a short 5-6 sentence abstract for the paper.\nTrade with a friend and compare their abstract to their paper (and/or the paper’s abstract if it exists)"
   },
   {
-    "objectID": "slides/10-quarto-features.html#embed-code-in-chunks",
-    "href": "slides/10-quarto-features.html#embed-code-in-chunks",
-    "title": "Quarto Features",
-    "section": "Embed code in chunks",
-    "text": "Embed code in chunks\n```{r}\n# code that does something fun\n```"
-  },
-  {
-    "objectID": "slides/10-quarto-features.html#dont-run-the-code-if-its-installing-a-package",
-    "href": "slides/10-quarto-features.html#dont-run-the-code-if-its-installing-a-package",
-    "title": "Quarto Features",
-    "section": "Don’t run the code if it’s installing a package!",
-    "text": "Don’t run the code if it’s installing a package!\n```{r, eval = F}\n# The most evil R package ever\nremotes::install_github(\"romainfrancois/evil.R\") \n```"
-  },
-  {
-    "objectID": "slides/10-quarto-features.html#include-results-in-nice-tables",
-    "href": "slides/10-quarto-features.html#include-results-in-nice-tables",
-    "title": "Quarto Features",
-    "section": "Include results in nice tables",
-    "text": "Include results in nice tables\n\nlibrary(knitr)\ndata(mtcars)\nkable(head(mtcars))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\nqsec\nvs\nam\ngear\ncarb\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n3.90\n2.620\n16.46\n0\n1\n4\n4\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n3.90\n2.875\n17.02\n0\n1\n4\n4\n\n\nDatsun 710\n22.8\n4\n108\n93\n3.85\n2.320\n18.61\n1\n1\n4\n1\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.08\n3.215\n19.44\n1\n0\n3\n1\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.15\n3.440\n17.02\n0\n0\n3\n2\n\n\nValiant\n18.1\n6\n225\n105\n2.76\n3.460\n20.22\n1\n0\n3\n1"
-  },
-  {
-    "objectID": "slides/10-quarto-features.html#references",
-    "href": "slides/10-quarto-features.html#references",
-    "title": "Quarto Features",
+    "objectID": "slides/11-abstract.html#references",
+    "href": "slides/11-abstract.html#references",
+    "title": "Abstracts",
     "section": "References",
-    "text": "References\n\n\nIn your main quarto file…\n\n@refname1 said that you should \"stay on the sunny side, always on the sunny side\", which has been validated in other studies [@refname2; @refname3]\n\n\nIn your refs.bib file…\n\n@misc{refname1,\n    title = {Keep on the sunny Side},\n  year = {1899},\n  author = {Blenkhorn, Ada}\n}\n\n@book{refname2,\n  title = {O Brother Where Art Thou},\n  author = {The Whites},\n  year = 2000\n}\n\n@book{refname3,\n  title = {Keep on the Sunny Side},\n  author = {The Carter Family},\n  year = 1964\n}\nYou may have to check Zotero’s work – webpages often don’t have dates zotero detects.\nLook for the ‘last updated’ date if all else fails."
+    "text": "References\n\n\n\n\nHeard, Stephen B. 2022. The Scientist’s Guide to Writing, 2nd Edition: How to Write More Easily and Effectively Throughout Your Scientific Career. 2nd edition. Princeton: Princeton University Press."
   },
   {
-    "objectID": "slides/10-quarto-features.html#basic-formatting",
-    "href": "slides/10-quarto-features.html#basic-formatting",
-    "title": "Quarto Features",
-    "section": "Basic Formatting",
-    "text": "Basic Formatting\n\n# = primary section subdivision (chapter for books, etc.)\n## = subsections\n### = subsubsections\n\nNever use more than one additional # in a sub-section!!\nIn book projects, # headings are reserved for chapters, which are usually in separate files. Sections (##) and Subsections (###) only occur within chapters."
+    "objectID": "slides/10-intro.html#dont-start-with-the-introduction",
+    "href": "slides/10-intro.html#dont-start-with-the-introduction",
+    "title": "Introductions",
+    "section": "Don’t start with the Introduction",
+    "text": "Don’t start with the Introduction\n\nGood place to start reading\nBad place to start writing\n\n\nStructure of a ‘typical’ introduction"
   },
   {
-    "objectID": "slides/10-quarto-features.html#quarto-projects",
-    "href": "slides/10-quarto-features.html#quarto-projects",
-    "title": "Quarto Features",
-    "section": "Quarto projects",
-    "text": "Quarto projects\n_quarto.yml file contains project-wide metadata\n\nTitle\nAuthor(s)\nAbstract\nBibliography\n\nYou really need to fill this in!"
+    "objectID": "slides/10-intro.html#introductions",
+    "href": "slides/10-intro.html#introductions",
+    "title": "Introductions",
+    "section": "Introductions…",
+    "text": "Introductions…\n\nNo standard template\n\nNo standard subsection heads\nUsually few required elements\n\nAudience focused\n\nWho are they?\nWhat do they already know?\nWhat do they care about?\nHow can you introduce your topic with minimal confusion?"
   },
   {
-    "objectID": "slides/10-quarto-features.html#callouts",
-    "href": "slides/10-quarto-features.html#callouts",
-    "title": "Quarto Features",
-    "section": "Callouts",
-    "text": "Callouts\n\n\n\n\n\n\nTitle of callout\n\n\nCallouts are really cool ways to call attention to important information. There are multiple styles that each have their own colors and icons.\n\n\n\nYou can get a callout by:\n::: {.callout-tip}\n\n### Title of callout\n\nInside text\n\n:::\n\n\n\n\n\n\nWarning\n\n\nYou can even get callouts without titles by just omitting the title and title header. This is a .callout-warning\n\n\n\n\n\n\n\n\n\nCaution\n\n\nThis is a .callout-caution\n\n\n\n\n\n\n\n\n\nNote\n\n\nThis is a .callout-note"
+    "objectID": "slides/10-intro.html#create-a-space-model",
+    "href": "slides/10-intro.html#create-a-space-model",
+    "title": "Introductions",
+    "section": "“Create a Space” model",
+    "text": "“Create a Space” model"
   },
   {
-    "objectID": "slides/10-quarto-features.html#formatting-is-important",
-    "href": "slides/10-quarto-features.html#formatting-is-important",
-    "title": "Quarto Features",
-    "section": "Formatting is Important!",
-    "text": "Formatting is Important!\nIf your report doesn’t have a proper title, or you haven’t bothered to fill in your name as author, it’s hard to take the rest of the report seriously!\nQuarto Book documentation may help you with your business report.\nAuthoring documentation covers a lot of useful information – embedding pictures, videos, code annotation, tables, and more."
+    "objectID": "slides/10-intro.html#creating-a-space",
+    "href": "slides/10-intro.html#creating-a-space",
+    "title": "Introductions",
+    "section": "Creating a Space",
+    "text": "Creating a Space\n1st paragraph of Katy Y. Y. Tam et al. “Boredom Begets Boredom: An Experience Sampling Study on the Impact of Teacher Boredom on Student Boredom and Motivation,” British Journal of Educational Psychology 90 (2020): 124–37, https://doi.org/10.1111/bjep.12309.\nOpening the door to a classroom in the middle of a lesson, while the teacher is busy explaining one concept after another, you might find a scene of students looking bored, resting their heads on the desk, dozing off, doodling on their notebooks, or secretly playing with their phones. Boredom is an emotion commonly reported by students (e.g., Goetz et al., 2014; Mann & Robinson, 2009).\nTopic ID + relatability + importance\nBoredom impedes students’ learning motivation and academic performance (e.g., Pekrun, Goetz, Daniels, Stupnisky, & Perry, 2010; Tze, Daniels, & Klassen, 2016). Whereas much attention has been given to students’ experience of boredom in educational settings, little is known about teachers’ boredom, especially how it might affect students’ boredom and learning experience.\nIdentify the problem and hole in existing work\nThrough experience sampling method, the current study investigated the interplay of teachers’ boredom, students’ perceived teacher boredom, students’ boredom, and students’ learning motivation.\nOccupy the niche – preview the investigation/findings"
+  },
+  {
+    "objectID": "slides/10-intro.html#creating-a-space-1",
+    "href": "slides/10-intro.html#creating-a-space-1",
+    "title": "Introductions",
+    "section": "Creating a Space",
+    "text": "Creating a Space\n\n\n\n\nD. Beal et al. “Passive Propulsion in Vortex Wakes,” Journal of Fluid Mechanics 549 (February 25, 2006): 385–402, https://doi.org/10.1017/S0022112005007925.\n\nBig picture – fish live in high-energy environments and adopt strategies to reduce energy expenditure\n \nNarrower – Reality is more complicated and there are factors to consider like shear and wakes\n   \nThis experiment shows that the narrower picture isn’t relevant - swimming upstream with no energy input is possible\nMore background info about trout\nThis experiment shows dead fish move upstream in some cases. It also shows that foils can do the same thing.\nContext of previous vorticity experiments\nFlapping bodies can overcome their own drag with vortex energy."
+  },
+  {
+    "objectID": "slides/10-intro.html#defining-the-territory",
+    "href": "slides/10-intro.html#defining-the-territory",
+    "title": "Introductions",
+    "section": "Defining the territory",
+    "text": "Defining the territory\n\nHere is the earth… this meme is probably older than you are.\nHow broad you start depends on the audience\nDefine any really important terms\nExplain why the topic matters\nStart to narrow the topic"
+  },
+  {
+    "objectID": "slides/10-intro.html#establish-a-niche",
+    "href": "slides/10-intro.html#establish-a-niche",
+    "title": "Introductions",
+    "section": "Establish a niche",
+    "text": "Establish a niche\n\nIdentify a concrete, open problem\n\ngap in knowledge\napparent contradictions\nimpact of new data\n\nState the central question of your investigation"
+  },
+  {
+    "objectID": "slides/10-intro.html#occupy-the-niche",
+    "href": "slides/10-intro.html#occupy-the-niche",
+    "title": "Introductions",
+    "section": "Occupy the niche",
+    "text": "Occupy the niche\n\nHow does your work approach the niche you’ve identified?\nWhat approach(es) are you using?\n\nNot detailed methods, but past literature on how those methods were established may be useful\n\nHow does the answer solve the open problem?"
+  },
+  {
+    "objectID": "slides/10-intro.html#ending-an-intro",
+    "href": "slides/10-intro.html#ending-an-intro",
+    "title": "Introductions",
+    "section": "Ending an Intro",
+    "text": "Ending an Intro\nLots of disagreement on how to do this\n\nState central question/approach\nSummary of your results"
+  },
+  {
+    "objectID": "slides/10-intro.html#business-reports",
+    "href": "slides/10-intro.html#business-reports",
+    "title": "Introductions",
+    "section": "Business Reports",
+    "text": "Business Reports\nIntroduction should be on a new page. It contains:\n\nObjective\nMain points of your report (in order)\nChosen report structure (where to look for things )\n\nNot dissimilar from the general structure, but more to the point. No “here is the earth” introductory paragraphs."
+  },
+  {
+    "objectID": "slides/10-intro.html#references",
+    "href": "slides/10-intro.html#references",
+    "title": "Introductions",
+    "section": "References",
+    "text": "References\n\n\n\n\nBeal, D., F. Hover, Michael Triantafyllou, J. Liao, and George Lauder. “Passive Propulsion in Vortex Wakes.” Journal of Fluid Mechanics 549 (February 25, 2006): 385–402. https://doi.org/10.1017/S0022112005007925.\n\n\nTam, Katy Y. Y., Cyanea Y. S. Poon, Victoria K. Y. Hui, Christy Y. F. Wong, Vivian W. Y. Kwong, Gigi W. C. Yuen, and Christian S. Chan. “Boredom Begets Boredom: An Experience Sampling Study on the Impact of Teacher Boredom on Student Boredom and Motivation.” British Journal of Educational Psychology 90 (2020): 124–37. https://doi.org/10.1111/bjep.12309."
   },
   {
     "objectID": "slides/10-conclusion.html#function",
@@ -1780,7 +1871,7 @@
     "href": "weeks/week-12.html",
     "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "Read OTC 5.13-5.15 - Logic\nRead Wikipedia’s article on Misuse of Statistics\nRead The Misuse of Statistics\n\n\n\n\nReading Quiz Week 12\n\n\n\n\n\n\nLogical fallacies in the workplace in-class activity\n\n\n\n\n\nStatistical misunderstandings and how to counter them – class discussion\n\n\n\n\n\n(not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report",
+    "text": "Read OTC 5.13-5.15 - Logic\nRead Wikipedia’s article on Misuse of Statistics\nRead The Misuse of Statistics\n\n\n\n\nReading Quiz Week 12\n\n\n\n\n\n\nCase Study - Statistical Ethics\n\n\n\n\n\nCase Study - Statistical Ethics\n\n\n\n\n\n(not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report",
     "crumbs": [
       "Weekly materials",
       "Week 12 - Fallacies"
@@ -1802,7 +1893,7 @@
     "href": "weeks/week-12.html#monday",
     "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "Logical fallacies in the workplace in-class activity",
+    "text": "Case Study - Statistical Ethics",
     "crumbs": [
       "Weekly materials",
       "Week 12 - Fallacies"
@@ -1813,7 +1904,7 @@
     "href": "weeks/week-12.html#wednesday",
     "title": "Week 12: Countering Logical Fallacies",
     "section": "",
-    "text": "Statistical misunderstandings and how to counter them – class discussion",
+    "text": "Case Study - Statistical Ethics",
     "crumbs": [
       "Weekly materials",
       "Week 12 - Fallacies"
@@ -2503,7 +2594,7 @@
     "href": "slides/09-misconceptions.html#representative-samples-1",
     "title": "Countering Statistical Misconceptions",
     "section": "Representative Samples",
-    "text": "Representative Samples\n\n\n1954\n\n\n\n\n\n\n\nChart showing variation in mortality with amount smoked. R. Doll and A. B. Hill, “The Mortality of Doctors in Relation to Their Smoking Habits; a Preliminary Report,” British Medical Journal 1, no. 4877 (June 26, 1954): 1451–55, https://doi.org/10.1136/bmj.1.4877.1451.\n\n\n\n1964\n\n\n\nChart showing variation in mortality with amount smoked daily. Richard Doll and Austin Bradford Hill, “Mortality in Relation to Smoking: Ten Years’ Observations of British Doctors,” Br Med J 1, no. 5395 (May 30, 1964): 1399–1410, https://doi.org/10.1136/bmj.1.5395.1399."
+    "text": "Representative Samples\n\n\n1954\n\n\n\n\n\n\n\nChart showing variation in mortality with amount smoked. Doll and Hill.\n\n\n\n1964\n\n\n\nChart showing variation in mortality with amount smoked daily. Richard Doll and Austin Bradford Hill, “Mortality in Relation to Smoking: Ten Years’ Observations of British Doctors,” Br Med J 1, no. 5395 (May 30, 1964): 1399–1410, https://doi.org/10.1136/bmj.1.5395.1399."
   },
   {
     "objectID": "slides/09-misconceptions.html#representative-samples-2",
@@ -2555,136 +2646,122 @@
     "text": "References\n\n\n\n\nDoll, R., and A. B. Hill. “The Mortality of Doctors in Relation to Their Smoking Habits; a Preliminary Report.” British Medical Journal 1, no. 4877 (June 26, 1954): 1451–55. https://doi.org/10.1136/bmj.1.4877.1451.\n\n\nDoll, Richard, and Austin Bradford Hill. “Mortality in Relation to Smoking: Ten Years’ Observations of British Doctors.” Br Med J 1, no. 5395 (May 30, 1964): 1399–1410. https://doi.org/10.1136/bmj.1.5395.1399.\n\n\nGershman, Samuel J., and Tomer D. Ullman. “Causal Implicatures from Correlational Statements.” PLOS ONE 18, no. 5 (May 18, 2023): e0286067. https://doi.org/10.1371/journal.pone.0286067.\n\n\nMotulsky, Harvey J. “Common Misconceptions about Data Analysis and Statistics.” Naunyn-Schmiedeberg’s Archives of Pharmacology 387, no. 11 (2014): 1017–23. https://doi.org/10.1007/s00210-014-1037-6.\n\n\nRothman, Kenneth J. “Six Persistent Research Misconceptions.” Journal of General Internal Medicine 29, no. 7 (January 23, 2014): 1060–64. https://doi.org/10.1007/s11606-013-2755-z."
   },
   {
-    "objectID": "slides/10-intro.html#dont-start-with-the-introduction",
-    "href": "slides/10-intro.html#dont-start-with-the-introduction",
-    "title": "Introductions",
-    "section": "Don’t start with the Introduction",
-    "text": "Don’t start with the Introduction\n\nGood place to start reading\nBad place to start writing\n\n\nStructure of a ‘typical’ introduction"
+    "objectID": "slides/10-intro-conclusion.html#introduction",
+    "href": "slides/10-intro-conclusion.html#introduction",
+    "title": "Introductions and Conclusions",
+    "section": "Introduction",
+    "text": "Introduction"
   },
   {
-    "objectID": "slides/10-intro.html#introductions",
-    "href": "slides/10-intro.html#introductions",
-    "title": "Introductions",
-    "section": "Introductions…",
-    "text": "Introductions…\n\nNo standard template\n\nNo standard subsection heads\nUsually few required elements\n\nAudience focused\n\nWho are they?\nWhat do they already know?\nWhat do they care about?\nHow can you introduce your topic with minimal confusion?"
+    "objectID": "slides/10-intro-conclusion.html#example-boredom",
+    "href": "slides/10-intro-conclusion.html#example-boredom",
+    "title": "Introductions and Conclusions",
+    "section": "Example: Boredom",
+    "text": "Example: Boredom\nDownload PDF file."
   },
   {
-    "objectID": "slides/10-intro.html#create-a-space-model",
-    "href": "slides/10-intro.html#create-a-space-model",
-    "title": "Introductions",
-    "section": "“Create a Space” model",
-    "text": "“Create a Space” model"
+    "objectID": "slides/10-intro-conclusion.html#example-coin-flips",
+    "href": "slides/10-intro-conclusion.html#example-coin-flips",
+    "title": "Introductions and Conclusions",
+    "section": "Example: Coin Flips",
+    "text": "Example: Coin Flips\nDownload PDF file."
   },
   {
-    "objectID": "slides/10-intro.html#creating-a-space",
-    "href": "slides/10-intro.html#creating-a-space",
-    "title": "Introductions",
-    "section": "Creating a Space",
-    "text": "Creating a Space\n1st paragraph of Katy Y. Y. Tam et al. “Boredom Begets Boredom: An Experience Sampling Study on the Impact of Teacher Boredom on Student Boredom and Motivation,” British Journal of Educational Psychology 90 (2020): 124–37, https://doi.org/10.1111/bjep.12309.\nOpening the door to a classroom in the middle of a lesson, while the teacher is busy explaining one concept after another, you might find a scene of students looking bored, resting their heads on the desk, dozing off, doodling on their notebooks, or secretly playing with their phones. Boredom is an emotion commonly reported by students (e.g., Goetz et al., 2014; Mann & Robinson, 2009).\nTopic ID + relatability + importance\nBoredom impedes students’ learning motivation and academic performance (e.g., Pekrun, Goetz, Daniels, Stupnisky, & Perry, 2010; Tze, Daniels, & Klassen, 2016). Whereas much attention has been given to students’ experience of boredom in educational settings, little is known about teachers’ boredom, especially how it might affect students’ boredom and learning experience.\nIdentify the problem and hole in existing work\nThrough experience sampling method, the current study investigated the interplay of teachers’ boredom, students’ perceived teacher boredom, students’ boredom, and students’ learning motivation.\nOccupy the niche – preview the investigation/findings"
-  },
-  {
-    "objectID": "slides/10-intro.html#creating-a-space-1",
-    "href": "slides/10-intro.html#creating-a-space-1",
-    "title": "Introductions",
-    "section": "Creating a Space",
-    "text": "Creating a Space\n\n\n\n\nD. Beal et al. “Passive Propulsion in Vortex Wakes,” Journal of Fluid Mechanics 549 (February 25, 2006): 385–402, https://doi.org/10.1017/S0022112005007925.\n\nBig picture – fish live in high-energy environments and adopt strategies to reduce energy expenditure\n \nNarrower – Reality is more complicated and there are factors to consider like shear and wakes\n   \nThis experiment shows that the narrower picture isn’t relevant - swimming upstream with no energy input is possible\nMore background info about trout\nThis experiment shows dead fish move upstream in some cases. It also shows that foils can do the same thing.\nContext of previous vorticity experiments\nFlapping bodies can overcome their own drag with vortex energy."
-  },
-  {
-    "objectID": "slides/10-intro.html#defining-the-territory",
-    "href": "slides/10-intro.html#defining-the-territory",
-    "title": "Introductions",
-    "section": "Defining the territory",
-    "text": "Defining the territory\n\nHere is the earth… this meme is probably older than you are.\nHow broad you start depends on the audience\nDefine any really important terms\nExplain why the topic matters\nStart to narrow the topic"
-  },
-  {
-    "objectID": "slides/10-intro.html#establish-a-niche",
-    "href": "slides/10-intro.html#establish-a-niche",
-    "title": "Introductions",
-    "section": "Establish a niche",
-    "text": "Establish a niche\n\nIdentify a concrete, open problem\n\ngap in knowledge\napparent contradictions\nimpact of new data\n\nState the central question of your investigation"
-  },
-  {
-    "objectID": "slides/10-intro.html#occupy-the-niche",
-    "href": "slides/10-intro.html#occupy-the-niche",
-    "title": "Introductions",
-    "section": "Occupy the niche",
-    "text": "Occupy the niche\n\nHow does your work approach the niche you’ve identified?\nWhat approach(es) are you using?\n\nNot detailed methods, but past literature on how those methods were established may be useful\n\nHow does the answer solve the open problem?"
-  },
-  {
-    "objectID": "slides/10-intro.html#ending-an-intro",
-    "href": "slides/10-intro.html#ending-an-intro",
-    "title": "Introductions",
-    "section": "Ending an Intro",
-    "text": "Ending an Intro\nLots of disagreement on how to do this\n\nState central question/approach\nSummary of your results"
-  },
-  {
-    "objectID": "slides/10-intro.html#business-reports",
-    "href": "slides/10-intro.html#business-reports",
-    "title": "Introductions",
-    "section": "Business Reports",
-    "text": "Business Reports\nIntroduction should be on a new page. It contains:\n\nObjective\nMain points of your report (in order)\nChosen report structure (where to look for things )\n\nNot dissimilar from the general structure, but more to the point. No “here is the earth” introductory paragraphs."
-  },
-  {
-    "objectID": "slides/10-intro.html#references",
-    "href": "slides/10-intro.html#references",
-    "title": "Introductions",
+    "objectID": "slides/10-intro-conclusion.html#references",
+    "href": "slides/10-intro-conclusion.html#references",
+    "title": "Introductions and Conclusions",
     "section": "References",
-    "text": "References\n\n\n\n\nBeal, D., F. Hover, Michael Triantafyllou, J. Liao, and George Lauder. “Passive Propulsion in Vortex Wakes.” Journal of Fluid Mechanics 549 (February 25, 2006): 385–402. https://doi.org/10.1017/S0022112005007925.\n\n\nTam, Katy Y. Y., Cyanea Y. S. Poon, Victoria K. Y. Hui, Christy Y. F. Wong, Vivian W. Y. Kwong, Gigi W. C. Yuen, and Christian S. Chan. “Boredom Begets Boredom: An Experience Sampling Study on the Impact of Teacher Boredom on Student Boredom and Motivation.” British Journal of Educational Psychology 90 (2020): 124–37. https://doi.org/10.1111/bjep.12309."
+    "text": "References"
   },
   {
-    "objectID": "slides/11-abstract.html#types-of-abstracts",
-    "href": "slides/11-abstract.html#types-of-abstracts",
-    "title": "Abstracts",
-    "section": "Types of Abstracts",
-    "text": "Types of Abstracts\nAccording to OTC,\n\nDescriptive Abstracts\n\nvery short (1-2 sentences)\n“teaser” of contents without any details or conclusions\n\nInformative Abstracts\n\nContains key facts and conclusions\nContains components of each major section of the report\n10% of the length of the report or 2-3 pages, whichever is shorter"
+    "objectID": "slides/10-quarto-features.html#embed-code-in-chunks",
+    "href": "slides/10-quarto-features.html#embed-code-in-chunks",
+    "title": "Quarto Features",
+    "section": "Embed code in chunks",
+    "text": "Embed code in chunks\n```{r}\n# code that does something fun\n```"
   },
   {
-    "objectID": "slides/11-abstract.html#types-of-abstracts-1",
-    "href": "slides/11-abstract.html#types-of-abstracts-1",
-    "title": "Abstracts",
-    "section": "Types of Abstracts",
-    "text": "Types of Abstracts\n\nI have never seen either type of abstract used in scientific articles.\nSome government reports might use Informative Abstracts (but Exec Summary is more common)"
+    "objectID": "slides/10-quarto-features.html#dont-run-the-code-if-its-installing-a-package",
+    "href": "slides/10-quarto-features.html#dont-run-the-code-if-its-installing-a-package",
+    "title": "Quarto Features",
+    "section": "Don’t run the code if it’s installing a package!",
+    "text": "Don’t run the code if it’s installing a package!\n```{r, eval = F}\n# The most evil R package ever\nremotes::install_github(\"romainfrancois/evil.R\") \n```"
   },
   {
-    "objectID": "slides/11-abstract.html#abstracts",
-    "href": "slides/11-abstract.html#abstracts",
-    "title": "Abstracts",
-    "section": "Abstracts",
-    "text": "Abstracts\nFrom “The Scientific Guide to Writing” (Heard 2022)\n\nAbstracts were rare before 1920s, not routine until 1950s\nNone of the papers I have for this class from even the 1960s has an abstract\nWidely available (even when paper is not) and searchable\n\nhelps others find your research\n\nMini IMRaD (Intro, Methods, Results, and Discussion) structure\n\nin Medicine, abstracts even have sections that make these pieces easier to find\nlonger abstracts = better discovery by e.g. Google."
+    "objectID": "slides/10-quarto-features.html#include-results-in-nice-tables",
+    "href": "slides/10-quarto-features.html#include-results-in-nice-tables",
+    "title": "Quarto Features",
+    "section": "Include results in nice tables",
+    "text": "Include results in nice tables\n\nlibrary(knitr)\ndata(mtcars)\nkable(head(mtcars))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\nqsec\nvs\nam\ngear\ncarb\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n3.90\n2.620\n16.46\n0\n1\n4\n4\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n3.90\n2.875\n17.02\n0\n1\n4\n4\n\n\nDatsun 710\n22.8\n4\n108\n93\n3.85\n2.320\n18.61\n1\n1\n4\n1\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.08\n3.215\n19.44\n1\n0\n3\n1\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.15\n3.440\n17.02\n0\n0\n3\n2\n\n\nValiant\n18.1\n6\n225\n105\n2.76\n3.460\n20.22\n1\n0\n3\n1"
   },
   {
-    "objectID": "slides/11-abstract.html#abstracts-1",
-    "href": "slides/11-abstract.html#abstracts-1",
-    "title": "Abstracts",
-    "section": "Abstracts",
-    "text": "Abstracts\n\nFollow journal style\n\nStructure\nWord limits\n\nMust be self-contained\n\nusually no citations\nno references to figure/table\ntry not to use acronyms\n\nSome are afraid of “spoilers” – don’t worry about this in the abstract.\nCan optimize abstracts to include keywords to help with search engine discovery."
+    "objectID": "slides/10-quarto-features.html#references",
+    "href": "slides/10-quarto-features.html#references",
+    "title": "Quarto Features",
+    "section": "References",
+    "text": "References\n\n\nIn your main quarto file…\n\n@refname1 said that you should \"stay on the sunny side, always on the sunny side\", which has been validated in other studies [@refname2; @refname3]\n\n\nIn your refs.bib file…\n\n@misc{refname1,\n    title = {Keep on the sunny Side},\n  year = {1899},\n  author = {Blenkhorn, Ada}\n}\n\n@book{refname2,\n  title = {O Brother Where Art Thou},\n  author = {The Whites},\n  year = 2000\n}\n\n@book{refname3,\n  title = {Keep on the Sunny Side},\n  author = {The Carter Family},\n  year = 1964\n}\nYou may have to check Zotero’s work – webpages often don’t have dates zotero detects.\nLook for the ‘last updated’ date if all else fails."
   },
   {
-    "objectID": "slides/11-abstract.html#other-considerations",
-    "href": "slides/11-abstract.html#other-considerations",
-    "title": "Abstracts",
-    "section": "Other considerations",
-    "text": "Other considerations\n\nUse active voice\nAvoid non-alphanumeric characters (greek letters, unicode, etc.) because these can cause issues in databases\nDon’t try to include secondary results unless you have no word limit"
+    "objectID": "slides/10-quarto-features.html#basic-formatting",
+    "href": "slides/10-quarto-features.html#basic-formatting",
+    "title": "Quarto Features",
+    "section": "Basic Formatting",
+    "text": "Basic Formatting\n\n# = primary section subdivision (chapter for books, etc.)\n## = subsections\n### = subsubsections\n\nNever use more than one additional # in a sub-section!!\nIn book projects, # headings are reserved for chapters, which are usually in separate files. Sections (##) and Subsections (###) only occur within chapters."
   },
   {
-    "objectID": "slides/11-abstract.html#practical-advice",
-    "href": "slides/11-abstract.html#practical-advice",
-    "title": "Abstracts",
-    "section": "Practical Advice",
-    "text": "Practical Advice\n\nDraft abstract\n\nfirst and last sentence of each section in the paper\nmain idea of each section in the paper\n\nThen, refine and make it make sense from there"
+    "objectID": "slides/10-quarto-features.html#quarto-projects",
+    "href": "slides/10-quarto-features.html#quarto-projects",
+    "title": "Quarto Features",
+    "section": "Quarto projects",
+    "text": "Quarto projects\n_quarto.yml file contains project-wide metadata\n\nTitle\nAuthor(s)\nAbstract\nBibliography\n\nYou really need to fill this in!"
   },
   {
-    "objectID": "slides/11-abstract.html#activity",
-    "href": "slides/11-abstract.html#activity",
-    "title": "Abstracts",
+    "objectID": "slides/10-quarto-features.html#callouts",
+    "href": "slides/10-quarto-features.html#callouts",
+    "title": "Quarto Features",
+    "section": "Callouts",
+    "text": "Callouts\n\n\n\n\n\n\nTitle of callout\n\n\nCallouts are really cool ways to call attention to important information. There are multiple styles that each have their own colors and icons.\n\n\n\nYou can get a callout by:\n::: {.callout-tip}\n\n### Title of callout\n\nInside text\n\n:::\n\n\n\n\n\n\nWarning\n\n\nYou can even get callouts without titles by just omitting the title and title header. This is a .callout-warning\n\n\n\n\n\n\n\n\n\nCaution\n\n\nThis is a .callout-caution\n\n\n\n\n\n\n\n\n\nNote\n\n\nThis is a .callout-note"
+  },
+  {
+    "objectID": "slides/10-quarto-features.html#formatting-is-important",
+    "href": "slides/10-quarto-features.html#formatting-is-important",
+    "title": "Quarto Features",
+    "section": "Formatting is Important!",
+    "text": "Formatting is Important!\nIf your report doesn’t have a proper title, or you haven’t bothered to fill in your name as author, it’s hard to take the rest of the report seriously!\nQuarto Book documentation may help you with your business report.\nAuthoring documentation covers a lot of useful information – embedding pictures, videos, code annotation, tables, and more."
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#executive-summaries",
+    "href": "slides/11-exec-summary.html#executive-summaries",
+    "title": "Executive Summaries",
+    "section": "Executive Summaries",
+    "text": "Executive Summaries\n\nWritten for managers\n\nLimited technical jargon\nFocus on the actionable information\n\nSummarize the report\n\nIn order (sections, subsections, etc.)\nHighlight major points of each section\nEmphasize (visually and with words) the conclusions and recommendations"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#writing-tips",
+    "href": "slides/11-exec-summary.html#writing-tips",
+    "title": "Executive Summaries",
+    "section": "Writing Tips",
+    "text": "Writing Tips\n\nHave the full report in front of you (already written)\nStart with an introduction: purpose of the report and major points\nMake an outline using the report’s outline\n\nBrief paragraph for each main points\nUse vocabulary your audience will understand\n\nProofread x3!\n\nMake language concise - ask “do I need this word?”\nCheck spelling/grammar\n\nHave a coworker proofread and check for political no-no’s\nAdditional guidance - Government Accountability Office guide to writing Executive Summaries for Government Reports"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#executive-summaries-should-include",
+    "href": "slides/11-exec-summary.html#executive-summaries-should-include",
+    "title": "Executive Summaries",
+    "section": "Executive Summaries Should Include",
+    "text": "Executive Summaries Should Include\n\nA summary of the report’s main conclusion\nJustification for recommendations\nAn explanation of the problem\nA summary of the process used to solve the problem\nAn outline of recommendations/decisions\n\nSource: Navy and Marine Corps Public Health Center"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#discussion-executive-summary-guidelines",
+    "href": "slides/11-exec-summary.html#discussion-executive-summary-guidelines",
+    "title": "Executive Summaries",
+    "section": "Discussion – Executive Summary guidelines",
+    "text": "Discussion – Executive Summary guidelines"
+  },
+  {
+    "objectID": "slides/11-exec-summary.html#activity",
+    "href": "slides/11-exec-summary.html#activity",
+    "title": "Executive Summaries",
     "section": "Activity",
-    "text": "Activity\nWithout looking at the abstract of your IgNobel paper (if there is one), write a short 5-6 sentence abstract for the paper.\nTrade with a friend and compare their abstract to their paper (and/or the paper’s abstract if it exists)"
-  },
-  {
-    "objectID": "slides/11-abstract.html#references",
-    "href": "slides/11-abstract.html#references",
-    "title": "Abstracts",
-    "section": "References",
-    "text": "References\n\n\n\n\nHeard, Stephen B. 2022. The Scientist’s Guide to Writing, 2nd Edition: How to Write More Easily and Effectively Throughout Your Scientific Career. 2nd edition. Princeton: Princeton University Press."
+    "text": "Activity\nIn a group of 3-4 people, go through one of the following 3 reports:\n\nUS State Department Enterprise Data Strategy\nNational Science Founcation Making Visible the Invisible: STEM Talent of Rural America\n2024 Annual Report of the Supplemental Security Income Program\n\nHow does the executive summary adhere to the guidelines?\nWhat formatting and other conventions were used to draw attention to important components of the report or summary? Were these effective?"
   }
 ]

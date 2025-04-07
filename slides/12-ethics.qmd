@@ -11,3 +11,96 @@ lib_dir: ./libs
 
 ![[Source](https://web.archive.org/web/20250331224638/https://www.nbcnews.com/news/world/excel-error-heard-round-world-flna1c9373424)](images/clipboard-414260364.png)
 
+## Preview
+
+{{< video https://youtu.be/qh-TQHYHQ0I width="1200" height="800">}}
+
+## Digging In {.r-fit-text}
+
+::: columns
+::: column
+
+- [Original Paper](https://www.nber.org/system/files/working_papers/w15639/w15639.pdf)
+
+:::
+
+::: column
+- [Critique/Replication Failure Paper](https://web.archive.org/web/20130418125357/http://www.peri.umass.edu/fileadmin/pdf/working_papers/working_papers_301-350/WP322.pdf)
+
+- [Financial Times editorial](https://web.archive.org/web/20130423072121/http://www.peri.umass.edu/fileadmin/pdf/working_papers/working_papers_301-350/FT_Pollin_Ash.pdf)
+
+- [Data](https://web.archive.org/web/20130604152658/http://www.peri.umass.edu/fileadmin/pdf/working_papers/working_papers_301-350/HAP-RR-GITD-code.zip)
+
+- [Readme](https://web.archive.org/web/20130425234809/http://www.peri.umass.edu/fileadmin/pdf/working_papers/working_papers_301-350/PERI_WP322_readme.txt)
+
+:::
+:::
+
+## Explore (30 minutes)
+
+In groups of 3-4
+
+- Read the original paper
+
+- Read the critique and the editorial
+
+- Download the data + code and take a look -- is the code readable?
+  - You may have to unzip the zip file of country-level CSVs and set the working directory
+  
+  - In 2013, `plyr` was the equivalent of `dplyr` (`ddply` $\approx$ `group_by` + `summarize`)    
+  [When you're done with this exercise, clear your session!! Loading dplyr and then plyr will give you lots of weird errors.]{.emph .red}
+  
+
+## Discuss (30 minutes)
+
+- What choices did Reinhardt & Rogoff make in their analysis that were later critiqued?
+
+- Which choices were simple mistakes?
+
+- Which choices were statistically justifiable?
+
+- Which choices were statistical misconduct?
+
+- What could have been done differently?
+
+# Cambridge Analytica and Facebook
+
+{{< video https://www.youtube.com/watch?v=Q91nvbJSmS4 >}}
+
+
+## Digging In
+
+- [Analysis of Ethics of Facebook Data Handling](https://repositories.lib.utexas.edu/server/api/core/bitstreams/25af2643-9128-49d2-863e-cb5ff3aee9ce/content)
+
+- [Guardian - Cambridge Analytica and Facebook Influenced US Elections](https://web.archive.org/web/20250407142019/https://www.theguardian.com/news/2018/mar/17/cambridge-analytica-facebook-influence-us-election)
+
+- [Guardian - Whistleblower profile of Christopher Wylie](https://web.archive.org/web/20250407142129/https://www.theguardian.com/news/2018/mar/17/data-war-whistleblower-christopher-wylie-faceook-nix-bannon-trump)
+
+- [Downstream Effects of the Cambridge Analytica Scandal (Bipartisan Policy Center)](https://bipartisanpolicy.org/blog/cambridge-analytica-controversy/)
+
+- [The Guardian's full investigation](https://www.theguardian.com/news/series/cambridge-analytica-files)
+
+## Explore (30 minutes)
+
+In groups of 3-4
+
+- Read the Guardian articles and associated content
+
+- Gauge the magnitude of the problem and list out the ethical lapses you notice when reading
+
+
+
+## Discuss (30 minutes)
+
+- What choices did Facebook make that were 
+  - reasonable mistakes?
+  - ethically problematic? 
+  - defensible?
+
+- What choices did Cambridge Analytica make that were 
+  - reasonable mistakes?
+  - ethically problematic? 
+  - defensible?
+
+- What impact do you think the ethical breaches had on the world?
+
