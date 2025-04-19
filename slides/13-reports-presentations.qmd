@@ -1,0 +1,103 @@
+---
+title: "Presentations"
+format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+# Presentations
+
+::: columns
+::: {.column width="75%"}
+
+[Told almost entirely through Dilbert cartoons]{.fragment .emph .cerulean}
+
+[Yes, I know Scott Adams is a racist jerk. Many of his pre-2020 comics are still good.]{.fragment .emph .purple}
+:::
+
+::: {.column width="25%"}
+![](images/dilbert.png){fig-alt="An image of the comic character dilbert. A white guy with a bumpy, flat, peach  colored head, wearing a white collared shirt and red-and-black striped tie, with pencils in his shirt pocket and black pants and shoes." width="100%"}
+:::
+:::
+
+## Oral Presentations
+
+- What is the purpose of the talk?
+    - Provide information?
+    - Teach a task?
+    - Convince someone to act (or not to act)
+
+- Audience
+    - What can you assume?
+    - What do you have to explain?
+    
+- Formality
+    - norms for the venue/company
+    - personal style
+    
+## Audience
+
+![](images/dilbert-presentation-audience.gif)
+
+## Structure
+
+### Introduction
+
+- Introduce yourself
+- Introduce the topic
+- Provide an outline of the presentation
+- Provide a "hook" -- interest
+
+![](images/dilbert-presentation-boring.gif){fig-alt="Dilbert comic about hypnotising the CEO with a boring powerpoint"}
+
+## Structure
+### Main Body of the Report
+
+- Explain technical details (at the right level)
+- Visuals > words on the slide
+- Focus on your what your audience needs or cares about
+
+
+![[Source](https://web.archive.org/web/20140819133025/http://dilbert.com/strips/comic/2009-03-07/)](images/dilbert-presentation-pie.gif){fig-alt="The presenter says 'I didn't have anything useful to say so I made this pie chart' and points at a pie chart. The audience says 'Ooh!' and 'It must be true because it's pie'. The presenter thinks 'That worked too well' as offscreen text says 'I pledge my life and my fortune to the pie!'."}
+
+## Structure
+### Conclusion
+
+- Brief summary
+- Actionable information
+- Thank the audience
+- Ask for questions
+
+![[Source](https://web.archive.org/web/20230306170749/https://dilbert.com/strip/2003-08-09)](images/dilbert-presentation-content.gif){fig-alt="A Dilbert cartoon. The presenter says 'That concludes my two-hour presentation. Any questions?'. The manager says 'Did you intend the presentation to be incomprehensible, or do you have some sort of rare power-point disability?' The presenter replies 'Are there any questions about the content?'. Offscreen, someone says 'There was content?'"}
+
+## Timing & Delivery
+
+- Practice ahead of time
+    - Don't read from slides or a script
+    - Fill the allotted time ... but don't go over
+
+![[Source](https://web.archive.org/web/20091219181719/http://www.dilbert.com/strips/comic/2000-08-16)](images/dilbert-presentation-length.gif){fig-alt="The presenter says 'As you can clearly see in slide 397' (gestures to diagram). Two audience members are asleep, and the third appears to claw their eyes out while screaming 'GAAAAH!'. The final frame has everyone looking at a pair of feet, as if the audience member fell over in their chair, while one of the onlookers says 'Powerpoint poisoning'."}
+
+    
+## Timing & Delivery
+
+- Space visuals to maintain attention
+    - but visuals should be relevant
+    
+
+
+- Volume (use a mic if you need to)
+- Posture/nonverbals matter too!
+    - Dress appropriately
+
+- Limit filler words and control physical/verbal tics
+
+## Timing & Delivery
+
+{{< video https://youtu.be/socCN2NiTFM width="800px" height="500px">}}
+
+
+## Discussion: Most Annoying Presentation Habits?
+
