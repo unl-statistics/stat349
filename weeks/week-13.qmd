@@ -11,7 +11,7 @@
 
 ## ☕ Monday
 
-- Business and Technical Reports -- general formatting and concerns
+- [Presentations](../slides/13-reports-presentations.qmd)
   
 ## 🐪 Wednesday
 
