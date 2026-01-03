@@ -1,0 +1,296 @@
+semester:
+  - start: 2026-01-12
+  - end: 2026-05-08
+  - holiday: ["2026-01-19", "2026-03-16", "2026-03-17", "2026-03-18", "2026-03-19", "2026-03-20", "2026-03-21", "2026-03-15", "2026-03-21"]
+  - exams: ["2026-05-08", "2026-05-07", "2026-05-06", "2026-05-05", "2026-05-04"]
+class: stat-349
+class-days:
+  - Mon
+  - Wed
+schedule:
+  - week: 1
+    name: Getting Started
+    start: 2026-01-12
+    end: 2026-01-18
+    reading: |
+        - [ ] Read the [syllabus](../syllabus.pdf)
+        - [ ] Read the [course support](../course-support.qmd) page
+        - [ ] Read [OTC Chapter 1](https://alg.manifoldapp.org/read/open-technical-communication/section/0debb16b-f623-4033-a47b-973d65ab0961)
+    prepare: |
+        - Ensure R, python, quarto, RStudio are installed on your machine ([Computer setup help](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html))
+        - Print out and bring cheat sheets for R and python (if you need them)
+        - [ ] Reading Quiz Week 1
+    class1: |
+        - Discussion: Syllabus
+        - Github Introduction
+    class2: |
+        - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
+    assignments: |
+        - [ ] Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)
+        - [ ] Submit a link to your github pages portfolio site
+  - week: 2
+    name: Communicating You!
+    start: 2026-01-19
+    end: 2026-01-25
+    reading: |
+        - [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
+    prepare: |
+        - [ ] Reading Quiz Week 2
+        - Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
+        - [ ] Bring 2 PRINTED copies of your CV and Cover Letter for peer review
+    class1: |
+        - MLK Day - No class
+    class2: |
+        - [CV/cover letter important components](../slides/02-cv-cover-letter.qmd)
+        - Discuss how to give good feedback (based on [ETC](https://wisc.pb.unizin.org/opencomp/chapter/providing-good-feedback/))
+        - Peer Review CV/cover letter
+    assignments: |
+        - [ ] Add CV/cover letter to portfolio
+        - [ ] Choose an Annual Review article from those offered – no duplicates
+  - week: 3
+    name: References
+    start: 2026-01-26
+    end: 2026-02-01
+    reading: |
+        - [ ] Read [OTC Chapter 5.6 – References](https://alg.manifoldapp.org/read/open-technical-communication/section/d9202f07-41a2-4dc9-8b29-486e164c1775)
+        - [ ] Read [OTC Chapter 3 - Ethics](https://alg.manifoldapp.org/read/open-technical-communication/section/8b530f4b-5942-4071-845a-0a138601da10)
+        - [ ] Read [ETC Annoying Ways People Use Sources](https://wisc.pb.unizin.org/opencomp/chapter/annoying-ways-people-use-sources/)
+        - [ ] Practical Tutorial: [Connecting Rstudio + Zotero](https://gsverhoeven.github.io/post/zotero-rmarkdown-csl/)
+    prepare: |
+        - [ ] Reading Quiz Week 3
+        - [ ] For Monday: [Download and Install Zotero](https://www.zotero.org/) citation manager and [Zotero Connector](https://www.zotero.org/download/connectors) for your preferred browser
+    class1: |
+        - Citation Managers – Demonstrate Zotero features
+        - Scavenger hunt - Citation manager options
+        - How to read technical reports and academic articles
+    class2: |
+        - How to summarize (without ChatGPT)
+        - [Slides](../slides/03-reading-summarizing.qmd)
+    assignments: |
+        - [ ] Create an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article, and justify your choices.
+
+  - week: 4
+    name: Organizing Information
+    start: 2026-02-02
+    end: 2026-02-08
+    reading: |
+        - [ ] Read [ETC Patterns of Organization and Methods of Development](https://wisc.pb.unizin.org/opencomp/chapter/patterns-of-organization-and-methods-of-development/)
+        - [ ] Read [ETC Transitions and Organization](https://wisc.pb.unizin.org/opencomp/chapter/transitions-and-organization/)
+        - [ ] Read [ETC Reverse Outlining](https://wisc.pb.unizin.org/opencomp/chapter/reverse-outlining/)
+        - [ ] Read [ETC Reading Games](https://wisc.pb.unizin.org/opencomp/chapter/reading-games-strategies-for-reading-scholarly-sources/)
+    prepare: |
+        - [ ] Reading Quiz Week 4
+    class1: |
+        - Audience and Technical Knowledge
+        - Thing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?
+    class2: |
+        - Transitions and Organizing Information
+        - [Slides](../slides/04-organizing-information.qmd)
+    assignments: |
+        - [ ] Highlight transitions in your review article and comment on their effectiveness, obviousness, etc.
+        - [ ] Create a reverse outline of your review article. Are there any obvious holes?
+
+  - week: 5
+    name: Making an Argument
+    start: 2026-02-09
+    end: 2026-02-15
+    reading: |
+        - [ ] Read [OTC Chapter 5.1 – Process](https://alg.manifoldapp.org/read/open-technical-communication/section/134f046e-ff01-4eec-a525-2d1128957c1e)
+        - [ ] Read [OTC Chapter 5.2 – Audience Analysis](https://alg.manifoldapp.org/read/open-technical-communication/section/415d5b4f-758e-49ac-8149-18d4c3c4c10c)
+        - [ ] Read [OTC Chapter 5.4 – Articulating Technical Information](https://alg.manifoldapp.org/read/open-technical-communication/section/39c29f74-f502-4050-80b3-1162a9cdd8b0)
+        - [ ] Read [ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis](https://wisc.pb.unizin.org/opencomp/chapter/backpacks-v-briefcases-steps-toward-rhetorical-analysis/), focusing primarily  on the basic components of rhetorical analysis
+    prepare: |
+        - [ ] Reading Quiz Week 5
+    class1: |
+        - [Slides](../slides/05-argument-business-report.qmd)
+        - Discuss business report & assign report topics
+        - Basic components of argument and rhetoric in scientific writing
+    class2: |
+        - In class activity: [Arguments in scientific and technical writing](../activities/arguments.qmd)
+        - [Slides](../slides/05-argument-activity.qmd)
+    assignments: |
+        - [ ] Analyze the rhetorical decisions and arguments in your research article (1 pg summary)
+        - [ ] Business report: locate data sets to support your analysis
+
+  - week: 6
+    name: Problem Statements & Data
+    start: 2026-02-16
+    end: 2026-02-22
+    reading: |
+        - [ ] Read [UW's guide to data documentation](https://data.wisc.edu/data-literacy/document/)
+        - [ ] Read [OTC Chapter 2.9 – Recommendation and Feasibility Reports](https://alg.manifoldapp.org/read/open-technical-communication/section/9ed77f57-00e0-471c-8049-187cd9d00bc2)
+        - [ ] Read [SWHR 1.1 – 1.3 – Research Question](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/research-question.html)
+    prepare: |
+        - [ ] Reading Quiz Week 6
+    class1: |
+        - [Problem Statements](../slides/06-problem-statements.qmd)
+        - In class activity: write good problem statements for examples
+    class2: |
+        - [Documenting Data](../slides/06-documenting-data.qmd)
+        - Discussion of essential components of data documentation - Data documentation that matters for statistical analysis
+        - Discussion: The data documentation for the Metrics used in last semester's budget cuts
+    assignments: |
+        - [ ] Document data that you plan to use for your business report
+
+  - week: 7
+    name: Methods & Procedures
+    start: 2026-02-23
+    end: 2026-03-01
+    reading: |
+        - [ ] Read [OTC 2.6 - Instructions](https://alg.manifoldapp.org/read/open-technical-communication/section/29783307-99ef-466b-af28-384980bfb23c)
+        - [ ] Read [OTC 2.7 – User  Guides](https://alg.manifoldapp.org/read/open-technical-communication/section/15d19d46-ad79-4cec-bb8d-be6166bb3d8e)
+        - [ ] Read [OTC 2.8 – SOP and Procedures](https://alg.manifoldapp.org/read/open-technical-communication/section/041bfbe4-dbc8-4eb8-ac86-13e1a33646cb)
+        - [ ] Read [SWHR 3 – Methods](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/methods-section.html)
+        - [ ] (Optional) [Manufacturer’s Guide to Developing Consumer Product Instructions](https://www.cpsc.gov/s3fs-public/pdfs/guide.pdf) - Excellent guide to writing user guides
+    prepare: |
+        - [ ] Reading Quiz Week 7
+    class1: |
+        - [Describing statistical methods](../slides/07-statistical-methods.qmd) - Documenting code
+    class2: |
+        - [Writing good “how to” guides for others](../slides/07-user-guides.qmd)
+    assignments: |
+        - [ ] Work on your user guide (due next week!)
+
+  - week: 8
+    name: Charts, Tables, and Diagrams
+    start: 2026-03-02
+    end: 2026-03-08
+    reading: |
+        - [ ] Read [SWHR 4 - Tables and Figures](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/tables-and-figures.html)
+        - [ ] Read [OTC 4.7 – Tables, Charts, and Graphs](https://alg.manifoldapp.org/read/open-technical-communication/section/b1ca4069-52c9-49bb-9e47-510858d4e6f3)
+        - [ ] Read [OTC 4.8 - Graphics](https://alg.manifoldapp.org/read/open-technical-communication/section/d03f3bce-d354-4976-b0cd-63a1476416c2)
+        - [ ] (re)-Read [Creating Good Charts](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html) from Scientific Computing in R and Python
+    prepare: |
+        - [ ] Reading Quiz Week 8
+        - Find the worst data visualization published by a **news organization** within the last month and bring it with you to class.
+    class1: |
+        - [Tables and charts](../slides/08-tables-charts.qmd)
+    class2: |
+        - [Diagrams](../slides/08-diagrams.qmd)
+        - Peer review time – User guide
+    assignments: |
+        - (not turned in) Work on analysis and relevant graphics for your business report
+
+  - week: 9
+    name: Results
+    start: 2026-03-09
+    end: 2026-03-15
+    reading: |
+        - [ ] Read [SWHR 5 - Results](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/results-section.html)
+
+    prepare: |
+        - [ ] Reading Quiz Week 9
+        - [ ] For Wednesday: On Canvas, find the [**Activity: IgNobel Results Sections** page](https://canvas.unl.edu/courses/192983/pages). Download your assigned paper and read it **before** class.
+    class1: |
+        - [Countering misconceptions in results](../slides/09-misconceptions.qmd)
+    class2: |
+        - [IgNobel Results Section Activity](https://canvas.unl.edu/courses/192983/pages) activity (Canvas) and class discussion
+    assignments: |
+        - [ ] Draft of results section of business report with relevant graphics/visual aids
+
+  - week: 10
+    name: Spring Break
+    start: 2026-03-16
+    end: 2026-03-22
+
+  - week: 11
+    name: Introductions and Conclusions
+    start: 2026-03-23
+    end: 2026-03-29
+    reading: |
+        - [ ] Read [SWHR 2 - Introduction](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/introduction-section.html)
+        - [ ] Read [SWHR 6 - Discussion](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/discussion-section.html)
+    prepare: |
+        - [ ] Reading Quiz Week 10
+    class1: |
+        - [Conclusion](../slides/10-conclusion.qmd) - [Quarto Formatting](../slides/10-quarto-features.qmd)
+    class2: |
+        - [Introductions](../slides/10-intro.qmd)
+    assignments: |
+        - [ ] Draft of introduction and conclusion sections of business report
+
+  - week: 12
+    name: Abstracts & Summaries
+    start: 2026-03-30
+    end: 2026-04-05
+    reading: |
+        - [ ] Read [SWHR 7 - Title & Abstract](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/title-and-abstract.html)
+        - [ ] Read [OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions](https://alg.manifoldapp.org/read/open-technical-communication/section/a31e38b4-7f1f-4e9c-b8e9-9485d74d04b8)
+    prepare: |
+        - [ ] Reading Quiz Week 11
+        - [ ] For Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?
+    class1: |
+        - [Abstracts](../slides/11-abstract.qmd)
+    class2: |
+        - [Executive Summaries](../slides/11-exec-summary.qmd) - Class Discussion
+    assignments: |
+        - [ ] Draft of executive summary of business report
+
+
+
+  - week: 13
+    name: Countering Logical Fallacies
+    start: 2026-04-06
+    end: 2026-04-12
+    reading: |
+        - [ ] Read [OTC 5.13-5.15 - Logic](https://alg.manifoldapp.org/read/open-technical-communication/section/7899c269-bf9e-4d23-a881-0d43241fb1e5)
+        - [ ] Read [Wikipedia’s article on Misuse of Statistics](https://en.wikipedia.org/wiki/Misuse_of_statistics)
+        - [ ] Read [The Misuse of Statistics](https://doi.org/10.1080/08989620212968)
+    prepare: |
+      - [ ] Reading Quiz Week 12
+    class1: |
+        - [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
+    class2: |
+        - [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
+    assignments: |
+        - (not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report
+
+  - week: 14
+    name: Reports and Presentations
+    start: 2026-04-13
+    end: 2026-04-19
+    reading: |
+        - [ ] Read [OTC 2.12 - Oral Presentations](https://alg.manifoldapp.org/read/open-technical-communication/section/e4660e24-17b6-4dcc-ac00-717c13bd30ff)
+        - [ ] Read [OTC 4.1 – Report Design](https://alg.manifoldapp.org/read/open-technical-communication/section/967e506e-8d1e-4baf-bee2-8ace4ebf80f1) and skim 4.3-4.5
+    prepare: |
+        - [ ] Reading Quiz Week 13
+    class1: |
+        - [Presentations](../slides/13-reports-presentations.qmd).
+    class2: |
+        - In class activity: Analyzing government reports
+    assignments: |
+        - [ ] Rough draft of business report submitted along with to-do list
+        - (not turned in) Prepare business presentation slides/talk
+
+  - week: 15
+    name: Editing and Revising Your Work
+    start: 2026-04-20
+    end: 2026-04-26
+    reading: |
+        - [ ] Read [OTC 5.8 - Grammar, Usage, and Punctuation](https://alg.manifoldapp.org/read/open-technical-communication/section/6a5f73f0-4a2c-43f2-a493-fc7feb2bce3b)
+        - [ ] Read [OTC 5.9 - Spelling](https://alg.manifoldapp.org/read/open-technical-communication/section/453059c2-fecc-4cfd-aaa6-54001d7d3e45)
+        - [ ] Read [OTC 5.10 – Peer Review](https://alg.manifoldapp.org/read/open-technical-communication/section/c4d45556-9489-4451-8120-42545a6746b4)
+    prepare: |
+        - [ ] Reading Quiz Week 14
+        - [ ] Bring two **paper** copies of your business report - one for Monday, one for Wednesday (you may edit in between if you want to)
+    class1: |
+        - Peer review day - business reports
+    class2: |
+        - Peer review day - business reports
+    assignments: |
+        - [ ] Make edits from peer review comments
+
+
+  - week: 16
+    name: In-Class Presentations
+    start: 2026-04-27
+    end: 2026-05-03
+    class1: |
+        - Business presentations
+    class2: |
+        - Business presentations
+    assignments: |
+        - [ ] Slides for business presentation '
+        - [ ] Business report due!
+        - [ ] Procedure/method guide, business report, and business presentation slides added to your portfolio.
+        - [ ] Portfolio link submitted to Canvas.
