@@ -1,27 +1,35 @@
 # Week 6: Problem Statements & Data
-  
+
+
+
+February 16-22, 2026
+
 ## 📖 Reading
 
-  - [ ] Read [UW's guide to data documentation](https://data.wisc.edu/data-literacy/document/)
+- [ ] Read [UW's guide to data documentation](https://data.wisc.edu/data-literacy/document/)
 - [ ] Read [OTC Chapter 2.9 – Recommendation and Feasibility Reports](https://alg.manifoldapp.org/read/open-technical-communication/section/9ed77f57-00e0-471c-8049-187cd9d00bc2)
 - [ ] Read [SWHR 1.1 – 1.3 – Research Question](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/research-question.html)
 
-### 🎯 Check your understanding
+
+## 🥣 Prepare for class
 
 - [ ] Reading Quiz Week 6
 
-## ☕ Monday
+
+## 🌮 Tuesday
 
 - [Problem Statements](../slides/06-problem-statements.qmd)
 - In class activity: write good problem statements for examples
-  
-## 🐪 Wednesday
+
+
+## 🌩️ Thursday 🔨 
 
 - [Documenting Data](../slides/06-documenting-data.qmd)
-- Discussion of essential components of data documentation
-- Data documentation that matters for statistical analysis
+- Discussion of essential components of data documentation - Data documentation that matters for statistical analysis
+- Discussion: The data documentation for the Metrics used in last semester's budget cuts
 
-##  🏋️ Practice your skills
+
+##  🏋 Practice Your Skills
 
 - [ ] Document data that you plan to use for your business report
 

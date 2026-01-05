@@ -1,28 +1,32 @@
-# Week 14: Editing and Revising Your Work
-  
+# Week 14: Reports and Presentations
+
+
+
+April 13-19, 2026
+
 ## 📖 Reading
 
-  - [ ] Read [OTC 5.8 - Grammar, Usage, and Punctuation](https://alg.manifoldapp.org/read/open-technical-communication/section/6a5f73f0-4a2c-43f2-a493-fc7feb2bce3b)
-- [ ] Read [OTC 5.9 - Spelling](https://alg.manifoldapp.org/read/open-technical-communication/section/453059c2-fecc-4cfd-aaa6-54001d7d3e45)
-- [ ] Read [OTC 5.10 – Peer Review](https://alg.manifoldapp.org/read/open-technical-communication/section/c4d45556-9489-4451-8120-42545a6746b4)
+- [ ] Read [OTC 2.12 - Oral Presentations](https://alg.manifoldapp.org/read/open-technical-communication/section/e4660e24-17b6-4dcc-ac00-717c13bd30ff)
+- [ ] Read [OTC 4.1 – Report Design](https://alg.manifoldapp.org/read/open-technical-communication/section/967e506e-8d1e-4baf-bee2-8ace4ebf80f1) and skim 4.3-4.5
 
-### 🎯 Check your understanding
-
-- [ ] Reading Quiz Week 14
 
 ## 🥣 Prepare for class
 
-- [ ] Bring two copies of your business report - one for Monday, one for Wednesday (you may edit in between if you want to)
+- [ ] Reading Quiz Week 13
 
-## ☕ Monday
 
-- Peer review day - business reports
-  
-## 🐪 Wednesday
+## 🌮 Tuesday
 
-- Peer review day - business reports
+- [Presentations](../slides/13-reports-presentations.qmd).
 
-##  🏋️ Practice your skills
 
-- [ ] Make edits from peer review comments
+## 🌩️ Thursday 🔨 
+
+- In class activity: Analyzing government reports
+
+
+##  🏋 Practice Your Skills
+
+- [ ] Rough draft of business report submitted along with to-do list
+- (not turned in) Prepare business presentation slides/talk
 

@@ -1,7 +1,7 @@
 ---
 title: "Welcome to Stat 349!"
 format: revealjs
-theme: ./libs/unl/inverse.scss
+# theme: ./libs/unl/inverse.scss
 includes:
   in_header: ./libs/unl/header.html
 lib_dir: ./libs

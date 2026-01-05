@@ -1,7 +1,7 @@
 ---
 title: "Week 5 - Arguments & Business Reports"
 format: revealjs
-theme: ./libs/unl/inverse.scss
+# theme: ./libs/unl/inverse.scss
 includes:
   in_header: ./libs/unl/header.html
 lib_dir: ./libs

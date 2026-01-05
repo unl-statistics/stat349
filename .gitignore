@@ -43,3 +43,5 @@ _quarto_internal_scss_error.scss
 report-examples
 _freeze
 student-assignments
+
+**/*.quarto_ipynb

@@ -1,26 +1,35 @@
 # Week 1: Getting Started
-  
+
+
+
+January 12-18, 2026
+
 ## 📖 Reading
 
-  - [ ] Read the [syllabus](../syllabus.pdf)
+- [ ] Read the [syllabus](../syllabus.pdf)
 - [ ] Read the [course support](../course-support.qmd) page
 - [ ] Read [OTC Chapter 1](https://alg.manifoldapp.org/read/open-technical-communication/section/0debb16b-f623-4033-a47b-973d65ab0961)
 
-### 🎯 Check your understanding
 
+## 🥣 Prepare for class
+
+- Ensure R, python, quarto, RStudio are installed on your machine ([Computer setup help](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html))
+- Print out and bring cheat sheets for R and python (if you need them)
 - [ ] Reading Quiz Week 1
 
-## ☕ Monday
 
-MLK day
-  
-## 🐪 Wednesday
+## 🌮 Tuesday
 
-- [Introduction](../slides/01-intro.qmd)
-- Syllabus
+- Discussion: Syllabus
+- Github Introduction
+
+
+## 🌩️ Thursday 🔨 
+
 - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
 
-##  🏋️ Practice your skills
+
+##  🏋 Practice Your Skills
 
 - [ ] Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)
 - [ ] Submit a link to your github pages portfolio site

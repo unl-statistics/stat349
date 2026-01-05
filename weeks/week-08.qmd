@@ -1,25 +1,36 @@
 # Week 8: Charts, Tables, and Diagrams
-  
+
+
+
+March 02-08, 2026
+
 ## 📖 Reading
 
-  - [ ] Read [SWHR 4 - Tables and Figures](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/tables-and-figures.html)
+- [ ] Read [SWHR 4 - Tables and Figures](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/tables-and-figures.html)
 - [ ] Read [OTC 4.7 – Tables, Charts, and Graphs](https://alg.manifoldapp.org/read/open-technical-communication/section/b1ca4069-52c9-49bb-9e47-510858d4e6f3)
 - [ ] Read [OTC 4.8 - Graphics](https://alg.manifoldapp.org/read/open-technical-communication/section/d03f3bce-d354-4976-b0cd-63a1476416c2)
+- [ ] (re)-Read [Creating Good Charts](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html) from Scientific Computing in R and Python
 
-### 🎯 Check your understanding
+
+## 🥣 Prepare for class
 
 - [ ] Reading Quiz Week 8
+- Find the worst data visualization published by a **news organization** within the last month and bring it with you to class.
 
-## ☕ Monday
+
+## 🌮 Tuesday
 
 - [Tables and charts](../slides/08-tables-charts.qmd)
-  
-## 🐪 Wednesday
+
+
+## 🌩️ Thursday 🔨 
 
 - [Diagrams](../slides/08-diagrams.qmd)
 - Peer review time – User guide
 
-##  🏋️ Practice your skills
 
+##  🏋 Practice Your Skills
+
+- User Guide Due Friday, March 5, 6pm
 - (not turned in) Work on analysis and relevant graphics for your business report
 

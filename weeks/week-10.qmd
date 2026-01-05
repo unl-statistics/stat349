@@ -1,24 +1,15 @@
-# Week 10: Introductions and Conclusions
-  
-## 📖 Reading
+# Week 10: Spring Break
 
-  - [ ] Read [SWHR 2 - Introduction](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/introduction-section.html)
-- [ ] Read [SWHR 6 - Discussion](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/discussion-section.html)
 
-### 🎯 Check your understanding
 
-- [ ] Reading Quiz Week 10
+March 16-22, 2026
 
-## ☕ Monday
 
-- [Conclusion](../slides/10-conclusion.qmd)
-- [Quarto Formatting](../slides/10-quarto-features.qmd)
-  
-## 🐪 Wednesday
 
-- [Introductions](../slides/10-intro.qmd)
 
-##  🏋️ Practice your skills
 
-- [ ] Draft of introduction and conclusion sections of business report
+
+
+
+
 

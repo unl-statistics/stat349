@@ -1,28 +1,31 @@
-# Week 11: Abstracts & Summaries
-  
+# Week 11: Introductions and Conclusions
+
+
+
+March 23-29, 2026
+
 ## 📖 Reading
 
-  - [ ] Read [SWHR 7 - Title & Abstract](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/title-and-abstract.html)
-- [ ] Read [OTC Chapter 2.11 – Titles, Abstracts, Introductions, Conclusions](https://alg.manifoldapp.org/read/open-technical-communication/section/a31e38b4-7f1f-4e9c-b8e9-9485d74d04b8)
+- [ ] Read [SWHR 2 - Introduction](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/introduction-section.html)
+- [ ] Read [SWHR 6 - Discussion](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/discussion-section.html)
 
-### 🎯 Check your understanding
-
-- [ ] Reading Quiz Week 11
 
 ## 🥣 Prepare for class
 
-- [ ] For Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?
+- [ ] Reading Quiz Week 10
 
-## ☕ Monday
 
-- [Abstracts](../slides/11-abstract.qmd)
-  
-## 🐪 Wednesday
+## 🌮 Tuesday
 
-- [Executive Summaries](../slides/11-exec-summary.qmd)
-- Class Discussion
+- [Conclusion](../slides/10-conclusion.qmd) - [Quarto Formatting](../slides/10-quarto-features.qmd)
 
-##  🏋️ Practice your skills
 
-- [ ] Draft of executive summary of business report
+## 🌩️ Thursday 🔨 
+
+- [Introductions](../slides/10-intro.qmd)
+
+
+##  🏋 Practice Your Skills
+
+- [ ] Draft of introduction and conclusion sections of business report
 

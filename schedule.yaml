@@ -150,6 +150,7 @@ schedule:
         - [Writing good “how to” guides for others](../slides/07-user-guides.qmd)
     assignments: |
         - [ ] Work on your user guide (due next week!)
+        - User guide rough draft can be turned in for feedback if desired (02-27, 6pm deadline)
 
   - week: 8
     name: Charts, Tables, and Diagrams
@@ -169,6 +170,7 @@ schedule:
         - [Diagrams](../slides/08-diagrams.qmd)
         - Peer review time – User guide
     assignments: |
+        - User Guide Due Friday, March 5, 6pm
         - (not turned in) Work on analysis and relevant graphics for your business report
 
   - week: 9
@@ -225,8 +227,6 @@ schedule:
         - [Executive Summaries](../slides/11-exec-summary.qmd) - Class Discussion
     assignments: |
         - [ ] Draft of executive summary of business report
-
-
 
   - week: 13
     name: Countering Logical Fallacies
@@ -291,6 +291,37 @@ schedule:
         - Business presentations
     assignments: |
         - [ ] Slides for business presentation '
-        - [ ] Business report due!
-        - [ ] Procedure/method guide, business report, and business presentation slides added to your portfolio.
+        - [ ] Business report due (05-01, 6pm)
+        - [ ] User guide, business report, and business presentation slides added to your portfolio.
         - [ ] Portfolio link submitted to Canvas.
+
+
+
+important-course-dates:
+  - name: User Guide Draft Due (02-27)
+    id: project-draft
+    date: "2026-02-27"
+    time: "6 pm"
+  - name: User Guide Due (03-05)
+    id: project
+    date: "2026-03-05"
+    time: "6 pm"
+  - name: Business Report Draft Due (04-17)
+    id: project-draft
+    date: "2026-04-17"
+    time: "6 pm"
+  - name: Business Report Presentations 
+    id: project
+    date: "2026-04-27"
+    time: "Class"
+  - name: Business Report Presentations
+    id: project
+    date: "2026-04-29"
+    time: "Class"
+  - name: Business Report Due (05-01)
+    id: project
+    date: "2026-05-01"
+    time: "6 pm"
+  - name: Portfolio Due (05-01)
+    id: project
+    date: "2026-05-01"

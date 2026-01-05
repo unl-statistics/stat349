@@ -1,30 +1,34 @@
 # Week 2: Communicating You!
-  
+
+
+
+January 19-25, 2026
+
 ## 📖 Reading
 
-  - [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
+- [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
 
-
-### 🎯 Check your understanding
-
-- [ ] Reading Quiz Week 2
 
 ## 🥣 Prepare for class
 
-- [ ] For Wednesday: Draft CV and cover letter (bring 2 printed copies)
+- [ ] Reading Quiz Week 2
+- Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
+- [ ] Bring 2 PRINTED copies of your CV and Cover Letter for peer review
 
-## ☕ Monday
+
+## 🌮 Tuesday
+
+- MLK Day - No class
+
+
+## 🌩️ Thursday 🔨 
 
 - [CV/cover letter important components](../slides/02-cv-cover-letter.qmd)
-- Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
-
-  
-## 🐪 Wednesday
-
-- Peer Review CV/cover letter
 - Discuss how to give good feedback (based on [ETC](https://wisc.pb.unizin.org/opencomp/chapter/providing-good-feedback/))
+- Peer Review CV/cover letter
 
-##  🏋️ Practice your skills
+
+##  🏋 Practice Your Skills
 
 - [ ] Add CV/cover letter to portfolio
 - [ ] Choose an Annual Review article from those offered – no duplicates

@@ -1,32 +1,37 @@
 # Week 3: References
-  
+
+
+
+January 26-01, 2026
+
 ## 📖 Reading
 
-  - [ ] Read [OTC Chapter 5.6 – References](https://alg.manifoldapp.org/read/open-technical-communication/section/d9202f07-41a2-4dc9-8b29-486e164c1775)  
-- [ ] Read [OTC Chapter 3 - Ethics](https://alg.manifoldapp.org/read/open-technical-communication/section/8b530f4b-5942-4071-845a-0a138601da10)  
+- [ ] Read [OTC Chapter 5.6 – References](https://alg.manifoldapp.org/read/open-technical-communication/section/d9202f07-41a2-4dc9-8b29-486e164c1775)
+- [ ] Read [OTC Chapter 3 - Ethics](https://alg.manifoldapp.org/read/open-technical-communication/section/8b530f4b-5942-4071-845a-0a138601da10)
 - [ ] Read [ETC Annoying Ways People Use Sources](https://wisc.pb.unizin.org/opencomp/chapter/annoying-ways-people-use-sources/)
 - [ ] Practical Tutorial: [Connecting Rstudio + Zotero](https://gsverhoeven.github.io/post/zotero-rmarkdown-csl/)
 
-### 🎯 Check your understanding
-
-- [ ] Reading Quiz Week 3
 
 ## 🥣 Prepare for class
 
+- [ ] Reading Quiz Week 3
 - [ ] For Monday: [Download and Install Zotero](https://www.zotero.org/) citation manager and [Zotero Connector](https://www.zotero.org/download/connectors) for your preferred browser
 
-## ☕ Monday
 
-- Citation Managers – Demonstrate Zotero features 
+## 🌮 Tuesday
 
-  
-## 🐪 Wednesday
-
+- Citation Managers – Demonstrate Zotero features
+- Scavenger hunt - Citation manager options
 - How to read technical reports and academic articles
+
+
+## 🌩️ Thursday 🔨 
+
 - How to summarize (without ChatGPT)
 - [Slides](../slides/03-reading-summarizing.qmd)
 
-##  🏋️ Practice your skills
 
-- [ ] Create an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article.
+##  🏋 Practice Your Skills
+
+- [ ] Create an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article, and justify your choices.
 

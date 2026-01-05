@@ -1,26 +1,31 @@
 # Week 9: Results
-  
+
+
+
+March 09-15, 2026
+
 ## 📖 Reading
 
-  - [ ] Read [SWHR 5 - Results](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/results-section.html)
+- [ ] Read [SWHR 5 - Results](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/results-section.html)
 
-### 🎯 Check your understanding
-
-- [ ] Reading Quiz Week 9
 
 ## 🥣 Prepare for class
 
-- [ ] For Wednesday: On Canvas, find the [**Activity: IgNobel Results Sections** page](https://canvas.unl.edu/courses/192983/pages). Download your assigned paper and skim through it to prepare for class.
+- [ ] Reading Quiz Week 9
+- [ ] For Wednesday: On Canvas, find the [**Activity: IgNobel Results Sections** page](https://canvas.unl.edu/courses/192983/pages). Download your assigned paper and read it **before** class.
 
-## ☕ Monday
+
+## 🌮 Tuesday
 
 - [Countering misconceptions in results](../slides/09-misconceptions.qmd)
-  
-## 🐪 Wednesday
+
+
+## 🌩️ Thursday 🔨 
 
 - [IgNobel Results Section Activity](https://canvas.unl.edu/courses/192983/pages) activity (Canvas) and class discussion
 
-##  🏋️ Practice your skills
+
+##  🏋 Practice Your Skills
 
 - [ ] Draft of results section of business report with relevant graphics/visual aids
 
