@@ -294,19 +294,25 @@ schedule:
         - [ ] Business report due (05-01, 6pm)
         - [ ] User guide, business report, and business presentation slides added to your portfolio.
         - [ ] Portfolio link submitted to Canvas.
-
+        
+  - week: 17
+    name: Finals Week
+    start: 2026-05-04
+    end: 2026-05-08
+    assignments: |
+        - Business presentations during Final Exam period
 
 
 important-course-dates:
-  - name: User Guide Draft Due (02-27)
+  - name: User Guide Draft
     id: project-draft
     date: "2026-02-27"
     time: "6 pm"
-  - name: User Guide Due (03-05)
+  - name: User Guide
     id: project
     date: "2026-03-05"
     time: "6 pm"
-  - name: Business Report Draft Due (04-17)
+  - name: Business Report Draft
     id: project-draft
     date: "2026-04-17"
     time: "6 pm"
@@ -318,10 +324,13 @@ important-course-dates:
     id: project
     date: "2026-04-29"
     time: "Class"
-  - name: Business Report Due (05-01)
+  - name: Business Report
     id: project
     date: "2026-05-01"
     time: "6 pm"
-  - name: Portfolio Due (05-01)
+  - name: Portfolio
     id: project
     date: "2026-05-01"
+  - name: Business Report Presentations
+    id: project
+    date: "2026-05-08"

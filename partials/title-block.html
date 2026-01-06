@@ -27,6 +27,11 @@ $if(email)$<dt>E-mail</dt><dd><a href="mailto:$email$">$email$</a></dd>$endif$
 $endif$ 
 <dt>Time</dt><dd>$if(classhours)$$classhours$$else$TBD$endif$</dd>
 <dt>Location</dt><dd>$if(classroom)$$classroom$$else$TBD$endif$</dd>
-<dt>Student Hours</dt>$if(officehours)$$officehours$$else$TBD$endif$
+$if(officehours)$
+<dt>Office Hours</dt><dd>$officehours$</dd>
+$endif$
+$if(final)$
+<dt>Final Exam</dt><dd>$final$</dd>
+$endif$
 </dl>
 </header>
