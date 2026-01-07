@@ -20,16 +20,17 @@ $endif$
 <dl>
 $if(instructor)$
 <dt>Instructor</dt><dd>$for(instructor)$$instructor$$sep$, $endfor$</dd>
-<dl>
+$endif$ 
 $if(email)$<dt>E-mail</dt><dd><a href="mailto:$email$">$email$</a></dd>$endif$ 
 <dt>Office</dt><dd>$if(office)$$office$$else$TBD$endif$</dd>
-</dl>
-$endif$ 
-<dt>Time</dt><dd>$if(classhours)$$classhours$$else$TBD$endif$</dd>
-<dt>Location</dt><dd>$if(classroom)$$classroom$$else$TBD$endif$</dd>
 $if(officehours)$
 <dt>Office Hours</dt><dd>$officehours$</dd>
 $endif$
+</dl>
+<dl>
+<dt>Time</dt><dd>$if(classhours)$$classhours$$else$TBD$endif$</dd>
+<dt>Location</dt><dd>$if(classroom)$$classroom$$else$TBD$endif$</dd>
+$if(site)$<dt>Course Website</dt><dd>$site$</dd>$endif$
 $if(final)$
 <dt>Final Exam</dt><dd>$final$</dd>
 $endif$

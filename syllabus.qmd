@@ -4,10 +4,14 @@ from: markdown+emoji
 fontsize: 11pt
 geometry: margin=1in
 number-sections: true
-number-depth: 4
+number-depth: 3
 format:
   html:
     keep-tex: false
+    theme:
+      light: [flatly, theme.scss, _variables-flatly.scss]
+      dark: [darkly, theme.scss, _variables-darkly.scss]
+    mainfont: "Atkinson Hyperlegible"
     template-partials:
     - partials/title-block.html
   pdf:
@@ -29,7 +33,10 @@ office: Hardin 343D
 classroom: Hardin ANSC A228-East
 classhours: MW 10:00 - 11:15
 final: May 8, 7:30-9:30 AM
+site: unl-statistics.github.io/stat349
 ---
+
+# Critical Information {-}
 
 ```{r setup}
 #| include: false
@@ -60,21 +67,23 @@ Textbooks are free/open/online
 
 Policy Summary (@sec-policies): 
 
+-   Communicate early and often (@sec-expectations), especially if you're having trouble with something.
+    Include the right details (@sec-tech-issues) when asking for help.
 -   Your grade: 10% Quizzes/Participation, 20% User Guide Project, 20% Business Report Project, 50% Homework (@sec-grading).
 -   Come to class, unless you're sick (@sec-illness). You get one excuse-free absence.
 -   Weekly reading (and quiz) must be done before class. (@sec-reading-quiz)
 -   Keep up with the work as assigned to allow time for effective revision (@sec-homework).
 -   Up to two homework assignments may be resubmitted for regrading (@sec-resubmission).
--   Communicate early and often, especially if you're having trouble with something (@sec-expectations).
-    Include the right details (@sec-tech-issues) when asking for help.
--   **AI** use must be disclosed, cited, with the full transcript and a diff between AI output and your submission. Be prepared to explain your thought process via oral exam. 
+-   Do not plan to travel during Finals Week -- you must be present for project presentations (@sec-projects).
+-   **AI** use must be disclosed, cited, with the full transcript and a diff between AI output and your submission. Be prepared to explain your thought process via oral exam (@sec-ai). 
 
 ```{r calendar}
 #| echo: false
 #| eval: true
 #| warning: false
-#| fig-width: 8
-#| fig-height: 3.5
+#| fig-width: 10
+#| fig-height: 4
+#| out-width: "90%"
 #| fig-align: center
 #| fig-cap: "Course Calendar"
 #| fig-pos: ht
@@ -85,10 +94,10 @@ class_cal
 # Tentative Schedule
 
 This schedule is **tentative** and **subject to change** as the semester progresses.
-Students are expected to read the corresponding textbook chapter (linked in Canvas) **before coming to class**.
+Students are expected to read the corresponding textbook chapter (linked on the course website) **before coming to class**.
 For the most part, for each week's topic, there will be one or two corresponding textbook chapters.
 
-```{r schedule, eval = T, echo = F, fig.pos = 'h'}
+```{r}
 #| label: schedule
 #| cache: false
 #| echo: false
@@ -170,15 +179,43 @@ A grade of 77.6 will receive a C+.
 A grade of 73.9 will receive a C-.
 Anything below a 61 will receive an F.
 
-## Reading Quizzes {#sec-reading-quiz}
 
-You will have weekly reading assignments which introduce the weekly focus area and provide different perspectives on the material.
-Some of these perspectives will be covered in class lectures and activities, but some will not be covered explicitly and are provided to expose you to different approaches and opinions.
+## Expectations {#sec-expectations}
 
-Readings are linked on the course webpage for each week as well as on Canvas. 
+You can expect me to:
 
-A weekly reading quiz on Canvas will be due before the first class of the week (10am on Mondays). 
-This serves as a low-stakes grade-based reminder to do the weekly reading before class. 
+-   reply to emails within 48 hours during the week (72 hours on weekends)
+-   be available in class to assist with assignments
+-   be available by appointment (office hours) for additional help or discussion
+
+I expect you to:
+
+-   Be respectful and considerate of everyone in the class
+-   Engage in class discussions with civility and in good faith
+-   Complete the assigned reading, reading quiz, and any other activities before class
+-   Engage with the material and your classmates during class
+-   Seek help when you do not understand the material
+-   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
+-   Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
+
+
+Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail.
+Individuals who detract from an atmosphere of civility and respect will be removed from the conversation and/or the classroom as applicable.
+
+
+### Technical Issues {#sec-tech-issues}
+
+If you have technical problems with Quarto, RStudio/Positron, or GitHub, send me an email with:
+
+-   any files necessary to replicate the issue
+-   a description of what you have tried, and
+-   a description of what you think should happen
+-   as much detail as possible: 
+    - Text copied (CTRL-C) from error messages
+    - screenshots (not cell phone pics)
+
+If you have problems with your computer, operating system, etc. that are not specific to this class, please consult ITS/HelpDesk first.
+
 
 ## Attendance & Participation
 
@@ -189,7 +226,7 @@ Consistent, repeated failure to attend class or actively participate in the cour
 One absence is allowed without any reduction in participation score - no excuse is necessary! Please do not email me when you use your one excuse-free absence. 
 
 The university requires me to hold class through the entire semester, which means that you are required to participate in class for the entire semester. 
-Any non-university-excused travel you choose to do that results in missing class can, and probably will, affect your grade. This includes the final exam period - travel is not an excuse for failure to attend the final exam, if one is offered.
+Any non-university-excused travel you choose to do that results in missing class can, and probably will, affect your grade. This includes the final exam period - travel is not an excuse for failure to attend the final exam, if activities are planned for that period. 
 
 ### Illness {#sec-illness}
 
@@ -204,6 +241,16 @@ If you need to miss more than 1-2 classes for illness, I reserve the right to re
 If in-person classes are canceled, you will be notified of the instructional continuity plan for this class by Canvas Announcement.
 In most circumstances where there is power in the Lincoln area, we will hold class via Zoom if the university cancels class.
 You will be held to the same participation standards on Zoom as you are in person, and participation and attendance will be graded accordingly, with some allowance for disruption at the individual level where circumstances warrant.
+
+## Reading Quizzes {#sec-reading-quiz}
+
+You will have weekly reading assignments which introduce the weekly focus area and provide different perspectives on the material.
+Some of these perspectives will be covered in class lectures and activities, but some will not be covered explicitly and are provided to expose you to different approaches and opinions.
+
+Readings are linked on the course webpage for each week. 
+
+A weekly reading quiz on Canvas will be due before the first class of the week (10am on Mondays). 
+This serves as a low-stakes grade-based reminder to do the weekly reading before class. 
 
 ## Homework {#sec-homework}
 
@@ -271,7 +318,7 @@ I spend the extra time grading resubmissions because it reinforces your learning
 I reserve the right to adjust the resubmission policy over the course of the semester to ensure that it is meeting the objective of reinforcing your learning.\
 I reserve the right to limit or penalize resubmissions if it becomes clear that the current policy does not promote learning of the material and/or support the course objectives.
 
-## Projects
+## Projects {#sec-projects}
 
 You will complete two major projects in this course: a business-style report and presentation, and a user guide for a software package or implementation decision relating to a specific topic.
 The business report will include a presentation and will be compiled over the second half of the semester.
@@ -295,7 +342,19 @@ If there are too many projects to present during Week 15 of the course, we will 
 All students must be present for project presentations, and failure to attend your peers' presentations will result in a reduction of your project score and your participation score for the course.
 
 
-## Evaluation Criteria
+
+## Evaluation and Academic Integrity {#sec-ai}
+
+Students are expected to adhere to guidelines concerning academic dishonesty outlined in [Article III B.1 of the University's Student Code of Conduct](http://stuafs.unl.edu/dos/code).
+The Statistics Department [academic integrity and grade appeal policy is available here](https://statistics.unl.edu/grade-appeals-and-academic-integrity-policy).
+
+The policies detailed below are policies I have defined in addition to the university and departmental policies. 
+
+**Summary**: I can, at my discretion, give students an oral exam on their submitted assignment that can replace the graded assignment itself.
+That is, if you submitted it, you should be able to defend, discuss, and justify your work.
+
+
+### Evaluation Criteria
 
 In every assignment, discussion, and written component of this class, you are expected to **demonstrate that you are intellectually engaging with the material**.
 I will evaluate you based on this engagement, which means that technically correct but low effort answers which do not demonstrate engagement or understanding will receive no credit.
@@ -304,25 +363,8 @@ When you answer questions in this class, your goal is to show that you either un
 If you did not achieve this goal, then your answer is incomplete, regardless of whether or not it is technically correct.
 This is not to encourage you to add unnecessary complexity to your answer - simple, elegant solutions are always preferable to unwieldy, complex solutions that accomplish the same task.
 
-Grammar and spelling are important, as is your ability to communicate technical information clearly in a written format; both of these criteria will be used in addition to assignment-specific rubrics to evaluate your work.
+Grammar and spelling are important, as is your ability to communicate technical information clearly in a written format; both of these criteria will be used **in addition to assignment-specific rubrics** to evaluate your work.
 
-## Class Conduct
-
-You will be engaging with your classmates and me through in-person discussions and collaborative activities.
-It is expected that everyone will engage in these interactions civilly and in good faith.
-Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail.
-Individuals who detract from an atmosphere of civility and respect will be removed from the conversation and/or the classroom as applicable.
-
-
-## Academic Integrity and Class Conduct {#sec-ai}
-
-Students are expected to adhere to guidelines concerning academic dishonesty outlined in [Article III B.1 of the University's Student Code of Conduct](http://stuafs.unl.edu/dos/code).
-The Statistics Department [academic integrity and grade appeal policy is available here](https://statistics.unl.edu/grade-appeals-and-academic-integrity-policy).
-
-In addition, I have developed additional policies relating to code and written information for my class, detailed below.
-
-**Summary**: I can, at my discretion, give students an oral exam on their submitted assignment that can replace the graded assignment itself.
-That is, if you submitted it, you should be able to defend, discuss, and justify your work.
 
 ### Code
 
@@ -353,42 +395,6 @@ You must document the following:
 -   the full sequence of prompts and responses
 -   any additional inputs you provided to the AI system (documents, images, etc.)
 -   a "diff" between the AI responses and your submission, showing exactly what was generated by the AI system and what you changed. If you are using quarto, you can use the `diff` command line tool to get this (you may have to fix headers) after you've pasted the AI text into its own document.
-
-## Expectations {#sec-expectations}
-
-You can expect me to:
-
--   reply to emails within 48 hours during the week (72 hours on weekends)
--   be available in class to assist with assignments
--   be available by appointment (office hours) for additional help or discussion
-
-I expect you to:
-
--   Be respectful and considerate of everyone in the class
-
--   Complete the assigned reading, reading quiz, and any other activities before class
-
--   Engage with the material and your classmates during class
-
--   Seek help when you do not understand the material
-
--   Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.
-
--   Do your own troubleshooting before contacting me for help (and mention things you've already tried when you do ask for help!)
-
-
-### Technical Issues {#sec-tech-issues}
-
-If you have technical problems with Quarto, RStudio/Positron, or GitHub, send me an email with:
-
--   any files necessary to replicate the issue
--   a description of what you have tried, and
--   a description of what you think should happen
--   as much detail as possible: 
-    - Text copied (CTRL-C) from error messages
-    - screenshots (not cell phone pics)
-
-If you have problems with your computer, operating system, etc. that are not specific to this class, please consult ITS/HelpDesk first.
 
 # Required University Information
 

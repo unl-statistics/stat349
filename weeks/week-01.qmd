@@ -13,9 +13,10 @@ January 12-18, 2026
 
 ## 🥣 Prepare for class
 
-- Ensure R, python, quarto, RStudio are installed on your machine ([Computer setup help](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html))
-- Print out and bring cheat sheets for R and python (if you need them)
-- [ ] Reading Quiz Week 1
+- Ensure R, python, quarto, RStudio are installed on your machine 
+  - [Software Installation guide](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html)
+- Print out and bring [cheat sheets](../files/cheat-sheets-combined.pdf) for R and python (if you need them)
+- [ ] Reading Quiz Week 1 (for Wednesday)
 
 
 ## 🌮 Tuesday
@@ -32,5 +33,4 @@ January 12-18, 2026
 ##  🏋 Practice Your Skills
 
 - [ ] Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)
-- [ ] Submit a link to your github pages portfolio site
 

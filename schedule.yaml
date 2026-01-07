@@ -17,9 +17,10 @@ schedule:
         - [ ] Read the [course support](../course-support.qmd) page
         - [ ] Read [OTC Chapter 1](https://alg.manifoldapp.org/read/open-technical-communication/section/0debb16b-f623-4033-a47b-973d65ab0961)
     prepare: |
-        - Ensure R, python, quarto, RStudio are installed on your machine ([Computer setup help](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html))
-        - Print out and bring cheat sheets for R and python (if you need them)
-        - [ ] Reading Quiz Week 1
+        - Ensure R, python, quarto, RStudio are installed on your machine 
+          - [Software Installation guide](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html)
+        - Print out and bring [cheat sheets](../files/cheat-sheets-combined.pdf) for R and python (if you need them)
+        - [ ] Reading Quiz Week 1 (for Wednesday)
     class1: |
         - Discussion: Syllabus
         - Github Introduction
@@ -27,7 +28,7 @@ schedule:
         - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
     assignments: |
         - [ ] Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)
-        - [ ] Submit a link to your github pages portfolio site
+        
   - week: 2
     name: Communicating You!
     start: 2026-01-19
@@ -292,8 +293,6 @@ schedule:
     assignments: |
         - [ ] Slides for business presentation '
         - [ ] Business report due (05-01, 6pm)
-        - [ ] User guide, business report, and business presentation slides added to your portfolio.
-        - [ ] Portfolio link submitted to Canvas.
         
   - week: 17
     name: Finals Week
@@ -328,9 +327,6 @@ important-course-dates:
     id: project
     date: "2026-05-01"
     time: "6 pm"
-  - name: Portfolio
-    id: project
-    date: "2026-05-01"
   - name: Business Report Presentations
     id: project
     date: "2026-05-08"

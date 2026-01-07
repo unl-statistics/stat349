@@ -4,21 +4,28 @@ title: "Setting Up a Github.io portfolio"
 
 # Steps
 
-1.  Create a github repository that is named "portfolio" and located at <https://github.com/%3Cusername%3E/portfolio>
+1.  Create a github repository that is named "portfolio" and located at `https://github.com/username/portfolio` (where username is your github username). 
 
-2.  Create a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following [these directions](https://quarto.org/docs/websites/website-blog.html).
+2.  Create a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following [these directions](https://quarto.org/docs/websites/website-blog.html).    
+![](images/portfolio-setup-blog-rstudio.gif){fig-alt="A gif showing the steps to set up a quarto blog in RStudio: File > New Project > Quarto blog > name the blog and select the folder. Include a git repository. > hit ok."}
 
-3. Push your site (along with the `/docs` folder containing the rendered site) to GitHub. You can customize it later.
+3. Change the build directory in `_quarto.yml` to `docs`    
+![](images/portfolio-build-dir-change.png){width="30%" fig-alt="A screenshot of _quarto.yml with changes: Add a line under project: that is indented two spaces and says 'output-dir: docs'. Save the file."}
 
-4.  On GitHub, set your site to render to the docs directory ([detailed instructions](https://quarto.org/docs/publishing/github-pages.html)).
+4. Build the default site (customize it later) with Ctrl/Cmd + Shift + B.
 
-    -   [ ] Change your `_quarto.yml` file to have `output-dir: docs`
+
+5. Add the files to git, including the /docs folder. Push your site (along with the `/docs` folder containing the rendered site) to GitHub. You can customize it later.    
+![](images/portfolio-commit-files.png){fig-alt="A screenshot of all of the files you will commit to git on the first run, after you have compiled your blog." width="50%"}
+
+6.  On GitHub, set your site to render to the docs directory ([detailed instructions](https://quarto.org/docs/publishing/github-pages.html)).
+
     -   [ ] Create an empty `.nojekyll` file in the main directory of your project repository
     -   [ ] Configure your GitHub repository (Settings -\> Pages -\> Build and Deployment) to publish the `/docs` directory of the `main` branch of your repository.
     
-5. Check the rendered site (it should have an address of https://<username>.github.io/portfolio) -- it may take ~5 minutes to appear after you've completed step 4.
+7. Check the rendered site (it should have an address of https://<username>.github.io/portfolio) -- it may take ~5 minutes to appear after you've completed step 4.
 
-6. Make any tweaks to your site that you'd like to make -- add pictures, a biography, posts about your interests, etc.
+8. Make any tweaks to your site that you'd like to make -- add pictures, a biography, posts about your interests, etc.
     - The goal of this is to have a place where you can showcase your coursework for future employers. Keep it professional (but it's ok to have some information about your hobbies, if you want to show that dimension of yourself). 
     - The department may eventually want to showcase some of these sites so that incoming students can see what current students accomplish as part of our courses. We will ask permission first!
 
@@ -28,7 +35,7 @@ title: "Setting Up a Github.io portfolio"
 Rendering your site will be done manually -- thus, each time you want to update the actual site, you'll have to run the following commands in the **terminal** (not the R console):
 
 ```         
-quarto render
+quarto render # Can also be accomplished by Ctrl/Cmd + Shift + B
 git add docs
 git commit -m "Publish site to docs/"
 git push

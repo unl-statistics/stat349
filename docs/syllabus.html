@@ -73,14 +73,45 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <meta property="og:title" content="Stat 349 Syllabus – STAT 349 - Spring 2025">
 <meta property="og:description" content="Homepage for STAT 349 - Technical Communication.">
 <meta property="og:image" content="https://unl-statistics.github.io/stat349/images/calendar.png">
 <meta property="og:site_name" content="STAT 349 - Spring 2025">
 <meta property="og:image:height" content="768">
-<meta property="og:image:width" content="1536">
+<meta property="og:image:width" content="1920">
 <meta name="twitter:title" content="Stat 349 Syllabus – STAT 349 - Spring 2025">
 <meta name="twitter:description" content="Homepage for STAT 349 - Technical Communication.">
 <meta name="twitter:image" content="https://unl-statistics.github.io/stat349/images/twitter-card.png">
@@ -434,34 +465,42 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tldr" id="toc-tldr" class="nav-link active" data-scroll-target="#tldr">TL;DR</a></li>
-  <li><a href="#textbook" id="toc-textbook" class="nav-link" data-scroll-target="#textbook"><span class="header-section-number">1</span> Textbook</a></li>
-  <li><a href="#class-schedule-topic-outline" id="toc-class-schedule-topic-outline" class="nav-link" data-scroll-target="#class-schedule-topic-outline"><span class="header-section-number">2</span> Class Schedule &amp; Topic Outline</a></li>
-  <li><a href="#course-description" id="toc-course-description" class="nav-link" data-scroll-target="#course-description"><span class="header-section-number">3</span> Course Description</a></li>
-  <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives"><span class="header-section-number">4</span> Course Objectives</a></li>
-  <li><a href="#course-policies" id="toc-course-policies" class="nav-link" data-scroll-target="#course-policies"><span class="header-section-number">5</span> Course Policies</a>
+  <li><a href="#critical-information" id="toc-critical-information" class="nav-link active" data-scroll-target="#critical-information">Critical Information</a></li>
+  <li><a href="#tentative-schedule" id="toc-tentative-schedule" class="nav-link" data-scroll-target="#tentative-schedule"><span class="header-section-number">1</span> Tentative Schedule</a></li>
+  <li><a href="#course-description" id="toc-course-description" class="nav-link" data-scroll-target="#course-description"><span class="header-section-number">2</span> Course Description</a></li>
+  <li><a href="#course-objectives" id="toc-course-objectives" class="nav-link" data-scroll-target="#course-objectives"><span class="header-section-number">3</span> Course Objectives</a></li>
+  <li><a href="#sec-policies" id="toc-sec-policies" class="nav-link" data-scroll-target="#sec-policies"><span class="header-section-number">4</span> Course Policies</a>
   <ul class="collapse">
-  <li><a href="#assessmentgrading" id="toc-assessmentgrading" class="nav-link" data-scroll-target="#assessmentgrading"><span class="header-section-number">5.1</span> Assessment/Grading</a></li>
-  <li><a href="#course-components" id="toc-course-components" class="nav-link" data-scroll-target="#course-components"><span class="header-section-number">5.2</span> Course Components</a>
+  <li><a href="#sec-grading" id="toc-sec-grading" class="nav-link" data-scroll-target="#sec-grading"><span class="header-section-number">4.1</span> Assessment/Grading</a></li>
+  <li><a href="#sec-expectations" id="toc-sec-expectations" class="nav-link" data-scroll-target="#sec-expectations"><span class="header-section-number">4.2</span> Expectations</a>
   <ul class="collapse">
-  <li><a href="#reading-quizzes" id="toc-reading-quizzes" class="nav-link" data-scroll-target="#reading-quizzes"><span class="header-section-number">5.2.1</span> Reading Quizzes</a></li>
-  <li><a href="#attendance-participation" id="toc-attendance-participation" class="nav-link" data-scroll-target="#attendance-participation"><span class="header-section-number">5.2.2</span> Attendance &amp; Participation</a></li>
-  <li><a href="#homework" id="toc-homework" class="nav-link" data-scroll-target="#homework"><span class="header-section-number">5.2.3</span> Homework</a></li>
-  <li><a href="#projects" id="toc-projects" class="nav-link" data-scroll-target="#projects"><span class="header-section-number">5.2.4</span> Projects</a></li>
+  <li><a href="#sec-tech-issues" id="toc-sec-tech-issues" class="nav-link" data-scroll-target="#sec-tech-issues"><span class="header-section-number">4.2.1</span> Technical Issues</a></li>
   </ul></li>
-  <li><a href="#expectations" id="toc-expectations" class="nav-link" data-scroll-target="#expectations"><span class="header-section-number">5.3</span> Expectations</a>
+  <li><a href="#attendance-participation" id="toc-attendance-participation" class="nav-link" data-scroll-target="#attendance-participation"><span class="header-section-number">4.3</span> Attendance &amp; Participation</a>
   <ul class="collapse">
-  <li><a href="#sec-tech-issues" id="toc-sec-tech-issues" class="nav-link" data-scroll-target="#sec-tech-issues"><span class="header-section-number">5.3.1</span> Technical Issues</a></li>
+  <li><a href="#sec-illness" id="toc-sec-illness" class="nav-link" data-scroll-target="#sec-illness"><span class="header-section-number">4.3.1</span> Illness</a></li>
+  <li><a href="#inclement-weather" id="toc-inclement-weather" class="nav-link" data-scroll-target="#inclement-weather"><span class="header-section-number">4.3.2</span> Inclement Weather</a></li>
   </ul></li>
-  <li><a href="#evaluation-criteria" id="toc-evaluation-criteria" class="nav-link" data-scroll-target="#evaluation-criteria"><span class="header-section-number">5.4</span> Evaluation Criteria</a></li>
-  <li><a href="#academic-integrity-and-class-conduct" id="toc-academic-integrity-and-class-conduct" class="nav-link" data-scroll-target="#academic-integrity-and-class-conduct"><span class="header-section-number">5.5</span> Academic Integrity and Class Conduct</a>
+  <li><a href="#sec-reading-quiz" id="toc-sec-reading-quiz" class="nav-link" data-scroll-target="#sec-reading-quiz"><span class="header-section-number">4.4</span> Reading Quizzes</a></li>
+  <li><a href="#sec-homework" id="toc-sec-homework" class="nav-link" data-scroll-target="#sec-homework"><span class="header-section-number">4.5</span> Homework</a>
   <ul class="collapse">
-  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code"><span class="header-section-number">5.5.1</span> Code</a></li>
-  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing"><span class="header-section-number">5.5.2</span> Writing</a></li>
-  <li><a href="#generative-ai" id="toc-generative-ai" class="nav-link" data-scroll-target="#generative-ai"><span class="header-section-number">5.5.3</span> Generative AI</a></li>
+  <li><a href="#sec-late-hwk" id="toc-sec-late-hwk" class="nav-link" data-scroll-target="#sec-late-hwk"><span class="header-section-number">4.5.1</span> Late Work Policy</a></li>
+  <li><a href="#sec-resubmission" id="toc-sec-resubmission" class="nav-link" data-scroll-target="#sec-resubmission"><span class="header-section-number">4.5.2</span> Resubmission Policy</a></li>
+  </ul></li>
+  <li><a href="#sec-projects" id="toc-sec-projects" class="nav-link" data-scroll-target="#sec-projects"><span class="header-section-number">4.6</span> Projects</a>
+  <ul class="collapse">
+  <li><a href="#late-projects" id="toc-late-projects" class="nav-link" data-scroll-target="#late-projects"><span class="header-section-number">4.6.1</span> Late Projects</a></li>
+  <li><a href="#project-presentation-attendance" id="toc-project-presentation-attendance" class="nav-link" data-scroll-target="#project-presentation-attendance"><span class="header-section-number">4.6.2</span> Project Presentation Attendance</a></li>
+  </ul></li>
+  <li><a href="#sec-ai" id="toc-sec-ai" class="nav-link" data-scroll-target="#sec-ai"><span class="header-section-number">4.7</span> Evaluation and Academic Integrity</a>
+  <ul class="collapse">
+  <li><a href="#evaluation-criteria" id="toc-evaluation-criteria" class="nav-link" data-scroll-target="#evaluation-criteria"><span class="header-section-number">4.7.1</span> Evaluation Criteria</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code"><span class="header-section-number">4.7.2</span> Code</a></li>
+  <li><a href="#writing" id="toc-writing" class="nav-link" data-scroll-target="#writing"><span class="header-section-number">4.7.3</span> Writing</a></li>
+  <li><a href="#generative-ai" id="toc-generative-ai" class="nav-link" data-scroll-target="#generative-ai"><span class="header-section-number">4.7.4</span> Generative AI</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#required-university-information" id="toc-required-university-information" class="nav-link" data-scroll-target="#required-university-information"><span class="header-section-number">6</span> Required University Information</a></li>
+  <li><a href="#required-university-information" id="toc-required-university-information" class="nav-link" data-scroll-target="#required-university-information"><span class="header-section-number">5</span> Required University Information</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/unl-statistics/stat349/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="syllabus.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
@@ -475,192 +514,181 @@ ul.task-list li input[type="checkbox"] {
 
 <dl>
 <dt>Instructor</dt><dd>Susan Vanderplas</dd>
-<dl>
-<dt>E-mail</dt><dd><a href="mailto:susan.vanderplas@unl.edu">susan.vanderplas@unl.edu</a></dd> 
-<dt>Office</dt><dd>Hardin 343D</dd>
-</dl>
  
+<dt>E-mail</dt><dd><a href="mailto:svanderplas2@nebraska.edu">svanderplas2@nebraska.edu</a></dd> 
+<dt>Office</dt><dd>Hardin 343D</dd>
+<dt>Office Hours</dt><dd><p>By appointment. Schedule at <a href="https://calendly.com/vanderplas/office-hours">calendly.com/vanderplas/office-hours</a></p></dd>
+</dl>
+<dl>
 <dt>Time</dt><dd>MW 10:00 - 11:15</dd>
 <dt>Location</dt><dd>Hardin ANSC A228-East</dd>
-<dt>Student Hours</dt>Schedule an appointment at&nbsp;<a href="https://calendly.com/vanderplas/office-hours">https://calendly.com/vanderplas/office-hours</a>
+<dt>Course Website</dt><dd>unl-statistics.github.io/stat349</dd>
+<dt>Final Exam</dt><dd>May 8, 7:30-9:30 AM</dd>
 </dl>
 </header>
 
 
-<section id="tldr" class="level1 unnumbered">
-<h1 class="unnumbered">TL;DR</h1>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 44%">
-<col style="width: 20%">
-<col style="width: 33%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>Assignments</th>
-<th>Weight</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Reading Quizzes &amp; Participation</td>
-<td>10%</td>
-<td><p>Reading links on Canvas</p>
-<p>Quiz due before class</p></td>
-</tr>
-<tr class="even">
-<td>Homework</td>
-<td>50%</td>
-<td><p>Weekly(ish)</p>
-<p>~1 week to work on it</p>
-<p>Due at 6pm on Fridays</p></td>
-</tr>
-<tr class="odd">
-<td>User Guide/Documentation</td>
-<td>20%</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Business Report &amp; Presentation</td>
-<td>20%</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<section id="critical-information" class="level1 unnumbered">
+<h1 class="unnumbered">Critical Information</h1>
+<p>Textbooks are free/open/online</p>
 <ul>
-<li><p>Come to class, unless you’re sick (see <a href="#sec-illness" class="quarto-xref">Section&nbsp;5.2.2.1</a>). You get one excuse-free absence.</p></li>
-<li><p>Keep up with the work as assigned, even if nothing is turned in. It is important to allow time for revision and for your thinking to mature.</p></li>
-<li><p>Up to two homework assignments may be resubmitted for regrading (<a href="#sec-resubmission" class="quarto-xref">Section&nbsp;5.2.3.1</a>).</p></li>
-<li><p>Communicate early and often. Especially if you’re having trouble with something. See <a href="#sec-tech-issues" class="quarto-xref">Section&nbsp;5.3.1</a> for how to include the right details when asking for help.</p></li>
+<li><a href="https://alg.manifoldapp.org/read/open-technical-communication/section/0debb16b-f623-4033-a47b-973d65ab0961">Open Technical Communication (OTC)</a> by Tijerina, Powell, Arnett, Logan, and Race</li>
+<li><a href="https://wisc.pb.unizin.org/opencomp/front-matter/intro/">Entering the Conversation (ETC)</a> ed.&nbsp;by Salmon</li>
+<li><a href="https://ehsanx.github.io/Scientific-Writing-for-Health-Research/">Scientific Writing for Health Research (SWHR)</a> by Karim, Jeong, and Yusuf</li>
 </ul>
-</section>
-<section id="textbook" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Textbook</h1>
-<p>This course will primarily use an OER (open educational resource) for technical writing, <a href="https://alg.manifoldapp.org/projects/open-technical-communication">Open Technical Communication</a>, by Tijerina, Powell, Arnett, Logan, &amp; Race.</p>
-<p>Other useful resources have been added to the course canvas page. All books and resources used in this course are available through the UNL library free of charge.</p>
-</section>
-<section id="class-schedule-topic-outline" class="level1" data-number="2">
-<h1 data-number="2"><span class="header-section-number">2</span> Class Schedule &amp; Topic Outline</h1>
-<p>This schedule is <strong>tentative</strong> and <strong>subject to change</strong> as the semester progresses. Students are expected to read the corresponding textbook chapter (linked in Canvas) <strong>before coming to class</strong>. For the most part, for each week’s topic, there will be one or two corresponding textbook chapters.</p>
+<p>Policy Summary (<a href="#sec-policies" class="quarto-xref">Section&nbsp;4</a>):</p>
+<ul>
+<li>Communicate early and often (<a href="#sec-expectations" class="quarto-xref">Section&nbsp;4.2</a>), especially if you’re having trouble with something. Include the right details (<a href="#sec-tech-issues" class="quarto-xref">Section&nbsp;4.2.1</a>) when asking for help.</li>
+<li>Your grade: 10% Quizzes/Participation, 20% User Guide Project, 20% Business Report Project, 50% Homework (<a href="#sec-grading" class="quarto-xref">Section&nbsp;4.1</a>).</li>
+<li>Come to class, unless you’re sick (<a href="#sec-illness" class="quarto-xref">Section&nbsp;4.3.1</a>). You get one excuse-free absence.</li>
+<li>Weekly reading (and quiz) must be done before class. (<a href="#sec-reading-quiz" class="quarto-xref">Section&nbsp;4.4</a>)</li>
+<li>Keep up with the work as assigned to allow time for effective revision (<a href="#sec-homework" class="quarto-xref">Section&nbsp;4.5</a>).</li>
+<li>Up to two homework assignments may be resubmitted for regrading (<a href="#sec-resubmission" class="quarto-xref">Section&nbsp;4.5.2</a>).</li>
+<li>Do not plan to travel during Finals Week – you must be present for project presentations (<a href="#sec-projects" class="quarto-xref">Section&nbsp;4.6</a>).</li>
+<li><strong>AI</strong> use must be disclosed, cited, with the full transcript and a diff between AI output and your submission. Be prepared to explain your thought process via oral exam (<a href="#sec-ai" class="quarto-xref">Section&nbsp;4.7</a>).</li>
+</ul>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/calendar.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="images/calendar.png" class="img-fluid figure-img" style="width:90.0%"></p>
 <figcaption>Course Calendar</figcaption>
 </figure>
 </div>
 </div>
 </div>
+</section>
+<section id="tentative-schedule" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Tentative Schedule</h1>
+<p>This schedule is <strong>tentative</strong> and <strong>subject to change</strong> as the semester progresses. Students are expected to read the corresponding textbook chapter (linked on the course website) <strong>before coming to class</strong>. For the most part, for each week’s topic, there will be one or two corresponding textbook chapters.</p>
 <div class="cell">
 <div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<caption>Tentative schedule of class topics</caption>
+<table class="table table-striped table-hover caption-top table-sm small">
 <thead>
 <tr class="header">
-<th style="text-align: right;">Week</th>
-<th style="text-align: left;">Topic</th>
-<th style="text-align: left;">Important Dates</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Week</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Start</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Topic</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Due</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td style="text-align: right;">1</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-01.html"> Getting Started </a></td>
+<td style="text-align: left;">01-12</td>
+<td style="text-align: left;">Getting Started</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">2</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-02.html"> Communicating You! </a></td>
+<td style="text-align: left;">01-19</td>
+<td style="text-align: left;">Communicating You!</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">3</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-03.html"> References </a></td>
+<td style="text-align: left;">01-26</td>
+<td style="text-align: left;">References</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-04.html"> Organizing Information </a></td>
+<td style="text-align: left;">02-02</td>
+<td style="text-align: left;">Organizing Information</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">5</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-05.html"> Making an Argument </a></td>
+<td style="text-align: left;">02-09</td>
+<td style="text-align: left;">Making an Argument</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-06.html"> Problem Statements &amp; Data </a></td>
+<td style="text-align: left;">02-16</td>
+<td style="text-align: left;">Problem Statements &amp; Data</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">7</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-07.html"> Methods &amp; Procedures </a></td>
-<td style="text-align: left;">User Guide Draft Due (02-27)</td>
+<td style="text-align: left;">02-23</td>
+<td style="text-align: left;">Methods &amp; Procedures</td>
+<td style="text-align: left;">User Guide Draft (02-27)</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">8</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-08.html"> Charts, Tables, and Diagrams </a></td>
-<td style="text-align: left;">User Guide Due (03-05)</td>
+<td style="text-align: left;">03-02</td>
+<td style="text-align: left;">Charts, Tables, and Diagrams</td>
+<td style="text-align: left;">User Guide (03-05)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">9</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-09.html"> Results </a></td>
+<td style="text-align: left;">03-09</td>
+<td style="text-align: left;">Results</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;"></td>
+<td style="text-align: left;">03-16</td>
 <td style="text-align: left;">Spring Break</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">10</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-10.html"> Introductions and Conclusions </a></td>
+<td style="text-align: left;">03-23</td>
+<td style="text-align: left;">Introductions and Conclusions</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">11</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-11.html"> Abstracts &amp; Summaries </a></td>
+<td style="text-align: left;">03-30</td>
+<td style="text-align: left;">Abstracts &amp; Summaries</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">12</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-12.html"> Countering Logical Fallacies </a></td>
+<td style="text-align: left;">04-06</td>
+<td style="text-align: left;">Countering Logical Fallacies</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">13</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-13.html"> Reports and Presentations </a></td>
-<td style="text-align: left;">Business Report Draft Due (04-17)</td>
+<td style="text-align: left;">04-13</td>
+<td style="text-align: left;">Reports and Presentations</td>
+<td style="text-align: left;">Business Report Draft (04-17)</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">14</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-14.html"> Editing and Revising Your Work </a></td>
+<td style="text-align: left;">04-20</td>
+<td style="text-align: left;">Editing and Revising Your Work</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">15</td>
-<td style="text-align: left;"><a href="https://unl-statistics.github.io/stat349/weeks/week-15.html"> In-Class Presentations </a></td>
-<td style="text-align: left;">Business Report Presentations<br>Business Report Due (05-01)<br>Portfolio Due (05-01)</td>
+<td rowspan="2" style="text-align: right; vertical-align: middle !important;">15</td>
+<td rowspan="2" style="text-align: left; vertical-align: middle !important;">04-27</td>
+<td rowspan="2" style="text-align: left; vertical-align: middle !important;">In-Class Presentations</td>
+<td style="text-align: left;">Business Report Presentations (04-27, 04-29)</td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;">Business Report (05-01)</td>
+</tr>
+<tr class="even">
 <td style="text-align: right;">16</td>
+<td style="text-align: left;">05-04</td>
 <td style="text-align: left;">Finals Week</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Business Report Presentations (05-08)</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </section>
-<section id="course-description" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Course Description</h1>
+<section id="course-description" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Course Description</h1>
 <p>Creation of research reports, business reports, and executive summaries. Presentation strategies, consequences of statistical modeling for real-world decision making, and countering common misconceptions and errors in statistical reasoning. Focus on real-world applications in research, business, and public service.</p>
 </section>
-<section id="course-objectives" class="level1" data-number="4">
-<h1 data-number="4"><span class="header-section-number">4</span> Course Objectives</h1>
+<section id="course-objectives" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Course Objectives</h1>
 <p>At the end of this course, students should know how to:</p>
 <ul>
 <li>Write a statistical business report and give a presentation on a topic using appropriate information flow, graphics, and provided templates.</li>
@@ -671,10 +699,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Write a CV/cover letter.</li>
 </ul>
 </section>
-<section id="course-policies" class="level1" data-number="5">
-<h1 data-number="5"><span class="header-section-number">5</span> Course Policies</h1>
-<section id="assessmentgrading" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="assessmentgrading"><span class="header-section-number">5.1</span> Assessment/Grading</h2>
+<section id="sec-policies" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Course Policies</h1>
+<section id="sec-grading" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-grading"><span class="header-section-number">4.1</span> Assessment/Grading</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -688,16 +716,16 @@ ul.task-list li input[type="checkbox"] {
 <td>10%</td>
 </tr>
 <tr class="even">
-<td>Homework</td>
-<td>50%</td>
-</tr>
-<tr class="odd">
 <td>User Guide/Documentation</td>
 <td>20%</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Business Report &amp; Presentation</td>
 <td>20%</td>
+</tr>
+<tr class="even">
+<td>Homework</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table>
@@ -746,29 +774,64 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>Interpretation of this table: A grade of 84.3 will receive a B. A grade of 77.6 will receive a C+. A grade of 73.9 will receive a C-. Anything below a 61 will receive an F.</p>
 </section>
-<section id="course-components" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="course-components"><span class="header-section-number">5.2</span> Course Components</h2>
-<section id="reading-quizzes" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="reading-quizzes"><span class="header-section-number">5.2.1</span> Reading Quizzes</h3>
-<p>You will have weekly reading assignments which introduce the weekly focus area and provide different perspectives on the material. Some of these perspectives will be covered in class lectures and activities, but some will not and are provided to expose you to different approaches and opinions.</p>
-<p>In order to motivate the importance of doing the weekly reading before class, you will be given a weekly reading quiz on Canvas which covers the requisite material. These quizzes will be due before the first class of the week (so, at 10am on Mondays).</p>
+<section id="sec-expectations" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-expectations"><span class="header-section-number">4.2</span> Expectations</h2>
+<p>You can expect me to:</p>
+<ul>
+<li>reply to emails within 48 hours during the week (72 hours on weekends)</li>
+<li>be available in class to assist with assignments</li>
+<li>be available by appointment (office hours) for additional help or discussion</li>
+</ul>
+<p>I expect you to:</p>
+<ul>
+<li>Be respectful and considerate of everyone in the class</li>
+<li>Engage in class discussions with civility and in good faith</li>
+<li>Complete the assigned reading, reading quiz, and any other activities before class</li>
+<li>Engage with the material and your classmates during class</li>
+<li>Seek help when you do not understand the material</li>
+<li>Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.</li>
+<li>Do your own troubleshooting before contacting me for help (and mention things you’ve already tried when you do ask for help!)</li>
+</ul>
+<p>Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail. Individuals who detract from an atmosphere of civility and respect will be removed from the conversation and/or the classroom as applicable.</p>
+<section id="sec-tech-issues" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="sec-tech-issues"><span class="header-section-number">4.2.1</span> Technical Issues</h3>
+<p>If you have technical problems with Quarto, RStudio/Positron, or GitHub, send me an email with:</p>
+<ul>
+<li>any files necessary to replicate the issue</li>
+<li>a description of what you have tried, and</li>
+<li>a description of what you think should happen</li>
+<li>as much detail as possible:
+<ul>
+<li>Text copied (CTRL-C) from error messages</li>
+<li>screenshots (not cell phone pics)</li>
+</ul></li>
+</ul>
+<p>If you have problems with your computer, operating system, etc. that are not specific to this class, please consult ITS/HelpDesk first.</p>
 </section>
-<section id="attendance-participation" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="attendance-participation"><span class="header-section-number">5.2.2</span> Attendance &amp; Participation</h3>
-<p>All students are expected to attend and fully participate in class. Participation grades will be determined based on a combination of attendance and participation. Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.</p>
-<p>One absence is allowed without any reduction in participation score - no excuse is necessary!</p>
-<section id="sec-illness" class="level4">
-<h4 class="anchored" data-anchor-id="sec-illness">Illness</h4>
+</section>
+<section id="attendance-participation" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="attendance-participation"><span class="header-section-number">4.3</span> Attendance &amp; Participation</h2>
+<p>All students are expected to attend and fully participate in class. Participation grades will be determined based on a combination of attendance checks and participation, including professionalism and engagement. Consistent, repeated failure to attend class or actively participate in the course will affect the participation portion of your grade.</p>
+<p>One absence is allowed without any reduction in participation score - no excuse is necessary! Please do not email me when you use your one excuse-free absence.</p>
+<p>The university requires me to hold class through the entire semester, which means that you are required to participate in class for the entire semester. Any non-university-excused travel you choose to do that results in missing class can, and probably will, affect your grade. This includes the final exam period - travel is not an excuse for failure to attend the final exam, if activities are planned for that period.</p>
+<section id="sec-illness" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="sec-illness"><span class="header-section-number">4.3.1</span> Illness</h3>
 <p>If you are feeling ill, please <strong>do not come to class</strong>. Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually. In the appointment reason field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.</p>
 <p>If you need to miss more than 1-2 classes for illness, I reserve the right to require documentation from Disability Services or a medical provider in order to continue using this substitute for attendance grades.</p>
 </section>
-<section id="inclement-weather" class="level4">
-<h4 class="anchored" data-anchor-id="inclement-weather">Inclement Weather</h4>
+<section id="inclement-weather" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="inclement-weather"><span class="header-section-number">4.3.2</span> Inclement Weather</h3>
 <p>If in-person classes are canceled, you will be notified of the instructional continuity plan for this class by Canvas Announcement. In most circumstances where there is power in the Lincoln area, we will hold class via Zoom if the university cancels class. You will be held to the same participation standards on Zoom as you are in person, and participation and attendance will be graded accordingly, with some allowance for disruption at the individual level where circumstances warrant.</p>
 </section>
 </section>
-<section id="homework" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="homework"><span class="header-section-number">5.2.3</span> Homework</h3>
+<section id="sec-reading-quiz" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-reading-quiz"><span class="header-section-number">4.4</span> Reading Quizzes</h2>
+<p>You will have weekly reading assignments which introduce the weekly focus area and provide different perspectives on the material. Some of these perspectives will be covered in class lectures and activities, but some will not be covered explicitly and are provided to expose you to different approaches and opinions.</p>
+<p>Readings are linked on the course webpage for each week.</p>
+<p>A weekly reading quiz on Canvas will be due before the first class of the week (10am on Mondays). This serves as a low-stakes grade-based reminder to do the weekly reading before class.</p>
+</section>
+<section id="sec-homework" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-homework"><span class="header-section-number">4.5</span> Homework</h2>
 <p>Weekly formative assignments (assignments meant to help you practice skills) will be given throughout the semester. The only way to learn the skills taught in this course is to practice - writing, citing, doing research, summarizing, and so on.</p>
 <ul>
 <li><p>You will typically have one week to work on each of the assignments.</p></li>
@@ -776,13 +839,21 @@ ul.task-list li input[type="checkbox"] {
 <li><p>I will attempt to grade formative assignments within a week of the specified due date.</p></li>
 <li><p>Formative assessments may be resubmitted for partial credit subject to the terms of the resubmission policy below.</p></li>
 </ul>
-<p>s#### Late Work Policy</p>
+<p>It is critical to keep up with the work as assigned in this course. While it is possible to churn out a term paper in 4 hours of madness, the writing quality of said term paper will be sub-optimal at best. This course is designed to help you learn how to write and communicate effectively, which requires planning, thought, and revision. These steps are not compatible with last-minute fever-dream writing.</p>
+<section id="sec-late-hwk" class="level3" data-number="4.5.1">
+<h3 data-number="4.5.1" class="anchored" data-anchor-id="sec-late-hwk"><span class="header-section-number">4.5.1</span> Late Work Policy</h3>
 <p>Late assignments will be accepted only under extenuating circumstances, and only if you have contacted me <strong>prior</strong> to the assignment due date and received permission to hand the assignment in late. I reserve the right not to grade (or to assign a 0 to) any assignments received after the assignment due date.</p>
-<p>You may submit a homework assignment that was not submitted in time as a resubmission within one week of the assignment due date, assuming it meets the conditions below.</p>
-<section id="sec-resubmission" class="level4">
-<h4 class="anchored" data-anchor-id="sec-resubmission">Resubmission Policy</h4>
+<p>Logistics: Assignments are due at 6 pm on Fridays. There is a grace period of uncertain length between the assignment submission deadline and when I start grading the assignment - if it is submitted by the time I start grading, I don’t need to know it was late.</p>
+<ul>
+<li>Turned in at 6:05 pm on Friday, I start grading at 2 pm on Sunday <span class="math inline">\(\rightarrow\)</span> fine. If you email me and alert me that your assignment was late by 5 minutes (or 12 hours), I may fill the 0 in for efficiency’s sake.</li>
+<li>Turned in at 9:30 am on Sunday, I graded everything Saturday afternoon <span class="math inline">\(\rightarrow\)</span> 0 for the assignment (unless you have permission, etc.). Use the comment box on the Canvas assignment to request a “resubmission” to trigger the resubmission policy.</li>
+</ul>
+<p>You may submit a homework assignment that was not submitted on time as a resubmission, if you submit it within one week of the assignment due date, assuming it meets the conditions below.</p>
+</section>
+<section id="sec-resubmission" class="level3" data-number="4.5.2">
+<h3 data-number="4.5.2" class="anchored" data-anchor-id="sec-resubmission"><span class="header-section-number">4.5.2</span> Resubmission Policy</h3>
 <p>Learning how to write is a process that requires an attempt and then subsequent improvement. Do not be afraid to make mistakes! I will allow you to re-submit two formative/homework assignments (one time each). You have a week from the time the assignment is returned to you to resubmit it for a regrade.</p>
-<p>I am happy to provide feedback on revisions (after submission) without a grade update, as long as I have time.</p>
+<p>I am happy to provide feedback on revisions (after submission) without a grade update, subject to other constraints on my time.</p>
 <p><strong>Note: The resubmission policy does NOT apply to quizzes, projects, or exams.</strong></p>
 <p>This policy is subject to the following constraints:</p>
 <ul>
@@ -803,67 +874,41 @@ I reserve the right to adjust the resubmission policy over the course of the sem
 I reserve the right to limit or penalize resubmissions if it becomes clear that the current policy does not promote learning of the material and/or support the course objectives.</p>
 </section>
 </section>
-<section id="projects" class="level3" data-number="5.2.4">
-<h3 data-number="5.2.4" class="anchored" data-anchor-id="projects"><span class="header-section-number">5.2.4</span> Projects</h3>
+<section id="sec-projects" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="sec-projects"><span class="header-section-number">4.6</span> Projects</h2>
 <p>You will complete two major projects in this course: a business-style report and presentation, and a user guide for a software package or implementation decision relating to a specific topic. The business report will include a presentation and will be compiled over the second half of the semester. The user guide is due a week before Spring Break.</p>
-<section id="late-projects" class="level4">
-<h4 class="anchored" data-anchor-id="late-projects">Late Projects</h4>
+<section id="late-projects" class="level3" data-number="4.6.1">
+<h3 data-number="4.6.1" class="anchored" data-anchor-id="late-projects"><span class="header-section-number">4.6.1</span> Late Projects</h3>
 <p>Writing is an iterative process that requires time - it’s good to write a draft and step away for a day before you revise it. As a result, projects in this course have been designed to encourage this iteration. You have at least 3 weeks to work on both projects outside of class.</p>
 <p>With this in mind, late projects will not be accepted without evidence of severe, ongoing (&gt;1 week) extenuating circumstances of a severity that must be documented with your adviser and student services. In addition, to access an accommodation for late project work, you must provide a GitHub commit history that shows ongoing engagement with the project before the circumstance occurred. This policy is intended to discourage you from waiting until the last minute to complete your projects, as this does not allow you the time to practice iterative writing and revisions and builds bad writing habits.</p>
 </section>
+<section id="project-presentation-attendance" class="level3" data-number="4.6.2">
+<h3 data-number="4.6.2" class="anchored" data-anchor-id="project-presentation-attendance"><span class="header-section-number">4.6.2</span> Project Presentation Attendance</h3>
+<p><strong>DO NOT</strong> make travel plans that assume you will not have to attend the final exam period.</p>
+<p>If there are too many projects to present during Week 15 of the course, we will continue with project presentations during the final exam period. All students must be present for project presentations, and failure to attend your peers’ presentations will result in a reduction of your project score and your participation score for the course.</p>
 </section>
 </section>
-<section id="expectations" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="expectations"><span class="header-section-number">5.3</span> Expectations</h2>
-<p>You can expect me to:</p>
-<ul>
-<li>reply to emails within 48 hours during the week (72 hours on weekends)</li>
-<li>be available in class to assist with assignments</li>
-<li>be available by appointment (office hours) for additional help or discussion</li>
-</ul>
-<p>I expect you to:</p>
-<ul>
-<li><p>Complete the assigned reading, reading quiz, and any other stated preparations before class</p></li>
-<li><p>Engage with the material and your classmates during class</p></li>
-<li><p>Seek help when you do not understand the material</p></li>
-<li><p>Communicate promptly if you anticipate that you will have trouble meeting deadlines or participating in a portion of the course.</p></li>
-<li><p>Do your own troubleshooting before contacting me for help (and mention things you’ve already tried when you do ask for help!)</p></li>
-<li><p>Be respectful and considerate of everyone in the class</p></li>
-</ul>
-<section id="sec-tech-issues" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="sec-tech-issues"><span class="header-section-number">5.3.1</span> Technical Issues</h3>
-<p>If you have technical problems with Quarto, RStudio/Positron, or GitHub, send me an email with:</p>
-<ul>
-<li>screenshots (not cell phone pictures),</li>
-<li>text copied (CTRL-C) error messages, and</li>
-<li>a description of what you have tried, and</li>
-<li>a description of what you think should happen</li>
-</ul>
-<p>If you have problems with your computer, operating system, etc., please consult ITS/HelpDesk first.</p>
-</section>
-</section>
-<section id="evaluation-criteria" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="evaluation-criteria"><span class="header-section-number">5.4</span> Evaluation Criteria</h2>
+<section id="sec-ai" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="sec-ai"><span class="header-section-number">4.7</span> Evaluation and Academic Integrity</h2>
+<p>Students are expected to adhere to guidelines concerning academic dishonesty outlined in <a href="http://stuafs.unl.edu/dos/code">Article III B.1 of the University’s Student Code of Conduct</a>. The Statistics Department <a href="https://statistics.unl.edu/grade-appeals-and-academic-integrity-policy">academic integrity and grade appeal policy is available here</a>.</p>
+<p>The policies detailed below are policies I have defined in addition to the university and departmental policies.</p>
+<p><strong>Summary</strong>: I can, at my discretion, give students an oral exam on their submitted assignment that can replace the graded assignment itself. That is, if you submitted it, you should be able to defend, discuss, and justify your work.</p>
+<section id="evaluation-criteria" class="level3" data-number="4.7.1">
+<h3 data-number="4.7.1" class="anchored" data-anchor-id="evaluation-criteria"><span class="header-section-number">4.7.1</span> Evaluation Criteria</h3>
 <p>In every assignment, discussion, and written component of this class, you are expected to <strong>demonstrate that you are intellectually engaging with the material</strong>. I will evaluate you based on this engagement, which means that technically correct but low effort answers which do not demonstrate engagement or understanding will receive no credit.</p>
 <p>When you answer questions in this class, your goal is to show that you either understand the material or are actively engaging with it. If you did not achieve this goal, then your answer is incomplete, regardless of whether or not it is technically correct. This is not to encourage you to add unnecessary complexity to your answer - simple, elegant solutions are always preferable to unwieldy, complex solutions that accomplish the same task.</p>
-<p>Grammar and spelling are important, as is your ability to communicate technical information clearly in a written format; both of these criteria will be used in addition to assignment-specific rubrics to evaluate your work.</p>
+<p>Grammar and spelling are important, as is your ability to communicate technical information clearly in a written format; both of these criteria will be used <strong>in addition to assignment-specific rubrics</strong> to evaluate your work.</p>
 </section>
-<section id="academic-integrity-and-class-conduct" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="academic-integrity-and-class-conduct"><span class="header-section-number">5.5</span> Academic Integrity and Class Conduct</h2>
-<p>You will be engaging with your classmates and me through in-person discussions and collaborative activities. It is expected that everyone will engage in these interactions civilly and in good faith. Discussion and disagreement are important parts of the learning process, but it is important that mutual respect prevail. Individuals who detract from an atmosphere of civility and respect will be removed from the conversation or the classroom.</p>
-<p>Students are expected to adhere to guidelines concerning academic dishonesty outlined in <a href="http://stuafs.unl.edu/dos/code">Article III B.1 of the University’s Student Code of Conduct</a>. The Statistics Department <a href="https://statistics.unl.edu/grade-appeals-and-academic-integrity-policy">academic integrity and grade appeal policy is available here</a>.</p>
-<p>In addition, I have developed additional policies relating to code and written information for my class, detailed below.</p>
-<p><strong>Summary</strong>: I can, at my discretion, give students an oral exam on their submitted assignment that can replace the graded assignment itself. That is, if you submitted it, you should be able to defend, discuss, and justify your work.</p>
-<section id="code" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="code"><span class="header-section-number">5.5.1</span> Code</h3>
+<section id="code" class="level3" data-number="4.7.2">
+<h3 data-number="4.7.2" class="anchored" data-anchor-id="code"><span class="header-section-number">4.7.2</span> Code</h3>
 <p>You must be able to explain how the logic works for any code you turn in. This means that code you obtained from e.g. StackOverflow is fine to use if you can explain it and modify it for the purposes of this class, but if you cannot explain your code you will not get credit for the assignment. This is in line with what is generally considered acceptable behavior in programming - reuse is fine (subject to the code’s license) but you must be able to fully explain and modify any code you did not write yourself. You should also provide a link to the source of your code (or even the logic behind your code) - this is useful both for my information and for future you, in addition to being a good way to give attribution to the original author.</p>
 </section>
-<section id="writing" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="writing"><span class="header-section-number">5.5.2</span> Writing</h3>
+<section id="writing" class="level3" data-number="4.7.3">
+<h3 data-number="4.7.3" class="anchored" data-anchor-id="writing"><span class="header-section-number">4.7.3</span> Writing</h3>
 <p>With the proliferation of AI large language models, I reserve the right to replace project and homework grades with grades based on an oral discussion of your submissions. If you cannot explain the logic behind your submission, how you came to the approach you used, and identify the tradeoffs behind decisions you made, then you will not receive credit. LLMs can be a useful tool, but this course’s objectives are meant to assess your ability to communicate statistical information to a target audience effectively, not your ability to use LLMs. Fundamentally, you need to understand concepts and develop written fluency in technical language and statistical concepts to communicate effectively; generative AI solutions may hamper both of these goals if you rely on them too much.</p>
 </section>
-<section id="generative-ai" class="level3" data-number="5.5.3">
-<h3 data-number="5.5.3" class="anchored" data-anchor-id="generative-ai"><span class="header-section-number">5.5.3</span> Generative AI</h3>
+<section id="generative-ai" class="level3" data-number="4.7.4">
+<h3 data-number="4.7.4" class="anchored" data-anchor-id="generative-ai"><span class="header-section-number">4.7.4</span> Generative AI</h3>
 <p>Technical writing is more clear and concise than other types of writing, and nuances are extremely important. To date, generative AI is not particularly good at these goals - it is wordy, sometimes uses odd phrasing, and (most importantly), as a predictive model, it cannot structure its output for human understanding. It may be useful to leverage AI tools to ensure that your work conforms to grammar and style guidelines, but I very highly discourage the use of generative AI to actually write content. I highly prefer <em>your</em> writing, even with some mistakes, to the bland content generated by most LLMs.</p>
 <p><strong>Any use of generative AI must be disclosed</strong> in an appendix to your submission - this includes brainstorming, editing, using AI as spell-check/grammar-check, and so on. You must document the following:</p>
 <ul>
@@ -875,16 +920,9 @@ I reserve the right to limit or penalize resubmissions if it becomes clear that 
 </section>
 </section>
 </section>
-<section id="required-university-information" class="level1" data-number="6">
-<h1 data-number="6"><span class="header-section-number">6</span> Required University Information</h1>
+<section id="required-university-information" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Required University Information</h1>
 <p>See https://executivevc.unl.edu/academic-excellence/teaching-resources/course-policies.</p>
-<ul>
-<li><p>SSD: 117 Louise Pound Hall, 402-472-3787</p></li>
-<li><p>CAPS: 402-472-4750</p></li>
-<li><p>Emergency Alerts: https://unlalert.unl.edu</p></li>
-<li><p>Campus Police: 402-472-2222</p></li>
-<li><p>Title IX and Institutional Equity and Compliance: 128 Canfield Administration, titleixcoordinator@unl.edu, 402-472-3417</p></li>
-</ul>
 
 
 </section>
