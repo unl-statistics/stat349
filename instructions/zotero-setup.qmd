@@ -1,0 +1,204 @@
+---
+title: "Citation Manager Scavenger Hunt"
+lightbox: true
+---
+
+The goal of this exercise is to figure out how to set up your citation manager (Zotero) and integrate it into RStudio and your preferred browser.
+
+# Zotero Setup
+
+[Detailed instructions from the UNL Library](https://uofnebraska-my.sharepoint.com/:w:/g/personal/47548083_nebraska_edu/IQBaF4eNqJZlRq5lPHf85MgQAU9VCquOhSxrrIqrx_F5u6g?e=jY448Y)
+
+1.  Navigate to <https://www.zotero.org> and download Zotero for your operating system.
+
+2.  Launch Zotero.
+
+3.  Create a Zotero account and add your unl email (@unl.edu, @nebraska.edu, @huskers.unl.edu) to your Zotero account.\
+    This step is optional, but UNL pays for everyone to have storage for papers on Zotero's servers.
+    It can be convenient to be able to access your notes/papers from other machines, your tablet, etc.
+
+    a.  Log in to your Zotero account in the Zotero application.
+
+4.  Install the [Zotero Connector](https://www.zotero.org/download/) for your preferred Browser.\
+    In the past, students who preferred Safari have had some trouble setting it up.
+    I recommend Chrome/Firefox personally, as they seem to work seamlessly.
+
+5.  Add the "Better Bibtex for Zotero" plugin using [these instructions](https://retorque.re/zotero-better-bibtex/installation/index.html).
+
+6.  Customization.
+    The following setting tweaks will make it much easier to acquire scientific papers and to track your references/citations/etc.
+
+    -   In Zotero, go to Edit \> Settings \> General. Under File Handling, select the "Automatically attach..." and "Automatically retrieve..." options.
+    -   Scroll down in settings to Locate. For the custom library resolver, use `https://unl.primo.exlibrisgroup.com/openurl/01UON_LINC/01UON_LINC:UNL?`. This will allow Zotero to use UNL's library to search for papers, books, etc.
+    -   Configuring Better Bibtex:
+        -   Click on the Better Bibtex settings and scroll to the very bottom. Download [this file](betterbibtex-preferences.json) and import the settings into Zotero.
+        -   Under Settings -\> Export -\> Quick Copy, set the Item format to BibLatex. This will enable Ctrl-Shift-C copying the citation information.
+
+# Citation Formats
+
+Zotero will generate bibliography entries in any format you want.
+You may have used APA or MLA or Chicago or IEEE formats in previous classes.
+
+You can set the citation style in Edit \> Settings \> Cite \> Style Manager.
+New styles can be added using the link below the set of installed styles.
+
+1.  Locate the American Statistical Association style format and install it.
+    Select it as your default style manager.
+
+2.  Select the Citation Option "Include URLs of paper articles in references".
+
+3.  Take note of the citation styles that are already installed.
+    Are any familiar to you from other courses?
+
+# Adding Citations from the Web
+
+1.  Start by navigating to the [OTC textbook](https://alg.manifoldapp.org/projects/open-technical-communication) and click the Zotero connector button to add the textbook to your library.
+
+<!-- -->
+
+a.  What happens?
+    What type of entry does Zotero create for the OTC site?
+
+b.  Navigate to the ["About this book" section of the textbook](https://alg.manifoldapp.org/read/open-tc-2e-about-this-book/section/a705abc4-b9b3-4b04-b25b-b991d86fef92).
+    Create a new entry for the textbook chapter.
+    Is the entry type different?
+
+::: callout-note
+Zotero Connector does extremely well with some sites (usually journals, encyclopedias, etc.), but when sites appear to be generic websites, Zotero connector has trouble, and you may need to manually change the item type (e.g. to book) and add authors and other metadata.
+
+![](images/zotero-setup-entry.gif){fig-alt="An entry for a textbook was initially set up by Zotero connector as a webpage. The item type and authors/editors needs to change, along with the publisher and date."}
+:::
+
+2.  Navigate to the IgNobel award winning paper ["Ethanol ingestion affects flight performance and echolocation in Egyptian fruit bats".](https://www.sciencedirect.com/science/article/pii/S0376635710000446)
+
+-   You should have the option to sign in with your institution to access the full paper -- complete that process.
+-   Click the zotero connector button in your browser and ensure that the paper is added to your zotero library. Examine the metadata - is it complete and correct?
+
+3.  Open a text file. In Zotero, click on the entry for "Ethanol ingestion..." and then right click -\> Create citation. Select American Statistical Association as the format and bibliography (not citation). Paste the result into the text file.\
+    ![](images/zotero-copy-bib-entry.gif){fig-alt="Steps to copy a bibliography entry"}
+
+Does it match this?
+
+> Sánchez, F., Melcón, M., Korine, C., and Pinshow, B.
+> (2010), “Ethanol ingestion affects flight performance and echolocation in Egyptian fruit bats,” Behavioural Processes, 84, 555–558.
+> https://doi.org/10.1016/j.beproc.2010.02.006.
+
+You can change the format and copy-paste to get well-formatted bibliographies for other courses.
+If you click citation instead of bibliography, you can get the parenthetical citation.
+
+This is too manual for this class, though, so instead, we'll work with a .bib file that encodes the information, and quarto to write our documents.
+
+# Zotero and Quarto
+
+## Bibliography files
+
+A long, long time ago, well before quarto or rmarkdown, there was LaTeX -- a program that was primarily used for typesetting math.
+The format it used for handling bibliographies was BibLaTeX, or BibTeX (they're similar but technically not the same).
+[You can read a bit about BibLaTeX here](https://www.overleaf.com/learn/latex/Bibliography_management_with_biblatex) -- in particular for this class, the section on "The bibliography file" is useful and will show you what a bib file looks like.
+
+Bib files are perhaps even more painful to maintain by hand than an actual MLA/APA style bibliography.
+Luckily, Zotero handles that for us too.
+
+::: note
+This section relies heavily on having Quick Copy in Zotero (Settings -\> Export -\> Quick Copy, Item Format set to BibLaTeX) set to BibLaTeX.
+If you haven't set that, please do so now.
+
+![](images/zotero-bibtex-quick-copy.png){fig-alt="A screenshot of the Settings -> Export -> Quick copy menu in Zotero" width="50%"}
+:::
+
+For each project and some regular assignments in this class, we're going to have a .bib file with all of the references you collect.
+
+## Semi-Automated Bibliography File Assembly
+
+I find it easiest just to select the entries in Zotero and copy them into the bib file manually.
+This isn't full manual -- we don't have to write the bib entries ourselves (like I did in graduate school).
+Let's try that first before I show you other ways to connect RStudio to Zotero.
+
+1.  Create a text file called `references.bib` (make sure it has the extension `.bib` and not `.bib.txt`, particularly if your operating system hides file extensions from you).
+
+2.  In a browser, navigate to ["Cows painted with zebra-like striping can avoid biting fly attack"](https://doi.org/10.1371/journal.pone.0223447), another 2025 IgNobel award winning paper.
+    Use Zotero conneector to add the paper to Zotero, and make sure that all of the necessary fields[^1] are filled in correctly.
+
+[^1]: For a journal article: authors, journal, article title, publication date (year and month, at least), and URL or DOI.
+    If the journal has Volume, Issue, and pages, then those should be filled in as well, but some journals don't have those anymore as journals have stopped printing physical issues.
+    For a book, title, author(s), publisher, editor, publication date, and pages if you're referencing only part of the book.
+
+![Highlighted fields are essential -- title, authors, publication (with vol/issue/pages if available), date, and either DOI or URL.](images/zotero-cow-painting-fields.png){fig-alt="Screenshot of Zotero citation information from using Zotero Connector on the cow-painting paper. Critical fields are highlighted."}
+
+3.  Select both IgNobel papers in Zotero and use Ctrl/Cmd+Shift+C (Quick copy) to get the BibLaTeX entries. Paste them into your references.bib file. Your file should look something like the lines below. I have removed the abstracts and file locations from my file for brevity's sake.
+
+```{bash}
+#| echo: false
+
+cat references.bib
+```
+
+4.  Create a quarto file in RStudio or your IDE of choice. In the YAML metadata at the top, add `bibliography: references.bib` as an option. A minimal file with a title would look like this.
+
+```         
+---
+title: "Testing References"
+bibliography: references.bib
+---
+```
+
+5.  Add a sentence summarizing each of the two IgNobel papers. For the Cow stripe paper, use an inline reference -- `\@citation-key`, and for the Ethanol paper, use a parenthetical reference -- `(\@citation-key)`, where in both cases, `citation-key` is the first piece of the bib entry after `\@article{`. When you've finished, take a peek at mine to see if your citation style is similar.
+
+::: {.callout-note collapse="true"}
+### Sample quarto file text
+
+```         
+---
+title: "Testing References"
+bibliography: references.bib
+---
+
+To test whether zebra stripes prevent biting fly attacks,
+@kojimaCowsPaintedZebralike2019 painted cows with black-and-white,
+black-only, and no stripes and recorded the number of fly repelling behaviors
+and flies on the body and legs.
+
+To test how Egyptian fruit bats are affected by ethanol (which occurs
+naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and
+ethanol-free food, finding that flight speed, echolocation calls, and
+behavior were negatively impacted by the presence of ethanol
+(@sanchezEthanolIngestionAffects2010).
+
+```
+:::
+
+You can see the rendered file [here](test-zotero.html) -- notice that the in-line citations are automatically included along with a references section at the end of the file.
+
+6.  What if we want to change the citation format? IEEE uses numerical citations.
+
+-   We can get a [CSL (citation style language) file](https://github.com/citation-style-language/styles/blob/master/ieee.csl) for that format (click the download file button) and use it in our file. You will have to move the file from where it downloaded to the directory with your references and quarto files.
+-   Change the YAML metadata of your quarto file to include `csl: ieee.csl` (or whatever the name of the CSL file you downloaded is...)
+
+```         
+---
+title: "Testing References"
+bibliography: references.bib
+csl: ieee.csl
+---
+```
+
+-   Recompile your document. See how the references at the bottom and the citations in the text have changed. [My document](test-zotero-csl.qmd)
+
+## RStudio Visual Mode + Zotero
+
+For this method to work, you have to enable visual mode in RStudio and have Zotero open on your computer.
+
+1.  Open RStudio settings and click on the RMarkdown entry.
+    Select Citations from the tabs across the top.
+    Make sure that the Zotero data directory is correct and that you have your library checked (I have some shared libraries that you won't have).\
+    ![](images/rstudio-zotero-citation-settings.png){fig-alt="RStudio Rmarkdown Citation settings selection screenshot." width="50%"}
+
+2.  In your test quarto file, enable visual mode (the last line before the text file starts in the editor pane).
+
+3.  Start typing a sentence with a reference in it - you should only have to type the `\@` before autocomplete tries to help you out. If you were citing a new paper that wasn't already in references, the BibLaTeX entry would be copied into the references.bib file for you.    
+![](images/rstudio-zotero-autocomplete-visual.gif){fig-alt="A short gif showing RStudio's zotero connection function in visual mode."}
+
+4. Compilation works the same -- this just avoids the manual copy-paste step, if you are willing to use visual mode. 
+
+
+I don't like using a mouse, so I avoid visual mode when writing. The [RBBT](https://github.com/paleolimbot/rbbt) R package can be used to add similar functionality to RStudio in source mode, if you prefer to use that, but of course this requires that you compile with knitr, so there is a bit of a loss of the platform-agnostic behavior that makes quarto great. 

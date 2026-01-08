@@ -26,6 +26,7 @@ schedule:
         - Github Introduction
     class2: |
         - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
+        - Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
     assignments: |
         - [ ] Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)
         
@@ -37,7 +38,6 @@ schedule:
         - [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
     prepare: |
         - [ ] Reading Quiz Week 2
-        - Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
         - [ ] Bring 2 PRINTED copies of your CV and Cover Letter for peer review
     class1: |
         - MLK Day - No class

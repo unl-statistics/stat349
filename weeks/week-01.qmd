@@ -28,6 +28,7 @@ January 12-18, 2026
 ## 🌩️ Thursday 🔨 
 
 - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
+- Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
 
 
 ##  🏋 Practice Your Skills

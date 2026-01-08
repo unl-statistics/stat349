@@ -1213,7 +1213,7 @@
     "href": "weeks/week-02.html",
     "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "January 19-25, 2026\n\n\n\nRead OTC Chapter 2\n\n\n\n\n\nReading Quiz Week 2\nFind a quarto/LaTeX template for a CV and cover letter\nBring 2 PRINTED copies of your CV and Cover Letter for peer review\n\n\n\n\n\nMLK Day - No class\n\n\n\n\n\nCV/cover letter important components\nDiscuss how to give good feedback (based on ETC)\nPeer Review CV/cover letter\n\n\n\n\n\nAdd CV/cover letter to portfolio\nChoose an Annual Review article from those offered – no duplicates",
+    "text": "January 19-25, 2026\n\n\n\nRead OTC Chapter 2\n\n\n\n\n\nReading Quiz Week 2\nBring 2 PRINTED copies of your CV and Cover Letter for peer review\n\n\n\n\n\nMLK Day - No class\n\n\n\n\n\nCV/cover letter important components\nDiscuss how to give good feedback (based on ETC)\nPeer Review CV/cover letter\n\n\n\n\n\nAdd CV/cover letter to portfolio\nChoose an Annual Review article from those offered – no duplicates",
     "crumbs": [
       "Weekly materials",
       "Week 2 - Resumes"
@@ -1235,7 +1235,7 @@
     "href": "weeks/week-02.html#prepare-for-class",
     "title": "Week 2: Communicating You!",
     "section": "",
-    "text": "Reading Quiz Week 2\nFind a quarto/LaTeX template for a CV and cover letter\nBring 2 PRINTED copies of your CV and Cover Letter for peer review",
+    "text": "Reading Quiz Week 2\nBring 2 PRINTED copies of your CV and Cover Letter for peer review",
     "crumbs": [
       "Weekly materials",
       "Week 2 - Resumes"
@@ -1477,7 +1477,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 1: Getting Started",
     "section": "",
-    "text": "January 12-18, 2026\n\n\n\nRead the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\n\nEnsure R, python, quarto, RStudio are installed on your machine\n\nSoftware Installation guide\n\nPrint out and bring cheat sheets for R and python (if you need them)\nReading Quiz Week 1 (for Wednesday)\n\n\n\n\n\nDiscussion: Syllabus\nGithub Introduction\n\n\n\n\n\nSet up Quarto portfolio site\n\n\n\n\n\nFind a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)",
+    "text": "January 12-18, 2026\n\n\n\nRead the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\n\nEnsure R, python, quarto, RStudio are installed on your machine\n\nSoftware Installation guide\n\nPrint out and bring cheat sheets for R and python (if you need them)\nReading Quiz Week 1 (for Wednesday)\n\n\n\n\n\nDiscussion: Syllabus\nGithub Introduction\n\n\n\n\n\nSet up Quarto portfolio site\nFind a quarto/LaTeX template for a CV and cover letter\n\n\n\n\n\nFind a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)",
     "crumbs": [
       "Weekly materials",
       "Week 1 - Getting Started"
@@ -1521,7 +1521,7 @@
     "href": "weeks/week-01.html#thursday",
     "title": "Week 1: Getting Started",
     "section": "",
-    "text": "Set up Quarto portfolio site",
+    "text": "Set up Quarto portfolio site\nFind a quarto/LaTeX template for a CV and cover letter",
     "crumbs": [
       "Weekly materials",
       "Week 1 - Getting Started"
@@ -2923,5 +2923,54 @@
     "title": "Ethics and Statistical Misconduct",
     "section": "Discuss (30 minutes)",
     "text": "Discuss (30 minutes)\n\nWhat choices did Facebook make that were\n\nreasonable mistakes?\nethically problematic?\ndefensible?\n\nWhat choices did Cambridge Analytica make that were\n\nreasonable mistakes?\nethically problematic?\ndefensible?\n\nWhat impact do you think the ethical breaches had on the world?"
+  },
+  {
+    "objectID": "instructions/zotero-setup.html",
+    "href": "instructions/zotero-setup.html",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "",
+    "text": "The goal of this exercise is to figure out how to set up your citation manager (Zotero) and integrate it into RStudio and your preferred browser."
+  },
+  {
+    "objectID": "instructions/zotero-setup.html#bibliography-files",
+    "href": "instructions/zotero-setup.html#bibliography-files",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "Bibliography files",
+    "text": "Bibliography files\nA long, long time ago, well before quarto or rmarkdown, there was LaTeX – a program that was primarily used for typesetting math. The format it used for handling bibliographies was BibLaTeX, or BibTeX (they’re similar but technically not the same). You can read a bit about BibLaTeX here – in particular for this class, the section on “The bibliography file” is useful and will show you what a bib file looks like.\nBib files are perhaps even more painful to maintain by hand than an actual MLA/APA style bibliography. Luckily, Zotero handles that for us too.\n\nThis section relies heavily on having Quick Copy in Zotero (Settings -&gt; Export -&gt; Quick Copy, Item Format set to BibLaTeX) set to BibLaTeX. If you haven’t set that, please do so now.\n\n\nFor each project and some regular assignments in this class, we’re going to have a .bib file with all of the references you collect."
+  },
+  {
+    "objectID": "instructions/zotero-setup.html#semi-automated-bibliography-file-assembly",
+    "href": "instructions/zotero-setup.html#semi-automated-bibliography-file-assembly",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "Semi-Automated Bibliography File Assembly",
+    "text": "Semi-Automated Bibliography File Assembly\nI find it easiest just to select the entries in Zotero and copy them into the bib file manually. This isn’t full manual – we don’t have to write the bib entries ourselves (like I did in graduate school). Let’s try that first before I show you other ways to connect RStudio to Zotero.\n\nCreate a text file called references.bib (make sure it has the extension .bib and not .bib.txt, particularly if your operating system hides file extensions from you).\nIn a browser, navigate to “Cows painted with zebra-like striping can avoid biting fly attack”, another 2025 IgNobel award winning paper. Use Zotero conneector to add the paper to Zotero, and make sure that all of the necessary fields1 are filled in correctly.\n\n\n\n\nHighlighted fields are essential – title, authors, publication (with vol/issue/pages if available), date, and either DOI or URL.\n\n\n\nSelect both IgNobel papers in Zotero and use Ctrl/Cmd+Shift+C (Quick copy) to get the BibLaTeX entries. Paste them into your references.bib file. Your file should look something like the lines below. I have removed the abstracts and file locations from my file for brevity’s sake.\n\n#| echo: false\n\ncat references.bib\n\nCreate a quarto file in RStudio or your IDE of choice. In the YAML metadata at the top, add bibliography: references.bib as an option. A minimal file with a title would look like this.\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\n---\n\nAdd a sentence summarizing each of the two IgNobel papers. For the Cow stripe paper, use an inline reference – \\@citation-key, and for the Ethanol paper, use a parenthetical reference – (\\@citation-key), where in both cases, citation-key is the first piece of the bib entry after \\@article{. When you’ve finished, take a peek at mine to see if your citation style is similar.\n\n\n\n\n\n\n\nNoteSample quarto file text\n\n\n\n\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\n---\n\nTo test whether zebra stripes prevent biting fly attacks,\n@kojimaCowsPaintedZebralike2019 painted cows with black-and-white,\nblack-only, and no stripes and recorded the number of fly repelling behaviors\nand flies on the body and legs.\n\nTo test how Egyptian fruit bats are affected by ethanol (which occurs\nnaturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and\nethanol-free food, finding that flight speed, echolocation calls, and\nbehavior were negatively impacted by the presence of ethanol\n(@sanchezEthanolIngestionAffects2010).\n\n\n\n\nYou can see the rendered file here – notice that the in-line citations are automatically included along with a references section at the end of the file.\n\nWhat if we want to change the citation format? IEEE uses numerical citations.\n\n\nWe can get a CSL (citation style language) file for that format (click the download file button) and use it in our file. You will have to move the file from where it downloaded to the directory with your references and quarto files.\nChange the YAML metadata of your quarto file to include csl: ieee.csl (or whatever the name of the CSL file you downloaded is…)\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\ncsl: ieee.csl\n---\n\nRecompile your document. See how the references at the bottom and the citations in the text have changed. My document"
+  },
+  {
+    "objectID": "instructions/zotero-setup.html#footnotes",
+    "href": "instructions/zotero-setup.html#footnotes",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor a journal article: authors, journal, article title, publication date (year and month, at least), and URL or DOI. If the journal has Volume, Issue, and pages, then those should be filled in as well, but some journals don’t have those anymore as journals have stopped printing physical issues. For a book, title, author(s), publisher, editor, publication date, and pages if you’re referencing only part of the book.↩︎"
+  },
+  {
+    "objectID": "instructions/test-zotero.html",
+    "href": "instructions/test-zotero.html",
+    "title": "Testing References",
+    "section": "",
+    "text": "To test whether zebra stripes prevent biting fly attacks, Kojima et al. (2019) painted cows with black-and-white, black-only, and no stripes and recorded the number of fly repelling behaviors and flies on the body and legs.\nTo test how Egyptian fruit bats are affected by ethanol (which occurs naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and ethanol-free food, finding that flight speed, echolocation calls, and behavior were negatively impacted by the presence of ethanol (Sánchez et al. (2010)).\n\n\n\n\nReferences\n\nKojima, Tomoki, Kazato Oishi, Yasushi Matsubara, Yuki Uchiyama, Yoshihiko Fukushima, Naoto Aoki, Say Sato, et al. 2019. “Cows Painted with Zebra-Like Striping Can Avoid Biting Fly Attack.” PLOS ONE 14 (10): e0223447. https://doi.org/10.1371/journal.pone.0223447.\n\n\nSánchez, Francisco, Mariana Melcón, Carmi Korine, and Berry Pinshow. 2010. “Ethanol Ingestion Affects Flight Performance and Echolocation in Egyptian Fruit Bats.” Behavioural Processes 84 (2): 555–58. https://doi.org/10.1016/j.beproc.2010.02.006."
+  },
+  {
+    "objectID": "instructions/test-zotero-csl.html",
+    "href": "instructions/test-zotero-csl.html",
+    "title": "Testing References",
+    "section": "",
+    "text": "To test whether zebra stripes prevent biting fly attacks, [1] painted cows with black-and-white, black-only, and no stripes and recorded the number of fly repelling behaviors and flies on the body and legs.\nTo test how Egyptian fruit bats are affected by ethanol (which occurs naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and ethanol-free food, finding that flight speed, echolocation calls, and behavior were negatively impacted by the presence of ethanol ([2]).\n\n\n\n\nReferences\n\n[1] T. Kojima et al., “Cows painted with zebra-like striping can avoid biting fly attack,” PLOS ONE, vol. 14, no. 10, p. e0223447, Oct. 2019, doi: 10.1371/journal.pone.0223447.\n\n\n[2] F. Sánchez, M. Melcón, C. Korine, and B. Pinshow, “Ethanol ingestion affects flight performance and echolocation in egyptian fruit bats,” Behavioural Processes, vol. 84, no. 2, pp. 555–558, Jun. 2010, doi: 10.1016/j.beproc.2010.02.006."
+  },
+  {
+    "objectID": "instructions/zotero-setup.html#rstudio-visual-mode-zotero",
+    "href": "instructions/zotero-setup.html#rstudio-visual-mode-zotero",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "RStudio Visual Mode + Zotero",
+    "text": "RStudio Visual Mode + Zotero\nFor this method to work, you have to enable visual mode in RStudio and have Zotero open on your computer.\n\nOpen RStudio settings and click on the RMarkdown entry. Select Citations from the tabs across the top. Make sure that the Zotero data directory is correct and that you have your library checked (I have some shared libraries that you won’t have).\n\nIn your test quarto file, enable visual mode (the last line before the text file starts in the editor pane).\nStart typing a sentence with a reference in it - you should only have to type the \\@ before autocomplete tries to help you out. If you were citing a new paper that wasn’t already in references, the BibLaTeX entry would be copied into the references.bib file for you.\n\nCompilation works the same – this just avoids the manual copy-paste step, if you are willing to use visual mode.\n\nI don’t like using a mouse, so I avoid visual mode when writing. The RBBT R package can be used to add similar functionality to RStudio in source mode, if you prefer to use that, but of course this requires that you compile with knitr, so there is a bit of a loss of the platform-agnostic behavior that makes quarto great."
   }
 ]

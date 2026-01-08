@@ -1,0 +1,15 @@
+---
+title: "Testing References"
+bibliography: references.bib
+---
+
+To test whether zebra stripes prevent biting fly attacks,
+@kojimaCowsPaintedZebralike2019 painted cows with black-and-white,
+black-only, and no stripes and recorded the number of fly repelling behaviors
+and flies on the body and legs.
+
+To test how Egyptian fruit bats are affected by ethanol (which occurs
+naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and
+ethanol-free food, finding that flight speed, echolocation calls, and
+behavior were negatively impacted by the presence of ethanol
+(@sanchezEthanolIngestionAffects2010).
