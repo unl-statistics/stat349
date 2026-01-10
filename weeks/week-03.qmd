@@ -20,8 +20,7 @@ January 26-01, 2026
 
 ## 🌮 Tuesday
 
-- Citation Managers – Demonstrate Zotero features
-- Scavenger hunt - Citation manager options
+- [Scavenger hunt - Citation manager options](instructions/zotero-setup.qmd)
 - How to read technical reports and academic articles
 
 

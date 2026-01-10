@@ -697,7 +697,7 @@
     "href": "slides/01-intro.html#introductions",
     "title": "Welcome to Stat 349!",
     "section": "Introductions",
-    "text": "Introductions\n\nYour name\nYour major\nWhat is the best prank you’ve ever experienced or planned?"
+    "text": "Introductions\n\nYour name\nYour major\nWhat is your favorite board/tabletop game?"
   },
   {
     "objectID": "slides/01-intro.html#class-picture",
@@ -718,42 +718,42 @@
     "href": "slides/01-intro.html#grades",
     "title": "Welcome to Stat 349!",
     "section": "Grades",
-    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes\n10%\n\n\nParticipation\n10%\n\n\nHomework\n40%\n\n\nUser Guide/Documentation\n20%\n\n\nBusiness Report & Presentation\n20%"
+    "text": "Grades\n\n\n\nAssignments\nWeight\n\n\n\n\nReading Quizzes & Participation\n10%\n\n\nUser Guide/Documentation\n20%\n\n\nBusiness Report & Presentation\n20%\n\n\nHomework\n50%"
   },
   {
     "objectID": "slides/01-intro.html#reading-quizzes",
     "href": "slides/01-intro.html#reading-quizzes",
     "title": "Welcome to Stat 349!",
     "section": "Reading Quizzes",
-    "text": "Reading Quizzes\n\nDue before class starts\nWill become inaccessible at 10am on Wednesdays\nOpen-book, open-note\nA deadline to encourage you to do the reading before class"
+    "text": "Reading Quizzes\n\nDue before class starts\nWill become inaccessible at 10am on Mondays (in normal weeks)\nOpen-book, open-note\nA deadline to encourage you to do the reading before class"
   },
   {
     "objectID": "slides/01-intro.html#participationattendance",
     "href": "slides/01-intro.html#participationattendance",
     "title": "Welcome to Stat 349!",
     "section": "Participation/Attendance",
-    "text": "Participation/Attendance\n\nI will take attendance\nYou get one free, no excuses necessary absence\nIf you’re sick, don’t come to class!\n\nDo the reading/homework,\nMake an appointment as you feel better\nIn the appointment field, indicate that this is to substitute for class attendance\nDon’t abuse this"
+    "text": "Participation/Attendance\n\nI will take attendance\nYou get one free, no excuses necessary absence\nIf you’re sick, don’t come to class!\n\nDo the reading/homework,\nMake an appointment when you feel better (~ 1 week)\nReason: missed class xx/xx due to illness\nDon’t abuse this"
   },
   {
     "objectID": "slides/01-intro.html#homework",
     "href": "slides/01-intro.html#homework",
     "title": "Welcome to Stat 349!",
     "section": "Homework",
-    "text": "Homework\n\nAlmost every week\nHomework can be resubmitted once for a re-grade\nResubmissions are due on\n\nMarch 10\nMay 5"
+    "text": "Homework\n\nAlmost every week\n2 resubmissions allowed\nDue within 1 week of feedback returned\nComment on Canvas assignment page\nUpload the assignment as a resubmission"
   },
   {
     "objectID": "slides/01-intro.html#user-guide",
     "href": "slides/01-intro.html#user-guide",
     "title": "Welcome to Stat 349!",
     "section": "User Guide",
-    "text": "User Guide\n\nTranslate a statistics topic into a practical guide for how to do something\n\nsoftware related is natural, but I’m open to other options\n\nPractice thinking about audience needs and planning scope\nDue before Spring Break"
+    "text": "User Guide\n\nTranslate a statistics topic into a practical guide for how to do something\n\nWhat is required to begin? data, etc.\nWhat steps need to be taken?\nHow should the results be presented/interpreted?\n\nPractice thinking about audience needs and planning scope\n\nThink about trying to learn a package based on a sparse vignette that doesn’t address your use case… and prevent that.\n\nTakes more time to understand the topic than you think – start early.\nRough Draft due February 27 at 6pm\nFinal version due March 5 at 6pm"
   },
   {
     "objectID": "slides/01-intro.html#business-report",
     "href": "slides/01-intro.html#business-report",
     "title": "Welcome to Stat 349!",
     "section": "Business Report",
-    "text": "Business Report\n\nAddress a statistical question of interest to a business\nFind and document relevant data\nExplain and document your analysis\nDraw a conclusion and explain that to a non-statistician\nMake a presentation\nDue in Week 15"
+    "text": "Business Report\n\nAddress a statistical question of interest to a business\n\nMost of these are somewhat based on my time in industry\n\nFind and document relevant data\nExplain and document your analysis\nDraw a conclusion and explain that to a non-statistician\nMake a presentation\nRough Draft due April 17 at 6pm\nFinal written report due May 1 at 6pm\nPresentations in-class April 27, April 29, May 8 (if necessary)"
   },
   {
     "objectID": "instructions/intro-problem-statements.html",
@@ -2972,5 +2972,61 @@
     "title": "Citation Manager Scavenger Hunt",
     "section": "RStudio Visual Mode + Zotero",
     "text": "RStudio Visual Mode + Zotero\nFor this method to work, you have to enable visual mode in RStudio and have Zotero open on your computer.\n\nOpen RStudio settings and click on the RMarkdown entry. Select Citations from the tabs across the top. Make sure that the Zotero data directory is correct and that you have your library checked (I have some shared libraries that you won’t have).\n\nIn your test quarto file, enable visual mode (the last line before the text file starts in the editor pane).\nStart typing a sentence with a reference in it - you should only have to type the \\@ before autocomplete tries to help you out. If you were citing a new paper that wasn’t already in references, the BibLaTeX entry would be copied into the references.bib file for you.\n\nCompilation works the same – this just avoids the manual copy-paste step, if you are willing to use visual mode.\n\nI don’t like using a mouse, so I avoid visual mode when writing. The RBBT R package can be used to add similar functionality to RStudio in source mode, if you prefer to use that, but of course this requires that you compile with knitr, so there is a bit of a loss of the platform-agnostic behavior that makes quarto great."
+  },
+  {
+    "objectID": "slides/01-intro.html#keep-up-with-the-work",
+    "href": "slides/01-intro.html#keep-up-with-the-work",
+    "title": "Welcome to Stat 349!",
+    "section": "Keep Up With The Work!",
+    "text": "Keep Up With The Work!\n\nLearning good writing skills requires time and practice.\nIf you wait until the last minute to write, you can’t revise and practice.\nThis course is paced to give you enough time to revise your work… intentionally."
+  },
+  {
+    "objectID": "slides/01-intro.html#assignments",
+    "href": "slides/01-intro.html#assignments",
+    "title": "Welcome to Stat 349!",
+    "section": "Assignments",
+    "text": "Assignments\n\nAlmost every week\nWritten with Quarto\nCompleted and Submitted on GitHub Classroom\nIf you’re not familiar with Git/GitHub, please let me know\n\nhttps://happygitwithr.com &lt;- full book of instructions and explanations\nOffice hours appointments to get help\n\nDue at 6pm on Fridays (usually)\nGrace period lasts until I start grading - might be Saturday afternoon, might be Monday"
+  },
+  {
+    "objectID": "slides/01-intro.html#homework-resubmissions",
+    "href": "slides/01-intro.html#homework-resubmissions",
+    "title": "Welcome to Stat 349!",
+    "section": "Homework Resubmissions",
+    "text": "Homework Resubmissions\n\n2 resubmissions allowed\nDue within 1 week of feedback returned. Additionally,\n\nAssigned before Spring Break: resubmit by March 13 at 6pm\nAssigned after Spring Break: resubmit by April 27 at 6pm\n\nComment on Canvas assignment page\nUpload the assignment as a resubmission\nPolicy subject to good-faith use and my availability\nResubmissions will be graded at my leisure. DO NOT email me asking about the resubmission unless it has been at least 2 weeks."
+  },
+  {
+    "objectID": "slides/01-intro.html#projects",
+    "href": "slides/01-intro.html#projects",
+    "title": "Welcome to Stat 349!",
+    "section": "Projects",
+    "text": "Projects\n\nScaffolded with homework assignments\nFix things I comment on w/ homework!\nLate work will NOT be accepted without\n\nmajor life events of &gt;2 week duration AND\nevidence of engagement with the assignment before the event occurred\n\nProject presentations will be scheduled during Week 15 and Finals\n\nIF presentations get done during Week 15 then we won’t meet for the final\n\nDo NOT make travel plans for the end of the semester"
+  },
+  {
+    "objectID": "slides/01-intro.html#evaluation-criteria",
+    "href": "slides/01-intro.html#evaluation-criteria",
+    "title": "Welcome to Stat 349!",
+    "section": "Evaluation Criteria",
+    "text": "Evaluation Criteria\nIn addition to the rubric:\n\nGrammar and spelling\nAbility to communicate effectively\nIntellectual engagement\nDemonstrated understanding of the material\n\nSimple, elegant solutions &gt; unnecessary complexity"
+  },
+  {
+    "objectID": "slides/01-intro.html#ai",
+    "href": "slides/01-intro.html#ai",
+    "title": "Welcome to Stat 349!",
+    "section": "AI",
+    "text": "AI\n\nThe goal of writing classes is to improve your ability to reason… the writing is a side effect\nAI cannot think/explain/reason – it only predicts the next likely word probabilistically\nDo NOT use AI as a replacement for doing work. Querying to explore your understanding is probably fine, using it to write or think for you is not.\nI would rather read something with typos and grammar issues than something that sounds like it’s from AI and not your thoughts."
+  },
+  {
+    "objectID": "slides/01-intro.html#evaluation-criteria-1",
+    "href": "slides/01-intro.html#evaluation-criteria-1",
+    "title": "Welcome to Stat 349!",
+    "section": "Evaluation Criteria",
+    "text": "Evaluation Criteria\nAny use of generative AI must be disclosed in an appendix to your submission\nYou must document the following:\n\nthe version of the generative AI used (e.g. Claude Sonnet 4.5, GPT 5.2, Copilot GPT-5 chat)\nthe full sequence of prompts and responses\nany additional inputs you provided to the AI system (documents, images, etc.)\na “diff” between the AI responses and your submission, showing exactly what was generated by the AI system and what you changed."
+  },
+  {
+    "objectID": "slides/01-intro.html#oral-exams",
+    "href": "slides/01-intro.html#oral-exams",
+    "title": "Welcome to Stat 349!",
+    "section": "Oral Exams",
+    "text": "Oral Exams\n\nBe prepared to explain your writing process, your approach, and your code\nOral exams on the assignment can be used to replace the assignment grade at my discretion\n\nThis is not intended as punishment – it helps at least as often as it hurts\n\nPolicy applies to homework and projects"
   }
 ]
