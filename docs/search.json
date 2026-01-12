@@ -1533,7 +1533,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 1: Getting Started",
     "section": "",
-    "text": "January 12-18, 2026\n\n\n\nRead the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\n\nEnsure R, python, quarto, RStudio are installed on your machine\n\nSoftware Installation guide\n\nPrint out and bring cheat sheets for R and python (if you need them)\nReading Quiz Week 1 (for Wednesday)\n\n\n\n\n\nDiscussion: Syllabus\nGithub Introduction\n\n\n\n\n\nSet up Quarto portfolio site\nFind a quarto/LaTeX template for a CV and cover letter\n\n\n\n\n\nFind a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)",
+    "text": "January 12-18, 2026\n\n\n\nRead the syllabus\nRead the course support page\nRead OTC Chapter 1\n\n\n\n\n\nEnsure R, python, quarto, RStudio are installed on your machine\n\nSoftware Installation guide\n\nPrint out and bring cheat sheets for R and python (if you need them)\nReading Quiz Week 1 (for Wednesday)\n\n\n\n\n\nDiscussion: Syllabus\nGithub Introduction\nYouTube Recording of Lecture portion of class. Note: this is provided as an auxiliary piece of information for those who missed class. It is not intended to substitute for class attendance and does not have the accessibility features necessary for required class materials.\n\n\n\n\n\nSet up Quarto portfolio site\nFind a quarto/LaTeX template for a CV and cover letter\n\n\n\n\n\nFind a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)",
     "crumbs": [
       "Weekly materials",
       "Week 1 - Getting Started"
@@ -1566,7 +1566,7 @@
     "href": "weeks/week-01.html#tuesday",
     "title": "Week 1: Getting Started",
     "section": "",
-    "text": "Discussion: Syllabus\nGithub Introduction",
+    "text": "Discussion: Syllabus\nGithub Introduction\nYouTube Recording of Lecture portion of class. Note: this is provided as an auxiliary piece of information for those who missed class. It is not intended to substitute for class attendance and does not have the accessibility features necessary for required class materials.",
     "crumbs": [
       "Weekly materials",
       "Week 1 - Getting Started"
