@@ -165,14 +165,14 @@
     "href": "slides/10-intro-conclusion.html#example-boredom",
     "title": "Introductions and Conclusions",
     "section": "Example: Boredom",
-    "text": "Example: Boredom\n{{&lt; pdf images/Tam-boredom.pdf width=100% height=600 &gt;}}"
+    "text": "Example: Boredom\nDownload PDF file."
   },
   {
     "objectID": "slides/10-intro-conclusion.html#example-coin-flips",
     "href": "slides/10-intro-conclusion.html#example-coin-flips",
     "title": "Introductions and Conclusions",
     "section": "Example: Coin Flips",
-    "text": "Example: Coin Flips\n{{&lt; pdf images/Bartos-coins.pdf width=100% height=600 &gt;}}"
+    "text": "Example: Coin Flips\nDownload PDF file."
   },
   {
     "objectID": "slides/10-intro-conclusion.html#references",
@@ -207,7 +207,7 @@
     "href": "slides/09-misconceptions.html#regression",
     "title": "Countering Statistical Misconceptions",
     "section": "Regression",
-    "text": "Regression\n\n\n📐 Engineers\n\nlibrary(tibble)\nlibrary(ggplot2)\nset.seed(102934082)\ndata &lt;- tibble(\n  Injuries_On_Site = c(rnorm(21, 50, 5), rnorm(3, 80, 15), rnorm(3, 50, 5)),\n  date = seq.Date(as.Date(\"2023-01-01\"), as.Date(\"2025-03-01\"), by = \"1 month\"))\n\nggplot(data[1:24,], aes(x = date, y = Injuries_On_Site)) + geom_point() +  geom_line() + \n  geom_smooth(method = \"lm\") + \n  xlab(\"\") + ylab(\"Onsite Injuries\")\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n“Oh no, there’s been a huge increase in injuries! We need to do something now, before the problem gets worse!”\n\n\n🤣 Statisticians\n\nlibrary(tibble)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(patchwork)\nlibrary(ggplot2)\n\ndata &lt;- mutate(data, people = rep(c(500, 800, 500), c(21, 3, 3)) + sample((-10:10), size = 27, replace = T)*c(rep(1, 21), rep(3, 3), rep(1, 3)))\n\np1 &lt;- ggplot(data, aes(x = date, y = Injuries_On_Site/people)) + geom_point() +  geom_line() + \n  geom_smooth(method = \"lm\") + \n  xlab(\"\") + ggtitle(\"Onsite Injuries per capita\") + theme(axis.title = element_blank())\n\np2 &lt;- ggplot(data, aes(x = date, y = Injuries_On_Site)) + geom_point() +  geom_line() + \n    xlab(\"\") + ggtitle(\"Onsite Injuries\") + theme(axis.title = element_blank())\n\np3 &lt;- ggplot(data, aes(x = date, y = people)) + geom_point() + geom_line() + xlab(\"\") + ggtitle(\"People Onsite\") + theme(axis.title = element_blank())\n\np1 / p2 / p3\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\nlinear regression isn’t the right tool for this\nhave you considered other explanations?\nlet’s add more data…"
+    "text": "Regression\n\n\n📐 Engineers\n\n\n\n\n\n\n\n\n\n\n“Oh no, there’s been a huge increase in injuries! We need to do something now, before the problem gets worse!”\n\n\n🤣 Statisticians\n\n\n\n\n\n\n\n\n\n\nlinear regression isn’t the right tool for this\nhave you considered other explanations?\nlet’s add more data…"
   },
   {
     "objectID": "slides/09-misconceptions.html#p-values",
@@ -221,21 +221,21 @@
     "href": "slides/09-misconceptions.html#p-values-1",
     "title": "Countering Statistical Misconceptions",
     "section": "P-values",
-    "text": "P-values\nMisconception: Small p-value =&gt; Bigger effect size\nT-test between \\(x_1 \\sim N(0, 0.5)\\) and \\(x_2 \\sim N(0.5, 0.5)\\)\nTrue \\(\\mu_2-\\mu_1 = 0.5\\), \\(\\eta = 1\\)\n\n\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`."
+    "text": "P-values\nMisconception: Small p-value =&gt; Bigger effect size\nT-test between \\(x_1 \\sim N(0, 0.5)\\) and \\(x_2 \\sim N(0.5, 0.5)\\)\nTrue \\(\\mu_2-\\mu_1 = 0.5\\), \\(\\eta = 1\\)"
   },
   {
     "objectID": "slides/09-misconceptions.html#r2",
     "href": "slides/09-misconceptions.html#r2",
     "title": "Countering Statistical Misconceptions",
     "section": "R^2",
-    "text": "R^2\n\nAs number of predictors increases in multiple regression, \\(R^2\\) only increases. Adjusted \\(R^2\\) accounts for this issue.\nGood \\(R^2\\) are different for different fields…\n\n\nlibrary(mvtnorm)\nlibrary(dplyr)\nlibrary(tidyr)\ndata &lt;- bind_rows(\n    tibble(discipline = \"Genetics\", alpha = .25, data = as.data.frame(rmvnorm(60, sigma = matrix(c(1, .000001, .000001, 1), nrow = 2)))) |&gt; unnest(\"data\"),\n    tibble(discipline = \"Finance\", alpha = .25, data = as.data.frame(rmvnorm(60, sigma = matrix(c(1, .0001, .0001, 1), nrow = 2)))) |&gt; unnest(\"data\"),\n  tibble(discipline = \"Medicine\", alpha = 0.05, data = as.data.frame(rmvnorm(500, sigma = matrix(c(1, .38, .38, 1), nrow = 2)))) |&gt; unnest(\"data\"),\n  tibble(discipline = \"Psychology\", alpha = 0.25, data = as.data.frame(rmvnorm(100, sigma = matrix(c(1, .7, .7, 1), nrow = 2)))) |&gt; unnest(\"data\"),\n  tibble(discipline = \"Engineering\", alpha = 0.25, data = as.data.frame(rmvnorm(50, sigma = matrix(c(1, .995, .995, 1), nrow = 2)))) |&gt; unnest(\"data\")\n)\n\nr2 &lt;- data |&gt; group_by(discipline) |&gt;\n  summarize(r2 = cor(V1, V2)^2) |&gt;\n  mutate(V1 = 3.5, V2 = -3.5, alpha = 1, label = sprintf(\"R^2 == %.3f\", r2)) |&gt;\n  ungroup() |&gt;\n  arrange(r2, decreasing = T)\n\ndata &lt;- data |&gt;\n  mutate(discipline = factor(discipline, levels = r2$discipline, ordered = T))\n\n\n\nggplot(data = data, aes(x = V1, y = V2, alpha = alpha)) + geom_point() + facet_wrap(~discipline, ncol = 5) + geom_smooth(method = \"lm\") + \n  geom_text(data = r2, aes(label = label), hjust = 1.1, vjust = -0.1, parse = T) + \n  scale_alpha_identity() +\n  coord_fixed() + \n  theme_minimal() + \n  theme(axis.text = element_blank(), axis.title = element_blank()) + \n  ggtitle(str2expression(paste(\"Good~\", \"R^2\", \"values~by~Discipline\", sep = \"~\")))\n\n`geom_smooth()` using formula = 'y ~ x'"
+    "text": "R^2\n\nAs number of predictors increases in multiple regression, \\(R^2\\) only increases. Adjusted \\(R^2\\) accounts for this issue.\nGood \\(R^2\\) are different for different fields…"
   },
   {
     "objectID": "slides/09-misconceptions.html#r2-1",
     "href": "slides/09-misconceptions.html#r2-1",
     "title": "Countering Statistical Misconceptions",
     "section": "R^2",
-    "text": "R^2\n\n\\(R^2\\) only measures linear relationships\nNot all interesting relationships are linear\n\n\nlibrary(datasauRus)\ndata(\"datasaurus_dozen\")\ndata &lt;- datasaurus_dozen |&gt; filter(dataset == \"dino\")\n\nggplot(data, aes(x = x, y = y)) + \n  geom_point() + \n  geom_smooth(method = \"lm\") + \n  coord_fixed() + theme_minimal() + \n  theme(axis.title = element_blank(), axis.text = element_blank())\n\n`geom_smooth()` using formula = 'y ~ x'"
+    "text": "R^2\n\n\\(R^2\\) only measures linear relationships\nNot all interesting relationships are linear"
   },
   {
     "objectID": "slides/09-misconceptions.html#randomized-trials",
@@ -305,7 +305,7 @@
     "href": "slides/09-misconceptions.html#manager-misconception-examples",
     "title": "Countering Statistical Misconceptions",
     "section": "Manager Misconception Examples",
-    "text": "Manager Misconception Examples\n\nJust rerun the experiment with a bigger sample size!\nStatisticians can predict exactly what will happen next 🔮🪄🧙\n\n\nAddress these issues in person if at all possible. Try not to laugh or cry."
+    "text": "Manager Misconception Examples\n\nJust rerun the experiment with a bigger sample size!\nStatisticians can predict exactly what will happen next 🔮🪄🧙\nIt’s fine to pick the model you want to “win” and choose other models around it\n\n\nAddress these issues in person if at all possible. Try not to laugh or cry IN the meeting. If you post to Reddit later, do it with a throwaway account."
   },
   {
     "objectID": "slides/09-misconceptions.html#references",
@@ -735,11 +735,32 @@
     "text": "Participation/Attendance\n\nI will take attendance\nYou get one free, no excuses necessary absence\nIf you’re sick, don’t come to class!\n\nDo the reading/homework,\nMake an appointment when you feel better (~ 1 week)\nReason: missed class xx/xx due to illness\nDon’t abuse this"
   },
   {
-    "objectID": "slides/01-intro.html#homework",
-    "href": "slides/01-intro.html#homework",
+    "objectID": "slides/01-intro.html#assignments",
+    "href": "slides/01-intro.html#assignments",
     "title": "Welcome to Stat 349!",
-    "section": "Homework",
-    "text": "Homework\n\nAlmost every week\n2 resubmissions allowed\nDue within 1 week of feedback returned\nComment on Canvas assignment page\nUpload the assignment as a resubmission"
+    "section": "Assignments",
+    "text": "Assignments\n\nAlmost every week\nWritten with Quarto\nCompleted and Submitted on GitHub Classroom\nIf you’re not familiar with Git/GitHub, please let me know\n\nhttps://happygitwithr.com &lt;- full book of instructions and explanations\nOffice hours appointments to get help\n\nDue at 6pm on Fridays (usually)\nGrace period lasts until I start grading - might be Saturday afternoon, might be Monday"
+  },
+  {
+    "objectID": "slides/01-intro.html#homework-resubmissions",
+    "href": "slides/01-intro.html#homework-resubmissions",
+    "title": "Welcome to Stat 349!",
+    "section": "Homework Resubmissions",
+    "text": "Homework Resubmissions\n\n2 resubmissions allowed\nDue within 1 week of feedback returned. Additionally,\n\nAssigned before Spring Break: resubmit by March 13 at 6pm\nAssigned after Spring Break: resubmit by April 27 at 6pm\n\nComment on Canvas assignment page\nUpload the assignment as a resubmission\nPolicy subject to good-faith use and my availability\nResubmissions will be graded at my leisure. DO NOT email me asking about the resubmission unless it has been at least 2 weeks."
+  },
+  {
+    "objectID": "slides/01-intro.html#keep-up-with-the-work",
+    "href": "slides/01-intro.html#keep-up-with-the-work",
+    "title": "Welcome to Stat 349!",
+    "section": "Keep Up With The Work!",
+    "text": "Keep Up With The Work!\n\nLearning good writing skills requires time and practice.\nIf you wait until the last minute to write, you can’t revise and practice.\nThis course is paced to give you enough time to revise your work… intentionally."
+  },
+  {
+    "objectID": "slides/01-intro.html#projects",
+    "href": "slides/01-intro.html#projects",
+    "title": "Welcome to Stat 349!",
+    "section": "Projects",
+    "text": "Projects\n\nScaffolded with homework assignments\nFix things I comment on w/ homework!\nLate work will NOT be accepted without\n\nmajor life events of &gt;2 week duration AND\nevidence of engagement with the assignment before the event occurred\n\nProject presentations will be scheduled during Week 15 and Finals\n\nIF presentations get done during Week 15 then we won’t meet for the final\n\nDo NOT make travel plans for the end of the semester"
   },
   {
     "objectID": "slides/01-intro.html#user-guide",
@@ -756,95 +777,130 @@
     "text": "Business Report\n\nAddress a statistical question of interest to a business\n\nMost of these are somewhat based on my time in industry\n\nFind and document relevant data\nExplain and document your analysis\nDraw a conclusion and explain that to a non-statistician\nMake a presentation\nRough Draft due April 17 at 6pm\nFinal written report due May 1 at 6pm\nPresentations in-class April 27, April 29, May 8 (if necessary)"
   },
   {
-    "objectID": "instructions/intro-problem-statements.html",
-    "href": "instructions/intro-problem-statements.html",
-    "title": "Introductions & Problem Statements",
-    "section": "",
-    "text": "Articles:\n\n2030 Census Research Recommendations\nNearly All U.S. Counties Had More Homeowners Than Renters Between 2019 and 2023\nWho Could Afford to Buy a Home in 2009? Affordability of Buying a Home in the United States\nEnabling Global Image Data Sharing in the Life Sciences\nWillful Winds: Hurricane Andrew and Louisiana’s Coast\nHurricane Katrina\nWater-Level and Recoverable Water in Storage Changes, High Plains Aquifer, Predevelopment to 2019 and 2017 to 2019"
+    "objectID": "slides/01-intro.html#evaluation-criteria",
+    "href": "slides/01-intro.html#evaluation-criteria",
+    "title": "Welcome to Stat 349!",
+    "section": "Evaluation Criteria",
+    "text": "Evaluation Criteria\nIn addition to the rubric:\n\nGrammar and spelling\nAbility to communicate effectively\nIntellectual engagement\nDemonstrated understanding of the material\n\nSimple, elegant solutions &gt; unnecessary complexity"
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-shark.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-shark.html",
-    "title": "Sharknado!",
-    "section": "",
-    "text": "You are an analyst for an insurance agency concerned with increasing payouts for property damage with a warming climate. Your boss recently saw Sharknado (2013) while trying to battle insomnia, and has become concerned about the increased likelihood of shark-infested weather as severe weather events become more probable due to climate change.\nYour boss’s concerns about the possiblity of shark-infested storms cannot be countered with logic, but you might be able to convince them that very few storms even have shark-infestation potential.\nAssemble data from one or more reputable sources (NOAA, USGS, etc.).\nAssess the probability that tornadoes form in coastal areas (Atlantic, Pacific, and Gulf of Mexico) and move inward, compared to the probability that tornadoes form inland and move toward the coast. You should consider both the probability of a coastal -&gt; inland tornadic event and the consequences – a F0 tornado is unlikely to have the power to lift sharks from the water, while an F5 tornado might have the ability to transport many sharks inland. How serious is the sharknado threat to your bottom line?\n(Note that you should probably not mock your boss too much, because they don’t like to be the butt of jokes.)"
+    "objectID": "slides/01-intro.html#ai",
+    "href": "slides/01-intro.html#ai",
+    "title": "Welcome to Stat 349!",
+    "section": "AI",
+    "text": "AI\n\nThe goal of writing classes is to improve your ability to reason… the writing is a side effect\nAI cannot think/explain/reason – it only predicts the next likely word probabilistically\nDo NOT use AI as a replacement for doing work. Querying to explore your understanding is probably fine, using it to write or think for you is not.\nI would rather read something with typos and grammar issues than something that sounds like it’s from AI and not your thoughts."
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
-    "title": "Not Safe For Work",
-    "section": "",
-    "text": "Scenario Description:\nYou are a statistical analyst for a company with both industrial/manufacturing and office spaces. Your safety officer recently read this article about office injury statistics and wants you to evaluate whether the company needs to implement stronger safety policies for office workers, as they are more likely to be injured through falls than non-office workers.\nAssemble data from one or more reputable sources (Bureau of Labor Statistics, Centers for Disease Control, Occupational Safety and Health Administration) to assess the risk of on-the-job injury for office and non-office workers. Consider both the severity of the injury and the probability of occurrence."
+    "objectID": "slides/01-intro.html#evaluation-criteria-1",
+    "href": "slides/01-intro.html#evaluation-criteria-1",
+    "title": "Welcome to Stat 349!",
+    "section": "Evaluation Criteria",
+    "text": "Evaluation Criteria\nAny use of generative AI must be disclosed in an appendix to your submission\nYou must document the following:\n\nthe version of the generative AI used (e.g. Claude Sonnet 4.5, GPT 5.2, Copilot GPT-5 chat)\nthe full sequence of prompts and responses\nany additional inputs you provided to the AI system (documents, images, etc.)\na “diff” between the AI responses and your submission, showing exactly what was generated by the AI system and what you changed."
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/topic.html",
-    "href": "assignment-repos/user-guide-annual-review/topic.html",
-    "title": "Topic",
-    "section": "",
-    "text": "Topic\nPick some subset of the information covered in your annual review article that you are interested in exploring in more detail.\nIdentify the scope of your user guide - what will you cover? Specific software packages? When to use or not to use a specific technique?"
+    "objectID": "slides/01-intro.html#oral-exams",
+    "href": "slides/01-intro.html#oral-exams",
+    "title": "Welcome to Stat 349!",
+    "section": "Oral Exams",
+    "text": "Oral Exams\n\nBe prepared to explain your writing process, your approach, and your code\nOral exams on the assignment can be used to replace the assignment grade at my discretion\n\nThis is not intended as punishment – it helps at least as often as it hurts\n\nPolicy applies to homework and projects"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/references.html",
-    "href": "assignment-repos/user-guide-annual-review/references.html",
+    "objectID": "instructions/test-zotero.html",
+    "href": "instructions/test-zotero.html",
+    "title": "Testing References",
+    "section": "",
+    "text": "To test whether zebra stripes prevent biting fly attacks, Kojima et al. (2019) painted cows with black-and-white, black-only, and no stripes and recorded the number of fly repelling behaviors and flies on the body and legs.\nTo test how Egyptian fruit bats are affected by ethanol (which occurs naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and ethanol-free food, finding that flight speed, echolocation calls, and behavior were negatively impacted by the presence of ethanol (Sánchez et al. (2010)).\n\n\n\n\nReferences\n\nKojima, Tomoki, Kazato Oishi, Yasushi Matsubara, Yuki Uchiyama, Yoshihiko Fukushima, Naoto Aoki, Say Sato, et al. 2019. “Cows Painted with Zebra-Like Striping Can Avoid Biting Fly Attack.” PLOS ONE 14 (10): e0223447. https://doi.org/10.1371/journal.pone.0223447.\n\n\nSánchez, Francisco, Mariana Melcón, Carmi Korine, and Berry Pinshow. 2010. “Ethanol Ingestion Affects Flight Performance and Echolocation in Egyptian Fruit Bats.” Behavioural Processes 84 (2): 555–58. https://doi.org/10.1016/j.beproc.2010.02.006."
+  },
+  {
+    "objectID": "instructions/setup-github-portfolio.html",
+    "href": "instructions/setup-github-portfolio.html",
+    "title": "Setting Up a Github.io portfolio",
+    "section": "",
+    "text": "Steps\n\nCreate a github repository that is named “portfolio” and located at https://github.com/username/portfolio (where username is your github username).\nCreate a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following these directions.\n\nChange the build directory in _quarto.yml to docs\n\nBuild the default site (customize it later) with Ctrl/Cmd + Shift + B.\nAdd the files to git, including the /docs folder. Push your site (along with the /docs folder containing the rendered site) to GitHub. You can customize it later.\n\nOn GitHub, set your site to render to the docs directory (detailed instructions).\n\nCreate an empty .nojekyll file in the main directory of your project repository\nConfigure your GitHub repository (Settings -&gt; Pages -&gt; Build and Deployment) to publish the /docs directory of the main branch of your repository.\n\nCheck the rendered site (it should have an address of https://.github.io/portfolio) – it may take ~5 minutes to appear after you’ve completed step 4.\nMake any tweaks to your site that you’d like to make – add pictures, a biography, posts about your interests, etc.\n\nThe goal of this is to have a place where you can showcase your coursework for future employers. Keep it professional (but it’s ok to have some information about your hobbies, if you want to show that dimension of yourself).\nThe department may eventually want to showcase some of these sites so that incoming students can see what current students accomplish as part of our courses. We will ask permission first!\n\n\n\n\nUpdating your site\nRendering your site will be done manually – thus, each time you want to update the actual site, you’ll have to run the following commands in the terminal (not the R console):\nquarto render # Can also be accomplished by Ctrl/Cmd + Shift + B\ngit add docs\ngit commit -m \"Publish site to docs/\"\ngit push\n(You can also accomplish this by hitting the Render button in RStudio and then adding and committing the docs folder in the git pane in RStudio.)\nIf you’re feeling fancy, you can automate this process using a GitHub action, but this is fiddly and probably not worth it unless you’re actually planning to use this as a blog and update it frequently. If you decide to set everything up with Github Actions, I can offer a minimal amount of help with debugging, but even I find them confusing.\n\n\n\n\n\n\nCautionRendering your site\n\n\n\nUpdating the markdown files is not enough – you have to render (in e.g. RStudio) and push the docs folder for changes to show up on Github pages.\nIf things aren’t working,\n\nRun render via RStudio or by using quarto render . on the command line (in the project folder).\nLook for any un-pushed changes, either in the Git pane of RStudio (hit refresh) or by running git status on the command line.\nCheck that the docs/ folder has been committed AND pushed to GitHub.\nAsk for help, either in class during some downtime, or by making an office hours appointment."
+  },
+  {
+    "objectID": "instructions/cv-templates.html",
+    "href": "instructions/cv-templates.html",
+    "title": "Quarto CV/Resume Templates",
+    "section": "",
+    "text": "Just the Document\n\nAlex Bass’s simple quarto resume template\n\nSchochastics quarto templates\nTo use: at the command line,\nquarto use template schochastics/&lt;cv style name&gt;\n\nclassic-cv\n\n\nmodern-cv\n\nmodern2-cv\n\nsidebar-cv\n\n\nMultiformat (PDF/HTML) Resumes with weasyprint - Cynthia Huang\n\n\n\nR packages – build a CV with data!\nBuilding your CV using data frames for education, experience, publications, etc., can make it easier to switch formats and/or keep all of your information in a file and then show only the 3 most recent entries (for example).\n\ndatadrivencv R package. Slides show you how to use the package and why you might want to use data to build a CV/resume. (no LaTeX, uses CSS, but not actively maintained)\nvitae R package – provides functions to make Rmarkdown resumes/CVs easy (quarto -&gt; LaTeX)\n\nawesomecv\n\nhyndman\n\nlatexcv\n\nmarkdowncv\n\nmoderncv\n\ntwentyseconds\n\n\n`typstcv` package (non-LaTeX, HTML-based with CSS)\nTypst is a non-LaTeX way to make paged documents (pdfs, docx) using markdown. Quarto is adopting it, but it is still less developed than LaTeX (which has been around for more than 40 years)."
+  },
+  {
+    "objectID": "assignment-repos/business-report/scenarios/scenario-power.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-power.html",
+    "title": "The Power of Climate Change",
+    "section": "",
+    "text": "Scenario Description:\nYou are an analyst working for an electrical utility. A manager at one of the power plants has recently approached you about climate resilience strategies. The power plant is situated along the Gulf of Mexico in Dauphin Island, AL, and uses the Gulf as an heatsink.\nCurrently, the plant is designed around the assumption that the temperature of the gulf will be below 85\\(^\\circ\\)F (this assumption was relatively reasonable when the plant was built in 1970). When the water temperature is above this point, the plant must operate at reduced capacity, as it cannot transfer additional thermal energy into the water.\nAssemble data from one or more reputable sources (USGS, NOAA, US Energy Information Administration). Make an operational assessment of the risk that the plant will have to operate at reduced capacity during the next 5 years. Consider both the probability of reduced operating capacity as well as the timing of that capacity (e.g. you should also look at electrical usage during those periods)."
+  },
+  {
+    "objectID": "assignment-repos/business-report/scenarios/scenario-bridge.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-bridge.html",
+    "title": "London Bridge is Falling Down",
+    "section": "",
+    "text": "Scenario Description:\nYou are an analyst for the Omaha, NE city government. The mayor, concerned about the degrading transportation infrastructure in the city, has asked you to assess the risk of bridge failure to the city, after well-publicized bridge collapses in cities on the East Coast in 2024.\nAssemble data from one or more reputable sources (State and national DOT, Army Corps of Engineers, etc.). Assess the risk of a bridge collapse event occurring over the next 5 years, using publicly available data. You should consider both the probability of such a collapse and the consequences – a small county road bridge collapse is less problematic than e.g. the I-80 bridge over the Missouri collapsing. What interventions do you recommend to minimize the risk?"
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html",
+    "href": "assignment-repos/user-guide-annual-review/task-analysis.html",
+    "title": "STAT 349 - Spring 2025",
+    "section": "",
+    "text": "Here are some questions to guide you through the process of doing a task analysis. You don’t have to specifically answer each one of these (and some may not apply), but they should get you started thinking in the right direction.\nWhat are the prerequisites, for both knowledge and e.g. software setup?\nWhat are the basic requirements for any data that the method is used on? - Are missing values allowed? - Should the data be confined within a certain range? - Does the data have to be approximately normally distributed?\nWhat are the basic components of the task? - Outline these in a bit more detail\nWhat decisions does the user need to be prepared to make on the fly?\nWhat questions should the user ask of the “first draft” of the product? What adjustments may need to be made?\n\n\nYour check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
+    "href": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
+    "title": "STAT 349 - Spring 2025",
+    "section": "",
+    "text": "Your check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/needs.html",
+    "href": "assignment-repos/user-guide-annual-review/needs.html",
+    "title": "STAT 349 - Spring 2025",
+    "section": "",
+    "text": "Needs Assessment\n\nWhat does someone trying to accomplish your chosen task need help with?\nWhat parts are likely to be tricky?\nWhat resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/guide.html",
+    "href": "assignment-repos/user-guide-annual-review/guide.html",
+    "title": "User Guide",
+    "section": "",
+    "text": "User Guide\nFirst off, you should change this section title to something more appropriate.\nNext, well, that’s up to you. Good luck!"
+  },
+  {
+    "objectID": "assignment-repos/business-report/references.html",
+    "href": "assignment-repos/business-report/references.html",
     "title": "References",
     "section": "",
     "text": "References"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/index.html",
-    "href": "assignment-repos/user-guide-annual-review/index.html",
-    "title": "Assignment Flow",
+    "objectID": "assignment-repos/business-report/index.html",
+    "href": "assignment-repos/business-report/index.html",
+    "title": "Preface",
     "section": "",
-    "text": "Assignment Flow\nThis project is set up to scaffold this user guide and set you up for success.\nStart at topic.qmd and identify a topic for your user guide.\nOnce you’ve proposed a topic and received my approval/feedback, you can convert the contents of topic.qmd into an introductory paragraph in your report. Please leave the topic.qmd file as an appendix, to document the different stages of this project.\nOnce we’ve agreed on a topic for your user guide, you will proceed to needs.qmd and task-analysis.qmd. Both will be submitted at the same check-in, and both will be included in your final report as appendices. You should be able to re-purpose most of the information in task-analysis.qmd to orient the user to different components of the task you’ve chosen.\nYour next step is to actually write the content that satisfies the work you outlined in task-analysis.qmd.\nOnce you’re finished with that, ideally, you’ll have plenty of time to edit and streamline your report. Feel free to trade reports with a friend and try to complete your friend’s task - this will help you both identify areas where the guide isn’t as clear. Try to complete the task with a different data set - that often helps find trouble spots.\nWhen you submit your final report, you may remove index.qmd from the _quarto.yml file, which will remove this chapter (which is quite unnecessary for your user) from the report. You should also take the time to make sure your name is listed as both author and copyright holder in the _quarto.yml file. Feel free to make a custom cover for your manual if you would like to do so. You can also tweak the CSS/theme for the book, so long as you’re conscious of accessibility concerns.\n\n\n\n\n\n\nCautionBuilding the report\n\n\n\nIf you are using RStudio to complete this report, you can hit (Ctrl/Cmd)-Shift-B to build the whole report. You can also type quarto render . on the command line in the project folder to accomplish the same thing.\nIf you have questions about how to customize or debug your book, it may be helpful to start at the quarto book documentation [@positpbcCreatingBook2024]."
+    "text": "Preface\nYou are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.\nYou may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.\n\nI’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.\nThe basic steps for this task are as follows:\n\nIdentify the research question from the business question\nIdentify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task\n\n(HW Week 6) Document your data sets in draft-data-doc.qmd\n\nConduct a statistical analysis to support your answer to your research and business questions\n\nWrite a methods section for your business report corresponding to your statistical analysis\n(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in draft-results.qmd\n\nWrite your report\n\n(HW Week 10) Draft of Intro/Conclusion sections in draft-intro-conclusions.qmd\n(HW Week 11) Draft of Executive summary section in draft-exec-summary.qmd\n\nRevise your report\n\n(HW Week 12 – not turned in) Revise your report\n(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in _quarto.yml. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.\nDevelop a presentation to go along with your report (Week 13). Create slides for your report using quarto.\n\nPeer revise reports\n\nPeer revise reports\n(HW Week 14) - Make edits to your report from comments received from peer review\n\nFinal report & presentation due"
   },
   {
-    "objectID": "assignment-repos/business-report/summary.html",
-    "href": "assignment-repos/business-report/summary.html",
-    "title": "Summary",
+    "objectID": "assignment-repos/annotated-bibliography/index.html",
+    "href": "assignment-repos/annotated-bibliography/index.html",
+    "title": "Annotated Bibliography",
     "section": "",
-    "text": "Summary\nIn summary, this book has no content whatsoever."
+    "text": "Annual Review Article\nannualrevarticle?\n\n\nReferences\nref1?\n\nSummary\nReliability and relationship to the topic\nMissing pieces\n\nthing 1\nthing 2"
   },
   {
-    "objectID": "assignment-repos/business-report/intro.html",
-    "href": "assignment-repos/business-report/intro.html",
-    "title": "Introduction",
+    "objectID": "activities/IgNobel-Results.html",
+    "href": "activities/IgNobel-Results.html",
+    "title": "IgNobel Award-Winning Paper Results Sections",
     "section": "",
-    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming."
-  },
-  {
-    "objectID": "assignment-repos/annotated-bibliography/template.html",
-    "href": "assignment-repos/annotated-bibliography/template.html",
-    "title": "Template",
-    "section": "",
-    "text": "Kieran Healy “Fuck Nuance,” Sociological Theory 35, no. 2 (June 2017): 118–27, https://doi.org/10.1177/0735275117709046.\n\nSummary: Healy argues that nuance, a common (and praised) feature of sociological theory, inhibits abstraction and prevents the development of good theories. Nuance, in Healy’s argument, is the tendency to make theories more complicated by adding unnecessary complexity, rather than reducing complexity and making strong statements. Healy presents three ‘nuance traps’ which plague sociology and argues against it from multiple different perspectives.\nReliability assessment: The author is a professor of sociology at Duke University and has many different publications in the field. As a result, he is likely qualified to critique the field from an insider’s perspective. As this is just a template of an annotated bibliography and this article is unrelated to a review article, I cannot easily assess how this article relates to the review article or overall topic (but you should).\nMissing information:\n\nI do not understand sociology enough to have seen this tendency in the field (but it seems to apply well enough to statistics)\nThe aesthetic argument against nuance is a bit tricky to understand and may require reading up on Davis (1971) - what makes theory interesting. Healy argues that interesting is more important than truth (based on Davis) and that nuance can thus occasionally be interesting but is perhaps more often dull. Without being familiar with Davis, it is hard to know if I’m understanding this component of the argument."
-  },
-  {
-    "objectID": "activities/arguments.html",
-    "href": "activities/arguments.html",
-    "title": "Rhetoric in Technical Writing",
-    "section": "",
-    "text": "Meeting the Need for Water in the Lower Colorado River by Diverting Water from the Mississippi River - A Practical Assessment of a Popular Proposal [PDF]\nDeep Water The Gulf Oil Disaster and the Future of Offshore Drilling [PDF]\nNoncitizen Coverage and Its Effects on U.S. Population Statistics [PDF]\nAssessing the 2020 Census: Final Report [PDF]"
-  },
-  {
-    "objectID": "activities/arguments.html#report-examples",
-    "href": "activities/arguments.html#report-examples",
-    "title": "Rhetoric in Technical Writing",
-    "section": "",
-    "text": "Meeting the Need for Water in the Lower Colorado River by Diverting Water from the Mississippi River - A Practical Assessment of a Popular Proposal [PDF]\nDeep Water The Gulf Oil Disaster and the Future of Offshore Drilling [PDF]\nNoncitizen Coverage and Its Effects on U.S. Population Statistics [PDF]\nAssessing the 2020 Census: Final Report [PDF]"
-  },
-  {
-    "objectID": "activities/arguments.html#class-activity",
-    "href": "activities/arguments.html#class-activity",
-    "title": "Rhetoric in Technical Writing",
-    "section": "Class Activity",
-    "text": "Class Activity\nAlmost every report has a message – a claim, backed up by reasons and supported by evidence, that conveys the importance of believing or acting upon an idea.\nIn a group of 2-3 people, pick a report and skim it to identify the claims, reasons, evidence, and warrants.\nSome of these reports are hundreds of pages. I don’t expect you to read the whole report in less than an hour (or ever) - just skim through the report to get a sense of its structure and design, and read a few bits here and there to determine their relevance.\nThen, evaluate your report using the following questions:\nWhat is the basic argument that the report is making?\nWhat rhetorical choices did the author(s) make when supporting their argument?\nIs the argument convincing?\nDiscuss your answers in your group and be prepared to share with the rest of the class in the last 15 minutes of class.\nA guided version of this activity is provided for Week 5’s 2nd lecture."
+    "text": "Before Class\n\nSkim your article, looking at the headings and pictures/tables\nSkim the methods section, looking for important information that will help you understand the results\nRead the results section\n\n\n\nArticle Evaluation\n(30 minutes)\n\nAnalyze the results section, looking for the elements below: Go through your assigned article and look for the following elements of a results section, according to SWHR:\n\nStudy sample characteristics and descriptive statistics\nFindings of the primary analysis\nFindings of the secondary analyses\nAny additional findings to highlight\n\nEvaluate whether the article also adheres to the guidelines for each type of results:\n\nStudy sample characteristics and descriptive statistics\n\nDescribed first\nDo results show a flowchart or other details?\nOnly includes key information\nDescriptive statistics for outcome and explanatory variable\n\nFindings of the primary analysis\n\nEstimates from crude/unadjusted and adjusted models\nDescription of changes in results between models, if multiple models are used\nTable results? Graphics?\n\nFindings of the secondary analyses\n\nInteraction, effect modification, or sub group analyses?\nRelationships between confounders and outcome variables?\nAny additional findings to highlight\nSensitivity analysis?\n\n\nAdditionally, evaluate whether the section adheres to the following recommendations:\n\nNot repetitive or pedantic\nDescribes all tables and figures included in the main text\nResults section has a logical flow\nAvoids mixing methods and/or discussion in with the results\nResults reported objectively\nMeasures of effect size are reported along with significance\n\n\n\n\nClass Discussion\n(30 minutes)\n\nHow well do the guidelines in SWHR hold up for papers across a wide swath of different disciplines?\nWhat types of figures and tables and visual aids were used? Did they help you understand the results?\nHow often did you have to refer back to the methods (or look ahead to the discussion) to interpret and understand the results?\nWhat pieces of the results section were hard to understand? What pieces were easy?\nWas there anything you expected to see in the results section that wasn’t present?\nWas there anything that you didn’t expect to see in the results section?"
   },
   {
     "objectID": "weeks/week-16.html",
     "href": "weeks/week-16.html",
     "title": "Week 16: In-Class Presentations",
     "section": "",
-    "text": "April 27-03, 2026\n\n\n\nBusiness presentations\n\n\n\n\n\nBusiness presentations\n\n\n\n\n\nSlides for business presentation ’\nBusiness report due (05-01, 6pm)"
+    "text": "April 27-03, 2026\n\n\n\nBusiness presentations\n\n\n\n\n\nBusiness presentations\n\n\n\n\n\nSlides for business presentation\nBusiness report due (05-01, 6pm)"
   },
   {
     "objectID": "weeks/week-16.html#tuesday",
@@ -865,7 +921,7 @@
     "href": "weeks/week-16.html#practice-your-skills",
     "title": "Week 16: In-Class Presentations",
     "section": "",
-    "text": "Slides for business presentation ’\nBusiness report due (05-01, 6pm)"
+    "text": "Slides for business presentation\nBusiness report due (05-01, 6pm)"
   },
   {
     "objectID": "weeks/week-14.html",
@@ -1378,7 +1434,7 @@
     "href": "syllabus.html",
     "title": "Stat 349 Syllabus",
     "section": "",
-    "text": "InstructorSusan Vanderplas\n \nE-mailsvanderplas2@nebraska.edu \nOfficeHardin 343D\nOffice HoursBy appointment. Schedule at calendly.com/vanderplas/office-hours\n\n\nTimeMW 10:00 - 11:15\nLocationHardin ANSC A228-East\nCourse Websiteunl-statistics.github.io/stat349\nFinal ExamMay 8, 7:30-9:30 AM",
+    "text": "InstructorSusan Vanderplas\n \nE-mailsvanderplas2@nebraska.edu \nOfficeHardin 343D\nOffice HoursBy appointment. Schedule at https://calendly.com/drvanderplas/officehours\n\n\nTimeMW 10:00 - 11:15\nLocationHardin ANSC A228-East\nCourse Websiteunl-statistics.github.io/stat349\nFinal ExamMay 8, 7:30-9:30 AM",
     "crumbs": [
       "Course information",
       "Syllabus"
@@ -1543,7 +1599,7 @@
     "href": "weeks/week-03.html",
     "title": "Week 3: References",
     "section": "",
-    "text": "January 26-01, 2026\n\n\n\nRead OTC Chapter 5.6 – References\nRead OTC Chapter 3 - Ethics\nRead ETC Annoying Ways People Use Sources\nPractical Tutorial: Connecting Rstudio + Zotero\n\n\n\n\n\nReading Quiz Week 3\nFor Monday: Download and Install Zotero citation manager and Zotero Connector for your preferred browser\n\n\n\n\n\nCitation Managers – Demonstrate Zotero features\nScavenger hunt - Citation manager options\nHow to read technical reports and academic articles\n\n\n\n\n\nHow to summarize (without ChatGPT)\nSlides\n\n\n\n\n\nCreate an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article, and justify your choices.",
+    "text": "January 26-01, 2026\n\n\n\nRead OTC Chapter 5.6 – References\nRead OTC Chapter 3 - Ethics\nRead ETC Annoying Ways People Use Sources\nPractical Tutorial: Connecting Rstudio + Zotero\n\n\n\n\n\nReading Quiz Week 3\nFor Monday: Download and Install Zotero citation manager and Zotero Connector for your preferred browser\n\n\n\n\n\nScavenger hunt - Citation manager options\nHow to read technical reports and academic articles\n\n\n\n\n\nHow to summarize (without ChatGPT)\nSlides\n\n\n\n\n\nCreate an annotated bibliography with 2 of the references cited in your annual review article. Pick references that you think are important based on the way they are discussed in the article, and justify your choices.",
     "crumbs": [
       "Weekly materials",
       "Week 3 - References"
@@ -1576,7 +1632,7 @@
     "href": "weeks/week-03.html#tuesday",
     "title": "Week 3: References",
     "section": "",
-    "text": "Citation Managers – Demonstrate Zotero features\nScavenger hunt - Citation manager options\nHow to read technical reports and academic articles",
+    "text": "Scavenger hunt - Citation manager options\nHow to read technical reports and academic articles",
     "crumbs": [
       "Weekly materials",
       "Week 3 - References"
@@ -1741,7 +1797,7 @@
     "href": "weeks/week-09.html",
     "title": "Week 9: Results",
     "section": "",
-    "text": "March 09-15, 2026\n\n\n\nRead SWHR 5 - Results\n\n\n\n\n\nReading Quiz Week 9\nFor Wednesday: On Canvas, find the Activity: IgNobel Results Sections page. Download your assigned paper and read it before class.\n\n\n\n\n\nCountering misconceptions in results\n\n\n\n\n\nIgNobel Results Section Activity activity (Canvas) and class discussion\n\n\n\n\n\nDraft of results section of business report with relevant graphics/visual aids",
+    "text": "March 09-15, 2026\n\n\n\nRead SWHR 5 - Results\n\n\n\n\n\nReading Quiz Week 9\nFor Wednesday: Claim an IgNobel Article via the Canvas Discussion Board. Download your assigned paper and read it before class to prepare for the IgNobel Results Section Activity.\n\n\n\n\n\nCountering misconceptions in results\n\n\n\n\n\nIgNobel Results Section Activity and class discussion\n\n\n\n\n\nDraft of results section of business report with relevant graphics/visual aids",
     "crumbs": [
       "Weekly materials",
       "Week 9 - Results"
@@ -1763,7 +1819,7 @@
     "href": "weeks/week-09.html#prepare-for-class",
     "title": "Week 9: Results",
     "section": "",
-    "text": "Reading Quiz Week 9\nFor Wednesday: On Canvas, find the Activity: IgNobel Results Sections page. Download your assigned paper and read it before class.",
+    "text": "Reading Quiz Week 9\nFor Wednesday: Claim an IgNobel Article via the Canvas Discussion Board. Download your assigned paper and read it before class to prepare for the IgNobel Results Section Activity.",
     "crumbs": [
       "Weekly materials",
       "Week 9 - Results"
@@ -1785,7 +1841,7 @@
     "href": "weeks/week-09.html#thursday",
     "title": "Week 9: Results",
     "section": "",
-    "text": "IgNobel Results Section Activity activity (Canvas) and class discussion",
+    "text": "IgNobel Results Section Activity and class discussion",
     "crumbs": [
       "Weekly materials",
       "Week 9 - Results"
@@ -2015,81 +2071,130 @@
     "text": "Business presentations during Final Exam period"
   },
   {
-    "objectID": "assignment-repos/annotated-bibliography/index.html",
-    "href": "assignment-repos/annotated-bibliography/index.html",
-    "title": "Annotated Bibliography",
+    "objectID": "activities/arguments.html",
+    "href": "activities/arguments.html",
+    "title": "Rhetoric in Technical Writing",
     "section": "",
-    "text": "Annual Review Article\nannualrevarticle?\n\n\nReferences\nref1?\n\nSummary\nReliability and relationship to the topic\nMissing pieces\n\nthing 1\nthing 2"
+    "text": "Meeting the Need for Water in the Lower Colorado River by Diverting Water from the Mississippi River - A Practical Assessment of a Popular Proposal [PDF]\nDeep Water The Gulf Oil Disaster and the Future of Offshore Drilling [PDF]\nNoncitizen Coverage and Its Effects on U.S. Population Statistics [PDF]\nAssessing the 2020 Census: Final Report [PDF]"
   },
   {
-    "objectID": "assignment-repos/business-report/index.html",
-    "href": "assignment-repos/business-report/index.html",
-    "title": "Preface",
+    "objectID": "activities/arguments.html#report-examples",
+    "href": "activities/arguments.html#report-examples",
+    "title": "Rhetoric in Technical Writing",
     "section": "",
-    "text": "Preface\nYou are a data scientist for a mid-sized business, in a small group of 3-4 data scientists. You’ve been tasked with creating a report evaluating a scenario for your business. Your colleagues will also be evaluating the same scenario, and your reports will be used in aggregate to determine a consensus (or lack thereof) on the company’s action. The reports will also be used to inform downsizing that is rumored to be coming - you want to ensure your report is better than your peers so that you aren’t as easy to cut.\nYou may talk to your peers who are assigned the same scenario, but you do not want to collaborate too closely, lest you both become targets of the rumored layoffs.\n\nI’ve scaffolded this report for you to make this process easier - as we talk about different sections of a report in class and read about how to create similar sections, you will practice by writing the equivalent section of your report.\nThe basic steps for this task are as follows:\n\nIdentify the research question from the business question\nIdentify data set(s) which are (1) publicly available (you don’t have a budget to pay for private data) and (2) relevant to your task\n\n(HW Week 6) Document your data sets in draft-data-doc.qmd\n\nConduct a statistical analysis to support your answer to your research and business questions\n\nWrite a methods section for your business report corresponding to your statistical analysis\n(HW Week 9) Draft of results section of business report with relevant graphics/visual aids in draft-results.qmd\n\nWrite your report\n\n(HW Week 10) Draft of Intro/Conclusion sections in draft-intro-conclusions.qmd\n(HW Week 11) Draft of Executive summary section in draft-exec-summary.qmd\n\nRevise your report\n\n(HW Week 12 – not turned in) Revise your report\n(HW Week 13) - Rough draft of report due. Create one or more qmd files for your report (you can overwrite or delete intro.qmd and summary.qmd), include the names of each file (in order) in _quarto.yml. You should use references (edit references.bib and use pandoc citations). Make sure your report compiles and looks reasonable in both html and pdf.\nDevelop a presentation to go along with your report (Week 13). Create slides for your report using quarto.\n\nPeer revise reports\n\nPeer revise reports\n(HW Week 14) - Make edits to your report from comments received from peer review\n\nFinal report & presentation due"
+    "text": "Meeting the Need for Water in the Lower Colorado River by Diverting Water from the Mississippi River - A Practical Assessment of a Popular Proposal [PDF]\nDeep Water The Gulf Oil Disaster and the Future of Offshore Drilling [PDF]\nNoncitizen Coverage and Its Effects on U.S. Population Statistics [PDF]\nAssessing the 2020 Census: Final Report [PDF]"
   },
   {
-    "objectID": "assignment-repos/business-report/references.html",
-    "href": "assignment-repos/business-report/references.html",
+    "objectID": "activities/arguments.html#class-activity",
+    "href": "activities/arguments.html#class-activity",
+    "title": "Rhetoric in Technical Writing",
+    "section": "Class Activity",
+    "text": "Class Activity\nAlmost every report has a message – a claim, backed up by reasons and supported by evidence, that conveys the importance of believing or acting upon an idea.\nIn a group of 2-3 people, pick a report and skim it to identify the claims, reasons, evidence, and warrants.\nSome of these reports are hundreds of pages. I don’t expect you to read the whole report in less than an hour (or ever) - just skim through the report to get a sense of its structure and design, and read a few bits here and there to determine their relevance.\nThen, evaluate your report using the following questions:\nWhat is the basic argument that the report is making?\nWhat rhetorical choices did the author(s) make when supporting their argument?\nIs the argument convincing?\nDiscuss your answers in your group and be prepared to share with the rest of the class in the last 15 minutes of class.\nA guided version of this activity is provided for Week 5’s 2nd lecture."
+  },
+  {
+    "objectID": "assignment-repos/annotated-bibliography/template.html",
+    "href": "assignment-repos/annotated-bibliography/template.html",
+    "title": "Template",
+    "section": "",
+    "text": "Kieran Healy “Fuck Nuance,” Sociological Theory 35, no. 2 (June 2017): 118–27, https://doi.org/10.1177/0735275117709046.\n\nSummary: Healy argues that nuance, a common (and praised) feature of sociological theory, inhibits abstraction and prevents the development of good theories. Nuance, in Healy’s argument, is the tendency to make theories more complicated by adding unnecessary complexity, rather than reducing complexity and making strong statements. Healy presents three ‘nuance traps’ which plague sociology and argues against it from multiple different perspectives.\nReliability assessment: The author is a professor of sociology at Duke University and has many different publications in the field. As a result, he is likely qualified to critique the field from an insider’s perspective. As this is just a template of an annotated bibliography and this article is unrelated to a review article, I cannot easily assess how this article relates to the review article or overall topic (but you should).\nMissing information:\n\nI do not understand sociology enough to have seen this tendency in the field (but it seems to apply well enough to statistics)\nThe aesthetic argument against nuance is a bit tricky to understand and may require reading up on Davis (1971) - what makes theory interesting. Healy argues that interesting is more important than truth (based on Davis) and that nuance can thus occasionally be interesting but is perhaps more often dull. Without being familiar with Davis, it is hard to know if I’m understanding this component of the argument."
+  },
+  {
+    "objectID": "assignment-repos/business-report/intro.html",
+    "href": "assignment-repos/business-report/intro.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Introduction\nThis is a book created from markdown and executable code.\nSee @knuth84 for additional discussion of literate programming."
+  },
+  {
+    "objectID": "assignment-repos/business-report/summary.html",
+    "href": "assignment-repos/business-report/summary.html",
+    "title": "Summary",
+    "section": "",
+    "text": "Summary\nIn summary, this book has no content whatsoever."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/index.html",
+    "href": "assignment-repos/user-guide-annual-review/index.html",
+    "title": "Assignment Flow",
+    "section": "",
+    "text": "Assignment Flow\nThis project is set up to scaffold this user guide and set you up for success.\nStart at topic.qmd and identify a topic for your user guide.\nOnce you’ve proposed a topic and received my approval/feedback, you can convert the contents of topic.qmd into an introductory paragraph in your report. Please leave the topic.qmd file as an appendix, to document the different stages of this project.\nOnce we’ve agreed on a topic for your user guide, you will proceed to needs.qmd and task-analysis.qmd. Both will be submitted at the same check-in, and both will be included in your final report as appendices. You should be able to re-purpose most of the information in task-analysis.qmd to orient the user to different components of the task you’ve chosen.\nYour next step is to actually write the content that satisfies the work you outlined in task-analysis.qmd.\nOnce you’re finished with that, ideally, you’ll have plenty of time to edit and streamline your report. Feel free to trade reports with a friend and try to complete your friend’s task - this will help you both identify areas where the guide isn’t as clear. Try to complete the task with a different data set - that often helps find trouble spots.\nWhen you submit your final report, you may remove index.qmd from the _quarto.yml file, which will remove this chapter (which is quite unnecessary for your user) from the report. You should also take the time to make sure your name is listed as both author and copyright holder in the _quarto.yml file. Feel free to make a custom cover for your manual if you would like to do so. You can also tweak the CSS/theme for the book, so long as you’re conscious of accessibility concerns.\n\n\n\n\n\n\nCautionBuilding the report\n\n\n\nIf you are using RStudio to complete this report, you can hit (Ctrl/Cmd)-Shift-B to build the whole report. You can also type quarto render . on the command line in the project folder to accomplish the same thing.\nIf you have questions about how to customize or debug your book, it may be helpful to start at the quarto book documentation [@positpbcCreatingBook2024]."
+  },
+  {
+    "objectID": "assignment-repos/user-guide-annual-review/references.html",
+    "href": "assignment-repos/user-guide-annual-review/references.html",
     "title": "References",
     "section": "",
     "text": "References"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/guide.html",
-    "href": "assignment-repos/user-guide-annual-review/guide.html",
-    "title": "User Guide",
+    "objectID": "assignment-repos/user-guide-annual-review/topic.html",
+    "href": "assignment-repos/user-guide-annual-review/topic.html",
+    "title": "Topic",
     "section": "",
-    "text": "User Guide\nFirst off, you should change this section title to something more appropriate.\nNext, well, that’s up to you. Good luck!"
+    "text": "Topic\nPick some subset of the information covered in your annual review article that you are interested in exploring in more detail.\nIdentify the scope of your user guide - what will you cover? Specific software packages? When to use or not to use a specific technique?"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/needs.html",
-    "href": "assignment-repos/user-guide-annual-review/needs.html",
-    "title": "STAT 349 - Spring 2025",
+    "objectID": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-nsfw.html",
+    "title": "Not Safe For Work",
     "section": "",
-    "text": "Needs Assessment\n\nWhat does someone trying to accomplish your chosen task need help with?\nWhat parts are likely to be tricky?\nWhat resources are already available on this topic that may be helpful? Look for e.g. software vignettes, package documentation, papers about software packages, and so on."
+    "text": "Scenario Description:\nYou are a statistical analyst for a company with both industrial/manufacturing and office spaces. Your safety officer recently read this article about office injury statistics and wants you to evaluate whether the company needs to implement stronger safety policies for office workers, as they are more likely to be injured through falls than non-office workers.\nAssemble data from one or more reputable sources (Bureau of Labor Statistics, Centers for Disease Control, Occupational Safety and Health Administration) to assess the risk of on-the-job injury for office and non-office workers. Consider both the severity of the injury and the probability of occurrence."
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html",
-    "href": "assignment-repos/user-guide-annual-review/task-analysis.html",
-    "title": "STAT 349 - Spring 2025",
+    "objectID": "assignment-repos/business-report/scenarios/scenario-shark.html",
+    "href": "assignment-repos/business-report/scenarios/scenario-shark.html",
+    "title": "Sharknado!",
     "section": "",
-    "text": "Here are some questions to guide you through the process of doing a task analysis. You don’t have to specifically answer each one of these (and some may not apply), but they should get you started thinking in the right direction.\nWhat are the prerequisites, for both knowledge and e.g. software setup?\nWhat are the basic requirements for any data that the method is used on? - Are missing values allowed? - Should the data be confined within a certain range? - Does the data have to be approximately normally distributed?\nWhat are the basic components of the task? - Outline these in a bit more detail\nWhat decisions does the user need to be prepared to make on the fly?\nWhat questions should the user ask of the “first draft” of the product? What adjustments may need to be made?\n\n\nYour check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+    "text": "You are an analyst for an insurance agency concerned with increasing payouts for property damage with a warming climate. Your boss recently saw Sharknado (2013) while trying to battle insomnia, and has become concerned about the increased likelihood of shark-infested weather as severe weather events become more probable due to climate change.\nYour boss’s concerns about the possiblity of shark-infested storms cannot be countered with logic, but you might be able to convince them that very few storms even have shark-infestation potential.\nAssemble data from one or more reputable sources (NOAA, USGS, etc.).\nAssess the probability that tornadoes form in coastal areas (Atlantic, Pacific, and Gulf of Mexico) and move inward, compared to the probability that tornadoes form inland and move toward the coast. You should consider both the probability of a coastal -&gt; inland tornadic event and the consequences – a F0 tornado is unlikely to have the power to lift sharks from the water, while an F5 tornado might have the ability to transport many sharks inland. How serious is the sharknado threat to your bottom line?\n(Note that you should probably not mock your boss too much, because they don’t like to be the butt of jokes.)"
   },
   {
-    "objectID": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
-    "href": "assignment-repos/user-guide-annual-review/task-analysis.html#additional-guidance",
-    "title": "STAT 349 - Spring 2025",
+    "objectID": "instructions/intro-problem-statements.html",
+    "href": "instructions/intro-problem-statements.html",
+    "title": "Introductions & Problem Statements",
     "section": "",
-    "text": "Your check-in should answer these basic questions (and similar concerns that apply more directly to your topic).\nOnce you’ve completed the check-in, you can use this section to jump-start an introduction/set-up/getting started section in your user guide. This document should remain as an appendix to your main report."
+    "text": "Articles:\n\n2030 Census Research Recommendations\nNearly All U.S. Counties Had More Homeowners Than Renters Between 2019 and 2023\nWho Could Afford to Buy a Home in 2009? Affordability of Buying a Home in the United States\nEnabling Global Image Data Sharing in the Life Sciences\nWillful Winds: Hurricane Andrew and Louisiana’s Coast\nHurricane Katrina\nWater-Level and Recoverable Water in Storage Changes, High Plains Aquifer, Predevelopment to 2019 and 2017 to 2019"
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-bridge.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-bridge.html",
-    "title": "London Bridge is Falling Down",
+    "objectID": "instructions/test-zotero-csl.html",
+    "href": "instructions/test-zotero-csl.html",
+    "title": "Testing References",
     "section": "",
-    "text": "Scenario Description:\nYou are an analyst for the Omaha, NE city government. The mayor, concerned about the degrading transportation infrastructure in the city, has asked you to assess the risk of bridge failure to the city, after well-publicized bridge collapses in cities on the East Coast in 2024.\nAssemble data from one or more reputable sources (State and national DOT, Army Corps of Engineers, etc.). Assess the risk of a bridge collapse event occurring over the next 5 years, using publicly available data. You should consider both the probability of such a collapse and the consequences – a small county road bridge collapse is less problematic than e.g. the I-80 bridge over the Missouri collapsing. What interventions do you recommend to minimize the risk?"
+    "text": "To test whether zebra stripes prevent biting fly attacks, [1] painted cows with black-and-white, black-only, and no stripes and recorded the number of fly repelling behaviors and flies on the body and legs.\nTo test how Egyptian fruit bats are affected by ethanol (which occurs naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and ethanol-free food, finding that flight speed, echolocation calls, and behavior were negatively impacted by the presence of ethanol ([2]).\n\n\n\n\nReferences\n\n[1] T. Kojima et al., “Cows painted with zebra-like striping can avoid biting fly attack,” PLOS ONE, vol. 14, no. 10, p. e0223447, Oct. 2019, doi: 10.1371/journal.pone.0223447.\n\n\n[2] F. Sánchez, M. Melcón, C. Korine, and B. Pinshow, “Ethanol ingestion affects flight performance and echolocation in egyptian fruit bats,” Behavioural Processes, vol. 84, no. 2, pp. 555–558, Jun. 2010, doi: 10.1016/j.beproc.2010.02.006."
   },
   {
-    "objectID": "assignment-repos/business-report/scenarios/scenario-power.html",
-    "href": "assignment-repos/business-report/scenarios/scenario-power.html",
-    "title": "The Power of Climate Change",
+    "objectID": "instructions/zotero-setup.html",
+    "href": "instructions/zotero-setup.html",
+    "title": "Citation Manager Scavenger Hunt",
     "section": "",
-    "text": "Scenario Description:\nYou are an analyst working for an electrical utility. A manager at one of the power plants has recently approached you about climate resilience strategies. The power plant is situated along the Gulf of Mexico in Dauphin Island, AL, and uses the Gulf as an heatsink.\nCurrently, the plant is designed around the assumption that the temperature of the gulf will be below 85\\(^\\circ\\)F (this assumption was relatively reasonable when the plant was built in 1970). When the water temperature is above this point, the plant must operate at reduced capacity, as it cannot transfer additional thermal energy into the water.\nAssemble data from one or more reputable sources (USGS, NOAA, US Energy Information Administration). Make an operational assessment of the risk that the plant will have to operate at reduced capacity during the next 5 years. Consider both the probability of reduced operating capacity as well as the timing of that capacity (e.g. you should also look at electrical usage during those periods)."
+    "text": "The goal of this exercise is to figure out how to set up your citation manager (Zotero) and integrate it into RStudio and your preferred browser."
   },
   {
-    "objectID": "instructions/cv-templates.html",
-    "href": "instructions/cv-templates.html",
-    "title": "Quarto CV/Resume Templates",
-    "section": "",
-    "text": "Just the Document\n\nAlex Bass’s simple quarto resume template\n\nSchochastics quarto templates\nTo use: at the command line,\nquarto use template schochastics/&lt;cv style name&gt;\n\nclassic-cv\n\n\nmodern-cv\n\nmodern2-cv\n\nsidebar-cv\n\n\nMultiformat (PDF/HTML) Resumes with weasyprint - Cynthia Huang\n\n\n\nR packages – build a CV with data!\nBuilding your CV using data frames for education, experience, publications, etc., can make it easier to switch formats and/or keep all of your information in a file and then show only the 3 most recent entries (for example).\n\ndatadrivencv R package. Slides show you how to use the package and why you might want to use data to build a CV/resume. (no LaTeX, uses CSS, but not actively maintained)\nvitae R package – provides functions to make Rmarkdown resumes/CVs easy (quarto -&gt; LaTeX)\n\nawesomecv\n\nhyndman\n\nlatexcv\n\nmarkdowncv\n\nmoderncv\n\ntwentyseconds\n\n\n`typstcv` package (non-LaTeX, HTML-based with CSS)\nTypst is a non-LaTeX way to make paged documents (pdfs, docx) using markdown. Quarto is adopting it, but it is still less developed than LaTeX (which has been around for more than 40 years)."
+    "objectID": "instructions/zotero-setup.html#bibliography-files",
+    "href": "instructions/zotero-setup.html#bibliography-files",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "Bibliography files",
+    "text": "Bibliography files\nA long, long time ago, well before quarto or rmarkdown, there was LaTeX – a program that was primarily used for typesetting math. The format it used for handling bibliographies was BibLaTeX, or BibTeX (they’re similar but technically not the same). You can read a bit about BibLaTeX here – in particular for this class, the section on “The bibliography file” is useful and will show you what a bib file looks like.\nBib files are perhaps even more painful to maintain by hand than an actual MLA/APA style bibliography. Luckily, Zotero handles that for us too.\n\nThis section relies heavily on having Quick Copy in Zotero (Settings -&gt; Export -&gt; Quick Copy, Item Format set to BibLaTeX) set to BibLaTeX. If you haven’t set that, please do so now.\n\n\nFor each project and some regular assignments in this class, we’re going to have a .bib file with all of the references you collect."
   },
   {
-    "objectID": "instructions/setup-github-portfolio.html",
-    "href": "instructions/setup-github-portfolio.html",
-    "title": "Setting Up a Github.io portfolio",
-    "section": "",
-    "text": "Steps\n\nCreate a github repository that is named “portfolio” and located at https://github.com/username/portfolio (where username is your github username).\nCreate a quarto website (I recommend a blog – it will make it easier to keep track of when things are updated) by following these directions.\n\nChange the build directory in _quarto.yml to docs\n\nBuild the default site (customize it later) with Ctrl/Cmd + Shift + B.\nAdd the files to git, including the /docs folder. Push your site (along with the /docs folder containing the rendered site) to GitHub. You can customize it later.\n\nOn GitHub, set your site to render to the docs directory (detailed instructions).\n\nCreate an empty .nojekyll file in the main directory of your project repository\nConfigure your GitHub repository (Settings -&gt; Pages -&gt; Build and Deployment) to publish the /docs directory of the main branch of your repository.\n\nCheck the rendered site (it should have an address of https://.github.io/portfolio) – it may take ~5 minutes to appear after you’ve completed step 4.\nMake any tweaks to your site that you’d like to make – add pictures, a biography, posts about your interests, etc.\n\nThe goal of this is to have a place where you can showcase your coursework for future employers. Keep it professional (but it’s ok to have some information about your hobbies, if you want to show that dimension of yourself).\nThe department may eventually want to showcase some of these sites so that incoming students can see what current students accomplish as part of our courses. We will ask permission first!\n\n\n\n\nUpdating your site\nRendering your site will be done manually – thus, each time you want to update the actual site, you’ll have to run the following commands in the terminal (not the R console):\nquarto render # Can also be accomplished by Ctrl/Cmd + Shift + B\ngit add docs\ngit commit -m \"Publish site to docs/\"\ngit push\n(You can also accomplish this by hitting the Render button in RStudio and then adding and committing the docs folder in the git pane in RStudio.)\nIf you’re feeling fancy, you can automate this process using a GitHub action, but this is fiddly and probably not worth it unless you’re actually planning to use this as a blog and update it frequently. If you decide to set everything up with Github Actions, I can offer a minimal amount of help with debugging, but even I find them confusing.\n\n\n\n\n\n\nCautionRendering your site\n\n\n\nUpdating the markdown files is not enough – you have to render (in e.g. RStudio) and push the docs folder for changes to show up on Github pages.\nIf things aren’t working,\n\nRun render via RStudio or by using quarto render . on the command line (in the project folder).\nLook for any un-pushed changes, either in the Git pane of RStudio (hit refresh) or by running git status on the command line.\nCheck that the docs/ folder has been committed AND pushed to GitHub.\nAsk for help, either in class during some downtime, or by making an office hours appointment."
+    "objectID": "instructions/zotero-setup.html#semi-automated-bibliography-file-assembly",
+    "href": "instructions/zotero-setup.html#semi-automated-bibliography-file-assembly",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "Semi-Automated Bibliography File Assembly",
+    "text": "Semi-Automated Bibliography File Assembly\nI find it easiest just to select the entries in Zotero and copy them into the bib file manually. This isn’t full manual – we don’t have to write the bib entries ourselves (like I did in graduate school). Let’s try that first before I show you other ways to connect RStudio to Zotero.\n\nCreate a text file called references.bib (make sure it has the extension .bib and not .bib.txt, particularly if your operating system hides file extensions from you).\nIn a browser, navigate to “Cows painted with zebra-like striping can avoid biting fly attack”, another 2025 IgNobel award winning paper. Use Zotero conneector to add the paper to Zotero, and make sure that all of the necessary fields1 are filled in correctly.\n\n\n\n\nHighlighted fields are essential – title, authors, publication (with vol/issue/pages if available), date, and either DOI or URL.\n\n\n\nSelect both IgNobel papers in Zotero and use Ctrl/Cmd+Shift+C (Quick copy) to get the BibLaTeX entries. Paste them into your references.bib file. Your file should look something like the lines below. I have removed the abstracts and file locations from my file for brevity’s sake.\n\n#| echo: false\n\ncat references.bib\n\nCreate a quarto file in RStudio or your IDE of choice. In the YAML metadata at the top, add bibliography: references.bib as an option. A minimal file with a title would look like this.\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\n---\n\nAdd a sentence summarizing each of the two IgNobel papers. For the Cow stripe paper, use an inline reference – \\@citation-key, and for the Ethanol paper, use a parenthetical reference – (\\@citation-key), where in both cases, citation-key is the first piece of the bib entry after \\@article{. When you’ve finished, take a peek at mine to see if your citation style is similar.\n\n\n\n\n\n\n\nNoteSample quarto file text\n\n\n\n\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\n---\n\nTo test whether zebra stripes prevent biting fly attacks,\n@kojimaCowsPaintedZebralike2019 painted cows with black-and-white,\nblack-only, and no stripes and recorded the number of fly repelling behaviors\nand flies on the body and legs.\n\nTo test how Egyptian fruit bats are affected by ethanol (which occurs\nnaturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and\nethanol-free food, finding that flight speed, echolocation calls, and\nbehavior were negatively impacted by the presence of ethanol\n(@sanchezEthanolIngestionAffects2010).\n\n\n\n\nYou can see the rendered file here – notice that the in-line citations are automatically included along with a references section at the end of the file.\n\nWhat if we want to change the citation format? IEEE uses numerical citations.\n\n\nWe can get a CSL (citation style language) file for that format (click the download file button) and use it in our file. You will have to move the file from where it downloaded to the directory with your references and quarto files.\nChange the YAML metadata of your quarto file to include csl: ieee.csl (or whatever the name of the CSL file you downloaded is…)\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\ncsl: ieee.csl\n---\n\nRecompile your document. See how the references at the bottom and the citations in the text have changed. My document"
+  },
+  {
+    "objectID": "instructions/zotero-setup.html#rstudio-visual-mode-zotero",
+    "href": "instructions/zotero-setup.html#rstudio-visual-mode-zotero",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "RStudio Visual Mode + Zotero",
+    "text": "RStudio Visual Mode + Zotero\nFor this method to work, you have to enable visual mode in RStudio and have Zotero open on your computer.\n\nOpen RStudio settings and click on the RMarkdown entry. Select Citations from the tabs across the top. Make sure that the Zotero data directory is correct and that you have your library checked (I have some shared libraries that you won’t have).\n\nIn your test quarto file, enable visual mode (the last line before the text file starts in the editor pane).\nStart typing a sentence with a reference in it - you should only have to type the \\@ before autocomplete tries to help you out. If you were citing a new paper that wasn’t already in references, the BibLaTeX entry would be copied into the references.bib file for you.\n\nCompilation works the same – this just avoids the manual copy-paste step, if you are willing to use visual mode.\n\nI don’t like using a mouse, so I avoid visual mode when writing. The RBBT R package can be used to add similar functionality to RStudio in source mode, if you prefer to use that, but of course this requires that you compile with knitr, so there is a bit of a loss of the platform-agnostic behavior that makes quarto great."
+  },
+  {
+    "objectID": "instructions/zotero-setup.html#footnotes",
+    "href": "instructions/zotero-setup.html#footnotes",
+    "title": "Citation Manager Scavenger Hunt",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nFor a journal article: authors, journal, article title, publication date (year and month, at least), and URL or DOI. If the journal has Volume, Issue, and pages, then those should be filled in as well, but some journals don’t have those anymore as journals have stopped printing physical issues. For a book, title, author(s), publisher, editor, publication date, and pages if you’re referencing only part of the book.↩︎"
   },
   {
     "objectID": "slides/02-cv-cover-letter.html#setting-the-scene",
@@ -2923,110 +3028,5 @@
     "title": "Ethics and Statistical Misconduct",
     "section": "Discuss (30 minutes)",
     "text": "Discuss (30 minutes)\n\nWhat choices did Facebook make that were\n\nreasonable mistakes?\nethically problematic?\ndefensible?\n\nWhat choices did Cambridge Analytica make that were\n\nreasonable mistakes?\nethically problematic?\ndefensible?\n\nWhat impact do you think the ethical breaches had on the world?"
-  },
-  {
-    "objectID": "instructions/zotero-setup.html",
-    "href": "instructions/zotero-setup.html",
-    "title": "Citation Manager Scavenger Hunt",
-    "section": "",
-    "text": "The goal of this exercise is to figure out how to set up your citation manager (Zotero) and integrate it into RStudio and your preferred browser."
-  },
-  {
-    "objectID": "instructions/zotero-setup.html#bibliography-files",
-    "href": "instructions/zotero-setup.html#bibliography-files",
-    "title": "Citation Manager Scavenger Hunt",
-    "section": "Bibliography files",
-    "text": "Bibliography files\nA long, long time ago, well before quarto or rmarkdown, there was LaTeX – a program that was primarily used for typesetting math. The format it used for handling bibliographies was BibLaTeX, or BibTeX (they’re similar but technically not the same). You can read a bit about BibLaTeX here – in particular for this class, the section on “The bibliography file” is useful and will show you what a bib file looks like.\nBib files are perhaps even more painful to maintain by hand than an actual MLA/APA style bibliography. Luckily, Zotero handles that for us too.\n\nThis section relies heavily on having Quick Copy in Zotero (Settings -&gt; Export -&gt; Quick Copy, Item Format set to BibLaTeX) set to BibLaTeX. If you haven’t set that, please do so now.\n\n\nFor each project and some regular assignments in this class, we’re going to have a .bib file with all of the references you collect."
-  },
-  {
-    "objectID": "instructions/zotero-setup.html#semi-automated-bibliography-file-assembly",
-    "href": "instructions/zotero-setup.html#semi-automated-bibliography-file-assembly",
-    "title": "Citation Manager Scavenger Hunt",
-    "section": "Semi-Automated Bibliography File Assembly",
-    "text": "Semi-Automated Bibliography File Assembly\nI find it easiest just to select the entries in Zotero and copy them into the bib file manually. This isn’t full manual – we don’t have to write the bib entries ourselves (like I did in graduate school). Let’s try that first before I show you other ways to connect RStudio to Zotero.\n\nCreate a text file called references.bib (make sure it has the extension .bib and not .bib.txt, particularly if your operating system hides file extensions from you).\nIn a browser, navigate to “Cows painted with zebra-like striping can avoid biting fly attack”, another 2025 IgNobel award winning paper. Use Zotero conneector to add the paper to Zotero, and make sure that all of the necessary fields1 are filled in correctly.\n\n\n\n\nHighlighted fields are essential – title, authors, publication (with vol/issue/pages if available), date, and either DOI or URL.\n\n\n\nSelect both IgNobel papers in Zotero and use Ctrl/Cmd+Shift+C (Quick copy) to get the BibLaTeX entries. Paste them into your references.bib file. Your file should look something like the lines below. I have removed the abstracts and file locations from my file for brevity’s sake.\n\n#| echo: false\n\ncat references.bib\n\nCreate a quarto file in RStudio or your IDE of choice. In the YAML metadata at the top, add bibliography: references.bib as an option. A minimal file with a title would look like this.\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\n---\n\nAdd a sentence summarizing each of the two IgNobel papers. For the Cow stripe paper, use an inline reference – \\@citation-key, and for the Ethanol paper, use a parenthetical reference – (\\@citation-key), where in both cases, citation-key is the first piece of the bib entry after \\@article{. When you’ve finished, take a peek at mine to see if your citation style is similar.\n\n\n\n\n\n\n\nNoteSample quarto file text\n\n\n\n\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\n---\n\nTo test whether zebra stripes prevent biting fly attacks,\n@kojimaCowsPaintedZebralike2019 painted cows with black-and-white,\nblack-only, and no stripes and recorded the number of fly repelling behaviors\nand flies on the body and legs.\n\nTo test how Egyptian fruit bats are affected by ethanol (which occurs\nnaturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and\nethanol-free food, finding that flight speed, echolocation calls, and\nbehavior were negatively impacted by the presence of ethanol\n(@sanchezEthanolIngestionAffects2010).\n\n\n\n\nYou can see the rendered file here – notice that the in-line citations are automatically included along with a references section at the end of the file.\n\nWhat if we want to change the citation format? IEEE uses numerical citations.\n\n\nWe can get a CSL (citation style language) file for that format (click the download file button) and use it in our file. You will have to move the file from where it downloaded to the directory with your references and quarto files.\nChange the YAML metadata of your quarto file to include csl: ieee.csl (or whatever the name of the CSL file you downloaded is…)\n\n---\ntitle: \"Testing References\"\nbibliography: references.bib\ncsl: ieee.csl\n---\n\nRecompile your document. See how the references at the bottom and the citations in the text have changed. My document"
-  },
-  {
-    "objectID": "instructions/zotero-setup.html#footnotes",
-    "href": "instructions/zotero-setup.html#footnotes",
-    "title": "Citation Manager Scavenger Hunt",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFor a journal article: authors, journal, article title, publication date (year and month, at least), and URL or DOI. If the journal has Volume, Issue, and pages, then those should be filled in as well, but some journals don’t have those anymore as journals have stopped printing physical issues. For a book, title, author(s), publisher, editor, publication date, and pages if you’re referencing only part of the book.↩︎"
-  },
-  {
-    "objectID": "instructions/test-zotero.html",
-    "href": "instructions/test-zotero.html",
-    "title": "Testing References",
-    "section": "",
-    "text": "To test whether zebra stripes prevent biting fly attacks, Kojima et al. (2019) painted cows with black-and-white, black-only, and no stripes and recorded the number of fly repelling behaviors and flies on the body and legs.\nTo test how Egyptian fruit bats are affected by ethanol (which occurs naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and ethanol-free food, finding that flight speed, echolocation calls, and behavior were negatively impacted by the presence of ethanol (Sánchez et al. (2010)).\n\n\n\n\nReferences\n\nKojima, Tomoki, Kazato Oishi, Yasushi Matsubara, Yuki Uchiyama, Yoshihiko Fukushima, Naoto Aoki, Say Sato, et al. 2019. “Cows Painted with Zebra-Like Striping Can Avoid Biting Fly Attack.” PLOS ONE 14 (10): e0223447. https://doi.org/10.1371/journal.pone.0223447.\n\n\nSánchez, Francisco, Mariana Melcón, Carmi Korine, and Berry Pinshow. 2010. “Ethanol Ingestion Affects Flight Performance and Echolocation in Egyptian Fruit Bats.” Behavioural Processes 84 (2): 555–58. https://doi.org/10.1016/j.beproc.2010.02.006."
-  },
-  {
-    "objectID": "instructions/test-zotero-csl.html",
-    "href": "instructions/test-zotero-csl.html",
-    "title": "Testing References",
-    "section": "",
-    "text": "To test whether zebra stripes prevent biting fly attacks, [1] painted cows with black-and-white, black-only, and no stripes and recorded the number of fly repelling behaviors and flies on the body and legs.\nTo test how Egyptian fruit bats are affected by ethanol (which occurs naturally in fruit), researchers gave Egyptian fruit bats ethanol-rich and ethanol-free food, finding that flight speed, echolocation calls, and behavior were negatively impacted by the presence of ethanol ([2]).\n\n\n\n\nReferences\n\n[1] T. Kojima et al., “Cows painted with zebra-like striping can avoid biting fly attack,” PLOS ONE, vol. 14, no. 10, p. e0223447, Oct. 2019, doi: 10.1371/journal.pone.0223447.\n\n\n[2] F. Sánchez, M. Melcón, C. Korine, and B. Pinshow, “Ethanol ingestion affects flight performance and echolocation in egyptian fruit bats,” Behavioural Processes, vol. 84, no. 2, pp. 555–558, Jun. 2010, doi: 10.1016/j.beproc.2010.02.006."
-  },
-  {
-    "objectID": "instructions/zotero-setup.html#rstudio-visual-mode-zotero",
-    "href": "instructions/zotero-setup.html#rstudio-visual-mode-zotero",
-    "title": "Citation Manager Scavenger Hunt",
-    "section": "RStudio Visual Mode + Zotero",
-    "text": "RStudio Visual Mode + Zotero\nFor this method to work, you have to enable visual mode in RStudio and have Zotero open on your computer.\n\nOpen RStudio settings and click on the RMarkdown entry. Select Citations from the tabs across the top. Make sure that the Zotero data directory is correct and that you have your library checked (I have some shared libraries that you won’t have).\n\nIn your test quarto file, enable visual mode (the last line before the text file starts in the editor pane).\nStart typing a sentence with a reference in it - you should only have to type the \\@ before autocomplete tries to help you out. If you were citing a new paper that wasn’t already in references, the BibLaTeX entry would be copied into the references.bib file for you.\n\nCompilation works the same – this just avoids the manual copy-paste step, if you are willing to use visual mode.\n\nI don’t like using a mouse, so I avoid visual mode when writing. The RBBT R package can be used to add similar functionality to RStudio in source mode, if you prefer to use that, but of course this requires that you compile with knitr, so there is a bit of a loss of the platform-agnostic behavior that makes quarto great."
-  },
-  {
-    "objectID": "slides/01-intro.html#keep-up-with-the-work",
-    "href": "slides/01-intro.html#keep-up-with-the-work",
-    "title": "Welcome to Stat 349!",
-    "section": "Keep Up With The Work!",
-    "text": "Keep Up With The Work!\n\nLearning good writing skills requires time and practice.\nIf you wait until the last minute to write, you can’t revise and practice.\nThis course is paced to give you enough time to revise your work… intentionally."
-  },
-  {
-    "objectID": "slides/01-intro.html#assignments",
-    "href": "slides/01-intro.html#assignments",
-    "title": "Welcome to Stat 349!",
-    "section": "Assignments",
-    "text": "Assignments\n\nAlmost every week\nWritten with Quarto\nCompleted and Submitted on GitHub Classroom\nIf you’re not familiar with Git/GitHub, please let me know\n\nhttps://happygitwithr.com &lt;- full book of instructions and explanations\nOffice hours appointments to get help\n\nDue at 6pm on Fridays (usually)\nGrace period lasts until I start grading - might be Saturday afternoon, might be Monday"
-  },
-  {
-    "objectID": "slides/01-intro.html#homework-resubmissions",
-    "href": "slides/01-intro.html#homework-resubmissions",
-    "title": "Welcome to Stat 349!",
-    "section": "Homework Resubmissions",
-    "text": "Homework Resubmissions\n\n2 resubmissions allowed\nDue within 1 week of feedback returned. Additionally,\n\nAssigned before Spring Break: resubmit by March 13 at 6pm\nAssigned after Spring Break: resubmit by April 27 at 6pm\n\nComment on Canvas assignment page\nUpload the assignment as a resubmission\nPolicy subject to good-faith use and my availability\nResubmissions will be graded at my leisure. DO NOT email me asking about the resubmission unless it has been at least 2 weeks."
-  },
-  {
-    "objectID": "slides/01-intro.html#projects",
-    "href": "slides/01-intro.html#projects",
-    "title": "Welcome to Stat 349!",
-    "section": "Projects",
-    "text": "Projects\n\nScaffolded with homework assignments\nFix things I comment on w/ homework!\nLate work will NOT be accepted without\n\nmajor life events of &gt;2 week duration AND\nevidence of engagement with the assignment before the event occurred\n\nProject presentations will be scheduled during Week 15 and Finals\n\nIF presentations get done during Week 15 then we won’t meet for the final\n\nDo NOT make travel plans for the end of the semester"
-  },
-  {
-    "objectID": "slides/01-intro.html#evaluation-criteria",
-    "href": "slides/01-intro.html#evaluation-criteria",
-    "title": "Welcome to Stat 349!",
-    "section": "Evaluation Criteria",
-    "text": "Evaluation Criteria\nIn addition to the rubric:\n\nGrammar and spelling\nAbility to communicate effectively\nIntellectual engagement\nDemonstrated understanding of the material\n\nSimple, elegant solutions &gt; unnecessary complexity"
-  },
-  {
-    "objectID": "slides/01-intro.html#ai",
-    "href": "slides/01-intro.html#ai",
-    "title": "Welcome to Stat 349!",
-    "section": "AI",
-    "text": "AI\n\nThe goal of writing classes is to improve your ability to reason… the writing is a side effect\nAI cannot think/explain/reason – it only predicts the next likely word probabilistically\nDo NOT use AI as a replacement for doing work. Querying to explore your understanding is probably fine, using it to write or think for you is not.\nI would rather read something with typos and grammar issues than something that sounds like it’s from AI and not your thoughts."
-  },
-  {
-    "objectID": "slides/01-intro.html#evaluation-criteria-1",
-    "href": "slides/01-intro.html#evaluation-criteria-1",
-    "title": "Welcome to Stat 349!",
-    "section": "Evaluation Criteria",
-    "text": "Evaluation Criteria\nAny use of generative AI must be disclosed in an appendix to your submission\nYou must document the following:\n\nthe version of the generative AI used (e.g. Claude Sonnet 4.5, GPT 5.2, Copilot GPT-5 chat)\nthe full sequence of prompts and responses\nany additional inputs you provided to the AI system (documents, images, etc.)\na “diff” between the AI responses and your submission, showing exactly what was generated by the AI system and what you changed."
-  },
-  {
-    "objectID": "slides/01-intro.html#oral-exams",
-    "href": "slides/01-intro.html#oral-exams",
-    "title": "Welcome to Stat 349!",
-    "section": "Oral Exams",
-    "text": "Oral Exams\n\nBe prepared to explain your writing process, your approach, and your code\nOral exams on the assignment can be used to replace the assignment grade at my discretion\n\nThis is not intended as punishment – it helps at least as often as it hurts\n\nPolicy applies to homework and projects"
   }
 ]

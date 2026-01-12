@@ -1,0 +1,56 @@
+---
+title: "IgNobel Award-Winning Paper Results Sections"
+format: html
+---
+
+# Before Class
+
+- Skim your article, looking at the headings and pictures/tables
+- Skim the methods section, looking for important information that will help you understand the results
+- Read the results section
+
+# Article Evaluation
+(30 minutes)
+
+- Analyze the results section, looking for the elements below:
+Go through your assigned article and look for the following elements of a results section, according to [SWHR](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/results-section.html):
+    - Study sample characteristics and descriptive statistics
+    - Findings of the primary analysis
+    - Findings of the secondary analyses
+    - Any additional findings to highlight
+
+- Evaluate whether the article also adheres to the guidelines for each type of results:
+
+    - Study sample characteristics and descriptive statistics
+      - Described first
+      - Do results show a flowchart or other details?
+      - Only includes key information
+      - Descriptive statistics for outcome and explanatory variable
+    - Findings of the primary analysis
+      - Estimates from crude/unadjusted and adjusted models
+      - Description of changes in results between models, if multiple models are used
+      - Table results? Graphics?
+    - Findings of the secondary analyses
+      - Interaction, effect modification, or sub group analyses?
+      - Relationships between confounders and outcome variables?
+      - Any additional findings to highlight
+      - Sensitivity analysis?
+
+- Additionally, evaluate whether the section adheres to the following recommendations:
+    - Not repetitive or pedantic
+    - Describes all tables and figures included in the main text
+    - Results section has a logical flow
+    - Avoids mixing methods and/or discussion in with the results
+    - Results reported objectively
+    - Measures of effect size are reported along with significance
+
+
+# Class Discussion
+(30 minutes)
+
+- How well do the guidelines in SWHR hold up for papers across a wide swath of different disciplines?
+- What types of figures and tables and visual aids were used? Did they help you understand the results?
+- How often did you have to refer back to the methods (or look ahead to the discussion) to interpret and understand the results?
+- What pieces of the results section were hard to understand? What pieces were easy?
+- Was there anything you expected to see in the results section that wasn't present? 
+- Was there anything that you didn't expect to see in the results section?

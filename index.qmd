@@ -17,7 +17,7 @@ schedule |>
   ungroup() |>
   arrange(weeksort) |>
   mutate(Topic = if_else(!is.na(Week) & Week < 16, sprintf("<a href='https://unl-statistics.github.io/stat349/weeks/week-%02d.html'> %s </a>", Week, Topic), Topic)) |>
-  select(Week, Start = `Week Start`, Topic, Due = `Important Dates`) |>
+  select(Week, Start = `Week Start`, Topic, `Important Dates`) |>
   datatable(escape = F, selection = 'none', filter='none', 
             options = list(paging = F, info = F, searching = F, ordering = F), 
                            rownames = F, style = "bootstrap") 
