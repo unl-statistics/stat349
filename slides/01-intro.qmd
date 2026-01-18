@@ -1,11 +1,19 @@
 ---
 title: "Welcome to Stat 349!"
 format: revealjs
-# theme: ./libs/unl/inverse.scss
+theme: ./libs/unl/inverse.scss
 includes:
   in_header: ./libs/unl/header.html
-lib_dir: ./libs
+lib_dir: ./libs/unl/
 ---
+
+```{r}
+#| include: false
+#| cache: false
+setwd("../")
+source("schedule.R")
+setwd("slides")
+```
 
 ## Stat 349
 
@@ -68,7 +76,7 @@ lib_dir: ./libs
 
 - Your major
 
-- What is the best prank you've ever experienced or planned?
+- What is your favorite board/tabletop game?
 
 ## Class Picture
 
@@ -87,18 +95,17 @@ Let's all time travel back to elementary school...
 
 ## Grades
 
-| Assignments                    | Weight |
-|--------------------------------|--------|
-| Reading Quizzes                | 10%    |
-| Participation                  | 10%    |
-| Homework                       | 40%    |
-| User Guide/Documentation       | 20%    |
-| Business Report & Presentation | 20%    |
+| Assignments                     | Weight |
+|---------------------------------|--------|
+| Reading Quizzes & Participation | 10%    |
+| User Guide/Documentation        | 20%    |
+| Business Report & Presentation  | 20%    |
+| Homework                        | 50%    |
 
 ## Reading Quizzes
 
 - Due before class starts
-- Will become inaccessible at 10am on Wednesdays
+- Will become inaccessible at 10am on Mondays (in normal weeks)
 - Open-book, open-note
 - A deadline to encourage you to do the reading before class
 
@@ -108,31 +115,96 @@ Let's all time travel back to elementary school...
 - You get one free, no excuses necessary absence
 - If you're sick, don't come to class!
   - Do the reading/homework, 
-  - Make an appointment as you feel better
-  - In the appointment field, indicate that this is to substitute for class attendance
+  - Make an appointment when you feel better (~ 1 week)
+  - Reason: missed class xx/xx due to illness
   - Don't abuse this
   
-## Homework
+
+
+## Assignments
 
 - Almost every week
-- Homework can be resubmitted once for a re-grade
-- Resubmissions are due on
-  - March 10 
-  - May 5 
+
+- Written with Quarto
+
+- Completed and Submitted on GitHub Classroom
+
+- If you're not familiar with Git/GitHub, please let me know
+
+    - https://happygitwithr.com <- full book of instructions and explanations
+    - Office hours appointments to get help
+
+- Due at 6pm on Fridays (usually)
+
+- Grace period lasts until I start grading - might be Saturday afternoon, might be Monday
+
+
+## Homework Resubmissions
+
+- 2 resubmissions allowed 
+
+- Due within 1 week of feedback returned. Additionally,
+  - Assigned before Spring Break: resubmit by March 13 at 6pm
+  - Assigned after Spring Break: resubmit by April 27 at 6pm
+
+- Comment on Canvas assignment page
+
+- Upload the assignment as a resubmission
+
+- Policy subject to good-faith use and my availability
+
+- Resubmissions will be graded at my leisure. DO NOT email me asking about the resubmission unless it has been at least 2 weeks. 
+
+## Keep Up With The Work!
+
+::: incremental
+
+- Learning good writing skills requires time and practice. 
+
+
+- If you wait until the last minute to write, you can't revise and practice.
+
+- This course is paced to give you enough time to revise your work... intentionally.
+
+:::
+
+## Projects
+
+- Scaffolded with homework assignments
+
+- Fix things I comment on w/ homework!
+
+- Late work will NOT be accepted without 
+    - major life events of >2 week duration AND 
+    - evidence of engagement with the assignment before the event occurred
+    
+- Project presentations will be scheduled during Week 15 and Finals
+    - IF presentations get done during Week 15 then we won't meet for the final
+
+- Do NOT make travel plans for the end of the semester
 
 ## User Guide
 
 - Translate a statistics topic into a practical guide for how to do something
-    - software related is natural, but I'm open to other options
-    
-- Practice thinking about audience needs and planning scope
+    - What is required to begin? data, etc.
+    - What steps need to be taken?
+    - How should the results be presented/interpreted?
 
-- Due before Spring Break
+- Practice thinking about audience needs and planning scope
+    - Think about trying to learn a package based on a sparse vignette that doesn't address your use case... and prevent that.
+    
+- Takes more time to understand the topic than you think -- start early. 
+
+- Rough Draft due `r format(due_dates |> filter(name=="User Guide Draft") |> magrittr::extract2("date"), "%B %e")` at 6pm
+
+- Final version due `r format(due_dates |> filter(name=="User Guide") |> magrittr::extract2("date"), "%B %e")` at 6pm
+
 
 
 ## Business Report
 
 - Address a statistical question of interest to a business
+    - Most of these are somewhat based on my time in industry
 
 - Find and document relevant data
 
@@ -142,5 +214,54 @@ Let's all time travel back to elementary school...
 
 - Make a presentation
 
-- Due in Week 15
+- Rough Draft due `r format(due_dates |> filter(name=="Business Report Draft") |> magrittr::extract2("date"), "%B %e")` at 6pm
+
+- Final written report due `r format(due_dates |> filter(name=="Business Report") |> magrittr::extract2("date"), "%B %e")` at 6pm
+
+- Presentations in-class `r paste(paste(format(due_dates |> filter(name=="Business Report Presentations") |> magrittr::extract2("date"), "%B %e"), collapse = ", "), " (if necessary)", sep = "")`
+
+## Evaluation Criteria
+
+In addition to the rubric:
+
+- Grammar and spelling
+- Ability to communicate effectively
+- Intellectual engagement 
+- Demonstrated understanding of the material
+
+Simple, elegant solutions > unnecessary complexity
+
+## AI
+::: incremental
+
+- The goal of writing classes is to improve your ability to reason... the writing is a side effect
+
+-  AI cannot think/explain/reason -- it only predicts the next likely word probabilistically
+
+- Do NOT use AI as a replacement for doing work. Querying to explore your understanding is probably fine, using it to write or think for you is not. 
+
+- I would rather read something with typos and grammar issues than something that sounds like it's from AI and not your thoughts. 
+
+:::
+
+## Evaluation Criteria
+
+**Any use of generative AI must be disclosed** in an appendix to your submission
+
+You must document the following:
+
+-   the version of the generative AI used (e.g. Claude Sonnet 4.5, GPT 5.2, Copilot GPT-5 chat)
+-   the full sequence of prompts and responses
+-   any additional inputs you provided to the AI system (documents, images, etc.)
+-   a "diff" between the AI responses and your submission, showing exactly what was generated by the AI system and what you changed. 
+
+## Oral Exams
+
+- Be prepared to explain your writing process, your approach, and your code
+
+- Oral exams on the assignment can be used to replace the assignment grade at my discretion
+
+    - This is not intended as punishment -- it helps at least as often as it hurts
+
+- Policy applies to homework and projects
 

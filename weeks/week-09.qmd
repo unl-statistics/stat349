@@ -12,7 +12,7 @@ March 09-15, 2026
 ## 🥣 Prepare for class
 
 - [ ] Reading Quiz Week 9
-- [ ] For Wednesday: On Canvas, find the [**Activity: IgNobel Results Sections** page](https://canvas.unl.edu/courses/192983/pages). Download your assigned paper and read it **before** class.
+- [ ] For Wednesday: [Claim an IgNobel Article via the Canvas Discussion Board](https://canvas.unl.edu/courses/214482/discussion_topics/1602677). Download your assigned paper and read it **before** class to prepare for the [IgNobel Results Section Activity](activities/IgNobel-Results.qmd).
 
 
 ## 🌮 Tuesday
@@ -22,7 +22,7 @@ March 09-15, 2026
 
 ## 🌩️ Thursday 🔨 
 
-- [IgNobel Results Section Activity](https://canvas.unl.edu/courses/192983/pages) activity (Canvas) and class discussion
+- [IgNobel Results Section Activity](../activities/IgNobel-Results.qmd) and class discussion
 
 
 ##  🏋 Practice Your Skills

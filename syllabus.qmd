@@ -28,7 +28,7 @@ email: svanderplas2@nebraska.edu
 web: srvanderplas.github.io
 officehours: | 
   By appointment. Schedule at    
-  [calendly.com/vanderplas/office-hours](https://calendly.com/vanderplas/office-hours)
+  [https://calendly.com/drvanderplas/officehours](https://calendly.com/drvanderplas/officehours)
 office: Hardin 343D
 classroom: Hardin ANSC A228-East
 classhours: MW 10:00 - 11:15
@@ -232,7 +232,7 @@ Any non-university-excused travel you choose to do that results in missing class
 
 If you are feeling ill, please **do not come to class**.
 Instead, review the material and work on the homework assignment, and then schedule an appointment with me to meet virtually.
-In the appointment reason field on Calendly, indicate that this appointment is to substitute for your in-class participation on the date you missed.
+In the appointment reason field on [Calendly](https://calendly.com/drvanderplas/officehours), indicate that this appointment is to substitute for your in-class participation on the date you missed.
 
 If you need to miss more than 1-2 classes for illness, I reserve the right to require documentation from Disability Services or a medical provider in order to continue using this substitute for attendance grades.
 

@@ -85,7 +85,8 @@ library(dplyr)
 library(patchwork)
 library(ggplot2)
 
-data <- mutate(data, people = rep(c(500, 800, 500), c(21, 3, 3)) + sample((-10:10), size = 27, replace = T)*c(rep(1, 21), rep(3, 3), rep(1, 3)))
+data <- mutate(data, 
+               people = rep(c(500, 800, 500), c(21, 3, 3)) + sample((-10:10), size = 27, replace = T)*c(rep(1, 21), rep(3, 3), rep(1, 3)))
 
 p1 <- ggplot(data, aes(x = date, y = Injuries_On_Site/people)) + geom_point() +  geom_line() + 
   geom_smooth(method = "lm") + 
@@ -276,10 +277,10 @@ Simpson's paradox can explain a lot of these issues!
 #| echo: false
 #| fig-alt: Two mosaic plots, one which shows Outcome and Treatment 
 library(tibble)
-library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(ggmosaic)
+library(dplyr)
 
 # Kidney stone data
 # https://en.wikipedia.org/wiki/Simpson%27s_paradox
@@ -291,13 +292,13 @@ df <- tribble(~Treatment, ~Stone_Size, ~success, ~failure,
   pivot_longer(success:failure, names_to = "outcome", values_to = "count") |>
   uncount(weights = count) |>
   group_by(Treatment, Stone_Size) |>
-  mutate(trt_count=n())
+  dplyr::mutate(trt_count=n())
 
 # ggplot(df, aes(x = Treatment, fill = outcome, width=trt_count/100)) + facet_grid(~Stone_Size, scales = "free", space = "free", labeller = label_both) + 
 #   geom_bar(position = "fill")
 
 p1 <- ggplot(df) + geom_mosaic(aes(x = product(Treatment), conds = product(Stone_Size), fill = outcome)) + 
-  scale_x_productlist("Stone Size (Outcome)", labels = c("Large (F)", "Large (S)", "Small (F)", "Small (S)")) + 
+  ggmosaic::scale_x_productlist("Stone Size (Outcome)", labels = c("Large (F)", "Large (S)", "Small (F)", "Small (S)")) + 
   guides(fill = "none") + 
   ggtitle("Conditioned on Stone Size") + 
   annotate(x = .29, y = .7675, "point", shape = 1, size = 6) + 
@@ -429,10 +430,11 @@ Misconception: Lack of statistical interaction => lack of real-world interaction
 
 - Statisticians can predict exactly what will happen next 🔮🪄🧙
 
+- [It's fine to pick the model you want to "win"](https://messages.google.com/web/conversations/Cgg4LTRFVR4zQRIBMw) and choose other models around it
 
 ![](https://media1.tenor.com/m/Tk7pS5UGFf0AAAAC/periodicazo-fifidonia.gif){fig-alt="A gif of a man being swatted on the nose with a newspaper by a dog, with the text 'No, Bad!' at the bottom."}
 
-Address these issues in person if at all possible. Try not to laugh or cry. 
+Address these issues in person if at all possible. Try not to laugh or cry IN the meeting. If you post to Reddit later, do it with a throwaway account. 
 
 
 
