@@ -15,9 +15,9 @@ format: revealjs
 
 - Statistical analysis methods
 
-## Example: Signs of the Sine Illusion
+## Example: Polio Vaccine Trial
 
-[Annotated paper (Canvas link)](https://canvas.unl.edu/courses/192983/files/20459592/download?download_frd=1)
+[Annotated paper](../instructions/methods-papers/1954FieldTrial.qmd)
 
 - Goal was to show that the sine illusion is both theoretically and practically impactful in graphics
 
