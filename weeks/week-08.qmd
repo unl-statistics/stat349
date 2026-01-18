@@ -15,7 +15,8 @@ March 02-08, 2026
 ## 🥣 Prepare for class
 
 - [ ] Reading Quiz Week 8
-- Find the worst data visualization published by a **news organization** within the last month and bring it with you to class.
+- [ ] Find the worst data visualization published by a **news organization** within the last month and bring it with you to class.
+- [ ] (for Monday) Use the [library website](libraries.unl.edu) to find the book "Getting (More Out of) Graphics"" by Antony Unwin. Use the "Taylor & Francis eBooks Single Titles" link to get the ebook (you can download it for free) and skim Ch. 8.
 
 
 ## 🌮 Tuesday

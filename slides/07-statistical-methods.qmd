@@ -19,6 +19,34 @@ format: revealjs
 
 [Annotated paper](../instructions/methods-papers/1954FieldTrial.qmd)
 
+- National trial of Polio vaccines
+
+- 2 strategies: 
+    - vaccinate 2nd grade, with 1st and 3rd as controls
+    - double-blind placebo trial in 1st-3rd grades
+    
+- Compare enrolled children who didn't get the vaccine to those who did
+    - Explicitly not comparing unenrolled children (SES differences)
+
+## Observations: Polio Vaccine Trial Report
+
+- What works?
+
+- What could be improved?
+
+## Observations: Polio Vaccine Trial Report
+
+- Is it clearly written?
+
+- Is it well organized?
+
+
+
+## Example: Signs of the Sine Illusion
+
+[Annotated paper](../instructions/methods-papers/sine-illusion.qmd)
+
+
 - Goal was to show that the sine illusion is both theoretically and practically impactful in graphics
 
 - First part of the paper shows how the illusion works and provides examples of how it impacts statistical judgment
@@ -52,7 +80,7 @@ Feel free to critique, because... it was 10 years ago and I hope I've improved m
 
 ## Example: Eye Fitting Straight Lines in the Modern Era
 
-[Annotated paper (Canvas link)](https://canvas.unl.edu/files/20459626/download?download_frd=1)
+[Annotated paper](../instructions/methods-papers/Eye-Fitting-Straight-Lines-in-the-Modern-Era.qmd)
 
 - Goal was to validate a new method for collecting eye-fitted regression data online
 
@@ -65,32 +93,6 @@ Feel free to critique, because... it was 10 years ago and I hope I've improved m
 - What could be improved?
 
 ## Observations: Eye Fitting Straight Lines
-
-- Is it clearly written?
-
-- Is it well organized?
-
-
-## Example: Polio Vaccine Trial Report
-
-[Annotated paper (Canvas link)](https://canvas.unl.edu/files/20459805/download?download_frd=1)
-
-- National trial of Polio vaccines
-
-- 2 strategies: 
-    - vaccinate 2nd grade, with 1st and 3rd as controls
-    - double-blind placebo trial in 1st-3rd grades
-    
-- Compare enrolled children who didn't get the vaccine to those who did
-    - Explicitly not comparing unenrolled children (SES differences)
-
-## Observations: Polio Vaccine Trial Report
-
-- What works?
-
-- What could be improved?
-
-## Observations: Polio Vaccine Trial Report
 
 - Is it clearly written?
 

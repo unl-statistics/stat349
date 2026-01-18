@@ -1,0 +1,11 @@
+% latex table generated in R 3.2.2 by xtable 1.8-0 package
+% Mon Nov  9 18:39:45 2015
+\begin{tabular}{rccc}
+  \hline
+Groups & Correction & Estimate & 95\% C.I. \\ 
+  \hline
+Participant & Y & 0.145 & (0.105, 0.179) \\ 
+  Participant & X & 0.171 & (0.167, 0.249) \\ 
+  Residual &  & 0.304 & (0.291, 0.319) \\ 
+   \hline
+\end{tabular}
