@@ -9,7 +9,7 @@ January 19-25, 2026
 - [ ] Read [OTC Chapter 2](https://alg.manifoldapp.org/read/open-technical-communication/section/67472d69-a8f9-4aa9-9342-501970a730e7)
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 2
 - [ ] Bring 2 PRINTED copies of your CV and Cover Letter for peer review
@@ -20,7 +20,7 @@ January 19-25, 2026
 - MLK Day - No class
 
 
-## 🐪️ Wednesday 🤪 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [CV/cover letter important components](../slides/02-cv-cover-letter.qmd)
 - Discuss how to give good feedback (based on [ETC](https://wisc.pb.unizin.org/opencomp/chapter/providing-good-feedback/))

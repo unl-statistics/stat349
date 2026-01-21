@@ -24,10 +24,11 @@ schedule:
     class1: |
         - [Discussion: Syllabus](../slides/01-intro.qmd)
         - Github Introduction
-        - [YouTube Recording of Lecture portion of class](https://youtu.be/ifjvmWIl9wI). Note: this is provided as an auxiliary piece of information for those who missed class. It is not intended to substitute for class attendance and does not have the accessibility features necessary for required class materials.
+        - [YouTube Recording of Lecture portion of class](https://youtu.be/ifjvmWIl9wI)
     class2: |
         - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
         - Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
+        - [YouTube Recording of Lecture portion of class](https://youtu.be/BrdKWTDcU74)
     assignments: |
         - [ ] Find a job to apply for that is interesting to you and uses the skills you expect to have at the end of this program – submit on Canvas as a PDF printout (because links don’t stay for that long)
         

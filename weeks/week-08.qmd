@@ -12,7 +12,7 @@ March 02-08, 2026
 - [ ] (re)-Read [Creating Good Charts](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html) from Scientific Computing in R and Python
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 8
 - [ ] Find the worst data visualization published by a **news organization** within the last month and bring it with you to class.
@@ -24,7 +24,7 @@ March 02-08, 2026
 - [Tables and charts](../slides/08-tables-charts.qmd)
 
 
-## 🐪️ Wednesday 🤪 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [Diagrams](../slides/08-diagrams.qmd)
 - Peer review time – User guide

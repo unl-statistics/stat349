@@ -12,7 +12,7 @@ February 09-15, 2026
 - [ ] Read [ETC Backpacks V. Briefcases: Steps Toward Rhetorical Analysis](https://wisc.pb.unizin.org/opencomp/chapter/backpacks-v-briefcases-steps-toward-rhetorical-analysis/), focusing primarily  on the basic components of rhetorical analysis
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 5
 
@@ -24,7 +24,7 @@ February 09-15, 2026
 - Basic components of argument and rhetoric in scientific writing
 
 
-## 🐪️ Wednesday 🤪 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - In class activity: [Arguments in scientific and technical writing](../activities/arguments.qmd)
 - [Slides](../slides/05-argument-activity.qmd)

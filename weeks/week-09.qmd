@@ -9,7 +9,7 @@ March 09-15, 2026
 - [ ] Read [SWHR 5 - Results](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/results-section.html)
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 9
 - [ ] For Wednesday: [Claim an IgNobel Article via the Canvas Discussion Board](https://canvas.unl.edu/courses/214482/discussion_topics/1602677). Download your assigned paper and read it **before** class to prepare for the [IgNobel Results Section Activity](activities/IgNobel-Results.qmd).
@@ -20,7 +20,7 @@ March 09-15, 2026
 - [Countering misconceptions in results](../slides/09-misconceptions.qmd)
 
 
-## 🐪️ Wednesday 🤪 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [IgNobel Results Section Activity](../activities/IgNobel-Results.qmd) and class discussion
 

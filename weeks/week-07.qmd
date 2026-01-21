@@ -13,7 +13,7 @@ February 23-01, 2026
 - [ ] (Optional) [Manufacturer’s Guide to Developing Consumer Product Instructions](https://www.cpsc.gov/s3fs-public/pdfs/guide.pdf) - Excellent guide to writing user guides
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 7
 
@@ -23,7 +23,7 @@ February 23-01, 2026
 - [Describing statistical methods](../slides/07-statistical-methods.qmd) - Documenting code
 
 
-## 🐪️ Wednesday 🤪 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [Writing good “how to” guides for others](../slides/07-user-guides.qmd)
 

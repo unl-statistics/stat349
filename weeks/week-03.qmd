@@ -12,7 +12,7 @@ January 26-01, 2026
 - [ ] Practical Tutorial: [Connecting Rstudio + Zotero](https://gsverhoeven.github.io/post/zotero-rmarkdown-csl/)
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 3
 - [ ] For Monday: [Download and Install Zotero](https://www.zotero.org/) citation manager and [Zotero Connector](https://www.zotero.org/download/connectors) for your preferred browser
@@ -24,7 +24,7 @@ January 26-01, 2026
 - How to read technical reports and academic articles
 
 
-## 🐪️ Wednesday 🤪 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - How to summarize (without ChatGPT)
 - [Slides](../slides/03-reading-summarizing.qmd)
