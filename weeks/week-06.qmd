@@ -16,13 +16,13 @@ February 16-22, 2026
 - [ ] Reading Quiz Week 6
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Problem Statements](../slides/06-problem-statements.qmd)
 - In class activity: write good problem statements for examples
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - [Documenting Data](../slides/06-documenting-data.qmd)
 - Discussion of essential components of data documentation - Data documentation that matters for statistical analysis

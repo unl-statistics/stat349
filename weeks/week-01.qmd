@@ -19,14 +19,14 @@ January 12-18, 2026
 - [ ] Reading Quiz Week 1 (for Wednesday)
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
-- [Discussion: Syllabus](slides/01-intro.qmd)
+- [Discussion: Syllabus](../slides/01-intro.qmd)
 - Github Introduction
 - [YouTube Recording of Lecture portion of class](https://youtu.be/ifjvmWIl9wI). Note: this is provided as an auxiliary piece of information for those who missed class. It is not intended to substitute for class attendance and does not have the accessibility features necessary for required class materials.
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
 - Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)

@@ -16,12 +16,12 @@ April 06-12, 2026
 - [ ] Reading Quiz Week 12
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
 

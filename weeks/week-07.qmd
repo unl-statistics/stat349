@@ -18,12 +18,12 @@ February 23-01, 2026
 - [ ] Reading Quiz Week 7
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Describing statistical methods](../slides/07-statistical-methods.qmd) - Documenting code
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - [Writing good “how to” guides for others](../slides/07-user-guides.qmd)
 

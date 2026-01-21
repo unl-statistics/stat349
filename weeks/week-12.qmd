@@ -16,12 +16,12 @@ March 30-05, 2026
 - [ ] For Wednesday: Find 2 articles about how to write an executive summary, one from an educational resource (a university) and one from a business or professional resource (e.g. LinkedIn, Adobe, etc.). What do they have in common? What recommendations conflict?
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Abstracts](../slides/11-abstract.qmd)
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - [Executive Summaries](../slides/11-exec-summary.qmd) - Class Discussion
 

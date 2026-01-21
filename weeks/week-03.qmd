@@ -18,13 +18,13 @@ January 26-01, 2026
 - [ ] For Monday: [Download and Install Zotero](https://www.zotero.org/) citation manager and [Zotero Connector](https://www.zotero.org/download/connectors) for your preferred browser
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
-- [Scavenger hunt - Citation manager options](instructions/zotero-setup.qmd)
+- [Scavenger hunt - Citation manager options](../instructions/zotero-setup.qmd)
 - How to read technical reports and academic articles
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - How to summarize (without ChatGPT)
 - [Slides](../slides/03-reading-summarizing.qmd)

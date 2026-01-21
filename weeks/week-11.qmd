@@ -15,12 +15,12 @@ March 23-29, 2026
 - [ ] Reading Quiz Week 10
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Conclusion](../slides/10-conclusion.qmd) - [Quarto Formatting](../slides/10-quarto-features.qmd)
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - [Introductions](../slides/10-intro.qmd)
 

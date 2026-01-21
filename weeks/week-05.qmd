@@ -17,14 +17,14 @@ February 09-15, 2026
 - [ ] Reading Quiz Week 5
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Slides](../slides/05-argument-business-report.qmd)
 - Discuss business report & assign report topics
 - Basic components of argument and rhetoric in scientific writing
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🤪 
 
 - In class activity: [Arguments in scientific and technical writing](../activities/arguments.qmd)
 - [Slides](../slides/05-argument-activity.qmd)
