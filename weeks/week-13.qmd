@@ -11,17 +11,17 @@ April 06-12, 2026
 - [ ] Read [The Misuse of Statistics](https://doi.org/10.1080/08989620212968)
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 12
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [Case Study - Statistical Ethics](../slides/12-ethics.qmd)
 

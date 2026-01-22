@@ -11,7 +11,7 @@ January 12-18, 2026
 - [ ] Read [OTC Chapter 1](https://alg.manifoldapp.org/read/open-technical-communication/section/0debb16b-f623-4033-a47b-973d65ab0961)
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - Ensure R, python, quarto, RStudio are installed on your machine 
   - [Software Installation guide](https://srvanderplas.github.io/stat-computing-r-python/part-tools/02-setting-up-computer.html)
@@ -19,17 +19,18 @@ January 12-18, 2026
 - [ ] Reading Quiz Week 1 (for Wednesday)
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
-- [Discussion: Syllabus](slides/01-intro.qmd)
+- [Discussion: Syllabus](../slides/01-intro.qmd)
 - Github Introduction
-- [YouTube Recording of Lecture portion of class](https://youtu.be/ifjvmWIl9wI). Note: this is provided as an auxiliary piece of information for those who missed class. It is not intended to substitute for class attendance and does not have the accessibility features necessary for required class materials.
+- [YouTube Recording of Lecture portion of class](https://youtu.be/ifjvmWIl9wI)
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [Set up Quarto portfolio site](../instructions/setup-github-portfolio.qmd)
 - Find a [quarto/LaTeX template for a CV and cover letter](../instructions/cv-templates.qmd)
+- [YouTube Recording of Lecture portion of class](https://youtu.be/BrdKWTDcU74)
 
 
 ##  🏋 Practice Your Skills

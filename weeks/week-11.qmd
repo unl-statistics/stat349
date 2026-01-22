@@ -10,17 +10,17 @@ March 23-29, 2026
 - [ ] Read [SWHR 6 - Discussion](https://ehsanx.github.io/Scientific-Writing-for-Health-Research/discussion-section.html)
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 10
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Conclusion](../slides/10-conclusion.qmd) - [Quarto Formatting](../slides/10-quarto-features.qmd)
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [Introductions](../slides/10-intro.qmd)
 

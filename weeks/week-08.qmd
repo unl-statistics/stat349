@@ -12,19 +12,19 @@ March 02-08, 2026
 - [ ] (re)-Read [Creating Good Charts](https://srvanderplas.github.io/stat-computing-r-python/part-wrangling/02c-good-graphics.html) from Scientific Computing in R and Python
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 8
 - [ ] Find the worst data visualization published by a **news organization** within the last month and bring it with you to class.
 - [ ] (for Monday) Use the [library website](libraries.unl.edu) to find the book "Getting (More Out of) Graphics"" by Antony Unwin. Use the "Taylor & Francis eBooks Single Titles" link to get the ebook (you can download it for free) and skim Ch. 8.
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Tables and charts](../slides/08-tables-charts.qmd)
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - [Diagrams](../slides/08-diagrams.qmd)
 - Peer review time – User guide

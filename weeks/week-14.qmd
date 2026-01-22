@@ -10,17 +10,17 @@ April 13-19, 2026
 - [ ] Read [OTC 4.1 – Report Design](https://alg.manifoldapp.org/read/open-technical-communication/section/967e506e-8d1e-4baf-bee2-8ace4ebf80f1) and skim 4.3-4.5
 
 
-## 🥣 Prepare for class
+## 📐 Prepare for class
 
 - [ ] Reading Quiz Week 13
 
 
-## 🌮 Tuesday
+## 🥱 Monday 🌛
 
 - [Presentations](../slides/13-reports-presentations.qmd).
 
 
-## 🌩️ Thursday 🔨 
+## 🐪️ Wednesday 🐦‍⬛ 
 
 - In class activity: Analyzing government reports
 
