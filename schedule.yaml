@@ -50,6 +50,9 @@ schedule:
     assignments: |
         - [ ] Add CV/cover letter to portfolio
         - [ ] Choose an Annual Review article from those offered – no duplicates
+    extra: |
+      - An excellent blog post with interview questions you can ask to determine whether a job is a good fit for you (or, in the parlance of the author, if a job will crush your soul). [@dashHowKnowIf2026]
+
   - week: 3
     name: References
     start: 2026-01-26
@@ -185,7 +188,7 @@ schedule:
 
     prepare: |
         - [ ] Reading Quiz Week 9
-        - [ ] For Wednesday: [Claim an IgNobel Article via the Canvas Discussion Board](https://canvas.unl.edu/courses/214482/discussion_topics/1602677). Download your assigned paper and read it **before** class to prepare for the [IgNobel Results Section Activity](activities/IgNobel-Results.qmd).
+        - [ ] For Wednesday: [Claim an IgNobel Article via the Canvas Discussion Board](https://canvas.unl.edu/courses/214482/discussion_topics/1602677). Download your assigned paper and read it **before** class to prepare for the [IgNobel Results Section Activity](../activities/IgNobel-Results.qmd).
     class1: |
         - [Countering misconceptions in results](../slides/09-misconceptions.qmd)
     class2: |

@@ -28,7 +28,8 @@ glue_df <- tibble(
   prepare = glue_na(plandf, prepare, "## 📐 Prepare for class\n\n{prepare}"),
   class1 = glue_na(plandf, class1, "## 🥱 Monday 🌛\n\n{class1}"),
   class2 = glue_na(plandf, class2, "## 🐪️ Wednesday 🐦‍⬛ \n\n{class2}"),
-  assignments = glue_na(plandf, assignments, "##  🏋 Practice Your Skills\n\n{assignments}")
+  assignments = glue_na(plandf, assignments, "##  🏋 Practice Your Skills\n\n{assignments}"),
+  extra = glue_na(plandf, extra, "## Extra Resources/Reading\n\n{extra}")
 )
 
 md <- glue_df |>
