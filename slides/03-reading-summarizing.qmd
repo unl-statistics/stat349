@@ -88,7 +88,7 @@ Technical reports have a more varied structure:
 
 ## Strategy 1: Spoilers!
 
-<iframe src="https://giphy.com/embed/Zsxh9Cbq7VCy4" width="800" height="538" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/Zsxh9Cbq7VCy4" alt="A decorative gif from Doctor Who with River Song saying 'spoilers'" width="800" height="538" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 ## Strategy 1: 🫣 Spoilers!
 

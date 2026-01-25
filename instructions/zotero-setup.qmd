@@ -111,17 +111,19 @@ For each project and some regular assignments in this class, we're going to have
 ## Semi-Automated Bibliography File Assembly
 
 I find it easiest just to select the entries in Zotero and copy them into the bib file manually.
-This isn't full manual -- we don't have to write the bib entries ourselves (like I did in graduate school).
+This isn't fully manual -- we don't have to write the bib entries ourselves (like I did in graduate school).
 Let's try that first before I show you other ways to connect RStudio to Zotero.
 
 1.  Create a text file called `references.bib` (make sure it has the extension `.bib` and not `.bib.txt`, particularly if your operating system hides file extensions from you).
 
 2.  In a browser, navigate to ["Cows painted with zebra-like striping can avoid biting fly attack"](https://doi.org/10.1371/journal.pone.0223447), another 2025 IgNobel award winning paper.
-    Use Zotero conneector to add the paper to Zotero, and make sure that all of the necessary fields[^1] are filled in correctly.
+    Use Zotero connector to add the paper to Zotero, and make sure that all of the necessary fields[^1] are filled in correctly.
 
 [^1]: For a journal article: authors, journal, article title, publication date (year and month, at least), and URL or DOI.
     If the journal has Volume, Issue, and pages, then those should be filled in as well, but some journals don't have those anymore as journals have stopped printing physical issues.
+    Journal articles that don't have volumes, issues, and/or pages should have a DOI or URL at the very least.
     For a book, title, author(s), publisher, editor, publication date, and pages if you're referencing only part of the book.
+    
 
 ![Highlighted fields are essential -- title, authors, publication (with vol/issue/pages if available), date, and either DOI or URL.](images/zotero-cow-painting-fields.png){fig-alt="Screenshot of Zotero citation information from using Zotero Connector on the cow-painting paper. Critical fields are highlighted."}
 
@@ -184,6 +186,7 @@ csl: ieee.csl
 
 -   Recompile your document. See how the references at the bottom and the citations in the text have changed. [My document](test-zotero-csl.qmd)
 
+
 ## RStudio Visual Mode + Zotero
 
 For this method to work, you have to enable visual mode in RStudio and have Zotero open on your computer.
@@ -202,3 +205,81 @@ For this method to work, you have to enable visual mode in RStudio and have Zote
 
 
 I don't like using a mouse, so I avoid visual mode when writing. The [RBBT](https://github.com/paleolimbot/rbbt) R package can be used to add similar functionality to RStudio in source mode, if you prefer to use that, but of course this requires that you compile with knitr, so there is a bit of a loss of the platform-agnostic behavior that makes quarto great. 
+
+
+# Necessary Bibliography Information and Common Manual Corrections
+
+Zotero connector does a *great*, but not perfect, job at pulling in necessary information from most academic sources.
+It is a bit less polished when working with regular webpages, PDFs from other places, etc.
+This isn't Zotero's fault -- it actually is more commonly an issue with the metadata fields in the thing you're trying to save to Zotero. 
+Most websites don't provide a "last updated" date, and many don't even provide an author. 
+This is even true for some government reports, press releases, etc.
+
+So, you have to do some scavenging, and fill in things that Zotero doesn't.
+There are also some basic things you'll need to check Zotero on, like the URL it saves, particularly if you are using the university library to access the resources. 
+
+::: {.callout-note}
+### URLs
+
+Have you ever had a parent or grandparent send you a link to their amazon cart, as if you can see what's in there from the URL?
+
+It's critical to make sure that URLs that are in Zotero are persistent and work for other people (as they'll be part of your bibliography). 
+
+1. Open the URL in "private browsing" mode -- does it work?
+
+2. If the website is publicly available but is also a blog or something that can easily disappear off the internet, it may be better to archive it with the [Internet Archive](https://web.archive.org). I use their browser extension -- it allows you to click a button or two and save the page at the current moment, assuming you don't have to log in to view the page. It will often not work for e.g. newspaper articles, but some papers allow archiving and some don't (the Lincoln Journal Star doesn't, sadly). 
+
+3. Check the URL to make sure it doesn't have a proxy address. [UNL libraries](https://libraries.unl.edu/proxy-bookmarklet/) provides a really nice [bookmarklet](javascript:void(location.href='https://login.libproxy.unl.edu/login?url=%27+location.href)) that will redirect your browser to a login, and then use the library resources to get access to that login. 
+
+![The URL in this Zotero entry is specific to UNL, which will not be helpful when making a bibliography that should be used by others.](images/zotero-libproxy.png){fig-alt="A screenshot of a Zotero entry where the URL starts with 'http://libproxy.unl.edu/login?url=...', indicating that it is using the library proxy."}
+
+When using the library proxy server (which is amazing and does make accessing articles a lot faster/easier), you need to know how to transform the URL of the article back into something that will be usable by others. 
+
+`https://research-ebsco-com.libproxy.unl.edu/c/cysalf/viewer/html/an5mgajxxz`
+
+needs to be transformed into:
+
+`https://research.ebsco.com/c/cysalf/viewer/html/an5mgajxxz`
+
+That is, we remove `.libproxy.unl.edu`, and then we add dots back in to the server address `research-ebsco-com` so that it becomes `research.ebsco.com`. 
+
+This process doesn't *always* work, so it's important to check the new link out in a different browser. 
+
+Alternately, if the article provides a DOI, use that instead -- it's a persistent identifier that will last far longer than the URL itself, which is subject to change through site redesigns. 
+
+:::
+
+### Practice: National Academies Statement on CDC Vaccine Guidelines
+
+Go to [https://www.nationalacademies.org/news/statement-on-cdc-s-changes-to-guidance-on-vaccines-and-autism](https://www.nationalacademies.org/news/statement-on-cdc-s-changes-to-guidance-on-vaccines-and-autism) and use Zotero connector to import the citation information. 
+
+Make sure to fill in:
+
+- the author(s)
+- the website title
+- the date the statement was published
+- the publisher
+
+Try to add the URL to the Internet archive, and update your citation to the URL provided by the Internet Archive to ensure that people can always see the statement. In an era where changes can be made silently by news organizations (rather than retractions printed in the paper itself), it's important to document exactly the version you intended to cite. 
+
+
+### Practice: Published Paper Stored on GitHub
+
+Sometimes, it's easier to get a journal article off of the author's website. 
+Typically, authors can host an un-formatted version of the paper sent to the journal (e.g. without the journal's style layout) without violating copyright. 
+Author websites often don't have the extra metadata that journals add to papers -- and this is the metadata Zotero uses to read in the bibliographic information.
+
+
+Go to [https://github.com/TengMCing/autovi_paper/blob/master/autovi_paper.pdf](https://github.com/TengMCing/autovi_paper/blob/master/autovi_paper.pdf) and load the paper into Zotero. 
+
+1. Download the PDF file and drag-and-drop it into the Zotero entry. If this doesn't work, right click on the entry and choose "add attachment" and select the downloaded file. What metadata is present?
+2. Drag and drop the PDF into the library without adding it to an entry. Right click and select "Retrieve Metadata". What metadata does it find?
+
+3. Using either (1) or (2) as a starting point, fill in the rest of the metadata. You may have to search for the paper -- the DOI at the top of the PDF has X.XXX because the official DOI has not yet been assigned. There is an icon on the right toolbar at the bottom that looks like a right arrow in a circle -- you can use this to search for the paper in e.g. Google Scholar. 
+
+4. Go to [https://onlinelibrary.wiley.com/doi/10.1111/anzs.70027](https://onlinelibrary.wiley.com/doi/10.1111/anzs.70027), which is where the journal copy of the paper lives. Import that into Zotero -- what metadata does it provide? Does any of it contradict metadata you've already added?
+
+
+In general, it is best to use the journal copy as the copy of record. Metadata can change, but the DOI generally will not. A paper can be published online before it is  published in print (for journals that still do print), so some variation in the year is not unexpected. However, if you do not have access to the journal, using a PDF from the author with the journal's metadata is usually a reasonable strategy.
+
+
