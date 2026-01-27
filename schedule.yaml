@@ -87,11 +87,11 @@ schedule:
     prepare: |
         - [ ] Reading Quiz Week 4
     class1: |
-        - Audience and Technical Knowledge
-        - Thing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?
-    class2: |
         - Transitions and Organizing Information
         - [Slides](../slides/04-organizing-information.qmd)
+    class2: |
+        - Audience and Technical Knowledge
+        - Thing Explainer Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge? Completed Asynchronously using discussion board due to travel conflicts.
     assignments: |
         - [ ] Highlight transitions in your review article and comment on their effectiveness, obviousness, etc.
         - [ ] Create a reverse outline of your review article. Are there any obvious holes?

@@ -19,14 +19,14 @@ February 02-08, 2026
 
 ## 🥱 Monday 🌛
 
-- Audience and Technical Knowledge
-- Thing Explainer In-Class Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge?
+- Transitions and Organizing Information
+- [Slides](../slides/04-organizing-information.qmd)
 
 
 ## 🐪️ Wednesday 🐦‍⬛ 
 
-- Transitions and Organizing Information
-- [Slides](../slides/04-organizing-information.qmd)
+- Audience and Technical Knowledge
+- Thing Explainer Activity: how does audience matter, and what assumptions do we make about the audience’s technical knowledge? Completed Asynchronously using discussion board due to travel conflicts.
 
 
 ##  🏋 Practice Your Skills
