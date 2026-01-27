@@ -14,6 +14,7 @@ project:
     - assignment-repos/*/*.qmd
     - assignment-repos/*/*/*.qmd
     - instructions/*.qmd
+    - instructions/methods-papers/*.qmd
     - homework/*.qmd
     - slides/*.qmd
 

@@ -1,0 +1,1791 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Susan Vanderplas &amp; Heike Hofmann">
+
+<title>Signs of the Sine Illusion: Why We Need to Care – STAT 349 - Spring 2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d7964e062797f14afdac39f13a0a6f7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-6a19d919a1cfc19ed6f13e45053f1323.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d7964e062797f14afdac39f13a0a6f7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Signs of the Sine Illusion: Why We Need to Care – STAT 349 - Spring 2025">
+<meta property="og:description" content="Graphical representations have to be true to the data they display. Computational tools ensure this on a technical level. But we also need to take ‘flaws’ of the human perceptual system into account. The sine illusion provides an example where human perception leads to systematic bias in the assessment of the optical stimulus, with a particularly notable impact on perception of time-series data with a seasonal component. In this paper, we discuss the reasons for the illusion and various strategies useful to break the illusion or reduce its strength. We demonstrate the presence of the illusion in real-world and theoretical situations. We also present data from a user study which demonstrate the dramatic effect the sine illusion can have on conclusions drawn from displayed data.">
+<meta property="og:image" content="https://unl-statistics.github.io/stat349/instructions/methods-papers/figure/fig-example-1.png">
+<meta property="og:site_name" content="STAT 349 - Spring 2025">
+<meta property="og:image:alt" content="The figure is a scatterplot showing Temperature in fahrenheit on the x-axis (45-95 degrees) and 8-hour average ozone concentration in ppm on the y-axis (ranging from around 0 to around .09). There is an increasing trend, shown by a loess smooth line, but it is not linear - there is a bump around 70 degrees where the increase is much more steep.">
+<meta property="og:image:height" content="900">
+<meta property="og:image:width" content="1200">
+<meta name="twitter:title" content="Signs of the Sine Illusion: Why We Need to Care – STAT 349 - Spring 2025">
+<meta name="twitter:description" content="Graphical representations have to be true to the data they display. Computational tools ensure this on a technical level. But we also need to take ‘flaws’ of the human perceptual system into account. The sine illusion provides an example where human perception leads to systematic bias in the assessment of the optical stimulus, with a particularly notable impact on perception of time-series data with a seasonal component. In this paper, we discuss the reasons for the illusion and various strategies useful to break the illusion or reduce its strength. We demonstrate the presence of the illusion in real-world and theoretical situations. We also present data from a user study which demonstrate the dramatic effect the sine illusion can have on conclusions drawn from displayed data.">
+<meta name="twitter:image" content="https://unl-statistics.github.io/stat349/instructions/methods-papers/images/twitter-card.png">
+<meta name="twitter:creator" content="@srvanderplas">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Signs of the Sine Illusion: Why We Need to Care</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful links</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Weekly materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1 - Getting Started</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2 - Resumes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3 - References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 4 - Organization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5 - Arguments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 6 - Problems &amp; Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 7 - Methods</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 8 - Graphics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 9 - Results</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 10 - Intro &amp; Conclusions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 11 - Summaries</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 12 - Fallacies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 13 - Reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 14 - Editing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 15 - Presentations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#statisticalgraphics" id="toc-statisticalgraphics" class="nav-link" data-scroll-target="#statisticalgraphics"><span class="header-section-number">1.0.1</span> The Sine Illusion in Statistical Graphics</a></li>
+  <li><a href="#sec-perceptualexplanations" id="toc-sec-perceptualexplanations" class="nav-link" data-scroll-target="#sec-perceptualexplanations"><span class="header-section-number">1.0.2</span> Perceptual Explanations for the Sine Illusion</a></li>
+  <li><a href="#the-geometry-of-the-illusion" id="toc-the-geometry-of-the-illusion" class="nav-link" data-scroll-target="#the-geometry-of-the-illusion"><span class="header-section-number">1.0.3</span> The Geometry of the Illusion</a></li>
+  </ul></li>
+  <li><a href="#sec-solutions" id="toc-sec-solutions" class="nav-link" data-scroll-target="#sec-solutions"><span class="header-section-number">2</span> Breaking the Illusion</a>
+  <ul class="collapse">
+  <li><a href="#trend-removal" id="toc-trend-removal" class="nav-link" data-scroll-target="#trend-removal"><span class="header-section-number">2.1</span> Trend Removal</a></li>
+  <li><a href="#transformation-of-the-x-axis" id="toc-transformation-of-the-x-axis" class="nav-link" data-scroll-target="#transformation-of-the-x-axis"><span class="header-section-number">2.2</span> Transformation of the <span class="math inline">\(X\)</span>-Axis</a></li>
+  <li><a href="#transformation-in-y" id="toc-transformation-in-y" class="nav-link" data-scroll-target="#transformation-in-y"><span class="header-section-number">2.3</span> Transformation in <span class="math inline">\(Y\)</span></a></li>
+  </ul></li>
+  <li><a href="#sec-study" id="toc-sec-study" class="nav-link" data-scroll-target="#sec-study"><span class="header-section-number">3</span> Transformations in Practice – a User Study</a>
+  <ul class="collapse">
+  <li><a href="#study-design" id="toc-study-design" class="nav-link" data-scroll-target="#study-design"><span class="header-section-number">3.1</span> Study Design</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">3.2</span> Results</a></li>
+  </ul></li>
+  <li><a href="#sec-example" id="toc-sec-example" class="nav-link" data-scroll-target="#sec-example"><span class="header-section-number">4</span> Application: US Gas Prices</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions"><span class="header-section-number">5</span> Conclusions</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6</span> References</a></li>
+  
+  
+  
+  
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/unl-statistics/stat349/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Signs of the Sine Illusion: Why We Need to Care</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Susan Vanderplas &amp; Heike Hofmann </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>Graphical representations have to be true to the data they display. Computational tools ensure this on a technical level. But we also need to take ‘flaws’ of the human perceptual system into account. The sine illusion provides an example where human perception leads to systematic bias in the assessment of the optical stimulus, with a particularly notable impact on perception of time-series data with a seasonal component. In this paper, we discuss the reasons for the illusion and various strategies useful to break the illusion or reduce its strength. We demonstrate the presence of the illusion in real-world and theoretical situations. We also present data from a user study which demonstrate the dramatic effect the sine illusion can have on conclusions drawn from displayed data.</p>
+  </div>
+</div>
+
+
+</header>
+
+
+<div class="hidden">
+<p><span class="math display">\[      
+\newcommand{\range}[1]{{\text{range}\left(#1\right)}}
+      \newcommand{\s}[2]{{_{#1}s^{ #2}}}
+      \newcommand{\atan}[1]{\text{atan}\left({#1}\right)}
+      \newcommand{\xR}{\mathbb{R}}
+\]</span></p>
+</div>
+<style>
+.design {background-color: #99ff2222}
+.setting {background-color: #ff000022}
+.sampling {background-color: #0000ff22}
+.variables {background-color: #ff00ff22}
+.statistics {background-color: #ffff0022}
+</style>
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>Graphics are powerful tools for summarizing large or complex data, but they rely on the main premise that any graphical representation of the data has to be “true” to the data <span class="citation" data-cites="tufte wainer:2000 robbins:2005">(see e.g. <a href="#ref-tufte" role="doc-biblioref">Tufte 1991</a>; <a href="#ref-wainer:2000" role="doc-biblioref">Wainer 2000</a>; <a href="#ref-robbins:2005" role="doc-biblioref">Robbins 2012</a>)</span>. That is, a measurable quantity of a graphical element in the representation has to directly reflect some aspect of the underlying data. Generally, we see a lot of discussion on keeping true to the data in the framework of (ab)using three dimensional effects in graphics. <span class="citation" data-cites="tufte">Tufte (<a href="#ref-tufte" role="doc-biblioref">1991</a>)</span> goes as far as defining a <em>lie-factor</em> of a chart as the ratio of the size of an effect in the data compared to the size of an effect shown, with the premise that any large deviations from a value of one indicate a misuse of graphical techniques. Computational tools help us ensure technical accuracy – but this brings up the additional question of how we deal with situations that involve innate inability or trigger learned misperceptions in the audience. In this paper we want to raise awareness for one of these situations, known as the <em>sine illusion</em> or <em>line width illusion</em> . Based on the results of a human subject study in <a href="#sec-study" class="quarto-xref">Section&nbsp;3</a> we can show that this phenomenon manifests itself frequently and persistently in our dealings with statistical graphics. In <a href="#sec-solutions" class="quarto-xref">Section&nbsp;2</a> we provide a set of strategies to mitigate the effects of the illusion. Again, results from the subject study are given to show that there is a wide range of possible values in the parameter space of the solution that provide relief from the distortive effects of the illusion in the general population.</p>
+<div id="fig-examplefull" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-examplefull-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-examplefull" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-examplefull-1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The figure is a scatterplot showing Temperature in fahrenheit on the x-axis (45-95 degrees) and 8-hour average ozone concentration in ppm on the y-axis (ranging from around 0 to around .09). There is an increasing trend, shown by a loess smooth line, but it is not linear - there is a bump around 70 degrees where the increase is much more steep.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-examplefull-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-example-1.png" class="img-fluid figure-img" data-ref-parent="fig-examplefull" alt="The figure is a scatterplot showing Temperature in fahrenheit on the x-axis (45-95 degrees) and 8-hour average ozone concentration in ppm on the y-axis (ranging from around 0 to around .09). There is an increasing trend, shown by a loess smooth line, but it is not linear - there is a bump around 70 degrees where the increase is much more steep.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-examplefull-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Scatterplot of Ozone and Temperature in Houston, 2011. A loess fit shows the overall trend.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-examplefull" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-examplefull-2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The figure is a scatterplot showing Temperature in fahrenheit on the x-axis (45-95 degrees) and residual 8-hour average ozone concentration in ppm on the y-axis (ranging from -0.04 to around .04). There is a clear increase in residual variance over the course of the span of the x-axis.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-examplefull-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-example-2.png" class="img-fluid figure-img" data-ref-parent="fig-examplefull" alt="The figure is a scatterplot showing Temperature in fahrenheit on the x-axis (45-95 degrees) and residual 8-hour average ozone concentration in ppm on the y-axis (ranging from -0.04 to around .04). There is a clear increase in residual variance over the course of the span of the x-axis.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-examplefull-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Scatterplots of Ozone and Temperature de-trended according to the loess fit in (a).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-examplefull-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Scatterplots of Ozone and Temperature in Houston, 2011. The increase in variability over the temperature range is more pronounced in the de-trended plot on the right.
+</figcaption>
+</figure>
+</div>
+<p>As a first example let us consider the relationship between ozone concentration and temperature. Ozone concentrations were measured from 21 locations in the Houston area <span class="citation" data-cites="epa">(<a href="#ref-epa" role="doc-biblioref">EPA 2011</a>)</span>, and temperature data are provided by the NCDC <span class="citation" data-cites="noaa">(<a href="#ref-noaa" role="doc-biblioref">National Climate Data Center 2011</a>)</span> site at Hobby International Airport, located near the center of Houston.</p>
+<p><a href="#fig-examplefull-1" class="quarto-xref">Figure&nbsp;1 (a)</a> shows daily measurements of 8-hour average ozone concentration and temperature at several sites in Houston, for days in 2011 with temperatures above <span class="math inline">\(45^\circ\)</span>F and dew points of less than <span class="math inline">\(60^\circ\)</span>F. A loess smooth line is added for reference. These types of plots are often used to give an overview of the relationship between two variables. The trend line summarizes this relationship, while the points show raw measurement to allow an assessment of the overall size of the data, the amount of (marginal) variability presented, as well as the (conditional) variability along the trend line. It is the latter task that we cannot satisfactorily complete. While we might agree that there is an increase in variability of ozone concentrations for temperatures above <span class="math inline">\(80^\circ\)</span>F, we will not doubt homogeneity elsewhere based on <a href="#fig-examplefull-1" class="quarto-xref">Figure&nbsp;1 (a)</a>.</p>
+<p>This evaluation changes when considering <a href="#fig-examplefull-2" class="quarto-xref">Figure&nbsp;1 (b)</a>: the scatterplot shows a loess based de-trended residual of temperature. The previously almost invisible increase in variability of ozone measurements with increasing temperatures now becomes apparent.</p>
+<p>This phenomenon, caused by the change in the slope of the trend line, is known as the <em>sine illusion</em> in the literature on cognition and human perception or <em>line width illusion</em> in the statistical graphics literature.</p>
+<p>In the cognitive literature, <span class="citation" data-cites="day:1991">Day and Stecher (<a href="#ref-day:1991" role="doc-biblioref">1991</a>)</span> first documented the illusion in the context of vertical lines along a sinusoidal curve. <a href="#fig-original" class="quarto-xref">Figure&nbsp;2</a> shows a sketch of this: line segments are centered evenly spaced along the curve. Line segments are of equal length but appear longer in the peaks and troughs due to the illusion. The parameters that influence the strength of the illusion are the amplitude of the curve and the length of the line segments. As the length of the line segments increases, the apparent difference in the length of the line segments decreases. Any modification that increases the change in slope under which the curve appears, such as an increase in the amplitude of the curve or a more extreme aspect ratio, reinforces the apparent difference in line lengths.</p>
+<div id="fig-original" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A set of vertical lines where each line is centered along an invisible sine curve.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-original-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-original-1.png" class="img-fluid figure-img" alt="A set of vertical lines where each line is centered along an invisible sine curve.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-original-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: The original sine illusion was demonstrated on evenly spaced vertical lines centered around a sinusoidal curve of <span class="math inline">\(f(x) = \sin(x)\)</span>. The lines in the peak and trough of the curve appear to be longer than in the other regions.
+</figcaption>
+</figure>
+</div>
+<p>More recently the illusion has been shown in non-sinusoidal curves <span class="citation" data-cites="cleveland:1984 schonlau:2003 robbins:2005 marie:2013">(<a href="#ref-cleveland:1984" role="doc-biblioref">William S. Cleveland and McGill 1984</a>; <a href="#ref-schonlau:2003" role="doc-biblioref">Schonlau 2003</a>; <a href="#ref-robbins:2005" role="doc-biblioref">Robbins 2012</a>; <a href="#ref-marie:2013" role="doc-biblioref">Hofmann and Vendettuoli 2013</a>)</span>, but the underlying effect seems to be the same, in the sense that the illusion is not triggered by the periodic nature of the underlying trend line but only by changes to its slope.</p>
+<p>Next, we examine the perceptual and statistical literature regarding this illusion.</p>
+<section id="statisticalgraphics" class="level3" data-number="1.0.1">
+<h3 data-number="1.0.1" class="anchored" data-anchor-id="statisticalgraphics"><span class="header-section-number">1.0.1</span> The Sine Illusion in Statistical Graphics</h3>
+<p>The Sine Illusion in Statistical Graphics has been frequently noted , though usually not as an optical illusion. Rather, the problem is typically identified as the difficulty of visually subtracting two curves <span class="citation" data-cites="robbins:2005">William S. Cleveland and McGill (<a href="#ref-cleveland:1984" role="doc-biblioref">1984</a>)</span> and the resulting erroneous conclusions when this process goes awry. Playfair’s chart of the balance of trade between England and the East Indies <span class="citation" data-cites="playfair playfair2">(<a href="#ref-playfair" role="doc-biblioref">Playfair and Corry 1786</a>; <a href="#ref-playfair2" role="doc-biblioref">Playfair, Wainer, and Spence 2005</a>)</span> (shown in <a href="#sec-app-graphics" class="quarto-xref">Section&nbsp;7</a>) represents the possibly oldest example of this common phenomenon.</p>
+<p>In more modern visualizations, bivariate area charts and “stream graphs” <span class="citation" data-cites="stackedgraphs">(<a href="#ref-stackedgraphs" role="doc-biblioref">Byron and Wattenberg 2008</a>)</span> commonly produce the illusion (see an example at <a href="http://bl.ocks.org/mbostock/3894205" class="uri">http://bl.ocks.org/mbostock/3894205</a>).</p>
+</section>
+<section id="sec-perceptualexplanations" class="level3" data-number="1.0.2">
+<h3 data-number="1.0.2" class="anchored" data-anchor-id="sec-perceptualexplanations"><span class="header-section-number">1.0.2</span> Perceptual Explanations for the Sine Illusion</h3>
+<p>Perceptual explanations for the sine illusion can be found in the sensation and perception literature. While not thoroughly examined, the sine illusion has been classified as part of a group of geometrical optical mis-perceptions related to the M”uller-Lyer illusion <span class="citation" data-cites="day:1991">(<a href="#ref-day:1991" role="doc-biblioref">Day and Stecher 1991</a>)</span> or the Poggendorf illusion <span class="citation" data-cites="poggendorf">(<a href="#ref-poggendorf" role="doc-biblioref">Weintraub, Krantz, and Olson 1980</a>)</span>, which puts the illusion into the framework of context-based illusions. <span class="citation" data-cites="day:1991">Day and Stecher (<a href="#ref-day:1991" role="doc-biblioref">1991</a>)</span> suggest that the sine illusion occurs due to misapplication of perceptual experience with the three-dimensional world to a two-dimensional “artificial” display of data.</p>
+<p>Experience with real-world objects suggests that the stimulus of <a href="#fig-original" class="quarto-xref">Figure&nbsp;2</a> is very similar to a slightly angled top view of the 3-dimensional figure of a strip or ribbon describing waves in a third dimension, such as e.g.~a road does on rolling hills. This is sketched out in <a href="#fig-ribbon1" class="quarto-xref">Figure&nbsp;3 (a)</a>. Our real-world experience suggests immediately that changes in the width of the road are unlikely and resolves the representation accordingly. <a href="#fig-ribbon1" class="quarto-xref">Figure&nbsp;3 (a)</a> shows the line segments slightly angled towards each other. In contrast to that, <a href="#fig-ribbon2" class="quarto-xref">Figure&nbsp;3 (b)</a> shows a variation of the same plot with a vanishing point set further away from the viewer. This makes the line segments almost parallel to each other and the representation therefore more closely resembles the sketch of <a href="#fig-original" class="quarto-xref">Figure&nbsp;2</a>, in which the sine illusion was originally presented.</p>
+<div id="fig-ribbon" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ribbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-ribbon" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-ribbon1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A Perspective plot of the sine illusion">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ribbon1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-ribbon-illusion-1.png" class="img-fluid figure-img" data-ref-parent="fig-ribbon" alt="A Perspective plot of the sine illusion">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ribbon1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Perspective plot of sine illusion
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-ribbon" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-ribbon2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Perspective plot, vanishing point near infinity.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-ribbon2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-ribbon-illusion-2.png" class="img-fluid figure-img" data-ref-parent="fig-ribbon" alt="Perspective plot, vanishing point near infinity.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-ribbon2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Perspective plot, vanishing point near infinity.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ribbon-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Two different perspective projections of the same data responsible for the sine illusion. The first projection angles the lines and appears more natural, but the second projection suggests that the lines do not need to be angled to create the same 3d impression.
+</figcaption>
+</figure>
+</div>
+<div id="fig-original-grid" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The sine illusion with two individual lines highlighted. Horizontal grid lines do not help  to resolve the illusion, even though they provide a clear basis for comparison of line lengths. Readers are much better at assessing the length of the two singled out line segments; they are equal.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-original-grid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-originalgrid-1.png" class="img-fluid figure-img" alt="The sine illusion with two individual lines highlighted. Horizontal grid lines do not help  to resolve the illusion, even though they provide a clear basis for comparison of line lengths. Readers are much better at assessing the length of the two singled out line segments; they are equal.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-original-grid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: The sine illusion with two individual lines highlighted. Horizontal grid lines do not help to resolve the illusion, even though they provide a clear basis for comparison of line lengths. Readers are much better at assessing the length of the two singled out line segments; they are equal.
+</figcaption>
+</figure>
+</div>
+<p>Recreating the three-dimensional context of the sine illusion might resolve the distortion. Generally, an increase of the dimensionality of a graph is not recommended <span class="citation" data-cites="tufte cleveland:1984">(<a href="#ref-tufte" role="doc-biblioref">Tufte 1991</a>; <a href="#ref-cleveland:1984" role="doc-biblioref">William S. Cleveland and McGill 1984</a>)</span>, but <span class="citation" data-cites="spence:1990">Spence (<a href="#ref-spence:1990" role="doc-biblioref">1990</a>)</span> suggests that adding a third dimension to simple statistical graphics does not interfere with an accurate reading.</p>
+<p>However, for the sine illusion, the process of projecting the data accurately into a higher dimension is not simple. The projection that best resolves the illusion likely is highly subjective and influenced by choices of angle and color gradient for depth cues. As there is not a single three-dimensional projection that corresponds to the two-dimensional data, this approach would only produce further visual ambiguity.</p>
+<p>To further complicate the situation, the illusion itself is insidious – we trust our vision implicitly, to the point that when we understand something, we say “I see”. This trust in our visual perception is seldom called into question, for our perception is optimized for interaction with a three-dimensional world. Artificial two-dimensional situations (such as graphs and pictures) may accurately represent the data and still produce a misleading perceptual experience.</p>
+<p>The contextual cues of the overall trend are critical to the sine illusion’s effect; the illusion only holds when a substantial portion of the graph is considered simultaneously, which triggers our innate ability of perceiving one whole rather than the individual parts it consists of <span class="citation" data-cites="wolfe2012sensation">Wolfe et al. (<a href="#ref-wolfe2012sensation" role="doc-biblioref">2012</a>)</span> (principle of grouping).</p>
+<p>Considering only two line segments at a time resolves the illusion. The bold lines in <a href="#fig-original-grid" class="quarto-xref">Figure&nbsp;4</a> are clearly of the same length. Comparisons of individual line lengths is visually a fairly simple task, and is done with a relatively high accuracy <span class="citation" data-cites="cleveland:1984">(<a href="#ref-cleveland:1984" role="doc-biblioref">William S. Cleveland and McGill 1984</a>)</span>. <span class="citation" data-cites="day:1991">Day and Stecher (<a href="#ref-day:1991" role="doc-biblioref">1991</a>)</span> contains a more thorough discussion of how much context is required for the illusion to persist.</p>
+</section>
+<section id="the-geometry-of-the-illusion" class="level3" data-number="1.0.3">
+<h3 data-number="1.0.3" class="anchored" data-anchor-id="the-geometry-of-the-illusion"><span class="header-section-number">1.0.3</span> The Geometry of the Illusion</h3>
+<p>The geometry of the illusion is driven by our preference in evaluating line width as <em>orthogonal</em> width rather than the difference along the vertical axis. <a href="#fig-OrthogonalWidth" class="quarto-xref">Figure&nbsp;5</a> demonstrates the change in orthogonal width as the slope of the line tangent to the graph of <span class="math inline">\(f\)</span> changes; these changes correspond to our perception of apparent line length.</p>
+<div id="fig-OrthogonalWidth" class="quarto-float quarto-figure quarto-figure-center anchored" alt="The sine illusion with lines orthogonal to the tangent line at $f(x)$. The perception that the vertical length changes with $f(x)$ corresponds to changes in actual orthogonal width due to the change in the visual (plotted) secant angle. The strength of the perceptual effect depends in part on the aspect ratio of the graph, as shown in the second image.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-OrthogonalWidth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-transform-illustration-1.png" class="img-fluid figure-img" alt="The sine illusion with lines orthogonal to the tangent line at $f(x)$. The perception that the vertical length changes with $f(x)$ corresponds to changes in actual orthogonal width due to the change in the visual (plotted) secant angle. The strength of the perceptual effect depends in part on the aspect ratio of the graph, as shown in the second image.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-OrthogonalWidth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: The sine illusion with lines orthogonal to the tangent line at <span class="math inline">\(f(x)\)</span>. The perception that the vertical length changes with <span class="math inline">\(f(x)\)</span> corresponds to changes in actual orthogonal width due to the change in the visual (plotted) secant angle. The strength of the perceptual effect depends in part on the aspect ratio of the graph, as shown in the second image.
+</figcaption>
+</figure>
+</div>
+<p>The illusion is most pronounced in regions where the angle between the orthogonal and the vertical line is large. Changes to the aspect ratio therefore have a major impact on the strength of the sine illusion. Any measure that alleviates the difference between perceived width and the perpendicular width, decreases the effect of the illusion but does not completely overcome it. Banking to 45<span class="math inline">\(^\circ\)</span> <span class="citation" data-cites="cleveland:88">(<a href="#ref-cleveland:88" role="doc-biblioref">William S. Cleveland, McGill, and Robert 1988</a>)</span> has been suggested as a good default aspect ratio for time series, but does not necessarily help in the situation of the sine illusion, as the example in <a href="#sec-example" class="quarto-xref">Section&nbsp;4</a> shows, as the illusion would only be worsened by banking to 45<span class="math inline">\(^\circ\)</span>. The perceived length of the vertical line changes with the angle of the line perpendicular to the slope of <span class="math inline">\(\sin(x)\)</span>, suggesting that the sine illusion stems from a conflict between the visual system’s perception of figure width and the mathematical judgment necessary to determine the length of the vertical lines.</p>
+<p>Our preference for assessing figure width based on the orthogonal width suggests that the underlying illusion may be a function of geometry rather than some unknown visual or neural process that occurs subconsciously. In this case it may be possible to correct the graphical display for the illusion to minimize its misleading effect. A geometrical correction that – at least temporarily – counteracts the illusion would be a valuable tool in visual analysis, as this illusion very persistently affects our judgment of very common tasks such as e.g.&nbsp;the assessment of conditional variability of data along a trend line.</p>
+<p>What follows is a compilation of several approaches to correct for or mitigate the effect of the illusion. Our primary intent here is to demonstrate the pervasiveness of the illusion and the extreme measures necessary to remove its effect.</p>
+</section>
+</section>
+<section id="sec-solutions" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Breaking the Illusion</h1>
+<p>The sine illusion is caused by a conflict between vertical width, which is the width that we want onlookers to assess visually, and orthogonal width, which is the width that the onlooker perceives. This difference can be expressed as a function in the slope of the underlying trend line. This forms the basis for adjusting the vertical width for the perceived orthogonal width in the following three approaches:</p>
+<ol type="1">
+<li>separation of trend and variability,</li>
+<li>transformation of <span class="math inline">\(x\)</span>: adjusting slope to be constant by reparameterizing the <span class="math inline">\(x\)</span> axis, and</li>
+<li>transformation of <span class="math inline">\(y\)</span>: adjusting <span class="math inline">\(y\)</span> values to make conditional variability appear correctly</li>
+</ol>
+<p>Each of these ideas is discussed in more detail in this section.</p>
+<section id="trend-removal" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="trend-removal"><span class="header-section-number">2.1</span> Trend Removal</h2>
+<p><span class="citation" data-cites="cleveland:1984">William S. Cleveland and McGill (<a href="#ref-cleveland:1984" role="doc-biblioref">1984</a>)</span>, <span class="citation" data-cites="cleveland:1985">W. S. Cleveland and McGill (<a href="#ref-cleveland:1985" role="doc-biblioref">1985</a>)</span> discuss the perceptual difficulty of judging the difference between two curves plotted in the same chart, and alternatively, recommend to display the difference between the two curves directly. This is in line with recommendations for good graphics to ‘show the data’ rather than make the reader derive some aspect of it <span class="citation" data-cites="wainer:2000">(e.g. <a href="#ref-wainer:2000" role="doc-biblioref">Wainer 2000</a>)</span>.</p>
+<p>While the illusion is not apparent when trend line and variability in the residual structure are shown separately, the separation makes it more difficult to evaluate the overall pattern in the data, as we must base any judgment on two charts; either by combining information from two graphs or by mentally re-composing the original graph (at which point, the sine illusion becomes a factor). To minimize cognitive demands stemming from our limited visual memory <span class="citation" data-cites="healey:2012">(<a href="#ref-healey:2012" role="doc-biblioref">Healey and Enns 2012</a>)</span> we ideally want to tell the whole story with a single graph, in particular because in many situations we may not be able to show multiple graphs due to space limitations (such as in journal publications) or time and attention limitations (in presentations).</p>
+<p>Additionally, removing the trend requires an initial model, making any plots produced using that fit conditional on the assumptions necessary to obtain that model fit. %In many situations, this may be undesirable. In particular, As we typically view the data before fitting even a rudimentary model, these initial modeling decisions might already be influenced by the sine illusion.</p>
+</section>
+<section id="transformation-of-the-x-axis" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="transformation-of-the-x-axis"><span class="header-section-number">2.2</span> Transformation of the <span class="math inline">\(X\)</span>-Axis</h2>
+<p>The sine illusion is driven by changes in the slope of trends between variables, we can therefore counteract the illusion by removing these changes, transforming the <span class="math inline">\(x\)</span> axis such that the absolute value of the slope is constant and forcing the corresponding orthogonal width to represent the conditional variability.</p>
+<p>Let us assume that the relationship between variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> is given by a model of the form $ y = f(x) + $, where <span class="math inline">\(f\)</span> is some underlying function (either previously known or based on a model fit), that is differentiable over the region of observed data.</p>
+<p>For a correction, we want to find a transformation <span class="math inline">\(T(x)\)</span> of <span class="math inline">\(x\)</span>, such that <span class="math inline">\(f(T(x))\)</span> is a piece-wise linear function, where each piece has the same absolute slope. %This transformation has an effect similar to “banking to 45<span class="math inline">\(^\circ\)</span>” in a piecewise manner.</p>
+<p>Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be the minimum and maximum of the <span class="math inline">\(x\)</span>-range under consideration. Then for any value <span class="math inline">\(x \in (a,b)\)</span> the following transformation results in a function with constant absolute slope (see <a href="#sec-app-xtrans" class="quarto-xref">Section&nbsp;8</a> for a derivation of the equation):</p>
+<p><span id="eq-xtrans"><span class="math display">\[
+(f \circ T)(x) = a + (b-a)\left(\int_{a}^x |f^\prime(z)| dz\right)/\left(\int_{a}^{b}|f^\prime(z)| dz\right),
+\tag{1}\]</span></span></p>
+<p>The transformed <span class="math inline">\(x\)</span>-axis is changed from a linear representation of the <span class="math inline">\(x\)</span> values to a ‘warped’ axis that continuously changes the scale of <span class="math inline">\(x\)</span> to compensate for changes in the slope. To emphasize this change in scale along the <span class="math inline">\(x\)</span> axis, dots are drawn at the bottom of the chart to show the transformation’s effect on equally spaced points along the <span class="math inline">\(x\)</span>-axis. Results from this transformation are demonstrated in <a href="#fig-xtrans1" class="quarto-xref">Figure&nbsp;6 (a)</a>.</p>
+<div id="fig-xtrans" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-xtrans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-xtrans" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-xtrans1" class="quarto-float quarto-figure quarto-figure-center anchored" alt="X axis transformation of the sine illusion corresponding to $w=1$.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-xtrans1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-xtransform-1.png" class="img-fluid figure-img" data-ref-parent="fig-xtrans" alt="X axis transformation of the sine illusion corresponding to $w=1$.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-xtrans1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) <span class="math inline">\(X\)</span> axis transformation based on <a href="#eq-xtrans" class="quarto-xref">Equation&nbsp;1</a>, corresponding to weighting of <span class="math inline">\(w=1\)</span>.
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-xtrans" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-xtrans2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="X axis transformation of the sine illusion corresponding to $w=1/2$.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-xtrans2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-xtransform-2.png" class="img-fluid figure-img" data-ref-parent="fig-xtrans" alt="X axis transformation of the sine illusion corresponding to $w=1/2$.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-xtrans2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Weighted Transformation, <span class="math inline">\(w=1/2\)</span> (based on <a href="#eq-xtrans-weighted" class="quarto-xref">Equation&nbsp;2</a>)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-xtrans" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-xtrans3" class="quarto-float quarto-figure quarto-figure-center anchored" alt="X axis transformation of the sine illusion corresponding to $w=1/3$.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-xtrans3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-xtransform-3.png" class="img-fluid figure-img" data-ref-parent="fig-xtrans" alt="X axis transformation of the sine illusion corresponding to $w=1/3$.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-xtrans3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Weighted Transformation, <span class="math inline">\(w=1/3\)</span> (based on <a href="#eq-xtrans-weighted" class="quarto-xref">Equation&nbsp;2</a>)
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-xtrans" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-xtrans4" class="quarto-float quarto-figure quarto-figure-center anchored" alt="X axis transformation of the sine illusion corresponding to $w=1/4$.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-xtrans4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-xtransform-4.png" class="img-fluid figure-img" data-ref-parent="fig-xtrans" alt="X axis transformation of the sine illusion corresponding to $w=1/4$.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-xtrans4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) Weighted Transformation, <span class="math inline">\(w=1/4\)</span> (based on <a href="#eq-xtrans-weighted" class="quarto-xref">Equation&nbsp;2</a>)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-xtrans-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Examples of <span class="math inline">\(X\)</span> axis transformations in the sine curve. Dots at the bottom of the graph show the transformation’s effect on equally spaced points along the <span class="math inline">\(x\)</span>-axis. Different amounts of weighting <span class="math inline">\(w\)</span> correspond to differently strong corrections. In (a), <span class="math inline">\(x\)</span>-spacing of the lines changes the extant width such that the absolute value of the slope is uniform across the whole range of the <span class="math inline">\(x\)</span> axis resulting in the largest amount of correction. (b) - (d) reduce the correction in (a) towards successively more uniform spacing in <span class="math inline">\(x\)</span> while still breaking the effects of the illusion.
+</figcaption>
+</figure>
+</div>
+<p>While the transformation in <a href="#eq-xtrans" class="quarto-xref">Equation&nbsp;1</a> effectively removes the appearance of changing line lengths, we can see in practice that the illusion can be broken by a much less severe transformation of the <span class="math inline">\(x\)</span> axis. For that we introduce a shrinkage factor <span class="math inline">\(w \in (0,1)\)</span> that allows a weighted approach in counteracting the illusion as:</p>
+<p><span id="eq-xtrans-weighted"><span class="math display">\[
+(f \circ T_w)(x) = (1-w) \cdot x + w \cdot (f \circ T)(x)
+\tag{2}\]</span></span></p>
+<p>Note that for <span class="math inline">\(w=1\)</span> the <span class="math inline">\(x\)</span>-transformation is applied completely, while smaller values of <span class="math inline">\(w\)</span> indicate a less severe adjustment, %. Under weaker transformations, which lets the data more closely reflect the original function <span class="math inline">\(f(x)\)</span>. <a href="#fig-xtrans2" class="quarto-xref">Figure&nbsp;6 (b)</a> - <a href="#fig-xtrans4" class="quarto-xref">Figure&nbsp;6 (d)</a> show the effect of different shrinkage values <span class="math inline">\(w\)</span>. As <span class="math inline">\(w\)</span> decreases, the lines become more evenly spaced and the illusion begins to return. The extent to which we can shrink the adjustment back to the original function varies with the aspect ratio of the chart and the function shape.</p>
+</section>
+<section id="transformation-in-y" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="transformation-in-y"><span class="header-section-number">2.3</span> Transformation in <span class="math inline">\(Y\)</span></h2>
+<p>Understanding the geometry of the sine illusion leads to another approach of resolving the conflict between the orthogonal width and the vertical length of the segment.</p>
+<p>Let again the function <span class="math inline">\(f\)</span> describe the general relationship between variables <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span>.</p>
+<p>As sketched out in <a href="#fig-GeneralCorrection" class="quarto-xref">Figure&nbsp;7 (a)</a> we want to first find the orthogonal (extant) width in a point <span class="math inline">\((x_0, f(x_o))\)</span> on the graph, which corresponds to the perceived width, and then correct the vertical width accordingly to match with the audience’s expectation.</p>
+<p>The orthogonal width (see sketch in <a href="#fig-GeneralCorrection" class="quarto-xref">Figure&nbsp;7 (a)</a>) is given as the line segment between endpoints <span class="math inline">\((x_1, f_1(x_1))\)</span> and <span class="math inline">\((x_2, f_2(x_2))\)</span>, where <span class="math inline">\(f_1\)</span> and <span class="math inline">\(f_2\)</span> denote the vertical shifts of function <span class="math inline">\(f\)</span> by <span class="math inline">\(-\ell/2\)</span> and <span class="math inline">\(\ell/2\)</span>, respectively, where <span class="math inline">\(\ell\)</span> is defined as the overall line length, <span class="math inline">\(\ell &gt; 0, \ell \in \xR\)</span>. These endpoints are determined as the intersection of the line orthogonal to the tangent line in <span class="math inline">\((x, f(x))\)</span> and graphs <span class="math inline">\(f_1\)</span> and <span class="math inline">\(f_2\)</span>.</p>
+<p>The orthogonal line through <span class="math inline">\((x_o, f(x_o))\)</span> is given in point-vector form as <span class="math display">\[
+{x_o \choose f(x_o)} + \lambda {f^\prime(x_o) \choose 1},
+\]</span></p>
+<p>for any real-valued <span class="math inline">\(\lambda\)</span>. The extant (half-)widths are then given as <span class="math inline">\({|\lambda| \sqrt{1 + f^\prime(x_o)^2}}\)</span>. This expression describes the quantity that we perceive rather than the quantity that we want to display (<span class="math inline">\(\ell/2\)</span>), which leads us to a general correction factor of $ {/2 (|| )^{-1}} $. Note that this yields in general two solutions: one for positive, one for negative values of <span class="math inline">\(\lambda\)</span> corresponding to upper and lower (half-)extant width.</p>
+<p>In order to get actual numeric values for <span class="math inline">\(\lambda\)</span>, we need to find end points of the extant line width as solutions of intersecting the orthogonal line and the graphs of <span class="math inline">\(f_1\)</span> and <span class="math inline">\(f_2\)</span>. We find these end points as solutions in <span class="math inline">\(x\)</span> and <span class="math inline">\(\lambda\)</span> of the system of equations:</p>
+<p><span id="eq-general-1"><span class="math display">\[ x - x_o = \lambda f^\prime(x_o)  \tag{3}\]</span></span> <span id="eq-general-2"><span class="math display">\[ f(x) - f(x_o) = -\lambda \pm \ell/2  \tag{4}\]</span></span></p>
+<p>Note that the above system of equations involves function values <span class="math inline">\(f(x)\)</span>, which implies that solving this system requires numerical optimization for any but the most simple functions <span class="math inline">\(f\)</span>.</p>
+<p>In the following two sections we make use of Taylor approximations of first and second order to find approximate solutions to end points as sketched out in <a href="#fig-linear-quadratic" class="quarto-xref">Figure&nbsp;7</a>.</p>
+<div id="fig-linear-quadratic" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-linear-quadratic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-linear-quadratic" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="fig-GeneralCorrection" class="quarto-float quarto-figure quarto-figure-center anchored" alt="General correction for the sine illusion">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-GeneralCorrection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-generalcorrectioncartoon-1.png" class="img-fluid figure-img" data-ref-parent="fig-linear-quadratic" alt="General correction for the sine illusion">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-GeneralCorrection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) General Correction
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-linear-quadratic" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="fig-linear-approx" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Linear approximation to correct the sine illusion">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-linear-approx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-generalcorrectioncartoon-2.png" class="img-fluid figure-img" data-ref-parent="fig-linear-quadratic" alt="Linear approximation to correct the sine illusion">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-linear-approx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Linear Approximation
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-linear-quadratic" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="fig-quad-approx" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Quadratic approximation to correct the sine illusion">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-quad-approx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-generalcorrectioncartoon-3.png" class="img-fluid figure-img" data-ref-parent="fig-linear-quadratic" alt="Quadratic approximation to correct the sine illusion">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-quad-approx-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Quadratic Approximation
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-linear-quadratic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Methods based on Approximations to f(x). (a) is the general correction approach, and may require numerical optimization to obtain exact solutions for <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span>. (b) uses a first-order Taylor series approximation to <span class="math inline">\(f(x)\)</span> and (c) uses a second-order Taylor series approximation to <span class="math inline">\(f(x)\)</span>. The intersection of the function <span class="math inline">\(f(x) \pm \ell/2\)</span> and the orthogonal line, <span class="math inline">\((x_1, y_1), (x_2, y_2)\)</span> must be obtained to determine the necessary correction factor.
+</figcaption>
+</figure>
+</div>
+<p>For the linear approximation to <span class="math inline">\(f(x)\)</span> we make use of <span class="math inline">\(f(x) \approx f(x_0) + (x - x_0) f^\prime(x_0)\)</span>, which together with <a href="#eq-general-1" class="quarto-xref">Equation&nbsp;3</a> and <a href="#eq-general-2" class="quarto-xref">Equation&nbsp;4</a> yields a correction factor in <span class="math inline">\(x_0\)</span> of <span class="math display">\[ \ell_{\text{new}}(x_0) = \ell_{\text{old}} \sqrt{1 +  f^\prime(x_0)^2}.\]</span></p>
+<p>Note that the linear method gives the same result as a varying slope extension from a trigonometric approach suggested by <span class="citation" data-cites="schonlau:2003">Schonlau (<a href="#ref-schonlau:2003" role="doc-biblioref">2003</a>)</span> (pg. 3) and used in <span class="citation" data-cites="marie:2013">Hofmann and Vendettuoli (<a href="#ref-marie:2013" role="doc-biblioref">2013</a>)</span>.</p>
+<p>A second-order Taylor polynomial approximation to <span class="math inline">\(f(x)\)</span> additionally accounts for the asymmetry in the extant widths on either side of the center trend line.</p>
+<p>A quadratic approximation to <span class="math inline">\(f(x)\)</span> is achieved using the approximation <span class="math inline">\(f(x) \approx f(x_0) + f^\prime(x_0)(x-x_0) + 1/2 f^{\prime\prime}(x_0)(x-x_0)^2\)</span>. This simplifies the system of <a href="#eq-general-1" class="quarto-xref">Equation&nbsp;3</a> and <a href="#eq-general-2" class="quarto-xref">Equation&nbsp;4</a> to the following quadratic equation in <span class="math inline">\(\lambda\)</span>: <span class="math display">\[
+f^{\prime\prime}(x_0)  f^\prime(x_0)^2 \lambda^2  + 2(f^\prime(x_0)^2 + 1) \lambda  \pm \ell = 0,
+\]</span> which leads us to corrections for the half lengths as (see <span id="eq-q1"><span class="math display">\[
+\ell_{\text{new}_1}(x_0) = 1 /2 \cdot  \left(v + \sqrt{ v^2 +  f^{\prime\prime}(x_0) f^\prime(x_0)^2\cdot  \ell_{\text{old}}}\right) \cdot v^{-1/2}
+\tag{5}\]</span></span></p>
+<p><span id="eq-q2"><span class="math display">\[
+\ell_{\text{new}_2}(x_0) = 1 /2 \cdot  \left(v + \sqrt{ v^2 -  f^{\prime\prime}(x_0) f^\prime(x_0)^2\cdot  \ell_{\text{old}}}\right) \cdot v^{-1/2}
+\tag{6}\]</span></span></p>
+<p>where <span class="math inline">\(v = 1 + f^\prime(x_0)^2\)</span>.</p>
+<div id="fig-GeneralQuadraticCorrection" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-GeneralQuadraticCorrection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-GeneralQuadraticCorrection" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="fig-quad-uncor" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Uncorrected sine illustion, from 0 to 2$\pi$ on the x-axis, following $y=2\sin(x)$.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-quad-uncor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-UncorRresults-1.png" class="img-fluid figure-img" data-ref-parent="fig-GeneralQuadraticCorrection" alt="Uncorrected sine illustion, from 0 to 2$\pi$ on the x-axis, following $y=2\sin(x)$.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-quad-uncor-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Uncorrected
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-GeneralQuadraticCorrection" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="fig-quad-linear" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Sine illustion, from 0 to 2$\pi$ on the x-axis, following $y=2\sin(x)$, corrected using the linear approximation.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-quad-linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-UncorRresults-1.png" class="img-fluid figure-img" data-ref-parent="fig-GeneralQuadraticCorrection" alt="Sine illustion, from 0 to 2$\pi$ on the x-axis, following $y=2\sin(x)$, corrected using the linear approximation.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-quad-linear-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Linear correction
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-GeneralQuadraticCorrection" style="flex-basis: 33.3%;justify-content: flex-start;">
+<div id="fig-quad-quad" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Sine illustion, from 0 to 2$\pi$ on the x-axis, following $y=2\sin(x)$, corrected using the quadratic approximation.">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-quad-quad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-UncorRresults-1.png" class="img-fluid figure-img" data-ref-parent="fig-GeneralQuadraticCorrection" alt="Sine illustion, from 0 to 2$\pi$ on the x-axis, following $y=2\sin(x)$, corrected using the quadratic approximation.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-quad-quad-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Quadratic correction
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-GeneralQuadraticCorrection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8: Quadratic Approximation. In the quadratic approximation top and bottom segments of the vertical lines are adjusted separately.
+</figcaption>
+</figure>
+</div>
+<p>Adjusting the top and bottom segments of the vertical lines separately so that the extant width is constant breaks the illusion, but slightly distorts the sinusoidal shape of the peaks.</p>
+<p><a href="#fig-GeneralQuadraticCorrection" class="quarto-xref">Figure&nbsp;8</a> shows the correction factor based on a quadratic approximation compared to the untransformed data. Unlike the linear solution, the half-segments here are not necessarily of the same length, and thus there are separate correction factors for each half-segment.</p>
+<p>The quadratic correction breaks whenever the expression in the square root of <a href="#eq-q1" class="quarto-xref">Equation&nbsp;5</a> and <a href="#eq-q2" class="quarto-xref">Equation&nbsp;6</a> becomes negative, i.e.~whenever <span class="math inline">\(v^2 \pm \ell\cdot f^{\prime\prime}(x)\cdot f^\prime(x)^2 &lt; 0\)</span>. This happens for combinations of large values of <span class="math inline">\(\ell\)</span>, which signify a large vertical extent, or large conditional variability <span class="math inline">\(E[Y|X]\)</span>, and simultaneous large changes in the slope of the main trend, i.e.~large values of the curvature <span class="math inline">\(f^{\prime\prime}(x)\)</span>. In the linear approximation of <span class="math inline">\(f\)</span> the same situation leads to a massive overcorrection of the vertical lines, changing the shape of the ‘corrected’ function beyond recognition.</p>
+<p>Similar to the correction of the <span class="math inline">\(x\)</span>-axis, we can use a weighted approach to find a balance between counteracting the illusion and representing the original data:</p>
+<p><span id="eq-ytrans-weighted"><span class="math display">\[
+\ell_{new_w}(x) = (1-w) \cdot \ell_{old} + w \cdot \ell_{new}(x).
+\tag{7}\]</span></span></p>
+</section>
+</section>
+<section id="sec-study" class="level1 page-columns page-full" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Transformations in Practice – a User Study</h1>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Annotation Key</p>
+<ul>
+<li><p><span class="design">Study design and data collection</span></p></li>
+<li><p><span class="setting">Setting - location, timeframe, recruitment/inclusion criteria</span></p></li>
+<li><p><span class="sampling">Sampling method</span></p></li>
+<li><p><span class="variables">Variables collected (and any derived variables)</span></p></li>
+<li><p><span class="statistics">Statistical analysis methods</span></p></li>
+</ul>
+</div></div><p>In order to more fully understand the sine illusion and test the proposed corrections, <span class="design">we created an applet to allow users to investigate the illusion’s prominence with respect to its parameters. Users can examine the sine illusion by changing line length, the function’s amplitude, and compare corrections in <span class="math inline">\(x\)</span>-axis and <span class="math inline">\(y\)</span>-values to uncorrected data. All corrections proposed in this paper are implemented in a Shiny applet <span class="citation" data-cites="shiny">(<a href="#ref-shiny" role="doc-biblioref">RStudio, Inc 2014</a>)</span> located at http://bit.ly/1ldgujL</span>.</p>
+<p><span class="design">We employed a second Shiny applet (http://bit.ly/SzDnTc) to collect data on users’ preferences on the amount of correction used, i.e.&nbsp;we are interested in identifying a range of ‘optimal weights’ in each of the corrections. This applet presents users with a graph that is the result of a correction in <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> with a randomly selected starting weight value . Users are asked to adjust the graph until the lines appear to be the same size, that is, until the illusion is no longer present (from lower weight values) or is appropriately corrected (from higher weight values). Users manipulate the graph using a plus/minus button to adjust the amount of correction used. Underlying this adjustment is the value of the weight <span class="math inline">\(w\)</span> as defined in <a href="#eq-xtrans-weighted" class="quarto-xref">Equation&nbsp;2</a> and <a href="#eq-ytrans-weighted" class="quarto-xref">Equation&nbsp;7</a>. The numerical value of <span class="math inline">\(w\)</span> was hidden from the user to prevent anchoring to a specific numerical value. The applet utilizes the linear <span class="math inline">\(Y\)</span> transformation and does not break under any combination of parameters tested in this experiment.</span></p>
+<p>A low initial weight (<span class="math inline">\(w_0\)</span> close to 0) indicates that the amount of correction is low and the response from a trial like this will give us an idea of the minimal amount of weight necessary to break the illusion, while a high initial weight (<span class="math inline">\(w_0\)</span> close to 1) indicates that the data are fully corrected. Generally, responses from the two different types of trials do not result in the same threshold weight, but rather indicate a range of acceptable weights.</p>
+<p>It is of additional interest to determine whether and how much these optimal weights are subject-specific or population-based, whether they depend on the initial weight, and how much within-subject variability we find compared to between-subject variability.</p>
+<section id="study-design" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="study-design"><span class="header-section-number">3.1</span> Study Design</h2>
+<p>The study aims to determine the range of “optimal” transformation weights for each transformation type. Psychophysics methodology typically approaches threshold estimation by using the method of adjustment <span class="citation" data-cites="goldstein">(<a href="#ref-goldstein" role="doc-biblioref">Goldstein 2010</a>)</span>, where stimuli are provided showing states both above and below the hypothesized optimal value and participants adjust the stimuli until the stated goal is met (in this case, until the lines appear to have equal length). It is expected that there will be a difference in user-reported values from below and from above, and these values are typically averaged to produce a single threshold value (the results from this model are provided in <a href="#sec-psychophysics" class="quarto-xref">Section&nbsp;10.2</a>). Instead of averaging these values, we use a mixed model to compare user responses for different starting points to be able to estimate the <em>range</em> of transformation weights.</p>
+<p><span class="sampling">The study is set up as a fractional factorial design of correction type (<span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span>) and starting weight <span class="math inline">\(w_0\)</span>. Each participant is asked to evaluate a total of twelve situations, six of each correction type. Starting weights were chosen as follows: each user was given a trial of each type starting at 0 and 1. The remaining four trials of each type had starting weights chosen with equal probability from <span class="math inline">\(0.25\)</span> to <span class="math inline">\(0.75\)</span> (see <a href="#fig-weightdist" class="quarto-xref">Figure&nbsp;9</a>).</span></p>
+<p><span class="design">We decided to have a higher coverage density for starting weights around 0.6 after a pilot study indicated a preference for that value. Using a distribution with a wide coverage allows us to more fully explore the space of plausible weights <span class="math inline">\(w\)</span> while focusing on the <span class="math inline">\((0,1)\)</span> interval and enabling precise estimation of the optimal weight in the region indicated by the pilot study.</span></p>
+<div id="fig-weightdist" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Overview of possible starting weights. Weight values are discrete, but staggered so as to provide fine-grained adjustments around 0.6 and more coarse discriminatory information toward the outside.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-weightdist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-study-weight-dist-1.png" class="img-fluid figure-img" alt="Overview of possible starting weights. Weight values are discrete, but staggered so as to provide fine-grained adjustments around 0.6 and more coarse discriminatory information toward the outside.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-weightdist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9: Overview of possible starting weights. Weight values are discrete, but staggered so as to provide fine-grained adjustments around 0.6 and more coarse discriminatory information toward the outside.
+</figcaption>
+</figure>
+</div>
+<p><span class="design">A trial begins with the presentation of a graph at the chosen starting weight <span class="math inline">\(w_0\)</span>. Participants are asked to adjust the graph using increment and decrement buttons. A trial ends with the participant clicking the ‘submit’ button, at which point the weight for the final adjustment is recorded.</span> <span class="variables">This provides a clear starting value and ending value, allowing us to assess the range of optimal values for each participant. In addition to starting weight, correction type, and anonymized user-specific data (partial IP address, hashed IP address, and hashed browser characteristics), each incremental weight is recorded with a corresponding time stamp. Specifications of a user’s browser turned out to be sufficient as an anonymous, yet individual ‘fingerprint’.</span></p>
+</section>
+<section id="results" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="results"><span class="header-section-number">3.2</span> Results</h2>
+<p><span class="setting">Participants were recruited from Amazon Mechanical Turk and the <a href="http://reddit.com/r/SampleSize">reddit</a> community.</span> <span class="setting">As this study was conducted outside a laboratory setting, we can not gauge a participant’s willingness to follow the guidelines and put in their best effort. This, besides potential technical issues (server outage, speed of response) make a careful selection of data going into the analysis necessary. The specific data exclusion criteria are provided in <a href="#sec-exclusion" class="quarto-xref">Section&nbsp;10.1</a>.</span></p>
+<p><span class="statistics">The following analysis is based on the cleaned data, consisting of 125 participants with 1210 valid trial results. The results from the standard psychophysics model (provided in <a href="#sec-psychophysics" class="quarto-xref">Section&nbsp;10.2</a>) suggest that some transformation is necessary to break the illusion, yet a complete transformation is not needed. For an estimate of the range of acceptable transformation weights we use a linear model that incorporates starting points other than 0 and 1, and allows for user-specific variability.</span></p>
+<p><span class="statistics">In order to account for user-level variability, we fit a random effects model for the adjusted weight value as a function of starting weight and trial type, with a random intercept for each participant. The exact model specification and parameter estimates can be found in <a href="#sec-model" class="quarto-xref">Section&nbsp;10</a>.</span></p>
+<div id="fig-MixedModelResults" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Simulation results from the fitted model, facetted by correction type. Fixed effects results are shown as histograms; the red values display the results when starting from an uncorrected plot and are concentrated around $w=0.1$ for $X$ and $w=0.14$ for $Y$; the blue values represent user-chosen weights when starting from a fully corrected plot and are concentrated around $w=0.62$ for $X$ and $w=0.67$ for $Y$. Additionally, 95% bootstrap intervals are shown as horizontal line segments above the histograms; these intervals are for the lower and upper bounds of the preferred weight interval tested in the experiment. User-level density curves show the individual variability around  fixed effects $\alpha_*$ and $\alpha_*+\beta$.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-MixedModelResults-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-results-analysis1-1.png" class="img-fluid figure-img" alt="Simulation results from the fitted model, facetted by correction type. Fixed effects results are shown as histograms; the red values display the results when starting from an uncorrected plot and are concentrated around $w=0.1$ for $X$ and $w=0.14$ for $Y$; the blue values represent user-chosen weights when starting from a fully corrected plot and are concentrated around $w=0.62$ for $X$ and $w=0.67$ for $Y$. Additionally, 95% bootstrap intervals are shown as horizontal line segments above the histograms; these intervals are for the lower and upper bounds of the preferred weight interval tested in the experiment. User-level density curves show the individual variability around  fixed effects $\alpha_*$ and $\alpha_*+\beta$.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-MixedModelResults-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10: Simulation results from the fitted model, facetted by correction type. Fixed effects results are shown as histograms; the red values display the results when starting from an uncorrected plot and are concentrated around <span class="math inline">\(w=0.1\)</span> for <span class="math inline">\(X\)</span> and <span class="math inline">\(w=0.14\)</span> for <span class="math inline">\(Y\)</span>; the blue values represent user-chosen weights when starting from a fully corrected plot and are concentrated around <span class="math inline">\(w=0.62\)</span> for <span class="math inline">\(X\)</span> and <span class="math inline">\(w=0.67\)</span> for <span class="math inline">\(Y\)</span>. Additionally, 95% bootstrap intervals are shown as horizontal line segments above the histograms; these intervals are for the lower and upper bounds of the “preferred weight interval” tested in the experiment. User-level density curves show the individual variability around fixed effects <span class="math inline">\(\alpha_*\)</span> and <span class="math inline">\(\alpha_*+\beta\)</span>.
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-MixedModelResults" class="quarto-xref">Figure&nbsp;10</a> gives an overview of the relationship between starting weights and user-preferred weight values. Higher starting weights are associated with higher user-submitted values, while lower starting weights result in lower user-submitted values. The ranges of optimal weights are similar under both transformations. Boundaries for the <span class="math inline">\(X\)</span> transformation are slightly lower than boundaries for <span class="math inline">\(Y\)</span>.</p>
+<p><span class="statistics">Bootstrap simulations for each of the coefficients suggest that the range of acceptable shrinkage values <span class="math inline">\(w\)</span> is between 0.098 and 0.625 for <span class="math inline">\(x\)</span> and 0.144 and 0.671 for <span class="math inline">\(y\)</span>, where the lower value is the estimate starting at <span class="math inline">\(w=0\)</span> and moving up, and the upper value is the estimate starting at <span class="math inline">\(w=1\)</span> and moving down.</span> This suggests that either correction is preferable to an uncorrected graph, and that a weighted correction is preferable to the fully corrected graph, as neither 0 nor 1 is contained in any overall interval. In addition to showing the strength of the correction, this experiment also demonstrates the strength of the illusion itself: corrected line lengths appear more uniform than uncorrected ones, even though the corrected lengths are not uniform while the uncorrected lengths are completely uniform.</p>
+</section>
+</section>
+<section id="sec-example" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Application: US Gas Prices</h1>
+<p><a href="#fig-gasprices" class="quarto-xref">Figure&nbsp;11</a> shows daily gas prices for a time frame between 1995 to 2014 as published in the Energy Information Administration’s historical database of gas prices <span class="citation" data-cites="EIA">(<a href="#ref-EIA" role="doc-biblioref">EIA 2014b</a>)</span>. This data set includes prices for all three grades of gasoline as well as two chemical formulations which are sold in different geographic areas across the United States <span class="citation" data-cites="EIA-reformulated">(<a href="#ref-EIA-reformulated" role="doc-biblioref">EIA 2014a</a>)</span>.</p>
+<div id="fig-gasprices" class="quarto-float quarto-figure quarto-figure-center anchored" alt="US Gas prices from 1995 to 2014 steadily increase over the time frame, with some dramatic short-term changes.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gasprices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-gasprices-pictures-1.png" class="img-fluid figure-img" alt="US Gas prices from 1995 to 2014 steadily increase over the time frame, with some dramatic short-term changes.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gasprices-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11: US Gas prices from 1995 to 2014 steadily increase over the time frame, with some dramatic short-term changes.
+</figcaption>
+</figure>
+</div>
+<div id="fig-gasvariance" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Standard deviation of daily gas prices between 1995 and 2014. The doubling of the standard deviation over the time frame is masked in @fig-gasprices">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gasvariance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-gaspricevariance-1.png" class="img-fluid figure-img" alt="Standard deviation of daily gas prices between 1995 and 2014. The doubling of the standard deviation over the time frame is masked in @fig-gasprices">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gasvariance-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12: Standard deviation of daily gas prices between 1995 and 2014. The doubling of the standard deviation over the time frame is masked in <a href="#fig-gasprices" class="quarto-xref">Figure&nbsp;11</a>
+</figcaption>
+</figure>
+</div>
+<p>There is a clear increase in daily gas prices over time as well as several dramatic price changes, which mask the steady increase in variance shown in <a href="#fig-gasvariance" class="quarto-xref">Figure&nbsp;12</a>. Instead, we perceive an increase in variability in the frequent ups and downs along the overall trend. In particular, the strong decrease in gas prices at the end of 2008 seems to be associated with a low variance. This is an effect of the sine illusion, and the actual variability in Oct 2008 is higher than in previous months. In order to judge variability better along the trend line we apply the two different corrections to this data, using a trend line fit based on smoothing splines to obtain the necessary first and second derivatives.</p>
+<div id="fig-gasprices-x-correct" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Corrected gas price data using X-transformations with $w=1$ and $w=0.36$">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gasprices-x-correct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/gas-x-corrected.png" class="img-fluid figure-img" alt="Corrected gas price data using X-transformations with $w=1$ and $w=0.36$">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gasprices-x-correct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13: Corrected gas price data using X-transformations with <span class="math inline">\(w=1\)</span> and <span class="math inline">\(w=0.36\)</span>
+</figcaption>
+</figure>
+</div>
+<p><a href="#fig-gasprices-x-correct" class="quarto-xref">Figure&nbsp;13</a> shows the results from the <span class="math inline">\(X\)</span> transformation applied to the gas prices. The figure on top is a fully corrected version, while the one below only uses <span class="math inline">\(w=0.36\)</span>, the midpoint of the range of experimentally determined acceptable values, for the transformation. At <span class="math inline">\(w=1\)</span>, the transformation is severe, but it becomes clear that the variance between 1995 and 2000 is lower than it is between 2009 and 2014. When <span class="math inline">\(w=0.36\)</span>, the transformation is much less noticeable but yields a near-constant absolute slope of the fitted line.</p>
+<p>The minor effect of the weighted transformation on individual x-values contrasts with the effectiveness of the transformation in reducing the illusion; this is best seen in the fitted line, which is distinctly (piecewise) curved in the uncorrected data and appears to be much more piecewise linear in the corrected data, even at the reduced weighted value.</p>
+<p>Similar to the <span class="math inline">\(X\)</span> transformation, the <span class="math inline">\(Y\)</span> transformation highlights local fluctuation in the variability of daily gas prices much more than the untransformed data (the trend line is not adjusted, but the individual data points are not accurate and are negative in the <span class="math inline">\(w=1\)</span> transformation). <a href="#fig-gasprices-y-correct" class="quarto-xref">Figure&nbsp;14</a> shows <span class="math inline">\(Y\)</span> transformations for the data. Again, we show a full transformation (top) and a transformation based on the midpoint of the previously determined acceptable region of <span class="math inline">\(w=0.40\)</span>. in the full transformation it is clear that the variance is nearly constant between 1995 and 2000 and then begins to increase with the price of gas. When <span class="math inline">\(w=0.40\)</span>, the transformation is much less noticeable, and the resulting <span class="math inline">\(y\)</span>-axis scale is much more similar to the uncorrected data.</p>
+<div id="fig-gasprices-y-correct" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Corrected gas price data using Y-transformations with $w=1$ and $w=0.40$">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-gasprices-y-correct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/gas-y-corrected.png" class="img-fluid figure-img" alt="Corrected gas price data using Y-transformations with $w=1$ and $w=0.40$">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-gasprices-y-correct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14: Corrected gas price data using Y-transformations with <span class="math inline">\(w=1\)</span> and <span class="math inline">\(w=0.40\)</span>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="conclusions" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Conclusions</h1>
+<p>The sine illusion is a frequent occurrence in statistical graphics, and displays should therefore be thoughtfully considered to minimize its effect visually and acknowledge its influence.</p>
+<p>The illusion is persistent and powerful in the sense that it is very difficult to resolve without modifying the visual stimulus directly. While systematically modifying the data is uncommon in statistics, this approach is not out of place in the visual arts or architecture. As far back as 400 BC the builders of the Parthenon ensured a straight appearance of the columns from afar by widening columns at the center, thereby counteracting the effects of the Hering illusion <span class="citation" data-cites="naturalscenes hering">(<a href="#ref-naturalscenes" role="doc-biblioref">Howe and Purves 2005</a>; <a href="#ref-hering" role="doc-biblioref">Hering 1861</a>)</span>. Similarly, painters often exaggerate color hues used in shadows to account for color constancy in the brain. The systematic modifications we suggest here are also comparable to chloropleth maps, which scale a region’s area based on population.</p>
+<p>We cannot counteract the illusion and represent the data visually without an intervention that is drastic enough to remove the three-dimensional context the sine-illusion induces. The proposals in this paper for transformations in <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> provide the means to temporarily correct the data as a diagnostic measure, perhaps using an applet or R package for that purpose. These corrections are significant not only because of their implications for statistical graphics, but because previous attempts to resolve optical illusions using geometry have not met with success <span class="citation" data-cites="westheimer2008illusions">(<a href="#ref-westheimer2008illusions" role="doc-biblioref">Westheimer 2008</a>)</span>. These corrections are only a first step and could be improved upon; currently, the corrections break down for extreme (secant) values, but multiple iterations of the correction procedure %will likely resolve some of these issues (though remove the convenience of a functional form for the transformation). Similarly, the <span class="math inline">\(y\)</span> corrections proposed here extend the line lengths (or for actual data, increase the deviation from the smooth line) – some normalization might make the corrections less noticeable.</p>
+<p>Our primary goal is to raise awareness of the illusion and its implications for statistics; the use of plots to guide the modeling process can leave us vulnerable to overlooking changes in the variance due to the illusion. While best practice has been to plot the residuals separately, this removes the context of the data and is not practical before there is a model. The proposed transformations require only a nonparametric smooth, maintain the context of the data, and are readily interpretable.</p>
+<p>The data for this study were collected with approval from IRB-ID 13-257.</p>
+</section>
+<section id="references" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-stackedgraphs" class="csl-entry" role="listitem">
+Byron, Lee, and Martin Wattenberg. 2008. <span>“Stacked Graphs – Geometry and Aesthetics.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 14 (6): 1245–52.
+</div>
+<div id="ref-cleveland:1985" class="csl-entry" role="listitem">
+Cleveland, W. S., and R. McGill. 1985. <span>“Graphical Perception and Graphical Methods for Analyzing Scientific Data.”</span> <em>Science</em> 229 (4716): 828–33.
+</div>
+<div id="ref-cleveland:88" class="csl-entry" role="listitem">
+Cleveland, William S., Marilyn E. McGill, and McGill Robert. 1988. <span>“<span class="nocase">The Shape Parameter of a Two-Variable Graph</span>.”</span> <em>Journal of the American Statistical Association</em> 83 (402): 289–300. <a href="https://doi.org/10.2307/2288843">https://doi.org/10.2307/2288843</a>.
+</div>
+<div id="ref-cleveland:1984" class="csl-entry" role="listitem">
+Cleveland, William S., and Robert McGill. 1984. <span>“Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods.”</span> <em>Journal of the American Statistical Association</em> 79 (387): pp. 531–554. <a href="http://www.jstor.org/stable/2288400">http://www.jstor.org/stable/2288400</a>.
+</div>
+<div id="ref-day:1991" class="csl-entry" role="listitem">
+Day, Ross H, and Erica J Stecher. 1991. <span>“Sine of an Illusion.”</span> <em>Perception</em> 20: 49–55.
+</div>
+<div id="ref-EIA-reformulated" class="csl-entry" role="listitem">
+EIA. 2014a. <span>“Gasoline and Diesel Fuel Update.”</span> <a href="http://www.eia.gov/petroleum/gasdiesel/reformulated_map.cfm" class="uri">http://www.eia.gov/petroleum/gasdiesel/reformulated_map.cfm</a>. <a href="http://www.eia.gov/petroleum/gasdiesel/reformulated_map.cfm">http://www.eia.gov/petroleum/gasdiesel/reformulated_map.cfm</a>.
+</div>
+<div id="ref-EIA" class="csl-entry" role="listitem">
+———. 2014b. <span>“Weekly Retail Gasoline and Diesel Prices.”</span> <a href="http://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm" class="uri">http://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm</a>. <a href="http://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm">http://www.eia.gov/dnav/pet/pet_pri_gnd_dcus_nus_w.htm</a>.
+</div>
+<div id="ref-epa" class="csl-entry" role="listitem">
+EPA. 2011. <span>“Air Quality Data.”</span> <a href="http://www.epa.gov/airdata/ad_data_daily.html" class="uri">http://www.epa.gov/airdata/ad_data_daily.html</a>.
+</div>
+<div id="ref-goldstein" class="csl-entry" role="listitem">
+Goldstein, E. B. 2010. <em>Sensation and Perception</em>. Belmont, CA: Thomson Wadsworth.
+</div>
+<div id="ref-healey:2012" class="csl-entry" role="listitem">
+Healey, Christopher G., and J. T. Enns. 2012. <span>“Attention and Visual Memory in Visualization and Computer Graphics.”</span> <em><span>IEEE</span> Transactions on Visualization and Computer Graphics</em> 18 (7): 1170–88.
+</div>
+<div id="ref-hering" class="csl-entry" role="listitem">
+Hering, E. 1861. <em>Beitr<span>ä</span>ge Zur Physiologie</em>. Leipzig: Engelmann.
+</div>
+<div id="ref-marie:2013" class="csl-entry" role="listitem">
+Hofmann, Heike, and Marie Vendettuoli. 2013. <span>“<span>Common Angle Plots</span> as Perception-True Visualizations of Categorical Associations.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 19 (12): 2297–2305.
+</div>
+<div id="ref-naturalscenes" class="csl-entry" role="listitem">
+Howe, Catherine Q., and Dale Purves. 2005. <span>“Natural-Scene Geometry Predicts the Perception of Angles and Line Orientation.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 102 (4): 1228–33. <a href="https://doi.org/10.1073/pnas.0409311102">https://doi.org/10.1073/pnas.0409311102</a>.
+</div>
+<div id="ref-noaa" class="csl-entry" role="listitem">
+National Climate Data Center. 2011. <span>“Quality Controlled Local Climatological Data.”</span> <a href="http://cdo.ncdc.noaa.gov/qclcd_ascii/" class="uri">http://cdo.ncdc.noaa.gov/qclcd_ascii/</a>.
+</div>
+<div id="ref-playfair" class="csl-entry" role="listitem">
+Playfair, W., and J. Corry. 1786. <em>The Commercial and Political Atlas; Representing by Means of Stained Copper-Plate Charts, the Exports, Imports and General Trade of England at a Single View. To Which Are Added, Charts of the Revenue and Debts of Ireland, Done in the Same Manner by James Corry.</em> Debrett; Robinson;; Sewell. <a href="https://books.google.com/books?id=\_bMgGwAACAAJ">https://books.google.com/books?id=\_bMgGwAACAAJ</a>.
+</div>
+<div id="ref-playfair2" class="csl-entry" role="listitem">
+Playfair, W., H. Wainer, and I. Spence. 2005. <em>Playfair’s Commercial and Political Atlas and Statistical Breviary</em>. Cambridge University Press. <a href="https://books.google.com/books?id=MMUcXPLqnI0C">https://books.google.com/books?id=MMUcXPLqnI0C</a>.
+</div>
+<div id="ref-robbins:2005" class="csl-entry" role="listitem">
+Robbins, N. B. 2012. <em>Creating More Effective Graphs</em>. Hoboken, New Jersey: John Wiley &amp; Sons. <a href="https://books.google.com/books?id=2FBD01yHfpQC">https://books.google.com/books?id=2FBD01yHfpQC</a>.
+</div>
+<div id="ref-shiny" class="csl-entry" role="listitem">
+RStudio, Inc. 2014. <em>Shiny: Easy Web Applications in r</em>.
+</div>
+<div id="ref-schonlau:2003" class="csl-entry" role="listitem">
+Schonlau, Matthias. 2003. <span>“Visualizing Categorical Data Arising in the Health Sciences Using Hammock Plots.”</span> In <em>Proceedings of the Section on Statistical Graphics (JSM ’03)</em>. American Statistical Association.
+</div>
+<div id="ref-spence:1990" class="csl-entry" role="listitem">
+Spence, Ian. 1990. <span>“Visual Psychophysics of Simple Graphical Elements.”</span> <em>Journal of Experimental Psychology: Human Perception and Performance</em> 16 (4): 683–92.
+</div>
+<div id="ref-tufte" class="csl-entry" role="listitem">
+Tufte, Edward. 1991. <em><span class="nocase">The Visual Display of Quantitative Information</span></em>. 2nd ed. Cheshire, Connecticut: Graphics Press.
+</div>
+<div id="ref-wainer:2000" class="csl-entry" role="listitem">
+Wainer, Howard. 2000. <em>Visual Revelations</em>. Malwah, New Jersey: Lawrence Erlbaum Associates.
+</div>
+<div id="ref-poggendorf" class="csl-entry" role="listitem">
+Weintraub, D. J., D. H. Krantz, and T. P. Olson. 1980. <span>“The Poggendorf Illusion: Consider All the Angles.”</span> <em>Journal of Experimental Psychology: Human Perception and Performance</em> 6: 718–25.
+</div>
+<div id="ref-westheimer2008illusions" class="csl-entry" role="listitem">
+Westheimer, Gerald. 2008. <span>“Illusions in the Spatial Sense of the Eye: Geometrical-Optical Illusions and the Neural Representation of Space.”</span> <em>Vision Research</em> 48 (20): 2128–42. https://doi.org/<a href="http://dx.doi.org/10.1016/j.visres.2008.05.016">http://dx.doi.org/10.1016/j.visres.2008.05.016</a>.
+</div>
+<div id="ref-wolfe2012sensation" class="csl-entry" role="listitem">
+Wolfe, J. M., K. Kluender, D. Levi, L. Bartoshuk, R. Herz, R. Klatzy, and S. Lederman. 2012. <em><span class="nocase">Sensation and Perception</span></em>. Sunderland, Massachusetts: Sinauer Associates, Incorporated. <a href="https://books.google.com/books?id=dV6TkQEACAAJ">https://books.google.com/books?id=dV6TkQEACAAJ</a>.
+</div>
+</div>
+</section>
+
+
+
+
+
+<div id="quarto-appendix" class="default"><section id="sec-app-graphics" class="level1 appendix" data-number="7"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">7</span> Examples of the Sine Illusion in graphics</h2><div class="quarto-appendix-contents">
+
+<p><a href="#fig-playfair-debt" class="quarto-xref">Figure&nbsp;15</a> shows the famous chart by William Playfair showing trade between England and the East Indies.</p>
+<div id="fig-playfair-debt" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Playfair's graph of exports to and imports from the East Indies demonstrates that the line width illusion is not only found on sinusoidal curves but is present whenever the slope of the lines change dramatically. The increase in both imports and exports circa 1763 does not appear to portray as large of a deficit as that in 1710, even though they are of similar magnitude.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-playfair-debt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/PlayfairExportImports.png" class="img-fluid figure-img" alt="Playfair's graph of exports to and imports from the East Indies demonstrates that the line width illusion is not only found on sinusoidal curves but is present whenever the slope of the lines change dramatically. The increase in both imports and exports circa 1763 does not appear to portray as large of a deficit as that in 1710, even though they are of similar magnitude.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-playfair-debt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15: Playfair’s graph of exports to and imports from the East Indies demonstrates that the line width illusion is not only found on sinusoidal curves but is present whenever the slope of the lines change dramatically. The increase in both imports and exports circa 1763 does not appear to portray as large of a deficit as that in 1710, even though they are of similar magnitude.
+</figcaption>
+</figure>
+</div>
+<p>The shaded area on the chart is named “balance against England”, suggesting that the difference between the lines is of main importance. This difference in trade is encoded as the difference between the lines along the vertical axis. However, the vertical distance between two lines provides a much less visually salient cue than the orthogonal width between the lines. This results in an underestimation <span class="citation" data-cites="cleveland:1984">(<a href="#ref-cleveland:1984" role="doc-biblioref">William S. Cleveland and McGill 1984</a>)</span> of the difference in trades around 1763, which is of a much higher (about 1.5 fold) magnitude as around 1770, but appears much smaller.</p>
+</div></section><section id="sec-app-xtrans" class="level1 appendix" data-number="8"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">8</span> Transformation of the horizontal axis</h2><div class="quarto-appendix-contents">
+
+<p>As the slope is determined by the aspect ratio, we are free to choose it and w.l.o.g. we get for each piece <span class="math inline">\(T_i\)</span>: <span class="math display">\[f(T_i(x)) = \pm a x + b_i. \]</span> This means that <span class="math inline">\(T_i\)</span> is essentially an inverse of function <span class="math inline">\(f\)</span>, with each piece defined by the intervals on which the inverse of <span class="math inline">\(f\)</span> exists: let <span class="math inline">\(\left\{x_0 = \min(x), x_1, ..., x_{K-1}, x_K = \max(x) \right\}\)</span> be the set of values with local extrema enhanced by the boundaries of the <span class="math inline">\(x\)</span>-range, i.e.&nbsp;<span class="math inline">\(f^\prime(x_i) = 0\)</span> for <span class="math inline">\(i = 1, ... , K-1\)</span> and <span class="math inline">\(f^\prime(x) \neq 0\)</span> for any other values of <span class="math inline">\(x\)</span>. Then each interval of the form <span class="math inline">\((x_{i-1}, x_i)\)</span> defines one piece <span class="math inline">\(T_i\)</span> of the transformation function <span class="math inline">\(T(x)\)</span>. We will define <span class="math inline">\(T_i\)</span> now as a combination of a linear scaling function and the inverse of <span class="math inline">\(f\)</span>, which we know exists for interval <span class="math inline">\((x_{i-1}, x_i)\)</span>.</p>
+<p>Let function <span class="math inline">\(s = \s{[a,b]}{[c,d]}\)</span> be the linear scaling function that maps the interval <span class="math inline">\((a,b)\)</span> linearly to the interval <span class="math inline">\((c,d)\)</span>. This function is formally defined as</p>
+<p><span class="math display">\[s(x) = \s{[a,b]}{[c,d]} (x) = (x-a)/(b-a) \cdot (d-c) + c \text{ for all } x \in (a,b).\]</span></p>
+<p>Note that the slope of function <span class="math inline">\(s\)</span> is given as <span class="math inline">\(s^\prime(x) = (d-c)/(b-a).\)</span></p>
+<p>Two scaling functions can be evaluated one after the other, only if the image (i.e.&nbsp;<span class="math inline">\(y\)</span>-range) of the first coincides with the domain (i.e.&nbsp;<span class="math inline">\(x\)</span>-range) of the second. This consecutive execution results in another linear scaling: <span class="math display">\[\s{[e,f]}{[c,d]}  \left(  \s{[a,b]}{[e,f]}(x) \right) = \s{[a,b]}{[c,d]} (x).
+\]</span></p>
+<p>In our situation let the scaling function <span class="math inline">\(s\)</span> be given as: <span class="math display">\[
+s{[c,d]}{f([x_{i-1}, x_i])}(x) = f(x_{i-1}) + (x-c)/(d-c) \cdot (f(x_{i}) - f(x_{i-1}))),
+\]</span> where <span class="math inline">\(f([x_{i-1}, x_i])\)</span> is defined as the interval given by <span class="math inline">\((\min(f(x_{i-1}), f(x_i)), \max(f(x_{i-1}), f(x_i)))\)</span>. Note that <span class="math inline">\(s\)</span> has either a positive or negative slope depending on whether <span class="math inline">\(f(x_{i-1})\)</span> is smaller or larger than <span class="math inline">\(f(x_i)\)</span>, respectively.</p>
+<p>Then the transformation in the <span class="math inline">\(x\)</span>-axis, <span class="math inline">\(T(x)\)</span> is defined piecewise as a combination of <span class="math inline">\(T_i\)</span>, where each <span class="math inline">\(T_i\)</span> is given as: <span id="eq-x-transformation"><span class="math display">\[
+T_i(x) = f^{-1}\left( \s{[c_i,d_i]}{f([x_{i-1}, x_i])}(x) \right).
+\tag{8}\]</span></span></p>
+<p>Using this definition for the transformation makes <span class="math inline">\(f(T(x))\)</span> a piece-wise linear function with parameters <span class="math inline">\(c_i\)</span> and <span class="math inline">\(d_i\)</span>, i.e.&nbsp;for <span class="math inline">\(x \in (c_i,d_i)\)</span> we have [ f(T(x)) = f (f^{-1}((x))) = (x). ] Correspondingly, the slope of <span class="math inline">\(f(T_i(x))\)</span> is <span class="math inline">\((f(x_{i}) - f(x_{i-1})))/(d_i-c_i)\)</span>. In order to make the slope the same on all pieces <span class="math inline">\(T_i\)</span> of <span class="math inline">\(T\)</span>, we need to define <span class="math inline">\(c_i\)</span> and <span class="math inline">\(d_i\)</span> with respect to the function values on the interval <span class="math inline">\((x_{i-1}, x_i)\)</span>. There are various options, depending on how closely the <span class="math inline">\(x\)</span>-range of <span class="math inline">\(T\)</span> should reflect the original range: for <span class="math inline">\([c_i, d_i] = \range {f([x_{i-1}, x_i])}\)</span> the new <span class="math inline">\(x\)</span>-range is the range of <span class="math inline">\(f\)</span> on <span class="math inline">\((x_{i-1}, x_i)\)</span>, but with the advantage that the scaling function simplifies to the identity or a simple shift.</p>
+<p>In order to preserve the original <span class="math inline">\(x\)</span>-range, we need to invest into a bit more work for the scaling. With an identity scaling, each <span class="math inline">\(T_i\)</span> maps from the range of <span class="math inline">\(f\)</span> on <span class="math inline">\((x_{i-1}, x_i)\)</span> to the same range. Overall we can therefore set up the function <span class="math inline">\(T\)</span> to map from the interval given by the sum of the function’s ‘ups’ and ‘downs’, i.e.&nbsp;<span class="math inline">\((0, \sum_{i=0}^K |f(x_i) - f(x_{i-1})|)\)</span>, to the range of <span class="math inline">\(f\)</span> on <span class="math inline">\((x_0, x_K)\)</span>. This ensures that all pieces <span class="math inline">\(f(T_i)\)</span> have the same slope (of <span class="math inline">\(|1|\)</span>).We can then use another - global - linear scaling function to map from the range of <span class="math inline">\(x\)</span>, i.e.&nbsp;interval <span class="math inline">\((x_0, x_K)\)</span> to <span class="math inline">\((0, \sum_{i=0}^K |f(x_i) - f(x_{i-1})|)\)</span>, yielding a transformation function <span class="math inline">\(T\)</span> of</p>
+<p><span class="math display">\[ T (x) = (f\^{-1} \circ \s{[c_i,d_i]}{f([x_{i-1}, x_i])} \circ \s{(x_0, x_K)}{(0, \sum_{i=0}^K |f(x_i) - f(x_{i-1})|)}) (x),\]</span> where <span class="math inline">\(c_i\)</span> and <span class="math inline">\(d_i\)</span> are given as <span class="math display">\[ c_i = \sum*{j=0}\^{i-1} \|f(x_j) - f(x*{j-1})\| \text{ and } d_i = \sum*{j=0}\^{i} \|f(x_j) - f(x*{j-1})\|.
+\]</span> We can write the difference <span class="math inline">\(|f(x_j) - f(x_{j-1})|\)</span> as <span class="math inline">\(\int_{x_{j-1}}^{x_j} |f^\prime(z)|dz\)</span>. This shows equation <a href="#eq-xtrans" class="quarto-xref">Equation&nbsp;1</a>.</p>
+</div></section><section id="sec-app-quadratic" class="level1 appendix" data-number="9"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">9</span> Reformulation of the quadratic approximation</h2><div class="quarto-appendix-contents">
+
+<p>A quadratic equation in <span class="math inline">\(\lambda\)</span> of the form <span id="eq-quadratic.equation"><span class="math display">\[
+a\lambda^2 + b\lambda + c = 0,
+\tag{9}\]</span></span> where <span class="math inline">\(a, b,\)</span> and <span class="math inline">\(c\)</span> are real-valued parameters the solutions take on the form <span class="math display">\[\lambda_{\pm} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a} \stackrel{*}{=} 2c\left(-b \pm \sqrt{b^2 - 4ac}\right)^{-1}.\]</span></p>
+<p><span class="math inline">\(^*\)</span> if <span class="math inline">\(b \neq \pm \sqrt{b^2 - 4ac}\)</span>, i.e. <span class="math inline">\(a, c \neq 0\)</span>.</p>
+<p>Application to quadratic approximation to <span class="math inline">\(f\)</span>: in the example, we have the following equivalencies: <span class="math display">\[
+\begin{align}
+a &amp;= f^{\prime\prime}(x_0) f^\prime(x_0)^2 \\
+b &amp;= 2(1 + f^\prime(x_0)^2) \hspace{.5in} &gt; 0 \text{ for all } x \\
+c &amp;= \pm \ell
+\end{align}\]</span> For a valid solution for the correction factor, we have to assume that <span class="math inline">\(\lambda\)</span> is a factor that extends the original extant width (in absolute value).</p>
+<p><span class="math display">\[
+\lambda_{1/2} = \ell \left(v + \sqrt{ v^2 \pm  f^{\prime\prime}(x_0) f^\prime(x_0)^2\cdot \ell}\right)^{-1}
+\]</span> for <span class="math inline">\(v = 1 + f^\prime(x_0)\)</span>. This gives the results as shown in <a href="#eq-q1" class="quarto-xref">Equation&nbsp;5</a> and <a href="#eq-q2" class="quarto-xref">Equation&nbsp;6</a>.</p>
+</div></section><section id="sec-model" class="level1 appendix" data-number="10"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">10</span> Random Effects Model and Detailed Results</h2><div class="quarto-appendix-contents">
+
+
+
+
+</div></section><section id="sec-exclusion" class="level2 appendix" data-number="10.1"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">10.1</span> Data Cleaning</h2><div class="quarto-appendix-contents">
+
+<p>The following exclusion criteria were used to clean the raw data obtained from Amazon Mechanical Turk:</p>
+<ul>
+<li>Participants did not interact with the applet: we required participants to use the adjustment at least once in order to include data for this trial (592 trials removed).</li>
+<li>Participants finished fewer than four trials: while participants were asked to complete twelve trials, some did not finish all of those. In order to stabilize predictions of random effects, participants’ data were excluded if there were fewer than four trials (78 out of a total of 203 participants).</li>
+<li>Out-of-bounds results: weights leading to severely over- or under-corrected results were excluded from the analysis. For trials to adjust <span class="math inline">\(Y\)</span>-values, weights outside of <span class="math inline">\([-2.5, 3.5]\)</span> show dramatically unequal line lengths; weights from <span class="math inline">\(X\)</span>-transformations outside the range of <span class="math inline">\([-2,2]\)</span> do not preserve the underlying function shape and concavity. <a href="#fig-overtransform" class="quarto-xref">Figure&nbsp;16</a> shows results at the threshold of acceptability. Only more severely distorted results were excluded from the analysis (12 of the <span class="math inline">\(X\)</span> and 5 of the <span class="math inline">\(Y\)</span> trials out of 1227 trials remaining after application of other criteria).</li>
+</ul>
+<div id="fig-overtransform" class="quarto-float quarto-figure quarto-figure-center anchored" alt="A 2x2 array of charts showing low and high cutoffs for Y and X transformations.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-overtransform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-overcorrectlimits-1.png" class="img-fluid figure-img" alt="A 2x2 array of charts showing low and high cutoffs for Y and X transformations.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-overtransform-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16: Overcorrected transformations excluded from the analysis. Transformation weights outside of the intervals [-2.5, 3.5] for <span class="math inline">\(y\)</span> and [-2,2] for <span class="math inline">\(x\)</span> produce figures which do not maintain the underlying function shape (in <span class="math inline">\(x\)</span>) or which are composed of extremely uneven length lines (in <span class="math inline">\(y\)</span>). Trials with final results that were more extreme than these examples were excluded from the analysis.
+</figcaption>
+</figure>
+</div>
+</div></section><section id="sec-psychophysics" class="level2 appendix" data-number="10.2"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">10.2</span> Psychophysics Model Results</h2><div class="quarto-appendix-contents">
+
+<p>The psychophysics model shown in <a href="#fig-psycho" class="quarto-xref">Figure&nbsp;17</a> is based on weighted averages (by adjustment type) of all trials with starting weights <span class="math inline">\(w_0 = 0\)</span> and 1.</p>
+<div id="fig-psycho" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Estimated density of participant-level means using the standard psychophysics method of limits analysis described in @goldstein. The overall means are both near 0.4, however, there is quite a bit of user-level variability.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-psycho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="figure/fig-meanDists-1.png" class="img-fluid figure-img" alt="Estimated density of participant-level means using the standard psychophysics method of limits analysis described in @goldstein. The overall means are both near 0.4, however, there is quite a bit of user-level variability.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-psycho-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17: Estimated density of participant-level means using the standard psychophysics method of limits analysis described in <span class="citation" data-cites="goldstein">Goldstein (<a href="#ref-goldstein" role="doc-biblioref">2010</a>)</span>. The overall means are both near 0.4, however, there is quite a bit of user-level variability.
+</figcaption>
+</figure>
+</div>
+<div id="tbl-psychotable" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-psychotable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Fixed effect estimates of <a href="#eq-model1" class="quarto-xref">Equation&nbsp;10</a> for the boundaries for reasonable weights. In parentheses, 95% parametric bootstrap confidence intervals are given based on <a href="#eq-model1" class="quarto-xref">Equation&nbsp;10</a> (N =1000).
+</figcaption>
+<div aria-describedby="tbl-psychotable-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Transformation</th>
+<th>Threshold</th>
+<th>Parameter</th>
+<th>Estimate</th>
+<th>95% C.I.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>X</td>
+<td>Lower</td>
+<td>αX</td>
+<td>0.097</td>
+<td>(0.045, 0.150)</td>
+</tr>
+<tr class="even">
+<td>Upper</td>
+<td>αX + β</td>
+<td>0.625</td>
+<td>(0.570, 0.682)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Y</td>
+<td>Lower</td>
+<td>αY</td>
+<td>0.143</td>
+<td>(0.097, 0.188)</td>
+</tr>
+<tr class="even">
+<td>Upper</td>
+<td>αY + β</td>
+<td>0.671</td>
+<td>(0.626, 0.718)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>According to this analysis, the optimum transformation value for <span class="math inline">\(x\)</span> is 0.35, and the optimum transformation value for <span class="math inline">\(y\)</span> is 0.45. <a href="#fig-psycho" class="quarto-xref">Figure&nbsp;17</a> shows the estimates and 95% Wald intervals for the mean, as well as estimated density of participant-level responses.</p>
+</div></section><section id="random-effects-model-formulation" class="level2 appendix" data-number="10.3"><h2 class="anchored quarto-appendix-heading"><span class="header-section-number">10.3</span> Random Effects Model Formulation</h2><div class="quarto-appendix-contents">
+
+<p>Let <span class="math inline">\(W_{ij}\)</span> denote the final adjustment to weight by participant <span class="math inline">\(i\)</span>, $ 1 i $ , on trial <span class="math inline">\(j\)</span>, <span class="math inline">\(1 \le j \le n_i\)</span>. We model the final weight <span class="math inline">\(W_{ij}\)</span> as a function of the correction type <span class="math inline">\(T(i,j)\)</span> (where <span class="math inline">\(T(i,j) \in  \{X, Y\}\)</span>), and starting weight <span class="math inline">\(X_{ij}\)</span>, with a random intercept for participant to account for subject-specific ability: <span id="eq-model1"><span class="math display">\[
+\begin{align}
+W_{ij} &amp;= \alpha_{T(i,j)} + \beta X_{ij} + \gamma_{i, T(i,j)} + \epsilon_{ij}\\
+&amp; \gamma_{iX} \stackrel{\text{ i.i.d.}}{\sim} N(0, \eta_X^2) , \ \gamma_{iY} \stackrel{\text{ i.i.d.}}{\sim} N(0, \eta_Y^2) ,\notag  \\
+&amp; \epsilon_{ij} \stackrel{\text{ i.i.d.}}{\sim} N(0, \sigma^2)  \text{ and } \text{Cov}(\gamma, \epsilon) = 0\notag
+\end{align}
+\tag{10}\]</span></span></p>
+<p><span class="math inline">\(\alpha_{T(i,j)}\)</span> is either <span class="math inline">\(\alpha_X\)</span> or <span class="math inline">\(\alpha_Y\)</span>, describing the lower threshold of the acceptable range for each of the types of correction, while <span class="math inline">\(\alpha_X+\beta\)</span> and <span class="math inline">\(\alpha_Y + \beta\)</span> describe the upper thresholds for the respective correction.</p>
+<p>We can therefore interpret <span class="math inline">\(\beta\)</span> as the length of the interval of plausible weights. Additionally, this allows the interpretation of the quantity <span class="math inline">\((\alpha_* + \beta/2)\)</span> as equivalent to the estimate of the optimal weight based on the psychophysics methodology.</p>
+<p>The fitted model parameters are shown in <a href="#tbl-fixedeffectsresults" class="quarto-xref">Table&nbsp;2</a> and <a href="#tbl-randomeffectsresults" class="quarto-xref">Table&nbsp;3</a>.</p>
+<div id="tbl-fixedeffectsresults" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-fixedeffectsresults-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Fixed effect estimates of <a href="#eq-model1" class="quarto-xref">Equation&nbsp;10</a> for the boundaries for reasonable weights. In parentheses, 95% parametric bootstrap confidence intervals are given based on eq-model1 (<span class="math inline">\(N\)</span>=1000).
+</figcaption>
+<div aria-describedby="tbl-fixedeffectsresults-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 15%">
+<col style="width: 27%">
+<col style="width: 13%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Transformation</th>
+<th>Threshold</th>
+<th>Parameter</th>
+<th>Estimate</th>
+<th>95% C.I.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>X</td>
+<td>Lower</td>
+<td><span class="math inline">\(\alpha_X\)</span></td>
+<td>0.097</td>
+<td>(0.045, 0.150)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Upper</td>
+<td><span class="math inline">\(\alpha_X + \beta\)</span></td>
+<td>0.625</td>
+<td>(0.570, 0.682)</td>
+</tr>
+<tr class="odd">
+<td>Y</td>
+<td>Lower</td>
+<td><span class="math inline">\(\alpha_Y\)</span></td>
+<td>0.143</td>
+<td>(0.097, 0.188)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Upper</td>
+<td><span class="math inline">\(\alpha_Y + \beta\)</span></td>
+<td>0.671</td>
+<td>(0.626, 0.718)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div id="tbl-randomeffectsresults" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-randomeffectsresults-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Overview of random effects for model <a href="#eq-model1" class="quarto-xref">Equation&nbsp;10</a>, including 95% confidence intervals based on parametric bootstrap results (<span class="math inline">\(N\)</span>=1000).
+</figcaption>
+<div aria-describedby="tbl-randomeffectsresults-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Groups</th>
+<th>Correction</th>
+<th>Parameter</th>
+<th>Estimate</th>
+<th>95% C.I.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Participant</td>
+<td>X</td>
+<td><span class="math inline">\(\eta_X\)</span></td>
+<td>0.171</td>
+<td>(0.167, 0.247)</td>
+</tr>
+<tr class="even">
+<td>Participant</td>
+<td>Y</td>
+<td><span class="math inline">\(\eta_Y\)</span></td>
+<td>0.145</td>
+<td>(0.107, 0.179)</td>
+</tr>
+<tr class="odd">
+<td>Residual</td>
+<td></td>
+<td><span class="math inline">\(\sigma\)</span></td>
+<td>0.304</td>
+<td>(0.290, 0.317)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p><a href="#tbl-randomeffectsresults" class="quarto-xref">Table&nbsp;3</a> gives an overview of the variance estimates. 95% confidence intervals are, based on 1000-fold parametric bootstrap of model <a href="#eq-model1" class="quarto-xref">Equation&nbsp;10</a>. All variance components are significant and relevant; variability within a single individual’s trials is about half the size of variability across participants.</p>
+<p>We use parametric bootstrap to generate responses for each correction type and each participant from the model, which we use to both create user-level densities, population-level densities, and bootstrap intervals for model parameters.</p>
+<p>The variability of the random effects for each trial type is similar; but the model benefits significantly from allowing separate random effects for individual’s variability by correction type (0.1452 and 0.1705 for <span class="math inline">\(Y\)</span> and <span class="math inline">\(X\)</span> transformations, respectively, as opposed to 0.3044 for the overall variability). The interaction between starting weight and trial type was not significant, however, and was thus removed from the model (<span class="math inline">\(p\)</span>-value = 0.9010).</p>
+
+
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/unl-statistics\.github\.io\/stat349");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2025, Susan Vanderplas</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/unl-statistics/stat349/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

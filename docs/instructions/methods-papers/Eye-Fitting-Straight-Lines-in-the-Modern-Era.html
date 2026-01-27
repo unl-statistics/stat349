@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Eye Fitting Straight Lines in the Modern Era – STAT 349 - Spring 2025</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-d7964e062797f14afdac39f13a0a6f7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-6a19d919a1cfc19ed6f13e45053f1323.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-d7964e062797f14afdac39f13a0a6f7e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Eye Fitting Straight Lines in the Modern Era – STAT 349 - Spring 2025">
+<meta property="og:description" content="How do statistical regression results compare to intuitive, visually fitted results? Fitting lines by eye through a set of points has been explored since the 20th century. Common methods of fitting trends by eye involve maneuvering a string, black thread, or ruler until the fit is suitable, then drawing the line through the set of points. In 2015, the New York Times introduced an interactive feature, called ‘You Draw It’, where readers were asked to input their own assumptions about various metrics and compare how these assumptions relate to reality. In this paper, we validate ‘You Draw It’ as a method for graphical testing, comparing results to the less technological method utilized in and extending that study with formal statistical analysis methods. Results were consistent with those found in the previous study; when shown points following a linear trend, participants tended to fit the slope of the first principal component over the slope of the least-squares regression line. This trend was most prominent when shown data simulated with larger variances. This study reinforces the differences between intuitive visual model fitting and statistical model fitting, providing information about human perception as it relates to the use of statistical graphics.">
+<meta property="og:image" content="https://unl-statistics.github.io/stat349/instructions/methods-papers/images/ydi-stimuli.png">
+<meta property="og:site_name" content="STAT 349 - Spring 2025">
+<meta property="og:image:height" content="898">
+<meta property="og:image:width" content="3260">
+<meta name="twitter:title" content="Eye Fitting Straight Lines in the Modern Era – STAT 349 - Spring 2025">
+<meta name="twitter:description" content="How do statistical regression results compare to intuitive, visually fitted results? Fitting lines by eye through a set of points has been explored since the 20th century. Common methods of fitting trends by eye involve maneuvering a string, black thread, or ruler until the fit is suitable, then drawing the line through the set of points. In 2015, the New York Times introduced an interactive feature, called ‘You Draw It’, where readers were asked to input their own assumptions about various metrics and compare how these assumptions relate to reality. In this paper, we validate ‘You Draw It’ as a method for graphical testing, comparing results to the less technological method utilized in and extending that study with formal statistical analysis methods. Results were consistent with those found in the previous study; when shown points following a linear trend, participants tended to fit the slope of the first principal component over the slope of the least-squares regression line. This trend was most prominent when shown data simulated with larger variances. This study reinforces the differences between intuitive visual model fitting and statistical model fitting, providing information about human perception as it relates to the use of statistical graphics.">
+<meta name="twitter:image" content="https://unl-statistics.github.io/stat349/instructions/methods-papers/images/twitter-card.png">
+<meta name="twitter:creator" content="@srvanderplas">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-sidebar docked slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Eye Fitting Straight Lines in the Modern Era</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="../../images/logo.png" alt="" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Course information</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-overview.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-support.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Support</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../course-links.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Useful links</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Weekly materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1 - Getting Started</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2 - Resumes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3 - References</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 4 - Organization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 5 - Arguments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 6 - Problems &amp; Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 7 - Methods</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 8 - Graphics</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 9 - Results</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 10 - Intro &amp; Conclusions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 11 - Summaries</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 12 - Fallacies</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 13 - Reports</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 14 - Editing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../weeks/week-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 15 - Presentations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#testing-statistical-graphics" id="toc-testing-statistical-graphics" class="nav-link" data-scroll-target="#testing-statistical-graphics"><span class="header-section-number">1.1</span> Testing Statistical Graphics</a></li>
+  <li><a href="#fitting-trends-by-eye" id="toc-fitting-trends-by-eye" class="nav-link" data-scroll-target="#fitting-trends-by-eye"><span class="header-section-number">1.2</span> Fitting Trends by Eye</a></li>
+  </ul></li>
+  <li><a href="#sec-methods" id="toc-sec-methods" class="nav-link" data-scroll-target="#sec-methods"><span class="header-section-number">2</span> Methods</a>
+  <ul class="collapse">
+  <li><a href="#participants" id="toc-participants" class="nav-link" data-scroll-target="#participants"><span class="header-section-number">2.1</span> Participants</a></li>
+  <li><a href="#you-draw-it-task" id="toc-you-draw-it-task" class="nav-link" data-scroll-target="#you-draw-it-task"><span class="header-section-number">2.2</span> ‘You Draw It’ Task</a></li>
+  <li><a href="#data-generation" id="toc-data-generation" class="nav-link" data-scroll-target="#data-generation"><span class="header-section-number">2.3</span> Data Generation</a></li>
+  <li><a href="#study-design" id="toc-study-design" class="nav-link" data-scroll-target="#study-design"><span class="header-section-number">2.4</span> Study Design</a></li>
+  </ul></li>
+  <li><a href="#sec-results" id="toc-sec-results" class="nav-link" data-scroll-target="#sec-results"><span class="header-section-number">3</span> Results</a>
+  <ul class="collapse">
+  <li><a href="#fitted-regression-lines" id="toc-fitted-regression-lines" class="nav-link" data-scroll-target="#fitted-regression-lines"><span class="header-section-number">3.1</span> Fitted Regression Lines</a></li>
+  <li><a href="#residual-trends" id="toc-residual-trends" class="nav-link" data-scroll-target="#residual-trends"><span class="header-section-number">3.2</span> Residual Trends</a>
+  <ul class="collapse">
+  <li><a href="#linear-trend-constraint" id="toc-linear-trend-constraint" class="nav-link" data-scroll-target="#linear-trend-constraint"><span class="header-section-number">3.2.1</span> Linear Trend Constraint</a></li>
+  <li><a href="#smoothing-spline-trend" id="toc-smoothing-spline-trend" class="nav-link" data-scroll-target="#smoothing-spline-trend"><span class="header-section-number">3.2.2</span> Smoothing Spline Trend</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#sec-conclusion-discussion" id="toc-sec-conclusion-discussion" class="nav-link" data-scroll-target="#sec-conclusion-discussion"><span class="header-section-number">4</span> Discussion and Conclusion</a></li>
+  <li><a href="#sec-future-work" id="toc-sec-future-work" class="nav-link" data-scroll-target="#sec-future-work"><span class="header-section-number">5</span> Future Work</a></li>
+  <li><a href="#sec-supplementary-material" id="toc-sec-supplementary-material" class="nav-link" data-scroll-target="#sec-supplementary-material"><span class="header-section-number">6</span> Supplementary Material</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/unl-statistics/stat349/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full column-body" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Eye Fitting Straight Lines in the Modern Era</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    <div>
+    <div class="quarto-title-meta-heading">Authors</div>
+    <div class="quarto-title-meta-contents">
+             <p>Emily A. Robinson </p>
+             <p>Reka Howard </p>
+             <p>Susan VanderPlas </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>How do statistical regression results compare to intuitive, visually fitted results? Fitting lines by eye through a set of points has been explored since the 20th century. Common methods of fitting trends by eye involve maneuvering a string, black thread, or ruler until the fit is suitable, then drawing the line through the set of points. In 2015, the New York Times introduced an interactive feature, called ‘You Draw It’, where readers were asked to input their own assumptions about various metrics and compare how these assumptions relate to reality. In this paper, we validate ‘You Draw It’ as a method for graphical testing, comparing results to the less technological method utilized in and extending that study with formal statistical analysis methods. Results were consistent with those found in the previous study; when shown points following a linear trend, participants tended to fit the slope of the first principal component over the slope of the least-squares regression line. This trend was most prominent when shown data simulated with larger variances. This study reinforces the differences between intuitive visual model fitting and statistical model fitting, providing information about human perception as it relates to the use of statistical graphics.</p>
+  </div>
+</div>
+
+
+</header>
+
+
+<section id="introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>We all use statistical graphics, but how do we know that the graphics we use are communicating properly? When creating a graphic, we must consider the design choices most effective for conveying the intended result. For instance, we may decide to highlight the relationship between two variables in a scatterplot by including a trend line, or adding color to highlight clustering <span class="citation" data-cites="vanderplas2017clusters">(<a href="#ref-vanderplas2017clusters" role="doc-biblioref">VanderPlas and Hofmann 2017</a>)</span>. These design choices require that we understand the perceptual and visual biases that come into play when creating graphics, and as graphics are evaluated visually, we must use human testing to ground our understanding in empiricism.</p>
+<p>Much of the research on the perception of visual features in charts has been conducted in psychophysics and tests for accuracy and quantitative comparisons when understanding a plot. <span class="citation" data-cites="cleveland1984graphical">Cleveland and McGill (<a href="#ref-cleveland1984graphical" role="doc-biblioref">1984</a>)</span> conducted a series of cognitive tasks designed to establish a hierarchy of visual components for making comparisons. For example, it is more effective to display information on an <span class="math inline">\(x\)</span> or <span class="math inline">\(y\)</span> axis rather than using color in order to reduce the visual effort necessary to make numerical comparisons. <span class="citation" data-cites="cleveland1985graphical">Cleveland and McGill (<a href="#ref-cleveland1985graphical" role="doc-biblioref">1985</a>)</span> found that assessing the position of points along an axis is easier than determining the slope of a line. Other studies focused on the viewers’ ability to perceive the strength of the relationship between <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> coordinates in a scatterplot. For instance, when the data appear dense, viewers tend to overestimate the magnitude of the correlation coefficient <span class="citation" data-cites="cleveland1982variables lauer1989density">(<a href="#ref-cleveland1982variables" role="doc-biblioref">Cleveland, Diaconis, and McGill 1982</a>; <a href="#ref-lauer1989density" role="doc-biblioref">Lauer and Post 1989</a>)</span>. <span class="citation" data-cites="cleveland1993visualizing">Cleveland (<a href="#ref-cleveland1993visualizing" role="doc-biblioref">1993</a>)</span> provided an argument for displaying cyclical patterns with an aspect ratio which sets the curve close to 45<span class="math inline">\(^{\circ}\)</span>. <span class="citation" data-cites="kosslyn2006graph">Kosslyn and Kosslyn (<a href="#ref-kosslyn2006graph" role="doc-biblioref">2006</a>)</span> examined how Gestalt principles of perceptual organization are instrumental in extracting data from a chart. For example, <span class="citation" data-cites="ciccione2020grouping">Ciccione and Dehaene (<a href="#ref-ciccione2020grouping" role="doc-biblioref">2020</a>)</span> conducted a study to support data points located closer together are more likely to be perceived as the same group and <span class="citation" data-cites="appelle1972perception">Appelle (<a href="#ref-appelle1972perception" role="doc-biblioref">1972</a>)</span> found that it is easier to discriminate vertical and horizontal lines than oblique lines. The results of these cognitive tasks provided some consistent guidance for chart design; however, other methods of visual testing can further evaluate design choices and help us understand cognitive biases related to the evaluation of statistical charts.</p>
+<section id="testing-statistical-graphics" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="testing-statistical-graphics"><span class="header-section-number">1.1</span> Testing Statistical Graphics</h2>
+<p>We need human testing of graphics in order to draw broad conclusions, develop guidelines for graphical design, and improve graphical communication. Studies might ask participants to identify differences in graphs, read information off of a chart accurately, use data to make correct real-world decisions, or predict the next few observations. All of these types of tests require different levels of use and manipulation of the information being presented in the chart. Early research studies considered graphs from a psychological perspective <span class="citation" data-cites="spence1990visual lewandowsky1989perception">(<a href="#ref-spence1990visual" role="doc-biblioref">Spence 1990</a>; <a href="#ref-lewandowsky1989perception" role="doc-biblioref">Lewandowsky and Spence 1989</a>)</span>, testing participants’ abilities to detect a stimulus or a difference between two stimuli. Psychophysical methods have been used to test graphical perception, as in <span class="citation" data-cites="vanderplas2015signs">VanderPlas and Hofmann (<a href="#ref-vanderplas2015signs" role="doc-biblioref">2015a</a>)</span>, which used the method of adjustment - a technique which requires participants to alter a changing stimulus to match a given constant stimuli <span class="citation" data-cites="gescheider_1997">(<a href="#ref-gescheider_1997" role="doc-biblioref">Gescheider 1997</a>)</span>- to estimate the magnitude of the impact of the sine illusion. However, there are more modern testing methods that have been developed since the heyday of psychophysics.</p>
+<p>One major development in statistical graphics which led to more advanced testing methods is Wilkinson’s Grammar of Graphics <span class="citation" data-cites="wilkinson2013grammar">(<a href="#ref-wilkinson2013grammar" role="doc-biblioref">Wilkinson 2013</a>)</span>. The Grammar of Graphics serves as the fundamental framework for data visualization with the notion that graphics are built from the ground up by specifying exactly how to create a particular graph from a given data set. Visual representations are constructed through the use of “tidy data” which is characterized as a data set in which each variable is in its own column, each observation is in its own row, and each value is in its own cell <span class="citation" data-cites="wickham2016r">(<a href="#ref-wickham2016r" role="doc-biblioref">Wickham and Grolemund 2016</a>)</span>. Graphics are viewed as a mapping from variables in a data set (or statistics computed from the data) to visual attributes such as the axes, colors, shapes, or facets on the canvas in which the chart is displayed. Software, such as Hadley Wickham’s ggplot2 <span class="citation" data-cites="wickham2011ggplot2">(<a href="#ref-wickham2011ggplot2" role="doc-biblioref">Wickham 2011</a>)</span>, aims to implement the framework of creating charts and graphics as the Grammar of Graphics recommends.</p>
+<p>Combining the Grammar of Graphics with another tool for statistical graphics testing, the statistical lineup, yields a method for evaluating graphical design choices. <span class="citation" data-cites="buja2009statistical">Buja et al. (<a href="#ref-buja2009statistical" role="doc-biblioref">2009</a>)</span> introduced the lineup protocol to provide a framework for inferential testing. A statistical lineup is a plot consisting of smaller panels where the viewer is asked to identify the target panel containing the real data from among a set of decoy null plots which display data under the assumption there is no relationship. If the viewer can identify the target panel randomly embedded within the set of null panels, this suggests that the real data is visually distinct from data generated under the null model. Through experimentation, methods such as the lineup protocol allow researchers to conduct studies geared at understanding human ability to conduct tasks related to the perception of statistical charts such as differentiation, prediction, estimation, and extrapolation <span class="citation" data-cites="vanderplas2017clusters vanderplas2015spatial hofmann2012graphical">(<a href="#ref-vanderplas2017clusters" role="doc-biblioref">VanderPlas and Hofmann 2017</a>, <a href="#ref-vanderplas2015spatial" role="doc-biblioref">2015b</a>; <a href="#ref-hofmann2012graphical" role="doc-biblioref">Hofmann et al. 2012</a>)</span>. The advancement of graphing software provides the tools necessary to develop new methods of testing statistical graphics. While these testing methods are excellent, there is one particular subset of statistical graphics testing methods which we intend to develop further in this paper: assessing graphics by fitting statistical models “by eye”.</p>
+</section>
+<section id="fitting-trends-by-eye" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="fitting-trends-by-eye"><span class="header-section-number">1.2</span> Fitting Trends by Eye</h2>
+<p>Initial studies in the 20th century explored the use of fitting lines by eye through a set of points <span class="citation" data-cites="unwin1988eyeballing finney1951subjective mosteller1981eye">(<a href="#ref-unwin1988eyeballing" role="doc-biblioref">Unwin and Wills 1988</a>; <a href="#ref-finney1951subjective" role="doc-biblioref">Finney 1951</a>; <a href="#ref-mosteller1981eye" role="doc-biblioref">Mosteller et al. 1981</a>)</span>. Common methods of fitting trends by eye involved maneuvering a string, black thread, or ruler until the fit is suitable, then drawing the line through the set of points. Recently, <span class="citation" data-cites="ciccione2021can">Ciccione and Dehaene (<a href="#ref-ciccione2021can" role="doc-biblioref">2021</a>)</span> conducted a comprehensive set of studies investigating human ability to detect trends in graphical representations using physical adjustment and manipulation methods.</p>
+<p><span class="citation" data-cites="finney1951subjective">Finney (<a href="#ref-finney1951subjective" role="doc-biblioref">1951</a>)</span> used graphical testing for computational purposes: to determine the effect of stopping iterative maximum likelihood calculations after one iteration. Many techniques in statistical analysis are performed with the aid of iterative calculations such as Newton’s method or Fisher’s scoring. The author was interested in whether one iteration of calculations was sufficient in the estimation of parameters connected with pharmaceutical dose-response relationships. In pharmaceuticals, one measure of interest is the relative potency between a test preparation of doses and standard preparation of does; relative potency is calculated as the ratio of two equally effective doses between the two preparation methods. In this study, twenty-one scientists were recruited via postal mail and asked to “rule two lines” in order to judge by eye the positions for a pair of parallel probit regression lines in a biological assay. The author then computed one iterative calculation of the relative potency based on starting values as determined by the pair of lines drawn by each participant. The author then compared these relative potency estimates to that which was estimated by the full probit technique (reaching convergence through multiple iterations). Results of the study indicated that one cycle of iterations for calculating the relative potency was sufficient based on the starting values provided by eye from the participants.</p>
+<p><span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span> sought to understand the properties of least squares and other computed lines by establishing one systematic method of fitting lines by eye. Participants were asked to fit lines by eye to four scatterplots using an 8.5 x 11 inch transparency with a straight line etched completely across the middle. A latin square design with packets of the set of points stapled together in four different sequences was used to determine if there is an effect of order of presentation. It was found that order of presentation had no effect and that participants tended to fit the slope of the principal axis (PA) (error minimized orthogonally, both horizontal and vertical, to the regression line) over the slope of the least squares regression line (error minimized vertically to the regression line). <!-- These results support previous research on "ensemble perception" indicating the visual system can compute averages of various features in parallel across the items in a set [@chong2003representation; @chong2005statistical; @van2011rapid]. --></p>
+<p>In <span class="citation" data-cites="ciccione2021can">Ciccione and Dehaene (<a href="#ref-ciccione2021can" role="doc-biblioref">2021</a>)</span>, participants were asked to judge trends, estimate slopes, and conduct extrapolation. To estimate slopes, participants were asked to report the slope of the best-fitting regression line using a track-pad to adjust the tilt of a line on the screen. Results indicated the slopes participants reported were always in excess of the ideal slopes, both in the positive and in the negative direction, and those biases increase with noise and with number of points. This supports the results found in <span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span> and suggest that participants might use Deming regression <span class="citation" data-cites="deming1943statistical linnet1998performance martin2000general">(<a href="#ref-deming1943statistical" role="doc-biblioref">Deming 1943</a>; <a href="#ref-linnet1998performance" role="doc-biblioref">Linnet 1998</a>; <a href="#ref-martin2000general" role="doc-biblioref">Martin 2000</a>)</span>, which minimizes the Euclidean distance of points from the line, when fitting a line to a noisy scatterplot.</p>
+<p>While not explicitly intended for perceptual testing, in 2015, the New York Times introduced an interactive feature, called ‘You Draw It’ <span class="citation" data-cites="aisch_cox_quealy_2015 buchanan_park_pearce_2017 katz_2017">(<a href="#ref-aisch_cox_quealy_2015" role="doc-biblioref">Aisch, Cox, and Quealy 2015</a>; <a href="#ref-buchanan_park_pearce_2017" role="doc-biblioref">Buchanan, Park, and Pearce 2017</a>; <a href="#ref-katz_2017" role="doc-biblioref">Katz 2017</a>)</span>. Readers were asked to input their own assumptions about various metrics and compare how these assumptions relate to reality. The New York Times team utilizes Data Driven Documents (D3) <span class="citation" data-cites="bostock2011d3">(<a href="#ref-bostock2011d3" role="doc-biblioref">Bostock, Ogievetsky, and Heer 2011</a>)</span> that allows readers to predict these metrics through the use of drawing a line on their computer screen with their computer mouse. After the reader has completed drawing the line, the actual observed values are revealed and the reader may check their estimated knowledge against the actual reported data. While this interactive feature is designed to get readers to confront their own intuitions about data in the news, we feel that the interactivity of this method may be useful for the purpose of graphical testing and measuring the patterns humans see in data.</p>
+<p>In this paper, we establish ‘You Draw It’, adapted from the New York Times feature, as a new tool for graphical testing. Our visual system is naturally built to look for structure and identify patterns. For instance, points going down from left to right indicates a negative correlation between the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> variables. Our research is intended to implement the ‘You Draw It’ feature as a way to measure the patterns we see in data. The graphical testing method used in this study differs from prior methods found in <span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span> and <span class="citation" data-cites="ciccione2021can">Ciccione and Dehaene (<a href="#ref-ciccione2021can" role="doc-biblioref">2021</a>)</span> by allowing participants to freely draw estimated trend lines - a method which extends nicely to a nonlinear setting. We validate the ‘You Draw It’ method by replicating the less technological study conducted by <span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span>. In <a href="#sec-methods" class="quarto-xref">Section&nbsp;2</a> we describe our participant sample, the graphical task to be completed, and the data generation process and study design. <a href="#sec-results" class="quarto-xref">Section&nbsp;3</a> describes the participant data collected and shares results from the analyses of the data using mixed models. Overall conclusions and discussion of results are presented in <a href="#sec-conclusion-discussion" class="quarto-xref">Section&nbsp;4</a> with extensions to the current work suggested in <a href="#sec-future-work" class="quarto-xref">Section&nbsp;5</a>. The RShiny applet to complete the study, participant data used for analysis, and code to replicate the analysis can be found in the <a href="#sec-supplementary-material" class="quarto-xref">Section&nbsp;6</a>. Based on previous research, we hypothesize that visual regression tends to mimic regression based on the principal axis rather than an ordinary least squares regression. In order to assess this hypothesis, we introduce a method for statistically modeling the participant drawn lines using generalized additive mixed models (GAMM). While the focus of this paper is to share the results from the validation study which uses the new ‘You Draw It’ method to evaluate visually fitted linear trends to statistical regression results, the intent of this work is to set the foundation and demonstrate the strength of the combination of the ‘You Draw It’ method and GAMM analyses for testing statistical graphics and to extend the use of the method beyond the linear setting.</p>
+</section>
+</section>
+<section id="sec-methods" class="level1 page-columns page-full" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Methods</h1>
+<style>
+.design {background-color: #99ff2222}
+.setting {background-color: #ff000022}
+.sampling {background-color: #0000ff22}
+.variables {background-color: #ff00ff22}
+.statistics {background-color: #ffff0022}
+</style>
+
+<div class="no-row-height column-margin column-container"><div class="margin-aside">
+<p>Annotation Key</p>
+<ul>
+<li><p><span class="design">Study design and data collection</span></p></li>
+<li><p><span class="setting">Setting - location, timeframe, recruitment/inclusion criteria</span></p></li>
+<li><p><span class="sampling">Sampling method</span></p></li>
+<li><p><span class="variables">Variables collected (and any derived variables)</span></p></li>
+<li><p><span class="statistics">Statistical analysis methods</span></p></li>
+</ul>
+</div></div><section id="participants" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="participants"><span class="header-section-number">2.1</span> Participants</h2>
+<p><span class="sampling">Participants were recruited through through Twitter, Reddit, and direct email in May 2021. A total of 35 individuals completed 131 unique ‘You Draw It’ task plots.</span> Data were collected as a part of a pilot study meant to test the applet; therefore, either voluntary participant dropout or disconnection from a server not designed to accommodate large magnitudes of participants resulted in missing plots in our data set for analysis. <span class="setting">All participants had normal or corrected to normal vision and signed an informed consent form. The experimental tasks took approximately 15 minutes to complete.</span> <span class="sampling">As this is a pilot study, participants from Twitter and Reddit pages related to data visualization voluntarily completed the study and likely have an interest in fields related to statistics and want to help advance research in graphics. While this study does utilize a convenience sample, as this is primarily a perceptual task, previous results have found few differences between expert and non-expert participants in this context <span class="citation" data-cites="vanderplas2015spatial">(<a href="#ref-vanderplas2015spatial" role="doc-biblioref">VanderPlas and Hofmann 2015b</a>)</span></span>. These data were collected to validate this method of graphical testing, with the hopes of providing a new tool to assess graphical perception interactively. <span class="setting">Participants completed the experiment on their own computers in an environment of their choosing. The experiment was conducted and distributed through a Shiny application <span class="citation" data-cites="shinyPkg">(<a href="#ref-shinyPkg" role="doc-biblioref">Chang et al. 2021</a>)</span> found at <a href="https://emily-robinson.shinyapps.io/you-draw-it-validation-applet/">emily-robinson.shinyapps.io/you-draw-it-validation-applet</a>.</span></p>
+</section>
+<section id="you-draw-it-task" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="you-draw-it-task"><span class="header-section-number">2.2</span> ‘You Draw It’ Task</h2>
+<p><span class="design">In the study, participants were shown an interactive scatterplot <a href="#fig-ydi-stimuli" class="quarto-xref">Figure&nbsp;1</a> along with the prompt, “Use your mouse to fill in the trend in the yellow box region.” The yellow box region moved along as the user drew their trend-line, providing a visual cue which indicates where the user still needed to complete a trend line. After the entire domain had been visually estimated or predicted, the yellow shaded region disappeared, indicating the participant had completed the task.</span> Data Driven Documents (D3), a JavaScript-based graphing framework that facilitates user interaction, was used to create the ‘You Draw It’ visual. In order to allow for user interaction and data collection, we integrated the D3 visual into Shiny using the <code>r2d3</code> package <span class="citation" data-cites="r2d3">(<a href="#ref-r2d3" role="doc-biblioref">Strayer, Luraschi, and Allaire 2022</a>)</span>. While the interface is highly customized to this particular task, we hope to generalize the code and provide a Shiny widget in an R package soon.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-ydi-stimuli" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="tbp" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ydi-stimuli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/ydi-stimuli.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="tbp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ydi-stimuli-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: ‘You Draw It’ task plot as shown to particpants during the study. The first frame (left) illustrates what particpants first saw with the prompt “Use your mouse to fill in the trend in the yellow box region.” The second frame (middle), illustrates what the particpant saw while completing the task; the yellow shaded region provided a visual cue for participants indicating where the participant still needed to complete a trend-line. The last frame (right) illustrates the participants finished trend-line before submission.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="data-generation" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="data-generation"><span class="header-section-number">2.3</span> Data Generation</h2>
+<p><span class="statistics">All data processing was conducted in R software environment for statistical computing and graphics <span class="citation" data-cites="Rsoftware">(<a href="#ref-Rsoftware" role="doc-biblioref">R Core Team 2021</a>)</span>. A total of <span class="math inline">\(N = 30\)</span> points <span class="math inline">\((x_i, y_i), i = 1,...,N\)</span> were generated for <span class="math inline">\(x_i \in [x_{min}, x_{max}]\)</span> where <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> have a linear relationship. Data were simulated based on the point-slope form of a linear model with additive errors:</span> <span class="math display">\[\begin{align}
+y_i = \beta_1(x_i-\bar{x}) + y_{\bar{x}} + e_i \\
+\text{with } e_i &amp; \sim N(0, \sigma^2). \nonumber
+\end{align}\]</span></p>
+<p><span class="statistics">Model equation parameters, <span class="math inline">\(\beta_1\)</span>, <span class="math inline">\(y_{\bar{x}}\)</span>, and parameter choice letter names (S, F, V, N), were selected to reflect the four data sets used and labeled in <span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span> <a href="#tbl-eyefitting-parameters" class="quarto-xref">Table&nbsp;1</a>. The mean of the generated <span class="math inline">\(x\)</span> values and the predefined <span class="math inline">\(y\)</span> value at <span class="math inline">\(\bar x\)</span>, denoted <span class="math inline">\(y_{\bar x}\)</span> were used in the point-slope equation of a line. Parameter choices S, F, and N simulated data across a domain of 0 to 20. Parameter choice F produced a trend with a positive slope and a large variance while N had a negative slope and a large variance. In comparison, S showed a trend with a positive slope and a small variance while V yielded a steep positive slope with a small variance over the domain of 4 to 16.</span> <a href="#fig-eyefitting-simplot" class="quarto-xref">Figure&nbsp;2</a> illustrates an example of simulated data for all four parameter choices intended to reflect the trends in <span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span>. Aesthetic design choices were made consistent across each of the interactive ‘You Draw It’ task plots. The y-axis range extended 10% beyond (above and below) the range of the simulated data points to allow for users to draw outside the simulated data set range and avoid anchoring their lines to the corners of the plot.</p>
+<div class="cell" data-layout-align="center">
+<div id="tbl-eyefitting-parameters" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-layout-align="center">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-eyefitting-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Designated model equation parameters for simulated data.
+</figcaption>
+<div aria-describedby="tbl-eyefitting-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output-display">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Parameter Choice</th>
+<th style="text-align: center;"><span class="math inline">\(y_{\bar{x}}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\beta_1\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\sigma\)</span></th>
+<th style="text-align: center;">Domain</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">S</td>
+<td style="text-align: center;">3.88</td>
+<td style="text-align: center;">0.66</td>
+<td style="text-align: center;">1.30</td>
+<td style="text-align: center;">(0,20)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">F</td>
+<td style="text-align: center;">3.90</td>
+<td style="text-align: center;">0.66</td>
+<td style="text-align: center;">1.98</td>
+<td style="text-align: center;">(0,20)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">V</td>
+<td style="text-align: center;">3.89</td>
+<td style="text-align: center;">1.98</td>
+<td style="text-align: center;">1.50</td>
+<td style="text-align: center;">(4,16)</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">N</td>
+<td style="text-align: center;">4.11</td>
+<td style="text-align: center;">-0.70</td>
+<td style="text-align: center;">2.50</td>
+<td style="text-align: center;">(0,20)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</figure>
+</div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-eyefitting-simplot" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="tbp" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eyefitting-simplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Eye-Fitting-Straight-Lines-in-the-Modern-Era_files/figure-html/fig-eyefitting-simplot-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="tbp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eyefitting-simplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Example of simulated data points displayed in a scatterplot illustrating the trends associated with the four selected parameter choices.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="study-design" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="study-design"><span class="header-section-number">2.4</span> Study Design</h2>
+<p>This experiment was conducted as part of a larger study of the perception of log and linear scales; for simplicity, we focused on the study design and methods related to the current study. Each data set was generated randomly and independently for each participant at the start of the experiment and mapped to a scatterplot. <span class="design">Participants in the study were shown two ‘You Draw It’ practice plots in order to train participants in the skills associated with executing the task - in particular, the responsiveness of the applet requires that participants draw a line at a certain speed, ensuring that all of the evenly spaced points along the hand-drawn line are filled in. During the practice session, participants were provided with instruction prompts accompanied by a .gif and a practice plot. Instructions guided participants to start at the edge of the yellow box, to make sure the yellow shaded region was moving along with their mouse as they drew, and that they could draw over their already drawn line. Practice plots were then followed by one of each of the four ‘You Draw It’ task plots associated with the current study (S, F, V, and N).</span> <span class="sampling">The order of the task plots was randomly assigned for each individual in a completely randomized design.</span></p>
+</section>
+</section>
+<section id="sec-results" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Results</h1>
+<section id="fitted-regression-lines" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="fitted-regression-lines"><span class="header-section-number">3.1</span> Fitted Regression Lines</h2>
+<p>We compared the participant drawn line to two regression lines determined by ordinary least squares (OLS) regression and regression based on the principal axis (PA). <a href="#fig-ols-vs-pca-example" class="quarto-xref">Figure&nbsp;3</a> illustrates the difference between an OLS regression line which minimizes the vertical distance of points from the line and a regression line based on the PA which minimizes the Euclidean distance of points (orthogonal) from the line.</p>
+<p>Due to the randomness in the data generation process, the actual slope of the linear regression line fit through the simulated points could differ from the predetermined slope. Therefore, we fit an OLS regression to each scatterplot to obtain estimated parameters <span class="math inline">\(\hat\beta_{0,OLS}\)</span> and <span class="math inline">\(\hat\beta_{1,OLS}\)</span>. Fitted values, <span class="math inline">\(\hat y_{k,OLS}\)</span>, were then obtained every 0.25 increment across the domain from the OLS regression equation, <span class="math inline">\(\hat y_{k,OLS} = \hat\beta_{0,OLS} + \hat\beta_{1,OLS} x_k\)</span>, for <span class="math inline">\(k = 1, ..., 4 x_{max} +1\)</span>. The PA regression slope, <span class="math inline">\(\hat\beta_{1,PA}\)</span>, and y-intercept, <span class="math inline">\(\hat\beta_{0,PA}\)</span>, were determined using the <code>mcreg</code> function in the <code>mcr</code> package in R <span class="citation" data-cites="mcr_pkg">(<a href="#ref-mcr_pkg" role="doc-biblioref">Manuilova, Schuetzenmeister, and Model 2021</a>)</span> which implements Deming regression (equivalent to a regression based on the slope of the first principal axis). Fitted values, <span class="math inline">\(\hat y_{k,PA}\)</span> were then obtained every 0.25 increment across the domain from the PA regression equation, <span class="math inline">\(\hat y_{k,PA} = \hat\beta_{0,PA} + \hat\beta_{1,PA} x_k\)</span>, for <span class="math inline">\(k = 1, ..., 4 x_{max} +1\)</span>.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-ols-vs-pca-example" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="tbp" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ols-vs-pca-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Eye-Fitting-Straight-Lines-in-the-Modern-Era_files/figure-html/fig-ols-vs-pca-example-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%" data-fig-pos="tbp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ols-vs-pca-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Comparison between an OLS regression line which minimizes the vertical distance of points from the line and a regression line based on the principal axis which minimizes the Euclidean distance of points (orthogonal) from the line.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="residual-trends" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="residual-trends"><span class="header-section-number">3.2</span> Residual Trends</h2>
+<p>For each participant, the final data set used for analysis contained <span class="math inline">\(x_{ijk}, y_{ijk,drawn}, \hat y_{ijk,OLS}\)</span>, and <span class="math inline">\(\hat y_{ijk,PA}\)</span> for parameter choice <span class="math inline">\(i = 1,2,3,4\)</span>, j = <span class="math inline">\(1,...,N_{participant}\)</span>, and <span class="math inline">\(x_{ijk}\)</span> value for increment <span class="math inline">\(k = 1, ...,4 x_{max} + 1\)</span>. <span class="statistics">Using both a linear mixed model and a generalized additive mixed model, comparisons of vertical residuals in relation to the OLS fitted values (<span class="math inline">\(e_{ijk,OLS} = y_{ijk,drawn} - \hat y_{ijk,OLS}\)</span>) and PA fitted values (<span class="math inline">\(e_{ijk,PA} = y_{ijk,drawn} - \hat y_{ijk,PA}\)</span>) were made across the domain. <a href="#fig-eyefitting-example-plot" class="quarto-xref">Figure&nbsp;4</a> displays an example of all three fitted trend lines for parameter choice F.</span></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-eyefitting-example-plot" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="tbp" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eyefitting-example-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Eye-Fitting-Straight-Lines-in-the-Modern-Era_files/figure-html/fig-eyefitting-example-plot-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%" data-fig-pos="tbp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eyefitting-example-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Illustrates the data associated with and collected for one `You Draw It’ task plot. Trend-lines include the participant drawn line (dashed black), the OLS regression line (solid steelblue) and the PA regression line based on the principal axis (solid orange).
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="linear-trend-constraint" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="linear-trend-constraint"><span class="header-section-number">3.2.1</span> Linear Trend Constraint</h3>
+<!-- https://cran.r-project.org/web/packages/lme4/vignettes/lmer.pdf -->
+<p>The ‘You Draw It’ method does not restrict participants to draw a straight line as other methods would, such as using a ruler. Instead, participants are allowed to freely draw a line with potential curvature. <span class="statistics">Using the <code>lmer</code> function in the lme4 package <span class="citation" data-cites="lme4">(<a href="#ref-lme4" role="doc-biblioref">Bates et al. 2015</a>)</span>, a linear mixed model (LMM) was fit separately to the OLS residuals and PA residuals, emulating the effect of constraining participants to draw a linear trend. Both fixed and random parameter estimates in the LMM were determined by optimizing the restricted maximum likelihood (REML) through penalized least squares. Parameter choice, <span class="math inline">\(x\)</span>, and the interaction between <span class="math inline">\(x\)</span> and the parameter choice were treated as fixed effects with a random participant effect included to account for variation due to participant.</span> The LMM equation for each fit (OLS and PA) is given by: <span class="math display">\[
+\begin{equation}
+y_{ijk,drawn} - \hat y_{ijk,fit} = e_{ijk,fit} = \left[\gamma_0 + \alpha_i\right] + \left[\gamma_{1} x_{ijk} + \gamma_{2i} x_{ijk}\right] + p_{j} + \epsilon_{ijk}
+\end{equation}\]</span> where</p>
+<ul>
+<li><span class="math inline">\(y_{ijk,drawn}\)</span> is the drawn <span class="math inline">\(y\)</span> value for the <span class="math inline">\(i^{th}\)</span> parameter choice, <span class="math inline">\(j^{th}\)</span> participant, and <span class="math inline">\(k^{th}\)</span> increment of <span class="math inline">\(x\)</span> value</li>
+<li><span class="math inline">\(\hat y_{ijk,fit}\)</span> is the fitted <span class="math inline">\(y\)</span> value for the <span class="math inline">\(i^{th}\)</span> parameter choice, <span class="math inline">\(j^{th}\)</span> participant, and <span class="math inline">\(k^{th}\)</span> increment of <span class="math inline">\(x\)</span> value corresponding to either the OLS or PA fit</li>
+<li><span class="math inline">\(e_{ijk,fit}\)</span> is the residual between the drawn and fitted <span class="math inline">\(y\)</span> values for the <span class="math inline">\(i^{th}\)</span> parameter choice, <span class="math inline">\(j^{th}\)</span> participant, and <span class="math inline">\(k^{th}\)</span> increment of <span class="math inline">\(x\)</span> value corresponding to either the OLS or PA fit</li>
+<li><span class="math inline">\(\gamma_0\)</span> is the overall intercept</li>
+<li><span class="math inline">\(\alpha_i\)</span> is the effect of the <span class="math inline">\(i^{th}\)</span> parameter choice (S, F, V, N) on the intercept</li>
+<li><span class="math inline">\(\gamma_1\)</span> is the overall slope for <span class="math inline">\(x\)</span></li>
+<li><span class="math inline">\(\gamma_{2i}\)</span> is the effect of the parameter choice on the slope</li>
+<li><span class="math inline">\(x_{ijk}\)</span> is the <span class="math inline">\(x\)</span> value for the <span class="math inline">\(i^{th}\)</span> parameter choice, <span class="math inline">\(j^{th}\)</span> participant, and <span class="math inline">\(k^{th}\)</span> increment</li>
+<li><span class="math inline">\(p_{j} \sim N(0, \sigma^2_{participant})\)</span> is the random error due to the <span class="math inline">\(j^{th}\)</span> participant’s characteristics</li>
+<li><span class="math inline">\(\epsilon_{ijk} \sim N(0, \sigma^2)\)</span> is the residual error.</li>
+</ul>
+<p>Constraining the residual trend to a linear fit, <a href="#fig-eyefitting-lmer-residualplots" class="quarto-xref">Figure&nbsp;5</a> shows the estimated trend line of the residuals between the participant drawn points and fitted values for both the OLS regression line and PA regression line. Estimated residual trend lines are overlaid on the observed individual participant residuals. Results indicate the estimated trends of PA residuals (orange) appear to align closer to the <span class="math inline">\(y=0\)</span> horizontal (dashed) line than the OLS residuals (blue). In particular, this trend is more prominent in parameter choices with large variances (F and N). These results are consistent to those found in <span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span> indicating participants fit a trend-line closer to the estimated regression line with a slope based on the first principal axis than the estimated OLS regression line.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-eyefitting-lmer-residualplots" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="tbp" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eyefitting-lmer-residualplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Eye-Fitting-Straight-Lines-in-the-Modern-Era_files/figure-html/fig-eyefitting-lmer-residualplots-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="tbp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eyefitting-lmer-residualplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Estimated trend line of the residuals between the participant drawn points and fitted values for both the OLS (blue) regression line and PA (orange) regression line constrained to a linear fit modeled by a linear mixed model. Estimated residual trends with 95% confidence bands are overlaid on the observed individual participant residuals.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="smoothing-spline-trend" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="smoothing-spline-trend"><span class="header-section-number">3.2.2</span> Smoothing Spline Trend</h3>
+<p>Eliminating the linear trend constraint, <span class="statistics">the <code>bam</code> function in the mgcv package <span class="citation" data-cites="mgcv_pkg">(<a href="#ref-mgcv_pkg" role="doc-biblioref">Wood 2017</a>)</span> was used to fit a generalized additive mixed model (GAMM) separately to the OLS residuals and PA residuals to allow for estimation of smoothing splines. The <code>bam</code> function is used to fit GAMM’s to very large data sets and use lower memory than the <code>gam</code> function; REML is used to estimate parameters and smoothing splines. Parameter choice was treated as a fixed effect with no estimated intercept and a separate smoothing spline for <span class="math inline">\(x\)</span> was estimated for each parameter choice. A random participant effect was included to account for variation due to participant and a random spline for each participant accounted for variation in spline for each participant.</span> Defining <span class="math inline">\(e_{ijk,fit}\)</span> the same as in equation (2) above, the GAMM equation for each fit (OLS and PA) residuals is given by: <span class="math display">\[
+\begin{equation}
+e_{ijk,fit} = \alpha_i + s_{i}(x_{ijk}) + p_{j} + s_{j}(x_{ijk})
+\end{equation}
+\]</span> where</p>
+<ul>
+<li><span class="math inline">\(e_{ijk,fit}\)</span> is the same as equation</li>
+<li><span class="math inline">\(\alpha_i\)</span> is the intercept for the parameter choice <span class="math inline">\(i\)</span></li>
+<li><span class="math inline">\(s_{i}\)</span> is the smoothing spline for the <span class="math inline">\(i^{th}\)</span> parameter choice</li>
+<li><span class="math inline">\(x_{ijk}\)</span> is the <span class="math inline">\(x\)</span> value for the <span class="math inline">\(i^{th}\)</span> parameter choice, <span class="math inline">\(j^{th}\)</span> participant, and <span class="math inline">\(k^{th}\)</span> increment</li>
+<li><span class="math inline">\(p_{j} \sim N(0, \sigma^2_{participant})\)</span> is the error due to participant variation</li>
+<li><span class="math inline">\(s_{j}\)</span> is the random smoothing spline for each participant.</li>
+</ul>
+<p>Allowing for flexibility in the residual trend, <a href="#fig-eyefitting-gamm-residualplots" class="quarto-xref">Figure&nbsp;6</a> shows the estimated trend line of the residuals between the participant drawn points and fitted values for both the OLS regression line and PA regression line. Estimated residual trends were overlaid on the observed individual participant residuals. The results of the GAMM align with those shown in <a href="#fig-eyefitting-lmer-residualplots" class="quarto-xref">Figure&nbsp;5</a> providing support that estimated trends of PA residuals (orange) appear to align closer to the <span class="math inline">\(y=0\)</span> horizontal (dashed) line than the OLS residuals (blue) for scatterplots with more noise (F and N). By fitting smoothing splines, we can determine whether participants naturally fit a straight trend-line to the set of points or whether they deviate throughout the domain. In particular, in scatterplots with smaller variance (S and V), we can see that participants began at approximately the correct starting point then deviated away from the fitted regression lines and corrected for their fit toward the end of their trend-line. In scatterplots with larger variance (F and N), participants estimated their starting value in the extreme direction of the OLS regression line based on the increasing or decreasing trend but more accurately represented the starting value of the PA regression line. As participants continued their trend-line, they crossed through the OLS regression line indicating they estimated the slope in the extreme direction. These results provide further insight into the curvature humans perceive in a set of points.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div id="fig-eyefitting-gamm-residualplots" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-pos="tbp" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eyefitting-gamm-residualplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Eye-Fitting-Straight-Lines-in-the-Modern-Era_files/figure-html/fig-eyefitting-gamm-residualplots-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" data-fig-pos="tbp">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eyefitting-gamm-residualplots-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Estimated trend line of the residuals between the participant drawn points and fitted values for both the OLS (blue) regression line and PA (orange) regression line determined by smoothing splines fit by a generalized additive mixed model. Estimated residual trends with 95% confidence bands are overlaid on the observed individual participant residuals.
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="sec-conclusion-discussion" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Discussion and Conclusion</h1>
+<p>The intent of this research was to adapt ‘You Draw It’ from the New York Times feature as a tool and method for testing graphics and introduce a method for statistically modeling the participant drawn lines. We provided support for the validity of the ‘You Draw It’ method by replicating the study found in <span class="citation" data-cites="mosteller1981eye">Mosteller et al. (<a href="#ref-mosteller1981eye" role="doc-biblioref">1981</a>)</span>. Using generalized additive mixed models, we assessed the deviation of the participant drawn lines from the statistically fitted regression lines. Our results found that when shown points following a linear trend, participants visually fit a regression line that mimics the first principal axis regression as opposed to ordinary least squares regression. Data simulated with a larger variance provided strong support for a participants tendency to visually fit the first principal axis regression. We utilized modern technology to replicate a study conducted 40 years ago, and strengthened the original results with current analysis methods which allow for more flexibility and sophistication. Our results indicate that participants minimized the distance from their drawn regression line over both the <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> axis simultaneously. <!-- These results provide support that humans perform "ensemble perception" in a statistical graphic setting. --> We allowed participants to draw trend lines that deviated from a straight line and gained an insight into the curvature the human eye perceives in a set of points. Researchers in cognitive and human movement sciences have found that human arm movement is a complex task <span class="citation" data-cites="miall1995curvature rousset2015study">(<a href="#ref-miall1995curvature" role="doc-biblioref">Miall and Haggard 1995</a>; <a href="#ref-rousset2015study" role="doc-biblioref">Rousset, Bérard, and Ortega 2015</a>)</span>. The ‘You Draw It’ method described in this paper uses <em>indirect interaction</em> in which the mouse position and resulting visual line on the screen are dissociated. Therefore, curvature found in participant drawn lines from a straight lines could potentially be explained by the lack of coordination which results from the eye-hand dissociation from indirect drawing and the distortion of visual perception affecting the curvature of movements. Additionally, there is a training effect related to the completion of the ‘You Draw It’ task - the movement of the line must be slow so that the visual representation on the screen can accurately capture each movement. <span class="citation" data-cites="de1991misdirections">De Graaf, Sittig, and Gon (<a href="#ref-de1991misdirections" role="doc-biblioref">1991</a>)</span> conducted a study in which participants moved their hand slowly from an initial position in front of them to a visual target (movement task); they were then asked to repeat the task using different sizes of pointers (perceptual task). Their results indicated that deviations from the shortest pointers were comparable to those of the movement task, but that bias increased as the length of the pointer increased. While we suggested participants use a mouse to complete the study, we could not require the use; therefore, some participants may have used a track-pad and results may have been influenced by the pressure placed on their track-pad <span class="citation" data-cites="easton1978finger">(<a href="#ref-easton1978finger" role="doc-biblioref">Easton and Falzett 1978</a>)</span>.</p>
+</section>
+<section id="sec-future-work" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Future Work</h1>
+<p>This study provided a basis for the use of ‘You Draw It’ as a tool for testing statistical graphics and introduced a method for statistically modeling participant drawn lines using generalized additive mixed models. Additional studies related to the validation and use of the tool would be useful for providing insight into explanations of biases introduced by the task such as the deviation from a straight line. For instance, a variation on the current study could compare manual adjustment methods such as shifting and rotating a horizontal line segment until the fit is suitable to the ‘You Draw It’ method on the same set of data. This might explain the large deviation from the participant drawn line as <span class="math inline">\(x\)</span> approaches 20. Another useful extension study would be to compare the ‘You Draw It’ method as conducted by direct interaction - using a digital pen on a tablet - to indirect interaction - using a computer mouse to relate to a pointer on the screen. Further extensions to this work might ask participants to draw a trend-line through scatterplots with one (or multiple) extreme outliers in order to evaluate the perceptual system’s resistance to outliers.</p>
+<p>While the focus of this study was on drawing linear trend-lines, further investigation is necessary to implement this method in non-linear settings and with real data in order to facilitate scientific communication - a strength of the combination of the flexible ‘You Draw It’ method and GAMM analysis method. This tool could also be used to evaluate human ability to extrapolate data from trends. In the future, we intend to create an R package designed for easy implementation of ‘You Draw It’ task plots in order to make this tool accessible to other researchers.</p>
+</section>
+<section id="sec-supplementary-material" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Supplementary Material</h1>
+<ul>
+<li><strong>Study Applet:</strong> The shiny app used to conduct the study can be accessed at <a href="https://emily-robinson.shinyapps.io/you-draw-it-validation-applet/">emily-robinson.shinyapps.io/you-draw-it-validation-applet</a>.</li>
+<li><strong>RShiny Applet Code:</strong> The code used to create the RShiny Applet for data collection can be found at <a href="https://github.com/earobinson95/you-draw-it-validation-applet">github.com/earobinson95/you-draw-it-validation-applet</a>.</li>
+<li><strong>Participant Data:</strong> De-identified participant data collected in the study and used for analyses are available to be downloaded from GitHub at <a href="https://github.com/earobinson95/Eye-Fitting-Straight-Lines-in-the-Modern-Era/tree/main/data">github.com/earobinson95/Eye-Fitting-Straight-Lines-in-the-Modern-Era/tree/main/data</a>.</li>
+<li><strong>Data Analysis Code:</strong> The code used to replicate the analysis in this paper can be found at <a href="https://earobinson95.github.io/Eye-Fitting-Straight-Lines-in-the-Modern-Era/analysis/you-draw-it-eyefitting-analysis.html">earobinson95.github.io/Eye-Fitting-Straight-Lines-in-the-Modern-Era/analysis/you-draw-it-eyefitting-analysis.html</a>.</li>
+</ul>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-aisch_cox_quealy_2015" class="csl-entry" role="listitem">
+Aisch, Gregor, Amanda Cox, and Kevin Quealy. 2015. <span>“You Draw It: How Family Income Predicts Children’s College Chances.”</span> <em>The New York Times</em>. The New York Times. <a href="https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html">https://www.nytimes.com/interactive/2015/05/28/upshot/you-draw-it-how-family-income-affects-childrens-college-chances.html</a>.
+</div>
+<div id="ref-appelle1972perception" class="csl-entry" role="listitem">
+Appelle, Stuart. 1972. <span>“Perception and Discrimination as a Function of Stimulus Orientation: The" Oblique Effect" in Man and Animals.”</span> <em>Psychological Bulletin</em> 78 (4): 266.
+</div>
+<div id="ref-lme4" class="csl-entry" role="listitem">
+Bates, Douglas, Martin Mächler, Ben Bolker, and Steve Walker. 2015. <span>“Fitting Linear Mixed-Effects Models Using <span class="nocase">lme4</span>.”</span> <em>Journal of Statistical Software</em> 67 (1): 1–48. <a href="https://doi.org/10.18637/jss.v067.i01">https://doi.org/10.18637/jss.v067.i01</a>.
+</div>
+<div id="ref-bostock2011d3" class="csl-entry" role="listitem">
+Bostock, Michael, Vadim Ogievetsky, and Jeffrey Heer. 2011. <span>“D<span class="math inline">\(^3\)</span> Data-Driven Documents.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 17 (12): 2301–9.
+</div>
+<div id="ref-buchanan_park_pearce_2017" class="csl-entry" role="listitem">
+Buchanan, Larry, Haeyoun Park, and Adam Pearce. 2017. <span>“You Draw It: What Got Better or Worse During <span>O</span>bama’s Presidency.”</span> <em>The New York Times</em>. The New York Times. <a href="https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html">https://www.nytimes.com/interactive/2017/01/15/us/politics/you-draw-obama-legacy.html</a>.
+</div>
+<div id="ref-buja2009statistical" class="csl-entry" role="listitem">
+Buja, Andreas, Dianne Cook, Heike Hofmann, Michael Lawrence, Eun-Kyung Lee, Deborah F Swayne, and Hadley Wickham. 2009. <span>“Statistical Inference for Exploratory Data Analysis and Model Diagnostics.”</span> <em>Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences</em> 367 (1906): 4361–83.
+</div>
+<div id="ref-shinyPkg" class="csl-entry" role="listitem">
+Chang, Winston, Joe Cheng, JJ Allaire, Carson Sievert, Barret Schloerke, Yihui Xie, Jeff Allen, Jonathan McPherson, Alan Dipert, and Barbara Borges. 2021. <em>Shiny: Web Application Framework for r</em>. <a href="https://CRAN.R-project.org/package=shiny">https://CRAN.R-project.org/package=shiny</a>.
+</div>
+<div id="ref-ciccione2020grouping" class="csl-entry" role="listitem">
+Ciccione, Lorenzo, and Stanislas Dehaene. 2020. <span>“Grouping Mechanisms in Numerosity Perception.”</span> <em>Open Mind</em> 4: 102–18.
+</div>
+<div id="ref-ciccione2021can" class="csl-entry" role="listitem">
+———. 2021. <span>“Can Humans Perform Mental Regression on a Graph? Accuracy and Bias in the Perception of Scatterplots.”</span> <em>Cognitive Psychology</em> 128: 101406.
+</div>
+<div id="ref-cleveland1993visualizing" class="csl-entry" role="listitem">
+Cleveland, William S. 1993. <em>Visualizing Data</em>. Summit, NJ: Hobart Press.
+</div>
+<div id="ref-cleveland1982variables" class="csl-entry" role="listitem">
+Cleveland, William S, Persi Diaconis, and Robert McGill. 1982. <span>“Variables on Scatterplots Look More Highly Correlated When the Scales Are Increased.”</span> <em>Science</em> 216 (4550): 1138–41.
+</div>
+<div id="ref-cleveland1984graphical" class="csl-entry" role="listitem">
+Cleveland, William S, and Robert McGill. 1984. <span>“Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods.”</span> <em>Journal of the American Statistical Association</em> 79 (387): 531–54.
+</div>
+<div id="ref-cleveland1985graphical" class="csl-entry" role="listitem">
+———. 1985. <span>“Graphical Perception and Graphical Methods for Analyzing Scientific Data.”</span> <em>Science</em> 229 (4716): 828–33.
+</div>
+<div id="ref-de1991misdirections" class="csl-entry" role="listitem">
+De Graaf, JB, AC Sittig, and JJ van der Gon. 1991. <span>“Misdirections in Slow Goal-Directed Arm Movements and Pointer-Setting Tasks.”</span> <em>Experimental Brain Research</em> 84 (2): 434–38.
+</div>
+<div id="ref-deming1943statistical" class="csl-entry" role="listitem">
+Deming, William Edwards. 1943. <em>Statistical Adjustment of Data</em>. New York, NY: John Wiley &amp; Sons.
+</div>
+<div id="ref-easton1978finger" class="csl-entry" role="listitem">
+Easton, Randolph D, and Michelle Falzett. 1978. <span>“Finger Pressure During Tracking of Curved Contours: Implications for a Visual Dominance Phenomenon.”</span> <em>Perception &amp; Psychophysics</em> 24 (2): 145–53.
+</div>
+<div id="ref-finney1951subjective" class="csl-entry" role="listitem">
+Finney, DJ. 1951. <span>“Subjective Judgment in Statistical Analysis: An Experimental Study.”</span> <em>Journal of the Royal Statistical Society: Series B (Methodological)</em> 13 (2): 284–97.
+</div>
+<div id="ref-gescheider_1997" class="csl-entry" role="listitem">
+Gescheider, George. 1997. <em>Psychophysics: The Fundamentals</em>. 3rd ed. Mahwah, NJ: Lawrence Erlbaum Associates.
+</div>
+<div id="ref-hofmann2012graphical" class="csl-entry" role="listitem">
+Hofmann, Heike, Lendie Follett, Mahbubul Majumder, and Dianne Cook. 2012. <span>“Graphical Tests for Power Comparison of Competing Designs.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 18 (12): 2441–48.
+</div>
+<div id="ref-katz_2017" class="csl-entry" role="listitem">
+Katz, Josh. 2017. <span>“You Draw It: Just How Bad Is the Drug Overdose Epidemic?”</span> <em>The New York Times</em>. The New York Times. <a href="https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html">https://www.nytimes.com/interactive/2017/04/14/upshot/drug-overdose-epidemic-you-draw-it.html</a>.
+</div>
+<div id="ref-kosslyn2006graph" class="csl-entry" role="listitem">
+Kosslyn, Stephen M, and Stephen Michael Kosslyn. 2006. <em>Graph Design for the Eye and Mind</em>. New York, NY: Oxford University Press.
+</div>
+<div id="ref-lauer1989density" class="csl-entry" role="listitem">
+Lauer, Thomas W, and Gerald V Post. 1989. <span>“Density in Scatterplots and the Estimation of Correlation.”</span> <em>Behaviour &amp; Information Technology</em> 8 (3): 235–44.
+</div>
+<div id="ref-lewandowsky1989perception" class="csl-entry" role="listitem">
+Lewandowsky, Stephan, and Ian Spence. 1989. <span>“The Perception of Statistical Graphs.”</span> <em>Sociological Methods &amp; Research</em> 18 (2-3): 200–242.
+</div>
+<div id="ref-linnet1998performance" class="csl-entry" role="listitem">
+Linnet, Kristian. 1998. <span>“Performance of Deming Regression Analysis in Case of Misspecified Analytical Error Ratio in Method Comparison Studies.”</span> <em>Clinical Chemistry</em> 44 (5): 1024–31.
+</div>
+<div id="ref-mcr_pkg" class="csl-entry" role="listitem">
+Manuilova, Ekaterina, Andre Schuetzenmeister, and Fabian Model. 2021. <em>Mcr: Method Comparison Regression</em>. <a href="https://CRAN.R-project.org/package=mcr">https://CRAN.R-project.org/package=mcr</a>.
+</div>
+<div id="ref-martin2000general" class="csl-entry" role="listitem">
+Martin, Robert F. 2000. <span>“General Deming Regression for Estimating Systematic Bias and Its Confidence Interval in Method-Comparison Studies.”</span> <em>Clinical Chemistry</em> 46 (1): 100–104.
+</div>
+<div id="ref-miall1995curvature" class="csl-entry" role="listitem">
+Miall, RC, and PN Haggard. 1995. <span>“The Curvature of Human Arm Movements in the Absence of Visual Experience.”</span> <em>Experimental Brain Research</em> 103 (3): 421–28.
+</div>
+<div id="ref-mosteller1981eye" class="csl-entry" role="listitem">
+Mosteller, Frederick, Andrew Siegel, Edward Trapido, and Cleo Youtz. 1981. <span>“Eye Fitting Straight Lines.”</span> <em>The American Statistician</em> 35 (3): 150–52.
+</div>
+<div id="ref-Rsoftware" class="csl-entry" role="listitem">
+R Core Team. 2021. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+</div>
+<div id="ref-rousset2015study" class="csl-entry" role="listitem">
+Rousset, Élisabeth, François Bérard, and Michaël Ortega. 2015. <span>“Study of the Effect of the Directness of the Interaction on Novice Users When Drawing Straight Lines.”</span> In <em>Proceedings of the 27th Conference on l’interaction Homme-Machine</em>, 1–7.
+</div>
+<div id="ref-spence1990visual" class="csl-entry" role="listitem">
+Spence, Ian. 1990. <span>“Visual Psychophysics of Simple Graphical Elements.”</span> <em>Journal of Experimental Psychology: Human Perception and Performance</em> 16 (4): 683.
+</div>
+<div id="ref-r2d3" class="csl-entry" role="listitem">
+Strayer, Nick, Javier Luraschi, and JJ Allaire. 2022. <em>R2d3: Interface to ’D3’ Visualizations</em>. <a href="https://CRAN.R-project.org/package=r2d3">https://CRAN.R-project.org/package=r2d3</a>.
+</div>
+<div id="ref-unwin1988eyeballing" class="csl-entry" role="listitem">
+Unwin, Antony, and Graham Wills. 1988. <span>“Eyeballing Time Series.”</span> In <em>Proceedings of the 1988 ASA Statistical Computing Section</em>, 263–68.
+</div>
+<div id="ref-vanderplas2015signs" class="csl-entry" role="listitem">
+VanderPlas, Susan, and Heike Hofmann. 2015a. <span>“Signs of the Sine Illusion—Why We Need to Care.”</span> <em>Journal of Computational and Graphical Statistics</em> 24 (4): 1170–90.
+</div>
+<div id="ref-vanderplas2015spatial" class="csl-entry" role="listitem">
+———. 2015b. <span>“Spatial Reasoning and Data Displays.”</span> <em>IEEE Transactions on Visualization and Computer Graphics</em> 22 (1): 459–68.
+</div>
+<div id="ref-vanderplas2017clusters" class="csl-entry" role="listitem">
+———. 2017. <span>“Clusters Beat Trend!? Testing Feature Hierarchy in Statistical Graphics.”</span> <em>Journal of Computational and Graphical Statistics</em> 26 (2): 231–42.
+</div>
+<div id="ref-wickham2011ggplot2" class="csl-entry" role="listitem">
+Wickham, Hadley. 2011. <span>“Ggplot2.”</span> <em>Wiley Interdisciplinary Reviews: Computational Statistics</em> 3 (2): 180–85.
+</div>
+<div id="ref-wickham2016r" class="csl-entry" role="listitem">
+Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. Sebastopol, CA: "O’Reilly Media, Inc.".
+</div>
+<div id="ref-wilkinson2013grammar" class="csl-entry" role="listitem">
+Wilkinson, Leland. 2013. <em>The Grammar of Graphics</em>. New York, NY: Springer Science &amp; Business Media.
+</div>
+<div id="ref-mgcv_pkg" class="csl-entry" role="listitem">
+Wood, Simon. 2017. <em>Generalized Additive Models: An Introduction with r</em>. 2nd ed. New York, NY: Chapman; Hall/CRC.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/unl-statistics\.github\.io\/stat349");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© Copyright 2025, Susan Vanderplas</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/unl-statistics/stat349/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

@@ -17,7 +17,7 @@ format: revealjs
 
 ## Example: Polio Vaccine Trial
 
-[Annotated paper](../instructions/methods-papers/1954FieldTrial.qmd)
+[Annotated paper](../instructions/methods-papers/1954FieldTrial.html)
 
 - National trial of Polio vaccines
 
@@ -44,7 +44,7 @@ format: revealjs
 
 ## Example: Signs of the Sine Illusion
 
-[Annotated paper](../instructions/methods-papers/sine-illusion.qmd)
+[Annotated paper](../instructions/methods-papers/sine-illusion.html)
 
 
 - Goal was to show that the sine illusion is both theoretically and practically impactful in graphics
@@ -80,7 +80,7 @@ Feel free to critique, because... it was 10 years ago and I hope I've improved m
 
 ## Example: Eye Fitting Straight Lines in the Modern Era
 
-[Annotated paper](../instructions/methods-papers/Eye-Fitting-Straight-Lines-in-the-Modern-Era.qmd)
+[Annotated paper](../instructions/methods-papers/Eye-Fitting-Straight-Lines-in-the-Modern-Era.html)
 
 - Goal was to validate a new method for collecting eye-fitted regression data online
 
