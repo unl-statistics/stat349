@@ -1,0 +1,34 @@
+---
+title: "Week 5 - Arguments & Business Reports"
+format: revealjs
+# theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
+---
+
+# Business Reports
+
+## Business Reports
+
+- 4 scenarios
+
+- Your task: 
+    - Develop a problem statement
+    - Find data to support your analysis
+    - Document your data
+    - Conduct and document your analysis (reproducibly)
+    - Write a report that makes a recommendation
+    - Present your findings
+    
+## Business Reports
+
+By Wednesday, clone the repository
+
+This weekend, find a dataset
+
+Next week, document your dataset
+
+As we cover each section of a report/paper, use the business report to practice. 
+
+

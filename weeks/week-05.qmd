@@ -19,15 +19,17 @@ February 09-15, 2026
 
 ## 🥱 Monday 🌛
 
-- [Slides](../slides/05-argument-business-report.qmd)
+- [Business Report Slides](../slides/05-business-report.qmd)
+- [Argument Activity](../slides/05-argument-activity.qmd)
 - Discuss business report & assign report topics
-- Basic components of argument and rhetoric in scientific writing
+- In class activity: [Arguments in scientific and technical writing](../activities/arguments.qmd)
 
 
 ## 🐪️ Wednesday 🐦‍⬛ 
 
-- In class activity: [Arguments in scientific and technical writing](../activities/arguments.qmd)
-- [Slides](../slides/05-argument-activity.qmd)
+- [Slides](../slides/05-arguments-rhetoric.qmd)
+- Basic components of argument and rhetoric in scientific writing
+- [Canvas discussion board post](https://canvas.unl.edu/courses/214482/discussion_topics/1618932) -- I am hoping to be able to do class by Zoom but we'll record the activity's results via discussion board in any case. 
 
 
 ##  🏋 Practice Your Skills

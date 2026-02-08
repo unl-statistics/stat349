@@ -108,12 +108,14 @@ schedule:
     prepare: |
         - [ ] Reading Quiz Week 5
     class1: |
-        - [Slides](../slides/05-argument-business-report.qmd)
+        - [Business Report Slides](../slides/05-business-report.qmd)
+        - [Argument Activity](../slides/05-argument-activity.qmd)
         - Discuss business report & assign report topics
-        - Basic components of argument and rhetoric in scientific writing
-    class2: |
         - In class activity: [Arguments in scientific and technical writing](../activities/arguments.qmd)
-        - [Slides](../slides/05-argument-activity.qmd)
+    class2: |
+        - [Slides](../slides/05-arguments-rhetoric.qmd)
+        - Basic components of argument and rhetoric in scientific writing
+        - [Canvas discussion board post](https://canvas.unl.edu/courses/214482/discussion_topics/1618932) -- I am hoping to be able to do class by Zoom but we'll record the activity's results via discussion board in any case. 
     assignments: |
         - [ ] Analyze the rhetorical decisions and arguments in your research article (1 pg summary)
         - [ ] Business report: locate data sets to support your analysis

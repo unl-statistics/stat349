@@ -7,31 +7,6 @@ includes:
 lib_dir: ./libs
 ---
 
-# Business Reports
-
-## Business Reports
-
-- 4 scenarios
-
-- Your task: 
-    - Develop a problem statement
-    - Find data to support your analysis
-    - Document your data
-    - Conduct and document your analysis (reproducibly)
-    - Write a report that makes a recommendation
-    - Present your findings
-    
-## Business Reports
-
-By Wednesday, clone the repository
-
-This weekend, find a dataset
-
-Next week, document your dataset
-
-As we cover each section of a report/paper, use the business report to practice. 
-
-
 # Argument & Rhetoric in Technical Writing
 
 ## Arguments
@@ -88,4 +63,3 @@ Take notes - how is the author making the argument?
 ## Did the argument change your views? 
 
 Why or why not?
-
