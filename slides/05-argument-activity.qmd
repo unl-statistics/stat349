@@ -13,7 +13,7 @@ Reasons are supported by **Evidence**
 
 **Warrants** are inferences that connect support (Reasons/Evidence) to the claim
 
-## Attention Video (last class)
+## Attention Video (next class)
 
 ![](images/argument-breakdown.excalidraw.png){fig-alt="A breakdown of the structure of the video from the first class of Week 5. Claim: The type of media we consume affects our ability to follow arguments and pay attention. There are two groups of content underneath the claim. The first reason is The written word build focus and shifts the way we think; under that are two pieces of evidence which are offered: written wor changed how people though, with examples of the reformation, enlightenment, and american revolution enabled via the printing press. The second piece of evidence is that peopel used to written communication have greater attention spans, as evidenced by the comparison between 3h Lincoln/Douglass debates and the 1h Kennedy/Nixon TV debates. Connecting the evidence to the claim are two red arrows which make the points that the written word is why big, civilization-defining changes in thought occurred, and that audiences used to writing follow complex logic better than audiences digesting TV. These warrants connect the evidence to the claim. The second reason is Online media's goal is to maintain engagement, not attention. This is supported by application layout, with immediate content that conveys that information is easy and disposable, and the idea of a hostile design environment that steals rather than is given attention; platform creators know this is harmful and do not allow their children to use their own products. These pieces of evidence are connected to the claim with two red arrows which have corresponding text claiming that the internet is even more damaging than TV to attention development/plasticity, and to build attention and ability to think complex thoughts, you must spend time away from phones/internet and with books or thinking on a train of thought for increasing periods of time."}
 
@@ -23,8 +23,8 @@ Reasons are supported by **Evidence**
 Each group gets a report:
 
 - [Colorado River](../activities/report-examples/ViaderoetalWestwarddiversionofMSRwatertoLowerCRB.pdf)
-- [Deep Water Horizon](../activities/report-examples/Deepwater-Horizon-Report.pdf)
-- [2020 Census Noncitizen Coverage Report](../activities/report-examples/CES-WP-23-42-CensusNoncitizenCoverage.pdf)
+- [Deep Water Horizon](../activities/report-examples/2-deepwaterhorizon-roi-uscg-volume-i-20110707-redacted-final.pdf)
+- [2020 Census Noncitizen Coverage Report](../activities/report-examples/CES-WP-23-42.pdf)
 - [2020 Census Assessment](../activities/report-examples/2023-AssessingThe2020Census.pdf)
 
 
