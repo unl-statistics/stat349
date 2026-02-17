@@ -56,7 +56,7 @@ Measurements taken in the lab by research assistants.
 
 Whoops.
 
-![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenBwZ3VkMmt3dHZiaG94MDZtb3lwcWU4c2J2MzJjdzBtcndvdjh0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7ZeAiCICH5bj1Esg/giphy.gif){fig-alt="A gif of a child wearing a lampshade walking into an oven and falling backwards" width="100%"}
+![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExenBwZ3VkMmt3dHZiaG94MDZtb3lwcWU4c2J2MzJjdzBtcndvdjh0YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7ZeAiCICH5bj1Esg/giphy.gif){fig-alt="A gif of a child wearing a lampshade walking into an oven and falling backwards" width="50%"}
 :::
 
 
