@@ -16,39 +16,71 @@ $font-family-cursive: Handlee, cursive, "Apple Color Emoji", "Segoe UI Emoji", "
 
 $headings-font-weight: 400 !default;
 
-h1,
-h2,
-h3,
-h4 {
+/*-- scss:defaults --*/
+$primary: #006de6;
+$secondary: #d70e2a;
+$navbar-dark-color: rgba($primary, .75) !important;
+$navbar-dark-hover-color: $primary !important;
+$theme-colors: (
+  "primary":    #006de6,
+  "secondary":  #d7570e,
+  "success":    #047b40,
+  "info":       #a41ffa,
+  "warning":    #db0ac5,
+  "danger":     #d70e2a,
+  "link":       #00244d
+);
+
+
+/* Color basics:
+Dark version has acceptable contrast w/ white (>10)
+Light version has acceptable contrast w/ dark (>10)
+reg version has best possible contrast compromise (ideally at least 4.5 in both cases, usually 4.5 in one and <4 in another. Goal is to be fine for headings, though)
+*/
+
+$darkred:      #780817;
+$red:          #d70e2a; /* 5.27:1 white, 3.99:1 black */
+$lightred:     #f78797;
+
+$darkorange:   #481d05;
+$orange:       #a8440b; /* 6.01:1 white, 3.50:1 black */
+$lightorange:  #f7b087;
+
+$darkgreen:    #024a27;
+$green:        #047b40; /* 5.37:1 white, 3.91:1 black */
+$lightgreen:   #21f88d;
+
+$darkcerulean:   #083944;
+$cerulean:       #13859f; /* 4.30:1 white, 4.88:1 black */
+$lightcerulean:  #32c5e7;
+
+$darkblue:       #00244d;
+$meddarkblue:    #003c80;
+$blue:           #006de6; /* 4.85:1 white, 4.33:1 black */
+$lightblue:      #80bcff;
+
+$darkpurple:     #4d037d;
+$purple:         #a41ffa; /* 5.05:1 white, 4.15:1 black */
+$lightpurple:    #e1b4fd;
+
+$darkmagenta:    #490342;
+$magenta:        #db0ac5; /* 4.32:1 white, 4.85:1 black */
+$lightmagenta:   #fcb6f4;
+
+$dark:           #000c1a;
+$black:          #000000;
+$grey:           #737373;
+$lightgrey:      #f2f2f2;
+
+h1, h2, h3, h4 {
   font-weight: 500;
-  margin-bottom: 0;
-  margin-top: 10px;
-}
-
-h1 {
-  color: #d00000;
-  font-size: 3.5em;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-  /*background: rgba(.9961, .9922, .9804, .3);*/
-  padding: 20px;
-}
-
-h2 {
-  color: #001226;
-  font-size: 2.5em;
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
-h3 {
-  color: #249ab5;
-  font-size: 1.5em;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-}
-
-h4 {
-  font-size: 1.25em;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
-}
+h1 { color: $red;   font-size: 3.5em;  padding: 20px; }
+h2 { color: $blue; font-size: 2.5em;  }
+h3 { color: $green;   font-size: 1.5em;  }
+h4 { color: $purple;      font-size: 1.25em; }
 
 body {
   font-size: 1em;
@@ -56,144 +88,125 @@ body {
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
+.emph { font-family: 'Handlee', cursive; }
+
 /*-- scss:rules --*/
 
-a {
-  color: #1B8500;
-}
+.reveal section#title-slide h1.title 
+        { color: $darkblue !important; font-size: 3em; margin-top: -130px; }
+.reveal section#title-slide .subtitle
+        { color: $darkblue !important; font-size: 1.75em; font-family: 'Handlee', cursive; font-weight: 500}
+.reveal section#title-slide .quarto-title-author-name 
+        { color: $meddarkblue !important; }
+.reveal section#title-slide .date
+        { color: $meddarkblue !important; }
+.reveal section.inverse 
+        { background-color: $dark; color: #FFF;}
+        
+        
+body          { color: #000000;}
+.inverse body { color: #ffffff; }
 
-/* Other font formatting stuff */
-.emph {
-  font-family: 'Handlee', cursive;
-}
+a             { color: $darkblue; }
+.inverse a    { color: $lightblue; }
 
-.red {
-  color: #d00000 !important;
-}
-
-.orange {
-  color: #f58a1f !important;
-}
-
-.yellow {
-  color: #ffd74f !important;
-}
-
-.green {
-  color: #1B8500 !important;
-}
-
-.cerulean {
-  color: #249ab5 !important;
-}
-
-.blue {
-  color: #005d84 !important;
-}
-
-.purple {
-  color: #a5228d !important;
-}
-
-.grey {
-  color: #c7c8ca !important;
-}
+.underline          { border-bottom: 1px solid black; display: inline-block; }
+.inverse .underline { border-bottom: 1px solid white; display: inline-block; }
 
 
 /* other handy classes */
-.large {
-  font-size: 130% !important;
-}
 
-.largish {
-  font-size: 110% !important;
-}
+.pull-left    { float: left;  width: 47%; }
+.pull-right   { float: right; width: 47%; }
 
-.reg {
-  font-size: 100% !important;
-}
+.move-up      { margin-top:  -50px !important;}
+.nudge-up     { margin-top:  -20px !important;}
 
-.slightly-small {
-  font-size: 80% !important;
-}
+.move-left    { margin-left: -50px !important;}
+.nudge-left   { margin-left: -20px !important;}
 
-.smaller {
-  font-size: 75% !important;
-}
+.move-right   { margin-left:  50px !important;}
+.nudge-right  { margin-left:  20px !important;}
 
-.small {
-  font-size: 70% !important;
-}
+.move-down    { margin-top:   50px !important;}
+.nudge-down   { margin-top:   20px !important;}
 
-.tiny {
-  font-size: 50% !important;
-}
-
-.microscopic {
-  font-size: 28% !important;
-}
-
-.underline {
-  border-bottom: 1px solid black;
-  display: inline-block;
-}
+.extrabig         { font-size: 500% !important; }
+.large            { font-size: 130% !important; }
+.largish          { font-size: 110% !important; }
+.slightly-small   { font-size:  80% !important; }
+.smaller          { font-size:  75% !important; }
+.small            { font-size:  70% !important; }
+.tiny             { font-size:  50% !important; }
+.microscopic      { font-size:  28% !important; }
 
 .hidden {
   visibility: hidden;
 }
 
-
-.inverse {
-  color: #fefdfa;
-
-  .underline {
-    border-bottom: 1px solid #fefdfa;
-    display: inline-block;
-  }
-
-  h1,
-  h2,
-  h3 {
-    color: #d00000;
-  }
-
-  a {
-    color: #ffd74f;
-  }
-
-  p code {
-    color: #ffd700;
-  }
-
-  .slide-background-content {
-    background-color: #001226;
-  }
-
-  .callout-caption {
-    color: $body-color;
-  }
-
-  pre {
-    background-color: #001226;
-  }
-
-}
-
 figure p img {
-  margin: 0px !important;
+  margin:          0px !important; 
 }
 
-figure p {
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+figure p { 
+  margin-top:      5px !important;
+  margin-bottom:   5px !important;
 }
 
 .quarto-figure {
-  margin-bottom: 10px !important;
-  margin-left: 0px !important;
+  margin-bottom:  10px !important;
+  margin-left:     0px !important;
 }
 
 figure figcaption {
-  margin-top: 2px !important;
-  margin-bottom: 0px !important;
+  margin-top:      2px !important;
+  margin-bottom:   0px !important;
 }
+
+.cover{
+  width:  100%;
+  height: 100%;
+}
+
+.qrcode {
+  width: 100%;
+  text-align: center !important;
+  margin-bottom: 1rem;
+}
+
+.darkred{ color: $darkred;}
+.red{ color: $red;}
+.lightred{ color: $lightred;}
+
+.darkorange{ color: $darkorange;}
+.orange{ color: $orange;}
+.lightorange{ color: $lightorange;}
+
+.darkgreen{ color: $darkgreen;}
+.green{ color: $green;}
+.lightgreen{ color: $lightgreen;}
+
+.darkcerulean{ color: $darkcerulean;}
+.cerulean{ color: $cerulean;}
+.lightcerulean{ color: $lightcerulean;}
+
+.darkblue{ color: $darkblue;}
+.meddarkblue{ color: $meddarkblue;}
+.blue{ color: $blue;}
+.lightblue{ color: $lightblue;}
+
+.darkpurple{ color: $darkpurple;}
+.purple{ color: $purple;}
+.lightpurple{ color: $lightpurple;}
+
+.darkmagenta{ color: $darkmagenta;}
+.magenta{ color: $magenta;}
+.lightmagenta{ color: $lightmagenta;}
+
+.dark{ color: $dark;}
+.black{ color: $black;}
+.grey{ color: $grey;}
+.lightgrey{ color: $lightgrey;}
+
+
+.reveal div.nolines table tr td,.reveal div.nolines table tr th {border-bottom:0!important;}
