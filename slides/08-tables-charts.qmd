@@ -1,6 +1,10 @@
 ---
 title: "Tables and Charts"
 format: revealjs
+theme: ./libs/unl/inverse.scss
+includes:
+  in_header: ./libs/unl/header.html
+lib_dir: ./libs
 ---
 
 ## Fixing the Reading...
@@ -16,6 +20,9 @@ format: revealjs
 
 ## Fixing the Reading...
 
+::: columns
+::: column
+
 - Colorblind friendly is important
 - Dual encoding (shape/linetype + color) helps a lot
 
@@ -24,9 +31,19 @@ format: revealjs
 - 3D graphs only work if you 3d print them    
 [Ok, I don't have proof of this yet, but I'm working on it...]{.small}
 
-- Figure titles - above, below - conform to the style guide you're using
+- Figure titles - above, below -     
+[conform to the style guide you're using]{.emph .red}
 
-- Don't make graphs in MS Word. Just... don't. 
+- Don't make graphs in MS Word or Excel. Just... don't. 
+
+:::
+
+::: {.column .fragment}
+
+![](images/friends-dont-let-friends-use-excel.png){fig-alt="A screenshot from Statistical Modeling, Causal Inference, and Social Science (Andrew Gelman's blog). https://statmodeling.stat.columbia.edu/2013/04/17/excel-bashing/. The post is titled 'Excel Bashing' and reads: In response to the latest controversy, a statistics professor writes: 'It’s somewhat surprising to see Very Serious Researchers (apologies to Paul Krugman) using Excel. Some years ago, I was consulting on a trademark infringement case and was trying (unsuccessfully) to replicate another expert’s regression analysis. It wasn’t until I had the brainstorm to use Excel that I was able to reproduce his results – it may be better now, but at the time, Excel could propagate round-off error and catastrophically cancel like no other software!'. (new paragraph) Microsoft has lots of top researchers so it’s hard for me to understand how Excel can remain so crappy. I mean, sure, I understand in some general way that they have a large user base, it’s hard to maintain backward compatibility, there’s feature creep, and, besides all that, lots of people have different preferences in data analysis than I do. But still, it’s such a joke. Word has problems too, but I can see how these problems arise from its desirable features. The disaster that is Excel seems like more of a mystery. A comment on the post by Stuart says 'You know the old aphorism: Friends don’t let friends use Excel for statistics.'"}
+:::
+
+:::
 
 ## Fixing the Reading
 
