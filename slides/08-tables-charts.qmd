@@ -9,6 +9,7 @@ lib_dir: ./libs
 
 ## Fixing the Reading...
 
+::: {.incremental}
 - Table titles should be informative    
 [(but don't have to include all the details req'd in SWHR)]{.small}
 
@@ -16,12 +17,14 @@ lib_dir: ./libs
 
 - Tables should have a consistent number of decimal places in each column
 
-
+:::
 
 ## Fixing the Reading...
 
 ::: columns
 ::: column
+
+::: {.incremental}
 
 - Colorblind friendly is important
 - Dual encoding (shape/linetype + color) helps a lot
@@ -37,9 +40,11 @@ lib_dir: ./libs
 - Don't make graphs in MS Word or Excel. Just... don't. 
 
 :::
+
+:::
 ::: {.column}
 
-![](images/friends-dont-let-friends-use-excel.png){.fragment fig-alt="A screenshot from Statistical Modeling, Causal Inference, and Social Science (Andrew Gelman's blog). https://statmodeling.stat.columbia.edu/2013/04/17/excel-bashing/. The post is titled 'Excel Bashing' and reads: In response to the latest controversy, a statistics professor writes: 'It’s somewhat surprising to see Very Serious Researchers (apologies to Paul Krugman) using Excel. Some years ago, I was consulting on a trademark infringement case and was trying (unsuccessfully) to replicate another expert’s regression analysis. It wasn’t until I had the brainstorm to use Excel that I was able to reproduce his results – it may be better now, but at the time, Excel could propagate round-off error and catastrophically cancel like no other software!'. (new paragraph) Microsoft has lots of top researchers so it’s hard for me to understand how Excel can remain so crappy. I mean, sure, I understand in some general way that they have a large user base, it’s hard to maintain backward compatibility, there’s feature creep, and, besides all that, lots of people have different preferences in data analysis than I do. But still, it’s such a joke. Word has problems too, but I can see how these problems arise from its desirable features. The disaster that is Excel seems like more of a mystery. A comment on the post by Stuart says 'You know the old aphorism: Friends don’t let friends use Excel for statistics.'"}
+![](images/friends-dont-let-friends-use-excel.png){.fragment fig-alt="A screenshot from Statistical Modeling, Causal Inference, and Social Science (Andrew Gelman's blog). https://statmodeling.stat.columbia.edu/2013/04/17/excel-bashing/. The post is titled 'Excel Bashing' and reads: In response to the latest controversy, a statistics professor writes: 'It’s somewhat surprising to see Very Serious Researchers (apologies to Paul Krugman) using Excel. Some years ago, I was consulting on a trademark infringement case and was trying (unsuccessfully) to replicate another expert’s regression analysis. It wasn’t until I had the brainstorm to use Excel that I was able to reproduce his results – it may be better now, but at the time, Excel could propagate round-off error and catastrophically cancel like no other software!'. (new paragraph) Microsoft has lots of top researchers so it’s hard for me to understand how Excel can remain so crappy. I mean, sure, I understand in some general way that they have a large user base, it’s hard to maintain backward compatibility, there’s feature creep, and, besides all that, lots of people have different preferences in data analysis than I do. But still, it’s such a joke. Word has problems too, but I can see how these problems arise from its desirable features. The disaster that is Excel seems like more of a mystery. A comment on the post by Stuart says 'You know the old aphorism: Friends don’t let friends use Excel for statistics.'" style="position:absolute;top:10px;right:10px;width:45%;"}
 :::
 
 :::
@@ -50,9 +55,9 @@ lib_dir: ./libs
 
 This is great if you can manage it, but LaTeX doesn't make it easy. 
 
-[Don't override your document format's general workings to adhere to guidelines.]{.emph .cerulean} 
+[Don't override your document format's general workings to adhere to guidelines.]{.emph .cerulean .fragment} 
 
-Simple formatting is better. 
+[Simple formatting is better.]{.fragment}
 
 ## Case Study: What makes a chart useful?
 
@@ -63,15 +68,16 @@ From Getting (more out of) Graphics Ch. 8 -- See Library Course Materials
 
 - 362502 players: name, country, rating, year of birth
 
+::: {.fragment}
 Guiding questions:
 
 - What is the distribution of ratings?
 - How does rating change with age?
 - How does gender affect rating?
 - Which countries have highest-rated players?
+:::
 
-
-[R Code](08-tables-charts.R) to follow along
+[[R Code](08-tables-charts.R) to follow along]{.fragment}
 
 ```{r setup}
 ## packages used in many chapters
