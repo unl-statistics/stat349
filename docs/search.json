@@ -2758,7 +2758,7 @@
     "href": "slides/08-tables-charts.html#fixing-the-reading-1",
     "title": "Tables and Charts",
     "section": "Fixing the Reading…",
-    "text": "Fixing the Reading…\n\nColorblind friendly is important\nDual encoding (shape/linetype + color) helps a lot\nGrid lines are a good thing (you’re wrong, SWHR!)\n3D graphs only work if you 3d print them\nOk, I don’t have proof of this yet, but I’m working on it…\nFigure titles - above, below - conform to the style guide you’re using\nDon’t make graphs in MS Word. Just… don’t."
+    "text": "Fixing the Reading…\n\n\n\nColorblind friendly is important\nDual encoding (shape/linetype + color) helps a lot\nGrid lines are a good thing (you’re wrong, SWHR!)\n3D graphs only work if you 3d print them\nOk, I don’t have proof of this yet, but I’m working on it…\nFigure titles - above, below\nconform to the style guide you’re using\nDon’t make graphs in MS Word or Excel. Just… don’t."
   },
   {
     "objectID": "slides/08-tables-charts.html#fixing-the-reading-2",
@@ -2772,7 +2772,7 @@
     "href": "slides/08-tables-charts.html#case-study-what-makes-a-chart-useful",
     "title": "Tables and Charts",
     "section": "Case Study: What makes a chart useful?",
-    "text": "Case Study: What makes a chart useful?\nFrom Getting (more out of) Graphics Ch. 8 (file on Canvas)\n\nInternational Chess Federation ranking system\n(Data from WorldBank website)\n362502 players: name, country, rating, year of birth\n\nGuiding questions:\n\nWhat is the distribution of ratings?\nHow does rating change with age?\nHow does gender affect rating?\nWhich countries have highest-rated players?"
+    "text": "Case Study: What makes a chart useful?\nFrom Getting (more out of) Graphics Ch. 8 – See Library Course Materials\n\nInternational Chess Federation ranking system\n(Data from WorldBank website)\n362502 players: name, country, rating, year of birth\n\nGuiding questions:\n\nWhat is the distribution of ratings?\nHow does rating change with age?\nHow does gender affect rating?\nWhich countries have highest-rated players?\n\nR Code to follow along"
   },
   {
     "objectID": "slides/08-tables-charts.html#fig-8.1-histogram-of-ratings-of-all-chess-players-rated-by-fide-in-december-2020",

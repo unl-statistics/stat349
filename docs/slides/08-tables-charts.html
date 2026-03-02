@@ -28,7 +28,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-b5be6455b6a1abfc2ef890a5dde3b798.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-9ffa81ca274c7fd735c88de837dd2466.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -149,15 +149,21 @@
 </section>
 <section id="fixing-the-reading-1" class="slide level2">
 <h2>Fixing the Reading…</h2>
+<div class="columns">
+<div class="column">
 <ul>
 <li><p>Colorblind friendly is important</p></li>
 <li><p>Dual encoding (shape/linetype + color) helps a lot</p></li>
 <li><p>Grid lines are a good thing (you’re wrong, SWHR!)</p></li>
 <li><p>3D graphs only work if you 3d print them<br>
-<span class="small">Ok, I don’t have proof of this yet, but I’m working on it…</span></p></li>
-<li><p>Figure titles - above, below - conform to the style guide you’re using</p></li>
-<li><p>Don’t make graphs in MS Word. Just… don’t.</p></li>
+<span class="small emph blue">Ok, I don’t have proof of this yet, but I’m working on it…</span></p></li>
+<li><p>Figure titles - above, below<br>
+<span class="emph red">conform to the style guide you’re using</span></p></li>
+<li><p>Don’t make graphs in MS Word or Excel. Just… don’t.</p></li>
 </ul>
+</div><div class="column">
+<p><img data-src="images/friends-dont-let-friends-use-excel.png" class="fragment" alt="A screenshot from Statistical Modeling, Causal Inference, and Social Science (Andrew Gelman's blog). https://statmodeling.stat.columbia.edu/2013/04/17/excel-bashing/. The post is titled 'Excel Bashing' and reads: In response to the latest controversy, a statistics professor writes: 'It’s somewhat surprising to see Very Serious Researchers (apologies to Paul Krugman) using Excel. Some years ago, I was consulting on a trademark infringement case and was trying (unsuccessfully) to replicate another expert’s regression analysis. It wasn’t until I had the brainstorm to use Excel that I was able to reproduce his results – it may be better now, but at the time, Excel could propagate round-off error and catastrophically cancel like no other software!'. (new paragraph) Microsoft has lots of top researchers so it’s hard for me to understand how Excel can remain so crappy. I mean, sure, I understand in some general way that they have a large user base, it’s hard to maintain backward compatibility, there’s feature creep, and, besides all that, lots of people have different preferences in data analysis than I do. But still, it’s such a joke. Word has problems too, but I can see how these problems arise from its desirable features. The disaster that is Excel seems like more of a mystery. A comment on the post by Stuart says 'You know the old aphorism: Friends don’t let friends use Excel for statistics.'"></p>
+</div></div>
 </section>
 <section id="fixing-the-reading-2" class="slide level2">
 <h2>Fixing the Reading</h2>
@@ -165,12 +171,12 @@
 <p>Intersperse graphics and text on the same page. Don’t put graphics on pages by themselves; don’t attach them to the end of documents.</p>
 </blockquote>
 <p>This is great if you can manage it, but LaTeX doesn’t make it easy.</p>
-<p>Don’t override your document format’s general workings to adhere to guidelines.</p>
+<p><span class="emph cerulean">Don’t override your document format’s general workings to adhere to guidelines.</span></p>
 <p>Simple formatting is better.</p>
 </section>
 <section id="case-study-what-makes-a-chart-useful" class="slide level2">
 <h2>Case Study: What makes a chart useful?</h2>
-<p>From <a href="https://canvas.unl.edu/courses/192983/modules/items/5432021">Getting (more out of) Graphics Ch. 8</a> (file on Canvas)</p>
+<p>From Getting (more out of) Graphics Ch. 8 – See Library Course Materials</p>
 <ul>
 <li><p>International Chess Federation ranking system<br>
 (Data from WorldBank website)</p></li>
@@ -183,6 +189,7 @@
 <li>How does gender affect rating?</li>
 <li>Which countries have highest-rated players?</li>
 </ul>
+<p><a href="08-tables-charts.R">R Code</a> to follow along</p>
 </section>
 <section id="fig-8.1-histogram-of-ratings-of-all-chess-players-rated-by-fide-in-december-2020" class="slide level2">
 <h2>Fig 8.1 ‘Histogram of ratings of all chess players rated by FIDE in December 2020’</h2>
