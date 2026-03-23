@@ -43,6 +43,13 @@ ggplot(Chess2020, aes("", DEC20)) +
   ylab("Ratings") +
   theme(axis.ticks.y = element_blank())
 
+## ----------------------------------------------------------------------------------------------------------------------------
+ggplot(Chess2020, aes("", DEC20)) +
+  geom_violin(quantiles = c(.25, .5, .75)) +
+  coord_flip() +
+  xlab(NULL) +
+  ylab("Ratings") +
+  theme(axis.ticks.y = element_blank())
 
 ## ----------------------------------------------------------------------------------------------------------------------------
 # Fix birthyear and age data

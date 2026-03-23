@@ -1,4 +1,4 @@
-# Week 11: Introductions and Conclusions
+# Week 10: Introductions and Conclusions
 
 
 
@@ -17,7 +17,8 @@ March 23-29, 2026
 
 ## 🥱 Monday 🌛
 
-- [Conclusion](../slides/10-conclusion.qmd) - [Quarto Formatting](../slides/10-quarto-features.qmd)
+- [Conclusion](../slides/10-conclusion.qmd) 
+- [Quarto Formatting](../slides/10-quarto-features.qmd)
 
 
 ## 🐪️ Wednesday 🐦‍⬛ 

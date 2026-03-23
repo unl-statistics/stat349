@@ -12,11 +12,12 @@ source("schedule.R")
 library(DT)
 schedule |>
   group_by(Week, weeksort, `Week Start`, Topic) |>
-  summarize(`Important Dates` = if_else(is.na(`Important Dates`), NA_character_, paste(`Important Dates`, collapse = "<br>"))) |>
+  mutate(`Important Dates` = paste(`Important Dates`, collapse = "<br>")) |>
   unique() |>
+  summarize(`Important Dates` = if_else(is.na(`Important Dates`), NA_character_, unique(`Important Dates`))) |>
   ungroup() |>
   arrange(weeksort) |>
-  mutate(Topic = if_else(!is.na(Week) & Week < 16, sprintf("<a href='https://unl-statistics.github.io/stat349/weeks/week-%02d.html'> %s </a>", Week, Topic), Topic)) |>
+  mutate(Topic = if_else(Week <= 16, sprintf("<a href='https://unl-statistics.github.io/stat349/weeks/week-%03d.html'> %s </a>", Week*10, Topic), Topic)) |>
   select(Week, Start = `Week Start`, Topic, `Important Dates`) |>
   datatable(escape = F, selection = 'none', filter='none', 
             options = list(paging = F, info = F, searching = F, ordering = F), 

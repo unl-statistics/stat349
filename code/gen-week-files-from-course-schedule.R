@@ -36,6 +36,6 @@ md <- glue_df |>
   apply(1, as.list) |>
   map_chr(~ paste(., collapse = "\n\n"))
 
-md <- set_names(md, sprintf("weeks/week-%02d.qmd", plandf$week))
+md <- set_names(md, sprintf("weeks/week-%03d.qmd", as.integer(plandf$week*10)))
 
 walk2(md, names(md), ~ writeLines(.x, con = .y))

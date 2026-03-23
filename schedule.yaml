@@ -199,12 +199,12 @@ schedule:
     assignments: |
         - [ ] Draft of results section of business report with relevant graphics/visual aids
 
-  - week: 10
+  - week: 9.5
     name: Spring Break
     start: 2026-03-16
     end: 2026-03-22
 
-  - week: 11
+  - week: 10
     name: Introductions and Conclusions
     start: 2026-03-23
     end: 2026-03-29
@@ -214,13 +214,14 @@ schedule:
     prepare: |
         - [ ] Reading Quiz Week 10
     class1: |
-        - [Conclusion](../slides/10-conclusion.qmd) - [Quarto Formatting](../slides/10-quarto-features.qmd)
+        - [Conclusion](../slides/10-conclusion.qmd) 
+        - [Quarto Formatting](../slides/10-quarto-features.qmd)
     class2: |
         - [Introductions](../slides/10-intro.qmd)
     assignments: |
         - [ ] Draft of introduction and conclusion sections of business report
 
-  - week: 12
+  - week: 11
     name: Abstracts & Summaries
     start: 2026-03-30
     end: 2026-04-05
@@ -237,7 +238,7 @@ schedule:
     assignments: |
         - [ ] Draft of executive summary of business report
 
-  - week: 13
+  - week: 12
     name: Countering Logical Fallacies
     start: 2026-04-06
     end: 2026-04-12
@@ -254,7 +255,7 @@ schedule:
     assignments: |
         - (not turned in) Revise business report sections (methods, results, intro, conclusion, executive summary) and prepare to integrate them into a full report
 
-  - week: 14
+  - week: 13
     name: Reports and Presentations
     start: 2026-04-13
     end: 2026-04-19
@@ -271,7 +272,7 @@ schedule:
         - [ ] Rough draft of business report submitted along with to-do list
         - (not turned in) Prepare business presentation slides/talk
 
-  - week: 15
+  - week: 14
     name: Editing and Revising Your Work
     start: 2026-04-20
     end: 2026-04-26
@@ -290,7 +291,7 @@ schedule:
         - [ ] Make edits from peer review comments
 
 
-  - week: 16
+  - week: 15
     name: In-Class Presentations
     start: 2026-04-27
     end: 2026-05-03
@@ -302,7 +303,7 @@ schedule:
         - [ ] Slides for business presentation
         - [ ] Business report due (05-01, 6pm)
         
-  - week: 17
+  - week: 16
     name: Finals Week
     start: 2026-05-04
     end: 2026-05-08
